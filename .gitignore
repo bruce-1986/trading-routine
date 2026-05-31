@@ -1,0 +1,22 @@
+# Secrets — NIEMALS committen
+.env
+.env.local
+*.key
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Python (falls Bot-Code hinzukommt)
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Logs (große Dateien lokal halten, nur Memory-Files committen)
+*.log

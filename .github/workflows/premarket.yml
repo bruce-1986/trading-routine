@@ -1,0 +1,50 @@
+name: Bull — Pre-Market Check
+
+on:
+  schedule:
+    # 08:30 ET = 12:30 UTC (Summer/EDT) | Montag–Freitag
+    - cron: '30 12 * * 1-5'
+  workflow_dispatch:  # Manueller Trigger via GitHub UI
+
+jobs:
+  premarket-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run Pre-Market Routine
+        env:
+          ANTHROPIC_API_KEY:        ${{ secrets.ANTHROPIC_API_KEY }}
+          ALPACA_API_KEY:           ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY:        ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_BASE_URL:          https://paper-api.alpaca.markets
+          ALPACA_LIVE:              false
+          PERPLEXITY_API_KEY:       ${{ secrets.PERPLEXITY_API_KEY }}
+          CLICKUP_API_KEY:          ${{ secrets.CLICKUP_API_KEY }}
+          CLICKUP_LIST_ID:          ${{ secrets.CLICKUP_LIST_ID }}
+          CLICKUP_CRITICAL_LIST_ID: ${{ secrets.CLICKUP_CRITICAL_LIST_ID }}
+        run: |
+          claude --print "$(cat routines/premarket-routine.md)" \
+            --output-format text \
+            --max-turns 20
+
+      - name: Commit Memory Updates
+        run: |
+          git config user.name  "Bull Trading Bot"
+          git config user.email "bot@trading-routine"
+          git add memory/
+          git diff --staged --quiet || git commit -m "chore: pre-market memory update $(date -u +%Y-%m-%d)"
+          git push
