@@ -1,0 +1,37 @@
+name: Market Close Tagesbilanz (16:00 ET)
+
+on:
+  schedule:
+    - cron: '0 20 * * 1-5'  # 16:00 ET (EDT/Sommer UTC-4) | Winter EST: cron '0 21 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Git-User konfigurieren
+        run: |
+          git config user.name "Bull Trading Bot"
+          git config user.email "bull-bot@users.noreply.github.com"
+
+      - name: Claude Code installieren
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Market-Close Routine ausführen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          CLICKUP_API_KEY: ${{ secrets.CLICKUP_API_KEY }}
+        run: |
+          claude --model claude-opus-4-7 \
+                 --dangerously-skip-permissions \
+                 -p "$(cat routines/market-close-routine.md)"
