@@ -4,15 +4,36 @@
 
 ---
 
-## Heutiger Market-Check — 2026-06-17
+## Heutiger Market-Check — 2026-06-17 (Close 16:00 ET)
 
-### Makro-Lage
+### Makro-Lage (Tagesschluss)
 ```
 VIX:              16,41   [GRÜN, unter 30]
-SPY heute:        $750,63 (+0,04% vs. Vortag $750,33)
-Crash-Filter:     NEIN
-Markt-Status:     OPEN (Routine um 09:32 ET)
+SPY heute:        $741,02 (-1,27% vs. Vortag $750,58)
+SPY Tagesspanne:  $739,26 – $752,13 (Outside-Day, rote Kerze)
+Crash-Filter:     NEIN (Schwelle -5%/Tag, heute -1,27%)
+Markt-Status:     CLOSED
 ```
+
+### Tages-Performance Bull
+```
+Equity Open  ~ $100.000,00  →  Equity Close: $100.002,43
+Daily P/L:        +2,43 $  (+0,0024%)
+Alpha vs. SPY:    +1,27%
+Treiber:          JPM-Fill +0,24% während breiter Markt -1,27% nachgab
+```
+
+### Watchlist morgen 2026-06-18 (K1–K3 vorgeprüft, K4/K5 bei Open)
+```
+Symbol | Today  | K1 EMA50>200 | K2 RSI Range | K3 RS vs SPY | Grund
+-------|--------|--------------|--------------|--------------|------
+AVGO   | +4,35% | wahrsch. ✓   | mittel       | sehr stark   | Semis-Outperformer trotz SPY -1,27%
+BAC    | TBD    | TBD          | TBD          | wahrsch. ✓   | Financials-Korrelation zu JPM-Trade
+XOM    | TBD    | TBD          | TBD          | TBD          | Energy-Rotation Defensive
+JPM    | +0,73% | ✓            | 68 (heiß)    | ✓ heute      | bereits gehalten, kein Nachkauf
+```
+> Hinweis: Sektor Financials zeigt heute klare relative Stärke. Halte
+> max-3-Positionen-pro-Sektor-Regel im Auge (aktuell 1 × XLF mit JPM).
 
 ### Markt-Sentiment
 ```
@@ -40,11 +61,25 @@ V      | ✗ 321<329 | 60,3 | -3,86%    | 117%  |   —   | nein (K1/K3)
 ```
 
 ### Entscheidung
-Buy-Limit-Order JPM 3 Shares @ $332,80 (Day) platziert. Wartet auf Pullback (Kurs $334,25).
+Buy-Limit-Order JPM 3 Shares @ $332,80 (Day) platziert → **GEFÜLLT 15:20 ET @ $332,78**.
+JPM-Position offen, V5/V6 nicht ausgelöst, Stop-Loss $306,16.
+Watchlist morgen: AVGO, BAC, XOM (Sektor-Rotation Fin/Energy).
 
 ---
 
 ## Research-Archiv
+
+### 2026-06-17 Close 16:00 ET
+```
+SPY Close: $741,02 (-1,27% vs. $750,58 Vortag) | VIX: 16,41 (GRÜN)
+Bull-Equity: $100.002,43 (+$2,43 / +0,0024%) | Alpha: +1,27% vs SPY
+Position offen: JPM 3@$332,78 (+0,24%), Stop $306,16, V5/V6 OK
+Pending: keine
+Käufe Woche: 1/2
+Watchlist 18.06.: AVGO (Semis-Stärke), BAC (Fin), XOM (Energy-Rot.)
+Marktbild: Mega-Cap-Tech schwach (META -5,49%, MSFT -3,79%, GOOGL -2,55%),
+           Financials/Semis halten (JPM +0,73%, AVGO +4,35%).
+```
 
 ### 2026-06-17 Market Open
 ```
