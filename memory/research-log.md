@@ -54,6 +54,15 @@ Kandidaten geprüft: AAPL, MSFT, NVDA, JPM, LLY, V
 Treffer (alle 5 Signale): JPM
 Order: Buy Limit 3@$332,80 Day (Order-ID d90de96d)
 Käufe diese Woche: 0/2 (1 pending)
+### 2026-06-17 Pre-Market 08:30 ET
+```
+VIX: 16.21 (-1.22%) | SPY Premarket: +0.3% | Treasury 10Y: 4.20-4.25% | DXY: ~105-106
+Guardrails: GRÜN (Daily/Weekly 0%, DD 0%, VIX < 30, kein Crash-Filter)
+Earnings-Blackouts: keine (keine offenen Positionen)
+Makro-Events heute: Keine Fed-Sitzung, keine CPI/PPI. Nur Fed-Reden.
+Top-News: (1) Tech-Megacap Earnings-Revisions / KI-Capex bewegen Nasdaq. (2) Mögliche Verzögerung weiterer Fed-Zinssenkungen wg. zäher Kerninflation. (3) Geopolitik Südchinesisches Meer belastet Asien-Sentiment.
+Hinweis: Alpaca Paper-Account zeigt $100k (Memory: 10k €). Discrepancy notiert.
+Entscheidung: Kaufscan bei Market Open: JA (alle Guardrails grün, VIX niedrig).
 ```
 
 ### 2026-05-31 (Erster Tag)
