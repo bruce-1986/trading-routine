@@ -45,9 +45,20 @@ Alpha vs. SPY:         0,00%
 Daily Loss heute:     0,00%  [GRÜN — Limit: -3%]
 Weekly Loss:          0,00%  [GRÜN — Limit: -5%]
 Käufe diese Woche:    0 / 2
-VIX (letzter Stand):  —
+VIX (letzter Stand):  16,21  (2026-06-17 08:30 ET)
 Crash-Filter aktiv:   NEIN
 VIX-Filter aktiv:     NEIN
+```
+
+## Alpaca-Account-Abgleich (2026-06-17 08:30 ET)
+```
+Alpaca portfolio_value: $100.000,00 USD
+Alpaca cash:            $100.000,00 USD
+Alpaca equity:          $100.000,00 USD
+Alpaca Positionen:      0
+Memory-Tracking:        10.000,00 € (Startkapital seit 2026-05-31)
+STATUS:                 DISKREPANZ — Memory != Alpaca. Klärung erforderlich vor erstem Kauf.
+                        Mögliche Ursache: Alpaca-Paper-Default 100k$, Memory-Budget separat geführt.
 ```
 
 ---
