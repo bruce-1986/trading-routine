@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-05-31
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-17 09:36 ET
 
 ---
 
@@ -44,11 +44,18 @@ Alpha vs. SPY:         0,00%
 ```
 Daily Loss heute:     0,00%  [GRÜN — Limit: -3%]
 Weekly Loss:          0,00%  [GRÜN — Limit: -5%]
-Käufe diese Woche:    0 / 2
-VIX (letzter Stand):  —
-Crash-Filter aktiv:   NEIN
+Käufe diese Woche:    0 / 2  (1 Order pending: JPM)
+VIX (letzter Stand):  16,41  [GRÜN]
+Crash-Filter aktiv:   NEIN  (SPY +0,04% heute)
 VIX-Filter aktiv:     NEIN
 ```
+
+---
+
+## Pending Orders
+
+- JPM Buy Limit 3 @ $332.80 (Day) — Order-ID d90de96d
+  Aktueller Kurs $334.25 > Limit → wartet auf Pullback bis Tagesende
 
 ---
 
