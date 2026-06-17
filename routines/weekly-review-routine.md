@@ -33,13 +33,42 @@ Für alle Trades dieser Woche aus `memory/trade-log.md`:
 - Durchschnittliche Haltedauer der geschlossenen Trades?
 - Win-Rate diese Woche?
 
-## SCHRITT 4: Relative-Stärke-Ranking (Sektor-Scan)
+### Top-3 Winner-Trades (geschlossen ODER offen mit > +5%)
+Format pro Trade:
+- SYMBOL | +X% | Haltedauer | Welches Kaufsignal hat besonders gut funktioniert?
+
+### Top-3 Loser-Trades (geschlossen ODER offen mit < -3%)
+Format pro Trade:
+- SYMBOL | -X% | Haltedauer | Warum schief gelaufen? (z.B. Earnings-Miss, Sektor-Selloff, falsches Signal)
+
+**Fallback:** Bei < 3 abgeschlossenen Trades → "N/A — zu wenig Daten für KW[XX]".
+
+## SCHRITT 4: Strategie-Adherence-Check
+
+Prüfe für jeden Trade dieser Woche STRIKT gegen `memory/strategy.md`:
+- Waren beim KAUF alle 5 K-Signale (K1-K5) erfüllt?
+- Wurde die Position-Size eingehalten (max 10% / 7% bei VIX>25)?
+- Wurden Stop-Loss-Levels korrekt gesetzt?
+- Wurden Verkaufs-Trigger (V1-V6) befolgt?
+- Wurden Guardrails (Daily-Cap, Weekly-Cap, VIX-Filter, Earnings-Blackout) beachtet?
+
+Format:
+```
+Trade-Adherence-Score: X/X eingehalten
+Abweichungen:
+- [SYMBOL]: [Welche Regel verletzt?] → Berechtigt (Grund) / Fehler
+Fazit: STRATEGIE-LOCK STABIL / ANPASSUNG ZU PRÜFEN
+```
+
+**Fallback:** Bei 0 Trades → "Adherence: 100% — keine Trades, keine Verstöße".
+
+## SCHRITT 5: Relative-Stärke-Ranking (Sektor-Scan)
 
 Perplexity Research Skill Request #4 — Sektor-Check:
 Welche Sektoren haben den SPY diese Woche outperformt?
 Erstelle Ranking der Top-3-Sektoren für nächste Woche.
 
-## SCHRITT 5: Fundamentals-Screen (neue Kandidaten)
+## SCHRITT 6: Fundamentals-Screen (neue Kandidaten)
 
 Perplexity-Anfrage:
 "Welche S&P 500 oder MidCap 400 Aktien aus den Sektoren [TOP-SEKTOR-1, TOP-SEKTOR-2] haben:
@@ -49,27 +78,69 @@ Perplexity-Anfrage:
 - Keine Earnings in den nächsten 10 Tagen?
 Nenne max. 5 Kandidaten mit den relevanten Kennzahlen."
 
-## SCHRITT 6: Sektorgewichtung prüfen
+Notiere zusätzlich **1 Überraschungs-Insight** aus der Recherche
+(eine unerwartete Beobachtung — z.B. Sektor-Rotation, neuer Trend,
+auffällige Divergenz). Maximal 2 Sätze.
+
+## SCHRITT 7: Sektorgewichtung prüfen
 
 Aus `memory/trade-log.md` aktuelle Positionen nach Sektor gruppieren.
 Prüfe: Kein Sektor > 30% des investierten Kapitals.
 Falls Verstoß: Schwächste Position des Sektors auf Watchlist für Reduktion.
 
-## SCHRITT 7: Lessons Learned updaten
+## SCHRITT 8: Strategie-Updates (Vorschläge)
 
-Schreibe in `memory/lessons-learned.md`:
+Falls Schritt 4 Abweichungen oder Schritt 3 wiederholte Verlust-Muster zeigt:
+
+```
+Vorgeschlagene Regel-Anpassung:
+- WAS: [konkrete Regel aus strategy.md]
+- VON: [alter Wert]
+- AUF: [neuer Wert]
+- WARUM: [1-2 Sätze]
+- EVIDENZ: DATEN-GESTÜTZT (Trade-Statistik / Marktdaten) | BAUCHGEFÜHL (Hypothese, noch nicht verifiziert)
+```
+
+**WICHTIG:** Nur VORSCHLAGEN. `memory/strategy.md` wird in dieser Routine NICHT verändert
+(Strategie-Lock — nur bei explizitem User-Review änderbar).
+
+Bei keinen Auffälligkeiten: "Strategie stabil, keine Anpassung empfohlen."
+
+## SCHRITT 9: Selbstnote A–F
+
+Vergib EINE Note nach folgenden harten Kriterien (nicht subjektiv):
+
+```
+A: Alpha vs. SPY > +1.0% UND 0 Regelverstöße
+B: Alpha vs. SPY zwischen 0% und +1.0% UND 0 Regelverstöße
+C: Alpha vs. SPY zwischen -1.0% und 0% ODER 1 kleinerer Regelverstoß (berechtigt)
+D: Alpha vs. SPY < -1.0% ODER 1 unberechtigter Regelverstoß
+F: Daily-Cap getriggert ODER Strategie-Lock verletzt ODER >2 Regelverstöße
+```
+
+Begründung in genau 3 Sätzen: (1) Performance, (2) Strategie-Treue, (3) Größter Lernpunkt.
+
+**Fallback:** Bei 0 Trades → "Note: B-/Hold — keine Trades, aber alle Guardrails grün gehalten."
+
+## SCHRITT 10: Lessons Learned updaten
+
+Schreibe in `memory/lessons-learned.md` GENAU 3 konkrete Lessons:
 ```
 ### KW[XX] — [DATUM]
-Performance: +/-X% | Alpha: +/-X% vs SPY
-Beste Trade: [SYMBOL] +X%
-Schlechteste Trade: [SYMBOL] -X%
-Was gut lief: [1-2 Sätze]
-Was nicht gut lief: [1-2 Sätze]
-Strategie-Anpassung nötig: JA → [Was] / NEIN
-Watchlist nächste Woche: [Symbole + Sektor]
+Performance: +/-X% | Alpha: +/-X% vs SPY | Note: [A-F]
+
+Lesson 1: [Konkret + handlungsorientiert, kein Allgemeinplatz]
+Lesson 2: [...]
+Lesson 3: [...]
+
+Beste Trade: [SYMBOL] +X% (Grund: ...)
+Schlechteste Trade: [SYMBOL] -X% (Grund: ...)
+Überraschungs-Insight: [aus Schritt 6]
+Strategie-Anpassung vorgeschlagen: JA → [Was] / NEIN
+Watchlist nächste Woche: [3 Symbole + Sektor]
 ```
 
-## SCHRITT 8: Portfolio.md komplett updaten
+## SCHRITT 11: Portfolio.md komplett updaten
 
 ```
 ### Wochenabschluss KW[XX] — [DATUM]
@@ -84,26 +155,31 @@ ATH:              X.XXX €
 Drawdown:         X%
 Offene Positionen: X/8
 Nächste Woche max. Käufe: 2
-Watchlist: [Symbole]
+Watchlist: [3 Symbole]
 ```
 
-## SCHRITT 9: ClickUp Weekly Report
+## SCHRITT 12: ClickUp Weekly Report
 
 Task: `[WEEKLY] Review KW[XX] — [DATUM]`
 ```
-Performance: +/-X% | Alpha: +/-X% vs SPY
+Note: [A-F] | Performance: +/-X% | Alpha: +/-X% vs SPY
 YTD: +/-X% | YTD-Alpha: +/-X%
-Positionen: X/8 | Stärkster Sektor nächste Woche: [Sektor]
-Top-Kandidaten: [Symbole]
-Strategie-Status: STABIL / ANPASSUNG NÖTIG
+Positionen: X/8 | Adherence: X/X | Stärkster Sektor nächste Woche: [Sektor]
+
+Top-Kandidaten: [3 Symbole]
+Top-Lesson: [Lesson 1 in 1 Satz]
+Überraschungs-Insight: [1 Satz]
+Strategie-Status: STABIL / ANPASSUNG VORGESCHLAGEN ([was])
 ```
 Priorität 3 (Normal).
 
 ## FERTIG
 
 Ausgabe:
+- Note: [A-F]
 - Wochenrendite: X% | Alpha: X% | YTD: X%
-- Trades diese Woche: X Käufe, X Verkäufe, X Stops
+- Trades diese Woche: X Käufe, X Verkäufe, X Stops | Adherence: X/X
 - Stärkste Sektoren: [Liste]
-- Watchlist nächste Woche: [Symbole]
-- Strategie-Status: STABIL
+- Watchlist nächste Woche: [3 Symbole]
+- Überraschungs-Insight: [1 Satz]
+- Strategie-Status: STABIL / ANPASSUNG VORGESCHLAGEN
