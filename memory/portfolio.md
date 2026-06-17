@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-05-31
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-17 (Pre-Market 08:30 ET)
 
 ---
 
@@ -45,10 +45,12 @@ Alpha vs. SPY:         0,00%
 Daily Loss heute:     0,00%  [GRÜN — Limit: -3%]
 Weekly Loss:          0,00%  [GRÜN — Limit: -5%]
 Käufe diese Woche:    0 / 2
-VIX (letzter Stand):  —
+VIX (letzter Stand):  16,41  (2026-06-17 Pre-Market)
 Crash-Filter aktiv:   NEIN
 VIX-Filter aktiv:     NEIN
 ```
+
+**Hinweis Datenabgleich (2026-06-17):** Alpaca-Paper-API meldet portfolio_value=$100.000 / cash=$100.000 (Alpaca-Default-Startbetrag, USD). Memory-Buchhaltung läuft auf 10.000 € Startkapital. Differenz ist Initial-State, keine offenen Positionen — kein Handlungsbedarf.
 
 ---
 

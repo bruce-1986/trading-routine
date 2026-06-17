@@ -48,6 +48,15 @@ Symbol | EMA50>200 | RSI | RS vs SPY | Vol% | P/E | Kauf? (j/n)
 
 ## Research-Archiv
 
+### 2026-06-17 Pre-Market 08:30 ET
+```
+VIX: 16,41 (Range 15,77–16,44) | SPY Premarket: keine verlässl. Daten | 10Y Treasury: n/a | DXY: n/a
+Guardrails: Daily GRÜN | Weekly GRÜN | DD 0% | VIX-Filter NEIN | Crash-Filter NEIN
+Earnings-Blackouts: keine (0 offene Positionen)
+Makro heute: Fed-Zinsentscheid 20:00 ET, US-Einzelhandel 14:30 ET, JPN/SWE Zinsentscheide
+Entscheidung: Kaufscan bei Market Open: NEIN — Fed-Day, erhöhte Volatilität erwartet; abwarten bis nach FOMC.
+```
+
 ### 2026-05-31 (Erster Tag)
 ```
 Status: Initialisierung. Keine Positionen. Watchlist wird aufgebaut.
