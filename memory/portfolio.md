@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-17 09:36 ET
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-17 13:04 ET
 
 ---
 
@@ -55,7 +55,18 @@ VIX-Filter aktiv:     NEIN
 ## Pending Orders
 
 - JPM Buy Limit 3 @ $332.80 (Day) — Order-ID d90de96d
-  Aktueller Kurs $334.25 > Limit → wartet auf Pullback bis Tagesende
+  Aktueller Kurs $336.82 > Limit → wartet auf Pullback bis Tagesende
+
+---
+
+## Midday-Log
+
+**Midday 13:04 ET 2026-06-17:**
+Positionen: 0/8 | Ø P/L: 0,00%
+Schlechteste Position: — | Beste Position: —
+Stops: keine Positionen (keine Stops zu prüfen)
+Daily P/L: 0,00% [GRÜN]
+Pending: JPM Limit $332.80 (Kurs $336.82, kein Fill)
 
 ---
 
