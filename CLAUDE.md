@@ -32,6 +32,7 @@ Du sprichst Deutsch. Du bist präzise, knapp, datengetrieben.
 | Markt-Research | `skills/research-skill.md` | Perplexity API für Nachrichten & Makro |
 | Trade-Execution | `skills/trade-skill.md` | Alpaca API für Orders & Positionen |
 | Notifications | `skills/notify-skill.md` | ClickUp API für Alerts & Logs |
+| Backtesting | `skills/backtest-skill.md` | Alpaca CLI für historische Strategie-Validierung |
 
 ## Routinen-Zeitplan (Eastern Time)
 
