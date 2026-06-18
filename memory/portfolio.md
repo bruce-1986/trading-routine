@@ -1,18 +1,19 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-17 16:00 ET
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-18 09:34 ET (Market Open Scan)
 
 ---
 
-## Aktueller Stand (Marktschluss)
+## Aktueller Stand (Market Open 09:34 ET)
 
 ```
-Gesamtwert:       100.002,43 $
-Investiert:           1.000,77 $  (1,0%)
-Cash:                99.001,66 $  (99,0%)
-Unrealisiert P/L:        2,43 $
+Gesamtwert:       100.012,97 $   (Alpaca equity)
+Investiert:           1.011,69 $  (1,0%, JPM Marktwert)
+Cash:                99.001,65 $  (99,0%)
+Unrealisiert P/L:       13,35 $   (JPM)
 Realisiert P/L:          0,00 $
 Offene Positionen:       1 / 8
+Pending Orders:          1        (UNH Buy 24 @ $401.57 Limit Day)
 ```
 
 > Hinweis: Alpaca Paper-Account zeigt $100k. Memory verwendet ab heute USD direkt
@@ -44,23 +45,28 @@ Alpha heute:          +1,27%
 
 ---
 
-## Risiko-Status (Marktschluss 16:00 ET)
+## Risiko-Status (Market Open 09:34 ET)
 
 ```
-Daily P/L:            +0,0024%  [GRÜN — Limit: -3%]
-Weekly P/L:           +0,0024%  [GRÜN — Limit: -5%]   (Montag-Basis 100.000 $)
-Käufe diese Woche:    1 / 2      (JPM gefüllt)
-VIX (letzter Stand):  16,41     [GRÜN]
-Crash-Filter aktiv:   NEIN      (SPY -1,27%, Schwelle -5%)
+Daily P/L:            +0,0109%  [GRÜN — Limit: -3%]   (vs. last_equity 100.002,03 $)
+Weekly P/L:           +0,0130%  [GRÜN — Limit: -5%]   (Montag-Basis 100.000 $)
+Käufe diese Woche:    2 / 2      (JPM gefüllt 17.06., UNH pending 18.06.)
+VIX (letzter Stand):  17,10     [GRÜN]
+Crash-Filter aktiv:   NEIN      (SPY +0,3–0,5% Premarket)
 VIX-Filter aktiv:     NEIN
-Drawdown vom ATH:     0,00%     [GRÜN]
+Drawdown vom ATH:     0,00%     [GRÜN — ATH neu 100.012,97 $]
 ```
 
 ---
 
 ## Pending Orders
 
-*Keine pending Orders (JPM gefüllt um 15:20 ET @ 332,78 $).*
+| Symbol | Typ | Qty | Limit | Status | Order-ID |
+|--------|-----|-----|-------|--------|----------|
+| UNH | Buy Limit Day | 24 | 401,57 $ | new | b9674f87-9cad-4ac0-a39f-756157f8b5ed |
+
+> Hinweis: UNH öffnete pre-market ~$403,56. Limit $401,57 erfordert intraday-Retracement.
+> Bei Tagesende ohne Fill: Order expires automatisch.
 
 ---
 
@@ -80,6 +86,13 @@ V6 RSI>80 & RS<0:    RSI 68,5 < 80 → NICHT ausgelöst
 ---
 
 ## Tagesbilanz-Log
+
+**Market Open 2026-06-18 09:34 ET:**
+Gesamtwert: 100.012,97 $ | Cash: 99.001,65 $ (99,0%) | Investiert: 1.011,69 $ (1,0%)
+P/L heute: +10,94 $ (+0,011%) | JPM +1,34% intraday
+Pending: UNH Buy 24 @ $401,57 Limit Day | Käufe 2/2 (UNH pending zählt mit)
+ATH: 100.012,97 $ | DD: 0,00% [GRÜN]
+Guardrails: Daily +0,01% | Weekly +0,01% | VIX 17,10 | Crash-Filter: NEIN
 
 **Close 2026-06-17 16:00 ET:**
 Gesamtwert: 100.002,43 $ | Cash: 99.001,66 $ (99,0%) | Investiert: 1.000,77 $ (1,0%)

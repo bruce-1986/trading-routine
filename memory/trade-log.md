@@ -18,7 +18,7 @@
 
 | Symbol | Datum | Typ | Qty | Limit | Status | Order-ID |
 |--------|-------|-----|-----|-------|--------|----------|
-| — | — | — | — | — | — | — |
+| UNH | 2026-06-18 | Buy Limit (Day) | 24 | 401,57 $ | new | b9674f87-9cad-4ac0-a39f-756157f8b5ed |
 
 ---
 
@@ -33,6 +33,21 @@
 ---
 
 ## Trades
+
+### KAUF (pending): UNH am 2026-06-18
+- Limit-Order:    $401.57 (Day, +0,5% über Vortagesschluss $399.57)
+- Menge:          24 Shares
+- Budget:         $10.001,30 (10% von $100.012,97; VIX 17,10 < 25 → 10%)
+- Erwartete Kosten: ~$9.637,68 (bei Fill am Limit)
+- Stop-Loss V1:   wird auf Fill * 0.92 gesetzt (ca. $369.44 bei Limit-Fill)
+- TP1 / V3:       Fill * 1.20 (ca. $481.88 bei Limit-Fill)
+- TP2 / V4:       Fill * 1.35 (ca. $542.12 bei Limit-Fill)
+- Kaufsignale:    K1✓ EMA50 370,76>EMA200 333,10 | K2✓ RSI 57,7 | K3✓ RS +28,57% vs SPY 63d | K4✓ Vol 135% Avg20 | K5✓ FwdP/E 30,63 + Rev+18,63% YoY
+- Sektor:         Health Care (XLV) — kein Konflikt mit JPM (Financials/XLF)
+- Earnings:       2026-07-16 (28 Tage entfernt, kein Blackout)
+- Pre-Market-Quote: ~$403,56 → Limit $401,57 erfordert Retracement zum Fill
+- Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
+- Status:         NEW / Day Order — bei Tagesende ggf. expired
 
 ### KAUF (filled): JPM am 2026-06-17
 - Limit-Order:    $332.80 (Day, +0,5% über Vortagesschluss $331.14)
