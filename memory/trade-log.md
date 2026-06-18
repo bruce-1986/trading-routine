@@ -8,17 +8,16 @@
 
 | Symbol | Kaufdatum  | Kaufkurs   | Aktuell   | Gewinn/Verlust | Stop-Loss | TP1     | TP2     | Signale         |
 |--------|------------|------------|-----------|----------------|-----------|---------|---------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 333,56 $  | +2,43 $ (+0,24%) | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $   | 329,42 $  | -10,37 $ (-1,01%) | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 402,07 $  | +12,00 $ (+0,12%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 1.000,77 $ | **Cash:** 99.001,66 $ | **Positionen:** 1/8
+**Gesamt investiert:** 10.637,66 $ | **Cash:** 89.363,97 $ | **Positionen:** 2/8
 
 ---
 
 ## Offene Orders (pending)
 
-| Symbol | Datum | Typ | Qty | Limit | Status | Order-ID |
-|--------|-------|-----|-----|-------|--------|----------|
-| UNH | 2026-06-18 | Buy Limit (Day) | 24 | 401,57 $ | new | b9674f87-9cad-4ac0-a39f-756157f8b5ed |
+_Keine — UNH-Limit am 2026-06-18 vor Midday gefüllt._
 
 ---
 
@@ -34,20 +33,20 @@
 
 ## Trades
 
-### KAUF (pending): UNH am 2026-06-18
+### KAUF (filled): UNH am 2026-06-18
 - Limit-Order:    $401.57 (Day, +0,5% über Vortagesschluss $399.57)
+- Fill:           $401.57 (vor Midday 13:02 ET; Retracement zum Limit erfolgt)
 - Menge:          24 Shares
-- Budget:         $10.001,30 (10% von $100.012,97; VIX 17,10 < 25 → 10%)
-- Erwartete Kosten: ~$9.637,68 (bei Fill am Limit)
-- Stop-Loss V1:   wird auf Fill * 0.92 gesetzt (ca. $369.44 bei Limit-Fill)
-- TP1 / V3:       Fill * 1.20 (ca. $481.88 bei Limit-Fill)
-- TP2 / V4:       Fill * 1.35 (ca. $542.12 bei Limit-Fill)
+- Investiert:     9.637,68 $ (~9,6% Portfolio)
+- Stop-Loss V1:   $369.44 (-8% vom Fill)
+- Trailing V2:    -12% vom Hoch (Tracking ab heute)
+- TP1 / V3:       $481.88 (+20% → 50% verkaufen)
+- TP2 / V4:       $542.12 (+35% → Rest verkaufen)
 - Kaufsignale:    K1✓ EMA50 370,76>EMA200 333,10 | K2✓ RSI 57,7 | K3✓ RS +28,57% vs SPY 63d | K4✓ Vol 135% Avg20 | K5✓ FwdP/E 30,63 + Rev+18,63% YoY
 - Sektor:         Health Care (XLV) — kein Konflikt mit JPM (Financials/XLF)
 - Earnings:       2026-07-16 (28 Tage entfernt, kein Blackout)
-- Pre-Market-Quote: ~$403,56 → Limit $401,57 erfordert Retracement zum Fill
+- Status Midday 18.06.: 402,07 $ Kurs, +0,12% Position-PnL, V1–V4 nicht ausgelöst
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
-- Status:         NEW / Day Order — bei Tagesende ggf. expired
 
 ### KAUF (filled): JPM am 2026-06-17
 - Limit-Order:    $332.80 (Day, +0,5% über Vortagesschluss $331.14)
