@@ -6,18 +6,18 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Aktuell   | Gewinn/Verlust | Stop-Loss | TP1     | TP2     | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs   | Close 18.06.| Gewinn/Verlust | Stop-Loss | TP1     | TP2     | Signale         |
 |--------|------------|------------|-----------|----------------|-----------|---------|---------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 329,42 $  | -10,37 $ (-1,01%) | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 402,07 $  | +12,00 $ (+0,12%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $   | 326,02 $  | -20,28 $ (-2,03%) | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 400,96 $  | -14,64 $ (-0,15%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 10.637,66 $ | **Cash:** 89.363,97 $ | **Positionen:** 2/8
+**Gesamt investiert:** 10.601,10 $ (Marktwert) | **Cash:** 89.363,97 $ | **Positionen:** 2/8
 
 ---
 
 ## Offene Orders (pending)
 
-_Keine — UNH-Limit am 2026-06-18 vor Midday gefüllt._
+_Keine — Verkaufssignale V1–V6 am Close 2026-06-18 für JPM & UNH nicht ausgelöst._
 
 ---
 
@@ -46,6 +46,7 @@ _Keine — UNH-Limit am 2026-06-18 vor Midday gefüllt._
 - Sektor:         Health Care (XLV) — kein Konflikt mit JPM (Financials/XLF)
 - Earnings:       2026-07-16 (28 Tage entfernt, kein Blackout)
 - Status Midday 18.06.: 402,07 $ Kurs, +0,12% Position-PnL, V1–V4 nicht ausgelöst
+- Status Close 18.06.: 400,96 $ Close, -0,15% Position-PnL, V1–V6 nicht ausgelöst (EMA50 372,91 > EMA200 335,16; RSI 58,7; RS_4w +3,95%)
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
 
 ### KAUF (filled): JPM am 2026-06-17
@@ -61,6 +62,7 @@ _Keine — UNH-Limit am 2026-06-18 vor Midday gefüllt._
 - Sektor:         Financials (XLF Top-3)
 - Earnings:       2026-07-15 (kein Blackout, 28 Tage entfernt)
 - Status Close 17.06.: $333.56 Tagesschluss, +0,24% Position-PnL, V5/V6 nicht ausgelöst
+- Status Close 18.06.: $326,02 Tagesschluss, -2,03% Position-PnL, V1–V6 nicht ausgelöst (EMA50 308,67 > EMA200 307,35; RSI 62,1; RS_4w +6,96%)
 - Alpaca Order-ID: d90de96d-9084-4a6a-b5a1-de48899e75f4
 
 ---
@@ -94,4 +96,4 @@ _Keine — UNH-Limit am 2026-06-18 vor Midday gefüllt._
 
 | Woche | Depot-Start | Depot-Ende | Wochenergebnis | vs. SPY |
 |-------|-------------|------------|----------------|---------|
-| 2026-W25 | 100.000,00 $ (Mo 15.06.) | 100.002,43 $ (lfd. Mi) | +0,0024% | TBD |
+| 2026-W25 | 100.000,00 $ (Mo 15.06.) | 99.965,07 $ (lfd. Do) | -0,035% | TBD |

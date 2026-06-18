@@ -4,7 +4,69 @@
 
 ---
 
-## Heutiger Market-Check — 2026-06-18 (Market Open 09:30 ET)
+## Heutiger Market-Check — 2026-06-18 (Close 16:00 ET)
+
+### Tagesperformance & Markt
+```
+Alpaca equity Close:   99.965,07 $   (last_equity 100.002,03 → daily -36,96 $ / -0,0370%)
+Cash:                  89.363,97 $   (89,4%)
+Investiert:            10.601,10 $   (10,6% — JPM 978,06 $ + UNH 9.623,04 $)
+ATH:                  100.012,97 $   (Open 18.06.)
+Drawdown:              -0,0479%
+
+SPY:                   $746,75 Close (vs. $741,02 Vortag) → +0,773%
+Alpha vs SPY:          -0,810%
+JPM intraday:          -2,23% (Close 326,02 $ vs 333,46 Vortag)
+UNH intraday:          +0,36% (Close 400,96 $ vs 399,53 Vortag)
+VIX:                   Tagesschluss n/a (Perplexity ohne Daten — Open 17,10 GRÜN)
+```
+
+### Verkaufssignal-Check Close (V1–V6) — beide Positionen unauffällig
+```
+JPM Close 326,02 $   V1 SICHER (306,16 $) | V2 SICHER | V3/V4 nicht erreicht
+                    V5 EMA50 308,67 > EMA200 307,35 → KEIN Death Cross
+                    V6 RSI 62,1 + RS_4w +6,96% → NICHT ausgelöst
+UNH Close 400,96 $   V1 SICHER (369,44 $) | V2 SICHER | V3/V4 nicht erreicht
+                    V5 EMA50 372,91 > EMA200 335,16 → KEIN Death Cross
+                    V6 RSI 58,7 + RS_4w +3,95% → NICHT ausgelöst
+→ Keine Verkaufsorder für 19.06. nötig.
+```
+
+### Watchlist 19.06.2026 (K1–K4 vorgeprüft, K5 bei Open)
+```
+Symbol | Close   | EMA50    | EMA200  | K1 | RSI  | K2 | RS63d   | K3 | Vol% | K4 | Sektor / Grund
+-------|---------|----------|---------|----|------|----|---------|----|------|----|-----------------
+AVGO   | 411,07  |  399,96  | 358,92  | ✓  | 51,3 | ✓  | +15,37  | ✓  | 135  | ✓  | XLK Semis — alle 4 ✓ (Top-Pick)
+GS     | 1096,99 |  986,97  | 878,98  | ✓  | 65,6 | ✓  | +22,31  | ✓  | 112  | ✗* | XLF — SEKTORKONFLIKT mit JPM
+CAT    |  985,23 |  869,00  | 671,51  | ✓  | 65,4 | ✓  | +29,90  | ✓  |  96  | ✗  | XLI Industrials — K4 fail, hoher RS
+NVDA   |  210,39 |  206,90  | 190,09  | ✓  | 50,1 | ✓  |  +4,70  | ✓  |  72  | ✗  | XLK Semis — K4 fail
+LLY    | 1098,76 | 1045,28  | 963,85  | ✓  | 54,0 | ✓  |  +6,55  | ✓  |  78  | ✗  | XLV Health — 2. XLV-Pos. neben UNH (max 3)
+AMD    |  537,13 |  423,20  | 266,67  | ✓  | 61,2 | ✓  | +148,54 | ✓  |  75  | ✗  | XLK Semis — K4 fail
+BAC    |   56,15 |   52,87  |  52,29  | ✓  | 67,6 | ✓  |  +6,30  | ✓  | 150  | ✓  | XLF — SEKTORKONFLIKT mit JPM, RSI hot
+```
+> *GS K4 Vol% basiert auf gestrigem Tagesvolumen (heutige IEX-Snapshots partial).
+
+### Watchlist morgen: AVGO (Top-Pick, alle 4 ✓), NVDA (K4 nahe), GOOGL (K4 fail), LLY (K4 fail), CAT (Industrials, RS+30%)
+
+### Wochenstatus & Käufe
+```
+Käufe diese Woche: 2 / 2 (JPM 17.06., UNH 18.06.) — KEINE Käufe mehr bis Mo 22.06.
+Weekly P/L:         -0,0349% (Mo-Basis 100.000 $)   [GRÜN — Limit -5%]
+Weekly Loss Cap:    NICHT ausgelöst (Schwelle 95.000 $)
+```
+
+### Notification
+```
+ClickUp-API: CLICKUP_LIST_ID ('6-901218902364-1') wird weiterhin als ungültig
+  abgewiesen (validateListIDEx INPUT_003). Memory-Files sind primäre Quelle
+  → Push-Notification an Routine-Owner gesendet.
+Perplexity-Marktabfrage: keine US-Tagesdaten für 18.06.2026 verfügbar
+  → SPY/VIX aus Alpaca + IEX-Bars, Watchlist aus eigener K1–K4-Berechnung.
+```
+
+---
+
+## Market-Check — 2026-06-18 (Market Open 09:30 ET)
 
 ### Market Open 09:34 ET — 2026-06-18
 
