@@ -4,7 +4,101 @@
 
 ---
 
-## Heutiger Market-Check — 2026-06-18 (Pre-Market 08:30 ET)
+## Heutiger Market-Check — 2026-06-18 (Market Open 09:30 ET)
+
+### Market Open 09:34 ET — 2026-06-18
+
+**Alpaca Account-Snapshot**
+```
+equity:           100.012,97 $
+cash:              99.001,65 $
+JPM-Position:      3 Shares, current $337,23, +$13,35 (+1,34%) intraday
+```
+
+**Guardrails (alle GRÜN)**
+```
+Daily P/L:        +0,0109%   < +/-3%
+Weekly P/L:       +0,0130%   < +/-5%
+VIX:              17,10      < 30
+Crash-Filter:     INAKTIV    (SPY +0,3–0,5% Premarket)
+Drawdown:         0,00%      < -15%
+Cash:             99,0%      > 20% Reserve
+Käufe Woche:      1/2 vor Scan → 1 Kauf-Slot frei
+```
+
+**JPM Verkaufssignal-Check (Open)**
+```
+V1 -8%  Stop $306,16  vs. $337,23  → SICHER
+V2 -12% Trailing       → Position <2 Tage, kein 52w-Hoch-Tracking
+V3 +20% TP1 $399,34   → nicht erreicht
+V4 +35% TP2 $449,25   → nicht erreicht
+V5 EMA50 308,53 > EMA200 306,97 → KEIN Death Cross
+V6 RSI 72,3 < 80 → NICHT ausgelöst
+→ Keine Verkaufsorder.
+```
+
+**Kandidaten-Scan (K1–K5)**
+Datenbasis: Daily Bars bis Close 2026-06-17 (heutige Bar partial)
+```
+SYM   Close     EMA50    EMA200  K1  RSI   K2  RS63d   K3  Vol%  K4  Treffer
+JPM   333,56   308,53   306,97   V  72,3   X  +3,92    V   206   V   (gehalten)
+AVGO  392,91   410,42   359,38   V  46,2   X  +12,40   V   139   V   K2 fail
+BAC    56,54    52,76    52,20   V  71,4   X  +8,78    V   152   V   K2 fail, +XLF-Konflikt
+XOM   140,79   150,62   134,40   V  36,4   X  -22,67   X   112   X   K2/K3/K4 fail
+XLK   185,74   171,11   196,46   X  54,8   V  +22,60   V   112   X   K1/K4 fail (ETF)
+XLF    54,06    51,89    52,55   X  67,6   V  -1,62    X   128   V   K1/K3 fail (ETF)
+XLV   150,68   147,91   149,29   X  51,5   V  -9,64    X   108   X   K1/K3/K4 fail (ETF)
+NVDA  204,70   208,74   189,70   V  45,4   X  +1,47    V    71   X   K2/K4 fail
+MSFT  379,05   412,86   451,98   X  34,7   X  -15,27   X   106   X   K1/K2/K3/K4 fail
+AAPL  296,07   287,94   267,84   V  49,0   X  +6,45    V    74   X   K2/K4 fail
+LLY  1112,10  1008,42   964,26   V  57,3   V  +9,15    V    78   X   K4 fail
+V     330,36   320,73   329,22   X  57,1   V  -1,53    X    99   X   K1/K3/K4 fail
+GOOGL 363,86   366,38   310,33   V  46,1   X  +6,21    V    87   X   K2/K4 fail
+META  567,22   622,60   655,70   X  39,2   X  -19,86   X   140   V   K1/K2/K3 fail
+UNH   399,57   370,76   333,10   V  57,7   V  +28,57   V   135   V   ALLE 4 ✓ → K5 prüfen
+HD    327,48   322,98   359,07   X  56,0   V  -13,06   X   162   V   K1/K3 fail
+MA    492,93   499,27   535,32   X  49,8   X  -11,04   X    54   X   K1/K2/K3/K4 fail
+```
+
+**UNH K5 (Fundamentals via Perplexity)**
+```
+Forward P/E:        30,63   (<= 35)  ✓
+Rev Growth YoY:    +18,63%  (>= 10%) ✓
+Next Earnings:    2026-07-16 → 28 Tage, KEIN Blackout
+Schlagzeile:       Analysten-Konsens "Buy", letzter Kurs ~$399,53
+→ K5 ✓ → UNH alle 5 Signale GRÜN
+```
+
+**Sektor-Check**
+```
+Aktuell offen: JPM (Financials/XLF)  → 1 Sektor
+UNH = Health Care (XLV)              → unterschiedlicher Sektor, OK
+Max-3-pro-Sektor: nicht tangiert.
+```
+
+**Entscheidung / Order**
+```
+BESTER Kandidat: UNH (höchste RS +28,57%, alle 5 Signale ✓)
+Budget (VIX 17,10 < 25 → 10%): $100.012,97 × 0,10 = $10.001,30
+Limit:    round($399,57 × 1,005, 2) = $401,57
+Shares:   floor($10.001,30 / $401,57) = 24
+Kosten:   24 × $401,57 = $9.637,68 (~9,6% des Portfolios)
+Order:    BUY UNH 24 @ Limit $401,57 Day → submitted 09:34 ET
+Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
+Status:   NEW (UNH öffnete ~$403,56, Limit erfordert Retracement)
+```
+
+**Käufe diese Woche nach Scan: 2 / 2** (JPM filled, UNH pending)
+→ Nach UNH-Order keine weiteren Käufe diese Woche zugelassen.
+
+**Notification-Hinweis**
+```
+ClickUp-API: CLICKUP_LIST_ID hat ungueltiges Format (validateListIDEx).
+→ Per Notify-Skill Fallback: Memory-Files sind primaere Quelle.
+→ Routine-Log + Trade-Log + Portfolio aktualisiert.
+```
+
+---
 
 ### Pre-Market 08:30 ET — 2026-06-18
 ```
