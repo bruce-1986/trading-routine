@@ -4,6 +4,70 @@
 
 ---
 
+## Heutiger Market-Check — 2026-06-18 (Pre-Market 08:30 ET)
+
+### Pre-Market 08:30 ET — 2026-06-18
+```
+VIX:              17,10   (-7,27% vs. Vortag-Close 18,44; intraday Quote Cboe 07:29 ET)
+                  [Hinweis: Memory 17.06. 16:00 ET = 16,41 — VIX-Tick nach Close höher;
+                   Diskrepanz notiert, alle Werte weiterhin GRÜN < 30]
+SPY Premarket:    +0,3 bis +0,5 %  (indikativ → ~$743–745 vs. $741,02 Close)
+10Y Treasury:     4,2–4,3 %
+DXY:              ~105–106 (unverändert)
+Markt-Status:     Pre-Market
+```
+
+### Guardrails Pre-Market 08:30 ET
+```
+Daily Loss Cap   -3 %:   Heute Equity 100.008,60 $ vs. last_equity 100.002,03 $
+                          → P/L +0,0066 %  [GRÜN]
+Weekly Loss Cap  -5 %:   +0,009 % vs. Mo-Basis 100.000 $   [GRÜN]
+Drawdown -15 %:          ATH 100.008,60 $, DD 0,00 %        [GRÜN]
+Drawdown -20 %:          nicht aktiv                         [GRÜN]
+VIX-Filter > 30:         VIX 17,10                           [GRÜN]
+Crash-Filter SPY -5%:    SPY gestern -1,27 %                 [INAKTIV]
+Käufe diese Woche:       1 / 2                               (1 frei)
+Earnings-Blackout:       keine (siehe unten)
+```
+
+### Alpaca-Konsistenz-Check
+```
+Alpaca portfolio_value:  100.008,60 $   (Memory Close 17.06.: 100.002,43 $)
+Alpaca cash:              99.001,65 $   (Memory: 99.001,66 $)  → konsistent
+Alpaca equity:           100.008,60 $   (last_equity 100.002,03 $)
+JPM-Position:    3 Shares @ Entry $332,78 — current $335,65
+                  unrealized P/L +8,61 $ (+0,86 %), change_today +0,66 %
+→ Memory & Alpaca konsistent (Differenz Close = Pre-Market-Tick JPM).
+```
+
+### Earnings-Blackouts (offene Positionen)
+```
+JPM:  nächste Earnings 2026-07-14 (Q2)  → 26 Tage entfernt, KEIN Blackout
+→ Stop-Loss bleibt V1 -8 % ($306,16). Kein Engsetzen nötig.
+```
+
+### Makro-Events heute 2026-06-18
+```
+- Kein FOMC, keine CPI/PCE, keine NFP.
+- Wöchentliche Initial Jobless Claims (08:30 ET).
+- Diverse Fed-Reden mittlerer Relevanz.
+```
+
+### Top-News
+```
+1. Niedriger VIX (~17) + Erwartung sanfter Fed-Politik stützen Risk-Assets.
+2. US-Mega-Cap-Tech-Rallye treibt Indizes nahe Rekordniveau, SPY indikativ +0,3 %.
+3. Markt-Narrativ: Timing & Anzahl der Fed-Zinsschritte 2026 bleibt zentral.
+```
+
+### Entscheidung Pre-Market 2026-06-18
+Kaufscan bei Market Open 09:30 ET: **JA**.
+Alle Guardrails GRÜN, VIX deutlich < 25, kein Crash-Filter, 1 Kauf-Slot frei.
+Watchlist (aus Close-Eintrag 17.06.): AVGO (Semis), BAC (Financials — auf Sektor-
+Gewichtung achten, JPM bereits XLF), XOM (Energy-Rotation).
+
+---
+
 ## Heutiger Market-Check — 2026-06-17 (Close 16:00 ET)
 
 ### Makro-Lage (Tagesschluss)
