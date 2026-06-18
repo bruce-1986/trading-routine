@@ -1,19 +1,19 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-18 09:34 ET (Market Open Scan)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-18 13:02 ET (Midday Stop-Check)
 
 ---
 
-## Aktueller Stand (Market Open 09:34 ET)
+## Aktueller Stand (Midday 13:02 ET)
 
 ```
-Gesamtwert:       100.012,97 $   (Alpaca equity)
-Investiert:           1.011,69 $  (1,0%, JPM Marktwert)
-Cash:                99.001,65 $  (99,0%)
-Unrealisiert P/L:       13,35 $   (JPM)
+Gesamtwert:       100.001,63 $   (Alpaca equity)
+Investiert:        10.637,66 $   (10,6%, JPM + UNH Marktwert)
+Cash:              89.363,97 $   (89,4%)
+Unrealisiert P/L:       +1,63 $  (JPM -10,37 $ / UNH +12,00 $)
 Realisiert P/L:          0,00 $
-Offene Positionen:       1 / 8
-Pending Orders:          1        (UNH Buy 24 @ $401.57 Limit Day)
+Offene Positionen:       2 / 8
+Pending Orders:          0        (UNH Limit gefüllt zwischen Open & Midday)
 ```
 
 > Hinweis: Alpaca Paper-Account zeigt $100k. Memory verwendet ab heute USD direkt
@@ -25,67 +25,75 @@ Pending Orders:          1        (UNH Buy 24 @ $401.57 Limit Day)
 
 ```
 Startkapital:     100.000,00 $  (2026-05-29 Alpaca / 2026-05-31 Bull Init)
-All-Time-High:    100.002,43 $
-Aktueller DD:          0,00%  (vom ATH)
-DD-Alarm bei:        -15,00%  → 85.000 $
-DD-Stopp bei:        -20,00%  → 80.000 $
+All-Time-High:    100.012,97 $
+Aktueller DD:         -0,011%  (vom ATH 100.012,97 $)
+DD-Alarm bei:        -15,00%  → 85.011 $
+DD-Stopp bei:        -20,00%  → 80.010 $
 
-Performance heute:    +0,0024%
-SPY heute:            -1,27%
-Alpha heute:          +1,27%
+Performance heute:    -0,0004%   (equity 100.001,63 / last_equity 100.002,03)
+SPY heute:            n/a
+Alpha heute:          n/a
 ```
 
 ---
 
 ## Offene Positionen (Detail)
 
-| Symbol | Qty | Entry | Close | Unreal. P/L | % | Stop-Loss V1 | TP1/V3 | TP2/V4 |
-|--------|-----|-------|-------|-------------|---|--------------|--------|--------|
-| JPM    | 3   | 332,78 $ | 333,56 $ | +2,43 $ | +0,24% | 306,16 $ | 399,34 $ | 449,25 $ |
+| Symbol | Qty | Entry | Aktuell | Unreal. P/L | % | Stop-Loss V1 | TP1/V3 | TP2/V4 |
+|--------|-----|-------|---------|-------------|---|--------------|--------|--------|
+| JPM    | 3   | 332,78 $ | 329,33 $ | -10,37 $ | -1,04% | 306,16 $ | 399,34 $ | 449,25 $ |
+| UNH    | 24  | 401,57 $ | 402,07 $ | +12,00 $ | +0,12% | 369,44 $ | 481,88 $ | 542,12 $ |
 
 ---
 
-## Risiko-Status (Market Open 09:34 ET)
+## Risiko-Status (Midday 13:02 ET)
 
 ```
-Daily P/L:            +0,0109%  [GRÜN — Limit: -3%]   (vs. last_equity 100.002,03 $)
-Weekly P/L:           +0,0130%  [GRÜN — Limit: -5%]   (Montag-Basis 100.000 $)
-Käufe diese Woche:    2 / 2      (JPM gefüllt 17.06., UNH pending 18.06.)
-VIX (letzter Stand):  17,10     [GRÜN]
-Crash-Filter aktiv:   NEIN      (SPY +0,3–0,5% Premarket)
+Daily P/L:            -0,0004%  [GRÜN — Limit: -3%]   (equity 100.001,63 / last 100.002,03)
+Weekly P/L:           +0,0016%  [GRÜN — Limit: -5%]   (Montag-Basis 100.000 $)
+Käufe diese Woche:    2 / 2      (JPM gefüllt 17.06., UNH gefüllt 18.06.)
+VIX (letzter Stand):  17,10     [GRÜN — Open-Wert, intraday nicht neu erhoben]
+Crash-Filter aktiv:   NEIN
 VIX-Filter aktiv:     NEIN
-Drawdown vom ATH:     0,00%     [GRÜN — ATH neu 100.012,97 $]
+Drawdown vom ATH:     -0,011%   [GRÜN]
 ```
 
 ---
 
 ## Pending Orders
 
-| Symbol | Typ | Qty | Limit | Status | Order-ID |
-|--------|-----|-----|-------|--------|----------|
-| UNH | Buy Limit Day | 24 | 401,57 $ | new | b9674f87-9cad-4ac0-a39f-756157f8b5ed |
-
-> Hinweis: UNH öffnete pre-market ~$403,56. Limit $401,57 erfordert intraday-Retracement.
-> Bei Tagesende ohne Fill: Order expires automatisch.
+_Keine — UNH-Limit zwischen Open und Midday gefüllt._
 
 ---
 
-## Signal-Check JPM (V1–V6) am Marktschluss
+## Signal-Check Midday 13:02 ET (V1–V4)
 
 ```
-V1 Stop-Loss   -8%:   Trigger 306,16 $ — Kurs 333,59 $ → SICHER
-V2 Trailing  -12%:    nicht relevant (Position <1 Tag, kein 52w-Hoch-Tracking)
+JPM @ 329,42 $  (Entry 332,78 $, P/L -1,01%)
+V1 Stop-Loss   -8%:   Trigger 306,16 $ — Kurs 329,42 → SICHER
+V2 Trailing  -12%:    max bisher ~333,59 → Stop ~293,56 → SICHER
 V3 TP1      +20%:    Trigger 399,34 $ — nicht erreicht
 V4 TP2      +35%:    Trigger 449,25 $ — nicht erreicht
-V5 Death Cross:       EMA50 306,94 > EMA200 305,80 → KEIN Cross
-V6 RSI>80 & RS<0:    RSI 68,5 < 80 → NICHT ausgelöst
+
+UNH @ 402,07 $  (Entry 401,57 $, P/L +0,12%)
+V1 Stop-Loss   -8%:   Trigger 369,44 $ — Kurs 402,07 → SICHER
+V2 Trailing  -12%:    max bisher 402,07 → Stop 353,82 → SICHER
+V3 TP1      +20%:    Trigger 481,88 $ — nicht erreicht
+V4 TP2      +35%:    Trigger 542,12 $ — nicht erreicht
 ```
 
-→ Keine Verkaufsorder nötig.
+RSI/EMA werden bei Midday nicht geprüft (nur Open & Close).
+→ Keine Verkaufsorder nötig. Keine Stops ausgelöst.
 
 ---
 
 ## Tagesbilanz-Log
+
+**Midday 13:02 ET 2026-06-18:**
+Positionen: 2/8 | Ø P/L: -0,46% | UNH-Limit gefüllt seit Open
+Schlechteste Position: JPM -1,01% | Beste Position: UNH +0,12%
+Stops: alle regulär (V1/V2/V3/V4 für JPM und UNH nicht ausgelöst)
+Daily P/L: -0,0004% [GRÜN] | Cash: 89.363,97 $ (89,4%) | Pending: 0
 
 **Market Open 2026-06-18 09:34 ET:**
 Gesamtwert: 100.012,97 $ | Cash: 99.001,65 $ (99,0%) | Investiert: 1.011,69 $ (1,0%)
