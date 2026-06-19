@@ -98,6 +98,15 @@ Daily P/L 0,00% [GRÜN] | Weekly -0,037% [GRÜN] | DD -0,050% [GRÜN] | Käufe 2
 Schritt 2 Guardrail-Check obsolet (Markt zu) — kein Stop-Check live möglich, V1/V2 anhand Last Trade (Vortagsschluss): JPM 306,16 $ SICHER (+6,2%), UNH 369,44 $ SICHER (+8,5%).
 > Entscheidung: Keine Order. Routine pausiert bis Mo 22.06. Pre-Market 08:30 ET.
 
+**Midday 13:02 ET 2026-06-19 — HANDELSFEIERTAG (Juneteenth):**
+NYSE/Nasdaq geschlossen (Alpaca clock: is_open=false, next_open Mo 2026-06-22 09:30 ET).
+Positionen: 2/8 | Ø P/L: -1,21 % | Equity 99.962,66 $ = last_equity (kein Trade-Tick).
+Schlechteste Position: JPM -2,27 % (Last 325,22 $, V1-Puffer +6,2 %)
+Beste Position:        UNH -0,15 % (Last 400,96 $, V1-Puffer +8,5 %)
+Stops: alle SICHER — V1–V4 nicht prüfbar live (Markt zu), Last-Trade-Basis OK.
+Daily P/L: 0,00 % [GRÜN — Limit -3 %] | Pending Orders: 0 | Cash 89.363,96 $
+> No-Op-Routine: kein Live-Check, kein ClickUp-Log, keine Order. Nächste echte Stop-Prüfung Mo 22.06. 09:30 ET.
+
 **Pre-Market 2026-06-19 08:30 ET:**
 Gesamtwert: 99.962,66 $ | Cash: 89.363,96 $ (89,4%) | Investiert: 10.598,70 $ (10,6%)
 Alpaca equity = last_equity (kein Trade seit Close) → Daily P/L 0,00 % [GRÜN]
