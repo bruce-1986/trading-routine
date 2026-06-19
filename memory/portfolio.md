@@ -89,6 +89,16 @@ V6 RSI>80 UND RS4w<0: RSI 58,7 | RS_4w +3,95% → NICHT ausgelöst
 
 ## Tagesbilanz-Log
 
+**Pre-Market 2026-06-19 08:30 ET:**
+Gesamtwert: 99.962,66 $ | Cash: 89.363,96 $ (89,4%) | Investiert: 10.598,70 $ (10,6%)
+Alpaca equity = last_equity (kein Trade seit Close) → Daily P/L 0,00 % [GRÜN]
+ATH: 100.012,97 $ | DD: -0,050 % [GRÜN]
+Guardrails: Daily 0,00 % | Weekly -0,037 % | Käufe 2/2 (LIMIT) | VIX 16,4–17,0 | Crash-Filter: NEIN
+SPY: 746,75 Close, After-Hours-Tick 748,46 (+0,23%)
+JPM 325,22 (-2,27 % vs Entry, V1 Puffer +6,2%) | UNH 400,96 (-0,15 %, V1 Puffer +8,5%)
+Earnings-Blackouts: keine (JPM 14.07., UNH 16.07.)
+> Entscheidung: KEIN Kaufscan heute (2/2). Nur Stop-Check & Halten bis Mo 22.06.
+
 **Close 2026-06-18 16:00 ET:**
 Gesamtwert: 99.965,07 $ | Cash: 89.363,97 $ (89,4%) | Investiert: 10.601,10 $ (10,6%)
 P/L heute: -36,96 $ (-0,0370%) | Alpha vs. SPY: -0,810% (SPY +0,773%)
