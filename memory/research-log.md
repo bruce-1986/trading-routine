@@ -4,6 +4,69 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-06-19 — HANDELSFEIERTAG (Juneteenth), No-Op
+
+### Markt-Status
+```
+Alpaca clock: is_open=false (timestamp 16:04 ET)
+next_open:    2026-06-22 09:30 ET (Montag)
+Begründung:   US-Bundesfeiertag (Juneteenth) — NYSE/Nasdaq ganztägig geschlossen
+```
+
+### Tagesperformance (kein Trade-Tick)
+```
+Alpaca equity Close:   99.962,66 $   (last_equity 99.962,66 → daily 0,00 $ / 0,00 %)
+Cash:                  89.363,96 $   (89,4 %)
+Investiert:            10.598,70 $   (10,6 %)
+ATH:                  100.012,97 $   (Open 18.06.)
+Drawdown:              -0,0503 %
+SPY-Performance:       n/a (kein Daily-Bar) — Alpha-Berechnung übersprungen
+VIX:                   n/a (Markt zu)
+```
+
+### Verkaufssignal-Check Close (V1–V6)
+```
+Live-Check übersprungen — keine neuen Bars. Letzter Stand 18.06. Close (carry-over):
+JPM 325,22 $   V1 306,16 SICHER (+6,2 %) | V2 SICHER | V3/V4 nicht erreicht
+               V5 EMA50 308,67 > EMA200 307,35 → kein Death Cross
+               V6 RSI 62,1 + RS_4w +6,96 % → nicht ausgelöst
+UNH 400,96 $   V1 369,44 SICHER (+8,5 %) | V2 SICHER | V3/V4 nicht erreicht
+               V5 EMA50 372,91 > EMA200 335,16 → kein Death Cross
+               V6 RSI 58,7 + RS_4w +3,95 % → nicht ausgelöst
+→ Keine Verkaufsorder für Mo 22.06. vorbereitet.
+```
+
+### Weekly Loss Cap
+```
+weekly_pnl_pct = (99.962,66 - 100.000,00) / 100.000,00 * 100 = -0,037 %   [GRÜN — Limit -5 %]
+Käufe diese Woche:  2 / 2 (LIMIT erreicht — JPM 17.06., UNH 18.06.)
+Kein pending storno nötig (keine pending Orders).
+```
+
+### Watchlist Mo 22.06.2026 (Carry-over aus 18.06. Close)
+```
+AVGO (Top-Pick, K1–K4 ✓ — Semis XLK)
+CAT  (Industrials XLI, RS+30 %, K4 fail beim letzten Check — neu zu prüfen)
+NVDA (Semis XLK, K4 fail beim letzten Check — neu zu prüfen)
+LLY  (Health XLV — UNH bereits gehalten, max 3 pro Sektor beachten)
+GS   (Financials XLF — SEKTORKONFLIKT mit JPM, K4 fail)
+```
+→ Keine Perplexity-Abfrage durchgeführt (Holiday, keine neuen Sektor-News).
+→ K1–K3 Vorprüfung am Pre-Market Mo 22.06. mit dann frischen Daten.
+
+### ClickUp-Report
+```
+Übersprungen: Pre-Market hat Holiday-Notification (Task 869dtg866) bereits abgesetzt.
+Keine Tages-P/L-Daten, keine Order, keine Signale → ein weiterer [CLOSE]-Task wäre Rauschen.
+TODO: env-Variable CLICKUP_LIST_ID auf reine List-ID '901218902364' setzen (Bug aus 19.06. Pre-Market).
+```
+
+### Entscheidung
+**Routine pausiert.** Nächster Trigger: Pre-Market Mo 2026-06-22 08:30 ET.
+Keine Order, keine Memory-Migration über Holiday-Snapshot hinaus.
+
+---
+
 ## Market Open 09:30 ET — 2026-06-19 — HANDELSFEIERTAG (Juneteenth)
 
 ### Markt-Status
