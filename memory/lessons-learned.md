@@ -21,7 +21,16 @@ Regel: [Daraus abgeleitete Regel für zukünftige Entscheidungen]
 
 ## Was nicht funktioniert (Fehler & Korrekturen)
 
-*Noch keine Fehler dokumentiert.*
+### 2026-06-19 — CLICKUP_LIST_ID enthält Prefix/Suffix-Segmente
+Was ist passiert: Aufrufe gegen `https://api.clickup.com/api/v2/list/$CLICKUP_LIST_ID/task`
+liefern seit Tagen `validateListIDEx INPUT_003` (siehe research-log 18.06. + 19.06.).
+Warum: Env-Variable `CLICKUP_LIST_ID` = `6-901218902364-1` (View/Workspace-Format),
+ClickUp-API erwartet aber die reine numerische List-ID (`901218902364`).
+Konsequenz: Routine-Notifications gingen seit Start nicht raus.
+Änderung: Vor jedem ClickUp-Call die List-ID bereinigen, z. B. via
+`stripped=$(echo "$CLICKUP_LIST_ID" | sed 's/^[0-9]*-//; s/-[0-9]*$//')`.
+Erster erfolgreicher Task: `869dtg866` (Holiday-Notification 19.06.).
+TODO: env-Variable in Setup-Script korrigieren, damit Stripping nicht mehr nötig ist.
 
 ```
 Template:

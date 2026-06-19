@@ -4,6 +4,55 @@
 
 ---
 
+## Market Open 09:30 ET — 2026-06-19 — HANDELSFEIERTAG (Juneteenth)
+
+### Markt-Status
+```
+Alpaca clock: is_open=false
+next_open:    2026-06-22 09:30 ET (Montag)
+Begründung:   US-Bundesfeiertag (Juneteenth, 19. Juni) — NYSE/Nasdaq geschlossen
+Kalender:     18.06. Handelstag → 22.06. nächster Handelstag → 19.06. NICHT enthalten
+```
+
+### Schritt-2-Guardrail-Check (formal)
+```
+Daily Loss Cap  < -3%:   0,00 %    [GRÜN]
+Weekly Loss Cap < -5%:  -0,037 %   [GRÜN]
+Käufe Woche >= 2:        2 / 2     [LIMIT erreicht — Kaufscan ohnehin gesperrt]
+VIX > 30:                16,4–17,0 [GRÜN]
+Crash-Filter:            NEIN      [GRÜN]
+Drawdown-Stopp:          inaktiv   [GRÜN]
+Cash < 20%:              89,4 %    [GRÜN]
+```
+→ Ergebnis nicht relevant: Markt ist zu, keine Order möglich.
+
+### Stop-Check (V1–V6, anhand letzter Trades vom 18.06. Close)
+```
+JPM 325,23 $   V1 306,16 $ SICHER (+6,2%) | V2 SICHER | V3/V4 nicht erreicht
+               V5 EMA50 308,67 > EMA200 307,35 → kein Death Cross
+               V6 RSI 62,1 + RS_4w +6,96% → nicht ausgelöst
+UNH 401,13 $   V1 369,44 $ SICHER (+8,6%) | V2 SICHER | V3/V4 nicht erreicht
+               V5 EMA50 372,91 > EMA200 335,16 → kein Death Cross
+               V6 RSI 58,7 + RS_4w +3,95% → nicht ausgelöst
+→ Beide Positionen unauffällig. Kein Eingriff nötig (auch nicht möglich).
+```
+
+### Entscheidung
+**Routine pausiert.** Nächster Trigger: Pre-Market 08:30 ET am Montag 2026-06-22.
+Watchlist 22.06. (Carry-over aus 18.06.): AVGO (Top-Pick K1–K4 ✓), GS (XLF-Konflikt),
+CAT (Industrials), NVDA (Tech), LLY (XLV — UNH bereits gehalten).
+
+### Notification
+```
+ClickUp-API: CLICKUP_LIST_ID-Bug gefunden + temporär gefixt.
+Env-Variable hat Format "6-901218902364-1" (View-ID), API erwartet reine List-ID.
+Workaround: sed 's/^[0-9]*-//; s/-[0-9]*$//' → 901218902364 → Task erfolgreich.
+ROUTINE_DONE-Task ID: 869dtg866 (Holiday-Notification 19.06. abgesetzt).
+TODO: env-Variable im Setup korrigieren (siehe lessons-learned 2026-06-19).
+```
+
+---
+
 ## Pre-Market 08:30 ET — 2026-06-19
 
 ### Markt-Lage

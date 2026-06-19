@@ -89,6 +89,15 @@ V6 RSI>80 UND RS4w<0: RSI 58,7 | RS_4w +3,95% → NICHT ausgelöst
 
 ## Tagesbilanz-Log
 
+**Market Open 2026-06-19 09:30 ET — HANDELSFEIERTAG (Juneteenth):**
+NYSE/Nasdaq geschlossen (Alpaca clock: is_open=false, next_open 2026-06-22 09:30 ET).
+Alpaca-Kalender 18.06.→22.06.→23.06., 19.06. nicht enthalten → kein Handelstag.
+Snapshot (kein Trade möglich): Gesamt 99.962,66 $ | Cash 89.363,96 $ (89,4%) | Investiert 10.598,70 $ (10,6%)
+JPM: 3 Sh, current 325,22 $, unreal -22,68 $ (-2,27%) | UNH: 24 Sh, current 400,96 $, unreal -14,64 $ (-0,15%)
+Daily P/L 0,00% [GRÜN] | Weekly -0,037% [GRÜN] | DD -0,050% [GRÜN] | Käufe 2/2
+Schritt 2 Guardrail-Check obsolet (Markt zu) — kein Stop-Check live möglich, V1/V2 anhand Last Trade (Vortagsschluss): JPM 306,16 $ SICHER (+6,2%), UNH 369,44 $ SICHER (+8,5%).
+> Entscheidung: Keine Order. Routine pausiert bis Mo 22.06. Pre-Market 08:30 ET.
+
 **Pre-Market 2026-06-19 08:30 ET:**
 Gesamtwert: 99.962,66 $ | Cash: 89.363,96 $ (89,4%) | Investiert: 10.598,70 $ (10,6%)
 Alpaca equity = last_equity (kein Trade seit Close) → Daily P/L 0,00 % [GRÜN]
