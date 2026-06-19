@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-18 16:00 ET (Market Close)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-19 16:00 ET (Market Close — Juneteenth Holiday, No-Op)
 
 ---
 
@@ -88,6 +88,18 @@ V6 RSI>80 UND RS4w<0: RSI 58,7 | RS_4w +3,95% → NICHT ausgelöst
 ---
 
 ## Tagesbilanz-Log
+
+**Close 2026-06-19 16:00 ET — HANDELSFEIERTAG (Juneteenth), No-Op:**
+NYSE/Nasdaq geschlossen ganztägig (Alpaca clock: is_open=false, next_open Mo 2026-06-22 09:30 ET).
+Equity 99.962,66 $ = last_equity (kein Trade-Tick seit Vortags-Close). Cash 89.363,96 $ (89,4%) | Investiert 10.598,70 $ (10,6%).
+JPM 3 Sh @ 325,22 $ (-22,68 $ / -2,27% — change_today 0,00%) | UNH 24 Sh @ 400,96 $ (-14,64 $ / -0,15% — change_today 0,00%).
+Daily P/L: 0,00% [GRÜN] | Weekly P/L: -0,037% [GRÜN] | DD vs. ATH 100.012,97 $: -0,050% [GRÜN] | Käufe 2/2 (LIMIT).
+SPY/VIX/Alpha: nicht erhebbar (Markt zu, keine Daily-Bar). Alpha-Berechnung übersprungen.
+V1–V6 Live-Check übersprungen — letzter belastbarer Stand vom 18.06. Close: alle SICHER, EMA50>EMA200 für JPM und UNH, RSI 62,1 / 58,7. Keine Limit-Order vorbereitet.
+Watchlist Mo 22.06. (Carry-over): AVGO (Top-Pick K1–K4 ✓), CAT (Industrials, RS+30), NVDA (Tech), LLY (XLV — bereits UNH gehalten), GS (XLF — Konflikt JPM).
+Weekly Loss Cap geprüft: -0,037 % vs. Mo-Basis 100.000 $ → weit über -5 %. Kein Sperrauslöser.
+ClickUp-Report: übersprungen (Holiday — Pre-Market-Notification 869dtg866 bereits abgesetzt; CLICKUP_LIST_ID-Bug-Workaround dokumentiert).
+> Entscheidung: Keine Order, keine Memory-Migration über Holiday-Snapshot hinaus. Nächste echte Routine: Pre-Market Mo 2026-06-22 08:30 ET.
 
 **Market Open 2026-06-19 09:30 ET — HANDELSFEIERTAG (Juneteenth):**
 NYSE/Nasdaq geschlossen (Alpaca clock: is_open=false, next_open 2026-06-22 09:30 ET).
