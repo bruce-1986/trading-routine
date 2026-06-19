@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-19 16:00 ET (Market Close — Juneteenth Holiday, No-Op)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-19 17:00 ET (Weekly Review KW25 — Juneteenth Holiday)
 
 ---
 
@@ -88,6 +88,46 @@ V6 RSI>80 UND RS4w<0: RSI 58,7 | RS_4w +3,95% → NICHT ausgelöst
 ---
 
 ## Tagesbilanz-Log
+
+### Wochenabschluss KW25 — 2026-06-19 (Fr, Juneteenth Holiday)
+
+```
+Gesamtwert:        99.962,66 $   (Alpaca equity, = last_equity, kein Trade-Tick)
+Cash:              89.363,96 $   (89,4 %)
+Investiert:        10.598,70 $   (10,6 %  — JPM 975,66 $ + UNH 9.623,04 $)
+Wochenrendite:     -0,037 %      (Mo 100.000,00 → Fr 99.962,66)
+SPY Wochenrendite: -1,003 %      (Mo 15.06. 754,31 → Do 18.06. 746,74; Fr Holiday)
+Alpha vs SPY:      +0,966 %      [POSITIV — getragen von 89 % Cash bei schwacher Marktwoche]
+"YTD" Rendite:     -0,037 %      (Bot lebt seit 31.05.; volle YTD-Zahl nicht vergleichbar)
+SPY YTD 2026:     +10,09 %       (31.12.25 678,32 → 18.06.26 746,74)
+ATH:              100.012,97 $   (intraday Open 2026-06-18)
+Drawdown vom ATH: -0,050 %       [GRÜN — Schwelle -15 % bei 85.011 $]
+Offene Positionen: 2 / 8
+Nächste Woche max. Käufe: 2  (Reset Mo 22.06.)
+Watchlist KW26: AVGO (Top-Pick), CAT (Trigger-Watch), evtl. LLY (XLV-Konflikt UNH beachten)
+```
+
+**Trade-Aktivität KW25:**
+- Käufe: 2 (JPM Mi 17.06., UNH Do 18.06.) — Wochen-Limit 2/2 erreicht
+- Verkäufe: 0 | Stop-Loss-Trigger: 0 | Death-Cross-Trigger (V5): 0 | RSI-Überkauft (V6): 0
+- Geschlossene Trades: 0 | Win-Rate diese Woche: n/a | Ø Haltedauer geschlossen: n/a
+- Handelstage: 3 von 5 (Fr Juneteenth)
+
+**Sektor-Check (Max 30 % vom investierten Kapital, Max 3 Pos./Sektor):**
+- XLF (JPM):  975,66 $ → 9,21 % invest. / 0,98 % Gesamt   → 1 Position    [OK]
+- XLV (UNH): 9.623,04 $ → 90,79 % invest. / 9,63 % Gesamt → 1 Position    [OK]
+- Hinweis: Schwergewicht XLV (90,79 % invest.) entsteht durch nur 2 Positionen und
+  unterschiedliche Sizing-Skalen — bei wachsendem Portfolio normalisiert sich das.
+  Kein Verstoß gegen 30 %-Regel auf Gesamtdepot-Basis.
+
+**Signal-Status Wochenschluss (carry-over aus Do 18.06. Close, V1–V6):**
+- JPM Close 326,02 $ — V1 306,16 SICHER | V2 SICHER | V3/V4 nicht erreicht | V5 EMA50>EMA200 ✓ | V6 RSI 62,1 / RS+6,96 % → nicht ausgelöst
+- UNH Close 400,96 $ — V1 369,44 SICHER | V2 SICHER | V3/V4 nicht erreicht | V5 EMA50>EMA200 ✓ | V6 RSI 58,7 / RS+3,95 % → nicht ausgelöst
+- Keine Verkaufsorder für Mo 22.06. vorbereitet.
+
+**Strategie-Status:** STABIL — keine Anpassung nötig (Sample-Size erst 19 Tage).
+
+---
 
 **Close 2026-06-19 16:00 ET — HANDELSFEIERTAG (Juneteenth), No-Op:**
 NYSE/Nasdaq geschlossen ganztägig (Alpaca clock: is_open=false, next_open Mo 2026-06-22 09:30 ET).
