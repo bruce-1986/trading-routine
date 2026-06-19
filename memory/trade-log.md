@@ -94,6 +94,6 @@ _Keine — Verkaufssignale V1–V6 am Close 2026-06-18 für JPM & UNH nicht ausg
 
 ## Wöchentliche Performance
 
-| Woche | Depot-Start | Depot-Ende | Wochenergebnis | vs. SPY |
-|-------|-------------|------------|----------------|---------|
-| 2026-W25 | 100.000,00 $ (Mo 15.06.) | 99.965,07 $ (lfd. Do) | -0,035% | TBD |
+| Woche | Depot-Start | Depot-Ende | Wochenergebnis | vs. SPY | Alpha | Käufe / Verkäufe / Stops |
+|-------|-------------|------------|----------------|---------|-------|--------------------------|
+| 2026-W25 | 100.000,00 $ (Mo 15.06.) | 99.962,66 $ (Fr 19.06. Holiday → Do 18.06. Close) | -0,037 % | -1,003 % | +0,966 % | 2 / 0 / 0 |

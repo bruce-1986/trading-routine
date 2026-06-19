@@ -4,6 +4,110 @@
 
 ---
 
+## Weekly Review 17:00 ET — 2026-06-19 (KW25, Juneteenth Holiday)
+
+### Wochenperformance
+```
+Depot Mo 15.06.:     100.000,00 $
+Depot Fr 19.06.:      99.962,66 $   (= last_equity 18.06., Holiday)
+Wochenrendite Depot:    -0,037 %
+
+SPY Mo 15.06. Close:    754,31 $
+SPY Do 18.06. Close:    746,74 $    (Fr Holiday, kein Close)
+SPY Wochenrendite:      -1,003 %
+
+Alpha diese Woche:      +0,966 %    [POSITIV — Cash-Quote 89 % hat Drawdown gepuffert]
+
+"YTD" Depot (Init 31.05.): -0,037 %  (Bot lebt erst 19 Tage)
+SPY YTD 2026:           +10,09 %    (31.12.25 678,32 → 18.06.26 746,74)
+YTD-Alpha:              nicht direkt vergleichbar (Init nicht 01.01.)
+```
+
+### Trade-Analyse KW25
+```
+Käufe:           2 (JPM Mi @332,78 / UNH Do @401,57)
+Verkäufe:        0
+Stop-Loss V1:    0 ausgelöst
+Trailing V2:     0 ausgelöst
+TP1/V3 +20 %:    0 erreicht
+TP2/V4 +35 %:    0 erreicht
+Death-Cross V5:  0
+RSI-Over V6:     0
+Geschlossene Trades:   0
+Win-Rate Woche:        n/a
+Ø Haltedauer (closed): n/a
+
+Welches Kaufsignal hat funktioniert?
+- JPM K1–K5 ✓ → -2,03 % nach 2 Handelstagen (Goldman-Sektor-Warnung Fin/Indust am Do)
+- UNH K1–K5 ✓, höchstes RS +28,57 % auf Watchlist → -0,15 % nach 1 Handelstag (intraday +0,12 %, Close knapp negativ)
+- Beide Positionen V1–V6 grün, Bewertung nach 1–2 Tagen noch nicht aussagekräftig.
+```
+
+### Relative-Stärke / Sektor-Ranking KW25 (Perplexity #4)
+Datenlage: Keine harten Wochenrenditen für XLK/XLV/etc. abrufbar; Ranking auf Basis
+von Sektor-News und Markt-Kommentaren (Morningstar, JPMorgan, BlackRock, DWS):
+```
+1. XLK Technology / Semiconductors  — KI-Infrastruktur, Halbleiter weiter dominant
+2. XLE Energy / Infrastructure      — Electro Tech, Netzinfrastruktur als Thema
+3. XLV Health Care + XLF Financials — Midterm-Thema (Verteidigung/Health/Finanzen),
+                                      Evidenz weicher als bei Tech.
+```
+Carry-over aus 18.06. interne K1–K4-Berechnung: AVGO (XLK) klarer Top-Pick,
+CAT (XLI Industrials) mit RS +29,9 % stark, NVDA (XLK) RS +4,7 % aber K4 fail.
+
+### Fundamentals-Screen Top-Sektoren (Perplexity #5)
+Datenqualität gemischt — Perplexity konnte Einzel-Forward-P/E + Earnings-Termin
+nicht durchgängig liefern. Belastbare Kandidaten:
+```
+Ticker | Sektor | Fwd P/E      | Rev YoY  | MCap     | Earnings    | K5 | Status
+-------|--------|--------------|----------|----------|-------------|----|--------
+AVGO   | XLK    | 26,1–35,6*   | +47,9 %  | $1,87 T  | ~Sep 2026   | ✓  | TOP-PICK
+NVDA   | XLK    | 43,4         | n/a      | groß     | ~Aug        | ✗  | K5 fail (FwdP/E > 35)
+AMD    | XLK    | 67,3         | n/a      | groß     | n/a         | ✗  | K5 fail
+LLY    | XLV    | n/a (Quellen)| n/a      | groß     | ~Aug        | ?  | XLV-Konflikt UNH, max 3
+MSFT/AAPL/GOOGL              | Daten unzureichend, K2 fail historisch              | beobachten
+```
+*) Quellen-Spread: stockanalysis 26,13 / Yahoo 32,57 / GuruFocus 35,63 — Median ~32,
+   in jedem Fall an der oberen K5-Grenze (≤35). AVGO bleibt aber im Rahmen.
+
+### Sektorgewichtung (Schritt 6)
+```
+XLF (JPM): 975,66 $ Marktwert
+           → 9,21 % vom investierten Kapital
+           → 0,98 % vom Gesamtdepot
+XLV (UNH): 9.623,04 $ Marktwert
+           → 90,79 % vom investierten Kapital  (Skalen-Asymmetrie wg. UNH-Sizing)
+           → 9,63 % vom Gesamtdepot
+Max-Regeln: 3 Pos./Sektor (beide 1/3) | 30 % Gesamtdepot (max 9,63 %) → KEIN VERSTOSS
+Hinweis: Bei Erweiterung des Depots in XLV Vorsicht (1 zusätzliche Pos. = ~20 %).
+```
+
+### Watchlist KW26 (Mo 22.06. — Fr 26.06.)
+```
+AVGO   XLK   Top-Pick, alle K1–K5 ✓ — Buy-Limit nach K1–K4-Live-Check am Mo möglich
+CAT    XLI   K1–K3 ✓, K4 fail (Vol 96 %) — auf Vol-Pickup warten
+LLY    XLV   K1–K3 ✓, K4 fail; XLV-Konflikt mit UNH (1 weitere XLV-Pos. = OK ≤3)
+NVDA   XLK   AUS (K5 FwdP/E 43,4 > 35)
+AMD    XLK   AUS (K5 FwdP/E 67,3)
+GS     XLF   AUS (Sektor-Konflikt mit JPM, K4 fail)
+BAC    XLF   AUS (XLF-Konflikt, RSI hot)
+```
+Realistisches Buy-Szenario KW26: AVGO als erster Trade, CAT bei Vol-Trigger.
+
+### Strategie-Status
+**STABIL — keine Parameter-Anpassung.**
+Begründung: Bot lebt erst 19 Kalendertage / 13 Handelstage; Sample-Size für
+Regel-Änderungen unzureichend. Positives Alpha (+0,97 %) bestätigt das passive
+Cash-Polster-Setup in schwacher Marktwoche.
+
+### ClickUp Weekly Report
+```
+List-ID Fix (Env): 901218902364 jetzt korrekt gesetzt — Stripping nicht mehr nötig.
+Task: [WEEKLY] Review KW25 — 2026-06-19  → siehe nachgelagerter API-Call.
+```
+
+---
+
 ## Market Close 16:00 ET — 2026-06-19 — HANDELSFEIERTAG (Juneteenth), No-Op
 
 ### Markt-Status
