@@ -4,6 +4,87 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-19
+
+### Markt-Lage
+```
+VIX:              ~16,40–17,00  (Cboe Open 17,23 vs. Vortag-Close 16,40, intraday Range 16,40–17,04)
+                  [GRÜN, weit < 30]
+SPY Close 18.06.: 746,75 $   (Vortag 741,02 → +0,773%)
+SPY After-Hours:  748,46 $   (+0,23% vs. Close)  [Indikator, IEX-Snapshot]
+10Y Treasury:     n/a         (Perplexity-Antwort ohne belegbare Zahl)
+Markt-Status:     Pre-Market
+```
+
+### Guardrails Pre-Market
+```
+Daily Loss Cap   -3 %:   equity 99.962,66 $ vs. last_equity 99.962,66 $ → 0,00 %   [GRÜN]
+Weekly Loss Cap  -5 %:   -0,037 % vs. Mo-Basis 100.000 $                           [GRÜN]
+Drawdown -15 %:          ATH 100.012,97 $, DD -0,050 %                             [GRÜN]
+Drawdown -20 %:          inaktiv                                                   [GRÜN]
+VIX-Filter > 30:         VIX 16,40–17,00                                           [GRÜN]
+Crash-Filter SPY -5%:    SPY gestern +0,773 %                                      [INAKTIV]
+Käufe diese Woche:       2 / 2                                                     [LIMIT erreicht]
+Earnings-Blackout:       keine (siehe unten)
+```
+
+### Alpaca-Konsistenz-Check
+```
+Alpaca portfolio_value:  99.962,66 $  (Memory Close 18.06.: 99.965,07 $)  Δ -2,41 $ → IEX-After-Hours-Tick
+Alpaca cash:             89.363,96 $  (Memory: 89.363,97 $)               konsistent
+Alpaca equity:           99.962,66 $  (= last_equity, kein Trade seit Close)
+JPM: 3 Sh @ Entry 332,78 — current 325,22 $  unreal -22,68 $ (-2,27%) | change_today 0,00 %
+UNH: 24 Sh @ Entry 401,57 — current 400,96 $ unreal -14,64 $ (-0,15%) | change_today 0,00 %
+→ Memory ↔ Alpaca konsistent. Keine offenen Orders.
+```
+
+### Earnings-Blackouts (offene Positionen)
+```
+JPM:  nächste Earnings 2026-07-14 (Q2, CONFIRMED Wall Street Horizon) → 25 Tage entfernt, KEIN Blackout
+UNH:  nächste Earnings 2026-07-16 (siehe Memory)                       → 27 Tage entfernt, KEIN Blackout
+→ Stops bleiben Standard V1 -8 % ($306,16 JPM / $369,44 UNH). Keine Engsetzung.
+```
+
+### Makro-Events heute 2026-06-19
+```
+Kein FOMC, keine CPI/PCE, keine NFP-Daten in den Suchergebnissen.
+Perplexity lieferte keine harten Tages-Termine (Kalenderdaten fehlten).
+Hinweis Goldman/XTB: VIX nahe zyklischem Tief — fragile Ruhe, Short-Covering treibt Rallye.
+```
+
+### Top-News
+```
+1. VIX am unteren Rand (16,4) — Volatilitäts-Expansion möglich, defensiv handeln.
+2. Goldman warnt vor Risiken in Finanz-/Industrie-/Halbleitersektor → JPM-Risiko im Blick.
+3. SPY After-Hours leicht positiv (+0,23%), Mega-Cap-Tech-Rallye stützt Indizes.
+```
+
+### Pre-Market Verkaufssignal-Vorabcheck
+```
+JPM @ 325,22 $   V1 Stop 306,16 $   → SICHER (Puffer +6,2%)
+                 V2 Trailing -12%   → kein neues 52w-Hoch, kein Stop-Engsetzen
+                 V3/V4 TP nicht erreicht
+                 V5/V6 → Live-Check am Open
+UNH @ 400,96 $   V1 Stop 369,44 $   → SICHER (Puffer +8,5%)
+                 V2 Trailing -12%   → SICHER (Hoch 403,56)
+                 V3/V4 TP nicht erreicht
+                 V5/V6 → Live-Check am Open
+```
+
+### Entscheidung Pre-Market 2026-06-19
+**Kaufscan bei Market Open 09:30 ET: NEIN.**
+Begründung: Käufe diese Woche 2/2 erreicht (JPM 17.06., UNH 18.06.) → bis Mo 22.06. kein Kauf zulässig.
+Heutige Routinen: nur Stop-Check (V1–V6) für JPM & UNH am Open, Midday, Close.
+Watchlist 19.06. (aus Close-Eintrag 18.06.): AVGO (Top-Pick, alle K1–K4 ✓ — Beobachtung für nächste Woche).
+
+### Notification-Hinweis
+```
+ClickUp-API: CLICKUP_LIST_ID weiterhin laut Memory ungültig (validateListIDEx INPUT_003).
+Routine-Log bleibt Memory-First → research-log + portfolio aktualisiert.
+```
+
+---
+
 ## Heutiger Market-Check — 2026-06-18 (Close 16:00 ET)
 
 ### Tagesperformance & Markt
