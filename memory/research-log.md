@@ -4,6 +4,16 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-22 (Mo, KW26)
+
+VIX: 16,78 (Fr Close) → ~17,4 (Spot Pre-Market, +4 %) | SPY Pre-Market: 747,80 $ Mid (+0,14 % vs Fr 746,74) | Treasury 10Y: n/a (Perplexity Realtime unzureichend)
+Guardrails: Daily -0,003 % GRÜN | Weekly Reset (neue Woche) GRÜN | DD -0,053 % GRÜN | VIX-Filter NEIN (<25) | Crash-Filter NEIN (SPY Fr +0,77 %) | Käufe diese Woche 0/2
+Earnings-Blackouts: keine in 22.–24.06. — S&P-500 Earnings-Kalender leer; JPM 14.07., UNH 16.07. weit entfernt (kein Stop-Tightening).
+Makro-Events heute: US-Datenkalender leicht (Perplexity meldet keine harten US-Releases / Fed-Reden bestätigt für heute) — Wochenfokus: Mi PMI, Fr PCE-Inflation.
+Entscheidung: Kaufscan bei Market Open JA. Watchlist KW26 (Carry-over): AVGO (Top-Pick, XLK), CAT (XLI, Vol-Trigger-Watch), LLY (XLV-Konflikt UNH beachten).
+
+---
+
 ## Weekly Review 17:00 ET — 2026-06-19 (KW25, Juneteenth Holiday)
 
 ### Wochenperformance
