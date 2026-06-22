@@ -4,6 +4,47 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-06-22 (Mo, KW26)
+
+**Tagesperformance:**
+- Depot: 99.935,22 $ (Close) vs. last_equity 99.962,66 → -27,44 $ / -0,0275% [GRÜN]
+- SPY: 746,74 (Do-Close 18.06.) → 744,27 (Mo-Close 22.06.) = -0,331% (Fr 19.06. Juneteenth Holiday)
+- Alpha: +0,304% [POSITIV — Cash-Quote 82,56% federt AVGO-Drawdown ab]
+- ATH: 100.066,47 $ (intraday-Open 22.06. 09:37 ET, unverändert); DD -0,131% [GRÜN]
+
+**Positions-Signal-Check Close (V1–V6):**
+```
+Symbol | Close      | P/L%   | V1 Puffer  | V5 EMA50/EMA200    | V6 RSI / RS_4w
+JPM    | 331,9175 $ | -0,26% | +8,42%     | 309,57>307,40 ✓    | 66,15 / +9,34%
+UNH    | 406,07 $   | +1,12% | +9,92%     | 374,21>334,49 ✓    | 61,90 / +5,96%
+AVGO   | 393,40 $   | -2,48% | +6,00%     | 399,74>358,71 ✓    | 46,63 / -5,32%
+```
+→ Alle V1–V6 SICHER. Keine Verkaufsorder pending.
+→ Beobachtung AVGO: intraday -4,36%, RS_4w bereits negativ, EMA-Spread schmaler. Bei weiterem Abrutschen Di-Close intensiv prüfen.
+
+**Watchlist Di 23.06. (K1–K3 via Alpaca SIP, K5 vorerst Carry-over):**
+```
+Symbol | Sektor | EMA50/EMA200       | RSI(14) | RS63d vs SPY | Vol/Avg20 | K-Status
+LLY    | XLV    | 1045,03 / 958,75   | 53,98   |  +6,56%      | 138%      | K1–K5 ✓ grenzwertig (FwdPE 34,91)
+ANET   | XLK    | 155,43 / 143,35    | 58,87   | +11,34%      | 128%      | K1–K3 ✓ (K4/K5 Open prüfen)
+CRWD   | XLK    | 595,05 / 502,96    | 58,21   | +46,77%      | 146%      | K1–K3 ✓ (K5 FwdPE prüfen, Cloud-SaaS typ. >35)
+CAT    | XLI    |  869,02 / 684,12   | 65,42   | +29,98%      | 205%      | K1–K4 ✓ (K5 alt FwdPE 38,87 — verifizieren)
+```
+→ Notiz: NVDA/AMD bleiben K5-FAIL (FwdPE>35 bzw. >67). Konflikt-Checks bei Auswahl: AVGO bereits XLK (Slot frei für 2. XLK), UNH bereits XLV (LLY würde 2. XLV; OK bis 3 Pos/Sektor), JPM bereits XLF (kein neuer Kandidat XLF).
+→ Slot KW26: 1/2 verbraucht (AVGO) → 1 weiterer Kauf erlaubt. Falls AVGO morgen weiter abrutscht & V1 droht, ggf. Kaufzurückhaltung.
+
+**Weekly Loss Cap geprüft:**
+- weekly_pnl_pct = (99.935,22 - 99.962,66) / 99.962,66 = -0,0275%
+- Schwelle -5% (entsprechend 94.964,53 $) → Puffer ~4.971 $. KEIN Auslöser.
+
+**Datenquellen:**
+- Alpaca /v2/account, /v2/positions, /v2/orders (Close 16:04 ET)
+- Alpaca Market Data SIP-Feed für historische Bars bis 18.06. + IEX für SPY 22.06.
+- Perplexity sonar: SPY Close-Quote leicht inkonsistent (lieferte Vortageswert) — Alpaca-Daten als Quelle of Truth verwendet.
+- VIX nicht live abgefragt am Close (Carry-over ~16,8 vom Pre-Market).
+
+---
+
 ## Market Open 09:30 ET — 2026-06-22 (Mo, KW26)
 
 **Guardrails-Check (alle GRÜN):**
