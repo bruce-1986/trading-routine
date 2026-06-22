@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-22 09:37 ET (Market Open KW26 — AVGO Buy filled 17/24)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-22 13:03 ET (Midday Stop-Check KW26)
 
 ---
 
@@ -89,6 +89,16 @@ V6 RSI>80 UND RS4w<0: RSI 58,7 | RS_4w +3,95% → NICHT ausgelöst
 ---
 
 ## Tagesbilanz-Log
+
+**Midday 13:03 ET 2026-06-22:**
+Positionen: 3/8 | Ø P/L: -0,09 % | Equity 100.050,51 $ (Cash 82.505,99 $ / Investiert 17.544,52 $)
+Schlechteste Position: AVGO -1,59 % (Last 396,98 $, V1 371,14 Puffer +6,96 %)
+Beste Position:        UNH +1,73 % (Last 408,52 $, V1 369,44 Puffer +9,57 %)
+Mittel:                JPM -0,40 % (Last 331,465 $, V1 306,16 Puffer +8,26 %)
+Stops: alle regulär — V1–V4 für JPM/UNH/AVGO nicht ausgelöst (RSI/EMA bei Midday nicht geprüft).
+Daily P/L: +0,088 % [GRÜN — Limit -3 %] (equity 100.050,51 / last_equity 99.962,66)
+Pending Orders: 0 | Käufe KW26: 1/2
+> Kein ClickUp-Log (keine Stops, kein Daily-Cap). Nächste Routine: 16:00 ET Market Close.
 
 **Market Open 2026-06-22 09:34 ET — KAUF AVGO:**
 Gesamtwert: 100.066,47 $ | Cash: 82.505,99 $ (82,5%) | Investiert: 17.560,48 $ (17,5%)
