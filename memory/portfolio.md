@@ -89,6 +89,16 @@ V6 RSI>80 UND RS4w<0: RSI 58,7 | RS_4w +3,95% → NICHT ausgelöst
 
 ## Tagesbilanz-Log
 
+**Pre-Market 2026-06-22 08:30 ET:**
+Gesamtwert: 99.959,81 $ | Cash: 89.363,96 $ (89,4 %) | Investiert: 10.595,85 $ (10,6 %)
+Alpaca equity 99.959,81 vs. last_equity 99.962,66 → Daily P/L -0,003 % [GRÜN]
+ATH: 100.012,97 $ | DD: -0,053 % [GRÜN]
+Guardrails: Daily -0,003 % | Weekly Reset (KW26 startet, neue Mo-Basis 99.962,66 $) | Käufe 0/2 | VIX ~17,4 Spot (16,78 Fr Close) | Crash-Filter NEIN | DD-Alarm NEIN
+SPY Pre-Market 747,80 $ Mid (+0,14 % vs Fr 746,74) | 10Y Treasury n/a (Perplexity-Realtime unzureichend)
+JPM 326,19 $ (-2,03 % vs Entry 332,78, V1 306,16 Puffer +6,2 %) | UNH 400,72 $ (-0,21 % vs Entry 401,57, V1 369,44 Puffer +8,5 %)
+Earnings-Blackouts: keine (JPM 14.07., UNH 16.07. — kein Stop-Tightening)
+> Entscheidung: Market-Open-Scan JA — alle Guardrails GRÜN. Watchlist KW26: AVGO (Top), CAT (Vol-Trigger), LLY (XLV-Konflikt UNH).
+
 ### Wochenabschluss KW25 — 2026-06-19 (Fr, Juneteenth Holiday)
 
 ```
