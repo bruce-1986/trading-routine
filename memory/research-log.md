@@ -4,6 +4,60 @@
 
 ---
 
+## Market Open 09:30 ET — 2026-06-22 (Mo, KW26)
+
+**Guardrails-Check (alle GRÜN):**
+- Daily P/L +0,10 % (100.066 / 99.962) [GRÜN] | Weekly +0,07 % [GRÜN]
+- Käufe KW26: 0 / 2 (Reset von Mo erfolgt) → Kauf erlaubt
+- VIX Spot ~16,8 (<25 → 10 % Sizing) | Crash-Filter NEIN | DD GRÜN | Cash 89,4 % >> 20 % Mindestreserve
+
+**Kandidaten-Scan (Watchlist KW26 + Live K1–K4 via Alpaca Bars 219d):**
+```
+Symbol | Close 18.06. | EMA50 / EMA200 | RSI(14) | RS_63d vs SPY | Vol/Avg20 | K1 K2 K3 K4
+AVGO   | 411,35       | 400,00 / 360,25| 51,33   | +15,43%       | 130%      |  ✓  ✓  ✓  ✓
+CAT    |  985,82      | 869,01 / 673,71| 65,45   | +29,98%       | 219%      |  ✓  ✓  ✓  ✓
+LLY    | 1098,57      | 1045,03/ 958,75| 53,98   |  +6,56%       | 138%      |  ✓  ✓  ✓  ✓
+```
+
+**K5 Fundamentals (Perplexity sonar):**
+```
+AVGO  FwdPE 34,0 / 34,2 / 35,6 (3 Quellen, Median 34,2)  RevYoY +51,47%  Earnings 03.09.26  → K5 ✓
+CAT   FwdPE 38,87   RevYoY +10,35%  Earnings 06.08.26                    → K5 FAIL (FwdPE > 35)
+LLY   FwdPE 34,91   RevYoY +45,28%  Earnings 07.08.26                    → K5 ✓ (grenzwertig)
+```
+
+**Best-Kandidaten-Auswahl (K1–K5 ✓ + höchste RS):**
+- CAT raus (K5 fail trotz höchster RS +29,98%).
+- AVGO RS +15,43% **>** LLY RS +6,56% → **AVGO = Buy-Pick**.
+- LLY zusätzlich XLV-Konflikt mit UNH (akzeptabel: 2/3 Pos., 19,7 % Gesamtdepot) — aber RS schwächer, Pick AVGO eindeutig.
+
+**Order AVGO:**
+- Position-Sizing: 100.066 $ × 10 % = 10.007 $ Budget
+- Limit $413,41 (= 411,35 × 1,005), 24 Shares (= floor(10.007 / 413,41))
+- Fill: 17 / 24 Shares @ $403,41 avg (09:36 ET), Rest 7 nach 2 Min steckend → manuell canceled.
+- Investiert effektiv 6.857,97 $ (~6,85 % Portfolio statt 10 % wegen Partial).
+- Stop V1 $371,14 (-8 %) | TP1 V3 $484,09 (+20 %) | TP2 V4 $544,61 (+35 %).
+- Alpaca Order-ID: ab4a9c16 | ClickUp Task: 869duc9ne (Prio 3).
+
+**Live Signal-Check Positionen 09:37 ET (V1–V6):**
+- JPM 327,76 $ (+0,78 % intraday): V1 / V2 SICHER | V3 / V4 nicht erreicht.
+- UNH 406,09 $ (+1,28 % intraday): V1 / V2 SICHER | V3 / V4 nicht erreicht.
+- AVGO 402,03 $ (-2,27 % vs Vortag, -0,34 % vs Entry): V1 / V2 SICHER | V3 / V4 nicht erreicht.
+- Keine Verkaufsorder offen.
+
+**Sektor-Check nach Kauf:**
+- XLF (JPM): 983 $ → 0,98 % Gesamtdepot / 5,60 % invest.
+- XLV (UNH): 9.746 $ → 9,74 % Gesamtdepot / 55,50 % invest.
+- XLK (AVGO): 6.834 $ → 6,83 % Gesamtdepot / 38,91 % invest.
+- Diversifikation: 3 Sektoren, max. 9,74 % je Sektor auf Gesamtbasis (<< 30 %-Limit). KEIN VERSTOSS.
+
+**Carry-over Watchlist nächste Tage:**
+- LLY (XLV) — K1–K5 ✓ grenzwertig, RS schwächer, Slot 2/2 KW26 frei.
+- CAT (XLI) — K5-Beobachtung; Perplexity-FwdPE 38,87 könnte mit anderer Quelle ≤ 35 sein → vorm nächsten Scan Quellen verifizieren.
+- NVDA / AMD bleiben K5-FAIL (FwdPE > 35 / > 67).
+
+---
+
 ## Pre-Market 08:30 ET — 2026-06-22 (Mo, KW26)
 
 VIX: 16,78 (Fr Close) → ~17,4 (Spot Pre-Market, +4 %) | SPY Pre-Market: 747,80 $ Mid (+0,14 % vs Fr 746,74) | Treasury 10Y: n/a (Perplexity Realtime unzureichend)

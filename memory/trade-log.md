@@ -6,18 +6,19 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Close 18.06.| Gewinn/Verlust | Stop-Loss | TP1     | TP2     | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs   | Live 22.06.| Gewinn/Verlust | Stop-Loss | TP1     | TP2     | Signale         |
 |--------|------------|------------|-----------|----------------|-----------|---------|---------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 326,02 $  | -20,28 $ (-2,03%) | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 400,96 $  | -14,64 $ (-0,15%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $   | 327,76 $  | -15,06 $ (-1,51%) | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 406,09 $  | +108,48 $ (+1,13%) | 369,44 $ | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| AVGO   | 2026-06-22 | 403,41 $   | 402,03 $  | -23,55 $ (-0,34%)  | 371,14 $ | 484,09 $ | 544,61 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 10.601,10 $ (Marktwert) | **Cash:** 89.363,97 $ | **Positionen:** 2/8
+**Gesamt investiert:** 17.563,87 $ (Marktwert ~09:37 ET) | **Cash:** 82.505,99 $ | **Positionen:** 3/8
 
 ---
 
 ## Offene Orders (pending)
 
-_Keine — Verkaufssignale V1–V6 am Close 2026-06-18 für JPM & UNH nicht ausgelöst._
+_Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Rest manuell canceled. Keine Verkaufssignale V1–V6 für JPM/UNH/AVGO offen._
 
 ---
 
@@ -32,6 +33,21 @@ _Keine — Verkaufssignale V1–V6 am Close 2026-06-18 für JPM & UNH nicht ausg
 ---
 
 ## Trades
+
+### KAUF (partial filled): AVGO am 2026-06-22
+- Limit-Order:    $413.41 (Day, +0,5% über Vortagesschluss $411.35)
+- Fill:           17/24 Shares @ $403.41 avg (09:36 ET, Tail nach 2 min steckend → 7 Shares manuell canceled)
+- Investiert:     6.857,97 $ (~6,85% Portfolio — unter 10%-Ziel wegen Partial-Fill)
+- Stop-Loss V1:   $371.14 (-8% vom Fill 403,41)
+- Trailing V2:    -12% vom Hoch (Tracking ab heute)
+- TP1 / V3:       $484.09 (+20% → 50% verkaufen)
+- TP2 / V4:       $544.61 (+35% → Rest verkaufen)
+- Kaufsignale:    K1✓ EMA50 400.00 > EMA200 360.25 | K2✓ RSI 51.33 | K3✓ RS_63d +15.43% vs SPY | K4✓ Vol 130% Avg20 | K5✓ FwdPE 34.0–35.6 (Median ~34.2) + Rev YoY +51.47%
+- Sektor:         XLK Technology / Semiconductors — kein Konflikt mit JPM (XLF) / UNH (XLV)
+- Earnings:       2026-09-03 (73 Tage entfernt, kein Blackout)
+- Live 09:37 ET:  current 402,03 $, P/L -0,34%, V1–V4 nicht ausgelöst
+- Alpaca Order-ID: ab4a9c16-3424-4721-b243-08328adaa341
+- ClickUp Task:   869duc9ne
 
 ### KAUF (filled): UNH am 2026-06-18
 - Limit-Order:    $401.57 (Day, +0,5% über Vortagesschluss $399.57)
