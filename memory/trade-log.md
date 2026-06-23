@@ -6,13 +6,13 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Close 22.06.| Gewinn/Verlust    | Stop-Loss | TP1      | TP2      | Signale         |
-|--------|------------|------------|-------------|-------------------|-----------|----------|----------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 331,9175 $  | -2,59 $ (-0,26%)  | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 406,07 $    | +108,00 $ (+1,12%)| 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
-| AVGO   | 2026-06-22 | 403,41 $   | 393,40 $    | -170,17 $ (-2,48%)| 371,14 $  | 484,09 $ | 544,61 $ | K1✓K2✓K3✓K4✓K5✓ |
+| Symbol | Kaufdatum  | Kaufkurs   | Live 23.06. | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
+|--------|------------|------------|-------------|--------------------|-----------|----------|----------|-----------------|
+| JPM    | 2026-06-17 | 332,78 $   | 327,75 $    | -14,52 $ (-1,45%)  | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 405,29 $    | +89,40 $ (+0,93%)  | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| AVGO   | 2026-06-22 | 403,41 $   | 382,06 $    | -362,95 $ (-5,30%) | 371,14 $  | 484,09 $ | 544,61 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 17.429,23 $ (Marktwert Close 16:00 ET) | **Cash:** 82.505,99 $ | **Positionen:** 3/8
+**Gesamt investiert:** 17.204,69 $ (Marktwert 09:33 ET) | **Cash:** 82.505,98 $ | **Positionen:** 3/8
 
 ---
 
@@ -47,6 +47,7 @@ _Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Re
 - Earnings:       2026-09-03 (73 Tage entfernt, kein Blackout)
 - Live 09:37 ET:  current 402,03 $, P/L -0,34%, V1–V4 nicht ausgelöst
 - Status Close 22.06.: 393,40 $ (intraday -4,36%, -2,48% vs Entry); V1 371,14 SICHER +6,00% Puffer; V2 Stop ~364,87 (Hoch 414,63) SICHER; V5 EMA50 399,74>EMA200 358,71 ✓; V6 RSI 46,63 / RS_4w -5,32% (negativ — Watch ab Di)
+- Status Open 23.06. 09:33 ET: 382,06 $ Live, -5,30% Position-PnL; V1 371,14 SICHER nur +2,94% Puffer [KRITISCH]; V2 Stop ~364,87 SICHER (+4,71%); V5 EMA50 399,69>EMA200 362,55 ✓ (Spread schmaler); V6 RSI 46,42 / RS_63d +11,51%
 - Alpaca Order-ID: ab4a9c16-3424-4721-b243-08328adaa341
 - ClickUp Task:   869duc9ne
 
@@ -65,6 +66,7 @@ _Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Re
 - Status Midday 18.06.: 402,07 $ Kurs, +0,12% Position-PnL, V1–V4 nicht ausgelöst
 - Status Close 18.06.: 400,96 $ Close, -0,15% Position-PnL, V1–V6 nicht ausgelöst (EMA50 372,91 > EMA200 335,16; RSI 58,7; RS_4w +3,95%)
 - Status Close 22.06.: 406,07 $ Close, +1,12% Position-PnL (+1,27% intraday); V1 369,44 SICHER +9,92%; V5 EMA50 374,21>EMA200 334,49 ✓; V6 RSI 61,90 / RS_4w +5,96%
+- Status Open 23.06. 09:33 ET: 405,29 $ Live, +0,93% Position-PnL; V1 369,44 SICHER +9,71%; V5 EMA50 374,21>EMA200 329,25 ✓; V6 RSI 63,26 / RS_63d +32,79%
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
 
 ### KAUF (filled): JPM am 2026-06-17
@@ -82,6 +84,7 @@ _Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Re
 - Status Close 17.06.: $333.56 Tagesschluss, +0,24% Position-PnL, V5/V6 nicht ausgelöst
 - Status Close 18.06.: $326,02 Tagesschluss, -2,03% Position-PnL, V1–V6 nicht ausgelöst (EMA50 308,67 > EMA200 307,35; RSI 62,1; RS_4w +6,96%)
 - Status Close 22.06.: $331,9175 Tagesschluss, -0,26% Position-PnL (+2,06% intraday); V1 306,16 SICHER +8,42%; V5 EMA50 309,57>EMA200 307,40 ✓ (Spread schmal); V6 RSI 66,15 / RS_4w +9,34%
+- Status Open 23.06. 09:33 ET: 327,75 $ Live, -1,45% Position-PnL; V1 306,16 SICHER +7,05%; V5 EMA50 309,56>EMA200 304,91 ✓ (Spread weiterhin schmal); V6 RSI 65,65 / RS_63d +0,90%
 - Alpaca Order-ID: d90de96d-9084-4a6a-b5a1-de48899e75f4
 
 ---

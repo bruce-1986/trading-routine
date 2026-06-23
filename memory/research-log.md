@@ -4,6 +4,60 @@
 
 ---
 
+## Market Open 09:33 ET — 2026-06-23 (Di, KW26) — KEIN KAUF
+
+**Guardrail-Check (alle GRÜN):**
+- Daily P/L -0,216 % (equity 99.710,67 / last 99.926,95) [GRÜN — Limit -3 %]
+- Weekly P/L -0,252 % (vs Mo-Basis 99.962,66) [GRÜN — Limit -5 %]
+- Drawdown vom ATH 100.066,47: -0,356 % [GRÜN — Alarm -15 %]
+- VIX ~19,81 (PreMarket Carry-over) < 30 [GRÜN; <25 → 10 % Sizing erlaubt]
+- Crash-Filter NEIN (SPY 732,63 intraday vs Mo-Close 744,27 = -1,57 % > -5 %)
+- Cash 82,75 % > 20 % Mindestreserve
+- Käufe KW26: 1/2 → 1 Slot frei
+
+**Positionen Live (Alpaca 09:33 ET), V1–V6 Signal-Check:**
+```
+Symbol | Last     | Entry   | P/L %   | V1 Stop | Puffer  | V5 EMA50/EMA200    | V6 RSI / RS_63d  | Status
+JPM    | 327,75   | 332,78  | -1,45 % | 306,16  | +7,05 % | 309,56 > 304,91 ✓  | 65,65 / +0,90 %  | SICHER
+UNH    | 405,29   | 401,57  | +0,93 % | 369,44  | +9,71 % | 374,21 > 329,25 ✓  | 63,26 / +32,79 % | SICHER
+AVGO   | 382,06   | 403,41  | -5,30 % | 371,14  | +2,94 % | 399,69 > 362,55 ✓  | 46,42 / +11,51 % | KRITISCH
+```
+→ Alle V1–V6 NICHT ausgelöst, aber AVGO mit +2,94 % Puffer hauchdünn vor V1-Market-Order.
+→ Kein Eingriff (regelbasiert: Stop läuft automatisch bei ≤ 371,14 $).
+
+**Kandidaten-Scan (Watchlist KW26, K1–K4 via Alpaca-Bars bis Mo 22.06.):**
+```
+Symbol | Close 22.06 | EMA50/EMA200    | RSI(14) | RS_63d vs SPY | Vol/Avg20 | K1 K2 K3 K4 | K5
+LLY    | 1.102,08    | 1047,76 / 962,91|  54,35  |  +6,77 %      |   92,3 %  | ✓ ✓ ✓ ✗     | ✓ grenzwertig (FwdPE 34,91)
+ANET   |   174,56    |  156,14 / 144,96|  62,54  | +18,25 %      |  108,9 %  | ✓ ✓ ✓ ✗     | offen
+CRWD   |   675,44    |  598,27 / 502,75|  56,58  | +50,37 %      |   95,0 %  | ✓ ✓ ✓ ✗     | offen (Cloud-SaaS typ. FwdPE > 35)
+CAT    | 1.022,28    |  875,14 / 708,72|  69,59  | +35,37 %      |  136,0 %  | ✓ ✓ ✓ ✓     | ✗ FAIL (FwdPE 38,87 carry-over)
+```
+SPY 63d Return: +14,77 % (Baseline für RS).
+
+**Auswahl:**
+- LLY/ANET/CRWD: K4 < 120 % (Mo-Bar) → FAIL.
+- CAT: K1–K4 ✓, RS am stärksten (+35,37 %), aber K5 historisch FAIL (FwdPE 38,87 > 35 lt. letztem Research).
+- → **KEIN Kandidat erfüllt alle 5 Kaufsignale** → Kauf-Slot bleibt ungenutzt.
+
+**Markt-Kontext (Risk-off bestätigt):**
+- SPY 732,63 = -1,57 % intraday (PreMarket-Warnung -1,40 % bestätigt sich)
+- VIX im Anstieg (Carry-over 19,81; weiter beobachten Midday)
+- AVGO knapp über V1-Stop — voller Fokus auf Stop-Watch.
+
+**Entscheidung Market-Open:**
+- KEIN Buy (PreMarket-Bedingung "nur bei sehr starkem Setup" nicht erfüllt).
+- KEIN Sell (V1–V6 für alle 3 Positionen NICHT ausgelöst).
+- Priorität bis 13:00 Midday-Check: AVGO ≤ 371,14 $ löst V1-Market-Order aus (kein manueller Eingriff).
+- 1 Slot KW26 bleibt für Mi/Do/Fr.
+
+**Datenquellen:**
+- Alpaca /v2/account, /v2/positions, /v2/orders, /v2/clock (09:33 ET)
+- Alpaca Market Data SIP-Feed: latest trades + 274 daily bars (start 2025-05-19 → 2026-06-22).
+- Perplexity-Sektorabfrage übersprungen (Watchlist aus PreMarket bereits aktuell, K5-Status carry-over).
+
+---
+
 ## Pre-Market 08:30 ET — 2026-06-23 (Di, KW26)
 
 **Konto-Snapshot (Alpaca):**

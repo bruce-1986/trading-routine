@@ -1,19 +1,28 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-22 16:04 ET (Market Close KW26)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-23 09:36 ET (Market Open KW26 Di)
 
 ---
 
-## Aktueller Stand (Close 16:00 ET 2026-06-22)
+## Aktueller Stand (Market Open 09:33 ET 2026-06-23 Di)
+
+```
+Gesamtwert:        99.710,67 $   (Alpaca equity live)
+Investiert:        17.204,69 $   (17,25%, JPM 983,82 $ + UNH 9.727,80 $ + AVGO 6.493,07 $ Marktwert)
+Cash:              82.505,98 $   (82,75%)
+Unrealisiert P/L:    -224,55 $   (JPM -14,52 $ / UNH +89,40 $ / AVGO -299,43 $)
+Realisiert P/L:         0,00 $
+Offene Positionen:      3 / 8
+Pending Orders:         0
+```
+
+## Vortags-Stand (Close 16:00 ET 2026-06-22) — Referenz
 
 ```
 Gesamtwert:        99.935,22 $   (Alpaca equity Close)
 Investiert:        17.429,23 $   (17,44%, JPM 995,75 $ + UNH 9.745,68 $ + AVGO 6.687,80 $ Marktwert)
 Cash:              82.505,99 $   (82,56%)
-Unrealisiert P/L:     -64,76 $   (JPM -2,59 $ / UNH +108,00 $ / AVGO -170,17 $)
-Realisiert P/L:         0,00 $
-Offene Positionen:      3 / 8
-Pending Orders:         0
+Unrealisiert P/L:     -64,76 $
 ```
 
 ---
@@ -34,26 +43,26 @@ Alpha heute:         +0,304%   [POSITIV — AVGO-Verlust durch Cash-Quote 82,6% 
 
 ---
 
-## Offene Positionen (Detail Close 16:00 ET)
+## Offene Positionen (Detail Market Open 09:33 ET 2026-06-23)
 
-| Symbol | Qty | Entry | Close 22.06.| Unreal. P/L | % | Stop-Loss V1 | TP1/V3 | TP2/V4 |
+| Symbol | Qty | Entry | Live 09:33 | Unreal. P/L | % | Stop-Loss V1 | TP1/V3 | TP2/V4 |
 |--------|-----|----------|-------------|-------------|--------|-----------|----------|----------|
-| JPM    | 3   | 332,78 $ | 331,9175 $  | -2,59 $     | -0,26% | 306,16 $  | 399,34 $ | 449,25 $ |
-| UNH    | 24  | 401,57 $ | 406,07 $    | +108,00 $   | +1,12% | 369,44 $  | 481,88 $ | 542,12 $ |
-| AVGO   | 17  | 403,41 $ | 393,40 $    | -170,17 $   | -2,48% | 371,14 $  | 484,09 $ | 544,61 $ |
+| JPM    | 3   | 332,78 $ | 327,75 $    | -14,52 $    | -1,45% | 306,16 $  | 399,34 $ | 449,25 $ |
+| UNH    | 24  | 401,57 $ | 405,29 $    | +89,40 $    | +0,93% | 369,44 $  | 481,88 $ | 542,12 $ |
+| AVGO   | 17  | 403,41 $ | 382,06 $    | -362,95 $   | -5,30% | 371,14 $  | 484,09 $ | 544,61 $ |
 
 ---
 
-## Risiko-Status (Close 16:00 ET 2026-06-22)
+## Risiko-Status (Market Open 09:33 ET 2026-06-23)
 
 ```
-Daily P/L:            -0,0275%   [GRÜN — Limit: -3%]   (equity 99.935,22 / last 99.962,66)
-Weekly P/L:           -0,0275%   [GRÜN — Limit: -5%]   (Montag-Basis 99.962,66 $)
-Käufe diese Woche:    1 / 2      (AVGO 22.06. partial 17/24) — 1 weiterer Slot KW26
-VIX (Spot):           ~16,8      (geschätzt, keine Live-Abfrage am Close)
-Crash-Filter aktiv:   NEIN       (SPY -0,331%, weit über -5%-Trigger)
+Daily P/L:            -0,216%    [GRÜN — Limit: -3%]   (equity 99.710,67 / last 99.926,95)
+Weekly P/L:           -0,252%    [GRÜN — Limit: -5%]   (Montag-Basis 99.962,66 $)
+Käufe diese Woche:    1 / 2      (AVGO 22.06.) — 1 Slot frei (heute NICHT genutzt)
+VIX (Carry-over):     ~19,8      (PreMarket; <25 → 10% Sizing, <30 → Filter inaktiv)
+Crash-Filter aktiv:   NEIN       (SPY -1,57% intraday > -5%-Trigger)
 VIX-Filter aktiv:     NEIN
-Drawdown vom ATH:     -0,131%    [GRÜN] (ATH 100.066,47 $ intraday-Open)
+Drawdown vom ATH:     -0,356%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
 ```
 
 ---
@@ -98,6 +107,28 @@ V6 RSI>80 UND RS4w<0: RSI 46,63 | RS_4w -5,32% → NICHT ausgelöst (RSI viel zu
 ---
 
 ## Tagesbilanz-Log
+
+**Market Open 2026-06-23 09:36 ET (Di, KW26) — KEIN TRADE:**
+Gesamtwert: 99.710,67 $ | Cash: 82.505,98 $ (82,75 %) | Investiert (MV): 17.204,69 $ (17,25 %)
+Alpaca equity 99.710,67 vs. last_equity 99.926,95 → Daily P/L -0,216 % [GRÜN — Limit -3 %]
+Weekly P/L: -0,252 % vs. Mo-Basis 99.962,66 [GRÜN — Limit -5 %] | ATH 100.066,47 | DD -0,356 % [GRÜN]
+VIX (Carry-over PreMarket): 19,81 [GRÜN <30; <25 → 10 % Sizing erlaubt] | Crash-Filter NEIN (SPY -1,57 % > -5 %)
+Käufe KW26: 1/2 (1 Slot frei, NICHT genutzt) | Cash-Quote 82,75 % > 20 % Mindestreserve
+Positionen Live (Alpaca 09:33 ET):
+- JPM  327,75 $ (Entry 332,78, P/L -1,45 %, V1 306,16 Puffer +7,05 %) [SICHER]
+- UNH  405,29 $ (Entry 401,57, P/L +0,93 %, V1 369,44 Puffer +9,71 %) [SICHER]
+- AVGO 382,06 $ (Entry 403,41, P/L -5,30 %, V1 371,14 Puffer +2,94 %) [KRITISCH — knapp über Stop]
+V1–V6 Live-Check für alle 3 Positionen: alle SICHER. EMA50>EMA200 für alle 3 (JPM 309,56>304,91 Spread schmal). RSI/RS_4w unauffällig (kein V6 mit RSI>80 + RS<0). Keine Verkaufsorder platziert.
+Kandidaten-Scan K1–K5 (Watchlist KW26 mit Alpaca-Bars bis Mo 22.06.):
+- LLY  K1✓ K2✓ K3✓ (RS+6,77 %) K4 92 % FAIL  K5✓ grenzwertig → 4/5
+- ANET K1✓ K2✓ K3✓ (RS+18,25 %) K4 109 % FAIL  K5 offen → max 4/5
+- CRWD K1✓ K2✓ K3✓ (RS+50,37 %) K4 95 % FAIL  K5 offen → max 4/5
+- CAT  K1✓ K2✓ K3✓ (RS+35,37 %) K4 136 % ✓  K5 FAIL (FwdPE 38,87 > 35 carry-over) → 4/5
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Kein Kauf ausgeführt.
+Markt-Kontext: SPY -1,57 % intraday (Risk-off), VIX im Anstieg → "Kauf nur bei sehr starkem Setup"-Bedingung aus PreMarket bestätigt nicht erfüllt.
+Priorität bis 13:00 Midday-Check: AVGO-Stop-Watch. V1 371,14 $ wird automatisch ausgelöst — kein manueller Eingriff.
+ClickUp ROUTINE-Task gesendet (Prio 2 High wegen AVGO-Stop-Nähe): 869duymnz.
+> Entscheidung: KEIN Trade. Beobachtung AVGO. 1 Slot KW26 bleibt für besseres Setup Mi/Do/Fr.
 
 **Pre-Market 2026-06-23 08:30 ET (Di, KW26):**
 Gesamtwert: 99.660,80 $ | Cash: 82.505,98 $ (82,79 %) | Investiert (MV): 17.155,39 $ (17,21 %)
