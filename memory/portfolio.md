@@ -1,16 +1,16 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-23 09:36 ET (Market Open KW26 Di)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-23 13:03 ET (Midday KW26 Di)
 
 ---
 
-## Aktueller Stand (Market Open 09:33 ET 2026-06-23 Di)
+## Aktueller Stand (Midday 13:03 ET 2026-06-23 Di)
 
 ```
-Gesamtwert:        99.710,67 $   (Alpaca equity live)
-Investiert:        17.204,69 $   (17,25%, JPM 983,82 $ + UNH 9.727,80 $ + AVGO 6.493,07 $ Marktwert)
-Cash:              82.505,98 $   (82,75%)
-Unrealisiert P/L:    -224,55 $   (JPM -14,52 $ / UNH +89,40 $ / AVGO -299,43 $)
+Gesamtwert:        99.800,28 $   (Alpaca equity live)
+Investiert:        17.294,30 $   (17,33%, JPM 1.001,82 $ + UNH 9.775,56 $ + AVGO 6.516,95 $ Marktwert)
+Cash:              82.505,98 $   (82,67%)
+Unrealisiert P/L:    -134,93 $   (JPM +3,48 $ / UNH +137,88 $ / AVGO -341,02 $)
 Realisiert P/L:         0,00 $
 Offene Positionen:      3 / 8
 Pending Orders:         0
@@ -43,26 +43,26 @@ Alpha heute:         +0,304%   [POSITIV — AVGO-Verlust durch Cash-Quote 82,6% 
 
 ---
 
-## Offene Positionen (Detail Market Open 09:33 ET 2026-06-23)
+## Offene Positionen (Detail Midday 13:03 ET 2026-06-23)
 
-| Symbol | Qty | Entry | Live 09:33 | Unreal. P/L | % | Stop-Loss V1 | TP1/V3 | TP2/V4 |
-|--------|-----|----------|-------------|-------------|--------|-----------|----------|----------|
-| JPM    | 3   | 332,78 $ | 327,75 $    | -14,52 $    | -1,45% | 306,16 $  | 399,34 $ | 449,25 $ |
-| UNH    | 24  | 401,57 $ | 405,29 $    | +89,40 $    | +0,93% | 369,44 $  | 481,88 $ | 542,12 $ |
-| AVGO   | 17  | 403,41 $ | 382,06 $    | -362,95 $   | -5,30% | 371,14 $  | 484,09 $ | 544,61 $ |
+| Symbol | Qty | Entry    | Live 13:03  | Unreal. P/L | %      | Stop-Loss V1 | TP1/V3   | TP2/V4   |
+|--------|-----|----------|-------------|-------------|--------|--------------|----------|----------|
+| JPM    | 3   | 332,78 $ | 333,94 $    | +3,48 $     | +0,35% | 306,16 $     | 399,34 $ | 449,25 $ |
+| UNH    | 24  | 401,57 $ | 407,315 $   | +137,88 $   | +1,43% | 369,44 $     | 481,88 $ | 542,12 $ |
+| AVGO   | 17  | 403,41 $ | 383,35 $    | -341,02 $   | -4,97% | 371,14 $     | 484,09 $ | 544,61 $ |
 
 ---
 
-## Risiko-Status (Market Open 09:33 ET 2026-06-23)
+## Risiko-Status (Midday 13:03 ET 2026-06-23)
 
 ```
-Daily P/L:            -0,216%    [GRÜN — Limit: -3%]   (equity 99.710,67 / last 99.926,95)
-Weekly P/L:           -0,252%    [GRÜN — Limit: -5%]   (Montag-Basis 99.962,66 $)
+Daily P/L:            -0,127%    [GRÜN — Limit: -3%]   (equity 99.800,28 / last 99.926,95)
+Weekly P/L:           -0,162%    [GRÜN — Limit: -5%]   (Montag-Basis 99.962,66 $)
 Käufe diese Woche:    1 / 2      (AVGO 22.06.) — 1 Slot frei (heute NICHT genutzt)
 VIX (Carry-over):     ~19,8      (PreMarket; <25 → 10% Sizing, <30 → Filter inaktiv)
-Crash-Filter aktiv:   NEIN       (SPY -1,57% intraday > -5%-Trigger)
+Crash-Filter aktiv:   NEIN
 VIX-Filter aktiv:     NEIN
-Drawdown vom ATH:     -0,356%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
+Drawdown vom ATH:     -0,266%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
 ```
 
 ---
@@ -107,6 +107,16 @@ V6 RSI>80 UND RS4w<0: RSI 46,63 | RS_4w -5,32% → NICHT ausgelöst (RSI viel zu
 ---
 
 ## Tagesbilanz-Log
+
+**Midday 13:03 ET 2026-06-23:**
+Positionen: 3/8 | Ø P/L: -1,06 % | Equity 99.800,28 $ (Cash 82.505,98 $ / Investiert MV 17.294,30 $)
+Schlechteste Position: AVGO -4,97 % (Last 383,35 $, V1 371,14 Puffer +3,19 % [knapp])
+Beste Position:        UNH  +1,43 % (Last 407,315 $, V1 369,44 Puffer +9,30 %)
+Mittel:                JPM  +0,35 % (Last 333,94 $,  V1 306,16 Puffer +8,32 %)
+Stops: alle regulär — V1–V4 für JPM/UNH/AVGO nicht ausgelöst (RSI/EMA bei Midday nicht geprüft).
+Daily P/L: -0,127 % [GRÜN — Limit -3 %] (equity 99.800,28 / last_equity 99.926,95)
+Pending Orders: 0 | Käufe KW26: 1/2
+> Kein ClickUp-Log (keine Stops, kein Daily-Cap). AVGO weiterhin priorisiert für Close-Check. Nächste Routine: 16:00 ET Market Close.
 
 **Market Open 2026-06-23 09:36 ET (Di, KW26) — KEIN TRADE:**
 Gesamtwert: 99.710,67 $ | Cash: 82.505,98 $ (82,75 %) | Investiert (MV): 17.204,69 $ (17,25 %)
