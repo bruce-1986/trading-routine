@@ -4,6 +4,65 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-06-23 (Di, KW26)
+
+**Tagesperformance:**
+- Depot: 99.782,07 $ (Close) vs. last_equity 99.926,95 → -144,88 $ / -0,145 % [GRÜN]
+- SPY: 744,27 (Mo-Close 22.06.) → 733,62 (Di-Close 23.06.) = -1,431 % (Alpaca IEX, da SIP Restriktion)
+- Alpha: +1,286 % [POSITIV — Cash-Quote 82,69 % federt Marktverlust deutlich ab]
+- ATH: 100.066,47 $ (intraday 22.06., unverändert); DD -0,284 % [GRÜN]
+- VIX-Proxy (VIXY ETF): 23,00 (+5,3 % vs Vortag 21,84) — Spot ~22 (GRÜN <30, knapp unter 25-Sizing-Schwelle)
+
+**Positions-Signal-Check Close (V1–V6):**
+```
+Symbol | Close      | P/L %   | V1 Puffer  | V5 EMA50/EMA200    | V6 RSI / RS_4w
+JPM    | 334,185 $  | +0,41 % | +9,16 %    | 310,36 > 301,07 ✓  | 67,53 / +10,45 %
+UNH    | 409,65 $   | +1,91 % | +10,88 %   | 373,84 > 332,04 ✓  | 64,84 / +7,40 %
+AVGO   | 380,13 $   | -5,77 % | +2,42 %    | 398,25 > 355,49 ✓  | 43,61 / -6,68 %  [KRITISCH V1]
+```
+→ Alle V1–V6 SICHER. Keine Verkaufsorder pending.
+→ AVGO bleibt im KRITISCH-Status: V1-Puffer nur +2,42 %, RS_4w weiter negativ. EMA-Spread aber komfortabel (+42,76). Bei Open 24.06. ≤ 371,14 $ → V1-Market-Order automatisch.
+
+**Watchlist 24.06. (K1–K4 via Alpaca IEX-Bars bis Close 23.06., K5 via Perplexity verifiziert):**
+```
+Symbol | Sektor | Close       | EMA50/EMA200       | RSI(14) | RS_63d   | Vol/Avg20 | K1 K2 K3 K4 | K5
+LLY    | XLV    | 1.107,83    | 1049,3 / 944,3     | 56,0    | +9,66 %  |  96 %     | ✓ ✓ ✓ ✗     | ✓ grenzwertig (FwdPE 34,91)
+ANET   | XLK    |   162,20    |  156,4 / 140,8     | 51,2    | +7,09 %  |  84 %     | ✓ ✓ ✓ ✗     | ✗ FAIL (FwdPE 44,13 bestätigt)
+CRWD   | XLK    |   680,57    |  601,5 / 509,2     | 56,8    | +52,49 % |  56 %     | ✓ ✓ ✓ ✗     | offen (Cloud-SaaS typ. >35)
+CAT    | XLI    |   984,48    |  879,1 / 687,1     | 61,4    | +28,34 % | 175 %     | ✓ ✓ ✓ ✓     | ✗ FAIL (FwdPE 38,87 Stock Analysis / 42,19 Yahoo — beide > 35 bestätigt)
+GOOGL  | XLC    |   346,25    |  360,9 / 304,4     | 37,4    |  +2,44 % | 106 %     | ✓ ✗ ✓ ✗     | n/a (K2 fail)
+NVDA   | XLK    |   200,07    |  206,6 / 189,5     | 42,5    |  +1,84 % |  78 %     | ✓ ✗ ✓ ✗     | n/a (FwdPE >35)
+META   | XLC    |   562,42    |  605,4 / 647,8     | 39,2    | -19,07 % |  71 %     | ✗ ✗ ✗ ✗     | —
+COST   | XLP    |   957,34    |  989,3 / 973,7     | 40,5    | -12,96 % |  84 %     | ✓ ✗ ✗ ✗     | —
+NFLX   | XLC    |    72,77    |   85,6 /  99,0     | 21,0    | -34,31 % | 124 %     | ✗ ✗ ✗ ✓     | — (Stock-Split Spuren? — separater Check)
+```
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Slot KW26 (1/2 frei) bleibt ungenutzt für 24.06.
+→ Empfohlene Beobachtung: CAT (FwdPE-Druck — Q2-Earnings könnten Bewertung normalisieren), LLY (Vol-Pickup-Watch), CRWD (Vol-Pickup-Watch).
+
+**Sektor-Status (nach Close 23.06.):**
+- XLF (JPM): 1.002 $ → 5,80 % invest. / 1,00 % Gesamt   [OK 1/3]
+- XLV (UNH): 9.822 $ → 56,86 % invest. / 9,84 % Gesamt  [OK 1/3]
+- XLK (AVGO): 6.452 $ → 37,35 % invest. / 6,47 % Gesamt [OK 1/3, kein Verstoß <30 % Gesamt-Limit]
+
+**Weekly Loss Cap geprüft:**
+- weekly_pnl_pct = (99.782,07 - 99.962,66) / 99.962,66 = -0,181 %
+- Schwelle -5 % → Puffer ~4.819 $ → KEIN Auslöser. Keine pending Orders zum Stornieren.
+- Käufe KW26: 1/2 → 1 Slot frei für Mi/Do/Fr.
+
+**Datenquellen:**
+- Alpaca /v2/account, /v2/positions, /v2/orders, /v2/clock (16:04 ET)
+- Alpaca Market Data IEX-Feed (SIP gesperrt für Realtime): 277 daily bars start 2025-05-15.
+- VIX-Proxy via VIXY-ETF (kein Cboe-Spot via Alpaca, Perplexity-Realtime nicht verfügbar).
+- Perplexity sonar: Tagesdaten 23.06.2026 NICHT abrufbar (Datum "in Zukunft" laut Perplexity-Hinweis) — komplett Alpaca-Daten als Quelle of Truth. K5-FwdPE für CAT/ANET via Perplexity (historische Snapshots Yahoo/StockAnalysis).
+
+**Entscheidung Close:**
+- KEINE Verkaufsorder für 24.06. vorbereitet (V1–V6 alle SICHER).
+- KEIN Kauf-Setup für 24.06. (kein K1–K5-Kandidat).
+- AVGO bleibt Top-Priorität für Pre-Market/Open 24.06.: bei ≤ 371,14 $ wird V1-Market-Order automatisch ausgelöst.
+- Nächste Routine: Pre-Market 24.06. 08:30 ET.
+
+---
+
 ## Market Open 09:33 ET — 2026-06-23 (Di, KW26) — KEIN KAUF
 
 **Guardrail-Check (alle GRÜN):**
