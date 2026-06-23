@@ -4,6 +4,53 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-23 (Di, KW26)
+
+**Konto-Snapshot (Alpaca):**
+```
+Gesamtwert (equity):   99.660,80 $   (last_equity 99.926,95 → Daily P/L -0,266 % [GRÜN])
+Cash:                  82.505,98 $   (82,79 %)
+Investiert (MV):       17.155,39 $   (17,21 %) — JPM 993,00 | UNH 9.782,40 | AVGO 6.379,99
+ATH:                  100.066,47 $   (intraday 22.06.) | DD -0,406 % [GRÜN]
+```
+> Hinweis: Reconciliation-Differenz zu portfolio.md 22.06. Close-Snapshot (99.935,22 → 99.926,95) = -8,27 $. Vermutlich Settlement-Tick. Alpaca-Wert ist Quelle of Truth.
+
+**Markt-Daten (Perplexity sonar):**
+- VIX Spot: **19,81** (steigend von ~16,8 Vortag) [GRÜN — Filter bei 30]
+- SPY Pre-Market: **733,98 $** = **-1,40 %** vs. Mo-Close 744,27 [GRÜN — Vorsichtsschwelle -2 %, nicht überschritten]
+- 10Y Treasury Yield: **4,488 %** (steigend von 4,46 % Vortag → leicht risk-off)
+- Makro-Events heute: KEINE wesentlichen US-Releases / Fed-Speaker / FOMC.
+- Top-News: Perplexity-Ergebnisse hier dünn (keine spezifischen Headlines geliefert).
+
+**Positionen Live (Alpaca current_price 08:30 ET):**
+```
+Symbol | Last     | Entry   | P/L %   | V1 Stop  | Puffer
+JPM    | 331,00 $ | 332,78  | -0,54 % | 306,16 $ | +8,11 %  [SICHER]
+UNH    | 407,60 $ | 401,57  | +1,50 % | 369,44 $ | +10,32 % [SICHER]
+AVGO   | 375,29 $ | 403,41  | -6,97 % | 371,14 $ | +1,12 %  [KRITISCH — knapp über Stop]
+```
+→ **AVGO-Warnung:** Premarket -4,29 % vs. Vortags-Close. Bei weiterem Rutschen -1,1 % im Market Open wird V1 ausgelöst → Market-Order Verkauf. Stop ist hart, kein Eingriff.
+
+**Guardrail-Check (alle GRÜN):**
+- Daily P/L -0,266 % [GRÜN — Limit -3 %]
+- Weekly P/L -0,302 % (vs. Mo-Basis 99.962,66) [GRÜN — Limit -5 %]
+- Drawdown vom ATH -0,406 % [GRÜN — Alarm -15 %]
+- VIX 19,81 < 30 [GRÜN]
+- SPY Pre-Market -1,40 % > -2 % [GRÜN, aber Risk-off-Tendenz]
+- Crash-Filter NEIN (gestern -0,331 % < |-5 %|)
+- Käufe KW26: 1/2 (AVGO 22.06.) → 1 Slot frei
+
+**Earnings-Blackouts (Perplexity):**
+- JPM 14.07.26 (21 Tage), UNH 16.07.26 (23 Tage), AVGO 03.09.26 (72 Tage) → KEINE Blackouts in nächsten 3 Handelstagen, kein Stop-Tightening nötig.
+
+**Entscheidung Market-Open-Scan 09:30 ET:**
+- **Scan: JA**, aber **Kauf nur bei sehr starkem Setup** (SPY -1,40 % Premarket + VIX-Anstieg + AVGO im Drawdown → erhöhte Vorsicht).
+- **Priorität:** AVGO-Beobachtung — bei V1-Trigger (≤ 371,14 $) Market-Order Verkauf 17 Sh.
+- **Watchlist:** LLY (XLV K1–K5 ✓ grenzwertig), ANET (XLK K1–K3 ✓), CRWD (XLK K1–K3 ✓ — K5 prüfen), CAT (XLI K5-FwdPE verifizieren).
+- **Sektor-Hinweis:** XLK-Slot bereits AVGO; LLY würde 2. XLV nach UNH (OK ≤ 3). XLF (JPM) bereits belegt.
+
+---
+
 ## Market Close 16:00 ET — 2026-06-22 (Mo, KW26)
 
 **Tagesperformance:**
