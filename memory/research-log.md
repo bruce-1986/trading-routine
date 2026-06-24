@@ -4,6 +4,55 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-24 (Mi, KW26)
+
+**Marktdaten:**
+- VIX Spot ~19,32 (Carry-over Perplexity); Close 23.06. 19,49 → <25 → 10 % Sizing erlaubt, kein VIX-Filter
+- SPY Pre-Market 736,625 $ Mid (Alpaca Quote 08:33 ET, bid 736,54 / ask 736,71) → +0,41 % vs Close 23.06. 733,62 $ [GRÜN, nicht <-2 %]
+- 10Y Treasury Yield: via Perplexity nicht verfügbar (Datum-in-Zukunft-Restriktion)
+- Crash-Filter: NEIN (SPY 23.06. -1,431 % > -5 %)
+
+**Alpaca-Account (Pre-Market 08:32 ET):**
+- equity 99.844,39 $ | cash 82.505,98 $ | last_equity 99.792,95 $
+- Daily P/L: +0,0515 % [GRÜN — Limit -3 %]
+- Weekly P/L: -0,118 % vs Mo-Basis 99.962,66 $ [GRÜN — Limit -5 %]
+- DD vom ATH 100.066,47 $: -0,222 % [GRÜN]
+- Reconciliation portfolio.md Close 23.06. 99.782,07 $ vs Alpaca last_equity 99.792,95 $ → Diff +10,88 $ Settlement-Tick (After-Hours Mark-to-Market), OK
+- Käufe KW26: 1/2 (1 Slot frei für Mi/Do/Fr) | Pending Orders: 0
+
+**Positionen Live (Alpaca 08:32 ET):**
+```
+Symbol | Last     | Entry   | P/L %   | V1 Stop | Puffer  | change_today | Status
+JPM    | 334,40   | 332,78  | +0,49 % | 306,16  | +9,22 % |  +0,08 %     | SICHER
+UNH    | 410,10   | 401,57  | +2,12 % | 369,44  | +11,01% |  +0,21 %     | SICHER
+AVGO   | 381,93   | 403,41  | -5,33 % | 371,14  | +2,90 % |  +0,47 %     | KRITISCH (V1-nah)
+```
+
+**Earnings-Blackout-Check (nächste 3 HT, Perplexity verifiziert):**
+- JPM: 14.07.2026 (20 Tage entfernt) → kein Blackout
+- UNH: 16.07.2026 (22 Tage entfernt) → kein Blackout
+- AVGO: 29.08.2026 (66 Tage entfernt) → kein Blackout
+- → KEIN Stop-Tightening nötig.
+
+**Guardrails-Status (alle GRÜN):**
+- Daily Loss Cap -3 %: NEIN (+0,05 %)
+- Weekly Loss Cap -5 %: NEIN (-0,12 %)
+- Drawdown-Alarm -15 %: NEIN (-0,22 %)
+- Drawdown-Stopp -20 %: NEIN
+- Crash-Filter SPY -5 %: NEIN (gestern -1,43 %)
+- VIX-Filter >30: NEIN (~19,3 — sogar <25 → 10 % Sizing)
+- Käufe-Limit 2/Wo: 1/2 (1 Slot frei)
+
+**Makro-Events 24.06. (Perplexity):** Keine spezifischen Fed-Reden/Wirtschaftsdaten als bestätigt verfügbar. News-Tenor: Goldman Sachs Risiko-Warnung trotz Rekord-ETF-Inflows (Short-Covering-getrieben); VIX am unteren Trendkanal — Hinweis auf dünnes Sicherheitsnetz.
+
+**Entscheidung Pre-Market:**
+- Market-Open-Scan 09:30 ET: **JA** — alle Guardrails GRÜN, SPY Pre-Market positiv (+0,41 %), VIX <25.
+- Priorität: AVGO-Stop-Watch (V1-Puffer nur +2,90 %, change_today +0,47 % → leichte Erholung Pre-Market; automatisch bei Last ≤ 371,14 $).
+- Watchlist KW26 (1 Slot frei): CAT (K4 stark, K5 FwdPE >35 Block), LLY (Vol-Trigger-Watch), CRWD (Vol-Trigger-Watch), ANET (K5 FAIL FwdPE 44,13).
+- Kauf nur bei sehr starkem Setup (alle K1–K5 ✓).
+
+---
+
 ## Market Close 16:00 ET — 2026-06-23 (Di, KW26)
 
 **Tagesperformance:**
