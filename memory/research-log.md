@@ -4,6 +4,59 @@
 
 ---
 
+## Market Open 09:33 ET — 2026-06-24 (Mi, KW26) — KEIN KAUF
+
+**Guardrail-Check (alle GRÜN):**
+- Daily P/L +0,144 % (equity 99.936,82 / last 99.792,95) [GRÜN — Limit -3 %]
+- Weekly P/L -0,0258 % (vs Mo-Basis 99.962,66) [GRÜN — Limit -5 %]
+- Drawdown vom ATH 100.066,47: -0,130 % [GRÜN — Alarm -15 %]
+- VIX-Proxy VIXY 22,80 → Spot ~21,8 < 30 [GRÜN; <25 → 10 % Sizing erlaubt]
+- Crash-Filter NEIN (SPY 736,17 = +0,35 % vs Close 23.06. 733,62)
+- Cash 82,56 % > 20 % Mindestreserve
+- Käufe KW26: 1/2 → 1 Slot frei
+
+**Positionen Live (Alpaca 09:33 ET), V1–V6 Signal-Check:**
+```
+Symbol | Last     | Entry   | P/L %   | V1 Stop | Puffer  | change_today | V5 EMA50/EMA200    | V6 RSI / RS_4w   | Status
+JPM    | 333,69   | 332,78  | +0,27 % | 306,16  | +9,00 % |  -0,14 %     | 310,36 > 301,07 ✓  | 67,53 / +10,45 % | SICHER
+UNH    | 411,15   | 401,57  | +2,39 % | 369,44  | +11,28% |  +0,46 %     | 373,84 > 332,04 ✓  | 64,84 / +7,40 %  | SICHER
+AVGO   | 386,05   | 403,41  | -4,30 % | 371,14  | +4,02 % |  +1,55 %     | 398,25 > 355,49 ✓  | 43,61 / -6,68 %  | ENTSPANNT (Erholung)
+```
+→ Alle V1–V6 NICHT ausgelöst. AVGO V1-Puffer hat sich von +2,42 % (Close 23.06.) auf +4,02 % verbessert (intraday +1,55 %).
+→ Kein Eingriff (regelbasiert: Stop läuft automatisch bei ≤ 371,14 $).
+
+**Kandidaten-Scan (Watchlist KW26, K1–K4 via Alpaca-Bars bis Close 23.06., K5 carry-over verifiziert 23.06.):**
+```
+Symbol | Close 23.06 | EMA50/EMA200    | RSI(14) | RS_63d vs SPY | Vol/Avg20 | K1 K2 K3 K4 | K5
+CAT    |   984,48    |  879,1 / 687,1  |  61,4   | +28,34 %      |  175 % (196k/112k)| ✓ ✓ ✓ ✓ | ✗ FAIL (FwdPE 38,87/42,19 > 35)
+LLY    | 1.107,83    | 1049,3 / 944,3  |  56,0   |  +9,66 %      |   96 % (134k/141k)| ✓ ✓ ✓ ✗ | ✓ grenzwertig (FwdPE 34,91)
+CRWD   |   680,57    |  601,5 / 509,2  |  56,8   | +52,49 %      |   48 % (68k/144k) | ✓ ✓ ✓ ✗ | vermutlich FAIL (Cloud-SaaS >35)
+ANET   |   162,20    |  156,4 / 140,8  |  51,2   |  +7,09 %      |   82 % (328k/400k)| ✓ ✓ ✓ ✗ | ✗ FAIL (FwdPE 44,13)
+```
+
+**Auswahl:**
+- CAT: K1–K4 ✓ (Vol stark 175 %, RS +28,34 %), aber K5 FwdPE bleibt >35 carry-over verifiziert → FAIL.
+- LLY/CRWD/ANET: K4 Volumen unter 120 % Schwelle → FAIL (CRWD besonders schwach mit 48 %).
+- → **KEIN Kandidat erfüllt alle 5 Kaufsignale** → Kauf-Slot bleibt ungenutzt für 24.06.
+
+**Markt-Kontext (Risk-on Erholung):**
+- SPY 736,17 = +0,35 % intraday (Pre-Market +0,41 % bestätigt sich)
+- VIXY 22,80 (-0,87 % vs Close 23,00) → VIX Spot ~21,8 (entspannt)
+- AVGO Erholung +1,55 % intraday — V1-Stop-Druck nachgelassen.
+
+**Entscheidung Market-Open:**
+- KEIN Buy (kein Kandidat mit allen K1–K5 ✓).
+- KEIN Sell (V1–V6 für alle 3 Positionen NICHT ausgelöst).
+- Priorität bis 13:00 Midday-Check: AVGO weiter beobachten (V1 371,14 $ Stop läuft automatisch), aber Erholung gibt Atemraum.
+- 1 Slot KW26 bleibt für Do/Fr.
+
+**Datenquellen:**
+- Alpaca /v2/account, /v2/positions, /v2/orders, /v2/clock (09:32 ET) — `is_open=true`
+- Alpaca Market Data IEX-Feed: SPY/VIXY latest trades + 200-Tage-Bars für Watchlist (CAT/LLY/CRWD/ANET).
+- K5-Fundamentals carry-over aus Close 23.06. (Perplexity-Verifizierung von gestern bleibt aktuell — keine Earnings/Guidance heute).
+
+---
+
 ## Pre-Market 08:30 ET — 2026-06-24 (Mi, KW26)
 
 **Marktdaten:**
