@@ -108,6 +108,23 @@ V6 RSI>80 UND RS4w<0: RSI 43,61 | RS_4w -6,68 % → NICHT ausgelöst (RSI viel z
 
 ## Tagesbilanz-Log
 
+**Pre-Market 2026-06-24 08:30 ET (Mi, KW26):**
+Gesamtwert: 99.844,39 $ | Cash: 82.505,98 $ (82,63 %) | Investiert (MV): 17.338,41 $ (17,37 %)
+Alpaca equity 99.844,39 vs. last_equity 99.792,95 → Daily P/L +0,0515 % [GRÜN — Limit -3 %]
+ATH: 100.066,47 $ | DD vs. ATH: -0,222 % [GRÜN]
+Weekly P/L: -0,118 % (vs. Mo-Basis 99.962,66) [GRÜN — Limit -5 %] | Käufe KW26: 1/2 (1 Slot frei)
+VIX: ~19,3 (Spot Carry-over Perplexity; Close 23.06. 19,49) | SPY Pre-Market: 736,625 $ Mid = +0,41 % vs Close 733,62 | 10Y: n/a (Perplexity)
+Guardrails: alle GRÜN. Crash-Filter NEIN. VIX-Filter NEIN (<25 → 10 % Sizing erlaubt). DD-Alarm NEIN.
+Positionen Live (Alpaca 08:32 ET):
+- JPM  334,40 $  (Entry 332,78, P/L +0,49 %, V1 306,16 Puffer +9,22 %) [SICHER]
+- UNH  410,10 $  (Entry 401,57, P/L +2,12 %, V1 369,44 Puffer +11,01 %) [SICHER]
+- AVGO 381,93 $  (Entry 403,41, P/L -5,33 %, V1 371,14 Puffer +2,90 %) [KRITISCH — V1-nah, change_today +0,47 %]
+Earnings-Blackouts (Perplexity): keine (JPM 14.07., UNH 16.07., AVGO 29.08.) — kein Stop-Tightening.
+Reconciliation: last_equity 99.792,95 vs. portfolio.md Close 23.06. 99.782,07 = +10,88 $ Settlement-Tick.
+> Entscheidung: Market-Open-Scan 09:30 ET JA — alle Guardrails GRÜN, SPY Pre-Market positiv (+0,41 %), VIX <25.
+> Priorität: AVGO-Stop-Watch (V1 371,14 $ wird automatisch ausgelöst bei Last ≤). Leichte Pre-Market-Erholung change_today +0,47 %.
+> Watchlist KW26 (1 Slot): CAT (K5 Block FwdPE >35), LLY (Vol-Trigger-Watch), CRWD (Vol-Trigger-Watch). Kauf nur bei vollem K1–K5.
+
 **Close 2026-06-23 16:00 ET — Tagesbilanz KW26 Di:**
 Gesamtwert:     99.782,07 $
 Cash:           82.505,98 $  (82,69 %)
