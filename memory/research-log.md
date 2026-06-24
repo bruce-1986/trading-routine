@@ -4,6 +4,67 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-06-24 (Mi, KW26) — Tagesbilanz + Watchlist 25.06.
+
+**Tagesperformance:**
+- Alpaca equity Close: 99.772,92 $ (vs last_equity 99.792,95 → -20,03 $ / -0,0201 %) [GRÜN — Limit -3 %]
+- SPY 24.06. Close 733,32 (Alpaca IEX-Bar) vs 23.06. Close 733,62 → -0,041 %
+- Alpha heute: +0,021 % (leicht positiv durch hohe Cash-Quote 82,69 %)
+- Weekly P/L: -0,190 % vs Mo-Basis 99.962,66 → GRÜN, kein WEEKLY_CAP
+- ATH 100.066,47 $ unverändert | DD -0,293 % [GRÜN]
+- VIXY 22,84 (-0,7 % vs 23,00) → Spot ~21,6 → GRÜN (<25 → 10 % Sizing erlaubt)
+- Crash-Filter NEIN | VIX-Filter NEIN | Käufe KW26: 1/2 (1 Slot frei)
+
+**Hinweis Datenquellen-Diskrepanz:**
+- Perplexity SPY 24.06.: +0,29 % (cnbc.com Snapshot 735,17 vs 733,58) — Datum-in-Zukunft Inkonsistenz, nicht eindeutig 24.06.
+- Alpaca IEX 1Day-Bar 24.06.: Close 733,32 = -0,041 % vs 733,62 → wird als Source of Truth verwendet (konsistent mit Vortagen).
+
+**V1–V6 Signal-Check Close (alle SICHER):**
+```
+Symbol | Close    | Entry   | P/L %   | V1 Stop | Puffer  | change_today | V5 EMA50/EMA200      | V6 RSI / RS_4w   | Status
+JPM    | 334,48   | 332,78  | +0,51 % | 306,16  | +9,25 % |  +0,10 %     | ~311,3 > ~301,4 ✓    | ~66 / +9,9 %     | SICHER
+UNH    | 406,00   | 401,57  | +1,10 % | 369,44  | +9,89 % |  -0,79 %     | ~375,1 > ~332,8 ✓    | ~61 / +6,5 %     | SICHER
+AVGO   | 383,50   | 403,41  | -4,94 % | 371,14  | +3,33 % |  +0,88 %     | ~397,7 > ~355,8 ✓    | ~45 / ~-6 %      | WATCH
+```
+→ KEINE Verkaufsorder für 25.06. EMA50>EMA200 für alle 3 weiter intakt. AVGO V1-Puffer enger als am Open (+4,02 → +3,33 %), aber besser als 23.06.-Close (+2,42 %).
+
+**Watchlist Scan K1–K5 (Close 24.06., Alpaca IEX-Bars, K5 Perplexity-Carry-over):**
+```
+Symbol | Close 24.06 | RS_63d vs SPY | Vol/Avg20         | K1 K2 K3 K4 | K5 | Score
+CAT    |   994,18    | ~+29 %        | 136,8k/~120k=114 %| ✓ ✓ ✓ ✓-grenz | ✗ FAIL (FwdPE 38,87/42,19) | 4/5
+LLY    | 1.117,35    |  ~+10 %       | 111,7k/~141k=79 % | ✓ ✓ ✓ ✗     | ✓ grenzwertig (FwdPE 34,91) | 3/5
+CRWD   |   672,72    | ~+50 %        |  37,7k/~144k=26 % | ✓ ✓ ✓ ✗     | vermutlich FAIL (Cloud-SaaS >35) | 3/5
+ANET   |   161,87    |  ~+7 %        | 250,7k/~400k=63 % | ✓ ✓ ✓ ✗     | ✗ FAIL (FwdPE 44,13) | 3/5
+```
+
+**Auswahl Watchlist 25.06.:**
+- CAT bleibt **Lead-Kandidat** (K1–K4 ✓, einziger Vol-Trigger >100 %, K5 weiter blockierend — Perplexity-Recheck am Mo-Open).
+- LLY: K4 Vol auf Trend-Trigger >120 % warten (heute 79 %).
+- CRWD: K4 sehr schwach (26 %) — vermutlich kein Setup bis nächste Woche.
+- ANET: K5 FAIL bleibt — strukturell ausgesondert für KW26.
+
+→ Slot KW26 (1/2) bleibt offen für 25.06. (Do). Kauf nur bei vollem K1–K5.
+
+**Markt-Kontext:**
+- SPY -0,04 % praktisch flat — Konsolidierung nach -1,43 % Di und +0,35 % intraday Mi
+- VIXY -0,7 % → Spot ~21,6 (weiter entspannt, ~25 % unter dem 30er-Filterniveau)
+- Risk-on/Risk-off neutral; Erholung von AVGO setzt sich verhalten fort
+
+**Entscheidung Close:**
+- KEIN Verkauf (alle V1–V6 GRÜN, AVGO im Watch aber Puffer ausreichend).
+- KEINE Verkaufsorder für 25.06. vorzubereiten.
+- KEIN Kauf (kein Kandidat mit allen K1–K5 ✓).
+- Watchlist 25.06.: CAT (K5 Watch), LLY (K4 Vol-Trigger).
+- Weekly Loss Cap NICHT ausgelöst → kein Sperrauslöser bis Mo.
+
+**Datenquellen:**
+- Alpaca /v2/account, /v2/positions, /v2/orders, /v2/clock (16:04 ET) — `is_open=false`
+- Alpaca Market Data IEX-Feed: 1Day-Bars für SPY/VIXY/CAT/LLY/CRWD/ANET sowie Positionen.
+- Perplexity SPY-Tagesperformance (inkonsistent, nicht als Truth verwendet).
+- K5-Fundamentals: Carry-over Verifizierung vom 23.06.
+
+---
+
 ## Market Open 09:33 ET — 2026-06-24 (Mi, KW26) — KEIN KAUF
 
 **Guardrail-Check (alle GRÜN):**
