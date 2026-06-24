@@ -108,6 +108,28 @@ V6 RSI>80 UND RS4w<0: RSI 43,61 | RS_4w -6,68 % → NICHT ausgelöst (RSI viel z
 
 ## Tagesbilanz-Log
 
+**Market Open 2026-06-24 09:33 ET (Mi, KW26) — KEIN TRADE:**
+Gesamtwert: 99.936,82 $ | Cash: 82.505,98 $ (82,56 %) | Investiert (MV): 17.430,84 $ (17,44 %)
+Alpaca equity 99.936,82 vs. last_equity 99.792,95 → Daily P/L +0,144 % [GRÜN — Limit -3 %]
+Weekly P/L: -0,0258 % vs. Mo-Basis 99.962,66 [GRÜN — Limit -5 %] | ATH 100.066,47 | DD -0,130 % [GRÜN]
+VIX (Proxy VIXY 09:32 ET): 22,80 → Spot ~21,8 [GRÜN <25 → 10 % Sizing erlaubt] | Crash-Filter NEIN (SPY 736,17 = +0,35 % vs Close 733,62)
+Käufe KW26: 1/2 (1 Slot frei, NICHT genutzt) | Cash-Quote 82,56 % > 20 % Mindestreserve
+Positionen Live (Alpaca 09:33 ET):
+- JPM  333,69 $ (Entry 332,78, P/L +0,27 %, V1 306,16 Puffer +9,00 %, change_today -0,14 %) [SICHER]
+- UNH  411,15 $ (Entry 401,57, P/L +2,39 %, V1 369,44 Puffer +11,28 %, change_today +0,46 %) [SICHER]
+- AVGO 386,05 $ (Entry 403,41, P/L -4,30 %, V1 371,14 Puffer +4,02 %, change_today +1,55 %) [ENTSPANNT — Erholung aus KRITISCH]
+V1–V6 Live-Check für alle 3 Positionen: alle SICHER. EMA50>EMA200 carry-over (JPM 310,36>301,07; UNH 373,84>332,04; AVGO 398,25>355,49). RSI/RS_4w unauffällig — kein V6-Trigger. Keine Verkaufsorder platziert.
+Kandidaten-Scan K1–K5 (Watchlist KW26 via Alpaca-Bars bis Close 23.06., K5 carry-over verifiziert 23.06.):
+- CAT  K1✓ K2✓ K3✓ (RS+28,34 %) K4✓ (Vol 175 % Avg20=112,6k) K5 FAIL (FwdPE 38,87/42,19 > 35 bestätigt) → 4/5
+- LLY  K1✓ K2✓ K3✓ (RS+9,66 %)  K4 FAIL (Vol 134,6k vs Avg20 ~140,8k = 96 %) K5 ✓ grenzwertig (FwdPE 34,91) → 4/5
+- CRWD K1✓ K2✓ K3✓ (RS+52,49 %) K4 FAIL (Vol 68,5k vs Avg20 ~144k = 48 %) K5 vermutlich FAIL (Cloud-SaaS >35) → max 3/5
+- ANET K1✓ K2✓ K3✓ (RS+7,09 %) K4 FAIL (Vol 328k vs Avg20 ~400k = 82 %) K5 FAIL (FwdPE 44,13) → 3/5
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Slot KW26 (1/2) bleibt frei für Do/Fr.
+Markt-Kontext: SPY +0,35 % intraday (Risk-on Erholung), VIXY -0,87 % → Spot ~21,8 (entspannt) → kein Aufrücken eines Kandidaten erwartet.
+Priorität bis 13:00 Midday-Check: AVGO weiter beobachten (V1 371,14 $ Puffer +4,02 % — entspannter als 23.06., aber RS_4w noch -6,68 %). Kein manueller Eingriff.
+ClickUp ROUTINE-Task gesendet (Prio 3 Normal — alle GRÜN, kein Stop-Alert).
+> Entscheidung: KEIN Trade. AVGO-Erholung positiv. 1 Slot KW26 bleibt für besseres Setup Do/Fr.
+
 **Pre-Market 2026-06-24 08:30 ET (Mi, KW26):**
 Gesamtwert: 99.844,39 $ | Cash: 82.505,98 $ (82,63 %) | Investiert (MV): 17.338,41 $ (17,37 %)
 Alpaca equity 99.844,39 vs. last_equity 99.792,95 → Daily P/L +0,0515 % [GRÜN — Limit -3 %]
