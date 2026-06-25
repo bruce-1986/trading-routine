@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-24 16:04 ET (Close KW26 Mi)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-25 08:32 ET (Pre-Market KW26 Do)
 
 ---
 
@@ -108,6 +108,23 @@ V6 RSI>80 UND RS4w<0: RSI ~45 (leicht erholt) | RS_4w ~-6 % → NICHT ausgelöst
 ---
 
 ## Tagesbilanz-Log
+
+**Pre-Market 2026-06-25 08:30 ET (Do, KW26):**
+Gesamtwert: 99.840,20 $ | Cash: 82.505,98 $ (82,64 %) | Investiert (MV): 17.334,22 $ (17,36 %)
+Alpaca equity 99.840,20 vs. last_equity 99.740,72 → Daily P/L +0,0997 % [GRÜN — Limit -3 %]
+ATH: 100.066,47 $ | DD vs. ATH: -0,226 % [GRÜN]
+Weekly P/L: -0,123 % (vs. Mo-Basis 99.962,66) [GRÜN — Limit -5 %] | Käufe KW26: 1/2 (1 Slot frei)
+VIX: 17,93 (-3,76 % vs 18,63 — deutlich entspannter vs Vortag 19,49 Spot) | SPY Pre-Market: 739,04 $ Mid = +0,78 % vs Close 733,32 | 10Y: n/a (Perplexity)
+Guardrails: alle GRÜN. Crash-Filter NEIN. VIX-Filter NEIN (<25 → 10 % Sizing erlaubt). DD-Alarm NEIN.
+Positionen Live (Alpaca 08:32 ET):
+- JPM  334,02 $  (Entry 332,78, P/L +0,37 %, V1 306,16 Puffer +9,10 %, change_today +0,17 %) [SICHER]
+- UNH  405,05 $  (Entry 401,57, P/L +0,87 %, V1 369,44 Puffer +9,64 %, change_today -0,18 %) [SICHER]
+- AVGO 388,88 $  (Entry 403,41, P/L -3,60 %, V1 371,14 Puffer +4,78 %, change_today +1,78 %) [ENTSPANNT — Erholung gegenüber Close +3,33 %]
+Earnings-Blackouts (Perplexity): keine (JPM 14.07. CONFIRMED, UNH 16.07., AVGO 29.08.) — kein Stop-Tightening.
+Reconciliation: last_equity 99.740,72 vs. portfolio.md Close 24.06. 99.772,92 = -32,20 $ Settlement-Tick.
+> Entscheidung: Market-Open-Scan 09:30 ET JA — alle Guardrails GRÜN, SPY Pre-Market +0,78 %, VIX 17,93 entspannt.
+> Priorität: AVGO Erholungs-Watch (V1 371,14 $ Puffer +4,78 % komfortabel; Stop automatisch bei Last ≤).
+> Watchlist KW26 (1 Slot): CAT (Lead-Kandidat K1–K4 ✓, K5 FwdPE >35 Block — Perplexity-Recheck am Open), LLY (K4 Vol-Trigger), CRWD (K4 schwach), ANET (K5 FAIL bleibt). Kauf nur bei vollem K1–K5.
 
 **Close 2026-06-24 16:00 ET — Tagesbilanz KW26 Mi:**
 Gesamtwert:     99.772,92 $
