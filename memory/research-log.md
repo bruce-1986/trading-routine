@@ -4,6 +4,65 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-06-25 (Do, KW26) — KEIN TRADE
+
+**Makro-Lage (Tagesschluss, Alpaca IEX-Bar Source of Truth):**
+```
+SPY Close:        733,33 $ (+0,001 % vs 733,32 Mi-Close — quasi flach)
+SPY Tagesspanne:  729,63 – 739,31 (Open 738,90 → Pullback)
+VIX-Proxy VIXY:   22,49 $ (-1,53 % vs 22,84) → Spot ~21,5 [GRÜN <25]
+Crash-Filter:     NEIN (SPY flach < |-5 %|)
+Markt-Status:     CLOSED
+```
+
+**Tages-Performance Bull:**
+```
+Equity Start (last_equity): 99.740,72 $  →  Equity Close: 99.972,12 $
+Daily P/L:                  +231,40 $  (+0,232 %)
+Alpha vs SPY:               +0,231 %  [POSITIV]
+Treiber:                    UNH +2,51 % auf neues Posit-Hoch 417,54 (+345,84 $ unreal P/L);
+                            JPM +0,51 %; AVGO -0,28 % (leichter Drift Richtung V1-Watch).
+ATH:                        100.066,47 $ (unverändert) | DD -0,094 % [GRÜN]
+Weekly P/L:                 +0,0095 % vs Mo-Basis 99.962,66 [GRÜN — Limit -5 %]
+```
+
+**Positionen Signal-Check Close (V1–V6) — alle SICHER, keine Verkaufsorder pending:**
+```
+Symbol | Close   | Entry   | P/L %   | V1 Stop | Puffer  | change | V5 EMA50/EMA200       | V6 RSI / RS_4w  | Status
+JPM    | 335,15  | 332,78  | +0,71 % | 306,16  | +9,47 % | +0,51% | ~311,5 > ~301,5 ✓     | ~67 / +10 %     | SICHER (Hoch heute 343,31)
+UNH    | 415,98  | 401,57  | +3,59 % | 369,44  | +12,60% | +2,51% | ~375,5 > ~333,2 ✓     | ~70 / +>8 %     | STARK (neues Posit-Hoch 417,54)
+AVGO   | 381,01  | 403,41  | -5,55 % | 371,14  | +2,66 % | -0,28% | ~397,4 > ~356,2 ✓     | ~46 / ~-6 %     | KRITISCH (Watch)
+```
+
+**Watchlist morgen (Fr 26.06., K1–K4 via Alpaca IEX-Bars Close 25.06., K5 carry-over):**
+```
+Symbol | Close 25.06 | Chg Tag   | EMA50/EMA200 | RSI    | RS_63d vs SPY | Vol/Avg20            | K1 K2 K3 K4 | K5         | Score
+CAT    | 1.056,65    | +6,28 %!  | 883,8>684,1  | ~65    | ~+34 % vs +12 | 296,3k / ~125k = 237%| ✓ ✓ ✓ ✓     | FAIL (38,87–42,19) | 4/5 (K5 blockt)
+LLY    | 1.127,63    | +0,92 %   | 1052,6>962,6 | ~58    | ~+12 %        | 117,3k / ~141k = 83% | ✓ ✓ ✓ ✗     | ✓ (34,91)  | 3/5 (K4 schwach)
+ANET   |   165,56    | +2,29 %   | 156,6>144,0  | ~52    | ~+8 %         | 404,1k / ~364k = 111%| ✓ ✓ ✓ grenz| FAIL (44,13)| 3/5
+CRWD   |   678,62    | +0,88 %   | 604,2>510,4  | ~55    | ~+50 %        | 59,2k / ~117k = 51%  | ✓ ✓ ✓ ✗     | FAIL ?     | 3/5
+```
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Slot KW26 (1/2) bleibt frei für Fr.
+→ **Lead: CAT** — heute Volumen-Explosion 237 % Avg20 und +6,28 % Tagesgewinn (mögliche News/Sektor-Rotation Industrials/XLI). K5 (FwdPE) bleibt blockierender Faktor — am Open via Perplexity zwingend rechecken, ob Konsensus-Revisions FwdPE < 35 drücken.
+→ ANET nähert sich K4-Trigger (111 %) — bei weiterem Volumen-Push morgen erneut prüfen.
+
+**Watchlist morgen: CAT (Lead, K5 Recheck), ANET (K4 nahe Trigger), LLY (K4 schwach), CRWD (K4 sehr schwach)**
+
+**Key-News (knapp):**
+```
+1. Industrials/Materials zeigen Stärke (CAT +6,28 % bei Vol-Explosion) — mögliche Rotation aus Mega-Cap-Tech
+2. SPY tagesspannig (Open 738,90 → Close 733,33, intraday -1,29 % vom Hoch) — Pullback-Day mit knappem Plus
+3. VIXY -1,53 % → Spot ~21,5 entspannt; KEINE Filter aktiv
+```
+
+**Entscheidung morgen:**
+Pre-Market-Routine 08:30 ET wie geplant. Buy-Scan 09:30 ET JA, falls Guardrails GRÜN — CAT-Recheck K5 prioritär, sonst Slot KW26 bleibt frei (letzter Handelstag KW26 → Wochen-Slot verfällt).
+
+**Datenqualitäts-Hinweis:**
+Perplexity SPY-Realtime liefert Pre-Market-Werte (+0,77 %) statt Tagesschluss — Datum-in-Zukunft-Bug bleibt bestehen. Alpaca IEX-Bar = Source of Truth. Sektor-/Volume-Daten ebenfalls aus Alpaca, da Perplexity keine SPDR-ETF-Sektorperformance liefert.
+
+---
+
 ## Market Open 09:33 ET — 2026-06-25 (Do, KW26) — KEIN KAUF
 
 **Guardrail-Check (alle GRÜN):**
