@@ -4,6 +4,60 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-25 (Do, KW26)
+
+**Marktdaten:**
+- VIX Spot **17,93** (Perplexity finanzen.net, -3,76 % vs 18,63) — deutlich entspannter vs Vortag 19,49 → GRÜN <25 → 10 % Sizing erlaubt
+- SPY Pre-Market Mid **739,04 $** (Alpaca Quote 08:33 ET, bid 738,95 / ask 739,13) → **+0,78 %** vs Close 24.06. 733,32 [GRÜN, weit über -2 %]
+- VIXY After-Hours Quote: bid 22,11 / ask 23,61 (Mid 22,86, t=24.06. 20:00 UTC) — bestätigt entspanntes Vola-Bild
+- 10Y Treasury Yield: via Perplexity nicht verfügbar (Datums-Restriktion)
+- Crash-Filter: NEIN (SPY 24.06. -0,041 % → weit von -5 %)
+
+**Alpaca-Account (Pre-Market 08:32 ET):**
+- equity **99.840,20 $** | cash 82.505,98 $ | last_equity 99.740,72 $ | portfolio_value 99.840,20 $
+- Daily P/L: **+0,0997 %** [GRÜN — Limit -3 %]
+- Weekly P/L: **-0,123 %** vs Mo-Basis 99.962,66 [GRÜN — Limit -5 %]
+- DD vom ATH 100.066,47: **-0,226 %** [GRÜN — Alarm -15 %]
+- Reconciliation portfolio.md Close 24.06. 99.772,92 $ vs Alpaca last_equity 99.740,72 $ → Diff -32,20 $ Settlement-Tick (After-Hours Mark-to-Market), OK
+- Käufe KW26: 1/2 (1 Slot frei für Do/Fr) | Pending Orders: 0
+
+**Positionen Live (Alpaca 08:32 ET):**
+```
+Symbol | Last     | Entry   | P/L %   | V1 Stop | Puffer  | change_today | Status
+JPM    | 334,02   | 332,78  | +0,37 % | 306,16  | +9,10 % |  +0,17 %     | SICHER
+UNH    | 405,05   | 401,57  | +0,87 % | 369,44  | +9,64 % |  -0,18 %     | SICHER
+AVGO   | 388,88   | 403,41  | -3,60 % | 371,14  | +4,78 % |  +1,78 %     | ENTSPANNT (Erholung +1,78 %)
+```
+→ AVGO-Puffer hat sich von Close +3,33 % auf +4,78 % verbessert (Erholung +1,78 % Pre-Market). Kein Stop-Druck.
+
+**Earnings-Blackout-Check (nächste 3 HT, Perplexity verifiziert):**
+- JPM: 14.07.2026 (CONFIRMED Wall Street Horizon) → 19 Tage entfernt → KEIN Blackout
+- UNH: 16.07.2026 (carry-over verifiziert 24.06.) → 21 Tage entfernt → KEIN Blackout
+- AVGO: 29.08.2026 (carry-over verifiziert 24.06.) → 65 Tage entfernt → KEIN Blackout
+- → KEIN Stop-Tightening nötig (Standard V1 -8 % bleibt).
+
+**Guardrails-Status (alle GRÜN):**
+- Daily Loss Cap -3 %: NEIN (+0,10 %)
+- Weekly Loss Cap -5 %: NEIN (-0,12 %)
+- Drawdown-Alarm -15 %: NEIN (-0,23 %)
+- Drawdown-Stopp -20 %: NEIN
+- Crash-Filter SPY -5 %: NEIN (gestern -0,04 %)
+- VIX-Filter >30: NEIN (17,93 — sogar <25 → 10 % Sizing)
+- Käufe-Limit 2/Wo: 1/2 (1 Slot frei)
+
+**Makro-Events 25.06. (Perplexity):**
+- Keine bestätigten US-FOMC/CPI/PCE-Releases in Perplexity-Treffern (sonar-pro lieferte nur DE-Bundesbank-Konjunkturprognose 11:00 als gesicherten Termin)
+- VIX bei -3,76 % Vortagestief → Risk-on-Tendenz nach Di-Sell-Off und Mi-Konsolidierung
+- Keine Top-3-Earnings/News spezifisch belastbar — Marktkontext bleibt neutral mit Vola-Entspannung
+
+**Entscheidung Pre-Market:**
+- Market-Open-Scan 09:30 ET: **JA** — alle Guardrails GRÜN, SPY Pre-Market positiv (+0,78 %), VIX 17,93 deutlich unter 25.
+- Priorität: AVGO Erholungs-Watch (V1-Puffer jetzt komfortabel +4,78 %; Stop bleibt automatisch bei ≤ 371,14 $).
+- Watchlist KW26 (1 Slot frei für Do/Fr): CAT (Lead-Kandidat K1–K4 ✓, K5 FwdPE >35 Block — Perplexity-Recheck am Open), LLY (K4 Vol-Trigger >120 % abwarten), CRWD (K4 sehr schwach 26 %, vermutlich kein Setup), ANET (K5 FAIL bleibt).
+- Kauf nur bei vollem K1–K5.
+
+---
+
 ## Market Close 16:00 ET — 2026-06-24 (Mi, KW26) — Tagesbilanz + Watchlist 25.06.
 
 **Tagesperformance:**
