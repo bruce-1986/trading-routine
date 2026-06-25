@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-25 09:33 ET (Market Open KW26 Do)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-25 13:02 ET (Midday KW26 Do)
 
 ---
 
@@ -108,6 +108,16 @@ V6 RSI>80 UND RS4w<0: RSI ~45 (leicht erholt) | RS_4w ~-6 % → NICHT ausgelöst
 ---
 
 ## Tagesbilanz-Log
+
+**Midday 13:02 ET 2026-06-25:**
+Positionen: 3/8 | Ø P/L: -0,38 % | Equity 99.942,90 $ (Cash 82.505,98 $ / Investiert MV 17.436,92 $)
+Schlechteste Position: AVGO -5,64 % (Last 380,67 $, V1 371,14 Puffer +2,57 % [KRITISCH — Watch wieder verschärft vs. Open +3,62 %])
+Beste Position:        UNH  +3,29 % (Last 414,76 $, V1 369,44 Puffer +12,27 %)
+Mittel:                JPM  +1,21 % (Last 336,79 $, V1 306,16 Puffer +10,00 %)
+Stops: alle regulär — V1–V4 für JPM/UNH/AVGO nicht ausgelöst (RSI/EMA bei Midday nicht geprüft).
+Daily P/L: +0,203 % [GRÜN — Limit -3 %] (equity 99.942,90 / last_equity 99.740,72)
+Pending Orders: 0 | Käufe KW26: 1/2
+> Kein ClickUp-Log (keine Stops, kein Daily-Cap). AVGO V1-Puffer von Open +3,62 % auf jetzt +2,57 % verschlechtert (Last 380,67 vs. Open 384,57) — automatischer V1-Stop bei 371,14 $ greift bei Last ≤. UNH zieht intraday +2,21 % (414,76 vs lastday 405,80) — stärkster Tageswert. Nächste Routine: 16:00 ET Market Close.
 
 **Market Open 2026-06-25 09:33 ET (Do, KW26) — KEIN TRADE:**
 Gesamtwert: 99.924,28 $ | Cash: 82.505,98 $ (82,57 %) | Investiert (MV): 17.418,30 $ (17,43 %)
