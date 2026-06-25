@@ -6,13 +6,13 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Close 24.06. | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs   | Close 25.06. | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
 |--------|------------|------------|--------------|--------------------|-----------|----------|----------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 334,48 $     | +5,10 $ (+0,51%)   | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 406,00 $     | +106,32 $ (+1,10%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
-| AVGO   | 2026-06-22 | 403,41 $   | 383,50 $     | -338,47 $ (-4,94%) | 371,14 $  | 484,09 $ | 544,61 $ | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $   | 335,15 $     | +7,11 $ (+0,71%)   | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 415,98 $     | +345,84 $ (+3,59%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| AVGO   | 2026-06-22 | 403,41 $   | 381,01 $     | -380,80 $ (-5,55%) | 371,14 $  | 484,09 $ | 544,61 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 17.266,94 $ (Marktwert Close 16:00 ET) | **Cash:** 82.505,98 $ | **Positionen:** 3/8
+**Gesamt investiert:** 17.466,14 $ (Marktwert Close 16:00 ET) | **Cash:** 82.505,98 $ | **Positionen:** 3/8
 
 ---
 
@@ -51,6 +51,7 @@ _Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Re
 - Status Close 23.06.: 380,13 $ Close (intraday -3,22 %, -5,77 % vs Entry); V1 371,14 SICHER +2,42 % Puffer [KRITISCH]; V2 Stop ~364,87 SICHER (+4,18 %); V5 EMA50 398,25>EMA200 355,49 ✓ (Spread +42,76); V6 RSI 43,61 / RS_4w -6,68 % (negativ — Watch bleibt)
 - Status Open 24.06. 09:33 ET: 386,05 $ Live, -4,30 % Position-PnL (change_today +1,55 %); V1 371,14 SICHER +4,02 % Puffer [ENTSPANNT — Erholung]; V2 Stop ~364,87 SICHER (+5,82 %); V5/V6 carry-over (EMA50>EMA200 ✓)
 - Status Close 24.06.: 383,50 $ Close (change_today +0,88 %, P/L -4,94 % vs Entry); V1 371,14 SICHER +3,33 % Puffer [WATCH — leichte Verschlechterung vs. Open]; V2 Stop ~364,87 SICHER (+5,11 %); V5 EMA50 ~397,7>EMA200 ~355,8 ✓ (Spread ~+41,9); V6 RSI ~45 / RS_4w ~-6 % → NICHT ausgelöst
+- Status Close 25.06.: 381,01 $ Close (change_today -0,28 %, P/L -5,55 % vs Entry); V1 371,14 SICHER +2,66 % Puffer [KRITISCH — wieder verengt vs. 24.06.-Close +3,33 %]; V2 Stop ~364,87 SICHER (+4,42 %); V5 EMA50 ~397,4>EMA200 ~356,2 ✓ (Spread ~+41,2); V6 RSI ~46 / RS_4w ~-6 % → NICHT ausgelöst
 - Alpaca Order-ID: ab4a9c16-3424-4721-b243-08328adaa341
 - ClickUp Task:   869duc9ne
 
@@ -73,6 +74,7 @@ _Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Re
 - Status Close 23.06.: 409,65 $ Close, +1,91 % Position-PnL (intraday +0,63 %); V1 369,44 SICHER +10,88 %; V5 EMA50 373,84>EMA200 332,04 ✓; V6 RSI 64,84 / RS_4w +7,40 %
 - Status Open 24.06. 09:33 ET: 411,15 $ Live, +2,39 % Position-PnL (change_today +0,46 %); V1 369,44 SICHER +11,28 %; V5/V6 carry-over (EMA50>EMA200 ✓)
 - Status Close 24.06.: 406,00 $ Close (change_today -0,79 %, P/L +1,10 % vs Entry); V1 369,44 SICHER +9,89 % Puffer; V2 Stop ~361,81 (Hoch ~411,15) SICHER; V5 EMA50 ~375,1>EMA200 ~332,8 ✓ (Spread ~+42,3); V6 RSI ~61 (Cooldown) / RS_4w ~+6,5 % → NICHT ausgelöst
+- Status Close 25.06.: 415,98 $ Close (change_today +2,51 %, P/L +3,59 % vs Entry); V1 369,44 SICHER +12,60 % Puffer; V2 Stop ~367,43 (neues Posit-Hoch 417,54) SICHER (+13,21 %); V5 EMA50 ~375,5>EMA200 ~333,2 ✓ (Spread ~+42,3 komfortabel); V6 RSI ~70 (steigt) / RS_4w +>8 % → NICHT ausgelöst (RSI knapp unter 80)
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
 
 ### KAUF (filled): JPM am 2026-06-17
@@ -94,6 +96,7 @@ _Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Re
 - Status Close 23.06.: 334,185 $ Close, +0,41 % Position-PnL (intraday +0,80 %); V1 306,16 SICHER +9,16 %; V5 EMA50 310,36>EMA200 301,07 ✓ (Spread +9,30 leicht weiter); V6 RSI 67,53 / RS_4w +10,45 %
 - Status Open 24.06. 09:33 ET: 333,69 $ Live, +0,27 % Position-PnL (change_today -0,14 %); V1 306,16 SICHER +9,00 %; V5/V6 carry-over (EMA50>EMA200 ✓)
 - Status Close 24.06.: 334,48 $ Close (change_today +0,10 %, P/L +0,51 % vs Entry); V1 306,16 SICHER +9,25 % Puffer; V5 EMA50 ~311,3>EMA200 ~301,4 ✓ (Spread ~+9,9); V6 RSI ~66 / RS_4w ~+9,9 % → NICHT ausgelöst
+- Status Close 25.06.: 335,15 $ Close (change_today +0,51 %, P/L +0,71 % vs Entry); V1 306,16 SICHER +9,47 % Puffer; V2 Stop ~302,11 (Hoch heute 343,31) SICHER (+10,93 %); V5 EMA50 ~311,5>EMA200 ~301,5 ✓ (Spread ~+10,0 Roll setzt sich fort); V6 RSI ~67 / RS_4w ~+10 % → NICHT ausgelöst
 - Alpaca Order-ID: d90de96d-9084-4a6a-b5a1-de48899e75f4
 
 ---
