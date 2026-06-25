@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-25 08:32 ET (Pre-Market KW26 Do)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-25 09:33 ET (Market Open KW26 Do)
 
 ---
 
@@ -108,6 +108,28 @@ V6 RSI>80 UND RS4w<0: RSI ~45 (leicht erholt) | RS_4w ~-6 % → NICHT ausgelöst
 ---
 
 ## Tagesbilanz-Log
+
+**Market Open 2026-06-25 09:33 ET (Do, KW26) — KEIN TRADE:**
+Gesamtwert: 99.924,28 $ | Cash: 82.505,98 $ (82,57 %) | Investiert (MV): 17.418,30 $ (17,43 %)
+Alpaca equity 99.924,28 vs. last_equity 99.740,72 → Daily P/L +0,184 % [GRÜN — Limit -3 %]
+Weekly P/L: -0,038 % vs. Mo-Basis 99.962,66 [GRÜN — Limit -5 %] | ATH 100.066,47 | DD -0,142 % [GRÜN]
+VIX (Proxy VIXY 09:32 ET): 22,10 → Spot ~20,9 [GRÜN <25 → 10 % Sizing erlaubt] | Crash-Filter NEIN (SPY 737,54 = +0,576 % vs Close 733,32)
+Käufe KW26: 1/2 (1 Slot frei, NICHT genutzt) | Cash-Quote 82,57 % > 20 % Mindestreserve
+Positionen Live (Alpaca 09:32 ET):
+- JPM  335,96 $ (Entry 332,78, P/L +0,96 %, V1 306,16 Puffer +9,73 %, change_today +0,75 %) [SICHER]
+- UNH  411,37 $ (Entry 401,57, P/L +2,44 %, V1 369,44 Puffer +11,35 %, change_today +1,37 %) [SICHER]
+- AVGO 384,57 $ (Entry 403,41, P/L -4,67 %, V1 371,14 Puffer +3,62 %, change_today +0,66 %) [ENTSPANNT — Erholung]
+V1–V6 Live-Check für alle 3 Positionen: alle SICHER. EMA50>EMA200 carry-over (JPM ~311,3>~301,4; UNH ~375,1>~332,8; AVGO ~397,7>~355,8). RSI/RS_4w unauffällig — kein V6-Trigger. Keine Verkaufsorder platziert.
+Kandidaten-Scan K1–K5 (Watchlist KW26 via Alpaca IEX-Bars Close 24.06., K5 carry-over verifiziert):
+- CAT  Close 994,18 | EMA50 883,81>EMA200 684,07 (Spread +199,74) | RSI 62,61 | RS_63d +38,74 % vs SPY +12,27 % = +26,48 % | Vol 136,8k/Avg20 123,4k = 110,9 % | K1✓K2✓K3✓K4 ✗ (110,9 %) K5 FAIL (FwdPE 38,87/42,19 > 35 carry-over) → 3/5
+- LLY  Close 1.117,35 | EMA50 1052,56>EMA200 962,58 | RSI 57,99 | RS_63d +23,73 % - SPY +12,27 % = +11,47 % | Vol 111,7k/Avg20 137,4k = 81,3 % | K1✓K2✓K3✓K4 ✗ K5 ✓ grenzwertig (FwdPE 34,91) → 4/5
+- CRWD Close 672,72 | EMA50 604,23>EMA200 510,43 | RSI 54,74 | RS_63d +71,25 % - SPY +12,27 % = +58,98 % | Vol 37,7k/Avg20 116,9k = 32,3 % | K1✓K2✓K3✓K4 ✗ K5 vermutlich FAIL (Cloud-SaaS >35) → 3/5
+- ANET Close 161,87 | EMA50 156,64>EMA200 144,03 | RSI 50,95 | RS_63d +23,76 % - SPY +12,27 % = +11,49 % | Vol 250,8k/Avg20 364,4k = 68,8 % | K1✓K2✓K3✓K4 ✗ K5 FAIL (FwdPE 44,13) → 3/5
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Slot KW26 (1/2) bleibt frei für Fr.
+Markt-Kontext: SPY +0,576 % intraday (Risk-on, Pre-Market +0,78 % bestätigt sich teils), VIXY -3,24 % vs Close → Spot ~20,9 (entspannt). Intraday-Pops bei CAT +3,59 %, ANET +3,20 %, CRWD +2,02 % — Vol-Bilanz wird erst über volle Session belastbar.
+Priorität bis 13:00 Midday-Check: AVGO Erholung weiter beobachten (V1 371,14 Puffer +3,62 % komfortabel). Kein manueller Eingriff.
+ClickUp ROUTINE-Task wird gesendet (Prio 3 Normal — alle GRÜN, kein Stop-Alert).
+> Entscheidung: KEIN Trade. AVGO-Erholung positiv. 1 Slot KW26 bleibt für Fr (letzter Handelstag KW26).
 
 **Pre-Market 2026-06-25 08:30 ET (Do, KW26):**
 Gesamtwert: 99.840,20 $ | Cash: 82.505,98 $ (82,64 %) | Investiert (MV): 17.334,22 $ (17,36 %)
