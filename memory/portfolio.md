@@ -1,6 +1,53 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 16:05 ET (Market Close KW26 Fr — Tagesbilanz +99,82 $ / +0,0999 %, Alpha +0,64 % vs SPY, KEINE Verkaufsorder Mo)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 17:00 ET (Weekly Review KW26 — Wochenrendite +0,063 %, Alpha +2,07 % vs SPY, 1 Käufe / 1 V1-Stop, Strategie STABIL)
+
+---
+
+### Wochenabschluss KW26 — 2026-06-26 (Fr)
+
+```
+Gesamtwert:       100.025,35 $   (Alpaca equity Fr-Close 16:00 ET)
+Cash:              88.767,76 $   (88,75 %)
+Investiert:        11.257,59 $   (11,25 %, JPM 985,59 $ + UNH 10.272,00 $)
+Wochenrendite:    +0,063 %       (Mo-Basis 99.962,66 $ → Fr-Close 100.025,35 $; +62,69 $)
+SPY Wochenrendite: -2,005 %      (Mo-Close 744,27 → Fr-Close 729,35 Alpaca IEX)
+Alpha vs SPY:     +2,068 %       [POSITIV STARK — Cash-Schutz + UNH-Outperformance]
+YTD Rendite:      +0,025 %       (vs Bot-Init 100.000 $ vom 31.05.26; nur 26 Kalendertage live)
+SPY YTD 2026:    +7,523 %        (31.12.25 678,32 $ → 26.06.26 729,35 $)
+YTD Alpha:        -7,498 %       (Bot 26 Tage live, Cash-Quote ~89 % verzichtet auf Marktbeta)
+ATH:              100.066,47 $   (intraday 22.06. 09:37 ET, unverändert)
+Drawdown vom ATH: -0,041 %       [GRÜN — Schwelle -15 % bei 85.057 $]
+Offene Positionen: 2 / 8         (JPM XLF + UNH XLV)
+Nächste Woche max. Käufe: 2  (Reset Mo 29.06.)
+Watchlist KW27: LLY (Lead — K4 +217 %, K5-Recheck nach +7 %-Gap), ELV, CI, COR (XLV-Diversifikation), CAT (XLI — K5 bleibt blockierend)
+```
+
+**Trade-Aktivität KW26:**
+- Käufe: 1 (AVGO Mo 22.06., partial 17/24 Sh @ 403,41 $)
+- Verkäufe: 1 (AVGO V1-Stop Fr 26.06. @ 368,34 $)
+- Stop-Loss-Trigger: 1 (AVGO V1 -8 %, Realisierter Verlust -596,19 $)
+- Geschlossene Trades: 1 | Win-Rate: 0/1 (0 %) | Ø Haltedauer: 4 Handelstage
+- Käufe-Limit: 1/2 genutzt (Slot ungenutzt nach AVGO-Stop, Markt risk-off → defensive Pause)
+
+**Sektor-Check (Max 30 % vom investierten Kapital UND Gesamtdepot):**
+- XLF (JPM):    985,59 $ →  8,76 % invest. /  0,99 % Gesamt → 1 Position [OK]
+- XLV (UNH): 10.272,00 $ → 91,24 % invest. / 10,27 % Gesamt → 1 Position [OK auf Gesamtbasis]
+- Hinweis: XLV-Schwergewicht entsteht durch kleine Sample-Größe (2 Positionen). Auf Gesamtdepot-Basis bleibt UNH unter 30 %. Bei LLY-Kauf nächste Woche würde XLV auf ~20 % Gesamtdepot steigen (UNH 10 % + LLY ~10 %) — innerhalb der 30 %-Grenze.
+
+**Signal-Status Wochenschluss (V1–V6, Close 26.06.):**
+- JPM 328,53 $ — V1 306,16 SICHER (+7,31 %) | V2 ~302,11 SICHER (+8,75 %) | V5 EMA50 ~312,1>EMA200 ~301,8 ✓ | V6 RSI ~55 / RS_4w ~+8,6 % → nicht ausgelöst
+- UNH 428,00 $ — V1 369,44 SICHER (+15,85 %) | V2 ~376,47 SICHER (+13,68 %) | V5 EMA50 ~377,6>EMA200 ~334,1 ✓ | V6 RSI ~75 / RS_4w ~+12 % → nicht ausgelöst (RSI <80, RS positiv)
+- Keine Verkaufsorder für Mo 29.06. vorbereitet.
+
+**Sektor-Performance KW26 (Alpaca IEX 22.06.→26.06., vs SPY -2,01 %):**
+- XLV: +6,79 % [Alpha +8,79 %] ← TOP-1 (Risk-off Health-Care Run, Versicherer-Schub)
+- XLU: +3,28 % [Alpha +5,28 %] ← TOP-2 (Utilities defensiv)
+- XLP: +3,08 % [Alpha +5,08 %] ← TOP-3 (Consumer Staples defensiv)
+- XLRE: +2,73 % | XLB: +0,04 % | XLF: -0,24 % | XLI: -0,35 % | XLY: -0,39 % | XLE: -0,39 % | XLC: -0,78 %
+- **XLK: -5,97 %** [Alpha -3,96 %] ← FLOP (Tech-Selloff — bestätigt AVGO V1-Stop-Logik)
+
+**Strategie-Status:** STABIL — V1-Hard-Stop hat sauber gegriffen, keine Strategie-Anpassung. Sample-Size 26 Tage zu klein für Parameter-Adjust.
 
 ---
 
