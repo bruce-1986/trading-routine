@@ -1,10 +1,22 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 13:02 ET (Midday KW26 Fr — alle Stops SICHER, keine Aktion)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 16:05 ET (Market Close KW26 Fr — Tagesbilanz +99,82 $ / +0,0999 %, Alpha +0,64 % vs SPY, KEINE Verkaufsorder Mo)
 
 ---
 
-## Aktueller Stand (Midday 13:02 ET 2026-06-26 Fr)
+## Aktueller Stand (Close 16:00 ET 2026-06-26 Fr)
+
+```
+Gesamtwert:       100.025,35 $   (Alpaca equity Close)
+Investiert:        11.257,59 $   (11,25 %, JPM 985,59 $ + UNH 10.272,00 $)
+Cash:              88.767,76 $   (88,75 %)
+Unrealisiert P/L:   +621,57 $    (JPM -12,75 $ / UNH +634,32 $)
+Realisiert P/L:     -596,19 $    (AVGO V1 26.06.: 17 Sh × ($368,34 - $403,41) = -596,19 $)
+Offene Positionen:      2 / 8
+Pending Orders:         0
+```
+
+## Vor-Close-Stand (Midday 13:02 ET 2026-06-26 Fr)
 
 ```
 Gesamtwert:        99.970,05 $   (Alpaca equity Live)
@@ -56,36 +68,37 @@ Unrealisiert P/L:    -227,05 $   (JPM +5,10 $ / UNH +106,32 $ / AVGO -338,47 $)
 ```
 Startkapital:     100.000,00 $  (2026-05-29 Alpaca / 2026-05-31 Bull Init)
 All-Time-High:    100.066,47 $  (intraday 2026-06-22 09:37 ET — Open-Hoch)
-Aktueller DD:        -0,094%    (99.972,12 vs ATH 100.066,47)
+Aktueller DD:        -0,041%    (100.025,35 vs ATH 100.066,47)
 DD-Alarm bei:        -15,00%  → 85.057 $
 DD-Stopp bei:        -20,00%  → 80.053 $
 
-Performance heute:   +0,232%   (equity 99.972,12 / last_equity 99.740,72 → +231,40 $)
-SPY heute:           +0,001%   (733,32 Mi-Close → 733,33 Do-Close, Alpaca IEX-Bar)
-Alpha heute:         +0,231%   [POSITIV — UNH +2,51 % treibt; AVGO leicht negativ; JPM +0,51 %]
+Performance heute:   +0,0999%  (equity 100.025,35 / last_equity 99.925,53 → +99,82 $)
+SPY heute:           -0,5427%  (733,33 Do-Close → 729,35 Fr-Close, Alpaca IEX-Bar)
+Alpha heute:         +0,6426%  [POSITIV — UNH +3,00 % treibt stark, JPM -1,97 % Tagesverlust kompensiert]
 ```
 
 ---
 
-## Offene Positionen (Detail Live 13:02 ET 2026-06-26 — Midday)
+## Offene Positionen (Detail Close 16:00 ET 2026-06-26 Fr)
 
-| Symbol | Qty | Entry    | Last 13:02  | Unreal. P/L | %      | Stop-Loss V1 | TP1/V3   | TP2/V4   |
+| Symbol | Qty | Entry    | Close 26.06.| Unreal. P/L | %      | Stop-Loss V1 | TP1/V3   | TP2/V4   |
 |--------|-----|----------|-------------|-------------|--------|--------------|----------|----------|
-| JPM    | 3   | 332,78 $ | 330,70 $    | -6,24 $     | -0,63% | 306,16 $     | 399,34 $ | 449,25 $ |
-| UNH    | 24  | 401,57 $ | 425,45 $    | +573,12 $   | +5,95% | 369,44 $     | 481,88 $ | 542,12 $ |
+| JPM    | 3   | 332,78 $ | 328,53 $    | -12,75 $    | -1,28% | 306,16 $     | 399,34 $ | 449,25 $ |
+| UNH    | 24  | 401,57 $ | 428,00 $    | +634,32 $   | +6,58% | 369,44 $     | 481,88 $ | 542,12 $ |
 
 ---
 
-## Risiko-Status (Live 13:02 ET 2026-06-26 — Midday)
+## Risiko-Status (Close 16:00 ET 2026-06-26 Fr — Tagesabschluss KW26)
 
 ```
-Daily P/L:            +0,045%    [GRÜN — Limit: -3%]   (equity 99.970,05 / last 99.925,53)
-Weekly P/L:           +0,007%    [GRÜN — Limit: -5%]   (Mo-Basis 99.962,66; inkl. realisiertem AVGO-Verlust)
-Käufe diese Woche:    1 / 2      (AVGO 22.06., gestoppt heute — 1 Slot frei, KW26 letzter Tag)
-VIX (Proxy VIXY):     ~22,3      (Carry-over Open; Spot <25 → 10 % Sizing, <30 → Filter inaktiv)
-Crash-Filter aktiv:   NEIN       (SPY intraday unauffällig)
+Daily P/L:            +0,0999%   [GRÜN — Limit: -3%]   (equity 100.025,35 / last 99.925,53)
+Weekly P/L:           +0,0627%   [GRÜN — Limit: -5%]   (Mo-Basis 99.962,66 → +62,69 $ inkl. realisiertem AVGO-Verlust)
+Käufe diese Woche:    1 / 2      (AVGO 22.06., gestoppt 26.06. — 1 Slot ungenutzt, KW26 abgeschlossen)
+Verkäufe KW26:        1          (AVGO V1 26.06.)
+VIX (Proxy VIXY):     22,60      (+0,49 % vs 22,49; Spot ~21,6 → <25 → 10 % Sizing, Filter inaktiv)
+Crash-Filter aktiv:   NEIN       (SPY -0,54 % > -5 %)
 VIX-Filter aktiv:     NEIN
-Drawdown vom ATH:     -0,096%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
+Drawdown vom ATH:     -0,041%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
 ```
 
 ---
@@ -132,6 +145,30 @@ V6 RSI>80 UND RS4w<0: RSI ~46 | RS_4w ~-6 % → NICHT ausgelöst (RSI viel zu ni
 ---
 
 ## Tagesbilanz-Log
+
+**Close 2026-06-26 16:00 ET — Tagesbilanz KW26 Fr (Wochenabschluss):**
+Gesamtwert:    100.025,35 $
+Cash:           88.767,76 $  (88,75 %)
+Investiert:     11.257,59 $  (11,25 %, MV)
+P/L heute:        +99,82 $   (+0,0999 %)
+Alpha vs SPY:   +0,6426 %     (SPY -0,5427 %; 733,33 Do-Close → 729,35 Fr-Close Alpaca IEX-Bar)
+ATH:           100.066,47 $  (unverändert, intraday 22.06.)
+Drawdown:        -0,041 %    [GRÜN]
+Guardrails:     Daily +0,10 % | Weekly +0,063 % | Käufe 1/2 KW26 (1 ungenutzt) | Verkäufe 1 (AVGO V1) | VIXY 22,60 (Spot ~21,6, GRÜN) | Crash-Filter NEIN
+Signal-Check Close (V1–V6 für JPM/UNH): alle SICHER, KEINE Verkaufsorder pending.
+- JPM 328,53 (P/L -1,28 %, change_today -1,97 %): V1 306,16 SICHER +7,31 % | V2 Stop ~302,11 (Hoch 343,31) SICHER +8,75 % | V5 EMA50 ~312,1>EMA200 ~301,8 ✓ (Spread ~+10,3) | V6 RSI ~55 / RS_4w ~+8,6 % → NICHT ausgelöst
+- UNH 428,00 (P/L +6,58 %, change_today +3,00 %, NEUES Posit-Hoch 427,81): V1 369,44 SICHER +15,85 % | V2 Stop ~376,47 SICHER +13,68 % | V5 EMA50 ~377,6>EMA200 ~334,1 ✓ (Spread ~+43,5 komfortabel) | V6 RSI ~75 (steigt) / RS_4w ~+12 % → NICHT ausgelöst (RSI <80)
+Weekly Loss Cap geprüft: +0,063 % vs Mo-Basis 99.962,66 → weit über -5 %. Kein Sperrauslöser.
+Kandidaten-Scan Watchlist Mo (K1–K4 via Alpaca IEX-Bars Close 26.06., K5 carry-over):
+- LLY  Close 1.206,57 (+7,00 %!) | RS_63d ~+25–30 % stark | Vol 305,6k vs Avg20 ~141k = ~217 % [K4 STARK ✓] | K5 ✓ grenzwertig (34,91 carry-over) → 5/5 möglich (K2 RSI nach Gap-up ~67–70 prüfen), **LEAD-KANDIDAT MO**
+- CAT  Close 998,18 (-5,53 % Pullback nach +6,28 % Do) | RS_63d weiter stark ~+30 % | Vol 294,8k vs Avg20 ~127k = ~232 % [K4 ✓] | K5 FAIL (FwdPE 38,87–42,19 > 35 carry-over) → 4/5 (K5 blockt)
+- ANET Close 157,71 (-4,74 % Selloff) | RS_63d ~+3 % schwächer | Vol 560,5k = ~154 % aber Negativ-Vol [K4 grenzwertig] | K5 FAIL (44,13) → 3/5
+- CRWD Close 700,04 (+3,16 % Bounce) | RS_63d ~+55 % stark | Vol 89,9k vs Avg20 ~117k = ~77 % FAIL [K4] | K5 vermutlich FAIL → 3/5
+→ **LLY = Lead** für Pre-Market 29.06. Vol-Explosion 217 % deutlich >120 %, K5 carry-over grenzwertig OK. Earnings 07.08. → 42 Tage entfernt (kein Blackout).
+→ Slot KW26 (1) verfällt heute (letzter Handelstag). KW27 Mo: 2 neue Slots.
+Watchlist Mo (29.06.): LLY (Lead — K4 Vol +217 %, K5 Recheck am Open), CAT (K5 Block bleibt), CRWD (K4 schwach), ANET (Selloff, K5 FAIL).
+Sektor-Lücke: XLK komplett leer nach AVGO-Stop (war 6,28 %). Bei nächstem Kauf XLK/Industrials/XLE-Diversifikation priorisieren — LLY würde 2. XLV nach UNH (OK ≤ 3 pro Sektor).
+ClickUp TRADE_DAILY (Prio 4 wegen positivem P/L) — Versuch trotz heutiger Tier-Limit-Issues.
 
 **Midday 13:02 ET 2026-06-26 (Fr, KW26):**
 Positionen: 2/8 | Ø P/L: +2,66 % | Equity 99.970,05 $ (Cash 88.767,76 $ / Investiert MV 11.202,29 $)

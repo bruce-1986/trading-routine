@@ -6,12 +6,12 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Live 09:34 26.06.| Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs   | Close 26.06.    | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
 |--------|------------|------------|------------------|--------------------|-----------|----------|----------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 334,95 $         | +6,51 $ (+0,65%)   | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 417,95 $         | +393,12 $ (+4,08%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $   | 328,53 $         | -12,75 $ (-1,28%)  | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 428,00 $         | +634,32 $ (+6,58%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 11.050,02 $ (Marktwert Live 09:34 ET) | **Cash:** 88.767,76 $ | **Positionen:** 2/8
+**Gesamt investiert:** 11.257,59 $ (Marktwert Close 26.06.) | **Cash:** 88.767,76 $ | **Positionen:** 2/8
 
 ---
 
@@ -88,6 +88,7 @@ _Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,
 - Status Open 24.06. 09:33 ET: 411,15 $ Live, +2,39 % Position-PnL (change_today +0,46 %); V1 369,44 SICHER +11,28 %; V5/V6 carry-over (EMA50>EMA200 ✓)
 - Status Close 24.06.: 406,00 $ Close (change_today -0,79 %, P/L +1,10 % vs Entry); V1 369,44 SICHER +9,89 % Puffer; V2 Stop ~361,81 (Hoch ~411,15) SICHER; V5 EMA50 ~375,1>EMA200 ~332,8 ✓ (Spread ~+42,3); V6 RSI ~61 (Cooldown) / RS_4w ~+6,5 % → NICHT ausgelöst
 - Status Close 25.06.: 415,98 $ Close (change_today +2,51 %, P/L +3,59 % vs Entry); V1 369,44 SICHER +12,60 % Puffer; V2 Stop ~367,43 (neues Posit-Hoch 417,54) SICHER (+13,21 %); V5 EMA50 ~375,5>EMA200 ~333,2 ✓ (Spread ~+42,3 komfortabel); V6 RSI ~70 (steigt) / RS_4w +>8 % → NICHT ausgelöst (RSI knapp unter 80)
+- Status Close 26.06.: 428,00 $ Close (change_today +3,00 %, P/L +6,58 % vs Entry, NEUES Posit-Hoch 427,81); V1 369,44 SICHER +15,85 % Puffer; V2 Stop ~376,47 (Hoch heute 427,81) SICHER (+13,68 %); V5 EMA50 ~377,6>EMA200 ~334,1 ✓ (Spread ~+43,5 sehr komfortabel); V6 RSI ~75 (steigt nach +3 %) / RS_4w ~+12 % → NICHT ausgelöst (RSI <80, RS positiv)
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
 
 ### KAUF (filled): JPM am 2026-06-17
@@ -110,6 +111,7 @@ _Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,
 - Status Open 24.06. 09:33 ET: 333,69 $ Live, +0,27 % Position-PnL (change_today -0,14 %); V1 306,16 SICHER +9,00 %; V5/V6 carry-over (EMA50>EMA200 ✓)
 - Status Close 24.06.: 334,48 $ Close (change_today +0,10 %, P/L +0,51 % vs Entry); V1 306,16 SICHER +9,25 % Puffer; V5 EMA50 ~311,3>EMA200 ~301,4 ✓ (Spread ~+9,9); V6 RSI ~66 / RS_4w ~+9,9 % → NICHT ausgelöst
 - Status Close 25.06.: 335,15 $ Close (change_today +0,51 %, P/L +0,71 % vs Entry); V1 306,16 SICHER +9,47 % Puffer; V2 Stop ~302,11 (Hoch heute 343,31) SICHER (+10,93 %); V5 EMA50 ~311,5>EMA200 ~301,5 ✓ (Spread ~+10,0 Roll setzt sich fort); V6 RSI ~67 / RS_4w ~+10 % → NICHT ausgelöst
+- Status Close 26.06.: 328,53 $ Close (change_today -1,97 %, P/L -1,28 % vs Entry, Tagestief 327,50 nahe Schluss); V1 306,16 SICHER +7,31 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 vom 25.06.) SICHER (+8,75 %); V5 EMA50 ~312,1>EMA200 ~301,8 ✓ (Spread ~+10,3 stabil); V6 RSI ~55 (Drop nach -1,97 %) / RS_4w ~+8,6 % → NICHT ausgelöst
 - Alpaca Order-ID: d90de96d-9084-4a6a-b5a1-de48899e75f4
 
 ---
@@ -144,3 +146,4 @@ _Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,
 | Woche | Depot-Start | Depot-Ende | Wochenergebnis | vs. SPY | Alpha | Käufe / Verkäufe / Stops |
 |-------|-------------|------------|----------------|---------|-------|--------------------------|
 | 2026-W25 | 100.000,00 $ (Mo 15.06.) | 99.962,66 $ (Fr 19.06. Holiday → Do 18.06. Close) | -0,037 % | -1,003 % | +0,966 % | 2 / 0 / 0 |
+| 2026-W26 | 99.962,66 $ (Mo-Basis 22.06.) | 100.025,35 $ (Fr 26.06. Close) | +0,063 % | -2,007 % (SPY 744,27→729,35) | +2,070 % | 1 / 1 (AVGO V1) / 0 |

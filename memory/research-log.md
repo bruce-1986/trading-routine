@@ -4,6 +4,76 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-06-26 (Fr, KW26) — Tagesbilanz + Wochenabschluss + Watchlist Mo
+
+**Makro-Lage (Tagesschluss, Alpaca IEX-Bar Source of Truth):**
+```
+SPY Close:        729,35 $ (-0,5427 % vs 733,33 Do-Close — risk-off Tag)
+SPY Tagesspanne:  716,58 – 736,50 (Open 728,88 → intraday-Low -2,4 %, Close-Erholung)
+VIXY Close:       22,60 $ (+0,49 % vs 22,49) → Spot ~21,6 [GRÜN <25]
+Crash-Filter:     NEIN (SPY -0,54 % > -5 %)
+Markt-Status:     CLOSED
+```
+
+**Tages-Performance Bull:**
+```
+Equity Start (last_equity): 99.925,53 $  →  Equity Close: 100.025,35 $
+Daily P/L:                  +99,82 $  (+0,0999 %)
+Alpha vs SPY:               +0,6426 %  [POSITIV stark — UNH +3,00 % treibt; JPM -1,97 % belastet; AVGO Realisierung -596,19 $ bereits in last_equity-Mark eingepreist]
+Treiber:                    UNH +3,00 % auf neues Posit-Hoch 427,81 (+299,28 $ intraday unreal);
+                            JPM -1,97 % Tagestief 327,50 (-19,77 $ intraday unreal).
+ATH:                        100.066,47 $ (unverändert) | DD -0,041 % [GRÜN]
+Weekly P/L:                 +0,0627 % vs Mo-Basis 99.962,66 [GRÜN — Limit -5 %]
+Realisiert KW26:            -596,19 $ (AVGO V1 26.06.)
+```
+
+**Positionen Signal-Check Close (V1–V6) — alle SICHER, keine Verkaufsorder pending:**
+```
+Symbol | Close   | Entry   | P/L %   | V1 Stop | Puffer  | change | V5 EMA50/EMA200       | V6 RSI / RS_4w  | Status
+JPM    | 328,53  | 332,78  | -1,28 % | 306,16  | +7,31 % | -1,97% | ~312,1 > ~301,8 ✓     | ~55 / +8,6 %    | SICHER (V1 weit weg)
+UNH    | 428,00  | 401,57  | +6,58 % | 369,44  | +15,85% | +3,00% | ~377,6 > ~334,1 ✓     | ~75 / +12 %     | STARK (Posit-Hoch 427,81)
+```
+→ KEINE Verkaufsorder für Mo. EMA50>EMA200 für beide intakt. V6-RSI für UNH ~75 (knapp unter 80) ABER RS_4w stark positiv (+12 %) → V6 erfordert RSI>80 UND RS<0 → bleibt nicht ausgelöst.
+
+**Watchlist Mo 29.06. (K1–K4 via Alpaca IEX-Bars Close 26.06., K5 carry-over Perplexity):**
+```
+Symbol | Close 26.06 | Chg Tag   | EMA50/EMA200       | RSI    | RS_63d vs SPY        | Vol/Avg20             | K1 K2 K3 K4 | K5            | Score
+LLY    | 1.206,57    | +7,00 %!  | ~1060 / ~975       | ~68    | ~+25–30 %            | 305,6k / ~141k = 217%  | ✓ ✓ ✓ ✓     | ✓ (34,91 carry-over) | 5/5 möglich → LEAD
+CAT    |   998,18    | -5,53 %   | ~890 / ~690        | ~58    | ~+30 %               | 294,8k / ~127k = 232%  | ✓ ✓ ✓ ✓     | FAIL (38,87–42,19) | 4/5 (K5 blockt)
+CRWD   |   700,04    | +3,16 %   | ~610 / ~514        | ~58    | ~+55 %               |  89,9k / ~117k = 77%   | ✓ ✓ ✓ ✗     | FAIL ?         | 3/5
+ANET   |   157,71    | -4,74 %   | ~156 / ~144        | ~46    | ~+3 %                | 560,5k / ~364k = 154%  | ✓ ✓ ✗-grenz ✗-vol(neg) | FAIL (44,13) | 2–3/5
+```
+→ **LEAD = LLY**: K4 Vol-Explosion 217 % (Gap-up +7,00 % auf 1.206,57!), K5 grenzwertig OK 34,91 (carry-over), K3 RS stark. **K2 (RSI nach Gap-up) und K5 (FwdPE-Recheck nach Kurssprung — könnte über 35 rutschen!) am Mo-Open zwingend verifizieren.**
+→ **CAT**: Selloff nach Do-Vol-Explosion, K5 weiter blockierend. Watch.
+→ **CRWD**: Vol bleibt schwach (77 %).
+→ **ANET**: Selloff, K3 wahrscheinlich kippt, K5 FAIL.
+
+**Watchlist Mo: LLY (Lead — K4 Vol-Explosion +217 %, K2/K5 Recheck am Open zwingend), CAT (K5 Block), CRWD (K4 schwach), ANET (Selloff, K5 FAIL)**
+
+**Key-Beobachtungen Tag/Woche:**
+```
+1. UNH +3,00 % auf neues Posit-Hoch 427,81 — Health-Care weiter führend für unsere Allokation.
+2. LLY massive Bewegung +7,00 % bei Vol +217 % — potenziell Earnings-Pre-Run/News-Trigger (07.08. Earnings, 42 Tage entfernt, kein Blackout).
+3. SPY -2,01 % auf Wochenbasis (744,27 Mo → 729,35 Fr) — wir +0,063 % → Wochen-Alpha +2,07 %.
+4. AVGO V1-Stop war sauberer Regel-Vollzug, -596,19 $ realisiert. Cash-Quote 88,75 % schützt vor weiterer Belastung.
+5. Sektor-Lücke XLK (0 %) — Mo nicht zwingend füllen, LLY würde 2. XLV (zulässig ≤3 pro Sektor).
+```
+
+**Entscheidung Mo:**
+- Pre-Market-Routine 29.06. 08:30 ET wie geplant.
+- Buy-Scan 09:30 ET JA falls Guardrails GRÜN: **LLY K5-Recheck via Perplexity zwingend** (FwdPE nach +7 % Kurssprung vermutlich gestiegen; bei FwdPE >35 → K5 FAIL und Lead-Kandidat fällt).
+- Sektor-Diversifikation beachten — falls LLY K5 kippt: kein Pflicht-Kauf, Slot ungenutzt lassen.
+
+**Datenqualitäts-Hinweis:**
+Perplexity SPY-Realtime nicht abgefragt (Datum-in-Zukunft-Bug bleibt). Alpaca IEX-Bar Source of Truth (-0,5427 % bestätigt). VIX-Spot via VIXY-Proxy 22,60 → Spot ~21,6.
+
+**Lessons-Tag KW26 (Weekly Review heute Fr 17:00 ET):**
+- KW26 1 Kauf (AVGO Mo), 1 Verkauf (AVGO V1 Fr) — voller Trade-Zyklus in 5 Tagen
+- Wochen-Alpha +2,07 % stark trotz realisiertem Verlust (Cash-Schutz wirkt)
+- LLY heute Vol-Explosion = bestätigt: Lead-Watchlist-Disziplin liefert auch bei Verzögerung Kandidaten
+
+---
+
 ## Market Open 09:34 ET — 2026-06-26 (Fr, KW26) — V1 AVGO STOP-LOSS ausgelöst, KEIN Trade-Buy
 
 **Markt (Live Open 09:33 ET):**
