@@ -1,10 +1,22 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 09:34 ET (Market Open KW26 Fr — V1 AVGO ausgelöst)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 13:02 ET (Midday KW26 Fr — alle Stops SICHER, keine Aktion)
 
 ---
 
-## Aktueller Stand (Market Open 09:34 ET 2026-06-26 Fr — nach V1 AVGO Sell)
+## Aktueller Stand (Midday 13:02 ET 2026-06-26 Fr)
+
+```
+Gesamtwert:        99.970,05 $   (Alpaca equity Live)
+Investiert:        11.202,29 $   (11,21%, JPM 992,10 $ + UNH 10.210,80 $)
+Cash:              88.767,76 $   (88,79%)
+Unrealisiert P/L:   +566,88 $    (JPM -6,24 $ / UNH +573,12 $)
+Realisiert P/L:     -596,19 $    (AVGO V1: 17 Sh × ($368,34 - $403,41) = -596,19 $)
+Offene Positionen:      2 / 8
+Pending Orders:         0
+```
+
+## Vor-Midday-Stand (Market Open 09:34 ET 2026-06-26 Fr — nach V1 AVGO Sell)
 
 ```
 Gesamtwert:        99.817,78 $   (Alpaca equity Live)
@@ -55,26 +67,25 @@ Alpha heute:         +0,231%   [POSITIV — UNH +2,51 % treibt; AVGO leicht nega
 
 ---
 
-## Offene Positionen (Detail Live 09:34 ET 2026-06-26 — nach V1 AVGO Sell)
+## Offene Positionen (Detail Live 13:02 ET 2026-06-26 — Midday)
 
-| Symbol | Qty | Entry    | Last 09:34  | Unreal. P/L | %      | Stop-Loss V1 | TP1/V3   | TP2/V4   |
+| Symbol | Qty | Entry    | Last 13:02  | Unreal. P/L | %      | Stop-Loss V1 | TP1/V3   | TP2/V4   |
 |--------|-----|----------|-------------|-------------|--------|--------------|----------|----------|
-| JPM    | 3   | 332,78 $ | 334,95 $    | +6,51 $     | +0,65% | 306,16 $     | 399,34 $ | 449,25 $ |
-| UNH    | 24  | 401,57 $ | 417,95 $    | +393,12 $   | +4,08% | 369,44 $     | 481,88 $ | 542,12 $ |
-| ~~AVGO~~ | 0 | — | — (verkauft) | — | — | — | — | — |
+| JPM    | 3   | 332,78 $ | 330,70 $    | -6,24 $     | -0,63% | 306,16 $     | 399,34 $ | 449,25 $ |
+| UNH    | 24  | 401,57 $ | 425,45 $    | +573,12 $   | +5,95% | 369,44 $     | 481,88 $ | 542,12 $ |
 
 ---
 
-## Risiko-Status (Live 09:34 ET 2026-06-26 — nach V1 AVGO Sell)
+## Risiko-Status (Live 13:02 ET 2026-06-26 — Midday)
 
 ```
-Daily P/L:            -0,108%    [GRÜN — Limit: -3%]   (equity 99.817,78 / last 99.925,53)
-Weekly P/L:           -0,145%    [GRÜN — Limit: -5%]   (Mo-Basis 99.962,66; inkl. realisiertem Verlust)
-Käufe diese Woche:    1 / 2      (AVGO 22.06., gestoppt heute) — 1 Slot frei (aber Risk-off → Pause)
-VIX (Proxy VIXY):     ~22,3      (VIXY 23,36 +3,87 %; Spot <25 → 10 % Sizing, <30 → Filter inaktiv)
-Crash-Filter aktiv:   NEIN       (SPY -0,81 % intraday < |-5 %|)
+Daily P/L:            +0,045%    [GRÜN — Limit: -3%]   (equity 99.970,05 / last 99.925,53)
+Weekly P/L:           +0,007%    [GRÜN — Limit: -5%]   (Mo-Basis 99.962,66; inkl. realisiertem AVGO-Verlust)
+Käufe diese Woche:    1 / 2      (AVGO 22.06., gestoppt heute — 1 Slot frei, KW26 letzter Tag)
+VIX (Proxy VIXY):     ~22,3      (Carry-over Open; Spot <25 → 10 % Sizing, <30 → Filter inaktiv)
+Crash-Filter aktiv:   NEIN       (SPY intraday unauffällig)
 VIX-Filter aktiv:     NEIN
-Drawdown vom ATH:     -0,249%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
+Drawdown vom ATH:     -0,096%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
 ```
 
 ---
@@ -121,6 +132,16 @@ V6 RSI>80 UND RS4w<0: RSI ~46 | RS_4w ~-6 % → NICHT ausgelöst (RSI viel zu ni
 ---
 
 ## Tagesbilanz-Log
+
+**Midday 13:02 ET 2026-06-26 (Fr, KW26):**
+Positionen: 2/8 | Ø P/L: +2,66 % | Equity 99.970,05 $ (Cash 88.767,76 $ / Investiert MV 11.202,29 $)
+Schlechteste Position: JPM -0,63 % (Last 330,70 $, V1 306,16 Puffer +8,01 % [SICHER], change_today -1,32 %)
+Beste Position:        UNH +5,95 % (Last 425,45 $, V1 369,44 Puffer +15,17 % [SICHER], change_today +2,39 % — NEUES Posit-Hoch ≥425,45)
+Stops: alle regulär — V1–V4 für JPM/UNH nicht ausgelöst (RSI/EMA bei Midday nicht geprüft).
+V2 Trailing UNH: neues Hoch 425,45 → Stop ratscht auf ~374,40 (+13,57 % Puffer); JPM Hoch carry-over 343,31 → Stop ~302,11 (+9,47 %).
+Daily P/L: +0,045 % [GRÜN — Limit -3 %] (equity 99.970,05 / last_equity 99.925,53)
+Pending Orders: 0 | Käufe KW26: 1/2 (1 Slot ungenutzt — letzter Handelstag KW26)
+> Kein ClickUp-Log (keine Stops, kein Daily-Cap). UNH zieht intraday +2,39 % auf neues Posit-Hoch; JPM gibt change_today -1,32 % ab, aber V1 weit weg. Nächste Routine: 16:00 ET Market Close.
 
 **Market Open 2026-06-26 09:34 ET (Fr, KW26) — V1 STOP AVGO ausgelöst, KEIN Trade-Buy:**
 Gesamtwert: 99.817,78 $ | Cash: 88.767,76 $ (88,92 %) | Investiert (MV): 11.050,02 $ (11,07 %)
