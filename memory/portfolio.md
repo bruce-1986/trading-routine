@@ -1,10 +1,22 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-25 16:05 ET (Close KW26 Do)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 09:34 ET (Market Open KW26 Fr — V1 AVGO ausgelöst)
 
 ---
 
-## Aktueller Stand (Close 16:00 ET 2026-06-25 Do)
+## Aktueller Stand (Market Open 09:34 ET 2026-06-26 Fr — nach V1 AVGO Sell)
+
+```
+Gesamtwert:        99.817,78 $   (Alpaca equity Live)
+Investiert:        11.050,02 $   (11,07%, JPM 1.004,85 $ + UNH 10.030,80 $ + AVGO 17 Sh verkauft)
+Cash:              88.767,76 $   (88,92%)
+Unrealisiert P/L:   +399,63 $    (JPM +6,51 $ / UNH +393,12 $)
+Realisiert P/L:     -596,19 $    (AVGO V1: 17 Sh × ($368,34 - $403,41) = -596,19 $)
+Offene Positionen:      2 / 8
+Pending Orders:         0
+```
+
+## Vor-Sell-Stand (Close 16:00 ET 2026-06-25 Do)
 
 ```
 Gesamtwert:        99.972,12 $   (Alpaca equity Close)
@@ -43,33 +55,33 @@ Alpha heute:         +0,231%   [POSITIV — UNH +2,51 % treibt; AVGO leicht nega
 
 ---
 
-## Offene Positionen (Detail Close 16:00 ET 2026-06-25)
+## Offene Positionen (Detail Live 09:34 ET 2026-06-26 — nach V1 AVGO Sell)
 
-| Symbol | Qty | Entry    | Close 16:00 | Unreal. P/L | %      | Stop-Loss V1 | TP1/V3   | TP2/V4   |
+| Symbol | Qty | Entry    | Last 09:34  | Unreal. P/L | %      | Stop-Loss V1 | TP1/V3   | TP2/V4   |
 |--------|-----|----------|-------------|-------------|--------|--------------|----------|----------|
-| JPM    | 3   | 332,78 $ | 335,15 $    | +7,11 $     | +0,71% | 306,16 $     | 399,34 $ | 449,25 $ |
-| UNH    | 24  | 401,57 $ | 415,98 $    | +345,84 $   | +3,59% | 369,44 $     | 481,88 $ | 542,12 $ |
-| AVGO   | 17  | 403,41 $ | 381,01 $    | -380,80 $   | -5,55% | 371,14 $     | 484,09 $ | 544,61 $ |
+| JPM    | 3   | 332,78 $ | 334,95 $    | +6,51 $     | +0,65% | 306,16 $     | 399,34 $ | 449,25 $ |
+| UNH    | 24  | 401,57 $ | 417,95 $    | +393,12 $   | +4,08% | 369,44 $     | 481,88 $ | 542,12 $ |
+| ~~AVGO~~ | 0 | — | — (verkauft) | — | — | — | — | — |
 
 ---
 
-## Risiko-Status (Close 16:00 ET 2026-06-25)
+## Risiko-Status (Live 09:34 ET 2026-06-26 — nach V1 AVGO Sell)
 
 ```
-Daily P/L:            +0,232%    [GRÜN — Limit: -3%]   (equity 99.972,12 / last 99.740,72)
-Weekly P/L:           +0,0095%   [GRÜN — Limit: -5%]   (Montag-Basis 99.962,66 $)
-Käufe diese Woche:    1 / 2      (AVGO 22.06.) — 1 Slot frei für Fr
-VIX (Proxy VIXY):     ~21,5      (VIXY 22,49 -1,53 %; Spot <25 → 10 % Sizing, <30 → Filter inaktiv)
-Crash-Filter aktiv:   NEIN       (SPY +0,001 % < |-5 %|)
+Daily P/L:            -0,108%    [GRÜN — Limit: -3%]   (equity 99.817,78 / last 99.925,53)
+Weekly P/L:           -0,145%    [GRÜN — Limit: -5%]   (Mo-Basis 99.962,66; inkl. realisiertem Verlust)
+Käufe diese Woche:    1 / 2      (AVGO 22.06., gestoppt heute) — 1 Slot frei (aber Risk-off → Pause)
+VIX (Proxy VIXY):     ~22,3      (VIXY 23,36 +3,87 %; Spot <25 → 10 % Sizing, <30 → Filter inaktiv)
+Crash-Filter aktiv:   NEIN       (SPY -0,81 % intraday < |-5 %|)
 VIX-Filter aktiv:     NEIN
-Drawdown vom ATH:     -0,094%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
+Drawdown vom ATH:     -0,249%    [GRÜN] (ATH 100.066,47 $ vom 22.06.)
 ```
 
 ---
 
 ## Pending Orders
 
-_Keine — V1–V6 für JPM/UNH/AVGO Close-Check 25.06. alle SICHER. Keine Verkaufsorder pending. Keine Buy-Orders offen. AVGO bleibt im V1-Watch (Puffer +2,66 % — wieder verengt vs. 24.06.-Close +3,33 %, change_today -0,28 %)._
+_Keine — AVGO V1-Sell (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,34, Realisierter Verlust -596,19 $. JPM und UNH V1–V6 alle SICHER. Keine offenen Orders._
 
 ---
 
@@ -109,6 +121,39 @@ V6 RSI>80 UND RS4w<0: RSI ~46 | RS_4w ~-6 % → NICHT ausgelöst (RSI viel zu ni
 ---
 
 ## Tagesbilanz-Log
+
+**Market Open 2026-06-26 09:34 ET (Fr, KW26) — V1 STOP AVGO ausgelöst, KEIN Trade-Buy:**
+Gesamtwert: 99.817,78 $ | Cash: 88.767,76 $ (88,92 %) | Investiert (MV): 11.050,02 $ (11,07 %)
+Alpaca equity 99.817,78 vs. last_equity 99.925,53 → Daily P/L -0,108 % [GRÜN — Limit -3 %]
+Weekly P/L: -0,145 % vs. Mo-Basis 99.962,66 [GRÜN — Limit -5 %] | ATH 100.066,47 | DD -0,249 % [GRÜN]
+VIX (Proxy VIXY 09:33 ET): 23,36 → Spot ~22,3 [GRÜN <25 → 10 % Sizing erlaubt] | Crash-Filter NEIN (SPY 727,42 = -0,80 % vs Close 733,33)
+Käufe KW26: 1/2 (AVGO 22.06. gestoppt heute — 1 Slot frei, aber Risk-off Pause) | Cash-Quote 88,92 % > 20 % Mindestreserve
+
+**V1 STOP-LOSS — AVGO (Realisierter Verlust -596,19 $):**
+- Trigger: Last $370,13 < V1 Stop $371,14 (Pre-Market-Puffer war bereits nur +0,16 %)
+- Order: SELL 17 Sh AVGO @ Market → FILLED @ $368,34 avg, 09:33:28 ET (Order c5b9adf0)
+- Entry $403,41 → Exit $368,34 = -35,07 $/Share × 17 = -596,19 $ (-8,69 %)
+- Earnings-Blackout NEIN | V5 EMA50>EMA200 ✓ war zwar intakt, aber V1 ist hard-stop (kein Override)
+
+**Positionen Live nach Sell (Alpaca 09:34 ET):**
+- JPM  334,95 $ (Entry 332,78, P/L +0,65 %, V1 306,16 Puffer +9,48 %, change_today -0,05 %) [SICHER]
+- UNH  417,95 $ (Entry 401,57, P/L +4,08 %, V1 369,44 Puffer +13,12 %, change_today +0,58 %) [SICHER — neues Posit-Hoch]
+- AVGO 0 Sh — VERKAUFT V1 Stop
+
+V1–V6 Live-Check für JPM/UNH: alle SICHER. EMA50>EMA200 carry-over. RSI/RS_4w unauffällig — kein V6-Trigger. Keine weitere Verkaufsorder.
+
+**Kandidaten-Scan K1–K5 (Watchlist KW26, Live-Preise 09:33 ET):**
+- CAT  Live 1.018,71 (-3,59 % vs Close 1.056,65 — Pullback nach Vortags-Vol-Explosion) | K5 carry-over FAIL (FwdPE >35) → 4/5 max, **K5 blockt**
+- LLY  Live 1.145,81 (+1,61 % vs Close 1.127,63) | K4 gestern 83 % FAIL (Live-Vol erst spät belastbar) | K5 ✓ grenzwertig (34,91) → 4/5 (K4 schwach)
+- ANET Live 157,09 (-5,11 % — Selloff nach gestern +2,29 %) | K5 carry-over FAIL (44,13) → 3/5
+- CRWD Live 678,29 (-0,05 % flach) | K4 carry-over schwach (51 %) | K5 vermutlich FAIL → 3/5
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Plus: Markt risk-off (SPY -0,80 %, VIX +3,87 %) + frischer V1-Stop-Out AVGO → defensive Haltung.
+→ **KEIN Kauf heute.** 1 Slot KW26 bleibt ungenutzt (letzter Handelstag KW26).
+
+**Sektor-Update:** XLK (AVGO) jetzt 0 % → nur XLF (JPM 1,01 %) und XLV (UNH 10,05 %) belegt.
+**ClickUp-Alert:** Critical Alert TRADE_SELL V1 STOP versucht — beide Lists 901218902459 und 901218902364 → "Max usage for custom task types reached" (ITEM_246). Mobile Push-Notification an User gesendet (Routine-Owner-Pfad).
+**Lessons-Tag:** AVGO-Loss = erster realisierter Verlust seit Bot-Init 31.05. V1 hat sauber gegriffen — Pre-Market-Warnung +0,16 % Puffer trat exakt ein.
+> Entscheidung: V1 vollzogen, KEIN Trade-Buy. Risk-off + frische Realisierung → Pause bis Pre-Market Mo 29.06. (oder MidDay 13:00 ET wenn Markt dreht). Watchlist Mo: CAT (K5-Block), LLY (K4 + Live-Vol), Sektor-Lücke XLK ggf. neu denken.
 
 **Pre-Market 2026-06-26 08:30 ET (Fr, KW26):**
 Gesamtwert: 99.819,55 $ | Cash: 82.505,98 $ (82,66 %) | Investiert (MV): 17.313,57 $ (17,34 %)
