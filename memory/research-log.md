@@ -4,6 +4,72 @@
 
 ---
 
+## Market Open 09:34 ET — 2026-06-26 (Fr, KW26) — V1 AVGO STOP-LOSS ausgelöst, KEIN Trade-Buy
+
+**Markt (Live Open 09:33 ET):**
+```
+SPY Live:         727,42 $ (-0,80 % vs Close 733,33) → Risk-off, aber Crash-Filter NEIN
+VIXY Live:         23,36 $ (+3,87 % vs 22,49 Close) → Spot ~22,3 [GRÜN <25 → 10 % Sizing]
+VIX-Quelle:        Alpaca Bar (Perplexity nicht zwingend)
+Markt-Status:      OPEN
+```
+
+**V1 STOP-LOSS — AVGO TRIGGERED & FILLED:**
+```
+Trigger:           Last Trade $370,13 < V1 Stop $371,14 (Pre-Market-Puffer war +0,16 %)
+Order:             SELL 17 Sh @ Market → FILLED @ $368,34 avg um 09:33:28 ET
+Entry:             $403,41 (Kauf 22.06.)
+Realisierter Verlust: -596,19 $ (-8,69 % vs Entry)
+Order-ID:          c5b9adf0-229d-4330-9f75-9672674b946f
+ClickUp:           Tier-Limit ITEM_246 — Push-Notification stattdessen
+```
+
+**Account nach Sell (Alpaca 09:34 ET):**
+- equity 99.817,78 $ | cash 88.767,76 $ (88,92 %) | long_market_value 11.050,02 $ (11,07 %)
+- Daily P/L: -0,108 % [GRÜN — Limit -3 %] (99.817,78 / 99.925,53)
+- Weekly P/L: -0,145 % vs Mo-Basis 99.962,66 [GRÜN — Limit -5 %]
+- DD vom ATH 100.066,47: -0,249 % [GRÜN]
+- Käufe KW26: 1/2 (AVGO 22.06., heute gestoppt) | Pending Orders: 0
+- Realisiert YTD: -596,19 $ (erster geschlossener Trade des Bots)
+
+**Positionen Live nach Sell:**
+```
+Symbol | Last     | Entry   | P/L %   | V1 Stop | Puffer  | change_today | Status
+JPM    | 334,95   | 332,78  | +0,65 % | 306,16  | +9,48 % | -0,05 %      | SICHER
+UNH    | 417,95   | 401,57  | +4,08 % | 369,44  | +13,12% | +0,58 %      | SICHER (Posit-Hoch)
+```
+
+**Kandidaten-Scan K1–K5 (Watchlist KW26, Live 09:33 ET):**
+```
+Symbol | Live      | Chg vs Close | K1 K2 K3 K4 (Live)   | K5            | Score / Block
+CAT    | 1.018,71  | -3,59 %      | carry-over K1✓K2✓K3✓ K4 Live n/a (Pullback) | FAIL FwdPE >35 | 4/5 (K5 hard-blockt)
+LLY    | 1.145,81  | +1,61 %      | K1✓K2✓K3✓ K4 schwach (gestern 83 %)           | ✓ (34,91 grenz) | 4/5 (K4 schwach + Live-Vol nicht bestätigt)
+ANET   |   157,09  | -5,11 %      | K1✓K2✓K3✓ K4 Live n/a (Selloff)                | FAIL (44,13)   | 3/5
+CRWD   |   678,29  | -0,05 %      | K1✓K2✓K3✓ K4 schwach (gestern 51 %)            | FAIL (Cloud)   | 3/5
+```
+→ **KEIN Kandidat erfüllt alle 5 Signale.** Plus 3 belastende Faktoren:
+1. Markt risk-off (SPY -0,80 %, VIX +3,87 %)
+2. Frischer V1-Stop-Out AVGO — Strategie-Regel "No-Action bei Unsicherheit"
+3. CAT/ANET fallen direkt am Open trotz gestriger Stärke = Sentiment-Wechsel
+
+→ **KEIN Kauf heute.** 1 Slot KW26 bleibt ungenutzt (letzter Handelstag).
+
+**Sektor-Snapshot nach Sell:**
+- XLF (JPM):   1.004,85 $ → 1,01 % Gesamt / 9,09 % invest.   | 1 Pos
+- XLV (UNH):  10.030,80 $ → 10,05 % Gesamt / 90,78 % invest. | 1 Pos
+- XLK (AVGO): 0 $ → KEINE TECH-EXPOSURE mehr (war 6,28 %)
+→ Sektor-Konzentration jetzt extrem in XLV — bei nächstem Kauf Mo XLK/XLI/Industrials priorisieren.
+
+**Lessons-Tag für Weekly Review (Fr 17:00 ET):**
+- V1 Stop-Loss hat sauber gegriffen (Pre-Market Warnung +0,16 % Puffer → Open-Trigger exakt eingetreten)
+- Erster realisierter Verlust seit Bot-Init 31.05. → -596,19 $ realisiert
+- AVGO-Kauf 22.06. war K1–K5 ✓, aber Partial-Fill nur 17/24 + ungünstiges Timing (Tech-Schwäche Mo-Di)
+- Lehre: Bei sehr schmalem V1-Puffer (<1 %) am Pre-Market könnte ein präventiver Stop-Tightening/Pre-Open-Manuell-Sell-Markt überlegt werden (aktuell nicht in Strategie)
+
+**Nächste Routine:** Midday 13:00 ET — Stop-Check JPM/UNH + Daily-Cap-Re-Check (-3 %)
+
+---
+
 ## Pre-Market 08:30 ET — 2026-06-26 (Fr, KW26) — AVGO V1-ALERT
 
 **Marktdaten:**

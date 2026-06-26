@@ -6,33 +6,46 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Close 25.06. | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
-|--------|------------|------------|--------------|--------------------|-----------|----------|----------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 335,15 $     | +7,11 $ (+0,71%)   | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 415,98 $     | +345,84 $ (+3,59%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
-| AVGO   | 2026-06-22 | 403,41 $   | 381,01 $     | -380,80 $ (-5,55%) | 371,14 $  | 484,09 $ | 544,61 $ | K1✓K2✓K3✓K4✓K5✓ |
+| Symbol | Kaufdatum  | Kaufkurs   | Live 09:34 26.06.| Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
+|--------|------------|------------|------------------|--------------------|-----------|----------|----------|-----------------|
+| JPM    | 2026-06-17 | 332,78 $   | 334,95 $         | +6,51 $ (+0,65%)   | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 417,95 $         | +393,12 $ (+4,08%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 17.466,14 $ (Marktwert Close 16:00 ET) | **Cash:** 82.505,98 $ | **Positionen:** 3/8
+**Gesamt investiert:** 11.050,02 $ (Marktwert Live 09:34 ET) | **Cash:** 88.767,76 $ | **Positionen:** 2/8
 
 ---
 
 ## Offene Orders (pending)
 
-_Keine — AVGO-Buy (Order ab4a9c16) am 22.06. 09:34 ET 17/24 partial filled, Rest manuell canceled. Keine Verkaufssignale V1–V6 für JPM/UNH/AVGO offen._
+_Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,34, Realisierter Verlust -596,19 $ (-8,69 % vs Entry $403,41). JPM und UNH V1–V6 alle SICHER._
 
 ---
 
 ## Geschlossene Trades
 
-| Symbol | Kauf | Verkauf | Einstieg | Ausstieg | Ergebnis $ | Ergebnis % | Grund |
-|--------|------|---------|----------|----------|-----------|-----------|-------|
-| — | — | — | — | — | — | — | — |
+| Symbol | Kauf       | Verkauf    | Einstieg | Ausstieg | Ergebnis $ | Ergebnis % | Grund          |
+|--------|------------|------------|----------|----------|------------|------------|----------------|
+| AVGO   | 2026-06-22 | 2026-06-26 | 403,41 $ | 368,34 $ | -596,19 $  | -8,69 %    | V1 Stop-Loss   |
 
-**Realisierter Gewinn/Verlust:** 0 $ | **Win-Rate:** — | **Avg. Gewinn:** — | **Avg. Verlust:** —
+**Realisierter Gewinn/Verlust:** -596,19 $ | **Win-Rate:** 0/1 (0 %) | **Avg. Gewinn:** — | **Avg. Verlust:** -596,19 $
 
 ---
 
 ## Trades
+
+### VERKAUF (V1 Stop-Loss filled): AVGO am 2026-06-26
+- Trigger:        Last $370,13 < V1 Stop $371,14 um 09:32 ET (Pre-Market-Puffer war bereits nur +0,16 %)
+- Order:          Market Order Sell 17 Sh Day, eingereicht 09:32:36 ET
+- Fill:           17/17 Sh @ $368,34 avg um 09:33:28 ET (~1 min nach Order)
+- Erlös:          6.261,78 $
+- Entry:          $403,41 (Kauf 22.06.) → Exit $368,34 = -35,07 $/Share
+- Ergebnis:       **-596,19 $ realisiert (-8,69 %)**
+- Grund:          V1 Stop-Loss -8 % vom Entry (Schwelle $371,14, durchbrochen Open Fr 26.06.)
+- Markt-Kontext: SPY -0,80 % intraday, VIXY +3,87 %, Risk-off-Open nach Risk-on-Vortag
+- Begleitwerte:   V5 EMA50 ~397>EMA200 ~356 ✓ (intakt — V1 ist hard-stop, kein Override durch V5)
+- Earnings:       2026-09-03 (>2 Monate entfernt — kein Blackout-Effekt)
+- Alpaca Order-ID: c5b9adf0-229d-4330-9f75-9672674b946f
+- ClickUp Task:   nicht angelegt (Tier-Limit ITEM_246 "Max usage for custom task types reached") — Push-Notification an Owner gesendet
 
 ### KAUF (partial filled): AVGO am 2026-06-22
 - Limit-Order:    $413.41 (Day, +0,5% über Vortagesschluss $411.35)
