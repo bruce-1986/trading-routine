@@ -4,6 +4,63 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-26 (Fr, KW26) — AVGO V1-ALERT
+
+**Marktdaten:**
+- VIX Spot **20,29** (Perplexity, +7,41 % vs Vortag 18,87) — Vola steigt, aber <25 → 10 % Sizing erlaubt, kein VIX-Filter
+- SPY Pre-Market Mid **730,32 $** (Alpaca IEX-Quote 08:33 ET, bid 730,23 / ask 730,40) → **-0,41 %** vs Close 25.06. 733,33 [GRÜN, weit über -2 %]
+- VIXY After-Hours-Tick: 21,68 $ (Close 25.06.) → bestätigt Vola-Anstieg
+- 10Y Treasury Yield: via Perplexity nicht verfügbar (Datums-Restriktion)
+- Crash-Filter: NEIN (SPY gestern +0,001 % flat)
+
+**Alpaca-Account (Pre-Market 08:32 ET):**
+- equity **99.819,55 $** | cash 82.505,98 $ | last_equity 99.925,53 $ | portfolio_value 99.819,55 $
+- Daily P/L: **-0,106 %** [GRÜN — Limit -3 %]
+- Weekly P/L: **-0,143 %** vs Mo-Basis 99.962,66 [GRÜN — Limit -5 %]
+- DD vom ATH 100.066,47: **-0,247 %** [GRÜN — Alarm -15 %]
+- Reconciliation portfolio.md Close 25.06. 99.972,12 $ vs Alpaca last_equity 99.925,53 $ → Diff -46,59 $ Settlement-Tick (After-Hours Mark-to-Market), OK
+- Käufe KW26: 1/2 (1 Slot frei — letzter Handelstag KW26) | Pending Orders: 0
+
+**Positionen Live (Alpaca 08:32 ET):**
+```
+Symbol | Last     | Entry   | P/L %   | V1 Stop | Puffer  | change_today | Status
+JPM    | 336,00   | 332,78  | +0,97 % | 306,16  | +9,75 % |  +0,26 %     | SICHER
+UNH    | 416,10   | 401,57  | +3,62 % | 369,44  | +12,63% |  +0,14 %     | SICHER
+AVGO   | 371,72   | 403,41  | -7,86 % | 371,14  | +0,16 % |  -1,90 %     | KRITISCH HÖCHSTSTUFE
+```
+→ **AVGO V1-Schwelle praktisch erreicht** (Last 371,72 $ vs Stop 371,14 $, Puffer nur +0,16 %).
+→ Bei Open ≤ 371,14 $ wird V1 Market-Order automatisch ausgelöst (17 Shares Verkauf, Verlust -538,80 $ unreal aktuell).
+→ Pre-Market-Quote bid 359,55 / ask 398,45 nicht verlässlich (Spread zu breit) — Last-Trade 371,72 vom After-Hours-Close.
+
+**Earnings-Blackout-Check (nächste 3 HT, Perplexity 26.06.):**
+- JPM: 14.07.2026 (CONFIRMED) → 18 Tage entfernt → KEIN Blackout
+- UNH: Mitte Juli 2026 (carry-over) → ~20 Tage entfernt → KEIN Blackout
+- AVGO: August 2026 (carry-over) → >35 Tage entfernt → KEIN Blackout
+- → KEIN Stop-Tightening nötig (Standard V1 -8 % bleibt).
+
+**Guardrails-Status (alle GRÜN):**
+- Daily Loss Cap -3 %: NEIN (-0,11 %)
+- Weekly Loss Cap -5 %: NEIN (-0,14 %)
+- Drawdown-Alarm -15 %: NEIN (-0,25 %)
+- Drawdown-Stopp -20 %: NEIN
+- Crash-Filter SPY -5 %: NEIN (gestern +0,001 %)
+- VIX-Filter >30: NEIN (20,29 — sogar <25 → 10 % Sizing)
+- Käufe-Limit 2/Wo: 1/2 (1 Slot frei, letzter Tag KW26)
+
+**Makro-Events 26.06. (Perplexity sonar-pro):**
+- U-Michigan Consumer Sentiment Final 10:00 ET (zentrales Stimmungs-Update)
+- KEIN FOMC/PCE/GDP-Release bestätigt
+- VIX +7,41 % steigend trotz freundlicher Vortagsstimmung — leichte Risk-off-Tendenz Pre-Market (SPY -0,41 %)
+- Keine spezifischen Top-3-News belastbar in Quellen identifizierbar
+
+**Entscheidung Pre-Market:**
+- Market-Open-Scan 09:30 ET: **JA** — alle Guardrails GRÜN, ABER erhöhte Vorsicht (SPY Pre-Market -0,41 %, VIX-Anstieg +7,4 %, AVGO V1-Schwelle).
+- **Priorität HÖCHSTE Stufe**: AVGO-V1-Stop-Watch. Stop ist hart (kein manueller Eingriff). Bei Open ≤ 371,14 $ → V1 Market-Order automatisch.
+- Watchlist KW26 (1 Slot frei, letzter Tag): CAT (Lead — gestern Vol-Explosion 237 % bei +6,28 %, K5 FwdPE-Recheck am Open zwingend), ANET (K4 nahe Trigger 111 %, K5 FAIL FwdPE 44,13), LLY (K4 schwach 83 %), CRWD (K4 sehr schwach 51 %).
+- Kauf nur bei vollem K1–K5 und sehr starkem Setup (Risk-off + AVGO-Druck = Vorsichtsmodus).
+
+---
+
 ## Market Close 16:00 ET — 2026-06-25 (Do, KW26) — KEIN TRADE
 
 **Makro-Lage (Tagesschluss, Alpaca IEX-Bar Source of Truth):**

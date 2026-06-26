@@ -110,6 +110,24 @@ V6 RSI>80 UND RS4w<0: RSI ~46 | RS_4w ~-6 % → NICHT ausgelöst (RSI viel zu ni
 
 ## Tagesbilanz-Log
 
+**Pre-Market 2026-06-26 08:30 ET (Fr, KW26):**
+Gesamtwert: 99.819,55 $ | Cash: 82.505,98 $ (82,66 %) | Investiert (MV): 17.313,57 $ (17,34 %)
+Alpaca equity 99.819,55 vs. last_equity 99.925,53 → Daily P/L -0,106 % [GRÜN — Limit -3 %]
+ATH: 100.066,47 $ | DD vs. ATH: -0,247 % [GRÜN]
+Weekly P/L: -0,143 % (vs. Mo-Basis 99.962,66) [GRÜN — Limit -5 %] | Käufe KW26: 1/2 (1 Slot frei — letzter Handelstag KW26)
+VIX: 20,29 (+7,41 % vs Vortag — Vola steigt, aber <25 → 10 % Sizing erlaubt) | SPY Pre-Market: 730,32 $ Mid = -0,41 % vs Close 733,33 | 10Y: n/a (Perplexity)
+Guardrails: alle GRÜN. Crash-Filter NEIN (SPY gestern +0,001 %). VIX-Filter NEIN (<25). DD-Alarm NEIN.
+Positionen Live (Alpaca 08:32 ET):
+- JPM  336,00 $   (Entry 332,78, P/L +0,97 %, V1 306,16 Puffer +9,75 %, change_today +0,26 %) [SICHER]
+- UNH  416,10 $   (Entry 401,57, P/L +3,62 %, V1 369,44 Puffer +12,63 %, change_today +0,14 %) [SICHER]
+- AVGO 371,72 $   (Entry 403,41, P/L -7,86 %, V1 371,14 Puffer +0,16 %, change_today -1,90 %) [KRITISCH HÖCHSTSTUFE — V1-Schwelle praktisch erreicht]
+Earnings-Blackouts (Perplexity): keine (JPM 14.07., UNH ~Mitte Juli, AVGO ~Aug — alle carry-over) — kein Stop-Tightening.
+Reconciliation: last_equity 99.925,53 vs. portfolio.md Close 25.06. 99.972,12 = -46,59 $ Settlement-Tick.
+Makro 26.06.: U-Michigan Consumer Sentiment Final 10:00 ET (Perplexity); keine FOMC/PCE/GDP-Releases bestätigt.
+> Entscheidung: Market-Open-Scan 09:30 ET JA — alle Guardrails GRÜN. ABER erhöhte Vorsicht wegen AVGO V1-Schwelle (+0,16 %) und SPY Pre-Market -0,41 %.
+> Priorität HÖCHSTE Stufe: AVGO-V1-Stop-Watch. Bei Open ≤ 371,14 $ wird V1 Market-Order automatisch ausgelöst (17 Shares Verkauf).
+> Watchlist KW26 (1 Slot, letzter Tag KW26): CAT (Lead — gestern Vol-Explosion 237 % +6,28 %, K5 FwdPE-Recheck Open zwingend), ANET (K4 nahe Trigger 111 %, K5 FAIL), LLY (K4 schwach 83 %), CRWD (K4 sehr schwach 51 %). Kauf nur bei vollem K1–K5.
+
 **Close 2026-06-25 16:00 ET — Tagesbilanz KW26 Do:**
 Gesamtwert:     99.972,12 $
 Cash:           82.505,98 $  (82,53 %)
