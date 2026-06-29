@@ -4,6 +4,45 @@
 
 ---
 
+## Market Open 09:33 ET — 2026-06-29 (Mo, KW27) — KEIN TRADE (LLY K2 blockt, ELV K5 blockt)
+
+**Live-Daten (Alpaca IEX 09:32–09:33 ET):**
+```
+SPY:      737,80 $     (+1,16 % vs Fr-Close 729,35 — risk-on Open)
+LLY:    1.216,74 $     (+0,84 % vs Fr-Close 1.206,57 — Folge-Gap nach Fr +7 %)
+JPM:      329,31 $     (-1,04 % vs Entry, change_today +0,11 %)
+UNH:      422,43 $     (+5,20 % vs Entry, change_today -1,27 % — Cooldown nach Fr +3 %)
+Equity:  99.890,15 $   (Daily P/L -0,134 % vs last_equity 100.024,25)
+```
+
+**Kandidaten-Scan (Alpaca IEX Bars bis Close 26.06., 200 Tages-Window):**
+```
+Symbol | Close   | K1 EMA50/EMA200          | K2 RSI14 | K3 RS_63d | K4 Vol%    | K5 (Perplexity)        | Total
+LLY    | 1206,57 | ✓ 1061,41 > 973,76       | ✗ 72,16  | ✓ +21,40% | ✓ 222 %    | ✓ FwdPE 32,39 / +55,5% | 4/5 K2 BLOCKS
+ELV    |  395,20 | ✓ 380,31 > 343,77        | ✓ 51,93  | ✓ +21,28% | ✓ 138 %    | ✗ FwdPE 14,8 / +1,5%   | 4/5 K5-RevGrowth BLOCKS
+CAT    |  998,18 | ✓ 894,79 > 687,30        | ✓ 58,67  | ✓ +15,88% | ✓ 220 %    | ✗ FwdPE 38,87–42,19    | 4/5 K5 BLOCKS
+CI     |  282,39 | ✓ 283,57 > 281,51 knapp  | ✗ 47,27  | ✗ -9,25%  | ✓ 138 %    | n/a                    | 2/5
+COR    |  286,08 | ✗ 285,88 < 322,37        | ✓ 58,58  | ✗ -23,10% | ✓ 125 %    | n/a                    | 2/5
+CRWD   |  700,04 | ✓ 610,79 > 499,35        | ✓ 60,50  | ✓ +52,13% | ✗ 78 %     | wahrscheinlich FAIL    | 3/5
+```
+
+**Perplexity K5 Detail:**
+- LLY: FwdPE 32,39 (TTM consensus bei $1206–1220) ✓ | Q1 2026 Rev YoY +55,5 % ✓ (GLP-1-Driven) | Earnings 06.08.2026 (38 Tage) ✓ keine Blackout
+- ELV: FwdPE 14,8x ✓ | Q1 2026 Rev YoY nur +1,5 % (off. Filing) ✗ | Health-Insurer-Sektor strukturell langsam-wachsend → K5 RevGrowth-Hürde nicht passierbar mit aktuellem Quartal
+
+**Schlussfolgerung:**
+- LLY-Setup fundamental top (K1/K3/K4/K5 alle ✓), aber **RSI 72,16 = K2-Overheat** nach +7 %/+0,84 % Gap-up-Tagen. Diszipliniertes Warten = Strategie-Vorgabe.
+- ELV blockt strukturell an K5-Revenue-Growth. Fundamentaldaten verbessern sich evtl. nach Q2-Earnings (~Mitte Juli) — Watch.
+- CAT bleibt durch FwdPE >35 carry-over geblockt.
+
+**Entscheidung Market Open:**
+- **KEIN Kauf KW27 Mo.** 0/2 Slots genutzt, 2 frei.
+- **Verkaufsorders:** Keine. Positionen JPM/UNH V1–V6 ALLE SICHER.
+- **Nächste Routine:** 13:00 ET Midday Stop-Check.
+- **Watchlist Di–Fr KW27:** LLY (RSI-Cooldown <70 abwarten — derzeit overheated), ELV (K5-Rev-Recheck nach Q2-Earnings ~16.07.), CRWD (Vol-Trigger), CAT (K5 strukturell blockt).
+
+---
+
 ## Pre-Market 08:30 ET — 2026-06-29 (Mo, KW27) — Wochenstart, Guardrails GRÜN, Buy-Scan JA
 
 **Makro-Lage (Pre-Market 08:33 ET, Alpaca IEX + Perplexity):**

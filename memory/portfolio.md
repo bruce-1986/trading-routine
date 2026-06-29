@@ -1,6 +1,51 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-26 17:00 ET (Weekly Review KW26 — Wochenrendite +0,063 %, Alpha +2,07 % vs SPY, 1 Käufe / 1 V1-Stop, Strategie STABIL)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-29 09:33 ET (Market Open KW27 Mo — KEIN TRADE: LLY K2 RSI 72,16 blockt, ELV K5 RevGrowth 1,5 % blockt, CAT K5 carry-over blockt — Slot 0/2 KW27 frei)
+
+---
+
+## Market Open 2026-06-29 09:33 ET (Mo, KW27) — KEIN TRADE
+
+```
+Gesamtwert:        99.890,15 $   (Alpaca equity Live 09:33 ET)
+Investiert:        11.127,00 $   (11,14 %, JPM 988,20 $ + UNH 10.138,80 $)
+Cash:              88.767,74 $   (88,86 %)
+Unrealisiert P/L:   +490,98 $    (JPM -10,14 $ / UNH +501,12 $)
+Realisiert P/L:     -596,19 $    (AVGO V1 26.06.; carry-over)
+Daily P/L:           -0,134 %    [GRÜN — vs last_equity 100.024,25]
+Weekly P/L:          -0,134 %    [GRÜN — KW27 Mo-Basis = Fr-Close 100.025,35]
+ATH:              100.066,47 $   DD: -0,176 % [GRÜN]
+Käufe KW27:         0/2          (0 genutzt, 2 frei)
+Pending Orders:     0
+VIX (Spot):         18,41        [GRÜN <25 → 10 % Sizing erlaubt]
+Crash-Filter:       NEIN         (SPY +1,16 % vs Fr-Close 729,35 → 737,80)
+```
+
+**Guardrails-Status alle 8 Hierarchien: GRÜN.**
+
+**Positionen Live V1–V6 (Alpaca 09:33 ET):**
+- JPM  329,31 $ (Entry 332,78, P/L -1,04 %, change_today +0,11 %) — V1 306,16 SICHER +7,53 % | V5 EMA50>EMA200 ✓ | V6 RSI ~55 / RS_4w ~+8 % → ALLE SICHER
+- UNH  422,43 $ (Entry 401,57, P/L +5,20 %, change_today -1,27 %) — V1 369,44 SICHER +14,28 % | V2 Stop ~376,47 SICHER +12,21 % | V5 EMA50>EMA200 ✓ | V6 RSI ~73 / RS_4w ~+12 % → ALLE SICHER (RSI <80, RS positiv)
+
+→ Keine Verkaufsorder. EMA50>EMA200 für beide intakt.
+
+**Kandidaten-Scan K1–K5 (Alpaca IEX Close 26.06., Perplexity K5):**
+- **LLY  Close 1.206,57** | K1 ✓ EMA50 1061,41>EMA200 973,76 | **K2 ✗ RSI 72,16 (>70 Overheat)** | K3 ✓ RS_63d +21,40 % (LLY +34,46 % vs SPY +13,06 %) | K4 ✓ Vol 222 % Avg20 | K5 ✓ FwdPE 32,39 + RevGrowth +55,5 % → **4/5 — K2 BLOCKS**
+- **ELV  Close 395,20** | K1 ✓ EMA50 380,31>EMA200 343,77 | K2 ✓ RSI 51,93 | K3 ✓ RS_63d +21,28 % | K4 ✓ Vol 138 % Avg20 | **K5 ✗ FwdPE 14,8 ✓ aber RevGrowth Q1 2026 nur +1,5 % YoY (Perplexity, <10 %)** → **4/5 — K5 RevGrowth BLOCKS**
+- **CAT  Close 998,18** | K1 ✓ K2 ✓ RSI 58,67 | K3 ✓ RS_63d +15,88 % | K4 ✓ Vol 220 % Avg20 | **K5 ✗ FwdPE 38,87–42,19 > 35 carry-over** → 4/5
+- **CI   Close 282,39** | K1 ✓ knapp | K2 ✗ RSI 47,27 | K3 ✗ RS_63d -9,25 % | K4 ✓ → 2/4
+- **COR  Close 286,08** | K1 ✗ EMA50<EMA200 | K2 ✓ | K3 ✗ RS_63d -23,10 % | K4 ✓ → 2/4
+- **CRWD Close 700,04** | K1 ✓ | K2 ✓ RSI 60,50 | K3 ✓ RS_63d +52,13 % | K4 ✗ Vol 78 % | K5 vermutlich FAIL → 3/5
+
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Lead-Kandidat LLY scheitert an K2 (RSI nach +7 % Gap-up und +0,84 % Folgetag im Overheat-Bereich). Backup ELV scheitert an K5 (RevGrowth Q1 2026 nur 1,5 % YoY — Health-Insurer-Sektor strukturell langsam). Pre-Market-Notiz "Falls LLY K5/K2 kippt: keine Pflicht zum Kauf" greift.
+
+→ **KEIN Kauf heute.** 0/2 Slots KW27 genutzt. Watchlist Midday/Di: LLY (RSI-Cooldown abwarten), CAT (K5 Block), ELV (Watch — Earnings ~Mitte Juli könnte Wachstumsbild ändern), CRWD (Vol-Trigger).
+
+**Sektor-Update:** Unverändert — XLF (JPM 0,99 %) + XLV (UNH 10,15 %). XLK weiter leer.
+
+**ClickUp:** ROUTINE Normal-Alert Versuch (Prio 3 — alle GRÜN, kein Trade) — Tier-Limit-Issue bleibt möglich (carry-over von 26.06.).
+
+> Entscheidung: KEIN Trade. Markt risk-on (SPY +1,16 %) bestätigt UNH-Trend. LLY-Setup ist fundamental top (K1/K3/K4/K5 alle ✓), aber RSI 72 = Overheat → diszipliniertes Warten. 2 Slots KW27 bleiben verfügbar.
 
 ---
 
