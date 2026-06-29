@@ -4,6 +4,58 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-06-29 (Mo, KW27) — Tagesbilanz + Watchlist Di 30.06.
+
+**Tages-Performance (Alpaca + IEX-Bars Close 16:00 ET):**
+```
+Bull-Depot:   99.841,92 $   (vs last_equity 100.024,25)  Daily P/L -182,33 $  -0,182 %  [GRÜN]
+SPY:             740,86 $   (vs Fr-Close 729,35)         Daily +1,578 % (IEX)
+Alpha:           -1,760 %   (Cash-Heavy 89 % → Beta-Verzicht an Risk-on-Tag)
+ATH:          100.066,47 $  Drawdown -0,225 %  [GRÜN]
+Weekly P/L:      -0,182 %   (KW27 Mo-Basis = Fr-Close 100.024,25)  [GRÜN >-5 %]
+VIX-Tag:         carry-over Pre-Market 18,41  [GRÜN]
+Crash-Filter:    INAKTIV (SPY +1,58 %)
+```
+
+**Hinweis Perplexity:** SPY-Abfrage lieferte halluzinierten Options-Kontrakt (745er Put statt SPY-Underlying). SPY-Close-Wert via Alpaca IEX-Bars (740,86) als autoritativ verwendet.
+
+**Verkaufssignal-Check JPM + UNH (V1–V6 Close 16:00 ET, Alpaca IEX + Indikatoren):**
+```
+Symbol | Close   | V1 Stop | V2 Trail | V5 EMA50/EMA200       | V6 RSI / RS_4w
+JPM    | 331,39  | 306,16 ✓ +8,23 %  | 302,11 ✓ +9,69 %  | 313,62 > 307,76 ✓  | 60,10 / +12,11 % ✓
+UNH    | 420,00  | 369,44 ✓ +13,67 % | 376,47 ✓ +11,55 % | 381,82 > 340,19 ✓  | 64,15 / +12,43 % ✓
+```
+→ **Keine pending Verkaufsorder für Di.** Trail-Stop UNH bleibt 376,47 (Hoch 427,81 carry-over, kein neues Hoch heute).
+
+**Watchlist-Scan Di 30.06. (Alpaca IEX 200d-Window Close 29.06.):**
+```
+Symbol | Close   | K1 EMA50>EMA200        | K2 RSI14 | K3 RS_63d | K4 Vol% | Status
+CRWD   |  742,61 | ✓ 616,0 > 516,3       | ✓ 67,6  | ✓ +84,0 % | ✓ 158 % | 4/4 LEAD — K5 vorläufig ✓
+LLY    | 1229,06 | ✓ 1068,0 > 969,2      | ✗ 74,5  | ✓ +23,1 % | ✓ 151 % | 3/4 K2 BLOCKS (heißer)
+CAT    | 1033,53 | ✓ 900,2 > 694,3       | ✓ 62,4  | ✓ +31,8 % | ✗ 95 %  | 3/4 K4 + K5 carry-over
+ELV    |  387,92 | ✓ 380,6 > 346,7       | ✗ 47,5  | ✓ +18,7 % | ✗ 72 %  | 2/4 K2 + K5 BLOCKS
+NVDA   |  194,92 | ✓ 205,0 > 191,8 knapp | ✗ 40,2  | ✗ -0,4 %  | ✗ 74 %  | 1/4 K2 + K3 BLOCKS
+AVGO   |  372,30 | ✓ 395,3 > 361,4 (Krs<EMA50) | ✗ 42,5 | ✓ +6,9 % | ✗ 55 % | 1/4 K2 + K4 BLOCKS (Watch nach V1-Stop 26.06.)
+```
+
+**Perplexity K5 Pre-Check (lead-Kandidaten):**
+- **CRWD**: FwdPE 28,5 ✓ (≤35) | Umsatzwachstum YoY +12,3 % ✓ (Q1 FY27, Onvista) — K5 vorläufig ✓ → finale Verifizierung bei Market Open (Quelle-Konsistenz Yahoo/Marketwatch nötig)
+- **LLY**: K5 carry-over ✓ vom Open (FwdPE 32,39, Rev +55,5 % YoY) — bleibt fundamental top, blockiert nur an K2 Overheat
+- **CAT**: K5 carry-over FwdPE >35 — strukturell blockt
+- **ELV**: K5 carry-over RevGrowth Q1 nur +1,5 % — Watch nach Q2-Earnings
+
+**Watchlist morgen: CRWD (Lead, 4/4 tech, K5 ✓ vorläufig), LLY (RSI-Cooldown <70 abwarten), CAT (K4-Vol-Trigger + K5 strukturell), ELV (Earnings-Trigger ~16.07.).**
+
+**Sektor-Check kompakt:** Tech-Sektor (XLK) führt heute mit CRWD +6 %, LLY +1,9 %, NVDA +1,5 %; Financials XLF stabil (JPM +0,7 %); Health Care XLV mixed (UNH -1,8 % Cooldown, LLY +1,9 %). Bot ist 0 % XLK exponiert — Möglichkeit für 1 Slot via CRWD morgen.
+
+**Entscheidung Market Close:**
+- KEINE Verkaufsorders (alle V1–V6 SICHER).
+- KEINE Pending Buys (Routine kauft erst bei Market Open mit K4-Live-Volumen).
+- Bot bleibt Long JPM + UNH, 88,91 % Cash für CRWD-Kauf-Setup morgen reserviert.
+- **Nächste Routine:** Di 2026-06-30 08:30 ET Pre-Market Check.
+
+---
+
 ## Market Open 09:33 ET — 2026-06-29 (Mo, KW27) — KEIN TRADE (LLY K2 blockt, ELV K5 blockt)
 
 **Live-Daten (Alpaca IEX 09:32–09:33 ET):**
