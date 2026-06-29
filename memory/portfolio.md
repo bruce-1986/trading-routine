@@ -1,6 +1,42 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-29 09:33 ET (Market Open KW27 Mo — KEIN TRADE: LLY K2 RSI 72,16 blockt, ELV K5 RevGrowth 1,5 % blockt, CAT K5 carry-over blockt — Slot 0/2 KW27 frei)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-29 13:02 ET (Midday KW27 Mo — alle Stops SICHER, Daily P/L -0,20 % GRÜN, kein Eingriff)
+
+---
+
+## Midday 2026-06-29 13:02 ET (Mo, KW27)
+
+```
+Positionen:        2/8                (JPM + UNH)
+Ø P/L:            +2,04 %             ((-0,27 + 4,35)/2)
+Equity:           99.822,29 $          (Alpaca Live)
+Cash:             88.767,74 $          (88,93 %)
+Investiert (MV):  11.054,55 $          (11,07 %, JPM 995,67 $ + UNH 10.057,08 $)
+Daily P/L:        -0,202 %             [GRÜN — vs last_equity 100.024,25]
+Pending Orders:   0
+```
+
+**Positionen Live V1–V4 (Alpaca Trades 13:02 ET):**
+- JPM  331,89 $ (Entry 332,78, P/L -0,27 %, change_today +0,86 %)
+  - V1 306,16 SICHER (+8,41 % Puffer)
+  - V2 Stop ~302,11 (Hoch carry-over 343,31, Tageshoch 332,335 → kein Trail-Update) SICHER (+9,85 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+- UNH  419,045 $ (Entry 401,57, P/L +4,35 %, change_today -2,07 %)
+  - V1 369,44 SICHER (+13,43 % Puffer)
+  - V2 Stop ~376,47 (Hoch carry-over 427,81 vom 26.06., Tageshoch 425,01 → kein Trail-Update) SICHER (+11,30 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+
+**Stops:** alle regulär — KEINE V1/V2/V3/V4 ausgelöst (RSI/EMA bei Midday nicht geprüft per Strategie).
+
+**Schlechteste Position:** JPM -0,27 % (intraday +0,86 % gegen Vortagestief, aber unter Entry)
+**Beste Position:** UNH +4,35 % (Pullback -2,07 % vom Vortagshoch 427,89, V2-Trail bleibt komfortabel)
+
+**Daily Loss Cap:** -0,202 % vs -3 % → GRÜN, keine Order-Stornierung nötig.
+**Pending Orders:** 0 (keine Stornierungen ausgelöst).
+**ClickUp:** Kein Log — keine Stops ausgelöst, kein Daily-Cap erreicht (per Routine-Regel SCHRITT 5).
+
+> Entscheidung: kein Eingriff. UNH gibt nach Fr-Schlusshoch +3 % heute -2 % ab — gesunder Pullback, Trail-Stop unverändert. JPM seitwärts. Daily P/L -0,20 % weit weg vom Cap.
+> Nächste Routine: 16:00 ET Market Close (Tagesbilanz + V5/V6 Signal-Check).
 
 ---
 
