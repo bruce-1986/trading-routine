@@ -1,6 +1,62 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-29 13:02 ET (Midday KW27 Mo — alle Stops SICHER, Daily P/L -0,20 % GRÜN, kein Eingriff)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-29 16:00 ET (Market Close KW27 Mo — Tagesbilanz Daily -0,18 % GRÜN, Alpha -1,76 % vs SPY +1,58 %, V1-V6 ALLE SICHER, keine Pending Orders)
+
+---
+
+## Market Close 2026-06-29 16:00 ET (Mo, KW27) — Tagesbilanz
+
+```
+Gesamtwert:        99.841,92 $   (Alpaca equity Close, vs last_equity 100.024,25)
+Cash:              88.767,74 $   (88,91 %)
+Investiert (MV):   11.074,18 $   (11,09 %, JPM 994,18 $ + UNH 10.080,00 $)
+P/L heute:           -182,33 $    (-0,182 %)
+Alpha vs SPY:        -1,760 %     (SPY +1,578 % IEX 729,35 → 740,86)
+ATH:              100.066,47 $    DD: -0,225 % [GRÜN]
+Weekly P/L KW27:     -0,182 %     [GRÜN — Mo-Basis = Fr-Close 100.024,25, Schwelle -5 %]
+Käufe KW27:           0/2         (0 genutzt, 2 frei)
+Pending Orders:       0
+Guardrails:        Daily -0,18 % | Weekly -0,18 % | Käufe 0/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 16:00 ET Close):**
+- **JPM**  331,39 $ (Entry 332,78, P/L -0,42 %, change_today +0,71 %)
+  - V1 306,16 SICHER (+8,23 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over vom 25.06., Tageshoch heute ~333) SICHER (+9,69 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+  - V5 EMA50 313,62 > EMA200 307,76 ✓ (Spread +5,86 — Golden Cross seit Tagen, leicht ausgeweitet)
+  - V6 RSI(14) 60,10 / RS_4w +12,11 % → SICHER (RSI <80, RS positiv)
+- **UNH**  420,00 $ (Entry 401,57, P/L +4,59 %, change_today -1,84 %)
+  - V1 369,44 SICHER (+13,67 % Puffer)
+  - V2 Stop ~376,47 (Posit-Hoch 427,81 vom 26.06., Tageshoch heute ~427,89 → kein neues Hoch, Trail unverändert) SICHER (+11,55 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+  - V5 EMA50 381,82 > EMA200 340,19 ✓ (Spread +41,63 sehr komfortabel)
+  - V6 RSI(14) 64,15 (Cooldown von ~75 am Fr) / RS_4w +12,43 % → SICHER (RSI <80, RS positiv)
+
+**Verkaufssignal-Check V1–V6: ALLE SICHER für beide Positionen.**
+→ **Keine Limit-Order für morgen vorbereitet.** Pending Orders bleiben 0.
+
+**Schlechteste Position:** JPM -0,42 % (intraday positiv +0,71 %, aber unter Entry-Niveau)
+**Beste Position:** UNH +4,59 % (Pullback -1,84 % vom Fr-Hoch 427,89, Trail-Stop ungefährdet)
+
+**Sektor-Update:** Unverändert — XLF (JPM ~1 %) + XLV (UNH ~10,1 %). XLK weiter leer.
+
+**Daily Loss Cap (-3 %):** -0,182 % → GRÜN, kein Eingriff.
+**Weekly Loss Cap (-5 %):** -0,182 % → GRÜN, keine Stornierungen.
+**ATH-Drawdown (-15 % Alarm / -20 % Stopp):** -0,225 % → GRÜN.
+**Crash-Filter:** SPY +1,58 % heute → INAKTIV.
+**VIX-Filter:** carry-over Pre-Market 18,41 → GRÜN (unter 25-Schnitt).
+
+**Watchlist morgen Di 30.06.:**
+- **CRWD 742,61 $ (+6,08 % heute)** — K1✓ EMA50 616 > EMA200 516 | K2✓ RSI 67,6 | K3✓ RS_63d +84,0 % | K4✓ Vol 158 % Avg20 — **Lead-Kandidat**, K5 vorläufig ✓ (Perplexity: FwdPE 28,5 / Rev YoY +12,3 %); finale K5-Verifizierung bei Market Open
+- **LLY 1.229,06 $ (+1,86 % heute)** — K2 ✗ RSI 74,5 (weiter overheated, Cooldown noch nicht erreicht) — Watch bis RSI <70
+- **CAT 1.033,53 $ (+3,54 % heute)** — K1-K3 ✓, K4 (Vol 95 %) ✗ heute, K5 carry-over FwdPE >35 → Watch
+- **ELV 387,92 $ (-1,84 %)** — K2 ✗ RSI 47,5 unter 50, K5 RevGrowth-Hürde — Watch nach Q2-Earnings (~16.07.)
+
+**ClickUp:** Tagesbericht-Task `[CLOSE] Tagesbilanz — 2026-06-29` Prio 4 (Low — positive Guardrails GRÜN bei minimalem Daily-Verlust).
+
+> **Entscheidung:** Tagesbilanz GRÜN trotz Cash-Heavy-Underperformance (89 % Cash kostete heute ~1,8 % Alpha bei SPY +1,58 %). Diszipliniert: keine Panik-Käufe nach Risk-on-Tag — Strategie hält an K-Kriterien fest. CRWD ist morgen Lead-Kandidat mit allen 4 technischen Signalen voll erfüllt; entscheidend wird K5-Final-Check bei Market Open. UNH hält Trend trotz Cooldown souverän (V2 weit weg).
+> **Nächste Routine:** Di 2026-06-30 08:30 ET Pre-Market Check.
 
 ---
 
