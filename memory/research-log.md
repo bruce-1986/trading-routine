@@ -4,6 +4,73 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-29 (Mo, KW27) — Wochenstart, Guardrails GRÜN, Buy-Scan JA
+
+**Makro-Lage (Pre-Market 08:33 ET, Alpaca IEX + Perplexity):**
+```
+VIX (Spot):         18,41           [GRÜN — deutlich unter 30, sogar unter 25-Schnitt]
+SPY Premarket:      737,09          (vs Fr-Close 729,35 → +1,06 % Risk-on Open)
+SPY Hourly Range:   734,52 – 738,10 (Pre-Market 04:00 ET → 08:00 ET)
+VIXY (Fr-Close):    22,60           (kein Pre-Market-Update vor 09:30 ET, VIX-Spot Perplexity primär)
+10Y Treasury Yield: n/v             (Perplexity-Quelle leer; nicht handlungsblockierend)
+Crash-Filter:       NEIN            (SPY Fr -0,54 % > -5 %)
+Markt-Status:       CLOSED          (next_open 09:30 ET)
+```
+
+**Alpaca Account-Status (Konsistenz-Check):**
+```
+Equity:             100.015,18 $    (Pre-Market-Mark, vs Fr-Close 100.025,35 → -10,17 $ -0,010 % drift)
+Cash:               88.767,74 $     (vs memory 88.767,76 → identisch, $0,02 Rounding)
+Last_Equity:        100.024,25 $    (Fr-Close — konsistent)
+Status:             ACTIVE          (trading_blocked=false, account_blocked=false)
+Positions Live:     JPM 329,50 $ (PnL -0,99 %, change_today +0,14 %)
+                    UNH 427,46 $ (PnL +6,45 %, change_today -0,10 %)
+Open Orders:        0
+```
+
+**Guardrails-Check (alle 8 Hierarchien):**
+```
+1. Daily Loss Cap (-3 %/Tag):    n/a (Wochenstart, kein last-EOD Vergleich relevant für Open)
+2. Weekly Loss Cap (-5 %/Woche): RESET KW27 (Mo-Basis = 100.025,35 $ Fr-Close)
+3. Drawdown vom ATH:             -0,051 % vs ATH 100.066,47 [GRÜN — Schwelle -15 % bei 85.057 $]
+4. Drawdown-Stopp -20 %:         INAKTIV
+5. Crash-Filter (SPY -5 %):      INAKTIV (Fr -0,54 %)
+6. VIX-Filter (>30):             INAKTIV (18,41 → klar GRÜN)
+7. Earnings-Blackout:            KEINER (JPM 07-15: 16d / UNH 07-16: 17d entfernt — >3d)
+8. Max neue Käufe KW27:          0/2 genutzt
+```
+→ **STATUS: GRÜN auf allen 8 Levels.**
+
+**Positionen Signal-Recheck (Pre-Market, V1–V6):**
+```
+JPM    329,50 $ — V1 306,16 SICHER (+7,62 %) | V5 EMA50>EMA200 ✓ carry-over | KEIN Trigger
+UNH    427,46 $ — V1 369,44 SICHER (+15,71 %) | V2 ~376,4 SICHER (+13,55 %) | V6 RSI ~74 / RS_4w >+10 % → KEIN Trigger
+```
+→ Keine Verkaufsorder pending. EMA50>EMA200 für beide intakt.
+
+**Earnings-Kalender nächste 3 Handelstage (für offene Positionen):**
+- JPM Earnings: 2026-07-15 (16 Tage entfernt) → KEIN Blackout, V1 -8 % bleibt
+- UNH Earnings: 2026-07-16 (17 Tage entfernt) → KEIN Blackout, V1 -8 % bleibt
+- Keine Stop-Loss-Anpassung erforderlich.
+
+**Top-News / Makro heute (Perplexity):**
+- Perplexity-Quelle lieferte keine belastbaren neuen Top-3-News seit Fr-Close — niedrige News-Dichte
+- VIX-Kommentar: Range 18,25–18,60 — ruhige Risiko-Stimmung
+- Keine Termin-Daten in Quellen (Fed/CPI/PCE/Jobs nicht abrufbar via Perplexity heute)
+- **Bekannte Watchlist-Bewegung Fr 26.06.: LLY +7,00 % Vol +217 %** — Lead für 09:30 ET Buy-Scan (K2/K5 Recheck zwingend)
+
+**Entscheidung 09:30 ET Market Open:**
+- Buy-Scan JA — Guardrails alle GRÜN, Pre-Market risk-on (+1,06 %), VIX entspannt
+- Lead-Kandidat: **LLY** (Fr-Vol-Explosion 217 %, Watchlist-Lead) — K2 RSI nach Gap-up und K5 FwdPE-Recheck am Open zwingend
+- Sektor-Check: LLY = XLV (zusammen mit UNH max 2 Positionen XLV → erlaubt unter 30 %-Limit)
+- Falls LLY K5/K2 kippt: keine Pflicht zum Kauf, Slot ungenutzt lassen
+- Max 2 Käufe KW27 — nach LLY (falls Trigger) noch 1 Slot frei für ggf. CAT/ELV/CI später
+
+**Datenqualitäts-Hinweis:**
+Perplexity Datum-in-Zukunft-Bug bleibt (keine 2026-Termine/News). Alpaca IEX SPY-Hourly-Bars als Source of Truth für Premarket. VIX-Spot 18,41 via Perplexity glaubwürdig (Range plausibel, Yahoo-Zitation).
+
+---
+
 ## Market Close 16:00 ET — 2026-06-26 (Fr, KW26) — Tagesbilanz + Wochenabschluss + Watchlist Mo
 
 **Makro-Lage (Tagesschluss, Alpaca IEX-Bar Source of Truth):**
