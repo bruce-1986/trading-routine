@@ -1,6 +1,36 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 09:32 ET (Market Open KW27 Di — KEIN TRADE, CRWD K5 FAIL FwdPE 151,52 statt 28,5, alle V1–V6 SICHER, Guardrails GRÜN)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 13:03 ET (Midday KW27 Di — keine Stops, Daily P/L -0,08 % GRÜN, alle V1–V4 SICHER)
+
+---
+
+## Midday 2026-06-30 13:03 ET (Di, KW27) — Stop-Check
+
+```
+Positionen:        2/8
+Ø P/L (gewichtet): +3,40 % (JPM -1,05 % / UNH +3,86 %)
+Schlechteste:      JPM -1,05 % (V1 +7,55 % Puffer)
+Beste:             UNH +3,86 % (V1 +12,90 % Puffer)
+Stops:             alle regulär — kein V1/V2/V3/V4-Trigger
+Daily P/L:         -0,076 %   [GRÜN — vs last_equity 99.831,59]
+Equity:            99.755,83 $ (long_market_value 10.988,09, cash 88.767,74)
+```
+
+**Live-Check V1–V4 (Alpaca 13:03 ET):**
+- **JPM** 329,30 $ (Entry 332,78, P/L -1,05 %)
+  - V1 306,16 SICHER (+7,55 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+9,00 %)
+  - V3 399,34 / V4 449,25 — weit entfernt, kein TP-Trigger
+- **UNH** 417,065 $ (Entry 401,57, P/L +3,86 %)
+  - V1 369,44 SICHER (+12,90 % Puffer)
+  - V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over) SICHER (+10,78 %)
+  - V3 481,88 / V4 542,12 — weit entfernt, kein TP-Trigger
+
+→ **Keine Verkaufsorder.** Alle Stops regulär.
+→ **Daily Loss Cap (-3 %) nicht erreicht** (-0,076 %). Keine Order-Stornierung.
+→ **ClickUp:** kein Alert (keine Stops / kein Cap → Logging-Disziplin gewahrt).
+
+**Nächste Routine:** 16:00 ET Market Close.
 
 ---
 
