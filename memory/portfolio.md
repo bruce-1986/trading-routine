@@ -1,6 +1,61 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-29 16:00 ET (Market Close KW27 Mo — Tagesbilanz Daily -0,18 % GRÜN, Alpha -1,76 % vs SPY +1,58 %, V1-V6 ALLE SICHER, keine Pending Orders)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 08:33 ET (Pre-Market KW27 Di — Guardrails alle 8 GRÜN, VIX 17,65, SPY Premarket +0,10 %, Earnings KEIN Blackout, Buy-Scan JA, Lead CRWD)
+
+---
+
+## Pre-Market 2026-06-30 08:33 ET (Di, KW27) — Buy-Scan JA, Lead CRWD
+
+```
+Gesamtwert:        99.847,91 $   (Alpaca equity Pre-Market Mark, vs Mo-Close 99.841,92 → +5,99 $ Settlement-Tick)
+Cash:              88.767,74 $   (88,90 %, identisch zu Memory)
+Investiert (MV):   11.080,17 $   (11,10 %, JPM 988,41 $ + UNH 10.091,76 $)
+Last_Equity:       99.831,59 $   (Mo-EOD-Mark)
+Daily P/L:           +0,016 %    (+16,32 $) [GRÜN — Limit -3 %]
+Weekly P/L KW27:     -0,176 %    (vs Mo-Basis 100.024,25 = Fr-Close) [GRÜN — Limit -5 %]
+ATH:              100.066,47 $   DD: -0,219 % [GRÜN]
+Käufe KW27:           0/2        (0 genutzt, 2 frei)
+Pending Orders:       0
+VIX (Spot):          17,65       [GRÜN <25 → 10 % Sizing erlaubt]
+VIXY Close 29.06.:   21,775      (-3,65 % vs Fr — Vola-Entspannung)
+SPY Premarket:      741,61 $     (+0,10 % vs Mo-Close 740,86, IEX Last 08:13 ET)
+Crash-Filter:       NEIN         (SPY Mo +1,58 %)
+Guardrails:        Daily +0,02 % | Weekly -0,18 % | DD -0,22 % | VIX 17,65 | Käufe 0/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 08:32 ET):**
+- **JPM**  329,47 $ (Entry 332,78, P/L -1,00 %, change_today +0,02 %)
+  - V1 306,16 SICHER (+7,61 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+9,06 %)
+  - V5 EMA50 313,62 > EMA200 307,76 ✓ (Spread +5,86 carry-over)
+  - V6 RSI ~60 / RS_4w +12,11 % → KEIN Trigger
+- **UNH**  420,49 $ (Entry 401,57, P/L +4,71 %, change_today +0,16 %)
+  - V1 369,44 SICHER (+13,82 % Puffer)
+  - V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over) SICHER (+11,68 %)
+  - V5 EMA50 381,82 > EMA200 340,19 ✓ (Spread +41,63 carry-over)
+  - V6 RSI ~64 / RS_4w +12,43 % → KEIN Trigger
+
+→ **Keine Verkaufsorder pending.** Alle V1–V6 SICHER.
+
+**Earnings-Blackouts (Perplexity verifiziert heute):**
+- **JPM Q2 2026 KORRIGIERT auf 2026-07-14** (vorher 07-15 angenommen) — 14 Tage entfernt → KEIN Blackout
+- UNH Q2 2026: 2026-07-16 (carry-over plausibel) — 16 Tage → KEIN Blackout
+- → Standard V1 -8 % bleibt für beide, kein Stop-Tightening.
+
+**Watchlist Buy-Scan 09:30 ET (Carry-over Close 29.06.):**
+- **CRWD 742,61 $ — LEAD** (4/4 tech ✓, K5 vorläufig ✓ FwdPE 28,5 / Rev +12,3 %) → K4+K5+K2 Final-Check am Open zwingend
+- LLY 1.229,06 $ (RSI 74,5 Overheat → K2 BLOCKS, Cooldown abwarten)
+- CAT 1.033,53 $ (K4 Vol 95 %, K5 FwdPE >35 → BLOCKS)
+- ELV 387,92 $ (K2 RSI 47,5 + K5 RevGrowth +1,5 % → BLOCKS)
+
+**Entscheidung:** Market-Open-Scan 09:30 ET JA. Lead CRWD mit Limit max +0,5 % (746,32 $), Sizing ~10 % = 13 Sh. Fallback: kein Pflicht-Kauf bei K5/K4-Kippung. Sektor XLK leer → CRWD würde Lücke füllen.
+
+**Reconciliation Memory ↔ Alpaca:**
+- portfolio.md Mo-Close 99.841,92 vs Alpaca last_equity 99.831,59 = -10,33 $ After-Hours-Tick (akzeptabel)
+- cash 88.767,74 identisch
+- Positionen-Anzahl & avg_entry konsistent (JPM 3 Sh @ 332,78 / UNH 24 Sh @ 401,57)
+
+**Nächste Routine:** 09:30 ET Market Open — Buy-Scan + CRWD K5 Final via Perplexity.
 
 ---
 

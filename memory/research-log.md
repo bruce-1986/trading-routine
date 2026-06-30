@@ -4,6 +4,94 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-06-30 (Di, KW27) — Guardrails GRÜN, Buy-Scan JA, Lead CRWD
+
+**Makro-Lage (Pre-Market 08:33 ET, Alpaca IEX + Perplexity):**
+```
+VIX (Spot):         17,65          [GRÜN — entspannt, <25 → 10 % Sizing erlaubt; Perplexity-Quelle Mo 29.06. via Yahoo]
+SPY Last Trade:     741,61 $       (08:13 ET, vs Mo-Close 740,86 → +0,10 % flach Premarket)
+SPY Quote 08:33 ET: bid 740,54 / ask 740,67 → Mid 740,605 $ (-0,03 %)
+SPY Hourly Bar:     741,81 → 741,61 (08:00 ET, n=2 Trades, v=200)
+VIXY Close 29.06.:  21,775 $       (-3,65 % vs Fr-Close 22,60 → Vola weiter abgebaut)
+VIXY After-Hours:   bid 21,63 (20:00 UTC) → Spot ~17,5–18,0 konsistent zu Perplexity 17,65
+10Y Treasury Yield: n/v (Perplexity-Quelle weiterhin leer — nicht handlungsblockierend)
+Crash-Filter:       NEIN (SPY Mo +1,58 % → weit von -5 %)
+Markt-Status:       CLOSED (next_open 09:30 ET)
+```
+
+**Alpaca Account-Status (Konsistenz-Check):**
+```
+Equity:             99.847,91 $    (Pre-Market Mark, vs Mo-Close 99.841,92 → +5,99 $ +0,006 % Settlement-Tick)
+Cash:               88.767,74 $    (identisch zu Memory)
+Last_Equity:        99.831,59 $    (Mo-EOD-Mark)
+Long Market Value:  11.080,17 $    (JPM 988,41 + UNH 10.091,76)
+Status:             ACTIVE (trading_blocked=false, account_blocked=false)
+DayTrade Count:     0 / PDT False
+Buying Power:       386.095,44 $   (Margin 4× Cash)
+Open Orders:        0
+Positions Live:     JPM 329,47 $ (P/L -1,00 %, change_today +0,02 %)
+                    UNH 420,49 $ (P/L +4,71 %, change_today +0,16 %)
+```
+
+**Guardrails-Check (alle 8 Hierarchien):**
+```
+1. Daily Loss Cap (-3 %/Tag):    +0,016 % (99.847,91 / 99.831,59) [GRÜN]
+2. Weekly Loss Cap (-5 %/Woche): -0,176 % (vs KW27 Mo-Basis 100.024,25 = Fr-Close) [GRÜN]
+3. Drawdown vom ATH:             -0,219 % (vs ATH 100.066,47) [GRÜN — Alarm -15 % bei 85.057]
+4. Drawdown-Stopp -20 %:         INAKTIV
+5. Crash-Filter (SPY -5 %):      INAKTIV (Mo +1,58 %)
+6. VIX-Filter (>30):             INAKTIV (17,65 → klar GRÜN, sogar <25 → 10 % Sizing)
+7. Earnings-Blackout (3 HT):     KEINER — JPM 14.07. (14 Tage) | UNH 16.07. (16 Tage)
+8. Max neue Käufe KW27:          0/2 genutzt → 2 frei
+```
+→ **STATUS: GRÜN auf allen 8 Levels.**
+
+**Positionen Signal-Recheck (Pre-Market, V1–V6 carry-over Close 29.06. + Live-Adjustment):**
+```
+JPM    329,47 $ — V1 306,16 SICHER (+7,61 %) | V2 ~302,11 SICHER (+9,06 %) | V5 EMA50 313,62>EMA200 307,76 ✓ | V6 RSI ~60 / RS_4w +12 % → KEIN Trigger
+UNH    420,49 $ — V1 369,44 SICHER (+13,82 %) | V2 ~376,47 SICHER (+11,68 %) | V5 EMA50 381,82>EMA200 340,19 ✓ | V6 RSI ~64 / RS_4w +12,4 % → KEIN Trigger
+```
+→ Keine Verkaufsorder pending. EMA50>EMA200 für beide intakt. RSI weit unter 80, RS positiv.
+
+**Earnings-Korrektur (Perplexity verifiziert heute):**
+- **JPM Q2 2026: 2026-07-14 (KORRIGIERT — bisher 07-15 angenommen)** — 14 Tage entfernt → KEIN Blackout
+- UNH Q2 2026: 2026-07-16 (carry-over, Perplexity nicht final bestätigt, plausibel) — 16 Tage → KEIN Blackout
+- Keine Stop-Tightening erforderlich (alle >3 HT entfernt).
+
+**Top-News / Makro heute (Perplexity):**
+- Perplexity lieferte keinen verifizierten US-Wirtschaftskalender für 30.06.2026 (Datum-in-Zukunft-Restriktion bleibt)
+- Keine Top-3-Headlines belastbar abrufbar
+- VIX-Spot 17,65 → Mo-Schlussstand (Yahoo via Perplexity), keine Spot-Print für Di 30.06. premarket
+- VIXY-Tag −3,65 % bestätigt Vola-Entspannung — Risk-on-Stimmung hält an
+- Bekannter Watchlist-Lead: **CRWD +6,08 % Mo** mit 4/4 tech-Kriterien voll erfüllt (Close 742,61)
+
+**Watchlist-Status (Carry-over Close 29.06., Alpaca IEX):**
+```
+Symbol | Close   | K1     | K2 RSI | K3 RS_63d | K4 Vol% | K5 (Perplexity carry-over) | Score
+CRWD   |  742,61 | ✓      | ✓ 67,6 | ✓ +84,0 % | ✓ 158 % | vorläufig ✓ FwdPE 28,5 / Rev YoY +12,3 % | 5/5 LEAD
+LLY    | 1229,06 | ✓      | ✗ 74,5 | ✓ +23,1 % | ✓ 151 % | ✓ (32,39/+55,5 %) | 4/5 K2 BLOCKS (Overheat)
+CAT    | 1033,53 | ✓      | ✓ 62,4 | ✓ +31,8 % | ✗ 95 %  | ✗ FwdPE >35 carry-over | 3/5 K4+K5 BLOCKS
+ELV    |  387,92 | ✓      | ✗ 47,5 | ✓ +18,7 % | ✗ 72 %  | ✗ RevGrowth +1,5 % | 2/5 K2+K5 BLOCKS
+```
+
+**Entscheidung 09:30 ET Market Open:**
+- **Buy-Scan JA** — Guardrails GRÜN, Pre-Market flach (+0,10 %), VIX entspannt (17,65), Vola-Entspannung (VIXY -3,65 %)
+- **Lead-Kandidat: CRWD** (Close 742,61 — 4/4 technische Kriterien ✓, K5 vorläufig ✓)
+  - **K5-Final-Check via Perplexity am Open zwingend:** FwdPE-Konsistenz (Yahoo/Marketwatch/Onvista), Q1 FY27 Rev YoY +12,3 % verifizieren
+  - **K4 Live-Volumen am Open prüfen** — gestriger Trigger 158 % muss bei Open-Stunde bestätigt werden (CRWD gap-up möglich)
+  - **K2 RSI nach +6 % Vortag:** falls Live-RSI bei Open >70 → K2 kippt
+  - Limit-Order: max +0,5 % über Vortagesschluss = max 746,32 $ Limit
+  - Sizing: ~10 % Portfolio = ~9.985 $ → 13 Shares bei ~745 $
+- Sektor: CRWD = XLK Tech (Bot aktuell 0 % XLK) — würde Sektor-Lücke nach AVGO-V1 schließen
+- Earnings: CRWD nächste Q1 FY27 release vermutlich Aug/Sep → kein Blackout
+- Fallback: falls CRWD K5 final FAIL → kein Pflicht-Kauf, Slot bleibt frei (LLY RSI-Cooldown abwarten)
+- Max 2 Käufe KW27 — nach CRWD (falls Trigger) noch 1 Slot frei
+
+**Datenqualitäts-Hinweis:**
+Perplexity Datum-in-Zukunft-Bug bleibt (keine 30.06.2026-Macro-Termine, keine spezifischen US-Headlines). Alpaca IEX SPY-Quotes/Bars + VIXY-Bars als Source of Truth für Premarket. VIX-Spot via Perplexity-Yahoo-Zitation (Mo-Schluss 17,65), plausibel zu VIXY-Drop.
+
+---
+
 ## Market Close 16:00 ET — 2026-06-29 (Mo, KW27) — Tagesbilanz + Watchlist Di 30.06.
 
 **Tages-Performance (Alpaca + IEX-Bars Close 16:00 ET):**
