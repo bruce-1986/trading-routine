@@ -1,6 +1,76 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 13:03 ET (Midday KW27 Di — keine Stops, Daily P/L -0,08 % GRÜN, alle V1–V4 SICHER)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 16:04 ET (Close KW27 Di — V1–V6 alle SICHER, Daily -0,11 % GRÜN, Alpha -0,89 % vs SPY +0,78 %, KEINE Pending)
+
+---
+
+## Market Close 2026-06-30 16:04 ET (Di, KW27) — Tagesbilanz
+
+```
+Gesamtwert:        99.722,36 $   (Alpaca equity Close, vs last_equity 99.831,59)
+Cash:              88.767,74 $   (89,02 %)
+Investiert (MV):   10.954,62 $   (10,98 %, JPM 981,66 $ + UNH 9.972,96 $)
+P/L heute:           -109,23 $    (-0,1094 %)
+Alpha vs SPY:        -0,891 %     (SPY +0,782 % via Alpaca IEX 740,86 → 746,65)
+ATH:              100.066,47 $    DD: -0,344 % [GRÜN]
+Weekly P/L KW27:     -0,302 %     [GRÜN — Mo-Basis = Fr-Close 26.06. 100.024,25, Schwelle -5 %]
+Käufe KW27:           0/2         (0 genutzt, 2 frei)
+Pending Orders:       0
+Guardrails:        Daily -0,11 % | Weekly -0,30 % | DD -0,34 % | VIXY 21,305 (-2,16 %, Spot ~17) | Käufe 0/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 16:00 ET Close):**
+- **JPM**  327,24 $ (Entry 332,78, P/L -1,67 %, change_today -0,659 %)
+  - V1 306,16 SICHER (+6,89 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over vom 25.06.) SICHER (+8,28 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+  - V5 EMA50 314,15 > EMA200 308,78 ✓ (Spread +5,37, knapper als 29.06.)
+  - V6 RSI(14) 57,6 / RS_4w +11,86 % → SICHER (RSI <80, RS positiv)
+- **UNH**  415,54 $ (Entry 401,57, P/L +3,48 %, change_today -1,019 %)
+  - V1 369,44 SICHER (+12,47 % Puffer)
+  - V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over vom 26.06., Tageshoch heute 422,51 → kein neues Hoch) SICHER (+10,38 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+  - V5 EMA50 383,13 > EMA200 339,23 ✓ (Spread +43,90 sehr komfortabel)
+  - V6 RSI(14) 60,6 / RS_4w +10,94 % → SICHER (RSI <80, RS positiv)
+
+**Verkaufssignal-Check V1–V6: ALLE SICHER für beide Positionen.**
+→ **Keine Limit-Order für morgen vorbereitet.** Pending Orders bleiben 0.
+
+**Schlechteste Position:** JPM -1,67 % (Tagestief 326,725; XLF-Lag nach News „financials lagged on lower-rate expectations")
+**Beste Position:** UNH +3,48 % (Pullback -1,02 % vom Open 421,61, Trail-Stop ungefährdet)
+
+**Sektor-Update:** Unverändert — XLF (JPM ~0,98 %) + XLV (UNH ~10,00 %). XLK weiter leer.
+
+**Daily Loss Cap (-3 %):** -0,1094 % → GRÜN, kein Eingriff.
+**Weekly Loss Cap (-5 %):** -0,302 % → GRÜN, keine Stornierungen.
+**ATH-Drawdown (-15 % Alarm / -20 % Stopp):** -0,344 % → GRÜN.
+**Crash-Filter:** SPY +0,78 % heute → INAKTIV.
+**VIX-Filter:** VIXY 21,305 (-2,16 % vs gestern) → Spot ~17 → GRÜN.
+
+**Watchlist morgen Mi 01.07. (K1–K4 via Alpaca IEX Close 30.06., K5 Perplexity 30.06.):**
+- **LLY 1.199,36 $** — K1✓ EMA50 1073,1>EMA200 978,5 | K2✓ RSI 66,5 (raus aus Overheat) | K3✓ RS_63d +17,1 % (LLY +35,3 % vs SPY +18,1 %) | K4✗ Vol 99 % (knapp unter 120 %) | **K5✓ FwdPE 32,4–33,0 + Rev YoY +26 %** → **4/5 — Lead, K4 Vol-Trigger morgen entscheidend**
+- **INTC 139,55 $** — K1✓ EMA50 109,4>EMA200 61,0 | K2✓ RSI 63,0 | K3✓ RS_63d +220,7 % (massive Comeback-Story) | K4✗ Vol 49 % | K5 Perplexity-Quelle leer (FwdPE ~12–22 vorläufig, RevGrowth ausstehend) → **3/4 + K5 Recheck morgen Pre-Market zwingend**
+- **CAT 1.063,33 $ (+0,42 %)** — K1✓ K2✓ K3✓ K4✗ 83 % | **K5✗ RevGrowth Q1 2026 -1 % YoY (Perplexity neu)** → 3/5 — strukturell blockt
+- **ELV 386,98 $ (-0,24 %)** — K2✗ RSI 46,9 + K5✗ RevGrowth +7 % YoY (<10 %) → 2/5
+- **CRWD 763,12 $ (+2,76 %)** — K2✗ RSI 70,3 + **K5✗ FwdPE ~69x** → 2/5 — strukturell blockt
+- **AMD 580,52 $** — K1✓ K2✓ K3✓ K4✓ Vol 121 % | **K5✗ FwdPE Konsens 35–95x (GuruFocus 37 / Finbox 70 / MarketBeat 94)** → 4/5 — K5 strukturell blockt (ähnlich CRWD)
+
+**Earnings-Status:**
+- JPM Q2 2026: 2026-07-14 (14 Tage) → KEIN Blackout
+- UNH Q2 2026: 2026-07-16 (16 Tage) → KEIN Blackout
+- LLY Q2 2026: 2026-07-31 (Perplexity neu, 31 Tage) → KEIN Blackout
+
+**Markt-Kontext heute:**
+- SPY +0,78 % auf 746,65 (neues lokales Hoch nach cooler-than-expected Inflations-Daten — Fed-Rate-Cut-Erwartung steigt)
+- Megacap Tech + Large-Cap Pharma outperformed (Quelle Perplexity)
+- Financials lagged (JPM -0,66 % bestätigt) auf flatter Yield Curve
+- Bot Cash-Heavy 89 % → Beta-Verzicht an risk-on-Tag = -0,89 % Alpha heute
+
+**ClickUp:** Tagesbericht-Task `[CLOSE] Tagesbilanz — 2026-06-30` Prio 3 → ITEM_246 "Max usage for custom task types reached" (Tier-Limit carry-over seit 26.06.). Memory-Log primär, Push-Notification an Owner.
+
+> **Entscheidung:** Tagesbilanz GRÜN trotz Cash-Heavy-Underperformance (-0,89 % Alpha bei SPY +0,78 % risk-on). Diszipliniert: keine Strategie-Override für K5-Blocker (AMD/CRWD bleiben Tabu trotz starker Tech-Momentum, weil FwdPE-Konsens >35 hart blockt). LLY ist Lead morgen — alle Hürden ✓ außer K4 Vol; bei Open-Vol-Push trigger-fähig. Sektor-Lücke XLK bleibt — keine strategie-konformen Tech-Kandidaten verfügbar bis EPS-Wendepunkte oder Bewertungs-Reset.
+> **Lessons-Tag:** Tech-Bewertungs-Filter K5 (FwdPE ≤35) blockt aktuell die gesamte Mega-Cap-Tech-Range (AMD/CRWD), während Bot-Index-Performance leidet. Watchlist-Pflege: AMD wie CRWD strukturell ausgeschlossen bis FwdPE-Compression. INTC einzige Tech-Hoffnung (K1–K3 ✓, K5 plausibel) — K4-Vol-Push abwarten.
+> **Nächste Routine:** Mi 2026-07-01 08:30 ET Pre-Market Check.
 
 ---
 
