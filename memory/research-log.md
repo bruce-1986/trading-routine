@@ -4,6 +4,71 @@
 
 ---
 
+## Market Close 16:04 ET — 2026-06-30 (Di, KW27) — Tagesbilanz + Watchlist Mi 01.07.
+
+**Tages-Performance (Alpaca + IEX-Bars Close 16:00 ET):**
+```
+Bull-Depot:   99.722,36 $   (vs last_equity 99.831,59)  Daily P/L -109,23 $  -0,1094 %  [GRÜN]
+SPY:             746,65 $   (vs Mo-Close 740,86)         Daily +0,782 % (IEX 1Day-Bar)
+Alpha:           -0,891 %   (Cash-Heavy 89 % → Beta-Verzicht an Risk-on-Tag)
+ATH:          100.066,47 $  Drawdown -0,344 %  [GRÜN]
+Weekly P/L:      -0,302 %   (KW27 Mo-Basis = Fr-Close 100.024,25)  [GRÜN >-5 %]
+VIXY:             21,305 $  (-2,16 % vs gestern 21,775) → Spot ~17 [GRÜN]
+Crash-Filter:    INAKTIV (SPY +0,78 %)
+```
+
+**SPY-Quelle:** Alpaca IEX 1Day-Bar 30.06. (Close 746,65 vs Mo-Close 740,86 = +0,782 %). Perplexity-SPY-Abfrage nicht erforderlich (Datum-in-Zukunft-Bug carry-over) — Alpaca-Bar autoritativ.
+
+**Markt-News (Perplexity 30.06.):**
+- S&P 500 + Nasdaq schliessen moderat höher nach cooler-than-expected Inflations-Daten → Fed-Rate-Cut-Erwartung steigt
+- Megacap Tech + Large-Cap Pharma outperformed (LLY -2,4 % heute aber bleibt strukturell Pharma-Lead)
+- Financials lagged auf lower-rate expectations + flatter Yield Curve (bestätigt JPM -0,66 %)
+
+**Verkaufssignal-Check JPM + UNH (V1–V6 Close 16:00 ET, Alpaca IEX + Live-berechnete Indikatoren):**
+```
+Symbol | Close   | V1 Stop | V2 Trail | V5 EMA50/EMA200       | V6 RSI / RS_4w
+JPM    | 327,24  | 306,16 ✓ +6,89 %  | 302,11 ✓ +8,28 %  | 314,15 > 308,78 ✓  | 57,6 / +11,86 % ✓
+UNH    | 415,51  | 369,44 ✓ +12,47 % | 376,47 ✓ +10,38 % | 383,13 > 339,23 ✓  | 60,6 / +10,94 % ✓
+```
+→ **Keine pending Verkaufsorder für Mi.** Trail-Stop UNH bleibt 376,47 (Hoch 427,81 vom 26.06. carry-over, kein neues Hoch heute — Tageshoch 422,51).
+
+**Watchlist-Scan Mi 01.07. (Alpaca IEX 200d-Window Close 30.06.):**
+```
+Symbol | Close   | K1 EMA50/EMA200        | K2 RSI14 | K3 RS_63d | K4 Vol% | K5            | Status
+LLY    | 1199,36 | ✓ 1073,1 > 978,5      | ✓ 66,5  | ✓ +17,1 % | ✗ 99 %  | ✓ FwdPE 32–33 / Rev +26 % | 4/5 LEAD K4-Trigger
+INTC   |  139,55 | ✓ 109,4 > 61,0        | ✓ 63,0  | ✓ +220,7%| ✗ 49 %  | unklar (Perplexity-Quelle leer) | 3/4 + K5-Recheck
+CRWD   |  763,12 | ✓ 621,7 > 504,4       | ✗ 70,3  | ✓ +82,7 % | ✗ 85 %  | ✗ FwdPE ~69x                 | 2/5 BLOCKS
+AMD    |  580,52 | ✓ 451,3 > 280,7       | ✓ 64,8  | ✓ +178,0%| ✓ 121 % | ✗ FwdPE 35–95x (Multi-Source) | 4/5 K5-BLOCKS (strukturell)
+CAT    | 1063,33 | ✓ 906,6 > 694,5       | ✓ 65,3  | ✓ +41,2 % | ✗ 83 %  | ✗ RevGrowth Q1 -1 % YoY      | 3/5 BLOCKS
+ELV    |  386,98 | ✓ 380,9 > 344,6       | ✗ 46,9  | ✓ +17,8 % | ✗ 69 %  | ✗ RevGrowth +7 % (Perplexity neu) | 2/5 BLOCKS
+NVDA   |  199,93 | ✓ 204,8 > 190,5 knapp | ✗ 45,1  | ✗ +2,9 %  | ✗ 118 % | n/a                              | 2/4 K2+K3 BLOCKS
+```
+
+**Perplexity K5 Multi-Source-Verifikation 30.06.:**
+- **LLY**: FwdPE 32,4–33,0 ✓ | Q1 2026 Rev YoY +26 % ✓ | Earnings 2026-07-31 ✓ — K5 voll bestätigt
+- **CRWD**: FwdPE ~69x ✗ (carry-over Multi-Source: Yahoo 151, MarketBeat 798) — strukturell K5-blockiert bis EPS-Wendepunkt; Rev YoY +32 % ✓
+- **CAT**: FwdPE ~15x ✓ aber RevGrowth Q1 2026 -1 % YoY ✗ — K5 RevGrowth-Hürde NEU bestätigt durch Perplexity
+- **ELV**: FwdPE ~16x ✓ aber RevGrowth +7 % YoY ✗ (<10 %-Hürde) — Watch nach Q2-Earnings 17.07.
+- **AMD**: FwdPE Konsens 35–95x (GuruFocus 37 / Finbox 70 / MarketBeat 94 / StockAnalysis 60–62) — strukturell K5-blockiert obwohl RevGrowth +37,8 % ✓ stark
+
+**Watchlist morgen: LLY (Lead 4/5, K4 Vol-Trigger morgen entscheidend), INTC (3/4 K4 fehlt + K5 Pre-Market-Recheck zwingend), CAT (K5 strukturell), ELV (K2 + K5 Earnings-Trigger 17.07.).**
+
+**Sektor-Check kompakt:** Health Care (XLV: LLY + UNH stark — bei LLY-Kauf morgen ~20 % Gesamt-Allocation, innerhalb 30 %-Limit). Financials (XLF: JPM Yield-Curve-Drag). Tech (XLK: 0 % Exposure — AMD/CRWD K5 strukturell blockiert, INTC einzige Hoffnung). Industrials (XLI: CAT K5 blockt).
+
+**Entscheidung Market Close:**
+- KEINE Verkaufsorders (alle V1–V6 SICHER für JPM + UNH).
+- KEINE Pending Buys (Routine kauft erst bei Market Open mit K4-Live-Volumen).
+- Bot bleibt Long JPM + UNH, 89 % Cash für LLY-Kauf-Setup morgen reserviert.
+- **Nächste Routine:** Mi 2026-07-01 08:30 ET Pre-Market Check.
+
+**Lessons:**
+1. K5-FwdPE-Filter (≤35) blockt aktuell die gesamte Mega-Cap-Tech-Range außer NVDA (NVDA blockt an K2 RSI 45). Strategie-Disziplin: kein Override.
+2. RSI-Cooldown bei LLY funktioniert (Mo 74,5 → Di 66,5) → K2 wieder ✓. Cooldown-Watch-Routine läuft sauber.
+3. Bot Alpha heute -0,89 % strukturell durch Cash-Heavy bei risk-on. Akzeptabel solang Trades K5 ✓.
+4. ClickUp Tier-Limit-Issue carry-over (ITEM_246 seit 26.06.) → Push-Notification + Memory primärer Notification-Kanal.
+
+---
+
 ## Market Open 09:32 ET — 2026-06-30 (Di, KW27) — KEIN TRADE (CRWD K5 FAIL)
 
 **Live-Snapshot Market Open (Alpaca 09:32 ET):**
