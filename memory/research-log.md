@@ -4,6 +4,68 @@
 
 ---
 
+## Market Open 09:32 ET — 2026-06-30 (Di, KW27) — KEIN TRADE (CRWD K5 FAIL)
+
+**Live-Snapshot Market Open (Alpaca 09:32 ET):**
+```
+Equity:             99.817,37 $   (vs last_equity 99.831,59 → -0,014 % GRÜN)
+Cash:               88.767,74 $   (88,93 %)
+Long MV:            11.049,63 $   (JPM 988,25 + UNH 10.056,04)
+SPY:                  741,39 $    (+0,07 % vs Mo-Close 740,86 → flat Open)
+VIXY:                  21,80 $    (+0,11 % vs Close 21,775 → Spot ~17,7)
+DayTrade Count:     0 / PDT False | Buying Power: 386.009,92 $
+Open Orders:        0
+```
+
+**Positionen Live V1–V6 (Alpaca trades latest, 09:32 ET):**
+- JPM  329,29 $ — V1 306,16 SICHER +7,55 % | V2 ~302,11 SICHER +9,00 % | V5 EMA50 313,62>EMA200 307,76 ✓ | V6 RSI ~60 / RS_4w +12 % → KEIN Trigger
+- UNH  419,255 $ — V1 369,44 SICHER +13,48 % | V2 ~376,47 SICHER +11,36 % | V5 EMA50 381,82>EMA200 340,19 ✓ | V6 RSI ~64 / RS_4w +12 % → KEIN Trigger
+
+→ Keine Verkaufsorder pending. Beide Positionen V1–V6 vollständig SICHER.
+
+**Kandidaten-Scan K1–K5 (Alpaca IEX-Bars vollständig 251 Daily Bars):**
+- **CRWD** Close 29.06. 742,61 | Live 744,77 (+0,29 %)
+  - **K1 ✓** EMA50 621,31 > EMA200 522,82 (Spread +98,49)
+  - **K2 ✓** RSI(14) 68,88 (knapp unter 70 — Overheat-Watch)
+  - **K3 ✓** RS_63d +84,03 % (CRWD +100,88 % vs SPY +16,85 %, gemessen 27.03.→29.06.)
+  - **K4 N/A** (Open-Live-Vol bei 3 min IEX 1.408 — nicht aussagekräftig; Vortag 158 % Avg20 als Indikator)
+  - **K5 ✗ FAIL** — Multi-Source-Verifikation Perplexity:
+    - Yahoo Finance: FwdPE 151,52 (Trailing 401,83 oder "--")
+    - MarketBeat: FwdPE 798,83 / TTM N/A (Earnings negativ -$0,19)
+    - GuruFocus: At Loss (TTM-EPS -$0,69)
+    - Wisesheets: TTM 181,37
+    - Macrotrends: TTM 1.947,47
+    - Companies Market Cap: TTM -947,42
+    - **Konsens: FwdPE >>35 (selbst niedrigste Source 151) → K5 hart blockiert**
+    - Rev YoY: +26 % (MarketBeat Q1 FY2027) → ✓ über 10 %-Hürde
+  - **Verdict:** 4/5 — K5 BLOCKS. Pre-Market-Schätzung 28,5 erwies sich als Stat-Typ-Verwechslung (vermutlich P/S statt P/E) oder veraltete Datenquelle. CRWD aktuell **NICHT** strategiekonform investierbar bis EPS dauerhaft positiv.
+- **LLY** carry-over Close 1.229,06 | K2 ✗ RSI 74,5 Overheat → Cooldown abwarten
+- **CAT** carry-over Close 1.033,53 | K4 ✗ Vol 95 % + K5 ✗ FwdPE >35
+- **ELV** carry-over Close 387,92 | K2 ✗ RSI 47,5 + K5 ✗ RevGrowth +1,5 %
+
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale. KEIN Trade.**
+
+**Guardrails (alle 8 GRÜN):**
+- Daily P/L -0,014 % | Weekly KW27 -0,207 % | DD -0,249 % | VIX-Spot ~17,7 | Käufe 0/2 | Crash-Filter NEIN | Earnings-Blackout NEIN | Cash-Quote 88,93 % > 20 %
+
+**ClickUp:** ROUTINE Normal-Alert (Prio 3) → ITEM_246 "Max usage for custom task types reached" (Tier-Limit-Issue seit 26.06.). Fallback: Push-Notification + Memory-Log.
+
+**Lessons:**
+1. K5 Pre-Market-Schätzung **immer** am Open Multi-Source verifizieren. Single-Quelle reicht nicht — Stat-Typ-Verwechslung (P/E vs P/S, TTM vs Forward) ist häufig.
+2. CRWD strukturell von K5-Hard-Filter ausgeschlossen, solange Earnings negativ — vermerken für Watchlist-Pflege (nicht bei jedem Scan re-prüfen).
+3. Tier-Limit ClickUp seit 26.06. open → Memory + Push als primärer Notification-Kanal.
+
+**Entscheidung:** KEIN Trade. 2 Slots KW27 bleiben frei. Watchlist neu sortieren für Mi:
+- LLY: RSI-Cooldown (auf <70 warten — heute Vorgang prüfen)
+- CAT: K5-FwdPE warten (Q2-Earnings ~Mitte Juli könnte EPS-Bild verbessern)
+- ELV: Q2-Earnings ~16.07. als Trigger für RevGrowth-Revision
+- CRWD: Watchlist-Cooldown (mind. 1 Quartal positive EPS Voraussetzung)
+- Neue Kandidaten-Suche: Top-3-Sektor-ETFs erneut via Perplexity beim Mi Pre-Market
+
+**Nächste Routine:** 13:00 ET Midday Stop-Check.
+
+---
+
 ## Pre-Market 08:30 ET — 2026-06-30 (Di, KW27) — Guardrails GRÜN, Buy-Scan JA, Lead CRWD
 
 **Makro-Lage (Pre-Market 08:33 ET, Alpaca IEX + Perplexity):**

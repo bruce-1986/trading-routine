@@ -1,6 +1,63 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 08:33 ET (Pre-Market KW27 Di — Guardrails alle 8 GRÜN, VIX 17,65, SPY Premarket +0,10 %, Earnings KEIN Blackout, Buy-Scan JA, Lead CRWD)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 09:32 ET (Market Open KW27 Di — KEIN TRADE, CRWD K5 FAIL FwdPE 151,52 statt 28,5, alle V1–V6 SICHER, Guardrails GRÜN)
+
+---
+
+## Market Open 2026-06-30 09:32 ET (Di, KW27) — KEIN TRADE (CRWD K5 FAIL)
+
+```
+Gesamtwert:        99.817,37 $   (Alpaca equity Live 09:32 ET, vs last_equity 99.831,59 → -0,014 %)
+Cash:              88.767,74 $   (88,93 %)
+Investiert (MV):   11.049,63 $   (11,07 %, JPM 988,25 $ + UNH 10.056,04 $)
+Unrealisiert P/L:    +408,27 $   (JPM -10,10 $ / UNH +418,36 $)
+Realisiert P/L:      -596,19 $   (AVGO V1 26.06., carry-over)
+Daily P/L:           -0,014 %    [GRÜN — vs last_equity 99.831,59]
+Weekly P/L KW27:     -0,207 %    [GRÜN — vs Mo-Basis 100.024,25 = Fr-Close 26.06.]
+ATH:              100.066,47 $   DD: -0,249 % [GRÜN]
+Käufe KW27:           0/2        (0 genutzt, 2 frei)
+Pending Orders:       0
+VIX (Spot proxy):    ~17,7       [GRÜN <25 → 10 % Sizing erlaubt; VIXY 21,80 +0,11 %]
+SPY Open:            741,39 $    (+0,07 % vs Mo-Close 740,86, flat Open)
+Crash-Filter:        NEIN        (SPY +0,07 %)
+Guardrails:        Daily -0,01 % | Weekly -0,21 % | DD -0,25 % | VIX ~17,7 | Käufe 0/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 09:32 ET):**
+- **JPM**  329,29 $ (Entry 332,78, P/L -1,05 %, change_today +0,008 %)
+  - V1 306,16 SICHER (+7,55 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+9,00 %)
+  - V5 EMA50 313,62 > EMA200 307,76 ✓ (carry-over Mo-Close)
+  - V6 RSI ~60 / RS_4w +12,11 % → KEIN Trigger
+- **UNH**  419,255 $ (Entry 401,57, P/L +4,40 %, change_today -0,195 %)
+  - V1 369,44 SICHER (+13,48 % Puffer)
+  - V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over) SICHER (+11,36 %)
+  - V5 EMA50 381,82 > EMA200 340,19 ✓ (carry-over Mo-Close)
+  - V6 RSI ~64 / RS_4w +12,43 % → KEIN Trigger
+
+→ **Keine Verkaufsorder pending.** Alle V1–V6 SICHER für beide.
+
+**Kandidaten-Scan K1–K5 (Alpaca IEX-Bars Close 29.06., Perplexity K5 Live):**
+- **CRWD** Close 742,61 | K1 ✓ EMA50 621,31>EMA200 522,82 | K2 ✓ RSI(14) 68,88 (knapp <70) | K3 ✓ RS_63d +84,03 % (CRWD +100,88 % vs SPY +16,85 %) | K4 N/A (Live-Vol bei Open zu früh, 1.408 IEX 3 min) | **K5 ✗ FAIL — FwdPE 151,52 (Yahoo) / 798,83 (MarketBeat) >>35; Rev YoY +26 % ✓ aber FwdPE-Hürde reißt** → **4/5 (K5 BLOCKS HART)**
+- **LLY** carry-over | K2 ✗ RSI 74,5 Overheat → Cooldown abwarten
+- **CAT** carry-over | K4 ✗ Vol 95 % + K5 ✗ FwdPE >35 → 3/5
+- **ELV** carry-over | K2 ✗ RSI 47,5 + K5 ✗ RevGrowth +1,5 % → 2/5
+
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale.** Pre-Market-Schätzung CRWD FwdPE 28,5 erwies sich als falsch (vermutlich P/S-Verwechslung oder veraltete Datenquelle). Tatsächlicher FwdPE 151,52 (Yahoo Finance, MarketBeat 798,83) — CRWD-Earnings sind aktuell tief negativ (TTM-EPS -$0,69 GuruFocus), womit P/E-basierte Bewertungen extrem stretched sind. **K5-Hürde 35 wäre nur erreichbar wenn EPS-Wendepunkt + Margenexpansion in nächsten 4 Quartalen kommt — nicht modelliert in Strategie.**
+
+→ **KEIN Trade heute.** 0/2 Slots KW27 weiterhin verfügbar.
+
+**Sektor-Update:** Unverändert — XLF (JPM 0,99 %) + XLV (UNH 10,07 %). XLK weiter leer.
+
+**Earnings-Status (carry-over Pre-Market):**
+- JPM Q2 2026: 2026-07-14 (14 Tage) → KEIN Blackout
+- UNH Q2 2026: 2026-07-16 (16 Tage) → KEIN Blackout
+
+**ClickUp:** ROUTINE Normal-Alert Versuch (Prio 3) → ITEM_246 "Max usage for custom task types reached" (Tier-Limit-Issue carry-over seit 26.06.). Memory-Log primär — Push-Notification an Owner gesendet.
+
+> **Entscheidung:** KEIN Trade. CRWD-Lead durch K5-FwdPE-Verifikation hart blockiert — Pre-Market hatte vorläufige Schätzung 28,5, Live-Multi-Source-Check (Yahoo + MarketBeat) liefert >150. Disziplin: K5 hart, keine Override. 2 Slots KW27 bleiben verfügbar. Bot bleibt cash-heavy (88,93 %) — Opportunitätskosten bei flatter SPY-Open (+0,07 %) gering.
+> **Lessons-Tag:** K5-Pre-Market-Schätzungen müssen am Open IMMER mit Multi-Source verifiziert werden — Single-Source kann Stat-Typ-Verwechslung (P/S vs P/E) enthalten.
+> **Nächste Routine:** Di 2026-06-30 13:00 ET Midday Stop-Check.
 
 ---
 
