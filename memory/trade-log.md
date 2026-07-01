@@ -6,12 +6,12 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Live 30.06. 09:32 | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs   | Close 01.07.       | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
 |--------|------------|------------|--------------------|--------------------|-----------|----------|----------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 326,29 $           | -19,47 $ (-1,95%)  | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 416,36 $           | +355,52 $ (+3,68%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $   | 334,06 $           | +3,84 $ (+0,38%)   | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 426,52 $           | +598,80 $ (+6,21%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 10.977,84 $ (Marktwert Live 01.07. 09:37 ET) | **Cash:** 88.767,74 $ | **Positionen:** 2/8 | **Käufe KW27:** 0/2
+**Gesamt investiert:** 11.238,83 $ (Marktwert Close 01.07. 16:00 ET) | **Cash:** 88.767,74 $ | **Positionen:** 2/8 | **Käufe KW27:** 0/2
 
 ---
 
@@ -93,6 +93,7 @@ _Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,
 - Status Open 30.06. 09:32 ET: 419,255 $ Live (change_today -0,195 %, P/L +4,40 % vs Entry); V1 369,44 SICHER +13,48 % Puffer; V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over, kein neues Hoch) SICHER (+11,36 %); V5 EMA50 381,82 > EMA200 340,19 ✓ (carry-over); V6 RSI ~64 / RS_4w +12,43 % → NICHT ausgelöst
 - Status Close 30.06.: 415,54 $ Close (change_today -1,019 %, P/L +3,48 % vs Entry, Tagestief 413,385 / Tageshoch 422,51 → kein neues Posit-Hoch); V1 369,44 SICHER +12,47 % Puffer; V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over vom 26.06.) SICHER (+10,38 %); V5 EMA50 383,13 > EMA200 339,23 ✓ (Spread +43,90 sehr komfortabel); V6 RSI(14) 60,6 / RS_4w +10,94 % → NICHT ausgelöst (RSI <80, RS positiv)
 - Status Open 01.07. 09:37 ET: 416,36 $ Live (change_today +0,20 %, P/L +3,68 % vs Entry); V1 369,44 SICHER +12,71 % Puffer; V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over) SICHER (+10,71 %); V5 EMA50 383,13 > EMA200 339,23 ✓ (carry-over); V6 RSI 60,6 / RS_4w +10,94 % → NICHT ausgelöst
+- Status Close 01.07.: 426,52 $ Close (change_today +2,63 %, P/L +6,21 % vs Entry, NEUES Posit-Hoch 428,01 heute — Tageshoch); V1 369,44 SICHER +15,45 % Puffer; V2 Stop **NEU 376,65** (Trail nach neuem Hoch 428,01) SICHER (+13,24 %); V5 EMA50 391,55 > EMA200 347,22 ✓ (Spread +44,33 sehr komfortabel, Golden Cross weiter ausgebaut); V6 RSI(14) 63,46 / RS_4w +14,68 % → NICHT ausgelöst (RSI <80, RS positiv). Sektor-Move XLV +2,6 % (ELV +7,6 % EPS-Beat).
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
 
 ### KAUF (filled): JPM am 2026-06-17
@@ -120,6 +121,7 @@ _Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,
 - Status Open 30.06. 09:32 ET: 329,29 $ Live (change_today +0,008 % flat, P/L -1,05 % vs Entry); V1 306,16 SICHER +7,55 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+9,00 %); V5 EMA50 313,62 > EMA200 307,76 ✓ (carry-over); V6 RSI ~60 / RS_4w +12,11 % → NICHT ausgelöst
 - Status Close 30.06.: 327,24 $ Close (change_today -0,659 %, P/L -1,67 % vs Entry, Open 329,24 / Tageshoch 330,42 / Tagestief 326,725; XLF-Lag nach „financials lagged on lower-rate expectations"-News); V1 306,16 SICHER +6,89 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+8,28 %); V5 EMA50 314,15 > EMA200 308,78 ✓ (Spread +5,37, knapper als 29.06.); V6 RSI(14) 57,6 / RS_4w +11,86 % → NICHT ausgelöst (RSI <80, RS positiv)
 - Status Open 01.07. 09:37 ET: 326,29 $ Live (change_today -0,29 %, P/L -1,95 % vs Entry, Intraday-Range 325,12 / 328,79); V1 306,16 SICHER +6,58 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+8,00 %); V5 EMA50 314,15 > EMA200 308,78 ✓ (carry-over); V6 RSI 57,6 / RS_4w +11,86 % → NICHT ausgelöst
+- Status Close 01.07.: 334,06 $ Close (change_today +2,08 % Financials-Rebound, P/L +0,38 % vs Entry, Tageshoch 335,59 / Tagestief 325,12); V1 306,16 SICHER +9,11 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+10,51 %); V5 EMA50 316,48 > EMA200 308,96 ✓ (Spread +7,52 leicht geweitet); V6 RSI(14) 65,18 / RS_4w +12,80 % → NICHT ausgelöst (RSI <80, RS positiv). Perplexity: „JPMorgan Chase +3,30 %" Sektor-Rebound-Signal.
 - Alpaca Order-ID: d90de96d-9084-4a6a-b5a1-de48899e75f4
 
 ---
