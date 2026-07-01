@@ -8,10 +8,10 @@
 
 | Symbol | Kaufdatum  | Kaufkurs   | Live 30.06. 09:32 | Gewinn/Verlust     | Stop-Loss | TP1      | TP2      | Signale         |
 |--------|------------|------------|--------------------|--------------------|-----------|----------|----------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 327,22 $           | -16,68 $ (-1,67%)  | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 415,54 $           | +335,28 $ (+3,48%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $   | 326,29 $           | -19,47 $ (-1,95%)  | 306,16 $  | 399,34 $ | 449,25 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 416,36 $           | +355,52 $ (+3,68%) | 369,44 $  | 481,88 $ | 542,12 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 10.954,62 $ (Marktwert Close 30.06. 16:00) | **Cash:** 88.767,74 $ | **Positionen:** 2/8 | **Käufe KW27:** 0/2
+**Gesamt investiert:** 10.977,84 $ (Marktwert Live 01.07. 09:37 ET) | **Cash:** 88.767,74 $ | **Positionen:** 2/8 | **Käufe KW27:** 0/2
 
 ---
 
@@ -92,6 +92,7 @@ _Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,
 - Status Close 29.06.: 420,00 $ Close (change_today -1,84 %, P/L +4,59 % vs Entry, Cooldown vom Fr-Hoch); V1 369,44 SICHER +13,67 % Puffer; V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over vom 26.06., kein neues Hoch heute) SICHER (+11,55 %); V5 EMA50 381,82 > EMA200 340,19 ✓ (Spread +41,63 sehr komfortabel); V6 RSI 64,15 (Cooldown von ~75) / RS_4w +12,43 % → NICHT ausgelöst (RSI <80, RS positiv)
 - Status Open 30.06. 09:32 ET: 419,255 $ Live (change_today -0,195 %, P/L +4,40 % vs Entry); V1 369,44 SICHER +13,48 % Puffer; V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over, kein neues Hoch) SICHER (+11,36 %); V5 EMA50 381,82 > EMA200 340,19 ✓ (carry-over); V6 RSI ~64 / RS_4w +12,43 % → NICHT ausgelöst
 - Status Close 30.06.: 415,54 $ Close (change_today -1,019 %, P/L +3,48 % vs Entry, Tagestief 413,385 / Tageshoch 422,51 → kein neues Posit-Hoch); V1 369,44 SICHER +12,47 % Puffer; V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over vom 26.06.) SICHER (+10,38 %); V5 EMA50 383,13 > EMA200 339,23 ✓ (Spread +43,90 sehr komfortabel); V6 RSI(14) 60,6 / RS_4w +10,94 % → NICHT ausgelöst (RSI <80, RS positiv)
+- Status Open 01.07. 09:37 ET: 416,36 $ Live (change_today +0,20 %, P/L +3,68 % vs Entry); V1 369,44 SICHER +12,71 % Puffer; V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over) SICHER (+10,71 %); V5 EMA50 383,13 > EMA200 339,23 ✓ (carry-over); V6 RSI 60,6 / RS_4w +10,94 % → NICHT ausgelöst
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
 
 ### KAUF (filled): JPM am 2026-06-17
@@ -118,6 +119,7 @@ _Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,
 - Status Close 29.06.: 331,39 $ Close (change_today +0,71 %, P/L -0,42 % vs Entry, Erholung nach Fr-Schwäche); V1 306,16 SICHER +8,23 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+9,69 %); V5 EMA50 313,62 > EMA200 307,76 ✓ (Spread +5,86 leicht weiter); V6 RSI 60,10 / RS_4w +12,11 % → NICHT ausgelöst (RSI <80)
 - Status Open 30.06. 09:32 ET: 329,29 $ Live (change_today +0,008 % flat, P/L -1,05 % vs Entry); V1 306,16 SICHER +7,55 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+9,00 %); V5 EMA50 313,62 > EMA200 307,76 ✓ (carry-over); V6 RSI ~60 / RS_4w +12,11 % → NICHT ausgelöst
 - Status Close 30.06.: 327,24 $ Close (change_today -0,659 %, P/L -1,67 % vs Entry, Open 329,24 / Tageshoch 330,42 / Tagestief 326,725; XLF-Lag nach „financials lagged on lower-rate expectations"-News); V1 306,16 SICHER +6,89 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+8,28 %); V5 EMA50 314,15 > EMA200 308,78 ✓ (Spread +5,37, knapper als 29.06.); V6 RSI(14) 57,6 / RS_4w +11,86 % → NICHT ausgelöst (RSI <80, RS positiv)
+- Status Open 01.07. 09:37 ET: 326,29 $ Live (change_today -0,29 %, P/L -1,95 % vs Entry, Intraday-Range 325,12 / 328,79); V1 306,16 SICHER +6,58 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+8,00 %); V5 EMA50 314,15 > EMA200 308,78 ✓ (carry-over); V6 RSI 57,6 / RS_4w +11,86 % → NICHT ausgelöst
 - Alpaca Order-ID: d90de96d-9084-4a6a-b5a1-de48899e75f4
 
 ---

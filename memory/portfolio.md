@@ -1,6 +1,78 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-01 08:35 ET (Pre-Market KW27 Mi — Guardrails GRÜN alle 8, V1–V6 SICHER, Buy-Scan JA Lead LLY 4/5)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-01 09:37 ET (Market Open KW27 Mi — KEIN TRADE, LLY K4 FAIL + INTC K5 FAIL, Guardrails alle 8 GRÜN)
+
+---
+
+## Market Open 2026-07-01 09:37 ET (Mi, KW27) — KEIN TRADE (LLY K4 FAIL, INTC K5 FAIL)
+
+```
+Gesamtwert:        99.745,58 $   (Alpaca equity Live 09:37 ET, vs last_equity 99.724,85 → +0,021 % GRÜN)
+Cash:              88.767,74 $   (88,99 %)
+Investiert (MV):   10.977,84 $   (11,01 %, JPM 978,87 $ + UNH 9.998,64 $)
+Unrealisiert P/L:    +376,05 $   (JPM -19,47 $ / UNH +355,52 $)
+Realisiert P/L:      -596,19 $   (AVGO V1 26.06., carry-over)
+Daily P/L:           +0,021 %    [GRÜN — vs last_equity 99.724,85]
+Weekly P/L KW27:     -0,279 %    [GRÜN — vs Mo-Basis 100.024,25 = Fr-Close 26.06.]
+ATH:              100.066,47 $   DD: -0,321 % [GRÜN]
+Käufe KW27:           0/2        (0 genutzt, 2 frei — 2 Handelstage KW27 verbleibend)
+Pending Orders:       0
+VIXY Live:            21,62 $    [GRÜN → Spot ~17 → 10 % Sizing erlaubt]
+SPY Live:            743,08 $    (-0,48 % vs Di-Close 746,65 → moderate risk-off Open)
+Crash-Filter:        NEIN        (SPY -0,48 %)
+Guardrails:        Daily +0,02 % | Weekly -0,28 % | DD -0,32 % | VIX ~17 | Käufe 0/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 09:37 ET):**
+- **JPM**  326,29 $ (Entry 332,78, P/L -1,95 %, change_today -0,29 %)
+  - V1 306,16 SICHER (+6,58 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over vom 25.06.) SICHER (+8,00 %)
+  - V5 EMA50 314,15 > EMA200 308,78 ✓ (carry-over Di-Close)
+  - V6 RSI 57,6 / RS_4w +11,86 % → KEIN Trigger
+- **UNH**  416,36 $ (Entry 401,57, P/L +3,68 %, change_today +0,20 %)
+  - V1 369,44 SICHER (+12,71 % Puffer)
+  - V2 Stop ~376,47 (Posit-Hoch 427,81 carry-over vom 26.06.) SICHER (+10,71 %)
+  - V5 EMA50 383,13 > EMA200 339,23 ✓ (carry-over Di-Close)
+  - V6 RSI 60,6 / RS_4w +10,94 % → KEIN Trigger
+
+→ **Keine Verkaufsorder pending.** Alle V1–V6 SICHER für beide.
+
+**Kandidaten-Scan K1–K5 (Alpaca IEX-Bars Close 30.06. + Live 09:30–09:39 ET):**
+
+- **LLY** Live 1.188,95 $ (Open 1.211,52 → -1,87 % intraday, vs Di-Close 1.199,38 → -0,87 %)
+  - K1 ✓ EMA50 1073,1 > EMA200 978,5
+  - K2 ✓ RSI(14) 66,5 (Cooldown von 74,5 am Mo, weiter unter 70)
+  - K3 ✓ RS_63d +17,1 %
+  - **K4 ✗ FAIL** — IEX-Cumvol nach 9 min = 2.197 Sh vs. Avg20 IEX 147.363. Tages-Projektion (390-min-Extrapolation) ~95k = **65 % Avg20** << 120 % Hürde. Vortag K4 99 % war Grenze; heute deutlich schwächer.
+  - K5 ✓ FwdPE 32,4–33,0 + Rev YoY +26 % (carry-over Perplexity 30.06.)
+  - **Verdict: 4/5 — K4 hart BLOCKS.** Zusätzlich Open-Selloff (-1,87 %) bestätigt fehlendes Momentum.
+
+- **INTC** Live 132,86 $ (Open 135,03 → -1,61 % intraday, vs Di-Close 139,55 → -4,80 %)
+  - K1 ✓ EMA50 109,4 > EMA200 61,0
+  - K2 ✓ RSI(14) 63,0
+  - K3 ✓ RS_63d +220,7 %
+  - K4 ✓ IEX-Cumvol nach 9 min = 165.223 vs. Avg20 IEX 4.026.506. Projektion ~7,2M = **179 % Avg20** (K4 ✓)
+  - **K5 ✗ FAIL** — Perplexity Live 01.07.: FwdPE Multi-Source: Seeking Alpha 120,24 / Yahoo 158,73 / MarketBeat 221,63 → **alle >>35**. RevGrowth Q1 2026 YoY nur **+7,4 %** (<10 %-Hürde). BEIDE K5-Sub-Kriterien FAIL.
+  - **Verdict: 3/5 — K5 hart BLOCKS.** INTC strukturell wie CRWD/AMD (Turnaround-Story mit stretched Bewertung).
+
+- **CAT** carry-over Close 30.06. 1.063,33 — K5 ✗ RevGrowth Q1 -1 % → BLOCKS
+- **AMD** carry-over Close 580,52 — K5 ✗ FwdPE 35–95x Konsens → BLOCKS
+- **CRWD** carry-over Close 763,12 — K2 ✗ RSI 70,3 + K5 ✗ FwdPE ~69x → BLOCKS
+- **ELV** carry-over Close 386,98 — K2 ✗ RSI 46,9 + K5 ✗ RevGrowth +7 % → BLOCKS
+
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale. KEIN Trade.**
+
+**Sektor-Update:** Unverändert — XLF (JPM 0,98 %) + XLV (UNH 10,02 %). XLK weiter leer.
+
+**Earnings-Status (carry-over Pre-Market):**
+- JPM Q2 2026: 2026-07-14 (13 Tage) → KEIN Blackout
+- UNH Q2 2026: 2026-07-16 (15 Tage) → KEIN Blackout
+
+**ClickUp:** ROUTINE Normal-Alert Versuch (Prio 3) — bei Tier-Limit ITEM_246 (carry-over seit 26.06.) Fallback Push-Notification an Owner.
+
+> **Entscheidung:** KEIN Trade. LLY-Lead scheitert am K4 Live-Vol (Open-Selloff -1,87 % mit sehr niedrigem IEX-Cumvol → Projektion 65 % Avg20 = klar unter 120 % Hürde). INTC-Backup scheitert an K5 hart (FwdPE >>120 alle Quellen + RevGrowth 7,4 % <10 %). Bot bleibt cash-heavy 89 %. Alle 2 KW27-Slots ungenutzt, 2 Handelstage verbleibend.
+> **Lessons-Tag:** K4 Vol-Trigger bei Open-Selloff ist zuverlässiger Blocker — LLY-Kursverfall + Vol-Absence bestätigen fehlendes Momentum. Pre-Market Buy-Setup „K4 heute entscheidend" hat sich als sauberer Filter erwiesen. INTC K5-Prüfung wichtig: Turnaround-Stories brauchen weiterhin >35 FwdPE-Filter-Respekt.
+> **Nächste Routine:** Mi 2026-07-01 13:00 ET Midday Stop-Check.
 
 ---
 
