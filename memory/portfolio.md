@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-06-30 16:04 ET (Close KW27 Di — V1–V6 alle SICHER, Daily -0,11 % GRÜN, Alpha -0,89 % vs SPY +0,78 %, KEINE Pending)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-01 08:35 ET (Pre-Market KW27 Mi — Guardrails GRÜN alle 8, V1–V6 SICHER, Buy-Scan JA Lead LLY 4/5)
 
 ---
 

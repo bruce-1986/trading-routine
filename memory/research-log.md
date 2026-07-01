@@ -4,6 +4,101 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-07-01 (Mi, KW27) — Guardrails GRÜN, Buy-Scan JA, Lead LLY
+
+**Makro-Lage (Pre-Market 08:35 ET, Alpaca IEX + Perplexity):**
+```
+VIX (Spot):         16,3–16,4       [GRÜN — sehr entspannt, <25 → 10 % Sizing erlaubt; Perplexity/CBOE]
+SPY Last Trade:     745,23 $        (08:34 ET, vs Di-Close 746,65 → -0,19 % flach Premarket)
+SPY Quote 08:35:    bid 744,53 / ask 744,73 → Mid 744,63 $ (-0,27 %)
+VIXY Close 30.06.:  21,305 $        (-2,16 % vs Mo → Vola weiter niedrig)
+10Y Treasury Yield: ~4,3–4,4 %      (Perplexity Fed/TradingEconomics, tagesgenau intraday n/v)
+Crash-Filter:       NEIN            (SPY Di +0,78 % → weit von -5 %)
+Markt-Status:       CLOSED          (next_open 09:30 ET)
+```
+
+**Alpaca Account-Status (Konsistenz-Check):**
+```
+Equity:             99.717,38 $     (Pre-Market Mark, vs Di-Close 99.722,36 → -4,98 $ / -0,005 % Drift)
+Cash:               88.767,74 $     (identisch zu Memory)
+Last_Equity:        99.724,85 $     (Di-EOD-Mark)
+Long Market Value:  10.949,64 $     (JPM 980,76 + UNH 9.968,88)
+Status:             ACTIVE          (trading_blocked=false, account_blocked=false)
+DayTrade Count:     0 / PDT False
+Buying Power:       385.729,95 $
+Open Orders:        0
+Positions Live:     JPM 326,92 $ (P/L -1,76 %, change_today -0,125 %)
+                    UNH 415,37 $ (P/L +3,44 %, change_today -0,063 %)
+```
+
+**Guardrails-Check (alle 8 Hierarchien):**
+```
+1. Daily Loss Cap (-3 %/Tag):    -0,008 % (99.717,38 / 99.724,85) [GRÜN]
+2. Weekly Loss Cap (-5 %/Woche): -0,307 % (vs KW27 Mo-Basis 100.024,25) [GRÜN]
+3. Drawdown vom ATH:             -0,349 % (vs ATH 100.066,47) [GRÜN — Alarm bei -15 %]
+4. Drawdown-Stopp -20 %:         INAKTIV
+5. Crash-Filter (SPY -5 %):      INAKTIV (Di +0,78 %)
+6. VIX-Filter (>30):             INAKTIV (16,3 → sogar klar <25 → 10 % Sizing)
+7. Earnings-Blackout (3 HT):     KEINER — JPM 14.07. (13d, CONFIRMED Business-Wire) | UNH 16.07. (15d carry-over)
+8. Max neue Käufe KW27:          0/2 genutzt → 2 frei
+```
+→ **STATUS: GRÜN auf allen 8 Levels.**
+
+**Positionen Signal-Recheck (Pre-Market, V1–V6 carry-over Close 30.06. + Live-Adjustment):**
+```
+JPM    326,92 $ — V1 306,16 SICHER (+6,78 %) | V2 ~302,11 SICHER (+8,21 %) | V5 EMA50 314,15>EMA200 308,78 ✓ | V6 RSI 57,6 / RS_4w +11,86 % → KEIN Trigger
+UNH    415,37 $ — V1 369,44 SICHER (+12,42 %) | V2 ~376,47 SICHER (+10,33 %) | V5 EMA50 383,13>EMA200 339,23 ✓ | V6 RSI 60,6 / RS_4w +10,94 % → KEIN Trigger
+```
+→ Keine Verkaufsorder pending. EMA50>EMA200 für beide intakt. RSI weit unter 80, RS positiv.
+
+**Earnings-Verifikation (Perplexity 01.07.):**
+- **JPM Q2 2026: 2026-07-14 (13 Tage) — CONFIRMED via Business-Wire Q2-Call + Wall Street Horizon** → KEIN Blackout
+- UNH Q2 2026: 2026-07-16 (15 Tage, carry-over — Perplexity heute keine offizielle Quelle, plausibel) → KEIN Blackout
+- KEIN S&P-500-Earnings >50 Mrd Market Cap zwischen 01.–03.07. (Perplexity verifiziert)
+- → Standard V1 -8 % bleibt für beide, kein Stop-Tightening.
+
+**Top-News / Makro heute (Perplexity 01.07.):**
+- **Keine großen Makro-Releases heute** (CPI/PCE/NFP/ISM/FOMC nicht auf Tages-Kalender)
+- Perplexity liefert nur routinemäßige Reden/Daten; keine belastbaren tagesgenauen Top-3-Headlines
+- 10Y Treasury ~4,3–4,4 % (stabil, keine dramatischen Bewegungen)
+- VIX 16,3 (Vola-Entspannung setzt sich fort)
+
+**Watchlist-Status (Carry-over Close 30.06., Alpaca IEX):**
+```
+Symbol | Close   | K1     | K2 RSI | K3 RS_63d | K4 Vol% | K5                     | Score
+LLY    | 1199,36 | ✓      | ✓ 66,5 | ✓ +17,1 % | ✗ 99 %  | ✓ FwdPE 32–33/Rev +26% | 4/5 LEAD — K4 Vol-Trigger heute entscheidend
+INTC   |  139,55 | ✓      | ✓ 63,0 | ✓ +220,7%| ✗ 49 %  | unklar (Perplexity leer)| 3/4 + K5 Recheck Live am Open zwingend
+CAT    | 1063,33 | ✓      | ✓ 65,3 | ✓ +41,2 % | ✗ 83 %  | ✗ RevGrowth Q1 -1 %    | 3/5 BLOCKS strukturell
+AMD    |  580,52 | ✓      | ✓ 64,8 | ✓ +178,0%| ✓ 121 % | ✗ FwdPE 35–95x Konsens | 4/5 K5 BLOCKS strukturell
+CRWD   |  763,12 | ✓      | ✗ 70,3 | ✓ +82,7 % | ✗ 85 %  | ✗ FwdPE ~69x           | 2/5 BLOCKS
+ELV    |  386,98 | ✓      | ✗ 46,9 | ✓ +17,8 % | ✗ 69 %  | ✗ RevGrowth +7 %       | 2/5 BLOCKS
+```
+
+**Entscheidung 09:30 ET Market Open:**
+- **Buy-Scan JA** — Guardrails GRÜN, Pre-Market flach (-0,19 %), VIX sehr entspannt (16,3), keine Makro-Release-Störung heute
+- **Lead-Kandidat: LLY (4/5 ✓, K4 Vol-Trigger heute entscheidend)**
+  - K1–K3 + K5 alle ✓ (FwdPE 32–33, Rev YoY +26 %)
+  - K4 muss Live-Volumen bei Open ≥120 % Avg20 zeigen → K4 Live-Check am Open zwingend
+  - Falls K4 kippt: kein Pflicht-Kauf, Slot bleibt frei
+  - Limit-Order: max +0,5 % über Vortagesschluss = max 1.205,36 $ Limit
+  - Sizing: ~10 % Portfolio = ~9.972 $ → 8 Shares bei ~1.199 $ (~9.594 $)
+  - Sektor: LLY = XLV (mit UNH → 2 Positionen XLV, ~20 % Gesamt → OK unter 30 %-Limit)
+  - Earnings: LLY 2026-07-31 (30 Tage) → KEIN Blackout
+- **Backup: INTC (3/4 + K5 Recheck)** — K5 Perplexity-Recheck am Open zwingend (FwdPE, RevGrowth verifizieren); K4 Vol-Trigger am Open erforderlich
+- Fallback: kein Kandidat trifft alle 5 → 0/2 Slots bleiben frei (2 Slots + 3 Handelstage KW27)
+
+**Reconciliation Memory ↔ Alpaca:**
+- portfolio.md Di-Close 99.722,36 vs Alpaca last_equity 99.724,85 = +2,49 $ After-Hours-Tick (akzeptabel)
+- cash 88.767,74 identisch
+- Positionen-Anzahl & avg_entry konsistent (JPM 3 Sh @ 332,78 / UNH 24 Sh @ 401,57)
+
+**Datenqualitäts-Hinweis:**
+Perplexity SPY-Premarket-Bewegung nicht quantifizierbar (Datum-in-Zukunft-Bug carry-over). Alpaca IEX SPY-Last-Trade + Quote als Source of Truth (-0,19 % / -0,27 %). VIX 16,3 via CBOE/Perplexity plausibel. 10Y Treasury tagesgenauer Intraday-Tick fehlt aber Range 4,3–4,4 % konsistent.
+
+**Nächste Routine:** 09:30 ET Market Open — Buy-Scan LLY (K4 Live-Vol entscheidend), Backup INTC (K5 Recheck).
+
+---
+
 ## Market Close 16:04 ET — 2026-06-30 (Di, KW27) — Tagesbilanz + Watchlist Mi 01.07.
 
 **Tages-Performance (Alpaca + IEX-Bars Close 16:00 ET):**
