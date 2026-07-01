@@ -1,6 +1,77 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-01 13:06 ET (Midday Stop-Check KW27 Mi — alle Stops regulär, Daily +0,24 % GRÜN)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-01 16:04 ET (Market Close KW27 Mi — Daily +0,28 %, Alpha +0,41 %, UNH neues Posit-Hoch 428,01)
+
+---
+
+## Market Close 2026-07-01 16:04 ET (Mi, KW27) — Tagesbilanz
+
+```
+Gesamtwert:       100.006,57 $   (Alpaca equity Close, vs last_equity 99.724,85)
+Cash:              88.767,74 $   (88,76 %)
+Investiert (MV):   11.238,83 $   (11,24 %, JPM 1.001,63 $ + UNH 10.237,20 $)
+P/L heute:           +281,72 $    (+0,283 %)
+Alpha vs SPY:        +0,414 %     (SPY -0,132 % via Alpaca IEX 746,65 → 745,665)
+ATH:              100.066,47 $    DD: -0,060 % [GRÜN]
+Weekly P/L KW27:     -0,018 %     [GRÜN — Mo-Basis = Fr-Close 100.024,25, Schwelle -5 %]
+Käufe KW27:           0/2         (0 genutzt, 2 frei — 2 Handelstage KW27 verbleibend: Do 02.07., Fr 03.07. verkürzt)
+Pending Orders:       0
+Guardrails:        Daily +0,28 % | Weekly -0,02 % | DD -0,06 % | VIXY 21,47 (+0,77 %, Spot ~17) | Käufe 0/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 16:00 ET Close):**
+- **JPM**  334,06 $ (Entry 332,78, P/L +0,38 %, change_today +2,08 %)
+  - V1 306,16 SICHER (+9,11 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over vom 25.06.) SICHER (+10,51 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+  - V5 EMA50 316,48 > EMA200 308,96 ✓ (Spread +7,52 leicht geweitet vs Di +5,37)
+  - V6 RSI(14) 65,18 / RS_4w +12,80 % → SICHER (RSI <80, RS positiv)
+- **UNH**  426,52 $ (Entry 401,57, P/L +6,21 %, change_today +2,63 %, NEUES Tages-/Posit-Hoch 428,01)
+  - V1 369,44 SICHER (+15,45 % Puffer)
+  - V2 Stop **NEU** 376,65 (Trail nach neuem Hoch 428,01 heute) SICHER (+13,24 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+  - V5 EMA50 391,55 > EMA200 347,22 ✓ (Spread +44,33 sehr komfortabel)
+  - V6 RSI(14) 63,46 / RS_4w +14,68 % → SICHER (RSI <80, RS positiv)
+
+**Verkaufssignal-Check V1–V6: ALLE SICHER für beide Positionen.**
+→ **Keine Limit-Order für morgen vorbereitet.** Pending Orders bleiben 0.
+
+**Schlechteste Position:** JPM +0,38 % (aber intraday-Rebound +2,08 % — bester Sektor-Tag seit KW26)
+**Beste Position:** UNH +6,21 % (change_today +2,63 %, neues Posit-Hoch 428,01, V2-Trail auf 376,65 hochgesetzt)
+
+**Sektor-Update:** Unverändert Struktur — XLF (JPM 1,00 %) + XLV (UNH 10,24 %). XLK weiter leer.
+
+**Daily Loss Cap (-3 %):** +0,283 % → GRÜN, kein Eingriff.
+**Weekly Loss Cap (-5 %):** -0,018 % → GRÜN, keine Stornierungen.
+**ATH-Drawdown (-15 % Alarm / -20 % Stopp):** -0,060 % → GRÜN.
+**Crash-Filter:** SPY -0,13 % heute → INAKTIV.
+**VIX-Filter:** VIXY 21,47 (+0,77 % vs Di 21,305) → Spot ~17 → GRÜN.
+
+**Watchlist morgen Do 02.07. (K1–K4 via Alpaca IEX Close 01.07., K5 Perplexity):**
+- **ELV 415,95 $ (+7,59 %!)** — K1 ✓ EMA50 384,33>EMA200 348,01 | K2 ✓ RSI 59,2 | K3 ✓ RS_63d +27,3 % | K4 ✓ Vol 175 % Avg20 | **K5 ✗ FwdPE 13,9–14,6 ✓ ABER RevGrowth Q1 +1,5 % (Perplexity carry-over, EPS-Beat 12,58 vs 10,74 heute)** → **4/5 LEAD — K5-Recheck morgen Pre-Market (Q2-Earnings-Guidance-Anhebung 26,75 EPS könnte RevGrowth-Blick verändern)**
+- **CAT 991,98 $ (-6,82 %)** — K1-K4 ✓ (Vol 144 %) | K5 ✗ RevGrowth Q1 -1 % strukturell → 4/5 BLOCKS
+- **AMD 540,89 $ (-6,83 %)** — K1-K3 ✓ + K4 ✓ (Vol 128 %) | K5 ✗ FwdPE 35–95x → 4/5 BLOCKS
+- **MU 1.032,64 $ (-10,37 %)** — K1-K3 ✓ | K4 ✗ Vol 108 % | K5 unklar → Perplexity morgen zwingend
+- **LLY 1.192,14 $ (-0,60 %)** — K1-K3+K5 ✓ | K4 ✗ Vol 72 % → warten
+- **INTC 127,08 $ (-8,94 %)** — K5 strukturell BLOCKS (FwdPE >120)
+
+**Earnings-Status:**
+- JPM Q2 2026: 2026-07-14 (13 Tage) → KEIN Blackout
+- UNH Q2 2026: 2026-07-16 (15 Tage) → KEIN Blackout
+- ELV Q2 2026: 2026-07-16 (~16 Tage geschätzt) → KEIN Blackout (bei Kauf morgen)
+
+**Markt-Kontext heute:**
+- SPY -0,13 % auf 745,665 (leichter Pullback nach Di-Rekord, Range 742,39-749,41)
+- **Financials-Rebound:** JPM +2,08 % (Perplexity: „JPMorgan Chase +3,30 %" Konsens-Move nach Yield-Curve-Steepening)
+- **Health-Insurer Explosion:** ELV +7,59 % nach EPS-Beat 12,58 vs. 10,74 + Guidance-Anhebung 2026 EPS ≥26,75. Sektor XLV Highlight-Tag.
+- UNH mit +2,63 % auf 426,52 (neues Posit-Hoch 428,01) — profitiert vom Sektor-Move mit
+- Bot Cash-Heavy 88,76 % — trotzdem heute Alpha +0,41 % durch UNH+JPM Doppel-Rally
+
+**ClickUp:** Tagesbericht-Task `[CLOSE] Tagesbilanz — 2026-07-01` Prio 4 → ITEM_246 "Max usage for custom task types reached" (Tier-Limit carry-over seit 26.06.). Memory-Log primär, Push-Notification an Owner.
+
+> **Entscheidung:** Tagesbilanz GRÜN + Alpha positiv (+0,41 %). Beide Longs profitieren — UNH neues Posit-Hoch, JPM Financials-Rebound. Keine Verkaufsorders (V1–V6 alle SICHER, JPM V1-Puffer weitet auf +9,11 %, UNH V2 hochgetrailt auf 376,65). Watchlist-Lead morgen ist **ELV** — massiver Earnings-Move mit Volumen 175 %, alle K1–K4 ✓, aber K5 RevGrowth-Hürde (Q1 +1,5 %) blockt strukturell trotz starker Guidance. Pre-Market Perplexity-Recheck zwingend: Q2-Erwartungen könnten K5 aufweichen. 2 Slots + 2 Handelstage KW27 (Fr 03.07. verkürzt für Independence Day).
+> **Lessons-Tag:** ELV EPS-Beat + Guidance-Anhebung = **klassisches Post-Earnings-Momentum-Setup mit K1–K4 alle ✓**, wird aber strategisch von K5 RevGrowth-Hürde (10 %) blockiert. K5-Filter verhindert Insurer-Momentum-Trades solange Insurance-Rev-Growth strukturell 1–7 % ist. Alternative: strategy.md Review bei Insurer-Sektor-Signalen könnte eine EPS-Growth-Hürde ergänzen, aktuell aber strategie-lock — kein Override.
+> **Nächste Routine:** Do 2026-07-02 08:30 ET Pre-Market Check.
 
 ---
 

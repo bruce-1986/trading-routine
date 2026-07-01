@@ -4,6 +4,74 @@
 
 ---
 
+## Market Close 16:04 ET — 2026-07-01 (Mi, KW27) — Tagesbilanz + Watchlist Do 02.07.
+
+**Tages-Performance (Alpaca + IEX-Bars Close 16:00 ET):**
+```
+Bull-Depot:   100.006,57 $  (vs last_equity 99.724,85)  Daily P/L +281,72 $  +0,283 %  [GRÜN]
+SPY:              745,665 $ (vs Di-Close 746,65)         Daily -0,132 % (IEX 1Day-Bar 01.07.)
+Alpha:             +0,414 % [POSITIV — UNH +2,63 % + JPM +2,08 % Doppel-Rally trotz Cash-Heavy]
+ATH:            100.066,47 $ Drawdown -0,060 %  [GRÜN]
+Weekly P/L:        -0,018 % (KW27 Mo-Basis = Fr-Close 100.024,25)  [GRÜN >-5 %]
+VIXY Close:         21,47 $ (+0,77 % vs Di 21,305) → Spot ~17 [GRÜN]
+Crash-Filter:    INAKTIV (SPY -0,13 %)
+```
+
+**SPY-Quelle:** Alpaca IEX 1Day-Bar 01.07. (Close 745,665 vs Di-Close 746,65 = -0,132 %). Perplexity halluzinierte fälschlich, ELV +7,6 % gäbe es nicht („keine bestätigten News") — Alpaca IEX Close bestätigt tatsächliche Werte (ELV 415,95, +7,59 % IEX). Perplexity Datum-Bug carry-over.
+
+**Markt-News (Perplexity 01.07.):**
+- JPMorgan Chase +3,30 % (Perplexity nannte JPM als Top-Financials-Mover) → Financials-Rebound-Tag nach Di-Lag; Bot-JPM +2,08 %/IEX konsistent
+- Elevance Health (ELV) EPS-Beat: 12,58 $ vs 10,74 $ Konsens (+1,84 $ Beat); Revenue Q1 2026 49,49 Mrd $ (+1,5 % YoY, ✓ über Erwartung 48,21 Mrd)
+- ELV Guidance-Anhebung 2026 EPS ≥26,75 $; Carelon-Wachstumstreiber (Care-Bridge)
+- Sektor-Divergenz: XLV allgemein „downturn" — ELV als Relative-Strength-Ausreißer
+- DXC Technology +4,54 % / Bath & Body Works +7,45 % (Perplexity, nicht S&P-Top-5-Cap)
+
+**Verkaufssignal-Check JPM + UNH (V1–V6 Close 16:00 ET, Alpaca IEX + Live-berechnete Indikatoren):**
+```
+Symbol | Close   | V1 Stop | V2 Trail | V5 EMA50/EMA200       | V6 RSI / RS_4w
+JPM    | 334,06  | 306,16 ✓ +9,11 %  | 302,11 ✓ +10,51 % | 316,48 > 308,96 ✓  | 65,18 / +12,80 % ✓
+UNH    | 426,52  | 369,44 ✓ +15,45 % | 376,65 (NEU) ✓ +13,24 % | 391,55 > 347,22 ✓  | 63,46 / +14,68 % ✓
+```
+→ **Keine pending Verkaufsorder für Do.** Trail-Stop UNH **hochgesetzt auf 376,65** (neues Posit-Hoch 428,01 heute vs. bisher 427,81).
+
+**Watchlist-Scan Do 02.07. (Alpaca IEX 200d-Window Close 01.07.):**
+```
+Symbol | Close    | Chg%   | EMA50/EMA200         | K1 | RSI  | K2 | RS_63d | K3 | Vol%  | K4 | K5                        | Score
+ELV    |  415,95  | +7,59% | 384,33 > 348,01      | ✓  | 59,2 | ✓  | +27,3% | ✓  | 175%  | ✓  | ✗ FwdPE 13,9-14,6 ✓ / Rev +1,5% | 4/5 LEAD K5-Recheck
+CAT    |  991,98  | -6,82% | 920,39 > 730,94      | ✓  | 55,4 | ✓  | +25,3% | ✓  | 144%  | ✓  | ✗ RevGrowth Q1 -1 %       | 4/5 BLOCKS (K5)
+AMD    |  540,89  | -6,83% | 463,08 > 307,95      | ✓  | 58,1 | ✓  | +151,4%| ✓  | 128%  | ✓  | ✗ FwdPE 35–95x            | 4/5 BLOCKS (K5)
+MU     | 1032,64  |-10,37% | 884,06 > 526,00      | ✓  | 53,8 | ✓  | +191,2%| ✓  | 108%  | ✗  | unklar (Perplexity leer)  | 3/5 + K4+K5-Recheck
+LLY    | 1192,14  | -0,60% | 1070,24 > 978,25     | ✓  | 66,1 | ✓  | +14,9% | ✓  |  72%  | ✗  | ✓ FwdPE 32,4-33 / Rev +26%| 4/5 K4 warten
+INTC   |  127,08  | -8,94% | 112,08 > 69,57       | ✓  | 52,7 | ✓  | +173,3%| ✓  |  73%  | ✗  | ✗ FwdPE >120 (Multi-Src)  | 3/5 BLOCKS strukturell
+PLTR   |  125,75  | +7,81% | 132,66 < 151,00      | ✗  | 50,0 | ✓  | -28,7% | ✗  | 203%  | ✓  | n/a                       | 2/5 BLOCKS
+NVDA   |  197,54  | -1,20% | 206,60 > 193,38 knapp| ✓  | 41,0 | ✓  | -1,4%  | ✗  | 126%  | ✓  | n/a                       | 3/5 K3 BLOCKS
+GEV    | 1134,39  | -3,40% | 1029,93 > 851,56     | ✓  | 59,5 | ✓  | +15,3% | ✓  |  70%  | ✗  | n/a Perplexity            | 3/5 K4 warten
+```
+
+**Perplexity K5 Verifikation 01.07.:**
+- **ELV**: FwdPE 14,41 (MarketBeat) / 14,60 (Yahoo) / 13,9 (Finbox) → alle ✓ ≤35 | Q1 2026 Rev YoY +1,5 % → ✗ <10 % Hürde | EPS-Beat 12,58 vs. 10,74 + Guidance-Anhebung → aber K5-Rev-Kriterium hart, kein Override
+- **MU**: Perplexity-Quelle leer für Micron. Grobe Marktvermutung FwdPE 15–20 (nicht verifiziert). Morgen Perplexity-Recheck falls K4 anspringt.
+
+**Watchlist Do 02.07.:** ELV (LEAD 4/5, K5 RevGrowth strukturell — Perplexity-Recheck ob Q2-Erwartung >10 %), CAT (K5 blockt), MU (K5 unklar + K4 warten), LLY (K4 warten), GEV (K4 warten).
+
+**Sektor-Check kompakt:** Health Care (XLV: UNH +2,63 %/ELV +7,59 % — Sektor-Rebound-Tag!). Financials (XLF: JPM +2,08 %/„JPM +3,30 %"-Konsens — Rebound nach Di-Lag). Tech (XLK: NVDA -1,2 %/AMD -6,83 %/INTC -8,94 % — schwach; MU -10,37 % Selloff). Industrials (XLI: CAT -6,82 % + GEV -3,40 % — schwach). Bot-Long-Positionen im Sektor-Rebound-Duo XLV+XLF perfekt positioniert.
+
+**Entscheidung Market Close:**
+- KEINE Verkaufsorders (V1–V6 ALLE SICHER für JPM + UNH, UNH V2 auf 376,65 hochgetrailt).
+- KEINE Pending Buys (Routine kauft erst bei Market Open mit K4-Live-Volumen + K5-Perplexity-Live).
+- Bot bleibt Long JPM + UNH, 88,76 % Cash für ELV-Kauf-Setup morgen reserviert (falls K5-Recheck stützt).
+- **Nächste Routine:** Do 2026-07-02 08:30 ET Pre-Market Check.
+
+**Lessons:**
+1. UNH-Trail-Stop auf 376,65 hochgetrailt (Posit-Hoch 428,01 → -12 % = 376,65) — Trail funktioniert diszipliniert, sichert Gewinn +13,24 % Puffer nach neuem Hoch.
+2. Financials-Rebound + Health-Insurer-EPS-Move gleichzeitig = **Bot-Alpha +0,41 % trotz Cash-Heavy** durch beide Longs im richtigen Sektor.
+3. ELV EPS-Beat + Guidance-Anhebung stark, aber **K5 RevGrowth-Hürde (10 %)** blockt Insurer-Momentum-Trades. Strukturelle Filter-Grenze — kein Override.
+4. Perplexity halluzinierte („ELV +7,6 % nicht bestätigt") — Alpaca IEX bleibt Source of Truth für Kurse.
+5. Perplexity Sektor-Rotation-Query bleibt leer (Datum-in-Zukunft-Bug carry-over) — Alpaca IEX-Bars als Sektor-Vergleichs-Primärquelle.
+6. ClickUp Tier-Limit ITEM_246 open seit 26.06. → Push-Notification + Memory primärer Notification-Kanal.
+
+---
+
 ## Market Open 09:37 ET — 2026-07-01 (Mi, KW27) — KEIN TRADE (LLY K4 FAIL, INTC K5 FAIL)
 
 **Live-Snapshot Market Open (Alpaca 09:37 ET):**
