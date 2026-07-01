@@ -4,6 +4,85 @@
 
 ---
 
+## Market Open 09:37 ET — 2026-07-01 (Mi, KW27) — KEIN TRADE (LLY K4 FAIL, INTC K5 FAIL)
+
+**Live-Snapshot Market Open (Alpaca 09:37 ET):**
+```
+Equity:             99.745,58 $   (vs last_equity 99.724,85 → +0,021 % GRÜN)
+Cash:               88.767,74 $   (88,99 %)
+Long MV:            10.977,84 $   (JPM 978,87 + UNH 9.998,64)
+SPY Live:              743,08 $   (-0,48 % vs Di-Close 746,65 → moderate risk-off)
+VIXY Live:              21,62 $   (vs Di-Close 21,305 → Spot ~17,3, weiter GRÜN)
+DayTrade Count:     0 / PDT False | Buying Power: 385.808,91 $
+Open Orders:        0
+```
+
+**Positionen Live V1–V6 (Alpaca 09:37 ET):**
+- JPM  326,29 $ — V1 306,16 SICHER +6,58 % | V2 ~302,11 SICHER +8,00 % | V5 EMA50 314,15>EMA200 308,78 ✓ | V6 RSI 57,6 / RS_4w +11,86 % → KEIN Trigger
+- UNH  416,36 $ — V1 369,44 SICHER +12,71 % | V2 ~376,47 SICHER +10,71 % | V5 EMA50 383,13>EMA200 339,23 ✓ | V6 RSI 60,6 / RS_4w +10,94 % → KEIN Trigger
+
+→ Keine Verkaufsorder pending. Beide Positionen vollständig SICHER auf allen 4 aktiven Verkaufssignalen.
+
+**Kandidaten-Scan K1–K5:**
+
+- **LLY** Live 1.188,95 $ (Open 1.211,52 → -1,87 % intraday, vs Di-Close 1.199,38 → -0,87 %)
+  - K1 ✓ EMA50 1073,1 > EMA200 978,5 (carry-over Close 30.06.)
+  - K2 ✓ RSI(14) 66,5 (Cooldown-Trend intakt)
+  - K3 ✓ RS_63d +17,1 %
+  - **K4 ✗ FAIL — LIVE-VOL BLOCKS**
+    - IEX-Cumvol nach 9 min (13:30–13:39 UTC): **2.197 Sh**
+    - Avg20 Daily IEX Vol: **147.363 Sh** (Fenster 01.–30.06.2026, 21 Sessions)
+    - Aktuelle Lauf-Ratio: 2.197 / 147.363 = **1,49 % gelaufen** nach 9/390 min = 2,3 % Zeit → **Volumen unter linearer Extrapolation**
+    - Tages-Projektion (390-min-Extrapolation): ~95k Sh = **65 % Avg20** << 120 %-Hürde
+    - Kontext: Vortag K4 nur 99 % (Grenze knapp verfehlt); heute noch schwächer + Kursverfall → Momentum-Absence
+  - K5 ✓ FwdPE 32,4–33,0 + Rev YoY +26 % (carry-over Perplexity 30.06.)
+  - **Verdict: 4/5 — K4 hart BLOCKS. Kein Kauf.**
+
+- **INTC** Live 132,86 $ (Open 135,03 → -1,61 % intraday, vs Di-Close 139,55 → -4,80 % — deutlicher Selloff)
+  - K1 ✓ EMA50 109,4 > EMA200 61,0
+  - K2 ✓ RSI(14) 63,0
+  - K3 ✓ RS_63d +220,7 %
+  - K4 ✓ IEX-Cumvol nach 9 min = 165.223 Sh vs Avg20 IEX 4.026.506 Sh = 4,10 % gelaufen → Projektion ~7,2M = **179 % Avg20**
+  - **K5 ✗ FAIL — LIVE-PERPLEXITY BLOCKS HART**
+    - FwdPE Multi-Source Perplexity 01.07.:
+      - Seeking Alpha: **120,24**
+      - Yahoo Finance: **158,73**
+      - MarketBeat: **221,63**
+      - → Konsens FwdPE >>35 (mindestens 120)
+    - RevGrowth Q1 2026 YoY: **+7,4 %** (unter 10 %-Hürde)
+    - BEIDE K5-Sub-Kriterien (FwdPE ≤35 UND RevGrowth ≥10 %) fallen
+  - **Verdict: 3/5 — K5 hart BLOCKS.** INTC strukturell in K5-Sperrliste (Turnaround-Story mit stretched Bewertung wie CRWD/AMD).
+
+- **Andere Watchlist-Kandidaten (carry-over Close 30.06., alle blockiert):**
+  - CAT 1.063,33 — K5 ✗ RevGrowth Q1 -1 %
+  - AMD 580,52 — K5 ✗ FwdPE 35–95x Konsens
+  - CRWD 763,12 — K2 ✗ RSI 70,3 + K5 ✗ FwdPE ~69x
+  - ELV 386,98 — K2 ✗ RSI 46,9 + K5 ✗ RevGrowth +7 %
+
+→ **KEIN Kandidat erfüllt alle 5 Kaufsignale. KEIN Trade.**
+
+**Guardrails (alle 8 GRÜN):**
+- Daily P/L +0,021 % | Weekly KW27 -0,279 % | DD -0,321 % | VIX-Spot ~17 | Käufe 0/2 | Crash-Filter NEIN | Earnings-Blackout NEIN | Cash 88,99 % > 20 %
+
+**Sektor-Rotation (Perplexity 01.07.):**
+- 1-Jahres-Performance (nur diese Quelle abrufbar): XLK +50,13 % / XLE +34,32 % / XLV +4,36 %
+- Datenqualität: 5-Tage-Rotation Perplexity nicht verfügbar (Datum-in-Zukunft-Bug carry-over)
+- Konsistenz: XLK weiter Top-Sektor 1Y, aber Bot 0 % XLK exponiert wegen K5-Filter (AMD/CRWD/INTC alle strukturell blockiert)
+
+**ClickUp:** ROUTINE Normal-Alert (Prio 3, KEIN Trade) → ITEM_246 Tier-Limit-Issue carry-over seit 26.06. Fallback: Push-Notification + Memory-Log primär.
+
+**Lessons:**
+1. K4 Live-Vol-Trigger bei Open-Selloff funktioniert sauber als Blocker — LLY-Kurs-Verfall (-1,87 %) parallel zu Vol-Absence (Projektion 65 %) bestätigt fehlendes Buying-Momentum.
+2. INTC K5-Multi-Source-Verifikation (Perplexity 3 Quellen) macht Live-Blockierung eindeutig — Turnaround-Story braucht weiterhin >35 FwdPE-Filter-Respekt.
+3. K5 FwdPE-Filter erweist sich als robustester Blocker gegen Retail-getriebene Momentum-Namen (INTC, CRWD, AMD alle >120 FwdPE trotz Kurs-Momentum).
+4. Perplexity Sektor-5-Tage-Rotation-Query erneut leer — konsistente Einschränkung, Alpaca IEX-Bars als Primärquelle für Sektor-Vergleich.
+
+**Entscheidung:** KEIN Trade. Beide KW27-Slots (0/2) bleiben ungenutzt bei 2 verbleibenden Handelstagen (Do 02.07., Fr 03.07. verkürzt für Independence Day).
+
+**Nächste Routine:** Mi 2026-07-01 13:00 ET Midday Stop-Check.
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-01 (Mi, KW27) — Guardrails GRÜN, Buy-Scan JA, Lead LLY
 
 **Makro-Lage (Pre-Market 08:35 ET, Alpaca IEX + Perplexity):**
