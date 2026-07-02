@@ -1,6 +1,95 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-01 16:04 ET (Market Close KW27 Mi — Daily +0,28 %, Alpha +0,41 %, UNH neues Posit-Hoch 428,01)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-02 09:43 ET (Market Open KW27 Do — MU Buy-Limit 9 Sh @ 1037,80 Day placed, K1–K5 alle ✓)
+
+---
+
+## Market Open 2026-07-02 09:43 ET (Do, KW27) — MU LIMIT-ORDER PLACED (5/5, K5 Multi-Source ✓)
+
+```
+Gesamtwert:         99.995,32 $   (Alpaca equity Live 09:37 ET, vs last_equity 100.006,91 → -0,012 %)
+Cash:               88.767,74 $   (88,77 %)
+Investiert (MV):    11.227,58 $   (11,23 %, JPM 1.003,31 $ + UNH 10.223,76 $)
+Unrealisiert P/L:     +591,05 $   (JPM +4,97 $ / UNH +586,08 $)
+Realisiert P/L:       -596,19 $   (AVGO V1 26.06., carry-over)
+Daily P/L:            -0,012 %    [GRÜN — vs last_equity 100.006,91]
+Weekly P/L KW27:      -0,029 %    [GRÜN — vs Mo-Basis 100.024,25 = Fr-Close 26.06.]
+ATH:               100.066,47 $   DD: -0,071 % [GRÜN]
+Käufe KW27:            0/2        (0 genutzt — MU pending nicht gezählt bis fill; wenn Fill: 1/2)
+Pending Orders:        1          MU Buy Limit 9 Sh @ 1037,80 Day (ID 6c45f431)
+VIXY Live:            21,47 $     → Spot ~16,7 [GRÜN → 10 % Sizing]
+SPY Live 09:37:      749,09 $     (+0,459 % vs Mi-Close 745,665 → moderate risk-on Open)
+Crash-Filter:        NEIN         (SPY +0,46 %)
+Guardrails:        Daily -0,01 % | Weekly -0,03 % | DD -0,07 % | VIX ~16,7 | Käufe 0/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 09:37 ET):**
+- **JPM**  334,435 $ (Entry 332,78, P/L +0,50 %, change_today +0,11 %)
+  - V1 306,16 SICHER (+9,23 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over vom 25.06.) SICHER (+10,63 %)
+  - V5 EMA50 316,48 > EMA200 308,96 ✓ (carry-over Mi-Close)
+  - V6 RSI 65,18 / RS_4w +12,80 % → KEIN Trigger
+- **UNH**  425,99 $ (Entry 401,57, P/L +6,08 %, change_today -0,13 %)
+  - V1 369,44 SICHER (+15,31 % Puffer)
+  - V2 Stop 376,65 (getrailt 01.07. Posit-Hoch 428,01) SICHER (+13,15 %)
+  - V5 EMA50 391,55 > EMA200 347,22 ✓ (carry-over Mi-Close)
+  - V6 RSI 63,46 / RS_4w +14,68 % → KEIN Trigger
+
+→ **Keine Verkaufsorder pending.** Alle V1–V6 SICHER für beide.
+
+**Kandidaten-Scan K1–K5 (Alpaca IEX Bars + Live 09:30–09:37 ET, Perplexity K5):**
+
+- **MU** Live 1.051,88 $ (Open ~1.038, vs Mi-Close 1.032,64 → +1,86 % intraday) — **LEAD-PICK**
+  - K1 ✓ EMA50 877,31 > EMA200 458,31 (Spread +419,00 — Golden Cross sehr weit)
+  - K2 ✓ RSI(14) 51,82 (Alpaca-Close 01.07., viel Raum bis 70)
+  - K3 ✓ RS_63d MU +205,94 % vs SPY +14,70 % → **+191,24 % RS**
+  - K4 ✓ IEX-Cumvol nach 7 min = 58.265 Sh vs. Avg20 IEX 1.019.072. Projektion (390-min-Extrapolation) ~3,24M = **319 % Avg20** >> 120 % Hürde
+  - **K5 ✓ Multi-Source verifiziert (Perplexity 02.07. Live):**
+    - FwdPE Yahoo Finance: 6,73 ✓ ≤35
+    - FwdPE MarketBeat: 10,41 ✓ ≤35
+    - TTM diluted EPS Yahoo: 44,28 → implied Trailing P/E ~23,7 ✓ ≤35
+    - RevGrowth YoY Q3 FY2026: +56 % (auch bei alternativer Perplexity-Angabe 196 % clean ≥10 %)
+  - Sektor: XLK Technology / Semis — füllt Lücke (JPM XLF, UNH XLV, XLK bisher leer)
+  - Earnings: MU Q4 FY2026 typisch Ende September → KEIN 3-HT-Blackout aktiv
+  - **Verdict: 5/5 GRÜN → LIMIT-ORDER PLACED (siehe unten)**
+
+- **ELV** Live 421,395 $ (+1,31 % vs Mi 415,95) — K1-K3 ✓ | K4 ✗ IEX-Cumvol 7 min = 1.133 → Projektion 63k = 79 % Avg20 79.405 << 120 % | K5 ✗ RevGrowth Q1 +1,5 % strukturell → **4/5 BLOCKS K5+K4**
+- **LLY** Live 1.192,715 $ (+0,05 % vs Mi 1.192,14) — K1-K3+K5 ✓ | K4 ✗ IEX 7 min = 872 → Projektion 49k = 33 % Avg20 148.478 << 120 % → **4/5 BLOCKS K4**
+- **CAT** Live 984,81 $ (-0,72 %) — K1-K4 ✓ | K5 ✗ RevGrowth Q1 -1 % → 4/5 BLOCKS K5
+- **AMD** Live 531,96 $ (-1,65 %) — K1-K3+K4 ✓ | K5 ✗ FwdPE 35–95x → 4/5 BLOCKS K5
+- **INTC** Live 125,89 $ (-0,94 %) — K5 ✗ FwdPE >120 strukturell → BLOCKS
+
+**Order-Details (Alpaca):**
+```
+Order-ID:       6c45f431-facd-4979-8c01-d0976e2f2474
+Symbol:         MU
+Side:           BUY
+Type:           LIMIT
+Qty:            9 Shares
+Limit-Preis:    1.037,80 $ (= round(1032,64 * 1,005, 2), K5-konformer +0,5 %-Cap über Vortagesschluss)
+Time-in-Force:  DAY
+Status:         NEW (accepted, unfilled bei Live 1.044-1.052 — Fill nur bei Pullback ≤1.037,80)
+Max-Cost bei Fill: 9.340,20 $ (9,34 % Portfolio)
+```
+
+**Sizing-Check:**
+- portfolio_value 99.995,32 * 0,10 = 9.999,53 (VIX <25 → 10 %)
+- shares = floor(9.999,53 / 1.051,88) = 9
+- limit = round(1.032,64 * 1,005, 2) = 1.037,80
+
+**Sektor-Check (bei Fill):**
+- JPM XLF 1,00 % + UNH XLV 10,23 % + MU XLK 9,34 % → Total 20,57 % investiert, XLK 9,34 % (unter 30 % Sektorlimit)
+- Positionen 3/8, weiter 5 Slots frei
+
+**Wenn Fill: Stop-Levels (V1–V4) berechnet ex-post nach avg fill price (Standardformeln V1 -8 %, V2 -12 % trail, V3 +20 %, V4 +35 %).**
+
+**Wenn kein Fill bis 16:00 ET: Order verfällt (Day). KW27-Käufe bleiben 0/2.**
+
+**ClickUp:** TRADE_BUY Alert Versuch (Prio 3) → ITEM_246 "Max usage for custom task types reached" (Tier-Limit-Issue carry-over seit 26.06.). Push-Notification an Owner + Memory-Log primär.
+
+> **Entscheidung:** LIMIT-ORDER MU platziert. Erstes 5/5-K-Signal seit AVGO 22.06. Multi-Source K5-Verifikation (Yahoo/MarketBeat FwdPE + implied TTM P/E + Perplexity RevGrowth) klar unter K5-Schwelle → keine CRWD/INTC-Wiederholung. K1-K4 Live bestätigt. Limit +0,5 % über Vortag (1.037,80) schützt vor Chase — MU +1,86 % geöffnet, Order fillt nur bei Pullback. Sektor XLK-Lücke wird geschlossen. Guardrails alle GRÜN. Cash bleibt bei Fill 79.427,54 $ (79,43 %).
+> **Lessons-Tag:** K5 Multi-Source-Discipline funktioniert — verhindert CRWD/INTC-Fehleinschätzungen bei hohen FwdPE, ermöglicht MU bei niedrigem FwdPE. Aktuelle Perplexity-Datenqualität schwankt (Rev 56 % vs 196 % zwischen Queries), aber Threshold-Richtung bleibt konsistent → K5 ✓.
+> **Nächste Routine:** Do 2026-07-02 13:00 ET Midday Stop-Check (inkl. MU-Order-Status).
 
 ---
 
