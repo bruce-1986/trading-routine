@@ -4,6 +4,49 @@
 
 ---
 
+## Market Close 16:02 ET — 2026-07-02 (Do, KW27) — Watchlist für Fr 03.07. (verkürzter HT bis 13:00 ET)
+
+**Tagesbilanz:** Portfolio -0,593 % (-593,40 $) | SPY -0,108 % | Alpha -0,485 % | Positionen 3/8 (JPM +0,51 % / UNH +5,66 % / MU -5,75 % Fill-Day) | Käufe KW27 1/2 nach MU-Fill | Guardrails alle GRÜN.
+
+**Perplexity-Sektor-Query 02.07. (Watchlist-Support):** Query lieferte KEINE spezifischen Kandidaten (allgemeine SPX-Daten ohne Titel-Detail) — Datum-in-Zukunft-Bug carry-over aus Pre-Market/Midday. SPY-Tagesperformance Perplexity leer (Alpaca IEX bestätigt -0,108 %). **Fallback: Alpaca-basiertes RS-63d-Screening auf 31-Titel-Universe.**
+
+**Watchlist-Screen K1-K3 (Alpaca 02.07. Close, SPY_RS_63d = +13,69 %):**
+```
+Sym  Last     EMA50   EMA200  RSI     RS_63d vs SPY  K1 K2 K3  Score  Sektor
+AMD  518,25   455,87  306,29  52,49   +132,84 %      ✓  ✓  ✓   3/3   XLK (MU!)
+ELV  417,45   383,06  352,13  62,38   +26,12 %       ✓  ✓  ✓   3/3   XLV (UNH!)
+CAT  963,60   913,55  710,44  50,92   +18,28 %       ✓  ✓  ✓   3/3   XLI leer
+MS   213,89   204,26  179,26  52,51   +15,03 %       ✓  ✓  ✓   3/3   XLF (JPM!)
+LLY 1210,79  1084,58  964,14  67,06   +13,13 %       ✓  ✓  ✓   3/3   XLV (UNH!)
+AAPL 308,24   290,47  266,57  60,74    +6,99 %       ✓  ✓  ✓   3/3   XLK (MU!)
+BAC   58,69    54,31   51,95  69,67    +5,43 %       ✓  ✓  ✓   3/3   XLF (JPM!)
+CSCO 112,69   110,91   89,36  43,44   +30,86 %       ✓  ✗  ✓   2/3   XLK
+GE   377,49   332,46  304,49  75,42   +15,33 %       ✓  ✗  ✓   2/3   XLI (RSI überkauft, Watch)
+```
+
+**Watchlist für morgen (Fr 03.07.):** MS, CAT, LLY, AMD, AAPL
+
+- **MS**  213,89 $ | XLF — Grund: NEU im Screening, K1-K3 alle ✓, RSI 52,51 mittig, RS +15 % solid; Sektor XLF nur JPM 1,01 % belegt → Diversifikations-Potential
+- **CAT** 963,60 $ | XLI — Grund: XLI-Sektor bisher leer, K1-K3 ✓; K5 carry-over ✗ (RevGrowth Q1 -1 %) → K5-Recheck morgen zwingend, evtl. Q2-Update
+- **LLY** 1210,79 $ | XLV — Grund: K5 carry-over ✓ (FwdPE 32-33, Rev +26 %), K4 wartet auf Volume-Spike; RSI 67 nahe 70-Limit — Kauf-Fenster eng
+- **AMD** 518,25 $ | XLK — Grund: höchste RS +132,84 % Semi-Rally-Rekord; ABER XLK bereits MU 8,85 % → 2. XLK-Position würde Sektor auf ~19 % heben (unter 30 % Limit, aber Konzentrations-Risiko); K5 struktr. ✗ FwdPE 35-95x → K5 Multi-Source-Recheck morgen (wie bei MU 02.07. gemacht)
+- **AAPL** 308,24 $ | XLK — Grund: solide RS +6,99 %, moderate RSI 60,74; wie AMD Sektor-Konflikt XLK; K4/K5 Open-Check morgen
+
+**Sektor-Belegung Post-Close 02.07.:** JPM XLF 1,01 % | UNH XLV 10,24 % | MU XLK 8,85 % = 20,10 % investiert. 3/8 Positions-Slots. XLI/XLE/XLU leer.
+
+**Positionen-Check zusammen mit Watchlist:** V1-V6 alle SICHER (JPM/UNH/MU), keine V5/V6-Limit-Order für morgen (MU-V5 EMA-Spread +374 sehr breit, MU-V6 RSI 48 unter 80). MU-V1-Puffer nur +2,38 % → Pre-Market Fr zwingend, weiterer Verlust >-2,4 % triggert Market Sell sofort.
+
+**Fr 03.07. Marktbedingungen:**
+- **Verkürzter HT bis 13:00 ET** wegen Independence Day Sa 04.07.
+- Volumina typisch dünn (60-70 % vs. voller HT) → K4-Hürde 120 % Avg20 schwerer erreichbar
+- Keine 13:00 ET Midday-Routine (Close ist 13:00)
+- Käufe KW27 nur noch 1 Slot frei (nach MU-Fill)
+- Guardrails-Erwartung: keine Änderung (VIXY 21,47, DD -0,65 %)
+
+**ClickUp:** [CLOSE] Tagesbilanz Task angelegt Prio 3, Push-Notification an Owner gesendet.
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-02 (Do, KW27) — Guardrails GRÜN, Buy-Scan JA, Lead ELV (K5 strukturell blockt)
 
 **Makro-Lage (Pre-Market 08:35 ET, Alpaca IEX + Perplexity):**
