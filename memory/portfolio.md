@@ -1,6 +1,50 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-02 09:43 ET (Market Open KW27 Do — MU Buy-Limit 9 Sh @ 1037,80 Day placed, K1–K5 alle ✓)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-02 13:06 ET (Midday Stop-Check — MU Order filled 10:17 ET @ 1037,72, jetzt -5,85 % Position-PnL, V1-Puffer nur +2,30 %)
+
+---
+
+## Midday 2026-07-02 13:06 ET (Do, KW27) — Stop-Check (MU FILL + STARK NEGATIV)
+
+```
+Positionen:        3/8 (MU 09:42 Order → 10:17 ET Fill @ 1037,72)
+Ø P/L (gewichtet): ~0,00 % (JPM +0,40 % / UNH +5,63 % / MU -5,85 %)
+Schlechteste:      MU -5,85 % (V1 nur +2,30 % Puffer — KRITISCH)
+Beste:             UNH +5,63 % (V1 +14,81 % Puffer)
+Stops:             alle regulär — kein V1/V2/V3/V4-Trigger
+Daily P/L:         -0,614 %   [GRÜN — vs last_equity 100.006,91]
+Equity:            99.393,02 $ (long_market_value 19.964,76, cash 79.428,26)
+```
+
+**Live-Check V1–V4 (Alpaca 13:06 ET):**
+- **JPM** 334,10 $ (Entry 332,78, P/L +0,40 %, change_today +0,01 %)
+  - V1 306,16 SICHER (+9,13 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over vom 25.06.) SICHER (+10,60 %)
+  - V3 399,34 / V4 449,25 — weit entfernt, kein TP-Trigger
+- **UNH** 424,165 $ (Entry 401,57, P/L +5,63 %, change_today -0,56 %)
+  - V1 369,44 SICHER (+14,81 % Puffer)
+  - V2 Stop 376,65 (Posit-Hoch 428,01 vom 01.07. carry-over, kein neues Hoch heute) SICHER (+12,60 %)
+  - V3 481,88 / V4 542,12 — weit entfernt, kein TP-Trigger
+- **MU** 976,71 $ (Entry 1037,72 Fill 10:17 ET, P/L -5,85 %, change_today -5,35 %) [KRITISCH]
+  - V1 954,71 (1037,72 * 0,92) SICHER **nur +2,30 % Puffer**
+  - V2 Trailing 913,19 (1037,72 * 0,88, Posit-Hoch = Fill-Preis, kein neues Hoch nach Fill) SICHER (+6,95 %)
+  - V3 1.245,26 / V4 1.401,42 — weit entfernt
+  - RSI/EMA-Check nicht Teil des Midday-Prozesses (nur Open/Close)
+
+→ **Keine Verkaufsorder.** Alle Stops regulär, aber MU-V1-Puffer sehr eng (+2,30 %).
+→ **Daily Loss Cap (-3 %) nicht erreicht** (-0,614 %). Keine Order-Stornierung.
+
+**MU-Fill-Detail (Alpaca):**
+- Order-ID: 6c45f431-facd-4979-8c01-d0976e2f2474
+- Filled_at: 2026-07-02T14:17:09 UTC (10:17 ET) @ 1037,72 avg (9/9 Sh)
+- Cost-Basis: 9.339,48 $ (9,34 % Portfolio at fill)
+- Intraday-Move seit Fill: -5,85 % → MU crashte nach Fill in unter 3 h
+- V1 Standardformel -8 % vom Fill: 954,71 $ → aktuell 976,71 → **+22,00 $/+2,30 % Puffer bleibt**
+- Käufe KW27 jetzt 1/2
+
+**ClickUp:** CRITICAL Alert wegen MU V1-Nähe versucht (Prio 2) → Push-Notification an Owner primär (ITEM_246 Tier-Limit carry-over).
+
+**Nächste Routine:** 16:00 ET Market Close (MU-V5/V6 dann geprüft, evtl. V1 bereits ausgelöst wenn weiterer Verlust).
 
 ---
 
