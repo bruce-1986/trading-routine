@@ -17,7 +17,11 @@
 
 ## Offene Orders (pending)
 
-_Keine — AVGO-Sell V1 (Order c5b9adf0) am 26.06. 09:33 ET 17/17 filled @ $368,34, Realisierter Verlust -596,19 $ (-8,69 % vs Entry $403,41). JPM und UNH V1–V6 alle SICHER._
+| Symbol | Side | Type  | Qty | Limit    | TIF | Status | Placed              | Order-ID   |
+|--------|------|-------|-----|----------|-----|--------|---------------------|------------|
+| MU     | BUY  | LIMIT | 9   | 1.037,80 $ | DAY | NEW    | 2026-07-02 09:42 ET | 6c45f431   |
+
+_MU-Order platziert 02.07. 09:42 ET nach Market-Open-Scan 5/5 K-Signale ✓ (K5 Multi-Source Yahoo FwdPE 6,73 / MarketBeat 10,41 / TTM 23,7 alle ≤35, RevGrowth +56 % ≥10 %). Live 09:37 ET 1.051,88 → Order fillt nur bei Pullback ≤1.037,80. Max-Cost 9.340,20 $ (9,34 % Portfolio). JPM und UNH V1–V6 alle SICHER._
 
 ---
 
