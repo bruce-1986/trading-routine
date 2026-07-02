@@ -4,6 +4,110 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-07-02 (Do, KW27) — Guardrails GRÜN, Buy-Scan JA, Lead ELV (K5 strukturell blockt)
+
+**Makro-Lage (Pre-Market 08:35 ET, Alpaca IEX + Perplexity):**
+```
+VIX (Spot):         16,70          [GRÜN — sehr entspannt, <25 → 10 % Sizing erlaubt; Perplexity/Investing.com Live]
+SPY Quote 08:35 ET: bid 748,95 / ask 749,15 → Mid 749,05 $ (+0,454 % vs Mi-Close 745,665)
+SPY 1m-Bar 08:34:   748,97 $ (n=1 Trade, v=100 — dünn Premarket)
+VIXY Close 01.07.:  21,47 $         (+0,77 % vs Di 21,305)
+VIXY Bid 20:00 UTC: 20,86            → Spot ~17 konsistent
+10Y Treasury Yield: n/v (Perplexity leer — nicht handlungsblockierend)
+Crash-Filter:       NEIN (SPY Mi -0,13 % → weit von -5 %)
+Markt-Status:       CLOSED (next_open 09:30 ET)
+```
+
+**Alpaca Account-Status (Konsistenz-Check):**
+```
+Equity:             100.019,54 $    (Pre-Market Mark, vs Mi-Close 100.006,91 → +12,63 $ / +0,013 % Settlement-Tick)
+Cash:                88.767,74 $    (identisch zu Memory)
+Last_Equity:        100.006,91 $    (Mi-EOD-Mark; Memory notierte 100.006,57 → +0,34 $ After-Hours-Tick akzeptabel)
+Long Market Value:   11.251,80 $    (JPM 1.011,00 + UNH 10.240,80)
+Status:              ACTIVE         (trading_blocked=false, account_blocked=false)
+DayTrade Count:      0 / PDT False
+Buying Power:       386.576,00 $
+Open Orders:         0
+Positions Live:      JPM 337,00 $ (P/L +1,27 %, change_today +0,88 %)
+                     UNH 426,70 $ (P/L +6,26 %, change_today +0,04 %)
+```
+
+**Guardrails-Check (alle 8 Hierarchien):**
+```
+1. Daily Loss Cap (-3 %/Tag):    +0,013 % (100.019,54 / 100.006,91) [GRÜN]
+2. Weekly Loss Cap (-5 %/Woche): -0,005 % (vs KW27 Mo-Basis 100.024,25 = Fr-Close) [GRÜN]
+3. Drawdown vom ATH:             -0,047 % (vs ATH 100.066,47) [GRÜN — Alarm bei -15 %]
+4. Drawdown-Stopp -20 %:         INAKTIV
+5. Crash-Filter (SPY -5 %):      INAKTIV (Mi -0,13 %)
+6. VIX-Filter (>30):             INAKTIV (16,70 → sehr klar GRÜN → 10 % Sizing)
+7. Earnings-Blackout (3 HT):     KEINER — JPM 15.07. (13d, Perplexity heute) | UNH 16.07. (14d carry-over — Perplexity heute N/A)
+8. Max neue Käufe KW27:          0/2 genutzt → 2 frei (Do 02.07. ist ggf. letzter regulärer HT KW27, Fr 03.07. NYSE-Closure für Independence Day Sa 04.07.)
+```
+→ **STATUS: GRÜN auf allen 8 Levels.**
+
+**Positionen Signal-Recheck (Pre-Market, V1–V6 carry-over Close 01.07. + Live-Adjustment):**
+```
+JPM    337,00 $ — V1 306,16 SICHER (+10,08 %) | V2 ~302,11 SICHER (+11,55 %) | V5 EMA50 316,48>EMA200 308,96 ✓ | V6 RSI 65,18 / RS_4w +12,80 % → KEIN Trigger
+UNH    426,70 $ — V1 369,44 SICHER (+15,50 %) | V2 376,65 (NEU vom 01.07.) SICHER (+13,29 %) | V5 EMA50 391,55>EMA200 347,22 ✓ | V6 RSI 63,46 / RS_4w +14,68 % → KEIN Trigger
+```
+→ Keine Verkaufsorder pending. EMA50>EMA200 für beide sehr komfortabel. RSI weit unter 80, RS positiv. UNH-V2 auf 376,65 (getrailt nach Posit-Hoch 428,01 vom 01.07.).
+
+**Earnings-Verifikation (Perplexity 02.07.):**
+- **JPM Q2 2026: 2026-07-15 AMC (Perplexity heute)** — 13 Tage entfernt → KEIN Blackout
+  - **Diskrepanz-Note:** Pre-Market 01.07. hatte "07-14 CONFIRMED via Business-Wire"; heute Perplexity 07-15. Beide >3 HT, nicht handlungskritisch. Verifikation Pre-Market 14.07. zwingend.
+- UNH Q2 2026: Perplexity heute N/A → carry-over 2026-07-16 (14 Tage) → KEIN Blackout
+- Weitere KW28-Earnings (nicht in Positionen): Citigroup 14.07., Wells Fargo 14.07., Goldman Sachs 14.07., Morgan Stanley 14.07. — Banken-Cluster
+- → Standard V1 -8 % bleibt für JPM + UNH, kein Stop-Tightening.
+
+**Top-News / Makro heute (Perplexity 02.07.):**
+- Perplexity Datum-in-Zukunft-Bug carry-over: SPY-Premarket-%, Top-3-News, US-Kalender alle **N/A**
+- **Keine großen Makro-Releases** dokumentiert (CPI/PCE/NFP/ISM/FOMC nicht auf Kalender via Perplexity)
+- VIX-Spot 16,70 via Investing.com/Yahoo-Live-Zitation — Vola-Entspannung setzt sich fort (vs 01.07. 16,3–16,4)
+- 10Y Treasury tagesgenauer Tick fehlt (Perplexity leer — nicht handlungsblockierend)
+
+**Watchlist-Status (Carry-over Close 01.07., Alpaca IEX):**
+```
+Symbol | Close   | K1     | K2 RSI | K3 RS_63d | K4 Vol% | K5                                    | Score
+ELV    |  415,95 | ✓      | ✓ 59,2 | ✓ +27,3 % | ✓ 175 % | ✗ RevGrowth Q1 +1,5 % (Perplexity heute) | 4/5 LEAD — K5 strukturell BLOCKS
+CAT    |  991,98 | ✓      | ✓ 55,4 | ✓ +25,3 % | ✓ 144 % | ✗ RevGrowth Q1 -1 %                     | 4/5 BLOCKS (K5)
+AMD    |  540,89 | ✓      | ✓ 58,1 | ✓ +151,4%| ✓ 128 % | ✗ FwdPE 35–95x                          | 4/5 BLOCKS (K5)
+MU     | 1032,64 | ✓      | ✓ 53,8 | ✓ +191,2%| ✗ 108 % | unklar (Perplexity leer)                | 3/5 K4+K5 warten
+LLY    | 1192,14 | ✓      | ✓ 66,1 | ✓ +14,9 % | ✗  72 % | ✓ FwdPE 32,4–33 / Rev +26 %             | 4/5 K4 warten
+INTC   |  127,08 | ✓      | ✓ 52,7 | ✓ +173,3%| ✗  73 % | ✗ FwdPE >120 (Multi-Src)                | 3/5 BLOCKS strukturell
+```
+
+**Perplexity K5-Recheck ELV (02.07.):**
+- FwdPE ~10,1 (Q1-2026-Prognose $18,99 EPS bei Preisniveau $192 laut Perplexity — Achtung! Perplexity zitiert offenbar veralteten Preis $192 statt Live 415,95; TTM/FY-EPS-Schätzung ungenau). MarketBeat/Yahoo 30.06. hatten FwdPE 13,9–14,6 → K5 FwdPE-Sub-Kriterium ✓ (klar ≤35)
+- **Q1 2026 Umsatzwachstum YoY: +1,5 % operativ / +2,64 % gesamt** — Perplexity heute bestätigt Mi-Wert. K5 RevGrowth-Hürde ≥10 % strukturell nicht erfüllt.
+- 2026 EPS-Guidance angehoben auf $26,75 (Anhebung am 22.04.2026, carry-over) — Guidance hilft **nicht** für K5, weil Strategie hart Umsatzwachstum YoY prüft, nicht Guidance-EPS.
+- Q2 Earnings-Datum: **Mitte August 2026** (Perplexity heute, vs. Mi-Schätzung "~16.07."). → Bei Kauf morgen kein 3-HT-Blackout aktiv.
+
+**Entscheidung 09:30 ET Market Open:**
+- **Buy-Scan JA** — alle 8 Guardrails GRÜN, Pre-Market moderate risk-on (+0,45 %), VIX sehr entspannt (16,70), keine Makro-Release-Störung heute
+- **Lead-Kandidat: ELV (4/5 ✓, K5 RevGrowth strukturell blockt)**
+  - K5-Override wäre Strategie-Bruch → **KEIN Kauf ELV** (Strategie-Lock)
+  - K1 ✓ EMA50 384,33>EMA200 348,01 | K2 ✓ RSI 59,2 | K3 ✓ RS_63d +27,3 % | K4 ✓ Vol 175 % Avg20 | K5 ✗ RevGrowth 1,5 % <10 %
+- **Backup-Kandidaten (bei Live-Vol-Push mit K5 ✓):**
+  - LLY 1.192,14 (K4 warten — Vortag 72 % Vol; heute Live-Vol-Trigger bei ≥120 % Avg20 aktivierbar; K5 ✓)
+  - MU 1.032,64 (K5-Recheck Perplexity Live zwingend, K4 Vol-Trigger 108 % → knapp)
+- Fallback: falls kein Kandidat alle K5-Kriterien trifft → 0/2 Slots bleiben frei (Bot bleibt Long JPM+UNH, Cash 88,76 %)
+- Sektor-Check ELV: XLV (mit UNH → 2 Positionen XLV, ~22 % Gesamt bei Kauf → OK <30 %-Limit), Earnings Mid-August (>3 HT)
+- Max 2 Käufe KW27 — 2 Slots verbleiben
+
+**Reconciliation Memory ↔ Alpaca:**
+- portfolio.md Mi-Close 100.006,57 vs Alpaca last_equity 100.006,91 = +0,34 $ After-Hours-Tick (akzeptabel)
+- cash 88.767,74 identisch
+- Positionen-Anzahl & avg_entry konsistent (JPM 3 Sh @ 332,78 / UNH 24 Sh @ 401,57)
+
+**Datenqualitäts-Hinweis:**
+Perplexity Datum-in-Zukunft-Bug bleibt: SPY-Premarket, US-Kalender, News-Top-3, 10Y Treasury alle N/A. VIX 16,70 verifizierbar via Investing.com. Perplexity ELV FwdPE-Preisniveau ($192) veraltet; Live-Preis (415,95) korrekt via Alpaca IEX — für K5-Filter zählt RevGrowth (unabhängig davon nicht erfüllt).
+
+**ClickUp:** ROUTINE Normal-Alert Versuch (Prio 4) → ITEM_246 "Max usage for custom task types reached" (Tier-Limit-Issue carry-over seit 26.06.). Fallback: Push-Notification an Owner + Memory-Log primär.
+
+**Nächste Routine:** 09:30 ET Market Open — Buy-Scan ELV (K5-Blocker akzeptieren), Backup LLY (K4-Live-Vol), Backup MU (K5-Recheck).
+
+---
+
 ## Market Close 16:04 ET — 2026-07-01 (Mi, KW27) — Tagesbilanz + Watchlist Do 02.07.
 
 **Tages-Performance (Alpaca + IEX-Bars Close 16:00 ET):**
