@@ -1,6 +1,72 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-02 13:06 ET (Midday Stop-Check — MU Order filled 10:17 ET @ 1037,72, jetzt -5,85 % Position-PnL, V1-Puffer nur +2,30 %)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-02 16:02 ET (Market Close — MU -5,75 % Position-PnL, V1-Puffer +2,38 %, aber V1-V6 ALLE SICHER für JPM/UNH/MU)
+
+---
+
+## Market Close 2026-07-02 16:02 ET (Do, KW27) — Tagesbilanz
+
+```
+Gesamtwert:        99.413,51 $   (Alpaca equity Close, vs last_equity 100.006,91)
+Cash:              79.428,26 $   (79,90 %)
+Investiert (MV):   19.985,25 $   (20,10 %, JPM 1.003,41 + UNH 10.182,72 + MU 8.802,00 [nach 5,75% Intraday-Drop])
+P/L heute:           -593,40 $    (-0,593 %)
+Alpha vs SPY:        -0,485 %     (SPY -0,108 % via Alpaca IEX 745,665 → 744,86)
+ATH:              100.066,47 $    DD: -0,653 % [GRÜN — Alarm bei -15 %]
+Weekly P/L KW27:     -0,611 %     [GRÜN — Mo-Basis = Fr-Close 100.024,25, Schwelle -5 %]
+Käufe KW27:           1/2         (MU gefillt 02.07. 10:17 ET; 1 frei — Fr 03.07. verkürzter HT bis 13:00 ET)
+Pending Orders:       0           (keine V5/V6-Verkaufsorder, kein neuer K5-Kandidat)
+VIXY-Ref:          21,47 $ Vortag → Spot ~16-17 [GRÜN → 10 % Sizing]
+Guardrails:        Daily -0,59 % | Weekly -0,61 % | DD -0,65 % | VIX ~17 | Käufe 1/2 → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 16:00 ET Close):**
+- **JPM**  334,47 $ (Entry 332,78, P/L +0,51 %, change_today +0,12 %)
+  - V1 306,16 SICHER (+8,46 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over 25.06., heute Hoch nur 337,89) SICHER (+9,68 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+  - V5 EMA50 315,32 > EMA200 306,00 ✓ (Spread +9,32 stabil)
+  - V6 RSI(14) 62,83 / RS_4w vs SPY +12,30 % → SICHER (RSI <80, RS positiv)
+- **UNH**  424,28 $ (Entry 401,57, P/L +5,66 %, change_today -0,53 %, NEUES Posit-Hoch 430,095 heute)
+  - V1 369,44 SICHER (+12,93 % Puffer)
+  - V2 Stop **NEU** 378,48 (Trail nach neuem Hoch 430,095, vorher 376,65) SICHER (+10,79 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+  - V5 EMA50 385,12 > EMA200 342,87 ✓ (Spread +42,25 sehr komfortabel)
+  - V6 RSI(14) 64,76 / RS_4w vs SPY +13,97 % → SICHER (RSI <80, RS positiv)
+- **MU**  978,00 $ (Entry 1037,72 Fill 10:17 ET, P/L -5,75 %, change_today -5,26 %) [KRITISCH]
+  - V1 954,71 SICHER **nur +2,38 % Puffer** [KRITISCH — <3 % Puffer]
+  - V2 Stop 913,39 (Posit-Hoch 1037,94 post-fill, essentially = Fill-Preis) SICHER (+6,61 %)
+  - V3 1245,26 / V4 1400,92 — weit entfernt
+  - V5 EMA50 882,15 > EMA200 507,23 ✓ (Spread +374,92 — Golden Cross sehr breit, KEIN Death-Cross-Risiko kurzfristig)
+  - V6 RSI(14) 48,57 / RS_4w vs SPY -8,42 % → NICHT ausgelöst (RSI <80, obwohl RS negativ; V6 verlangt BEIDES)
+
+**Verkaufssignal-Check V1–V6: ALLE SICHER für alle 3 Positionen.**
+→ **Keine Limit-Order für morgen vorbereitet.** Pending Orders bleiben 0.
+→ MU-V1-Puffer bleibt eng (+2,38 %). Pre-Market-Check morgen zwingend, V1-Trigger bei MU <954,71 löst Market-Order sofort aus.
+
+**Schlechteste Position:** MU -5,75 % (Fill-Day-Drop, RSI 48,57 aber V5 sehr sicher, V6-Trigger benötigt zusätzlich RSI>80)
+**Beste Position:** UNH +5,66 % (change_today -0,53 % nach Rekord-Vortag, V2 hochgetrailt auf 378,48)
+
+**Sektor-Update:** JPM XLF 1,01 % + UNH XLV 10,24 % + MU XLK 8,85 % → Total 20,10 % investiert. XLK 8,85 % (unter 30 % Sektorlimit). 3/8 Positions-Slots belegt.
+
+**Daily Loss Cap (-3 %):** -0,593 % → GRÜN, kein Eingriff.
+**Weekly Loss Cap (-5 %):** -0,611 % → GRÜN, keine Stornierungen.
+**ATH-Drawdown (-15 % Alarm / -20 % Stopp):** -0,653 % → GRÜN.
+
+**Watchlist für morgen (Fr 03.07. verkürzt bis 13:00 ET):**
+- **MS**  213,89 $ | XLF NEU | K1✓K2✓(RSI 52,51)K3✓(RS+15,03%) | K4/K5 Open-Check
+- **CAT** 963,60 $ | XLI leer | K1✓K2✓(RSI 50,92)K3✓(RS+18,28%) | K5 carry-over ✗ (RevGrowth -1%)
+- **LLY** 1210,79 $ | XLV | K1✓K2✓(RSI 67,06)K3✓(RS+13,13%) | K5✓ carry-over, K4 wartet
+- **AMD** 518,25 $ | XLK bereits MU | K1✓K2✓(RSI 52,49)K3✓(RS+132,84% — Semi-Rekord) | K5 struktur. ✗ FwdPE — Multi-Source-Recheck
+- **AAPL** 308,24 $ | XLK bereits MU | K1✓K2✓(RSI 60,74)K3✓(RS+6,99%) | K4/K5 Open-Check
+
+**Fr 03.07. Kontext:** Verkürzter HT bis 13:00 ET (Independence Day Sa 04.07.). Volumina dünner, K4-Hürde kritischer. Käufe KW27 nur noch 1 Slot frei (nach MU-Fill). Weiteres Auge auf MU-V1-Puffer (+2,38 %) — Break unter 954,71 löst Market Sell sofort aus.
+
+**ClickUp:** [CLOSE] Tagesbilanz Task angelegt (Prio 3 wg. leicht negativer Performance) und Push-Notification an Owner gesendet. ITEM_246 Tier-Limit Custom-Task-Types carry-over — Standard-Task-Erstellung funktioniert.
+
+> **Entscheidung:** Portfolio stabil bei -0,593 % nach MU-Fill+Intraday-Drop, klar unter Guardrail-Schwellen. Kein V1-V6-Verkauf für morgen — alle 3 Positionen halten. MU-Case: V1 sehr eng (+2,38 %), aber V5 Golden Cross sehr breit (+374 EMA-Spread) und V6 RSI 48 unter Trigger → strategiekonformes Halten. Alpha -0,485 % vs SPY erwartbar (MU-Konzentrations-Effekt +9,3 % Portfolio bei -5,75 % Move). Watchlist prioritisiert MS (XLF-Diversifikation) und CAT (XLI-Slot noch leer) für morgen — beide mit K5-Recheck.
+> **Lessons-Tag:** K5-Multi-Source K5 klappte zwar bei MU (5/5), aber Fill-Day-Move -5,75 % zeigt: K1-K5 Kauf-Signale schützen NICHT vor Intraday-Volatilität. Positive Anmerkung: V1 -8 % Standardformel absorbiert -5,75 % Move genau wie designed — Puffer noch da. Timing-Erkenntnis: Limit-Order +0,5 % über Vortagesschluss ist "Chase-safe", aber wenn Gap-Down einsetzt (MU eröffnete +1,86 %, fiel dann -5,26 %) landet man am ungünstigen Punkt der Range.
+> **Nächste Routine:** Fr 2026-07-03 08:30 ET Pre-Market Check (verkürzter HT bis 13:00 ET, keine 13:00 Midday-Routine da Close 13:00).
 
 ---
 
