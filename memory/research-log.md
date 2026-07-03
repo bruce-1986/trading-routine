@@ -4,6 +4,86 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-07-03 (Fr, KW27) — **NYSE GESCHLOSSEN** (Independence Day observed), Guardrails GRÜN, kein Scan
+
+**KORREKTUR zur Memory-Annahme:** Alpaca `/v2/clock` liefert `is_open:false`, `next_open:2026-07-06T09:30-04:00`. NYSE-Kalender-Query 03.07.→06.07. liefert NUR den Eintrag 2026-07-06 (Mo). → **Heute ist KEIN Handelstag, auch kein verkürzter HT.** Die Notiz vom Close 02.07. "verkürzter HT bis 13:00 ET" war falsch — NYSE-Regel: fällt 04.07. auf Samstag, wird der Feiertag auf Freitag 03.07. verschoben (nicht verkürzt). Perplexity bestätigt: "US stock market **CLOSED** today (Friday, July 3, 2026) — Independence Day observed."
+
+**Makro-Lage (08:35 ET, Perplexity):**
+```
+VIX Spot:            16,15         [GRÜN — sehr entspannt, 02.07. Close via Perplexity; kein Live-Update mangels Handel]
+SPY Premarket:       N/A            (Markt geschlossen, kein Premarket-Handel)
+10Y Treasury Yield:  N/A            (Perplexity leer)
+Crash-Filter:        INAKTIV        (SPY 02.07. -0,108 % → weit von -5 %)
+NYSE-Status:         GESCHLOSSEN    (next_open 2026-07-06 09:30 ET)
+```
+
+**Alpaca Account (Konsistenz-Check):**
+```
+Equity:              99.420,34 $    (= last_equity, kein Handel → 0 % day-change)
+Cash:                79.428,25 $    (identisch zu Memory 79.428,26; -0,01 $ Rundung)
+Long Market Value:   19.992,09 $    (After-Hours-Marks: JPM 1.003,41 / UNH 10.208,64 / MU 8.780,04)
+Portfolio-Value:     99.420,34 $    (vs Memory Close 02.07. 99.413,51 → +6,83 $ After-Hours-Tick, akzeptabel)
+Status:              ACTIVE / trading_blocked=false / PDT=false / daytrade_count=0
+Buying Power:        373.690,85 $
+Open Orders:         0
+```
+
+**Positionen (After-Hours-Marks, KEIN Handel möglich heute):**
+- **JPM** 334,47 $ (P/L +0,51 %, ct 0) — carry-over vom 02.07. Close, keine Änderung
+- **UNH** 425,36 $ (P/L +5,92 %, ct 0) — +0,25 % After-Hours-Tick vs Close 424,28 (kein neuer Trigger)
+- **MU**  975,56 $ (P/L -5,99 %, ct 0) — **-0,25 % After-Hours-Tick vs Close 978,00**; V1 954,71 → Puffer **+2,14 %** (Close war +2,38 %) → weiter eng, aber KEIN Trigger möglich mangels Handel
+
+**Guardrails-Check (8 Hierarchien):**
+```
+1. Daily Loss Cap (-3 %/Tag):     0,000 % (kein Handel)                 [GRÜN]
+2. Weekly Loss Cap (-5 %/Woche): -0,604 % (99.420,34 vs KW27-Basis 100.024,25) [GRÜN]
+3. Drawdown vom ATH:             -0,650 % (vs ATH 100.066,47)           [GRÜN — Alarm bei -15 %]
+4. Drawdown-Stopp -20 %:          INAKTIV
+5. Crash-Filter (SPY -5 %):       INAKTIV (02.07. -0,108 %)
+6. VIX-Filter (>30):              INAKTIV (16,15)                       [GRÜN → 10 % Sizing]
+7. Earnings-Blackout (3 HT):      KEINER — JPM 14.07. BMO (Perplexity heute CONFIRMED); UNH 16.07. carry-over; MU Q4 ~Ende Sept
+8. Max neue Käufe KW27:           1/2 (MU 02.07.) → 1 Slot theoretisch frei, aber KW27 endet heute → praktisch nicht mehr nutzbar
+```
+→ **STATUS: GRÜN auf allen 8 Levels.**
+
+**V1–V6-Recheck (After-Hours, keine Order möglich):**
+- JPM/UNH: alle V1–V6 SICHER wie Close 02.07. (V-Trigger-Levels unverändert)
+- **MU: V1-Puffer After-Hours +2,14 %** (975,56 vs V1 954,71). V5 EMA-Spread +374 sehr breit, V6 RSI 48 unter 80 → keine Trigger, aber V1 kritisch eng.
+- **Kein Order-Placement möglich (Alpaca akzeptiert Orders nur außerhalb Feiertag → Mo 06.07. Pre-Market).**
+
+**Earnings-Verifikation (Perplexity 03.07.):**
+- JPM Q2 2026: **2026-07-14 BMO (CONFIRMED)** — vorher Pre-Market 02.07. hatte "07-15 AMC". Diskrepanz erneut, aber weiter 6 HT entfernt (ab Mo 06.07. gezählt: Mo 06, Di 07, Mi 08, Do 09, Fr 10, Mo 13, Di 14 = 7 HT). 3-HT-Blackout aktiv ab **09.07. Close** (Do). → JETZT NICHT AKTIV.
+- UNH Q2 2026: Perplexity UNCONFIRMED → carry-over 2026-07-16 (7 HT ab Mo) → 3-HT-Blackout aktiv ab **13.07.** → JETZT NICHT AKTIV.
+- MU Q4 FY2026: Perplexity UNCONFIRMED → typisch Ende September → weit weg.
+
+**News overnight (Perplexity):**
+- Chipmakers-Selloff wegen AI-Buildout-Nachhaltigkeitsdebatte (MU-relevanter Kontext, RS +191 % 63d — Sektor-Sensitivität hoch)
+- S&P 500 2-Wochen-Hoch, DJIA neues ATH (02.07. Close, kein Handel heute)
+- Fed-Rate-Hike-Sorgen abgeflaut nach schwachem Jobs-Bericht (10Y-Signal indirekt)
+
+**Watchlist (carry-over für Mo 06.07.):**
+- MS 213,89 | XLF-Diversifikation, K1-K3 ✓, K4/K5 Open-Check
+- CAT 963,60 | XLI-Slot leer, K1-K3 ✓, K5 RevGrowth-Recheck
+- LLY 1210,79 | XLV, K5 ✓, K4 wartet
+- AMD 518,25 | XLK (Sektor-Konflikt MU), K5 FwdPE-Recheck; **AI-Chip-Selloff-Kontext beachten**
+- AAPL 308,24 | XLK (Sektor-Konflikt MU), K4/K5 Open-Check
+
+**Datenqualität:** Alpaca Clock+Calendar sind Ground-Truth für Marktstatus. Perplexity bestätigt NYSE-Closure. Perplexity SPY-Premarket + 10Y = N/A (durch geschlossenen Markt bedingt, kein Bug).
+
+**Entscheidung Fr 03.07.:**
+- **Kein Market-Open-Scan** (Markt geschlossen)
+- **Keine Midday-Routine** (Markt geschlossen)
+- **Keine Market-Close-Routine** (Markt geschlossen, keine Bewegung → Portfolio bleibt auf 02.07.-Close-Basis)
+- Käufe KW27 abgeschlossen bei 1/2 (nur MU gefillt)
+- MU-V1-Puffer bleibt kritische Watch-Position → **Pre-Market Mo 06.07. 08:30 ET zwingend**, danach Market Sell sofort möglich falls Gap-Down MU <954,71
+- Weekly Review Fr 03.07. 17:00 ET (per Zeitplan) — heute noch fällig, aber ohne Intraday-Bewegung reduziert sich der Umfang auf KW27-Bilanz (MU-Fill-Analyse zentral)
+
+**Nächste Routine:** Mo 06.07. 08:30 ET Pre-Market Check (KW28 startet, Käufe-Zähler reset 0/2, MU-V1-Puffer weiter überwachen); dazwischen Fr 03.07. 17:00 ET Weekly Review.
+
+**ClickUp:** ROUTINE Log-Notification (Prio 4) siehe unten.
+
+---
+
 ## Market Close 16:02 ET — 2026-07-02 (Do, KW27) — Watchlist für Fr 03.07. (verkürzter HT bis 13:00 ET)
 
 **Tagesbilanz:** Portfolio -0,593 % (-593,40 $) | SPY -0,108 % | Alpha -0,485 % | Positionen 3/8 (JPM +0,51 % / UNH +5,66 % / MU -5,75 % Fill-Day) | Käufe KW27 1/2 nach MU-Fill | Guardrails alle GRÜN.
