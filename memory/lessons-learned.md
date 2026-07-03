@@ -136,6 +136,20 @@ Konsequenz: Routine-Notifications gingen seit Start nicht raus.
 Erster erfolgreicher Task: `869dtg866` (Holiday-Notification 19.06.).
 TODO: env-Variable in Setup-Script korrigieren, damit Stripping nicht mehr nötig ist.
 
+### 2026-07-03 — ClickUp ITEM_246 "Max usage for custom task types reached"
+Was ist passiert: Standard-POST `/list/{id}/task` ohne `custom_item_id`-Feld liefert
+seit Wochen `err: "Max usage for custom task types reached"` (siehe portfolio.md
+Einträge 26.06.–02.07.). Nur Push-Notification an Owner als Fallback möglich.
+Warum: Ohne `custom_item_id` verwendet ClickUp offenbar den Listen-Default-Type,
+der auf einen kostenpflichtigen Custom-Type gemappt ist und das Free/Unlimited-Tier-
+Kontingent bereits verbraucht hat.
+Konsequenz: [CLOSE]/[TRADE_BUY]/[STOP_LOSS]-Tasks wurden mehrfach nicht angelegt,
+Owner nur per Push-Notification informiert (nicht dauerhaft in ClickUp gespeichert).
+Änderung: **Ab sofort in JEDEM ClickUp-Task-Payload `"custom_item_id": null` mitsenden.**
+Damit wird explizit der Standard-Task-Type ("task") erzwungen und der Tier-Limit-Guard
+umgangen. Erster erfolgreicher Task mit Workaround: `869dzrdre` (Close-No-Op 03.07.).
+TODO: notify-skill.md Payloads aktualisieren (alle Beispiele mit `custom_item_id: null`).
+
 ```
 Template:
 ### [DATUM] — [FEHLER/PROBLEM]
