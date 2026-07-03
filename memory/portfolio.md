@@ -1,6 +1,36 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-02 16:02 ET (Market Close — MU -5,75 % Position-PnL, V1-Puffer +2,38 %, aber V1-V6 ALLE SICHER für JPM/UNH/MU)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-03 13:07 ET (Midday NO-OP — NYSE geschlossen Independence Day observed, kein Trade möglich, Guardrails GRÜN, MU-V1 After-Hours-Puffer +2,42 %)
+
+---
+
+## Midday 2026-07-03 13:07 ET (Fr, KW27) — NO-OP (NYSE GESCHLOSSEN Independence Day observed)
+
+```
+Alpaca clock:      is_open=false | next_open Mo 06.07. 09:30 ET
+Positionen:        3/8 (JPM/UNH/MU — carry-over Close 02.07.)
+Equity:            99.420,34 $ (last_equity 99.420,34 → 0,00 % intraday, keine Bewegung mangels Handel)
+Long MV:           19.992,09 $ (vs Close 02.07. 19.985,25 → +6,84 $ Mark-Refresh, essentially unverändert)
+Cash:              79.428,25 $ (79,89 %)
+Daily P/L:         +0,000 %   [GRÜN — kein Handel, last_equity = equity]
+Weekly P/L KW27:   -0,608 %   [GRÜN — vs Mo-Basis 100.024,25]
+ATH:              100.066,47 $  DD: -0,650 % [GRÜN]
+Guardrails:        Daily 0,00 % | Weekly -0,61 % | DD -0,65 % | Käufe 1/2 → ALLE GRÜN
+```
+
+**V1–V4-Check: NICHT möglich** (kein Live-Handel, keine Trigger-Auswertung, keine Order-Platzierung).
+
+**Marks carry-over Close 02.07. (Alpaca Mark-Refresh minimal):**
+- JPM 334,49 $ (Entry 332,78, P/L +0,51 %) — V1 306,16 SICHER (+8,47 % Puffer)
+- UNH 424,28 $ (Entry 401,57, P/L +5,66 %) — V1 369,44 SICHER (+12,93 % Puffer), V2 378,48 SICHER (+10,79 %)
+- MU 977,92 $ (Entry 1.037,72, P/L -5,76 %) — V1 954,71 SICHER **+2,42 % Puffer** [KRITISCH bleibt — wichtig für Mo Open]
+
+**Daily Loss Cap (-3 %):** 0,00 % → GRÜN, keine Order-Stornierung, keine offenen Limit-Orders vorhanden.
+
+**ClickUp:** kein Alert (keine Stops, kein Cap, kein Handel → Logging-Disziplin gewahrt).
+
+> **Entscheidung:** No-Op — Feiertagsschluss. Nächste substanzielle Prüfung: **Mo 2026-07-06 08:30 ET Pre-Market Check (KW28 Start)**. MU-V1-Puffer bleibt eng (+2,42 %) → Gap-Down-Risiko am Mo-Open beobachten, V1-Trigger bei MU <954,71 löst Market-Sell sofort aus.
+> **Nächste Routine:** Fr 2026-07-03 17:00 ET Weekly Review (KW27-Bilanz — 1/2 Käufe genutzt, MU-Fill -5,75 %, Realisiert -596 $ carry-over AVGO).
 
 ---
 
