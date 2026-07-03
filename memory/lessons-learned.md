@@ -6,6 +6,58 @@
 
 ## Was funktioniert (bestätigte Patterns)
 
+### KW27 — 2026-07-03 — Weekly Review
+
+```
+Performance:    -0,604 %    | Alpha vs SPY: -2,73 %   (SPY +2,127 %; Mo-Basis Fr-Close 26.06. 729,35 → Do 02.07. Close 744,86; Fr 03.07. NYSE-Feiertag)
+Seit Bot-Init (31.05.26): -0,580 % | YTD Depot: -0,580 % | SPY YTD ~+9,81 % (Alpaca IEX YE25 678,32 → 744,86) → YTD-Alpha -10,39 % (Bot lebt 33 Tage, ~80 % Cash)
+
+Beste Position diese Woche:    JPM +1,81 %  (26.06.-Close 328,53 → 03.07.-Close 334,47; Financials-Rebound Mi +2,08 %)
+Schlechteste Position:         MU -5,99 %   (Fill 02.07. @ 1.037,72 → 03.07.-Close 975,56, Fill-Day-Drop)
+Zusatz UNH: -0,62 % KW27-Delta (26.06.-Close 428,00 → 03.07.-Close 425,36); kumuliert seit Entry +5,92 %
+
+Käufe diese Woche:   1  (MU Do 02.07., 9 Sh @ 1.037,72, K1-K5 5/5 mit Multi-Source-K5)
+Verkäufe:            0
+Stop-Loss-Trigger:   0
+Win-Rate KW27:       n/a (keine geschlossenen Trades in KW27)
+Ø Haltedauer:        n/a (MU offen, 1 Handelstag alt)
+Handelstage:         4 von 5 (Fr 03.07. NYSE-Feiertag Independence Day observed → SPY-Kalender Mo-Do)
+```
+
+**Was gut lief:**
+- **K5 Multi-Source-Verifikation als Filter bestätigt:** MU-Kauf 5/5-Signal mit 3 Quellen (Yahoo FwdPE 6,73 / MarketBeat 10,41 / TTM implied 23,7 → alle ≤35) + RevGrowth +56 % → klar unter Filter-Schwelle. Selektions-Disziplin verhindert CRWD/INTC-Wiederholung (beide K5 ✗ FwdPE >>35 diese Woche).
+- **V1-Standardformel absorbiert Intraday-Vola wie designed:** MU-Fill-Day-Drop -5,75 % Do → V1-Puffer noch +2,38 % Close 02.07. Formel „−8 % vom Fill" hat exakt den Puffer geliefert, den sie soll — keine Vorzeitige-Trigger, kein Override nötig.
+- **JPM Financials-Rebound Mi +2,08 % + UNH neues Posit-Hoch (428,01 / 430,095) trafen die richtigen Sektoren:** XLF #1 (+3,86 %) und XLV #4 (+2,18 %) waren KW27 im Plus, Bot war dort mit ~11 % investiert.
+- **V2-Trail UNH sauber hochgesetzt:** 376,65 → 378,48 nach Do-Hoch 430,095. Trailing-Disziplin ohne manuelles Eingreifen.
+- **ClickUp-Tier-Limit-Workaround gefunden:** `custom_item_id: null` im POST-Payload umgeht ITEM_246 „Max usage for custom task types reached". Erster erfolgreicher Task 03.07. (869dzrdre). Ab sofort Standard in notify-skill.md.
+
+**Was nicht gut lief:**
+- **MU-Timing miserabel:** Limit +0,5 % über Vortag → Fill 10:17 ET @ 1.037,72 an Intraday-Peak; danach -5,26 % Rutsch bis Close. Chase-Cap hat vor Preis-Aufschlag geschützt, aber nicht vor Post-Fill-Selloff. Fill-Day-Drop -5,75 % ist ein Muster (schon AVGO KW26 -8,69 % in 5 HT nach Fill).
+- **Alpha KW27 -2,73 % vs SPY** — SPY +2,13 % Rally, Bot nur -0,60 %. Reine Cash-Mathematik: ~80 % Cash × 0 % + ~20 % Investiert × leicht negativ = Wochenrückstand. Bot participation zu niedrig für Bull-Wochen.
+- **XLK-Konzentration im schlechtesten Sektor:** MU 8,85 % in XLK (KW27 -0,16 %, einziger negativer Sektor unter Top-4). K5-Filter hat MU freigegeben, aber Sektor-Rotation-Signal war schwach.
+- **Feiertagsschluss Fr 03.07.** entzieht 2,5 Nicht-Handels-Tage jede Trigger-Möglichkeit. MU-V1-Puffer +2,19 % bleibt über Wochenende + Feiertag hinweg eng → Gap-Down-Risiko Mo-Open bleibt zentrales Beobachtungsobjekt.
+
+**Strategie-Anpassung nötig:** NEIN — V1/K5/Trail alle wie designed. Zwei Diskussionspunkte für kommende Reviews:
+1. **Fill-Day-Drop-Muster:** 2 von 2 letzten Käufen (AVGO/MU) hatten Post-Fill-Selloff. Möglich: „K4 muss auch NACH Fill 30 min positiv bleiben" oder „Cost-Averaging aus Cash bei -3 % Puffer". Sample zu klein (2 Trades) — nicht implementieren, aber KW28-Käufe genau monitoren.
+2. **Cash-Quote 80 % in Bull-Rally:** Filter K1-K5 sind streng — richtige Selektion, aber Opportunitäts-Kosten in Trend-Wochen. Kein Handlungsbedarf, aber Alpha-Erwartung realistisch halten.
+
+**Watchlist nächste Woche (KW28, 06.07.→10.07.):**
+- **GOOGL** (XLC Communication, **NEU LEAD**) — Perplexity 03.07.: FwdPE 27,45 ✓ / RevGrowth Q1 2026 +22 % ✓ / MCap ~2 Bio ✓ / Earnings **22.07.2026** (2 HT NACH 10T-Blackout-Fenster → knapp K7 OK). K1–K4 Mo Pre-Market prüfen. Sektor XLC #2 KW27 (+3,37 %).
+- **MS** (XLF Financials) — K1–K3 ✓ carry-over (RSI 52,51 / RS +15,03 %) | K5 grenzwertig (FwdPE 21,58 ✓ / Rev +16,4 % ✓) | **Earnings 15.07.2026 → BLOCKS via K7 (7 HT bis Earnings, 3-HT-Blackout aktiv ab 10.07. Close, Kauf nur bis Do 09.07. sinnvoll)**. Sektor XLF #1 KW27 (+3,86 %).
+- **LLY** (XLV Health) — K5 ✓ carry-over (FwdPE 32-33 / Rev +26 %) | K4 wartet auf Volume-Spike. XLV bereits UNH 10,27 %, +LLY würde XLV auf ~20 % heben (<30 %-Cap OK).
+- **CAT** (XLI Industrials) — K1–K4 ✓ carry-over | K5 RevGrowth Q1 -1 % strukturell ✗ — Multi-Source-Recheck Mo Pre-Market (Q2-Earnings-Guidance-Update abwarten).
+- **AMD** (XLK) — RS +132,84 % Semi-Rekord, aber Sektor-Konflikt mit MU (XLK 8,85 %) + K5 FwdPE 35–95x strukturell ✗ — nur bei Multi-Source-Konsens <35.
+- **AAPL** (XLK) — K1-K3 ✓ carry-over | K4/K5 Mo Pre-Market. Sektor-Konflikt XLK bereits MU.
+
+**Sektor-Priorität KW28 (Basis KW27 Top-3 XLF/XLC/XLY):**
+- **XLF LEAD:** MS (Earnings-Blockade → warten bis KW29 nach Earnings)
+- **XLC LEAD:** GOOGL (K5 sauber, Earnings knapp außerhalb 10T)
+- **XLY:** aktuell kein Kandidat auf Watchlist — bei nächster Perplexity-Runde AMZN/LOW/HD prüfen
+
+**Sektor-Cap-Check aktuell:** XLF 1,01 % / XLV 10,27 % / XLK 8,83 % — alle klar <30 %. Bei GOOGL-Kauf +10 % XLC neu → alle Sektoren weiter <30 %. Bei LLY-Kauf +10 % XLV auf ~20 % (immer noch <30 %).
+
+---
+
 ### KW26 — 2026-06-26 — Weekly Review
 
 ```
