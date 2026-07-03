@@ -22,7 +22,9 @@
 |--------|------|------|-----|-------|-----|--------|--------|----------|
 | —      | —    | —    | —   | —     | —   | —      | —      | —        |
 
-_Keine offenen Orders. V1–V6 alle SICHER für JPM/UNH/MU nach Close 02.07. (Signalcheck detailliert in portfolio.md Market Close 16:02 ET). MU-V1-Puffer eng (+2,38 %), V5 EMA-Spread +374 sehr breit → strategiekonformes Halten. Nächster Check morgen Pre-Market 08:30 ET._
+_Keine offenen Orders. V1–V6 alle SICHER für JPM/UNH/MU nach Close 02.07. (Signalcheck detailliert in portfolio.md Market Close 16:02 ET). MU-V1-Puffer eng (+2,38 %), V5 EMA-Spread +374 sehr breit → strategiekonformes Halten._
+
+_Pre-Market 03.07. 08:35 ET: **NYSE GESCHLOSSEN heute** (Independence Day observed, 04.07. auf Sa → Fr geschlossen; Alpaca clock is_open=false, next_open Mo 06.07. 09:30 ET). Kein Handel möglich. After-Hours-Marks: JPM 334,47 / UNH 425,36 / MU 975,56 (V1-Puffer verengt auf +2,14 %, aber kein Trigger mangels Handel). Guardrails alle GRÜN. Käufe KW27 abgeschlossen 1/2. Nächster Check: Fr 17:00 ET Weekly Review (KW27-Bilanz), dann Mo 06.07. 08:30 ET Pre-Market (KW28 Start)._
 
 ---
 
