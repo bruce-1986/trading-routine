@@ -4,6 +4,43 @@
 
 ---
 
+## Market Open 09:37 ET — 2026-07-03 (Fr, KW27) — **NO-OP, NYSE geschlossen (Independence Day observed)**
+
+**Cron-Trigger:** Routine feuerte planmäßig 13:30 UTC (09:30 ET). Wie im Pre-Market 08:35 ET bereits festgestellt und dokumentiert: NYSE ist heute geschlossen (04.07. Samstag → Feiertag auf Fr 03.07. verschoben).
+
+**Alpaca Clock Re-Verifikation (09:37 ET Live):**
+```
+is_open:      false
+next_open:    2026-07-06T09:30:00-04:00
+next_close:   2026-07-06T16:00:00-04:00
+timestamp:    2026-07-03T09:37:07-04:00
+```
+**Alpaca Calendar 03.07.–07.07.:** Nur Einträge für 06.07. (Mo) und 07.07. (Di). **03.07. fehlt vollständig → kein Handelstag.**
+
+**Ausgeführte Schritte gemäß market-open-routine.md:**
+- Schritt 1 (Memory laden): ✓ strategy/portfolio/trade-log/research-log gelesen
+- Schritt 2 (Guardrails-Check): entfällt — kein Handel möglich (alle 8 Levels GRÜN carry-over aus Pre-Market)
+- Schritt 3 (Stop-Loss-Check offene Positionen): entfällt — keine Orders platzierbar (Alpaca akzeptiert keine Orders für Feiertagsdatum). V1–V6 alle SICHER (JPM/UNH/MU) carry-over aus 02.07. Close bzw. Pre-Market After-Hours-Marks
+- Schritt 4 (Kandidaten-Scan): entfällt — kein Live-Marktdaten-Handel, keine Kauforder möglich
+- Schritt 5 (Kauf ausführen): entfällt
+- Schritt 6 (Memory + Log): dieser Eintrag
+
+**Zusammenfassung:**
+```
+Scans durchgeführt:      0 (Markt geschlossen)
+Kaufsignal:              KEINER (nicht anwendbar)
+Trade ausgeführt:        NEIN (nicht möglich)
+Käufe diese Woche:       1/2 (KW27 unverändert nach MU-Fill 02.07.)
+Portfolio nach Scan:     99.420 $ Gesamt, ~20 % investiert (After-Hours-Marks unverändert)
+Positions Live V1-V6:    JPM/UNH/MU alle SICHER; MU-V1-Puffer +2,14 % (After-Hours) bleibt engste Watch-Position, aber keine Order platzierbar bis Mo 06.07. Pre-Market
+```
+
+**Nächste Routine:** Fr 2026-07-03 17:00 ET Weekly Review (KW27-Bilanz, MU-Fill-Analyse). Dann Mo 2026-07-06 08:30 ET Pre-Market Check (KW28-Start).
+
+**ClickUp:** ROUTINE Log-Notification Prio 4 (Push-Notification-Fallback wegen ITEM_246 Tier-Limit carry-over).
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-03 (Fr, KW27) — **NYSE GESCHLOSSEN** (Independence Day observed), Guardrails GRÜN, kein Scan
 
 **KORREKTUR zur Memory-Annahme:** Alpaca `/v2/clock` liefert `is_open:false`, `next_open:2026-07-06T09:30-04:00`. NYSE-Kalender-Query 03.07.→06.07. liefert NUR den Eintrag 2026-07-06 (Mo). → **Heute ist KEIN Handelstag, auch kein verkürzter HT.** Die Notiz vom Close 02.07. "verkürzter HT bis 13:00 ET" war falsch — NYSE-Regel: fällt 04.07. auf Samstag, wird der Feiertag auf Freitag 03.07. verschoben (nicht verkürzt). Perplexity bestätigt: "US stock market **CLOSED** today (Friday, July 3, 2026) — Independence Day observed."
