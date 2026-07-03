@@ -6,13 +6,13 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Close 02.07.       | Gewinn/Verlust      | Stop-Loss | TP1        | TP2        | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs   | Close-Mark 03.07.  | Gewinn/Verlust      | Stop-Loss | TP1        | TP2        | Signale         |
 |--------|------------|------------|--------------------|---------------------|-----------|------------|------------|-----------------|
 | JPM    | 2026-06-17 | 332,78 $   | 334,47 $           | +5,07 $ (+0,51%)    | 306,16 $  | 399,34 $   | 449,25 $   | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 424,28 $           | +545,04 $ (+5,66%)  | 369,44 $  | 481,88 $   | 542,12 $   | K1✓K2✓K3✓K4✓K5✓ |
-| MU     | 2026-07-02 | 1.037,72 $ | 978,00 $           | -537,48 $ (-5,75%)  | 954,71 $  | 1.245,26 $ | 1.400,92 $ | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $   | 425,36 $           | +570,96 $ (+5,92%)  | 369,44 $  | 481,88 $   | 542,12 $   | K1✓K2✓K3✓K4✓K5✓ |
+| MU     | 2026-07-02 | 1.037,72 $ | 975,56 $           | -559,44 $ (-5,99%)  | 954,71 $  | 1.245,26 $ | 1.400,92 $ | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 19.985,25 $ (Marktwert Close 02.07. 16:00 ET) | **Cash:** 79.428,26 $ | **Positionen:** 3/8 | **Käufe KW27:** 1/2
+**Gesamt investiert:** 19.992,09 $ (Marktwert Alpaca 03.07. 16:02 ET, NYSE-Feiertagsschluss carry-over) | **Cash:** 79.428,25 $ | **Positionen:** 3/8 | **Käufe KW27:** 1/2
 
 ---
 
@@ -22,9 +22,9 @@
 |--------|------|------|-----|-------|-----|--------|--------|----------|
 | —      | —    | —    | —   | —     | —   | —      | —      | —        |
 
-_Keine offenen Orders. V1–V6 alle SICHER für JPM/UNH/MU nach Close 02.07. (Signalcheck detailliert in portfolio.md Market Close 16:02 ET). MU-V1-Puffer eng (+2,38 %), V5 EMA-Spread +374 sehr breit → strategiekonformes Halten._
+_Keine offenen Orders. Market Close 03.07. 16:02 ET **NO-OP** — NYSE geschlossen (Independence Day observed, Alpaca is_open=false, next_open Mo 06.07. 09:30 ET). Keine V1–V6-Trigger-Auswertung möglich (kein Handel). Marks carry-over Broker-Refresh: JPM 334,47 (+0,51 %) / UNH 425,36 (+5,92 %) / MU 975,56 (-5,99 %, V1-Puffer +2,19 % KRITISCH). Alle Guardrails GRÜN. Weekly KW27 -0,60 %._
 
-_Pre-Market 03.07. 08:35 ET: **NYSE GESCHLOSSEN heute** (Independence Day observed, 04.07. auf Sa → Fr geschlossen; Alpaca clock is_open=false, next_open Mo 06.07. 09:30 ET). Kein Handel möglich. After-Hours-Marks: JPM 334,47 / UNH 425,36 / MU 975,56 (V1-Puffer verengt auf +2,14 %, aber kein Trigger mangels Handel). Guardrails alle GRÜN. Käufe KW27 abgeschlossen 1/2. Nächster Check: Fr 17:00 ET Weekly Review (KW27-Bilanz), dann Mo 06.07. 08:30 ET Pre-Market (KW28 Start)._
+_Nächster Check: Fr 17:00 ET Weekly Review (KW27-Bilanz), dann Mo 06.07. 08:30 ET Pre-Market (KW28 Start). MU-V1-Trigger bei <954,71 löst Market-Sell sofort aus (Gap-Down-Risiko Mo-Open beobachten)._
 
 ---
 

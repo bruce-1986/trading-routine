@@ -1,6 +1,71 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-03 13:07 ET (Midday NO-OP — NYSE geschlossen Independence Day observed, kein Trade möglich, Guardrails GRÜN, MU-V1 After-Hours-Puffer +2,42 %)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-03 16:02 ET (Market Close NO-OP — NYSE geschlossen Independence Day observed, kein Handel, Guardrails ALLE GRÜN, MU-V1-Puffer +2,19 % [KRITISCH bleibt für Mo Open])
+
+---
+
+## Market Close 2026-07-03 16:02 ET (Fr, KW27) — NO-OP TAGESBILANZ (NYSE geschlossen — Independence Day observed)
+
+```
+Alpaca clock:      is_open=false | next_open Mo 06.07. 09:30 ET (KW28 Start)
+Gesamtwert:        99.420,34 $   (Alpaca equity = last_equity → 0,000 % intraday, kein Handel)
+Cash:              79.428,25 $   (79,89 %)
+Investiert (MV):   19.992,09 $   (20,11 %, JPM 1.003,41 + UNH 10.208,64 + MU 8.780,04)
+P/L heute:              0,00 $    (0,000 %)  [GRÜN — kein Handelstag]
+Alpha vs SPY:           n/a       (SPY-Tages-Print existiert nicht — NYSE geschlossen)
+ATH:              100.066,47 $    DD: -0,646 % [GRÜN — Alarm bei -15 %]
+Weekly P/L KW27:      -0,604 %    [GRÜN — Mo-Basis Fr 27.06.-Close 100.024,25, Schwelle -5 %]
+Käufe KW27:            1/2        (MU gefillt Do 02.07.; 1 Slot theoretisch frei, aber KW27 endet mit Fr-Close)
+Pending Orders:        0          (keine V5/V6-Order möglich → kein Handel Mo als nächster Tag; strategiekonform keine Feiertags-Order)
+VIXY-Ref:          21,47 $ carry-over 02.07. → Spot ~16-17 [GRÜN → 10 % Sizing]
+Guardrails:        Daily 0,00 % | Weekly -0,60 % | DD -0,65 % | VIX ~17 | Käufe 1/2 → ALLE GRÜN
+```
+
+**Positionen — Marks (Alpaca 16:02 ET Close, carry-over vom Do 02.07. mit minimalem Mark-Refresh):**
+- **JPM**  334,47 $ (Entry 332,78, P/L +0,51 %, change_today 0,00 %)
+  - V1 306,16 SICHER (+8,46 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 unverändert) SICHER (+9,66 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+  - V5 EMA50/200 carry-over Close 02.07.: EMA50 315,32 > EMA200 306,00 ✓ (kein neuer HT-Balken → keine EMA-Fortschreibung)
+  - V6 RSI(14) 62,83 / RS_4w vs SPY +12,30 % → SICHER (carry-over)
+- **UNH**  425,36 $ (Entry 401,57, P/L +5,92 %, change_today 0,00 %) — Mark leicht > Close 02.07. (424,28)
+  - V1 369,44 SICHER (+15,14 % Puffer)
+  - V2 Stop 378,48 (Posit-Hoch 430,095 unverändert) SICHER (+11,79 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+  - V5 EMA50 385,12 > EMA200 342,87 ✓ (carry-over, sehr breiter Spread)
+  - V6 RSI 64,76 / RS +13,97 % → SICHER
+- **MU**  975,56 $ (Entry 1037,72, P/L -5,99 %, change_today 0,00 %) [KRITISCH]
+  - V1 954,71 SICHER **nur +2,19 % Puffer** (leicht verengt gegenüber Close 02.07. +2,38 %, essentially = Midday-Mark)
+  - V2 Stop 913,39 (Posit-Hoch 1037,94 = Fill-Preis unverändert) SICHER (+6,80 %)
+  - V3 1245,26 / V4 1400,92 — weit entfernt
+  - V5 EMA50 882,15 > EMA200 507,23 ✓ (Spread +374,92 — Golden Cross sehr breit, kein Death-Cross-Risiko)
+  - V6 RSI 48,57 / RS -8,42 % → NICHT ausgelöst (V6 verlangt beides: RSI>80 UND RS<0)
+
+**V1–V6-Check heute: NICHT scharfgestellt** (kein Handel, keine Trigger-Auswertung möglich). Alle Marks = Alpaca-Broker-Refresh gegen letzten offiziellen 02.07.-Close, keine intraday-Bewegung.
+→ **Keine Limit-Order für nächsten Handelstag vorbereitet.** Alle 6 Verkaufssignale bleiben — sofern man die Vorabend-Marks als proxy nimmt — SICHER. MU-V1-Puffer bleibt eng (+2,19 %) → Gap-Down-Risiko Mo-Open weiter kritisch, aber V1-Trigger nur bei Handel möglich (Mo 06.07. 09:30 ET).
+
+**Sektor-Update:** JPM XLF 1,01 % + UNH XLV 10,29 % + MU XLK 8,85 % → Total 20,11 % investiert. XLK 8,85 % (weit unter 30 %-Sektorlimit). 3/8 Positions-Slots belegt.
+
+**Daily Loss Cap (-3 %):** 0,00 % → GRÜN, keine Stornierung, keine offenen Orders.
+**Weekly Loss Cap (-5 %):** -0,604 % → GRÜN, keine Stornierung.
+**ATH-Drawdown (-15 % Alarm / -20 % Stopp):** -0,646 % → GRÜN.
+
+**Watchlist Mo 06.07. (KW28 Start, carry-over vom 02.07.-Close mit Feiertags-Vorbehalt):**
+- **MS**  XLF NEU-Slot | K1✓K2✓K3✓ carry-over 02.07. | K4/K5 Mo-Open-Recheck
+- **CAT** XLI leer | K1✓K2✓K3✓ carry-over | K5 RevGrowth -1 % ✗ (aktuell blockiert bis Multi-Source-Recheck)
+- **LLY** XLV bereits UNH | K1✓K2✓K3✓K5✓ carry-over | K4 Mo-Open + Sektor-30 %-Check
+- **AMD** XLK bereits MU | K1✓K2✓K3✓ (RS+132,84 %) | K5 FwdPE struktur. ✗ — Multi-Source-Recheck erforderlich
+- **AAPL** XLK bereits MU | K1✓K2✓K3✓ carry-over | K4/K5 Mo-Open-Recheck
+
+**Watchlist-Hinweis:** Weekly Review Fr 17:00 ET folgt direkt und setzt Watchlist ggf. neu. Perplexity-Sektor-Check heute nicht durchgeführt (Feiertag → keine neuen Marktdaten). Weekly Review übernimmt Multi-Source-Prüfung für AMD/CAT K5.
+
+**Perplexity SPY-Tagesabfrage: übersprungen** — NYSE geschlossen, kein SPY-Tages-Print vorhanden (alpha_heute nicht berechenbar).
+
+**ClickUp:** [CLOSE] Tagesbilanz Fr 03.07. als Prio 4 (Low) erstellt — Task-ID `869dzrdre` (https://app.clickup.com/t/869dzrdre). **Workaround ITEM_246:** Payload mit `custom_item_id: null` umgeht Tier-Limit-Fehler "Max usage for custom task types reached" (erster Versuch ohne Feld → Fehler; expliziter null-Wert erzwingt Standard-Task-Type → OK). **Lessons-learned:** Ab sofort ClickUp-Task-Payloads immer mit `custom_item_id: null` senden.
+
+> **Entscheidung:** No-Op-Tagesbilanz — NYSE geschlossen wg. Independence Day observed (04.07. Sa → Bundesfeiertag wird auf Fr 03.07. vorgezogen). Portfolio flat bei 99.420,34 $, Positionen unverändert 3/8, keine offenen Orders. Alle 4 Guardrails-Ebenen (Daily/Weekly/DD/Käufe) GRÜN. MU-V1-Puffer weiter eng (+2,19 %) — bleibt zentrales Beobachtungsobjekt für Mo-Open.
+> **Lessons-Tag:** Feiertags-Close entfernt jede Trigger-Möglichkeit — Bot-Strategie hält Puffer über Wochenende + Feiertag hinweg (2,5 Nicht-Handels-Tage nach 02.07.-Close). Bei MU (V1-Puffer 2,19 %) besteht Gap-Down-Risiko: falls Mo-Open unter 954,71 $, feuert V1-Market-Sell sofort — Pre-Market-Check Mo 08:30 ET unabdingbar.
+> **Nächste Routine:** Fr 2026-07-03 17:00 ET Weekly Review (KW27-Bilanz: 1/2 Käufe, MU-Fill -5,99 %-Mark, realisiert AVGO -596,19 $ carry-over, KW27 Weekly-P/L -0,60 %, Watchlist für KW28 finalisieren).
 
 ---
 
