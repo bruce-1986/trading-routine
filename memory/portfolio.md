@@ -1,6 +1,95 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-03 16:02 ET (Market Close NO-OP — NYSE geschlossen Independence Day observed, kein Handel, Guardrails ALLE GRÜN, MU-V1-Puffer +2,19 % [KRITISCH bleibt für Mo Open])
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-03 17:05 ET (Weekly Review KW27, Wochenabschluss unter Feiertagsschluss NYSE, Guardrails ALLE GRÜN, Alpha -2,73 % vs SPY, MU-V1-Puffer +2,19 % kritisch für Mo Open)
+
+---
+
+## Wochenabschluss KW27 — 2026-07-03 17:05 ET (Fr, Weekly Review)
+
+```
+Gesamtwert:          99.420,34 $   (Alpaca equity, Fr-Close carry-over 02.07. da NYSE-Feiertag)
+Cash:                79.428,25 $   (79,89 %)
+Investiert (MV):     19.992,09 $   (20,11 %; JPM 1.003,41 + UNH 10.208,64 + MU 8.780,04)
+Mo-Basis KW27:      100.024,25 $   (= Fr-Close 26.06.)
+Wochenrendite KW27:      -0,604 %  [GRÜN — Weekly Cap -5 %]
+SPY-Wochenrendite:       +2,127 %  (Alpaca IEX Fr 26.06. Close 729,35 → Do 02.07. Close 744,86; Fr 03.07. Feiertag)
+Alpha KW27:              -2,731 %  [NEGATIV — SPY-Rally-Woche, Bot cash-heavy → begrenzte Partizipation]
+YTD Rendite:             -0,580 %  (vs Startkapital 100.000 $; Bot lebt 33 Tage seit 31.05.26)
+YTD SPY:                 +9,807 %  (Alpaca IEX YE25 678,32 → 744,86)
+YTD Alpha:              -10,387 %  [Bot-Init spät im Jahr + Ramp-up-Phase mit hoher Cash-Quote]
+ATH:                100.066,47 $
+Drawdown vom ATH:        -0,646 %  [GRÜN — Alarm -15 % / Stopp -20 %]
+Offene Positionen:          3 / 8  (5 Slots frei)
+Käufe KW28 max.:              2   (Wochen-Reset Mo 06.07.)
+```
+
+**Positions-Delta KW27 (26.06.-Close → 03.07.-Close):**
+- **JPM** 328,53 → 334,47 = **+1,81 %** ← Beste Wochen-Performance (Financials-Rebound Mi +2,08 %)
+- **UNH** 428,00 → 425,36 = **-0,62 %** (Cool-off nach Rekord-Vortag Mi +2,63 % + Do neues Posit-Hoch 430,095)
+- **MU**  neu 02.07. Fill @ 1.037,72 → 03.07.-Close 975,56 = **-5,99 %** ← Schlechteste (Fill-Day-Drop)
+
+**Trade-Bilanz KW27:**
+- Käufe: 1 (MU Do 02.07. 5/5-Signal K1-K5 + K5 Multi-Source-Verifikation)
+- Verkäufe: 0 (keine V1–V6-Trigger)
+- Stop-Loss-Trigger: 0
+- Realisierter P/L KW27: 0 $ (nur MU offen)
+- Realisierter P/L kumuliert: -596,19 $ (AVGO V1 KW26 carry-over)
+
+**Sektor-Ranking KW27 (Alpaca IEX Fr 26.06. → Do 02.07.):**
+| Rank | Sektor | Woche % | Alpha vs SPY | Bot-Position |
+|------|--------|---------|--------------|--------------|
+| 1 | XLF | +3,86 % | +1,73 % | JPM (1,01 %) ✓ |
+| 2 | XLC | +3,37 % | +1,24 % | — |
+| 3 | XLY | +2,30 % | +0,17 % | — |
+| 4 | XLV | +2,18 % | +0,05 % | UNH (10,27 %) ✓ |
+| 5 | XLI | +1,52 % | -0,61 % | — |
+| 6 | XLB | +0,72 % | -1,41 % | — |
+| 7 | XLP | +0,35 % | -1,77 % | — |
+| 8 | XLK | -0,16 % | -2,29 % | **MU (8,83 %) ✗** |
+| 9 | XLU | -0,93 % | -3,06 % | — |
+| 10 | XLE | -1,15 % | -3,28 % | — |
+| 11 | XLRE | -1,17 % | -3,30 % | — |
+
+**Sektor-Cap-Check (Gesamtdepot-Basis):** XLF 1,01 % / XLV 10,27 % / XLK 8,83 % — alle klar unter 30 %-Cap. Kein Verstoß, keine Reduktion nötig. (Investiert-Basis: UNH 51 % / MU 44 % / JPM 5 % — nur Kontext, Bot-Konvention referenziert Gesamtdepot-%.)
+
+**Watchlist Mo 06.07. (KW28 Start):**
+| Symbol | Sektor | Grund | K5 | K7 Earnings |
+|--------|--------|-------|-----|--------------|
+| **GOOGL** | XLC (#2 KW27) | **NEUE LEAD** — FwdPE 27,45 ✓ / Rev +22 % ✓ / MCap ~2 Bio | ✓ | 22.07.2026 (knapp außerhalb 10T) |
+| MS | XLF (#1 KW27) | K1-K3 ✓ carry-over; K5 FwdPE 21,58 ✓/ Rev +16,4 % ✓ | ✓ | **15.07.2026 → BLOCKS 10T-Blackout ab 10.07. Close** |
+| LLY | XLV | K5 ✓ carry-over (FwdPE 32-33, Rev +26 %); K4 wartet | ✓ | ~25.07.2026 |
+| CAT | XLI | K1-K4 ✓ carry-over; K5 RevGrowth -1 % ✗ | ✗ Recheck | ~05.08.2026 |
+| AMD | XLK Konflikt MU | RS +132 % Semi-Rekord; K5 FwdPE ✗ | ✗ Recheck | ~05.08.2026 |
+| AAPL | XLK Konflikt MU | K1-K3 ✓ carry-over | ? Recheck | ~30.07.2026 |
+
+**Fokus KW28: GOOGL (K5-Recheck Multi-Source Mo Pre-Market zwingend, Sektor XLC füllt Lücke, kein Sektor-Konflikt).**
+
+**Guardrails (8 Hierarchien):**
+```
+1. Daily Loss Cap (-3 %):    0,000 % (kein Handel 03.07.)     [GRÜN]
+2. Weekly Loss Cap (-5 %):  -0,604 %                          [GRÜN — 4,4 %-Puffer]
+3. Drawdown-Alarm (-15 %):  -0,646 % vs ATH 100.066,47        [GRÜN — 14,4 %-Puffer]
+4. Drawdown-Stopp (-20 %):  INAKTIV
+5. Crash-Filter (SPY-5 %):  INAKTIV (Do 02.07. -0,108 %)
+6. VIX-Filter (>30):        INAKTIV (Spot ~16-17)
+7. Earnings-Blackout:       KEINER — JPM 14.07. (7 HT ab Mo, Blackout ab 09.07. Close), UNH 16.07., MU Q4 Ende Sept
+8. Käufe/Woche max. 2:      Reset KW28 Mo 06.07. → 0/2
+```
+→ **ALLE 8 GRÜN.** Strategie-Status: **STABIL** (keine Anpassung nötig).
+
+**MU-V1-Beobachtung (kritischer Übergang KW27 → KW28):**
+- V1 954,71 $ (Standardformel -8 % vom Fill 1.037,72)
+- Close 03.07.-Mark 975,56 → Puffer **+2,19 %**
+- 2,5 Nicht-Handels-Tage bis Mo 06.07. Open (Fr geschlossen + Sa + So + Feiertag-Übergang)
+- **Gap-Down-Risiko:** Bei MU-Mo-Open <954,71 feuert V1 Market-Sell sofort → Pre-Market-Check Mo 08:30 ET zwingend, Alpaca-Preis + Perplexity Semi-News overnight
+- V2 913,39 (Posit-Hoch=Fill), V3 1.245,26, V4 1.400,92 — alle weit weg
+- V5 EMA50 882,15 > EMA200 507,23 (Spread +374 sehr breit) — kein Death-Cross-Risiko kurzfristig
+- V6 RSI 48,57 / RS -8,42 % → V6 nicht ausgelöst (RSI<80)
+
+**Nächste Routine:** Mo 2026-07-06 08:30 ET Pre-Market Check (KW28 Start).
+
+> **Weekly-Review-Entscheidung:** KW27 abgeschlossen mit -0,604 % Performance / -2,73 % Alpha vs SPY. Alpha-Underperformance strukturell erklärbar: SPY-Rally-Woche +2,13 % bei Bot-Cash-Quote ~80 %. Alle 8 Guardrails GRÜN. Ein einziger Käufe-Slot KW27 genutzt (MU 5/5-Signal mit Multi-Source-K5), Fill-Day-Drop dokumentiert (V1-Puffer eng, aber im Rahmen der -8 %-Formel-Erwartung). Strategie-Lock hält — K5 Filter verhindert weiterhin Turnaround-Momentum-Trades (CRWD/INTC/AMD alle diese Woche geblockt). Watchlist-Lead KW28 ist **GOOGL** (XLC #2-Sektor der Woche, K5 sauber, Earnings 22.07. knapp außerhalb 10T-Blackout).
+> **Lessons-Tag KW27:** (1) Fill-Day-Drop-Muster in 2/2 letzten Käufen (AVGO KW26 / MU KW27) — Sample noch klein, aber KW28-Käufe genau monitoren. (2) K5 Multi-Source-Verifikation als stabiler Filter bestätigt (Yahoo/MarketBeat/TTM implied). (3) ClickUp-Workaround `custom_item_id: null` verankert in lessons-learned. (4) V1-Standardformel absorbiert -5,75 % Intraday-Drop wie designed — keine Regel-Änderung.
 
 ---
 
