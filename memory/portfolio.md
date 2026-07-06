@@ -1,6 +1,57 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-06 09:43 ET (Market Open KW28, **LLY GEFILLT** 8 Sh @ 1193,89 nach 5/5-Signal, Käufe KW28 1/2, Positionen 4/8, Guardrails GRÜN)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-06 13:06 ET (Midday Stop-Check KW28, alle V1-V4 SICHER, Daily +0,176 %, Guardrails GRÜN)
+
+---
+
+## Midday 2026-07-06 13:06 ET (Mo, KW28) — Stop-Check
+
+```
+Alpaca clock:      is_open=true | next_close 06.07. 16:00 ET
+Positionen:        4/8 (JPM/UNH/MU/LLY)
+Ø P/L (gewichtet): +0,65 % (JPM +1,15 % / UNH +4,09 % / MU -3,50 % / LLY +1,19 %)
+Schlechteste:      MU -3,50 % (V1-Puffer +4,89 % — entspannt vs Fr-Close +2,19 %)
+Beste:             UNH +4,09 % (V1-Puffer +13,14 %)
+Stops:             alle regulär — kein V1/V2/V3/V4-Trigger
+Daily P/L:         +0,176 %   [GRÜN — vs last_equity 99.420,34]
+Equity:            99.595,58 $ (long_market_value 29.718,43, cash 69.877,15)
+```
+
+**Live-Check V1–V4 (Alpaca 13:06 ET):**
+- **JPM**  336,605 $ (Entry 332,78, P/L +1,15 %, change_today +0,64 %)
+  - V1 306,16 SICHER (+9,94 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+11,42 %)
+  - V3 399,34 / V4 449,25 — weit entfernt, kein TP-Trigger
+- **UNH**  417,975 $ (Entry 401,57, P/L +4,09 %, change_today -1,74 %)
+  - V1 369,44 SICHER (+13,14 % Puffer)
+  - V2 Stop 378,48 (Posit-Hoch 430,095 carry-over 02.07.) SICHER (+10,44 %)
+  - V3 481,88 / V4 542,12 — weit entfernt, kein TP-Trigger
+- **MU**   1.001,425 $ (Entry 1.037,72, P/L -3,50 %, change_today +2,65 %) — **Rebound bestätigt weiter**
+  - V1 954,71 SICHER **+4,89 % Puffer** [ENTSPANNT vs Fr-Close +2,19 % / Pre-Market +5,60 %]
+  - V2 Stop 913,39 (Posit-Hoch 1.037,94 = Fill-Preis carry-over) SICHER (+9,63 %)
+  - V3 1.245,26 / V4 1.400,92 — weit entfernt
+- **LLY**  1.208,08 $ (Entry 1.193,8875 Fill 09:42:49 ET, P/L +1,19 %, change_today -0,48 %)
+  - V1 1.098,38 SICHER (+9,99 % Puffer)
+  - V2 Stop 1.050,62 (Posit-Hoch = Fill-Preis 1.193,89 — kein neues Hoch heute post-Fill notiert) SICHER (+14,99 %)
+  - V3 1.432,66 / V4 1.611,75 — weit entfernt
+
+→ **Keine Verkaufsorder.** Alle V1–V4 regulär SICHER, MU-V1-Puffer weitet sich nach Gap-Up-Bestätigung intraday auf +4,89 %.
+→ **Daily Loss Cap (-3 %) nicht erreicht** (+0,176 %). Keine Order-Stornierung nötig (keine Pending-Orders).
+
+**Sektor-Update:** JPM XLF 1,01 % + UNH XLV 10,07 % + MU XLK 9,05 % + LLY XLV 9,70 % = **29,84 % investiert**. XLV Total 19,77 % (unter 30 %-Cap ✓). Positionen 4/8.
+
+**Guardrails-Status:**
+```
+1. Daily Loss Cap (-3 %):    +0,176 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):   +0,176 % (KW28 Mo-Basis 99.420,34)    [GRÜN]
+3. Drawdown-Alarm (-15 %):   -0,472 % vs ATH 100.066,47            [GRÜN]
+4. Käufe KW28:                1/2 (LLY gefillt, 1 Slot frei)       [GRÜN]
+```
+
+**ClickUp:** kein Alert (keine Stops, kein Cap → Logging-Disziplin gewahrt).
+
+> **Entscheidung:** No-Op — alle 4 Positionen halten. Kein V1-V4-Trigger, alle Puffer komfortabel. MU-Rebound (+2,65 % change_today) bestätigt Pre-Market-Gap-Up und entspannt V1-Watch nachhaltig (Puffer +4,89 % vs Fr-Close-Notlage +2,19 %). LLY hält knapp über Fill mit +1,19 % nach schnellem Fill 09:42:49 ET. Daily-P/L +0,176 % vs breite Range, kein Guardrail-Stress.
+> **Nächste Routine:** Mo 06.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check aller 4 Positionen).
 
 ---
 
