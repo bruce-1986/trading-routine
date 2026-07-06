@@ -4,6 +4,58 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-07-06 (Mo, KW28) — Tagesbilanz + Watchlist Di 07.07.
+
+**Tagesbilanz:** Portfolio -0,173 % (-172,06 $) | SPY IEX +0,861 % (Do 02.07. 744,86 → Mo 06.07. 751,27; Fr Feiertag) | **Alpha -1,034 %** | Positionen 4/8 (JPM +1,76 % / UNH +3,94 % / MU -6,69 % / LLY +0,79 %) | Käufe KW28 1/2 nach LLY-Fill | Guardrails alle GRÜN | Weekly KW28 -0,173 % (kein Cap-Trigger).
+
+**Sektor-Performance heute (Alpaca IEX):**
+```
+XLK +1,70 % | XLF +0,96 % | XLI +0,88 % | XLY +0,74 % | XLC +0,57 %
+XLB -0,08 % | XLE -0,15 % | XLRE -0,92 % | XLU -1,02 % | XLV -1,04 % | XLP -1,07 %
+VXX -2,63 % (Vola-Entspannung fortgesetzt, VIX ~15-16)
+```
+→ **Rotation weg von Defensives (XLV/XLU/XLP -1 %) hin zu Tech/Financials (XLK +1,70 %/XLF +0,96 %)**. Bot-XLV-Overweight (UNH+LLY 19,79 %) erklärt Alpha-Miss -1,03 % strukturell.
+
+**V1–V6-Check ALLE 4 POSITIONEN SICHER (nach Close-Recalc EMA/RSI aus Alpaca IEX 211d):**
+- JPM V1 +10,61 % / V5 EMA-Spread +8,59 ✓ / V6 RSI 66 & RS +9,65 % → SICHER
+- UNH V1 +12,97 % / V5 EMA-Spread +48,53 ✓ / V6 RSI 59 & RS +6,55 % → SICHER
+- **MU V1 nur +1,42 %** [KRITISCH — verengt von Midday +4,89 %] / V5 EMA-Spread +416,54 ✓ / V6 RSI 49 & RS -1,10 % → SICHER (V6 verlangt BEIDES RSI>80 UND RS<0)
+- LLY V1 +9,55 % / V5 EMA-Spread +104,46 ✓ / V6 RSI 65 & RS +7,23 % → SICHER
+
+→ **Keine Verkaufsorder für Di 07.07. vorbereitet.** Pending Orders bleiben 0.
+
+**Watchlist-Screen K1-K3 (Alpaca 06.07.-Close, SPY_RS_63d = +14,86 %):**
+```
+Sym    Live       K1 EMA50>200      K2 RSI      K3 RS_63d vs SPY   Sektor
+GOOGL  366,34    ✓ 358,90>314,48   ✓ 53,59     ✓ RS +9,11 %       XLC (leer)
+CAT    969,52    ✓ 914,19>701,19   ✓ 51,65     ✓ RS +20,55 %      XLI (leer)
+MS     222,07    ✓ 205,22>178,34   ✓ 60,39     ✓ RS +19,81 %      XLF (JPM 1 %)
+AAPL   312,73    ✓ 291,29>270,14   ✓ 63,16     ✓ RS +7,47 %       XLK (Konflikt MU)
+BAC     59,90    ✓ 54,48>52,31     ✗ 74,52 (>70) ✓ RS +7,14 %     XLF (K2 ✗)
+NVDA   195,59    ✓ 203,70>190,45   ✓ 42,24     ✗ RS -4,42 %       XLK (K3 ✗)
+DE     635,40    ✓ 586,12>533,08   ✓ 64,97     ✗ RS -4,14 %       XLI (K3 ✗)
+```
+
+**Watchlist morgen (Ranking):**
+1. **GOOGL** LEAD — 5/5-Bild stabil vom Mo Open (K5 carry ✓ FwdPE 21,87/28,65 ≤35, Rev +11,33 % ≥10 %); XLC leer → keine Sektor-Konflikte; Earnings 22.07. (11 HT sicher)
+2. **CAT** Backup — RS 2. höchste (+20,55 %), XLI-Sektor leer; K5 RevGrowth Q1 -1 % **Recheck Multi-Source zwingend** vor Buy; Earnings ~05.08.
+3. **MS** Timing-Vorbehalt — 5/5 aber Earnings 15.07. → 3-HT-Blackout ab Fr 10.07. Close = Kauf Di gäbe **nur 3 HT Puffer** (Di/Mi/Do), sehr eng
+4. **AAPL** Only-If — XLK-Konflikt MU + K5 offen
+
+**Watchlist morgen: GOOGL (Lead), CAT (Backup, K5-Recheck), MS (Timing-Vorbehalt), AAPL (Fallback).**
+
+**Datenqualitäts-Hinweise:**
+- Perplexity Sektor-Query heute leer (Datum-in-Zukunft-Bug carry-over) → Alpaca ETF-Marks als Fallback
+- Alpaca IEX 211d-Bars verfügbar für alle Positionen + Watchlist → EMA50/200/RSI(14) live berechnet
+- SPY IEX +0,861 % als Ground-Truth (Perplexity nannte +0,78 % — moderate Diskrepanz)
+- LLY Alpaca lastday_price 1213,91 (vs Memory Do 02.07. Close 1210,79 — After-Hours-Tick)
+
+**ClickUp:** [CLOSE] Tagesbilanz Task angelegt Prio 3 (leicht negative Performance, Alpha negativ). Push-Notification Fallback bei ITEM_246 Tier-Limit.
+
+**Nächste Routine:** Di 07.07. 08:30 ET Pre-Market Check (KW28 Tag 2, MU-V1-Puffer +1,42 % kritisch, GOOGL/CAT/MS Watchlist-Recheck).
+
+---
+
 ## Market Open 09:41 ET — 2026-07-06 (Mo, KW28) — **LLY LIMIT-ORDER PLACED (5/5, K5 Multi-Source ✓)**
 
 **Alpaca Clock:** is_open=true (09:37 ET), next_close 06.07. 16:00 ET. **NYSE offen KW28 Mo.**
