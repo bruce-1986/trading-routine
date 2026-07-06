@@ -1,6 +1,104 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-06 08:35 ET (Pre-Market KW28 Start, Guardrails ALLE GRÜN, MU-Gap-Up +3,35 % entspannt V1-Puffer auf +5,60 %, Buy-Scan JA für 09:30 ET Open)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-06 09:43 ET (Market Open KW28, **LLY GEFILLT** 8 Sh @ 1193,89 nach 5/5-Signal, Käufe KW28 1/2, Positionen 4/8, Guardrails GRÜN)
+
+---
+
+## Market Open KW28 — 2026-07-06 09:43 ET (Mo) — **LLY LIMIT-ORDER GEFILLT (5/5, K5 Multi-Source ✓)**
+
+```
+Alpaca clock:      is_open=true | next_close 06.07. 16:00 ET
+Gesamtwert:        99.452,08 $   (Alpaca equity Post-Fill 09:43 ET, vs last_equity 99.420,34)
+Cash:              69.877,15 $   (70,26 %)
+Investiert (MV):   29.574,93 $   (29,74 %, JPM 1.016,31 + UNH 10.022,64 + MU 9.014,18 + LLY 9.521,28)
+Daily P/L Live:    +0,032 %       [GRÜN]
+Weekly P/L KW28:   +0,032 %       (KW28 Mo-Basis 99.420,34) [GRÜN]
+ATH:              100.066,47 $    DD -0,614 % [GRÜN]
+Käufe KW28:            1/2       (LLY FILLED — 1 Slot frei)
+Pending Orders:        0         (LLY-Order 09:42:49 ET vollständig gefüllt 8/8 Sh @ 1.193,89)
+VIX Spot Live:      ~16          [GRÜN → 10 % Sizing]
+SPY Live 09:37:    748,11 $      (+0,55 % vs Do 02.07. Close 744,86 → risk-on Open)
+Crash-Filter:       INAKTIV      (SPY +0,55 %)
+Guardrails:  Daily +0,12 % | Weekly +0,12 % | DD -0,53 % | VIX ~16 | Käufe 1/2 → ALLE 8 GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca 09:37 ET):**
+- **JPM**  338,05 $ (Entry 332,78, P/L +1,58 %, change_today +1,07 %)
+  - V1 306,16 SICHER (+9,54 % Puffer)
+  - V2 ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+10,68 %)
+  - V5 EMA50 315,32 > EMA200 306,00 ✓ carry-over
+  - V6 RSI 62,83 / RS +12,30 % → KEIN Trigger
+- **UNH**  420,43 $ (Entry 401,57, P/L +4,69 %, change_today -1,16 %)
+  - V1 369,44 SICHER (+13,80 % Puffer)
+  - V2 378,48 (getrailt 02.07. auf Posit-Hoch 430,095) SICHER (+11,08 %)
+  - V5 EMA50 385,12 > EMA200 342,87 ✓ carry-over
+  - V6 RSI 64,76 / RS +13,97 % → KEIN Trigger
+- **MU**  1.001,12 $ (Entry 1.037,72, P/L -3,53 %, change_today +2,62 %) — **Gap-Up bestätigt Rebound-Beginn**
+  - V1 954,71 SICHER **+4,86 % Puffer** [ENTSPANNT vs Fr-Close +2,19 %]
+  - V2 913,39 SICHER (+9,60 %)
+  - V5 EMA50 882,15 > EMA200 507,23 ✓ carry-over
+  - V6 RSI 48,57 / RS -8,42 % → KEIN Trigger
+
+→ **Alle V1–V6 SICHER, keine Verkaufsorder pending.**
+
+**Kandidaten-Scan K1–K5 (Alpaca IEX 200d Bars + Perplexity 06.07. K5):**
+```
+Sym    Live       K1 EMA50>200      K2 RSI  K3 RS_63d vs SPY (+14,07 %)  K4 Proj Vol   K5 Multi-Source
+GOOGL  361,72    ✓ 358,17>316,50  ✓ 50,73  ✓ RS +8,24 %                ✓ 220 %       ✓ FwdPE 21,87/28,65 ≤35, Rev +11,33 %
+LLY   1199,90    ✓ 1089,02>987,10 ✓ 64,34  ✓ RS +14,16 %               ✓ 242 %       ✓ FwdPE 34,51/32,69/32,53 ≤35, Rev +47,43 %
+MS     219,62    ✓ 204,77>178,92  ✓ 58,26  ✓ RS +18,40 %               ✓ 150 %       ✓ carry-over aber Earnings 15.07. → Blackout ab 10.07. Close (4 HT frei)
+CAT    984,00    ✓ 916,12>699,72  ✓ 53,30  ✓ RS +23,10 %               ✓ 371 %       ✗ RevGrowth Q1 -1 % carry-over (Recheck ausstehend)
+AMD    540,73    ✓ 458,95>281,38  ✓ 55,73  ✓ RS +134,27 %              ✓ 533 %       ✗ FwdPE 35–95x carry-over (K5 struktur.) + XLK-Konflikt mit MU
+AAPL   309,28    ✓ 291,14>271,07  ✓ 61,25  ✓ RS +6,80 %                ✓ 168 %       ? Recheck ausstehend + XLK-Konflikt mit MU
+```
+
+**Ranking-Entscheidung (Strategie: höchste RS + alle 5 Signale grün):**
+1. AMD RS +134 % ✗ K5 → OUT
+2. CAT RS +23 % ✗ K5 → OUT
+3. MS RS +18 % (K5 ✓) — Earnings 15.07. Blackout ab 10.07. Close macht Position-Halt kritisch (4 HT bis Blackout) → **Downgrade Backup**
+4. **LLY RS +14,16 %** — 5/5 grün, Earnings 05.08. sicher (22 HT Puffer) → **LEAD**
+5. GOOGL RS +8,24 % — 5/5 grün, XLC-Diversifikation → **Backup**
+6. AAPL RS +6,80 % — Recheck offen → OUT
+
+**LLY-Order-Details (Alpaca):**
+```
+Order-ID:       f6364db0-8a8f-4a11-b305-26a4874f1f6d
+Symbol:         LLY
+Side:           BUY LIMIT | 8 Sh | Day
+Limit-Preis:    1.216,84 $ (= round(1.210,79 * 1,005, 2))
+Fill:           **09:42:49 ET** — 8/8 Shares @ avg **1.193,8875 $** (Fill-Zeit: 1min 49sec, sehr schnell vs MU 35min)
+Investiert:     **9.551,10 $** (9,60 % Portfolio)
+Post-Fill V1:   1.098,38 $ (-8 %)
+Post-Fill V2:   1.050,62 $ (-12 %, Posit-Hoch = Fill)
+Post-Fill V3:   1.432,66 $ (+20 %)
+Post-Fill V4:   1.611,75 $ (+35 %)
+Live 09:43:     1.190,16 $ (change_today -1,96 %, P/L -0,31 %) — V1-Puffer +8,35 %
+```
+
+**Sizing-Check:** portfolio_value 99.541,20 * 0,10 = 9.954,12 (VIX <25 → 10 %); shares = floor(9.954,12/1.199,90) = 8; limit = round(1.210,79*1,005, 2) = 1.216,84.
+
+**Sektor-Check nach Fill:** JPM XLF 1,02 % + UNH XLV 10,08 % + LLY XLV 9,57 % + MU XLK 9,06 % → Total 29,74 % investiert; **XLV Total 19,65 %** (unter 30 %-Cap ✓, 2/3 XLV-Positionen ✓); Positionen 4/8, 4 Slots frei bis Fr.
+
+**LLY Stop-Levels V1–V4 (Post-Fill, avg 1.193,89):**
+- V1 = 1.098,38 $ (-8 % Standard-Stop-Loss)
+- V2 = 1.050,62 $ (-12 % vom Posit-Hoch = Fill; Trailing ab neuem Hoch nach oben)
+- V3 = 1.432,66 $ (+20 % → 50 % verkaufen)
+- V4 = 1.611,75 $ (+35 % → Rest verkaufen)
+
+**Earnings-Verifikation LLY (Perplexity 06.07. Multi-Source):**
+- **Q2 2026: 05.08.2026 BMO** — 4-Source-Konsens: MarketBeat + LLY Investor-Relations Webcast + MarketChameleon + Nasdaq/Zacks (algo-derived) → 22 HT ab heute → 3-HT-Blackout aktiv ab **31.07. Close** → **JETZT NICHT AKTIV.**
+- Weekly-Review-Prognose "~25.07." korrigiert nach unten (05.08. ist späteres = mehr Puffer).
+
+**Datenqualitäts-Hinweise:**
+- Perplexity Multi-Symbol-Query (LLY+GOOGL kombiniert) lieferte nur LLY-Daten, GOOGL-Query separat notwendig — Prompt-Split-Strategie funktioniert.
+- LLY-FwdPE 34,51 (höchste Source) knapp unter 35 → K5 grün, aber grenzwertig — Recheck bei Weekly Review.
+- Alle Alpaca-Marks konsistent mit Positions-API.
+
+**ClickUp:** TRADE_BUY Alert Versuch (Prio 3) — Push-Notification an Owner + Memory-Log primär (ITEM_246 Tier-Limit carry-over, Payload mit `custom_item_id: null`).
+
+> **Entscheidung Market Open:** LIMIT-ORDER LLY platziert. Erstes 5/5-K-Signal KW28. Multi-Source K5-Verifikation (FwdPE Median 32,7 ≤35 + RevGrowth 47,43 % ≥10 %) klar unter K5-Schwelle. Alle 4 K1-K4 Live bestätigt. LLY war 2. höchste RS nach AMD/CAT/MS-Ausschluss (K5-strukturell bzw. Earnings-Timing). Sektor XLV bleibt trotz UNH+LLY unter 30 %-Cap (19,92 %). Earnings-Blackout weit weg (05.08., 22 HT). MU-Position durch Gap-Up entlastet (V1-Puffer +4,86 %).
+> **Lessons-Tag:** (1) GOOGL Weekly-Review-Lead-Ranking wurde durch K3-Ranking überstimmt — LLY mit K5-clean und höherer RS bekommt Vorzug, XLC-Diversifikations-Vorteil bleibt Backup-Argument. (2) FwdPE-Multi-Source-Median-Ansatz (statt Einzel-Source) hilft bei grenzwertigen K5-Kandidaten wie LLY 34,51 (nur 0,49 unter Schwelle).
+> **Nächste Routine:** Mo 06.07. 13:00 ET Midday Stop-Check (LLY-Fill-Status + V1–V4 aller offenen Positionen).
 
 ---
 

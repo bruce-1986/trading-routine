@@ -4,6 +4,89 @@
 
 ---
 
+## Market Open 09:41 ET — 2026-07-06 (Mo, KW28) — **LLY LIMIT-ORDER PLACED (5/5, K5 Multi-Source ✓)**
+
+**Alpaca Clock:** is_open=true (09:37 ET), next_close 06.07. 16:00 ET. **NYSE offen KW28 Mo.**
+
+**Account Live 09:41 ET:**
+```
+Equity:            99.541,20 $   (vs last_equity 99.420,34 → +0,121 % Daily) [GRÜN]
+Cash:              79.428,25 $   (79,79 %)
+Long MV:           20.112,95 $   (20,21 %; JPM 1.014,15 + UNH 10.090,32 + MU 9.008,48)
+SPY Live:            748,11 $    (+0,55 % vs Do 02.07. 744,86 → moderate risk-on)
+VIX:                ~16          (Multi-Source ~16 carry-over Pre-Market)
+Crash-Filter:       INAKTIV       (SPY +0,55 %)
+Guardrails 8/8:     ALLE GRÜN     (Daily +0,12 % | Weekly +0,12 % | DD -0,53 % | VIX ~16 | Käufe 1/2)
+```
+
+**Positionen V1–V6 Live:**
+- JPM 338,05 $ (+1,58 %, V1-Puffer +9,54 %) → alle SICHER
+- UNH 420,43 $ (+4,69 %, V1 +13,80 %, V2 378,48 getrailt) → alle SICHER
+- MU  1.001,12 $ (-3,53 %, V1-Puffer +4,86 % **ENTSPANNT** vs Fr-Close +2,19 %) → alle SICHER
+→ **Keine Verkaufsorder.**
+
+**Kandidaten-Scan (Alpaca 200d IEX Bars + Perplexity K5 06.07.):**
+| Sym | Live | K1 | K2 RSI | K3 RS vs SPY (+14,07 % 63d) | K4 Proj | K5 | Score |
+|-----|------|-----|--------|-----------------------------|---------|-----|-------|
+| GOOGL | 361,72 | ✓ EMA50 358,17>316,50 | ✓ 50,73 | ✓ +8,24 % | ✓ 220 % | ✓ FwdPE 21,87/28,65 ≤35, Rev +11,33 % | 5/5 Backup |
+| **LLY** | 1199,90 | ✓ 1089,02>987,10 | ✓ 64,34 | ✓ **+14,16 %** | ✓ 242 % | ✓ FwdPE 34,51/32,69/32,53 ≤35, Rev +47,43 % | **5/5 LEAD** |
+| MS | 219,62 | ✓ 204,77>178,92 | ✓ 58,26 | ✓ +18,40 % | ✓ 150 % | ✓ carry-over aber Earnings 15.07. Blackout ab 10.07. | 5/5 Timing-Vorbehalt |
+| CAT | 984,00 | ✓ | ✓ 53,30 | ✓ +23,10 % | ✓ 371 % | ✗ RevGrowth Q1 -1 % | 4/5 K5 ✗ |
+| AMD | 540,73 | ✓ | ✓ 55,73 | ✓ +134,27 % | ✓ 533 % | ✗ FwdPE 35-95x + XLK-Konflikt | 4/5 K5 ✗ |
+| AAPL | 309,28 | ✓ | ✓ 61,25 | ✓ +6,80 % | ✓ 168 % | ? Recheck + XLK-Konflikt | 4/5 K5 offen |
+
+**Perplexity K5 Multi-Source LLY (06.07.):**
+- FwdPE: **34,51** [intellectia.ai 04.07.] / **32,69** [valueinvesting.io] / **32,53** [finbox] → **Median ~32,7 ≤35** ✓
+- RevGrowth Q1 2026 YoY: **+47,43 %** [Perplexity Source 8] → ≥10 % ✓
+- Sektor: XLV Healthcare (Pharma) bestätigt
+- Earnings Q2 2026: **05.08.2026 BMO** — 4-Source-Konsens (MarketBeat + LLY IR Webcast 05.08. 10:00 EDT + MarketChameleon + Nasdaq/Zacks 06.08. algo) → 22 HT ab heute → 3-HT-Blackout ab 31.07. Close → JETZT NICHT AKTIV
+
+**Perplexity K5 GOOGL (06.07.):**
+- FwdPE: 21,87 [GuruFocus] / 28,65 [Chartloom] → ≤35 ✓
+- RevGrowth: 11,33 % Q1 2026 estimate → ≥10 % ✓
+- Sektor XLC bestätigt; Earnings unbestätigt, "late July or early August" — Weekly-Review 22.07. → 12+ HT Puffer
+
+**Ranking (Strategie: höchste RS + alle 5 grün):**
+1. AMD +134 % → K5 ✗ OUT
+2. CAT +23 % → K5 ✗ OUT
+3. MS +18 % → 5/5 aber Earnings 15.07. → 4 HT Puffer bis Blackout → **Downgrade Backup**
+4. **LLY +14,16 % → 5/5 grün, Earnings safe (22 HT) → LEAD**
+5. GOOGL +8,24 % → 5/5 grün, XLC-Diversifikation → Backup
+6. AAPL +6,80 % → K5 offen → OUT
+
+**LLY-Order (Alpaca):**
+```
+Order-ID:   f6364db0-8a8f-4a11-b305-26a4874f1f6d
+Symbol:     LLY | BUY LIMIT | 8 Sh | 1.216,84 $ | Day | Status NEW/pending
+Berechnung: prev_close 1.210,79 (Do 02.07.) * 1,005 = 1.216,84 ; sizing floor(99541,20*0,10/1199,90) = 8
+Max-Cost:   9.734,72 $ (9,78 % Portfolio)
+```
+
+**Sektor-Check bei Fill:** XLF 1,02 % + XLV 19,92 % (UNH+LLY) + XLK 9,05 % = 29,99 % investiert; XLV Total unter 30 %-Cap ✓, 2/3 XLV-Positionen ✓; Positionen 4/8.
+
+**Bei Fill:** V1 = fill*0,92; V2 = Posit-Hoch*0,88; V3 = fill*1,20; V4 = fill*1,35. ClickUp TRADE_BUY Prio 3 (Fallback Push).
+**Bei kein Fill bis 16:00 ET:** Day-Order verfällt, KW28 zurück 0/2.
+
+**Zusammenfassung (routine-schema):**
+```
+Scans:               6 Kandidaten (GOOGL, LLY, MS, CAT, AMD, AAPL)
+Kaufsignal:          LLY (5/5, höchste RS unter K5-grünen + Earnings-safe)
+Trade platziert:     JA — LLY BUY LIMIT 8 Sh @ 1.216,84 Day (pending)
+Käufe KW28:          1/2
+Portfolio nach Scan: 99.541 $ Gesamt, 20,21 % investiert (Fill hebt auf ~30 %)
+```
+
+**Datenqualität:**
+- Perplexity Multi-Symbol lieferte nur LLY, GOOGL separate Query nötig → Prompt-Split-Strategie
+- LLY-FwdPE 34,51 knapp unter 35 → K5 grün, grenzwertig, Weekly-Review-Recheck
+- Alpaca IEX-Live-Ask sprang auf 1.270,50 (dünne IEX-Liquidität, letzter Trade 1.192,75 gültig)
+
+**ClickUp:** TRADE_BUY Alert Prio 3 (Push-Notification Fallback wegen ITEM_246 Tier-Limit carry-over).
+
+**Nächste Routine:** Mo 06.07. 13:00 ET Midday Stop-Check (LLY-Fill-Status + V1–V4).
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-06 (Mo, KW28 Start) — Guardrails GRÜN, MU-Gap-Up entspannt V1-Puffer, Buy-Scan JA
 
 **Makro-Lage (Pre-Market 08:35 ET, Alpaca IEX + Perplexity):**

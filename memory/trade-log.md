@@ -6,13 +6,14 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs   | Close-Mark 03.07.  | Gewinn/Verlust      | Stop-Loss | TP1        | TP2        | Signale         |
-|--------|------------|------------|--------------------|---------------------|-----------|------------|------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $   | 334,47 $           | +5,07 $ (+0,51%)    | 306,16 $  | 399,34 $   | 449,25 $   | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $   | 425,36 $           | +570,96 $ (+5,92%)  | 369,44 $  | 481,88 $   | 542,12 $   | K1✓K2✓K3✓K4✓K5✓ |
-| MU     | 2026-07-02 | 1.037,72 $ | 975,56 $           | -559,44 $ (-5,99%)  | 954,71 $  | 1.245,26 $ | 1.400,92 $ | K1✓K2✓K3✓K4✓K5✓ |
+| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 06.07. 09:43 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
+|--------|------------|-------------|------------------------|---------------------|-------------|-------------|-------------|-----------------|
+| JPM    | 2026-06-17 | 332,78 $    | 338,77 $               | +17,97 $ (+1,80%)   | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $    | 417,61 $               | +384,96 $ (+3,99%)  | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
+| MU     | 2026-07-02 | 1.037,72 $  | 1.001,58 $             | -325,31 $ (-3,48%)  | 954,71 $    | 1.245,26 $  | 1.400,92 $  | K1✓K2✓K3✓K4✓K5✓ |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.190,16 $             | -29,82 $ (-0,31%)   | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 19.992,09 $ (Marktwert Alpaca 03.07. 16:02 ET, NYSE-Feiertagsschluss carry-over) | **Cash:** 79.428,25 $ | **Positionen:** 3/8 | **Käufe KW27:** 1/2
+**Gesamt investiert:** 29.574,93 $ (Marktwert Alpaca 06.07. 09:43 ET) | **Cash:** 69.877,15 $ | **Positionen:** 4/8 | **Käufe KW28:** 1/2 (LLY FILLED)
 
 ---
 
@@ -22,9 +23,9 @@
 |--------|------|------|-----|-------|-----|--------|--------|----------|
 | —      | —    | —    | —   | —     | —   | —      | —      | —        |
 
-_Keine offenen Orders. Market Close 03.07. 16:02 ET **NO-OP** — NYSE geschlossen (Independence Day observed, Alpaca is_open=false, next_open Mo 06.07. 09:30 ET). Keine V1–V6-Trigger-Auswertung möglich (kein Handel). Marks carry-over Broker-Refresh: JPM 334,47 (+0,51 %) / UNH 425,36 (+5,92 %) / MU 975,56 (-5,99 %, V1-Puffer +2,19 % KRITISCH). Alle Guardrails GRÜN. Weekly KW27 -0,60 %._
+_LLY-Limit-Order **GEFILLT 09:42:49 ET** (8/8 Sh @ avg 1.193,89 $, Fill-Zeit nur 1:49 min nach Order-Submit vs MU 35 min). Investiert 9.551,10 $ (9,60 % Portfolio). Stop-Loss V1 auf 1.098,38 gesetzt (-8 % vom Fill). Sektor XLV Total 19,65 % (UNH 10,08 % + LLY 9,57 %) unter 30 %-Cap. Guardrails alle GRÜN._
 
-_Nächster Check: Fr 17:00 ET Weekly Review (KW27-Bilanz), dann Mo 06.07. 08:30 ET Pre-Market (KW28 Start). MU-V1-Trigger bei <954,71 löst Market-Sell sofort aus (Gap-Down-Risiko Mo-Open beobachten)._
+_Nächster Check: 13:00 ET Midday Stop-Check (V1–V4 alle 4 offenen Positionen). Käufe KW28 1/2 → 1 Slot frei bis Fr._
 
 ---
 
@@ -39,6 +40,29 @@ _Nächster Check: Fr 17:00 ET Weekly Review (KW27-Bilanz), dann Mo 06.07. 08:30 
 ---
 
 ## Trades
+
+### KAUF (filled): LLY am 2026-07-06
+- Limit-Order:    $1.216,84 (Day, +0,5 % über Vortagesschluss $1.210,79 = Do 02.07. Close; Fr 03.07. NYSE-Feiertag)
+- Order-Submit:   09:41 ET, Fill 09:42:49 ET (**1 min 49 sec — sehr schneller Fill**, vs MU 02.07. 35min)
+- Fill:           8/8 Shares @ **$1.193,8875 avg** (deutlich unter Limit — Aggressiv-Ask war 1.199,52 auf IEX, tatsächliche Ausführung besser)
+- Menge:          8 Shares
+- Investiert:     **9.551,10 $** (9,60 % Portfolio bei Fill)
+- Stop-Loss V1:   **$1.098,38** (-8 % vom Fill 1193,89)
+- Trailing V2:    **$1.050,62** (-12 % vom Posit-Hoch = Fill-Preis, kein neues Hoch nach Fill)
+- TP1 / V3:       **$1.432,66** (+20 % → 50 % verkaufen)
+- TP2 / V4:       **$1.611,75** (+35 % → Rest verkaufen)
+- Kaufsignale (Alpaca Bars + Perplexity 06.07.):
+  - K1 ✓ EMA50 1.089,02 > EMA200 987,10 (Spread +101,92 — Golden Cross breit)
+  - K2 ✓ RSI(14) 64,34 (Wilder-Smoothing volle 200d-History, im 50–70-Fenster)
+  - K3 ✓ RS_63d LLY +28,22 % vs SPY +14,07 % → **+14,16 % RS** (2. höchste RS unter allen K5-grünen Kandidaten)
+  - K4 ✓ Live-Vol 09:37 ET 6.451 Sh / Avg20 148.232 → 7-min-Projektion 242 % Avg20 >> 120 % Hürde
+  - K5 ✓ Multi-Source Perplexity 06.07.:
+    - FwdPE 34,51 [intellectia.ai 04.07.] / 32,69 [valueinvesting.io] / 32,53 [finbox] → **Median ~32,7 ≤ 35 ✓**
+    - RevGrowth Q1 2026 YoY: **+47,43 %** [Perplexity source 8] → ≥ 10 % ✓
+- Sektor:         XLV Healthcare — 2. XLV-Position mit UNH; Sektor-Gewicht nach Fill **19,65 %** (UNH 10,08 % + LLY 9,57 %) unter 30 %-Cap, 2/3 XLV-Positionen
+- Earnings:       Q2 2026 **05.08.2026 BMO** Multi-Source verifiziert (MarketBeat + LLY Investor-Relations Webcast + MarketChameleon + Nasdaq/Zacks) → 22 HT ab heute → 3-HT-Blackout erst ab 31.07. Close → **KEIN Blackout aktiv**
+- Status nach Fill 09:43 ET: Live 1.190,16 $ (P/L -0,31 %, change_today -1,96 %); V1 1.098,38 SICHER (+8,35 % Puffer); V2 1.050,62 (Posit-Hoch = Fill 1.193,89) SICHER (+13,28 %); V3/V4 weit entfernt
+- Alpaca Order-ID: f6364db0-8a8f-4a11-b305-26a4874f1f6d
 
 ### KAUF (filled): MU am 2026-07-02
 - Limit-Order:    $1.037,80 (Day, +0,5 % über Vortagesschluss $1.032,64)
