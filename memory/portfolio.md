@@ -1,6 +1,93 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-03 17:05 ET (Weekly Review KW27, Wochenabschluss unter Feiertagsschluss NYSE, Guardrails ALLE GRÜN, Alpha -2,73 % vs SPY, MU-V1-Puffer +2,19 % kritisch für Mo Open)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-06 08:35 ET (Pre-Market KW28 Start, Guardrails ALLE GRÜN, MU-Gap-Up +3,35 % entspannt V1-Puffer auf +5,60 %, Buy-Scan JA für 09:30 ET Open)
+
+---
+
+## Pre-Market KW28 Start — 2026-07-06 08:35 ET (Mo)
+
+```
+Alpaca clock:      is_open=false | next_open Mo 06.07. 09:30 ET | next_close Mo 06.07. 16:00 ET
+Gesamtwert:        99.682,06 $   (Alpaca equity Pre-Market, vs last_equity 99.420,34)
+Cash:              79.428,25 $   (79,68 %, identisch zu Fr-Close)
+Investiert (MV):   20.253,81 $   (20,32 %, JPM 999,36 + UNH 10.180,56 + MU 9.073,89)
+Daily P/L Live:    +0,263 %       [GRÜN — vor Open, hauptsächlich MU-Gap-Up]
+Weekly KW28-Basis: 99.420,34 $   (= Fr 03.07. Close, KW28 Reset)
+Weekly P/L KW28:   0,000 %        [GRÜN]
+ATH:              100.066,47 $    DD -0,384 % [GRÜN — Alarm -15 %]
+Käufe KW28:            0/2       (Reset Mo)
+Pending Orders:        0
+VIX Spot Live:      15,81-16,32   (Multi-Source CBOE/Yahoo/CNBC) [GRÜN → 10 % Sizing]
+Crash-Filter:       INAKTIV       (SPY Do -0,108 %; Fr 03.07. Feiertag)
+Guardrails:  Daily +0,26 % | Weekly 0 % | DD -0,38 % | VIX ~16 | Käufe 0/2 → ALLE 8 GRÜN
+```
+
+**Konsistenz-Check Memory ↔ Alpaca:**
+- Fr-Close 99.420,34 ↔ Alpaca last_equity 99.420,34 → **exakt ✓**
+- Cash 79.428,25 identisch ✓
+- lastday_price = Fr-Close Marks (JPM 334,47 / UNH 425,36 / MU 975,56) ↔ Memory identisch ✓
+- avg_entry_price für alle 3 Positionen konsistent ✓
+
+**Positionen Live V1–V6 (Pre-Market Marks Alpaca 08:35 ET):**
+- **JPM**  333,12 $ (Entry 332,78, P/L +0,10 %, change_today -0,40 %)
+  - V1 306,16 SICHER (+8,81 % Puffer)
+  - V2 ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+10,26 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+  - V5 EMA50 315,32 > EMA200 306,00 ✓ carry-over
+  - V6 RSI 62,83 / RS +12,30 % → NICHT ausgelöst
+- **UNH**  424,19 $ (Entry 401,57, P/L +5,63 %, change_today -0,275 %)
+  - V1 369,44 SICHER (+14,81 % Puffer)
+  - V2 378,48 (getrailt 02.07. auf Posit-Hoch 430,095) SICHER (+12,08 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+  - V5 EMA50 385,12 > EMA200 342,87 ✓ carry-over (Spread +42,25)
+  - V6 RSI 64,76 / RS +13,97 % → NICHT ausgelöst
+- **MU**  1.008,21 $ (Entry 1.037,72, P/L -2,84 %, change_today +3,347 %) — **GAP UP entspannt V1-Watch**
+  - V1 954,71 SICHER **+5,60 % Puffer** [ENTSPANNT vs Fr-Close +2,19 % — Gap-Down-Risiko abgewendet]
+  - V2 913,39 (Posit-Hoch 1.037,94 = Fill-Preis carry-over) SICHER (+9,40 %)
+  - V3 1.245,26 / V4 1.400,92 — weit entfernt
+  - V5 EMA50 882,15 > EMA200 507,23 ✓ (Spread +374 sehr breit) carry-over
+  - V6 RSI 48,57 / RS -8,42 % → NICHT ausgelöst (RSI <80)
+
+→ **Alle V1–V6 SICHER für alle 3 Positionen.** Keine Verkaufsorder pending. MU-V1-Puffer weitet sich durch Pre-Market Gap-Up +3,35 % auf +5,60 % — kritische Weekend-Watch abgeschlossen ohne Trigger.
+
+**Earnings-Blackouts (Perplexity Verifikation 06.07.):**
+- **JPM Q2 2026: 14.07. BMO CONFIRMED** (Multi-Source: Business-Wire, MarketBeat, WallStreetHorizon, Public, MarketChameleon, JPM IR). 7 HT ab heute. Blackout aktiv ab **09.07. Close (Do)**. → **JETZT NICHT AKTIV**.
+- **UNH Q2 2026:** Perplexity heute UNCONFIRMED, carry-over 16.07. (8 HT). Blackout aktiv ab **13.07. Close (Mo)**. → **JETZT NICHT AKTIV**.
+- **MU Q4 FY2026:** Perplexity nennt 23.07. (nicht bestätigt); Memory-carry-over "typisch Ende Sept". Weit außerhalb 3-HT-Blackout. Recheck bei nächster Routine wenn <10T.
+- Andere KW28 Mo-Mi Earnings: **KEINE** bestätigt.
+
+**Watchlist Market-Open Mo 06.07. (carry-over Fr-Weekly-Review):**
+- **GOOGL** LEAD | XLC (leerer Sektor) | K1-K3 carry ✓ | K5 FwdPE 27,45 ✓ / Rev +22 % ✓ | Earnings 22.07. (>10 HT) ✓ | **Kein Sektor-Konflikt**
+- LLY | XLV (mit UNH) | K1-K3+K5 carry ✓ | K4 Live-Vol-Check | Earnings ~25.07. ✓
+- MS | XLF (mit JPM) | K1-K3 carry ✓ | K5 ✓ | **Earnings 15.07. → 3-HT-Blackout ab 10.07. Close = 4 HT freies Fenster wenn Buy heute**
+- CAT | XLI (leer) | K1-K3 carry ✓ | K5 Rev -1 % ✗ Recheck | Earnings ~05.08. ✓
+- AMD | XLK-Konflikt MU | K5 FwdPE ✗ Recheck
+- AAPL | XLK-Konflikt MU | K5 ? Recheck
+
+**Sektor-Belegung:** JPM XLF 1,00 % + UNH XLV 10,21 % + MU XLK 9,10 % = 20,32 % investiert. 3/8 Slots. XLC/XLI/XLE/XLU/XLB/XLY/XLP leer.
+
+**Guardrails-Detail (alle 8 GRÜN):**
+```
+1. Daily Loss Cap (-3 %):    +0,263 %                             [GRÜN]
+2. Weekly Loss Cap (-5 %):    0,000 % (KW28 Reset)                [GRÜN]
+3. Drawdown-Alarm (-15 %):   -0,384 % vs ATH 100.066,47           [GRÜN — 14,6 %-Puffer]
+4. Drawdown-Stopp (-20 %):   INAKTIV
+5. Crash-Filter (SPY -5 %):  INAKTIV (Do 02.07. -0,108 %)
+6. VIX-Filter (>30):         INAKTIV (Spot ~16)
+7. Earnings-Blackout:        KEINER
+8. Käufe/Woche max. 2:       0/2
+```
+
+**Datenqualitäts-Hinweise:**
+- SPY-Premarket via Alpaca IEX **nicht verwertbar** (After-Hours-Quote Fr 02.07. 16:00 ET, ap 762,42/bp 724,91 = zu weite Spread nach Feiertag)
+- Perplexity SPY-PM, 10Y Treasury, News-Top-3 = leer (Datum-in-Zukunft-Bug carry-over)
+- VIX ~16 Multi-Source verifiziert (CBOE Futures 15,81; Yahoo 16,32; CNBC 16,15)
+- Alle Alpaca Broker-Marks konsistent mit Fr-Close-Memory
+
+**ClickUp:** [PRE-MARKET] Check Task angelegt Prio 4 — Task-ID `869e0ux1k` (https://app.clickup.com/t/869e0ux1k). `custom_item_id: null` Workaround erneut erfolgreich (ITEM_246 Tier-Limit umgangen).
+
+> **Entscheidung Pre-Market:** Alle 8 Guardrails GRÜN. MU-Gap-Up +3,35 % entlastet kritischen V1-Watch vom Weekend (Puffer +5,60 % statt +2,19 %). Keine Verkaufsorder für offene Positionen (V1–V6 sicher). **Market-Open-Scan JA** mit Lead-Kandidat **GOOGL** (XLC-Diversifikation, K5 sauber, Earnings 22.07. außerhalb Blackout). Backup: LLY (K4 Live-Vol), MS (Timing-Vorbehalt wg. 15.07. Earnings). Käufe KW28 0/2, Cash 79,68 % → 2 Slots verfügbar, 5 Positions-Slots frei.
+> **Nächste Routine:** Mo 06.07. 09:30 ET Market Open (Buy-Scan GOOGL/LLY/MS mit Live-K4/K5-Verifikation).
 
 ---
 
