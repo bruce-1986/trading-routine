@@ -4,6 +4,79 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-07-07 (Di, KW28) — **MU-V1-ALARM Pre-Market: 936,39 $ < Stop 954,71 $**
+
+**Alpaca Clock:** is_open=false, next_open Di 07.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.
+
+**Account Live 08:35 ET (Pre-Market):**
+```
+Equity:           99.215,80 $   (vs last_equity 99.420,34 → Daily -0,206 %) [GRÜN]
+Cash:             69.877,15 $   (70,43 %, unverändert)
+Portfolio_value:  99.215,80 $
+Positions MV:     29.338,65 $   (29,57 %)
+Buying_power:    361.656,81 $
+Trading_blocked:  false | Account_blocked: false | Status: ACTIVE
+```
+
+**Positionen Pre-Market (Alpaca Quotes 08:35 ET, change_today = vs Vortagesschluss):**
+- **JPM**  341,57 $ (Entry 332,78, P/L +2,64 %, change_today +1,14 %) — XLF Pre-Market-Erholung fortgesetzt
+- **UNH**  420,75 $ (Entry 401,57, P/L +4,78 %, change_today +0,66 %) — XLV Pre-Market-Stabilisierung
+- **MU**   936,39 $ (Entry 1037,72, P/L **-9,77 %**, change_today **-4,91 %**) — **KRITISCH: LIEGT UNTER V1-STOP 954,71 $** ← Pre-Market-Tick
+- **LLY**  1.223,99 $ (Entry 1193,89, P/L +2,52 %, change_today +1,99 %) — XLV-Rebound, Fill-Vorteil verstärkt
+
+**⚠️ MU-V1-ALARM (Pre-Market):**
+- Pre-Market-Tick 936,39 $ → -9,77 % vs Fill (Entry 1037,72)
+- V1-Stop (Kaufkurs × 0,92) = 954,71 $ → **Pre-Market UNTER Stop**
+- Pre-Market-Ticks lösen V1 NICHT direkt aus (Strategy V1 = Kurs während Regulär-Session)
+- **Aktion 09:30 ET Market Open:** Falls MU im Open unter 954,71 $ → **V1 Market Sell SOFORT** (siehe market-open-routine.md)
+- Portfolio-Effekt bei V1-Auslösung: Verlust ~-6,7 % × 9.339,48 Investiert ≈ -625 $ realisiert, Cash ~78,3 % danach
+
+**Perplexity Macro Check (Pre-Market Live):**
+```
+VIX:              ~15,9-16,0        (+2-3 % vs Vortag) → GRÜN (< 30)
+SPY Pre-Market:   ±0,3-0,6 %        (Futures moderat, keine starken Bewegungen)
+10Y Treasury:     ~4,2-4,3 %        (stabile Zinsen)
+Fed-Speak heute:  Regional-Fed möglich (Inflation & Arbeitsmarkt)
+Makro-Events:     keine Mega-Daten heute (kein FOMC/CPI/NFP)
+Top-News:         (1) Zinssenkungs-Timing-Debatte (2) weichere Arbeitsmarktdaten Nachwirkung (3) Tech/Semis Rotation Growth/Value
+MU-News:          Keine spezifische Einzel-News, wahrscheinlich Branchenthemen (Speicherpreise/KI-Sentiment/Zyklizität)
+```
+
+**Earnings-Blackout-Check (Perplexity Di-Do 07.-09.07.):**
+- JPM, UNH, MU, LLY: **keine Earnings** in nächsten 3 Handelstagen (S&P 500 Earnings-Welle startet erst Mitte Juli — JPM/Banken KW29-30)
+- Watchlist GOOGL, CAT, MS, AAPL: keine Earnings vor Mitte Juli (GOOGL 22.07. carry-over ✓)
+- **Kein Blackout aktiv** → keine Stop-Loss-Verengung auf -5 %
+
+**Guardrail-Status Pre-Market:**
+```
+1. Daily Loss Cap (-3 %):    -0,206 %   → GRÜN (Puffer -2,79 %)
+2. Weekly Loss Cap (-5 %):   -0,206 %   → GRÜN
+3. Drawdown-Alarm (-15 %):   -0,856 %   → GRÜN (ATH 100.066,47)
+4. Drawdown-Stopp (-20 %):   -0,856 %   → GRÜN
+5. Crash-Filter SPY -5 %:    Mo +0,86 % → INAKTIV
+6. VIX-Filter > 30:          ~16        → GRÜN
+7. Earnings-Blackout:        keine      → GRÜN
+8. Käufe/Woche max 2:        1/2        → 1 Slot frei
+```
+**Alle Guardrails GRÜN — aber MU-V1-Pre-Market-Alarm überlagert Kauf-Entscheidung.**
+
+**Entscheidung Market-Open-Scan (09:30 ET):**
+- **Priorität 1:** MU-V1-Überwachung — bei Open unter 954,71 $ → sofort Market Sell 9 Shares (siehe market-open-routine.md V1-Handling)
+- **Priorität 2:** Falls MU-V1 auslöst → Kauf-Scan zurückstellen (Cash-Erholung + Portfolio-Reset zuerst)
+- **Priorität 3:** Falls MU-V1 NICHT auslöst (Open ≥ 954,71 $ oder Rebound) → GOOGL K1-K5 Live-Recheck möglich, 1 Kauf-Slot frei
+- Watchlist unverändert: GOOGL (Lead), CAT (Backup K5-Recheck), MS (Timing-Vorbehalt), AAPL (Fallback)
+
+**Datenqualitäts-Hinweise:**
+- Alpaca `current_price` in Pre-Market = letzter Trade/Quote, kein offizieller Open-Preis → V1-Trigger erst bei Regulär-Session-Preis
+- Perplexity SPY-Premarket-Range 0,3-0,6 % unspezifisch (Inference-Marker) — Ground-Truth aus Alpaca-SPY-Quote bei Market Open zwingend
+- Perplexity 10Y-Yield als Inference (kein direkter Live-Feed im Search) — bestätigt aus News nur Größenordnung
+
+**ClickUp:** [PRE-MARKET] Check Task angelegt Prio 3 (statt 4 wegen MU-V1-Alarm-Kontext).
+
+**Nächste Routine:** Di 07.07. 09:30 ET Market Open — **MU-V1-Handling zwingend als erster Schritt**, dann Kauf-Scan bei sicherem Portfolio.
+
+---
+
 ## Market Close 16:00 ET — 2026-07-06 (Mo, KW28) — Tagesbilanz + Watchlist Di 07.07.
 
 **Tagesbilanz:** Portfolio -0,173 % (-172,06 $) | SPY IEX +0,861 % (Do 02.07. 744,86 → Mo 06.07. 751,27; Fr Feiertag) | **Alpha -1,034 %** | Positionen 4/8 (JPM +1,76 % / UNH +3,94 % / MU -6,69 % / LLY +0,79 %) | Käufe KW28 1/2 nach LLY-Fill | Guardrails alle GRÜN | Weekly KW28 -0,173 % (kein Cap-Trigger).
