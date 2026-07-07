@@ -4,6 +4,80 @@
 
 ---
 
+## Market Open 09:40 ET — 2026-07-07 (Di, KW28) — MU V1-Sell exec + GOOGL Buy pending
+
+**Alpaca Clock:** is_open=true, next_close 16:00 ET. Regulär-Session seit 09:30 ET.
+
+**Account nach MU-Sell (09:40 ET):**
+```
+Equity:          99.266,85 $   (vs last_equity 99.420,34 → Daily -0,154 %) [GRÜN]
+Cash:            78.197,20 $   (78,78 %, +8.320,05 $ aus MU-Sell)
+Portfolio_MV:    21.069,65 $   (21,22 %)
+Buying_power:   361.664,03 $
+Käufe KW28:      1/2 (LLY 06.07. filled; GOOGL-Buy pending zählt nach Fill als 2/2)
+Pending Orders:  1 (GOOGL Limit-Buy)
+```
+
+**⚠️ SCHRITT 1 — MU V1 Stop-Loss AUSGELÖST bei Market Open:**
+- Live 09:37 ET: MU 925,86 $ → -3,01 % unter V1-Stop 954,71 $
+- Market Sell 9 Sh submit 09:37:39 ET → Fill 09:37:42 ET (3 sec, exzellent)
+- Fill-Preis 924,45 $ avg → Erlös 8.320,05 $
+- **Realisierter Verlust -1.019,43 $ (-10,92 %)** vs Entry 1.037,72 $
+- Alpaca Order-ID: 12e7fa06-2702-4a47-ab32-c2f66edfd8d5
+- ClickUp Critical Task 869e1fgp5 angelegt + Owner-Push Notification
+
+**SCHRITT 2 — Guardrail-Status nach MU-Sell:**
+```
+1. Daily Loss Cap (-3 %):    -0,154 %   → GRÜN (Puffer -2,85 %)
+2. Weekly Loss Cap (-5 %):   -0,154 %   → GRÜN
+3. Drawdown-Alarm (-15 %):   -0,799 %   → GRÜN
+4. Drawdown-Stopp (-20 %):   -0,799 %   → GRÜN
+5. Crash-Filter SPY -5 %:    SPY -0,20 %→ INAKTIV
+6. VIX-Filter > 30:          ~16        → GRÜN
+7. Earnings-Blackout:        keine      → GRÜN (GOOGL 22.07. = 11 HT sicher)
+8. Käufe/Woche max 2:        1/2        → 1 Slot frei
+```
+**Alle Guardrails GRÜN → Kauf-Scan erlaubt.**
+
+**SCHRITT 3 — V1-V6 Live-Check verbliebene Positionen (09:40 ET):**
+- **JPM** 340,81 $ (P/L +2,41 %) — V1 306,16 SICHER +11,32 % — Keine Action
+- **UNH** 424,69 $ (P/L +5,76 %) — V1 369,44 SICHER +14,94 % — Keine Action
+- **LLY** 1.232,28 $ (P/L +3,22 %) — V1 1.098,38 SICHER +12,20 % — Keine Action
+→ Alle 3 verbliebenen Positionen V1-V6 SICHER, keine Verkaufsorder.
+
+**SCHRITT 4 — Kauf-Scan GOOGL K1-K5 Live (Alpaca IEX 211d Bars):**
+```
+Sym    Live      K1 EMA50>EMA200      K2 RSI    K3 RS_63d vs SPY   K4 Vol-Projektion   K5 Multi-Source
+GOOGL  369,57   ✓ 358,91>323,23     ✓ 53,59   ✓ +9,11 %          ✓ ~176 % Avg20      ✓ FwdPE 21,87/28,65 ≤35, Rev +11,33 % (carry 06.07.)
+SPY    749,76   ✓ 731,53>696,51     ✓ 58,44   —                  —                    —
+```
+→ **GOOGL 5/5 grün → BUY-Entscheidung**
+
+**SCHRITT 5 — GOOGL Position-Sizing + Limit-Order:**
+- Equity nach MU-Sell: 99.266,85 $
+- VIX ~16 (<25) → 10 % Sizing: Budget 9.926,69 $
+- Shares = floor(9.926,69 / 369,57) = **26 Sh**
+- Limit = round(366,34 × 1,005, 2) = **368,17 $** (+0,5 % über Mo-Close)
+- Max Kosten: 26 × 368,17 = 9.572,42 $ (9,64 % Portfolio)
+- Order-Submit: 09:40:46 ET, TIF=day
+- Status 09:41 ET: **new pending** (Live 369,42 $ > Limit → wartet auf Pullback)
+- Alpaca Order-ID: 69106496-90d4-46dc-a370-cafb7eb816ac
+
+**Sektor-Post-Buy (bei Fill):** JPM XLF 1,03 % + UNH+LLY XLV 20,20 % + GOOGL XLC 9,64 % = 30,9 % investiert, 4/8 Slots → Diversifikation stark verbessert (XLC neu, XLK/MU-Slot freigegeben)
+
+**Perplexity Sektor-Check heute:** ENTFÄLLT (Watchlist-Carry-over vom Pre-Market/Mo-Close ausreichend; alle 5 Signale via Alpaca Bars ohne Perplexity-K5-Recheck bestätigt — K5 carry-over-Median FwdPE 21,87/28,65 aus multi-source Erhebung 06.07.).
+
+**Datenqualitäts-Hinweise:**
+- Alpaca IEX-Bars 211d verfügbar für GOOGL — EMA50/200 + RSI(14) live berechnet
+- SPY IEX 749,76 als Ground-Truth für RS_63d-Rechnung (Mo Close 751,27 = -0,20 %)
+- Volume-Projektion 8-min-Fenster → linear extrapoliert auf 390 min (konservativ da Open-Vol typisch überproportional)
+
+**ClickUp:** [CRITICAL] MU V1 Task 869e1fgp5 Prio 1 angelegt. Kein [OPEN] Alert für GOOGL-Order-Submit (nur bei Fill Prio 3 senden).
+
+**Nächste Routine:** Di 07.07. 13:00 ET Midday — GOOGL-Fill-Status prüfen, V1-V4 aller 3 verbliebenen Positionen live.
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-07 (Di, KW28) — **MU-V1-ALARM Pre-Market: 936,39 $ < Stop 954,71 $**
 
 **Alpaca Clock:** is_open=false, next_open Di 07.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.
