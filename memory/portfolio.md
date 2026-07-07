@@ -1,6 +1,64 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-07 09:40 ET (Market Open KW28 Di, **MU V1 Sell filled @ 924,45 $ = -1.019,43 $ real.**, GOOGL Limit-Buy 26 Sh @ 368,17 $ pending, Daily -0,154 % GRÜN, Cash 78,78 %)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-07 13:06 ET (Midday KW28 Di, **GOOGL Limit-Buy FILLED @ 368,10 $ avg (26 Sh)**, alle V1–V4 SICHER, Daily -0,095 % GRÜN, 4/8 Positionen)
+
+---
+
+## Midday 2026-07-07 13:06 ET (Di, KW28) — Stop-Check + GOOGL FILL bestätigt
+
+```
+Alpaca clock:      is_open=true | next_close 07.07. 16:00 ET
+Positionen:        4/8 (JPM/UNH/LLY/GOOGL)
+Ø P/L (einfach):   +2,76 % (JPM +1,36 % / UNH +6,15 % / LLY +3,11 % / GOOGL +0,41 %)
+Schlechteste:      GOOGL +0,41 % (V1-Puffer +8,44 % — Post-Fill Eintritt)
+Beste:             UNH +6,15 % (V1-Puffer +15,36 %)
+Stops:             alle regulär — kein V1/V2/V3/V4-Trigger
+Daily P/L:            -94,27 $   (-0,095 %)  [GRÜN — vs last_equity 99.420,34]
+Equity:            99.326,07 $   (Cash 68.626,63 / MV 30.699,44)
+Buying_power:     360.464,95 $
+```
+
+**GOOGL Limit-Order gefüllt (zwischen 09:40 und 13:06 ET):**
+- Order-ID: 69106496-90d4-46dc-a370-cafb7eb816ac (Limit 368,17 $ Day, Submit 09:40:46 ET)
+- Fill: 26/26 Sh @ **368,098846 $ avg** (cost basis 9.570,57 $ = 9,64 % Portfolio)
+- V1 = 338,65 $ (-8 %), V2 = 325,25 $ (-12 % vom Posit-Hoch = Live 369,60, Tracking ab Fill), V3 = 441,72 $ (+20 %), V4 = 496,93 $ (+35 %)
+- Post-Fill Live 369,60 $ (P/L +0,41 %, change_today +0,86 %) → V1-Puffer +8,44 %
+
+**Live-Check V1–V4 (Alpaca 13:06 ET):**
+- **JPM**  337,32 $ (Entry 332,78, P/L +1,36 %, change_today -0,11 %) — leichter XLF-Cool-off
+  - V1 306,16 SICHER (+10,19 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+11,66 %)
+  - V3 399,34 / V4 449,25 — weit entfernt, kein TP-Trigger
+- **UNH**  426,285 $ (Entry 401,57, P/L +6,15 %, change_today +1,98 %) — XLV-Rebound bestätigt
+  - V1 369,44 SICHER (+15,36 % Puffer)
+  - V2 Stop 378,48 (Posit-Hoch 430,095 carry-over 02.07., kein neues Hoch heute) SICHER (+12,63 %)
+  - V3 481,88 / V4 542,12 — weit entfernt
+- **LLY**  1.230,99 $ (Entry 1.193,89, P/L +3,11 %, change_today +2,58 %) — **NEUES Posit-Hoch heute (Live > Fill 1.193,89)**
+  - V1 1.098,38 SICHER (+12,07 % Puffer)
+  - V2 Stop **NEU 1.083,27** (Trail: 1.230,99 * 0,88; alt 1.050,62 vom Fill-Posit-Hoch) SICHER (+13,63 %)
+  - V3 1.432,66 / V4 1.611,75 — weit entfernt
+- **GOOGL**  369,60 $ (Entry 368,10, P/L +0,41 %, change_today +0,86 %) — Post-Fill stabil
+  - V1 338,65 SICHER (+8,44 % Puffer)
+  - V2 Stop 325,25 (Posit-Hoch = Live 369,60 Tracking ab Fill) SICHER (+11,99 %)
+  - V3 441,72 / V4 496,93 — weit entfernt
+
+→ **Keine Verkaufsorder.** Alle V1–V4 SICHER — alle Puffer ≥ +8,4 %.
+→ **Daily Loss Cap (-3 %) nicht erreicht** (-0,095 %). Keine Order-Stornierung nötig (keine offenen Limit-Orders).
+
+**Sektor-Update:** JPM XLF 1,02 % + UNH XLV 10,30 % + LLY XLV 9,92 % + GOOGL XLC 9,68 % = **30,91 % investiert**. XLV Total 20,22 % (unter 30 %-Cap ✓, 2/3 XLV). 4/8 Positions-Slots belegt.
+
+**Guardrails-Status:**
+```
+1. Daily Loss Cap (-3 %):    -0,095 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):   -0,095 % (KW28 Mo-Basis 99.420,34)    [GRÜN]
+3. Drawdown-Alarm (-15 %):   -0,741 % vs ATH 100.066,47            [GRÜN]
+4. Käufe KW28:                2/2 (LLY + GOOGL, Wochen-Slots voll) [KEIN weiterer Kauf KW28]
+```
+
+**ClickUp:** kein Alert (keine Stops, kein Cap → Logging-Disziplin gewahrt).
+
+> **Entscheidung:** No-Op — alle 4 Positionen halten. GOOGL-Fill schließt den 2/2-KW28-Kauf-Slot (kein weiterer Kauf bis Mo 13.07.). Portfolio-Struktur nach MU-Rotation zu GOOGL: XLC-Diversifikation erreicht, XLV weiter unter 30 %-Cap. Ø P/L +2,76 % zeigt schnelle Erholung nach MU-V1-Sell (Realverlust -1.019,43 $). LLY neues Posit-Hoch 1.230,99 hebt V2-Trail auf 1.083,27 (+2,63 % Fortschritt).
+> **Nächste Routine:** Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check aller 4 Positionen + Limit-Order für Mi 08.07. falls V5/V6-Trigger).
 
 ---
 
