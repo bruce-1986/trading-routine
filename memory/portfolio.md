@@ -1,6 +1,62 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-07 08:35 ET (Pre-Market KW28 Di, **MU-V1-ALARM Pre-Market 936,39 $ < Stop 954,71 $**, Daily -0,206 %, Guardrails GRÜN, VIX ~16)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-07 09:40 ET (Market Open KW28 Di, **MU V1 Sell filled @ 924,45 $ = -1.019,43 $ real.**, GOOGL Limit-Buy 26 Sh @ 368,17 $ pending, Daily -0,154 % GRÜN, Cash 78,78 %)
+
+---
+
+## Market Open 2026-07-07 09:40 ET (Di, KW28) — MU V1 exec + GOOGL Buy pending
+
+```
+Alpaca clock:      is_open=true | next_close 07.07. 16:00 ET
+Equity:            99.266,85 $   (nach MU-Sell Fill, vs last_equity 99.420,34)
+Cash:              78.197,20 $   (78,78 %, +8.320,05 $ aus MU-Erlös)
+Portfolio MV:      21.069,65 $   (21,22 %, JPM 1.022,43 + UNH 10.192,56 + LLY 9.858,24 — MU verkauft)
+Buying_power:     361.664,03 $
+Daily P/L:            -153,49 $   (-0,154 %)  [GRÜN — verbessert vs Pre-Market -0,206 %]
+ATH:              100.066,47 $    DD -0,799 % [GRÜN]
+Käufe KW28:            1/2        (LLY gefilled 06.07.; 1 Slot frei — GOOGL-Buy pending)
+Pending Orders:        1         (GOOGL Limit-Buy 26 Sh @ 368,17 Day)
+VIX:               ~16           [GRÜN → 10 % Sizing]
+SPY Live 09:37:    749,76 $      (-0,20 % vs Mo Close 751,27 → risk-off Open)
+Crash-Filter:       INAKTIV      (SPY -0,20 %)
+Guardrails:  Daily -0,15 % | Weekly -0,15 % | DD -0,80 % | VIX ~16 | Käufe 1/2 → ALLE GRÜN
+```
+
+**Ausgeführte Trades diese Session:**
+1. **MU V1 Stop-Loss Sell** — 9 Sh Market Sell @ 924,45 $ avg (Fill 09:37:42 ET, 3 sec) → Erlös 8.320,05 $ | Verlust **-1.019,43 $ (-10,92 %)** vs Entry 1.037,72 $
+2. **GOOGL Limit-Buy pending** — 26 Sh @ 368,17 $ Day (Submit 09:40:46 ET, Live 369,42 $ > Limit → wartet auf Pullback)
+
+**Positionen Live (Alpaca 09:40 ET):**
+- **JPM**  340,81 $ (Entry 332,78, P/L +2,41 %, change_today +0,71 %) — XLF-Stärke fortgesetzt
+  - V1 306,16 SICHER (+11,32 % Puffer)
+- **UNH**  424,69 $ (Entry 401,57, P/L +5,76 %, change_today +1,63 %) — XLV-Erholung
+  - V1 369,44 SICHER (+14,94 % Puffer)
+- **LLY**  1.232,28 $ (Entry 1.193,89, P/L +3,22 %, change_today +2,25 %) — XLV-Rebound absorbiert
+  - V1 1.098,38 SICHER (+12,20 % Puffer)
+
+**Kauf-Scan GOOGL K1-K5 Live (Alpaca 09:40 ET):**
+```
+K1 EMA50 358,91 > EMA200 323,23      ✓ (Spread +35,68 — Golden Cross breit)
+K2 RSI(14) 53,59                     ✓ (50-70 Fenster, Wilder-Smoothing)
+K3 RS_63d GOOGL +23,97 % vs SPY +14,86% = +9,11 %  ✓
+K4 Vol-Projektion ~176 % Avg20       ✓ (38.232 Sh in 8 min → ~2,15 M/Tag vs Avg20 1,22 M)
+K5 carry FwdPE 21,87/28,65 ≤ 35      ✓ (Rev +11,33 %)
+                                     → 5/5 grün → BUY
+```
+
+**Sektor-Update nach MU-Sell + GOOGL-Buy (bei Fill):**
+- Aktuell: JPM XLF 1,03 % + UNH XLV 10,27 % + LLY XLV 9,93 % = **21,22 %** investiert
+- Bei GOOGL-Fill: +XLC 9,64 % = **~30,9 %** investiert, 4/8 Positionen
+- XLV Total 20,20 % (unter 30 %-Cap ✓, 2/3 XLV), XLC neu diversifiziert
+
+**Watchlist Backup (falls GOOGL-Order nicht fillt bis Close):**
+1. **CAT** 969,52 $ — K5 RevGrowth-Recheck ausstehend (Q1 -1 % carry)
+2. **MS** 222,07 $ — Timing-Vorbehalt (Earnings 15.07. = Blackout ab Fr 10.07.)
+3. **AAPL** 312,73 $ — Fallback (XLK-Konflikt jetzt obsolet nach MU-Sell, K5-Recheck)
+
+**Guardrail-Status:** Alle GRÜN. MU-V1-Auslösung ordnungsgemäß nach Strategie ausgeführt.
+
+**Nächste Routine:** Di 07.07. 13:00 ET Midday-Check (GOOGL-Fill-Status, V1-V4 aller Positionen).
 
 ---
 

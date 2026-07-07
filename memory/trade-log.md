@@ -6,40 +6,75 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 06.07. 16:00 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 07.07. 09:40 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
 |--------|------------|-------------|------------------------|---------------------|-------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 338,64 $               | +17,59 $ (+1,76%)   | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $    | 417,38 $               | +379,38 $ (+3,94%)  | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
-| MU     | 2026-07-02 | 1.037,72 $  | 968,30 $               | -624,78 $ (-6,69%)  | 954,71 $    | 1.245,26 $  | 1.400,92 $  | K1✓K2✓K3✓K4✓K5✓ |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.203,28 $             | +75,14 $ (+0,79%)   | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $    | 340,81 $               | +24,09 $ (+2,41%)   | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $    | 424,69 $               | +554,88 $ (+5,76%)  | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.232,28 $             | +307,08 $ (+3,22%)  | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 29.371,13 $ (Marktwert Alpaca 06.07. 16:00 ET Close) | **Cash:** 69.877,15 $ | **Positionen:** 4/8 | **Käufe KW28:** 1/2 (LLY FILLED)
+**Gesamt investiert:** 21.069,65 $ (Marktwert Alpaca 07.07. 09:40 ET) | **Cash:** 78.197,20 $ | **Positionen:** 3/8 | **Käufe KW28:** 1/2 (LLY FILLED, MU V1-Sell realisiert)
 
 ---
 
 ## Offene Orders (pending)
 
-| Symbol | Side | Type | Qty | Limit | TIF | Status | Placed | Order-ID |
-|--------|------|------|-----|-------|-----|--------|--------|----------|
-| —      | —    | —    | —   | —     | —   | —      | —      | —        |
+| Symbol | Side | Type | Qty | Limit    | TIF | Status | Placed              | Order-ID                             |
+|--------|------|------|-----|----------|-----|--------|---------------------|--------------------------------------|
+| GOOGL  | buy  | limit| 26  | 368,17 $ | day | new    | 2026-07-07 09:40:46 | 69106496-90d4-46dc-a370-cafb7eb816ac |
 
-_Market Close Mo 06.07. 16:00 ET: Portfolio -0,173 % (-172,06 $) | SPY +0,861 % | Alpha -1,034 %. Alle V1–V6 SICHER (JPM/UNH/MU/LLY). Keine Limit-Order für Di 07.07. platziert. **MU-V1-Puffer verengt sich auf +1,42 %** (vs Midday +4,89 %, Rebound verpuffte) → Pre-Market Di zwingend. Sektor-Rotation heute XLK/XLF gewinnt, XLV verliert -1,04 % (UNH -1,88 %, LLY -0,88 % — XLV-Overweight erklärt Alpha-Miss)._
+_Market Open Di 07.07. 09:37 ET: **MU V1 Stop-Loss AUSGELÖST** bei Open — Kurs 925,86 $ < V1-Stop 954,71 $ (-3,01 % unter Stop). Market Sell 9 Sh @ 924,45 $ gefüllt 09:37:42 ET (3 sec Fill). Realisierter Verlust -1.019,43 $ (-10,92 %). Portfolio nach Fill: Equity 99.266,85 $ (Daily -0,154 % GRÜN), Cash 78.197,20 $. **JPM/UNH/LLY alle V1-V6 SICHER** (V1-Puffer +11 % bis +15 %)._
 
-_Nächster Check: Di 07.07. 08:30 ET Pre-Market Check (KW28 Tag 2). Käufe KW28 1/2 → 1 Slot frei bis Fr. Watchlist-Lead **GOOGL** (5/5 stabil, K5 carry ✓, XLC leer), Backup CAT (K5-Recheck)._
+_Kauf-Scan Watchlist-Lead GOOGL Live-Recheck K1-K5: K1 EMA50 358,91 > EMA200 323,23 ✓ | K2 RSI 53,59 ✓ | K3 RS_63d GOOGL +23,97 % vs SPY +14,86 % = +9,11 % ✓ | K4 Vol-Projektion ~153 % Avg20 (38.232 Sh in 8 min) ✓ | K5 carry-over FwdPE 21,87/28,65 ≤35 ✓ Rev +11,33 % ✓ → **5/5 grün**. Limit-Order 26 Sh @ 368,17 $ (+0,5 % über Mo-Close 366,34) platziert 09:40:46 ET. Sektor XLC leer → Diversifikation (JPM XLF / UNH+LLY XLV)._
+
+_Nächster Check: Di 07.07. 13:00 ET Midday (GOOGL-Fill-Status, MU-Slot-Freigabe eingerechnet, V1-V4 aller 3 verbliebenen Positionen)._
 
 ---
 
 ## Geschlossene Trades
 
-| Symbol | Kauf       | Verkauf    | Einstieg | Ausstieg | Ergebnis $ | Ergebnis % | Grund          |
-|--------|------------|------------|----------|----------|------------|------------|----------------|
-| AVGO   | 2026-06-22 | 2026-06-26 | 403,41 $ | 368,34 $ | -596,19 $  | -8,69 %    | V1 Stop-Loss   |
+| Symbol | Kauf       | Verkauf    | Einstieg    | Ausstieg    | Ergebnis $   | Ergebnis %  | Grund          |
+|--------|------------|------------|-------------|-------------|--------------|-------------|----------------|
+| AVGO   | 2026-06-22 | 2026-06-26 | 403,41 $    | 368,34 $    | -596,19 $    | -8,69 %     | V1 Stop-Loss   |
+| MU     | 2026-07-02 | 2026-07-07 | 1.037,72 $  | 924,45 $    | -1.019,43 $  | -10,92 %    | V1 Stop-Loss   |
 
-**Realisierter Gewinn/Verlust:** -596,19 $ | **Win-Rate:** 0/1 (0 %) | **Avg. Gewinn:** — | **Avg. Verlust:** -596,19 $
+**Realisierter Gewinn/Verlust:** -1.615,62 $ | **Win-Rate:** 0/2 (0 %) | **Avg. Gewinn:** — | **Avg. Verlust:** -807,81 $
 
 ---
 
 ## Trades
+
+### VERKAUF (V1 Stop-Loss filled): MU am 2026-07-07
+- Trigger:        Market Open 09:37 ET Live 925,86 $ < V1-Stop 954,71 $ (-3,01 % unter Stop; Pre-Market 08:35 ET war bereits 936,39 $)
+- Order:          Market Order Sell 9 Sh Day, Submit 09:37:39 ET
+- Fill:           9/9 Sh @ 924,45 $ avg um 09:37:42 ET (3 sec Fill — sehr schnell)
+- Erlös:          8.320,05 $
+- Entry:          1.037,72 $ (Kauf 02.07.) → Exit 924,45 $ = -113,27 $/Share
+- Ergebnis:       **-1.019,43 $ realisiert (-10,92 %)**
+- Grund:          V1 Stop-Loss -8 % vom Entry (Schwelle 954,71 $, Break-Under bei Open)
+- Markt-Kontext: SPY -0,20 % pre-Open→Open, VIX ~16 (GRÜN), MU-XLK Rotations-Verlierer diesen Zyklus
+- Begleitwerte:   V5 EMA50 884,96 > EMA200 468,42 ✓ (Golden Cross INTAKT — V1 ist hard-stop, kein Override durch V5); V6 RSI 48,91 / RS_4w -1,10 % → NICHT ausgelöst (V6 verlangt BEIDES RSI>80 UND RS<0)
+- Earnings:       Q4 FY2026 Ende September 2026 (>2 Monate entfernt — kein Blackout-Effekt)
+- Alpaca Order-ID: 12e7fa06-2702-4a47-ab32-c2f66edfd8d5
+- ClickUp Task:   869e1fgp5 Prio 1 (Critical) — Owner-Push zusätzlich
+- Muster:         Fill-Day-Drop-Muster fortgesetzt (Pre-Market +3,35 % Rebound 06.07. verpuffte im Handelsverlauf → Puffer verengte sich von +5,60 % auf +1,42 % innerhalb eines Tages) → 3. Kauf mit Sofort-Drop (AVGO -8,69 %, MU -10,92 %, LLY einziger positiver Fill-Day)
+
+### KAUF (pending): GOOGL am 2026-07-07
+- Limit-Order:    368,17 $ (Day, +0,5 % über Vortagesschluss 366,34 $ = Mo 06.07. Close)
+- Order-Submit:   09:40:46 ET, Status new (pending — Live 369,42 $ liegt über Limit, wartet auf Pullback)
+- Menge:          26 Shares (max Kosten bei Fill 9.572,42 $ = 9,64 % Portfolio)
+- Kaufsignale (Alpaca IEX 211d Bars + Perplexity K5-carry 06.07.):
+  - K1 ✓ EMA50 358,91 > EMA200 323,23 (Spread +35,68 — Golden Cross breit)
+  - K2 ✓ RSI(14) 53,59 (Wilder-Smoothing volle 200d-History, in 50-70-Fenster)
+  - K3 ✓ RS_63d GOOGL +23,97 % vs SPY +14,86 % → **+9,11 % RS**
+  - K4 ✓ Vol-Projektion: 38.232 Sh in 8 min = ~2,15 M/Tag → ~176 % Avg20 (1.218.460) >> 120 %-Hürde
+  - K5 ✓ carry-over Perplexity 06.07.: FwdPE 21,87 [valueinvesting.io] / 28,65 [intellectia.ai] ≤ 35 ✓, RevGrowth Q1 2026 YoY +11,33 % ≥ 10 % ✓
+- Sektor:         XLC Communication Services — Sektor bisher leer (JPM XLF / UNH+LLY XLV / MU-XLK jetzt frei) → Diversifikation ✓
+- Earnings:       Q2 2026 **22.07.2026** (Multi-Source carry-over) → 11 HT ab heute → 3-HT-Blackout erst ab 17.07. Close → **KEIN Blackout aktiv**
+- Stop-Loss V1:   ~340,00 $ (-8 % vom Live 369,57 — endgültig bei Fill)
+- Trailing V2:    -12 % vom Posit-Hoch (Tracking ab Fill)
+- TP1 / V3:       ~443,48 $ (+20 % → 50 % verkaufen)
+- TP2 / V4:       ~498,92 $ (+35 % → Rest verkaufen)
+- Alpaca Order-ID: 69106496-90d4-46dc-a370-cafb7eb816ac
 
 ### KAUF (filled): LLY am 2026-07-06
 - Limit-Order:    $1.216,84 (Day, +0,5 % über Vortagesschluss $1.210,79 = Do 02.07. Close; Fr 03.07. NYSE-Feiertag)
