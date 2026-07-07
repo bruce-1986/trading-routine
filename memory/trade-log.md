@@ -6,24 +6,24 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 07.07. 13:06 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 07.07. 16:02 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
 |--------|------------|-------------|------------------------|---------------------|-------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 337,32 $               | +13,74 $ (+1,36 %)  | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $    | 426,29 $               | +593,04 $ (+6,15 %) | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.230,99 $             | +296,90 $ (+3,11 %) | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
-| GOOGL  | 2026-07-07 | 368,10 $    | 369,60 $               | +39,03 $ (+0,41 %)  | 338,65 $    | 441,72 $    | 496,93 $    | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $    | 338,45 $               | +17,01 $ (+1,70 %)  | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $    | 428,19 $               | +638,88 $ (+6,63 %) | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.235,56 $             | +333,38 $ (+3,49 %) | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
+| GOOGL  | 2026-07-07 | 368,10 $    | 366,60 $               |  -38,97 $ (-0,41 %) | 338,65 $    | 441,72 $    | 496,93 $    | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 30.699,44 $ (Marktwert Alpaca 07.07. 13:06 ET) | **Cash:** 68.626,63 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LLY + GOOGL FILLED, MU V1-Sell realisiert) — **Kauf-Slots KW28 VOLL**
+**Gesamt investiert:** 30.707,99 $ (Marktwert Alpaca 07.07. 16:02 ET) | **Cash:** 68.626,62 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LLY + GOOGL FILLED, MU V1-Sell realisiert) — **Kauf-Slots KW28 VOLL bis Mo 13.07.**
 
 ---
 
 ## Offene Orders (pending)
 
-_keine — GOOGL Limit-Order zwischen 09:40 und 13:06 ET vollständig gefüllt (26/26 Sh @ 368,098846 $ avg)._
+_keine — alle V1–V6 SICHER nach Market Close 07.07. 16:02 ET Recalc (EMA/RSI 203d IEX-Bars). Puffer +8,25 % (GOOGL V1) bis +15,90 % (UNH V1). LLY neues Posit-Hoch 1.248,53 intraday → V2-Trail hebt sich auf 1.098,70. GOOGL Posit-Hoch 373,14 → V2-Trail 328,36._
 
-_Midday 07.07. 13:06 ET: **GOOGL Limit-Buy GEFÜLLT** (Order-ID 69106496-90d4-46dc-a370-cafb7eb816ac, 26 Sh @ 368,10 $ avg, cost basis 9.570,57 $ = 9,64 % Portfolio). Alle 4 Positionen V1–V4 SICHER (Puffer +8,44 % bis +15,36 %). Daily P/L -0,095 % [GRÜN]. Ø P/L Positionen +2,76 %. LLY neues Posit-Hoch 1.230,99 → V2-Trail hebt sich auf 1.083,27._
+_Market Close 07.07. Tagesbilanz: Portfolio 99.334,61 $ (Daily -0,051 %), SPY IEX -0,466 %, **Alpha +0,415 %** [POSITIV, XLV +1,51 % Sektor-Rebound trägt UNH+LLY]. Weekly KW28 -0,086 %. Guardrails alle GRÜN. Keine V5/V6-Limit-Order für Mi 08.07. Ø P/L Positionen +2,85 %._
 
-_Nächster Check: Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check aller 4 Positionen)._
+_Nächster Check: Mi 08.07. 08:30 ET Pre-Market (KW28 Tag 3, Käufe-Slot LOCK bis Mo 13.07., nur Guardrail-Monitoring)._
 
 ---
 
@@ -55,10 +55,12 @@ _Nächster Check: Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check all
 - ClickUp Task:   869e1fgp5 Prio 1 (Critical) — Owner-Push zusätzlich
 - Muster:         Fill-Day-Drop-Muster fortgesetzt (Pre-Market +3,35 % Rebound 06.07. verpuffte im Handelsverlauf → Puffer verengte sich von +5,60 % auf +1,42 % innerhalb eines Tages) → 3. Kauf mit Sofort-Drop (AVGO -8,69 %, MU -10,92 %, LLY einziger positiver Fill-Day)
 
-### KAUF (pending): GOOGL am 2026-07-07
+### KAUF (filled): GOOGL am 2026-07-07
 - Limit-Order:    368,17 $ (Day, +0,5 % über Vortagesschluss 366,34 $ = Mo 06.07. Close)
-- Order-Submit:   09:40:46 ET, Status new (pending — Live 369,42 $ liegt über Limit, wartet auf Pullback)
-- Menge:          26 Shares (max Kosten bei Fill 9.572,42 $ = 9,64 % Portfolio)
+- Order-Submit:   09:40:46 ET, Fill zwischen 09:40 und 13:06 ET (Details in Midday-Report)
+- Fill:           26/26 Sh @ **368,098846 $ avg**
+- Menge:          26 Shares
+- Investiert:     9.570,57 $ (9,64 % Portfolio bei Fill)
 - Kaufsignale (Alpaca IEX 211d Bars + Perplexity K5-carry 06.07.):
   - K1 ✓ EMA50 358,91 > EMA200 323,23 (Spread +35,68 — Golden Cross breit)
   - K2 ✓ RSI(14) 53,59 (Wilder-Smoothing volle 200d-History, in 50-70-Fenster)
@@ -72,6 +74,7 @@ _Nächster Check: Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check all
 - TP1 / V3:       ~443,48 $ (+20 % → 50 % verkaufen)
 - TP2 / V4:       ~498,92 $ (+35 % → Rest verkaufen)
 - Alpaca Order-ID: 69106496-90d4-46dc-a370-cafb7eb816ac
+- Status Close 07.07.: 366,60 $ Close (change_today +0,04 %, P/L -0,41 % vs Entry, Tageshoch 373,14 / Tagestief 365,51 → NEUES Posit-Hoch 373,14 post-Fill); V1 338,65 SICHER +8,25 % Puffer; V2 Stop **NEU 328,36** (Trail: 373,14 × 0,88, vorher 325,25 vom Live-Fill 369,60) SICHER (+10,43 %); V5 EMA50 359,23 > EMA200 323,95 ✓ (Spread +35,28 komfortabel); V6 RSI(14) 53,98 / RS_4w vs SPY -2,14 % → NICHT ausgelöst (V6 verlangt BEIDES: RSI>80 UND RS<0; RSI 53,98 weit unter 80). Fill-Day-Konsolidierung mild — Fill-Day-Drop-Muster (AVGO/MU) unterbrochen.
 
 ### KAUF (filled): LLY am 2026-07-06
 - Limit-Order:    $1.216,84 (Day, +0,5 % über Vortagesschluss $1.210,79 = Do 02.07. Close; Fr 03.07. NYSE-Feiertag)
@@ -95,6 +98,7 @@ _Nächster Check: Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check all
 - Earnings:       Q2 2026 **05.08.2026 BMO** Multi-Source verifiziert (MarketBeat + LLY Investor-Relations Webcast + MarketChameleon + Nasdaq/Zacks) → 22 HT ab heute → 3-HT-Blackout erst ab 31.07. Close → **KEIN Blackout aktiv**
 - Status nach Fill 09:43 ET: Live 1.190,16 $ (P/L -0,31 %, change_today -1,96 %); V1 1.098,38 SICHER (+8,35 % Puffer); V2 1.050,62 (Posit-Hoch = Fill 1.193,89) SICHER (+13,28 %); V3/V4 weit entfernt
 - Status Close 06.07.: 1.203,28 $ Close (change_today -0,88 %, P/L +0,79 % vs Fill 1.193,89, XLV-Rotation-Verlierer -1,04 % gut absorbiert durch Fill-Preis-Vorteil vs Do-Ref); V1 1.098,38 SICHER +9,55 % Puffer; V2 Stop 1.050,62 (Posit-Hoch = Fill 1.193,89 carry-over, kein neues Hoch) SICHER (+14,53 %); V5 EMA50 1.087,20 > EMA200 982,73 ✓ (Spread +104,46); V6 RSI(14) 64,70 / RS_4w vs SPY +7,23 % → NICHT ausgelöst.
+- Status Close 07.07.: 1.235,56 $ Close (change_today +2,96 %, P/L +3,49 % vs Entry, **NEUES Posit-Hoch 1.248,53 intraday**, XLV-Rebound-Winner +1,51 % Sektor); V1 1.098,38 SICHER +12,49 % Puffer; V2 Stop **NEU 1.098,70** (Trail: Tageshoch 1.248,525 × 0,88; alt 1.083,27 vom Midday) SICHER (+11,08 %); V5 EMA50 1.093,03 > EMA200 983,35 ✓ (Spread +109,68 komfortabel); V6 RSI(14) 69,15 / RS_4w vs SPY +7,38 % → NICHT ausgelöst (RSI <80, RS positiv). Sektor-Rotation ins Defensives KW28 Di zahlt sich aus.
 - Alpaca Order-ID: f6364db0-8a8f-4a11-b305-26a4874f1f6d
 
 ### KAUF (filled): MU am 2026-07-02
@@ -178,6 +182,7 @@ _Nächster Check: Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check all
 - Status Close 01.07.: 426,52 $ Close (change_today +2,63 %, P/L +6,21 % vs Entry, NEUES Posit-Hoch 428,01 heute — Tageshoch); V1 369,44 SICHER +15,45 % Puffer; V2 Stop **NEU 376,65** (Trail nach neuem Hoch 428,01) SICHER (+13,24 %); V5 EMA50 391,55 > EMA200 347,22 ✓ (Spread +44,33 sehr komfortabel, Golden Cross weiter ausgebaut); V6 RSI(14) 63,46 / RS_4w +14,68 % → NICHT ausgelöst (RSI <80, RS positiv). Sektor-Move XLV +2,6 % (ELV +7,6 % EPS-Beat).
 - Status Close 02.07.: 424,28 $ Close (change_today -0,53 %, P/L +5,66 % vs Entry, NEUES Posit-Hoch 430,095 heute); V1 369,44 SICHER +12,93 % Puffer; V2 Stop **NEU 378,48** (Trail nach neuem Hoch 430,095, vorher 376,65) SICHER (+10,79 %); V5 EMA50 385,12 > EMA200 342,87 ✓ (Spread +42,25 sehr komfortabel); V6 RSI(14) 64,76 / RS_4w vs SPY +13,97 % → NICHT ausgelöst (RSI <80, RS positiv). Cooldown nach Rekord-Vortag, aber Posit-Hoch weiter hoch getrailt.
 - Status Close 06.07.: 417,38 $ Close (change_today -1,88 %, P/L +3,94 % vs Entry, XLV-Rotation-Verlierer -1,04 %); V1 369,44 SICHER +12,97 % Puffer; V2 Stop 378,48 (Posit-Hoch 430,095 carry-over 02.07., kein neues Hoch) SICHER (+10,27 %); V5 EMA50 386,36 > EMA200 337,83 ✓ (Spread +48,53 sehr komfortabel); V6 RSI(14) 59,38 (Cooldown von 64,76) / RS_4w vs SPY +6,55 % → NICHT ausgelöst.
+- Status Close 07.07.: 428,19 $ Close (change_today +2,44 %, P/L +6,63 % vs Entry, **XLV-Rebound-Gewinner** +1,51 % Sektor, Tageshoch 428,49 KEIN neues Posit-Hoch vs 430,095); V1 369,44 SICHER +15,90 % Puffer; V2 Stop 378,48 (Posit-Hoch 430,095 carry-over 02.07.) SICHER (+13,12 %); V5 EMA50 388,00 > EMA200 346,19 ✓ (Spread +41,81 sehr komfortabel); V6 RSI(14) 64,18 / RS_4w vs SPY +6,07 % → NICHT ausgelöst.
 - Alpaca Order-ID: b9674f87-9cad-4ac0-a39f-756157f8b5ed
 
 ### KAUF (filled): JPM am 2026-06-17
@@ -208,6 +213,7 @@ _Nächster Check: Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check all
 - Status Close 01.07.: 334,06 $ Close (change_today +2,08 % Financials-Rebound, P/L +0,38 % vs Entry, Tageshoch 335,59 / Tagestief 325,12); V1 306,16 SICHER +9,11 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+10,51 %); V5 EMA50 316,48 > EMA200 308,96 ✓ (Spread +7,52 leicht geweitet); V6 RSI(14) 65,18 / RS_4w +12,80 % → NICHT ausgelöst (RSI <80, RS positiv). Perplexity: „JPMorgan Chase +3,30 %" Sektor-Rebound-Signal.
 - Status Close 02.07.: 334,47 $ Close (change_today +0,12 %, P/L +0,51 % vs Entry, Tageshoch 337,89 / Tagestief 331,97 — kein neues Posit-Hoch vs 343,31); V1 306,16 SICHER +8,46 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+9,68 %); V5 EMA50 315,32 > EMA200 306,00 ✓ (Spread +9,32 stabil); V6 RSI(14) 62,83 / RS_4w vs SPY +12,30 % → NICHT ausgelöst (RSI <80, RS positiv).
 - Status Close 06.07.: 338,64 $ Close (change_today +1,25 %, P/L +1,76 % vs Entry, XLF-Rebound-Tag +0,96 %); V1 306,16 SICHER +10,61 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+12,10 %); V5 EMA50 315,06 > EMA200 306,47 ✓ (Spread +8,59 stabil); V6 RSI(14) 66,42 / RS_4w vs SPY +9,65 % → NICHT ausgelöst.
+- Status Close 07.07.: 338,45 $ Close (change_today +0,22 %, P/L +1,70 % vs Entry, XLF-flat-Tag -0,20 %); V1 306,16 SICHER +10,55 % Puffer; V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over) SICHER (+12,03 %); V5 EMA50 316,00 > EMA200 306,99 ✓ (Spread +9,01 leicht geweitet); V6 RSI(14) 67,16 / RS_4w vs SPY +7,33 % → NICHT ausgelöst (RSI <80, RS positiv).
 - Alpaca Order-ID: d90de96d-9084-4a6a-b5a1-de48899e75f4
 
 ---
