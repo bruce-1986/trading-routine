@@ -4,6 +4,65 @@
 
 ---
 
+## Market Close 16:02 ET — 2026-07-07 (Di, KW28) — Tagesbilanz + Watchlist Mi 08.07. (Kauf-Slots LOCK)
+
+**Tagesbilanz:** Portfolio 99.334,61 $ (-50,68 $ / -0,051 %) | SPY IEX -0,466 % (751,27 → 747,77) | **Alpha +0,415 %** [POSITIV] | Positionen 4/8 (JPM +1,70 % / UNH +6,63 % / LLY +3,49 % / GOOGL -0,41 %) | Käufe KW28 **2/2 VOLL** (LLY 06.07. + GOOGL 07.07. — Lock bis Mo 13.07.) | Guardrails alle GRÜN | Weekly KW28 -0,086 %.
+
+**Sektor-Performance heute (Alpaca IEX):**
+```
+XLE +2,84 % | XLV +1,51 % | XLRE +1,40 % | XLU +0,92 % | XLP +0,89 % | XLC +0,73 %
+XLF -0,20 % | XLY -0,49 % | XLB -0,87 % | XLI -1,68 % | XLK -2,38 %
+VXX +0,84 % (Vola-Tick, weiter GRÜN <25)
+```
+→ **Rotation ins Defensives — XLV/XLU/XLP/XLE alle grün, XLK/XLI unter Druck.** Bot-Portfolio: UNH+LLY XLV +1,51 % (Sektor-Winner), GOOGL XLC +0,73 % (Support), JPM XLF -0,20 % (flat). Alpha +0,415 % erklärbar durch XLV-Overweight bei defensivem Rotations-Tag. **MU-V1-Sell gestern zum optimalen Zeitpunkt** — XLK -2,38 % heute hätte auf 9 Sh MU zusätzlichen Verlust ~-215 $ verursacht.
+
+**V1–V6-Check ALLE 4 POSITIONEN SICHER (nach Close-Recalc EMA/RSI aus Alpaca IEX 203d):**
+- JPM V1 +10,55 % / V5 EMA-Spread +9,01 ✓ / V6 RSI 67,16 & RS +7,33 % → SICHER
+- UNH V1 +15,90 % / V5 EMA-Spread +41,81 ✓ / V6 RSI 64,18 & RS +6,07 % → SICHER
+- LLY V1 +12,49 % / V5 EMA-Spread +109,68 ✓ / V6 RSI 69,15 & RS +7,38 % → SICHER (neues Posit-Hoch 1.248,53 → V2-Trail 1.098,70)
+- GOOGL V1 +8,25 % / V5 EMA-Spread +35,28 ✓ / V6 RSI 53,98 & RS -2,14 % → SICHER (V6 verlangt BEIDES; RSI weit unter 80)
+
+→ **Keine Verkaufsorder für Mi 08.07. vorbereitet.** Pending Orders bleiben 0.
+
+**Watchlist Mi 08.07. — KEIN AKTIVER KAUF-SCAN:**
+Käufe KW28 2/2 voll → Watchlist ist Prep für KW29 Mo 13.07., nicht handelbar Mi.
+```
+Sym   Ranking Mo 06.07. Close       Status Recheck                                       Kommentar
+CAT   RS +20,55 % / RSI 51,65      K5 RevGrowth Q1 -1 % Recheck zwingend KW29           XLI-Sektor -1,68 % heute (Rotation weg) — Watch bleibt
+MS    RS +19,81 % / RSI 60,39      Earnings 15.07. → 3-HT-Blackout ab Fr 10.07. Close   Kauf Mo 13.07. NICHT möglich (Blackout aktiv) — SCHEIDET AUS
+AAPL  RS +7,47 % / RSI 63,16       K5 Multi-Source-Recheck                              XLK-Konflikt jetzt obsolet nach MU-Sell; XLK -2,38 % heute — Sektor-Timing schwierig
+```
+
+**Ranking KW29 Prep:**
+1. **CAT** LEAD — K5 RevGrowth-Recheck (Q1 -1 % carry-over aus Multi-Source-Erhebung); XLI leer trotz Sektor-Rutsch heute; Earnings ~05.08. sicher
+2. **AAPL** Backup — K5-Recheck; XLK-Konflikt obsolet; Sektor XLK -2,38 % heute problematisch als Timing-Signal (AAPL relative Stärke vs. Sektor prüfen KW29)
+3. MS AUSGESCHIEDEN (Blackout)
+
+**Perplexity Status:** Datum-in-Zukunft-Bug carry-over für SPY-Query und Sektor-Query (wiederholt geliefert "SPY SPY SPY..."). Fallback auf Alpaca IEX für alle Preis-/Sektor-Daten funktionierte einwandfrei. K5-Multi-Source-Rechecks für CAT/AAPL erst am KW29-Anfang (Perplexity-Bug-Persistenz Watch).
+
+**Guardrail-Status Close:**
+```
+1. Daily Loss Cap (-3 %):    -0,051 %  → GRÜN
+2. Weekly Loss Cap (-5 %):   -0,086 %  → GRÜN
+3. Drawdown-Alarm (-15 %):   -0,732 %  → GRÜN
+4. Käufe KW28:                2/2      → LOCK (nächster Kauf frühestens Mo 13.07.)
+5. Crash-Filter SPY -5 %:     -0,466 %  → INAKTIV
+6. VIX-Filter > 30:           ~16      → GRÜN
+7. Earnings-Blackout:         KEINER   → GRÜN
+```
+
+**Datenqualitäts-Hinweise:**
+- Perplexity SPY-Tages-Query gab "SPY SPY SPY..." Token-Repetition (Datum-in-Zukunft-Bug) — Alpaca IEX SPY-Bar als Ground-Truth 751,27 → 747,77 = -0,466 %
+- Sektor-ETF-Marks alle über Alpaca IEX Fallback (12/12 Sektoren erfolgreich, inkl. VXX)
+- 203d Daily-Bars für JPM/UNH/LLY/GOOGL/SPY geladen — EMA50/200 + RSI(14) + 4w/63d-Returns live berechnet
+- Alpaca last_equity 99.385,29 (Mo EOD-Mark After-Hours) weicht +137 $ vs Memory Mo Close 99.248,28 ab — Alpaca als Ground-Truth für Daily-P/L (Standard-Vorgehen bei EOD-Recalc-Ticks)
+
+**ClickUp:** [CLOSE] Tagesbilanz Task angelegt Prio 4 (P/L leicht negativ, ABER Alpha positiv → Prio abgestuft). Push-Notification an Owner (ITEM_246 Tier-Limit carry-over, `custom_item_id: null`).
+
+**Nächste Routine:** Mi 08.07. 08:30 ET Pre-Market Check (KW28 Tag 3, KEIN Kauf-Scan mangels Käufe-Slot, nur Guardrail-Monitoring + V1-V6-Watch aller 4 Positionen).
+
+---
+
 ## Market Open 09:40 ET — 2026-07-07 (Di, KW28) — MU V1-Sell exec + GOOGL Buy pending
 
 **Alpaca Clock:** is_open=true, next_close 16:00 ET. Regulär-Session seit 09:30 ET.
