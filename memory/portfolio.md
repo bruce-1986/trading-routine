@@ -1,6 +1,57 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-06 16:00 ET (Market Close KW28 Mo, alle V1-V6 SICHER, Daily -0,173 %, Alpha -1,034 % vs SPY, Guardrails GRÜN)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-07 08:35 ET (Pre-Market KW28 Di, **MU-V1-ALARM Pre-Market 936,39 $ < Stop 954,71 $**, Daily -0,206 %, Guardrails GRÜN, VIX ~16)
+
+---
+
+## Pre-Market 2026-07-07 08:35 ET (Di, KW28) — MU-V1-Alarm Pre-Market
+
+```
+Alpaca clock:      is_open=false | next_open Di 07.07. 09:30 ET | next_close 16:00 ET
+Equity:            99.215,80 $   (Alpaca Pre-Market Live, vs last_equity 99.420,34)
+Cash:              69.877,15 $   (70,43 %, unverändert)
+Portfolio MV:      29.338,65 $   (29,57 %)
+Buying_power:     361.656,81 $
+Daily P/L:            -204,54 $   (-0,206 %)  [GRÜN]
+ATH:              100.066,47 $    DD -0,856 % [GRÜN]
+Käufe KW28:            1/2        (LLY gefilled 06.07.; 1 Slot frei)
+Pending Orders:        0
+VIX:               ~15,9-16,0     (+2-3 % vs Vortag, Perplexity)
+SPY Pre-Market:    ±0,3-0,6 %     (Futures moderat, Perplexity Inference)
+10Y Treasury:      ~4,2-4,3 %     (Perplexity Inference)
+Guardrails:  Daily -0,21 % | Weekly -0,21 % | DD -0,86 % | VIX ~16 | Käufe 1/2 → ALLE GRÜN
+```
+
+**Positionen Pre-Market (Alpaca Quotes 08:35 ET):**
+- **JPM**  341,57 $ (Entry 332,78, P/L +2,64 %, change_today +1,14 %) — XLF Pre-Market-Stärke
+  - V1 306,16 SICHER (+11,56 % Puffer)
+- **UNH**  420,75 $ (Entry 401,57, P/L +4,78 %, change_today +0,66 %) — XLV Stabilisierung Pre-Market
+  - V1 369,44 SICHER (+13,89 %)
+- **MU**   936,39 $ (Entry 1037,72, P/L **-9,77 %**, change_today **-4,91 %**) — ⚠️ **UNTER V1-STOP 954,71 $**
+  - V1 954,71 → **PRE-MARKET UNTERSCHRITTEN um -1,92 %**
+  - Pre-Market-Ticks kein offizieller V1-Trigger (Strategy V1 = Regulär-Session-Kurs)
+  - **09:30 ET Market Open: MU-Preis-Check zwingend erster Schritt** → falls Open < 954,71 $ → Market Sell 9 Shares SOFORT
+- **LLY**  1.223,99 $ (Entry 1193,89, P/L +2,52 %, change_today +1,99 %) — XLV-Rebound
+  - V1 1.098,38 SICHER (+11,44 %)
+
+**Earnings-Blackout-Check:** Keine JPM/UNH/MU/LLY Earnings in 3 HT (Perplexity: S&P 500 Earnings-Welle startet Mitte Juli).
+
+**Guardrail-Status:** Alle GRÜN. MU-V1-Alarm ist Position-spezifisch, kein Portfolio-Guardrail-Trigger (Daily -0,21 % weit unter -3 %-Cap).
+
+**Watchlist Di 07.07. (carry-over aus Mo-Close, K1-K5 Live-Recheck bei Market Open):**
+1. **GOOGL** LEAD — 5/5-Bild carry ✓ (K5 FwdPE 21,87/28,65, Rev +11,33 %); XLC-Sektor leer
+2. **CAT** Backup — K5 RevGrowth Q1 -1 % Recheck-Priorität; XLI leer
+3. **MS** Timing-Vorbehalt — 5/5 aber Earnings 15.07. = 3-HT-Blackout ab Fr 10.07.
+4. **AAPL** Only-If — XLK-Konflikt MU (wird obsolet falls MU-V1 auslöst) + K5 offen
+
+**Entscheidung Pre-Market:** 
+- **Guardrails GRÜN** → Kauf-Scan bei Market Open grundsätzlich ERLAUBT
+- **ABER:** MU-V1-Pre-Market-Situation ist ZUERST zu behandeln
+- Market-Open-Scan priorisiert: (1) MU-V1-Auslösung bei Open handeln (2) DANACH Kauf-Scan bei GOOGL/CAT falls Portfolio bereinigt
+
+**Nächste Routine:** Di 07.07. 09:30 ET Market Open — MU-V1-Trigger zuerst, dann Kauf-Scan.
+
+---
 
 ---
 
