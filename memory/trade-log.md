@@ -6,27 +6,24 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 07.07. 09:40 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 07.07. 13:06 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
 |--------|------------|-------------|------------------------|---------------------|-------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 340,81 $               | +24,09 $ (+2,41%)   | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $    | 424,69 $               | +554,88 $ (+5,76%)  | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.232,28 $             | +307,08 $ (+3,22%)  | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $    | 337,32 $               | +13,74 $ (+1,36 %)  | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
+| UNH    | 2026-06-18 | 401,57 $    | 426,29 $               | +593,04 $ (+6,15 %) | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.230,99 $             | +296,90 $ (+3,11 %) | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
+| GOOGL  | 2026-07-07 | 368,10 $    | 369,60 $               | +39,03 $ (+0,41 %)  | 338,65 $    | 441,72 $    | 496,93 $    | K1✓K2✓K3✓K4✓K5✓ |
 
-**Gesamt investiert:** 21.069,65 $ (Marktwert Alpaca 07.07. 09:40 ET) | **Cash:** 78.197,20 $ | **Positionen:** 3/8 | **Käufe KW28:** 1/2 (LLY FILLED, MU V1-Sell realisiert)
+**Gesamt investiert:** 30.699,44 $ (Marktwert Alpaca 07.07. 13:06 ET) | **Cash:** 68.626,63 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LLY + GOOGL FILLED, MU V1-Sell realisiert) — **Kauf-Slots KW28 VOLL**
 
 ---
 
 ## Offene Orders (pending)
 
-| Symbol | Side | Type | Qty | Limit    | TIF | Status | Placed              | Order-ID                             |
-|--------|------|------|-----|----------|-----|--------|---------------------|--------------------------------------|
-| GOOGL  | buy  | limit| 26  | 368,17 $ | day | new    | 2026-07-07 09:40:46 | 69106496-90d4-46dc-a370-cafb7eb816ac |
+_keine — GOOGL Limit-Order zwischen 09:40 und 13:06 ET vollständig gefüllt (26/26 Sh @ 368,098846 $ avg)._
 
-_Market Open Di 07.07. 09:37 ET: **MU V1 Stop-Loss AUSGELÖST** bei Open — Kurs 925,86 $ < V1-Stop 954,71 $ (-3,01 % unter Stop). Market Sell 9 Sh @ 924,45 $ gefüllt 09:37:42 ET (3 sec Fill). Realisierter Verlust -1.019,43 $ (-10,92 %). Portfolio nach Fill: Equity 99.266,85 $ (Daily -0,154 % GRÜN), Cash 78.197,20 $. **JPM/UNH/LLY alle V1-V6 SICHER** (V1-Puffer +11 % bis +15 %)._
+_Midday 07.07. 13:06 ET: **GOOGL Limit-Buy GEFÜLLT** (Order-ID 69106496-90d4-46dc-a370-cafb7eb816ac, 26 Sh @ 368,10 $ avg, cost basis 9.570,57 $ = 9,64 % Portfolio). Alle 4 Positionen V1–V4 SICHER (Puffer +8,44 % bis +15,36 %). Daily P/L -0,095 % [GRÜN]. Ø P/L Positionen +2,76 %. LLY neues Posit-Hoch 1.230,99 → V2-Trail hebt sich auf 1.083,27._
 
-_Kauf-Scan Watchlist-Lead GOOGL Live-Recheck K1-K5: K1 EMA50 358,91 > EMA200 323,23 ✓ | K2 RSI 53,59 ✓ | K3 RS_63d GOOGL +23,97 % vs SPY +14,86 % = +9,11 % ✓ | K4 Vol-Projektion ~153 % Avg20 (38.232 Sh in 8 min) ✓ | K5 carry-over FwdPE 21,87/28,65 ≤35 ✓ Rev +11,33 % ✓ → **5/5 grün**. Limit-Order 26 Sh @ 368,17 $ (+0,5 % über Mo-Close 366,34) platziert 09:40:46 ET. Sektor XLC leer → Diversifikation (JPM XLF / UNH+LLY XLV)._
-
-_Nächster Check: Di 07.07. 13:00 ET Midday (GOOGL-Fill-Status, MU-Slot-Freigabe eingerechnet, V1-V4 aller 3 verbliebenen Positionen)._
+_Nächster Check: Di 07.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check aller 4 Positionen)._
 
 ---
 
