@@ -4,6 +4,84 @@
 
 ---
 
+## Market Close 16:02 ET — 2026-07-08 (Mi, KW28 Tag 3) — Tagesbilanz post-FOMC, alle V5/V6 SICHER, KEINE Pending-Order für Do
+
+**Alpaca Clock:** is_open=false, next_open Do 09.07. 09:30 ET, next_close 16:00 ET.
+
+**Account Close 16:02 ET:**
+```
+Equity:            98.970,99 $   (Daily -0,380 % vs Di-EOD 99.348,08) [GRÜN]
+Cash:              68.626,60 $   (69,34 %, unverändert)
+Portfolio_MV:      30.344,39 $   (30,66 %)
+Weekly KW28:       -0,452 %      (Mo-Basis 99.420,34)                  [GRÜN]
+DD vs ATH:         -1,095 %      (ATH 100.066,47)                      [GRÜN]
+Käufe KW28:        2/2 → LOCK bis Mo 13.07.
+Pending Orders:    0
+```
+
+**SPY-Ground-Truth:** Alpaca IEX SPY 745,28 (Di 747,77) → **-0,333 % Daily**. Alpha vs SPY = -0,380 % - (-0,333 %) = **-0,047 %** (~flat).
+
+**Positionen Close V1-V6 (Alpaca IEX 204d Bars, EMA/RSI Wilder live):**
+| Sym    | Close  | P/L    | Chg_today | V5 EMA50/200         | V6 RSI/RS_4w   | Status |
+|--------|--------|--------|-----------|----------------------|----------------|--------|
+| JPM    | 330,45 | -0,70% | -2,59%    | 316,57>306,41 ✓      | 56,99 / +5,64% | SICHER |
+| UNH    | 425,60 | +5,98% | -0,61%    | 389,48>336,55 ✓      | 62,23 / +4,18% | SICHER |
+| LLY    | 1215,83| +1,84% | -1,60%    | 1097,80>989,44 ✓     | 64,28 / +4,70% | SICHER |
+| GOOGL  | 362,00 | -1,66% | -1,37%    | 359,31>317,16 ✓      | 50,29 / -1,54% | SICHER |
+
+→ **Alle V5/V6 SICHER (GOOGL RS_4w negativ, aber RSI 50,29 <80 → V6 verlangt BEIDES).** **Keine Limit-Order für Do 09.07.**
+
+**Sektor-Performance heute (post-FOMC-Minutes 14:00 ET):**
+```
+XLE +1,70 % | XLK +1,22 %     ← nur diese 2 grün
+XLP -0,51 % | XLU -0,74 % | XLI -1,09 % | XLV -1,34 % | XLC -1,41 %
+XLRE -1,68 % | XLY -1,77 % | XLF -1,91 % | XLB -2,58 %
+VXX +1,57 % (Vola-Tick, VIX ~18-19)
+```
+→ Bot-Verlierer: JPM XLF -1,91 % (change_today -2,59 %). UNH+LLY XLV -1,34 % moderat. GOOGL XLC -1,41 %.
+→ **KW29-Rotation-Watch: XLK-Rebound signalisiert AAPL/NVDA-Momentum-Restore.**
+
+**Guardrails Close (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,380 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,452 %                              [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,095 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,095 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,333 %                          [INAKTIV]
+6. VIX-Filter (>30):          ~18-19 (VXX +1,57 %)                  [GRÜN]
+7. Earnings-Blackout (3 HT):  KEINER heute, JPM ab 09.07. Close     [GRÜN heute]
+8. Max Käufe KW28:            2/2 → LOCK bis Mo 13.07.              [GESPERRT]
+```
+
+**Watchlist Do 09.07. + KW29-Prep (Alpaca K1-K3 Live 08.07. Close, SPY_RS_63d +13,34 %):**
+```
+Sym    Last      K1 EMA50>200          K2 RSI (50-70) K3 RS_63d      Rank/Status
+AAPL   313,33   ✓ 292,89>271,56       ✓ 62,81         ✓ +10,33 %    LEAD KW29 — XLK-Support heute
+NVDA   204,07   ✓ 203,47>191,00       ✓ 51,02         ✓ +1,37 %     NEU — 3/3 grenzwertig RS, XLK-Support
+CAT    947,62   ✓ 916,49>702,87       ✗ 48,93         ✓ +17,69 %    2/3 — K2-Fail RSI cool-off, K3 stärkstes
+AMZN   243,60   ✓ 245,37>233,35       ✗ 49,50         ✓ +0,59 %     2/3 — K2-Fail, K1-Spread eng, Backup
+```
+**Watchlist morgen: AAPL (LEAD, K5-Recheck erforderlich), NVDA (2. XLK-Kandidat, K5 offen), CAT (K2-Recheck bei Rebound), AMZN (Backup)**
+
+**Perplexity Watchlist-Query:** lieferte keinen Value (Date-in-Future-Bug carry-over). Alpaca-K1-K3-Screener als Fallback erfolgreich für Kandidatenrunde.
+
+**Earnings-Blackout-Preview (Do 09.07.):**
+- JPM Q2 14.07.2026 BMO CONFIRMED → 3-HT-Blackout aktiviert **ab Close 09.07.** → **V1-Tightening auf -5 % (316,14 statt 306,16) ab MORGEN CLOSE** zwingend
+- UNH ~16.07. carry-unbestätigt (Perplexity-Recheck morgen)
+- LLY 05.08. (20 HT) / GOOGL 22.07. (10 HT) — beide sicher
+
+**Entscheidung Market Close 08.07.:**
+- Alle V1-V6 SICHER → keine Sell-Order
+- KEIN Kauf-Scan (Slot LOCK 2/2 bis Mo 13.07.)
+- Watchlist erweitert um NVDA (XLK-Rebound), AAPL bleibt LEAD, CAT rutscht auf K2-Fail
+- JPM-Stop-Tightening auf V1=-5 % ab Do 09.07. Close vorbereiten
+
+**Nächste Routine:** Do 09.07. 08:30 ET Pre-Market Check.
+
+**ClickUp:** [CLOSE] Tagesbilanz Task Prio 3 (leicht negative Performance UND leicht negatives Alpha → Priorität Normal).
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-08 (Mi, KW28 Tag 3) — Guardrails GRÜN, KEIN Kauf-Scan (Slot LOCK 2/2), V1-V6-Watch
 
 **Alpaca Clock:** is_open=false, next_open Mi 08.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.
