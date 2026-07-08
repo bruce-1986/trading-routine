@@ -6,26 +6,31 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live-Mark 08.07. 09:37 | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Close 08.07. 16:00 ET | Gewinn/Verlust      | Stop-Loss   | TP1         | TP2         | Signale         |
 |--------|------------|-------------|------------------------|---------------------|-------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 335,03 $               |  +6,75 $ (+0,68 %)  | 306,16 $    | 399,34 $    | 449,25 $    | K1✓K2✓K3✓K4✓K5✓ |
-| UNH    | 2026-06-18 | 401,57 $    | 425,99 $               | +586,10 $ (+6,08 %) | 369,44 $    | 481,88 $    | 542,12 $    | K1✓K2✓K3✓K4✓K5✓ |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.217,03 $             | +185,14 $ (+1,94 %) | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | K1✓K2✓K3✓K4✓K5✓ |
-| GOOGL  | 2026-07-07 | 368,10 $    | 364,58 $               |  -91,49 $ (-0,96 %) | 338,65 $    | 441,72 $    | 496,93 $    | K1✓K2✓K3✓K4✓K5✓ |
+| JPM    | 2026-06-17 | 332,78 $    | 330,45 $               |  -6,99 $ (-0,70 %)  | 306,16 $    | 399,34 $    | 449,25 $    | V1-V6 SICHER    |
+| UNH    | 2026-06-18 | 401,57 $    | 425,60 $               | +576,72 $ (+5,98 %) | 369,44 $    | 481,88 $    | 542,12 $    | V1-V6 SICHER    |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.215,83 $             | +175,54 $ (+1,84 %) | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER    |
+| GOOGL  | 2026-07-07 | 368,10 $    | 362,00 $               | -158,57 $ (-1,66 %) | 338,65 $    | 441,72 $    | 496,93 $    | V1-V6 SICHER    |
 
-**Gesamt investiert:** 30.453,85 $ (Marktwert Alpaca 08.07. 09:37 ET) | **Cash:** 68.626,60 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LLY + GOOGL FILLED, MU V1-Sell realisiert) — **Kauf-Slots KW28 VOLL bis Mo 13.07.**
+**Gesamt investiert:** 30.344,39 $ (Marktwert Alpaca 08.07. 16:02 ET Close) | **Cash:** 68.626,60 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LOCK bis Mo 13.07.)
 
 ---
 
 ## Offene Orders (pending)
 
-_keine — alle V1–V6 SICHER am Market Open 08.07. 09:37 ET. Puffer +7,65 % (GOOGL V1) bis +15,31 % (UNH V1). LLY V2-Trail 1.098,70 (carry Posit-Hoch 1.248,53 vom 07.07.). GOOGL V2-Trail 328,36 (carry Posit-Hoch 373,14)._
+_keine — Market Close 08.07. 16:00 ET V5/V6-Check aller 4 Positionen: alle SICHER. Keine Limit-Order für Do 09.07. vorbereitet. Pending Orders bleiben 0._
 
-_Market Open 08.07. 09:37 ET: Portfolio 99.080,45 $ (Daily -0,269 %), SPY -0,591 %, VXX 22,07. Weekly KW28 -0,342 %. DD -0,985 %. Guardrails alle GRÜN. **KEIN Kauf-Scan** (Käufe-Slot KW28 LOCK 2/2 bis Mo 13.07.). No-Op-Routine._
+_JPM V5: EMA50 316,57 > EMA200 306,41 ✓ (Spread +10,16); V6 RSI 56,99 <80, RS_4w vs SPY +5,64 % → SICHER._
+_UNH V5: EMA50 389,48 > EMA200 336,55 ✓ (Spread +52,93); V6 RSI 62,23 <80, RS_4w +4,18 % → SICHER._
+_LLY V5: EMA50 1.097,80 > EMA200 989,44 ✓ (Spread +108,36); V6 RSI 64,28 <80, RS_4w +4,70 % → SICHER._
+_GOOGL V5: EMA50 359,31 > EMA200 317,16 ✓ (Spread +42,15); V6 RSI 50,29 <80 (RS_4w -1,54 % negativ, aber V6 verlangt BEIDES) → SICHER._
 
-_JPM Earnings 14.07.2026 BMO CONFIRMED → 3-HT-Blackout ab Do 09.07. Close → V1-Stop-Tightening auf -5 % ab morgen zwingend._
+_Market Close 08.07. 16:00 ET: Equity 98.970,99 $ (Daily -0,380 %), SPY -0,333 %, Alpha -0,047 % (marginal negativ, post-FOMC risk-off). Weekly KW28 -0,452 %. DD -1,095 %. Guardrails alle GRÜN. **KEIN Kauf-Scan** (Käufe-Slot KW28 LOCK 2/2)._
 
-_Nächster Check: Mi 08.07. 13:00 ET Midday Stop-Check (VOR FOMC-Minutes 14:00 ET)._
+_JPM Earnings 14.07.2026 BMO CONFIRMED → 3-HT-Blackout aktiviert ab Do 09.07. Close → V1-Stop-Tightening auf -5 % ab MORGEN ZWINGEND (aktuelle V1 306,16 = -8 %; neu -5 % ab 09.07. Close = 316,14)._
+
+_Nächster Check: Do 09.07. 08:30 ET Pre-Market Check (KW28 Tag 4, JPM-Stop-Tightening bei Blackout-Aktivierung Close)._
 
 ---
 
