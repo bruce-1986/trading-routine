@@ -1,6 +1,59 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-08 09:37 ET (Market Open KW28 Mi Tag 3, alle 8 Guardrails GRÜN, Käufe-Slot LOCK 2/2, 4/8 Positionen alle V1 SICHER, SPY -0,59 %, VXX 22,07)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-08 13:07 ET (Midday KW28 Mi Tag 3, alle 4 V1/V2 SICHER, Daily -0,24 % GRÜN, kein Stop-Trigger vor FOMC-Minutes 14:00 ET)
+
+---
+
+## Midday 2026-07-08 13:07 ET (Mi, KW28 Tag 3) — Stop-Check pre-FOMC
+
+```
+Alpaca clock:      is_open=true | next_close 08.07. 16:00 ET
+Positionen:        4/8 (JPM/UNH/LLY/GOOGL)
+Ø P/L (einfach):   +1,95 % (JPM +0,31 % / UNH +6,71 % / LLY +2,68 % / GOOGL -1,90 %)
+Schlechteste:      GOOGL -1,90 % (V1-Puffer +6,63 % — engste Position aber SICHER)
+Beste:             UNH +6,71 % (V1-Puffer +15,99 %)
+Stops:             alle regulär — kein V1/V2/V3/V4-Trigger
+Daily P/L:            -238,56 $   (-0,240 %)  [GRÜN — vs last_equity 99.348,08 = Di EOD-Mark]
+Equity:            99.109,52 $   (Cash 68.626,60 / MV 30.482,92)
+Buying_power:     359.858,56 $
+Weekly KW28 P/L:  -0,313 %        (Mo-Basis 99.420,34 = Fr-Close) [GRÜN]
+DD vs ATH:        -0,956 %        (ATH 100.066,47) [GRÜN]
+```
+
+**Live-Check V1–V4 (Alpaca IEX 13:07 ET):**
+- **JPM**  333,815 $ (Entry 332,78, P/L +0,31 %, MV 1.001,45)
+  - V1 306,16 SICHER (+9,03 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+10,49 %)
+  - V3 399,34 / V4 449,25 — weit entfernt
+  - **JPM Earnings 14.07.2026 BMO CONFIRMED → 3-HT-Blackout ab Do 09.07. Close (ab MORGEN Stop-Tightening V1 → -5 %)**
+- **UNH**  428,5148 $ (Entry 401,57, P/L +6,71 %, MV 10.284,36)
+  - V1 369,44 SICHER (+15,99 % Puffer)
+  - V2 Stop 378,48 (Posit-Hoch 430,095 carry-over 02.07.) SICHER (+13,22 %)
+  - V3 481,88 / V4 542,12 — weit entfernt
+- **LLY**  1.225,835 $ (Entry 1.193,89, P/L +2,68 %, MV 9.806,68)
+  - V1 1.098,38 SICHER (+11,60 % Puffer)
+  - V2 Stop 1.098,70 (Posit-Hoch 1.248,53 carry-over 07.07.) SICHER (+11,57 %)
+  - V3 1.432,66 / V4 1.611,75 — weit entfernt
+- **GOOGL**  361,10 $ (Entry 368,10, P/L -1,90 %, MV 9.388,60) — Fill-Day+1 Verengung
+  - V1 338,65 SICHER (+6,63 % Puffer, engste Position aber SICHER)
+  - V2 Stop 328,36 (Posit-Hoch 373,14 carry-over 07.07.) SICHER (+9,97 %)
+  - V3 441,72 / V4 496,93 — weit entfernt
+
+→ **Keine Verkaufsorder.** Alle 4 V1–V4 regulär SICHER — Puffer +6,63 % (GOOGL) bis +15,99 % (UNH).
+→ **Daily Loss Cap (-3 %) nicht erreicht** (-0,240 %). Keine Order-Stornierung nötig (keine Pending-Orders).
+
+**Guardrails-Status:**
+```
+1. Daily Loss Cap (-3 %):    -0,240 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):   -0,313 % (KW28 Mo-Basis 99.420,34)    [GRÜN]
+3. Drawdown-Alarm (-15 %):   -0,956 % vs ATH 100.066,47            [GRÜN]
+4. Käufe KW28:                2/2 (LOCK bis Mo 13.07.)             [KEIN weiterer Kauf KW28]
+```
+
+**ClickUp:** kein Alert (keine Stops, kein Cap → Logging-Disziplin gewahrt).
+
+> **Entscheidung:** No-Op — alle 4 Positionen halten pre-FOMC-Minutes (14:00 ET). GOOGL Fill-Day+1 setzt Konsolidierung fort (-1,90 %), V1-Puffer +6,63 % weiter engste aber sicher; V2-Trail 328,36 komfortabel. UNH/LLY tragen Portfolio (+6,71 %/+2,68 %). Daily -0,24 % vs Di-EOD-Mark stabil.
+> **Nächste Routine:** Mi 08.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check aller 4 Positionen + Limit-Order für Do 09.07. falls V5/V6-Trigger + JPM-Blackout-Vorbereitung).
 
 ---
 
