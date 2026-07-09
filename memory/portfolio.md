@@ -1,6 +1,106 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-09 13:07 ET (Midday KW28 Do Tag 4, alle 4 V1-V4 SICHER, Daily -0,110 %, Weekly -0,563 %, DD -1,205 %, Guardrails GRÜN, Pending-Orders 0)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-09 16:02 ET (Close KW28 Do Tag 4, alle 4 V1-V6 SICHER, Daily +0,023 %, Alpha -0,818 % vs SPY, Weekly -0,431 %, DD -1,074 %, JPM-Blackout AKTIVIERT V1 auf 316,14, Guardrails GRÜN, Pending-Orders 0)
+
+---
+
+## Market Close 2026-07-09 16:02 ET (Do, KW28 Tag 4) — Tagesbilanz, JPM V1-Tightening AKTIVIERT
+
+```
+Alpaca clock:      is_open=false | next_open Fr 10.07. 09:30 ET | next_close 16:00 ET
+Gesamtwert:        98.992,13 $   (Alpaca equity Close, vs last_equity 98.969,42 = Mi EOD-Mark)
+Cash:              68.626,60 $   (69,33 %, unverändert)
+Investiert (MV):   30.365,53 $   (30,67 %, JPM 1.005,39 + UNH 10.338,00 + LLY 9.735,60 + GOOGL 9.286,54)
+P/L heute:            +22,71 $   (+0,023 %)  [GRÜN — leichter Rebound]
+SPY-Tag:           +0,841 %       (Alpaca IEX 745,28 → 751,55)  [Perplexity nannte +0,54 %/749,74 — Alpaca als Ground-Truth]
+Alpha vs SPY:      -0,818 %       [NEGATIV — XLV -0,10 % flat trotz UNH +1,42 %, XLK +2,16 % Rally ohne Bot-Exposure]
+ATH:              100.066,47 $    DD -1,074 % [GRÜN — Alarm bei -15 %]
+Weekly P/L KW28:  -0,431 %        (KW28 Mo-Basis 99.420,34 = Fr-Close 03.07.) [GRÜN — weit unter -5 %]
+Käufe KW28:            2/2        (LOCK bis Mo 13.07.)
+Pending Orders:        0          (V5/V6 alle SICHER — keine Limit-Order für Fr 10.07.)
+VIX-Ref:            ~17           (VXX -1,82 % → Vola-Entspannung post-FOMC)
+Guardrails:  Daily +0,02 % | Weekly -0,43 % | DD -1,07 % | VIX ~17 | Käufe 2/2 (LOCK) → ALLE GRÜN
+```
+
+**Positionen Live V1–V6 (Alpaca IEX 16:02 ET Close, Bars-Recalc EMA/RSI 205d):**
+- **JPM**  335,415 $ (Entry 332,78, P/L +0,79 %, change_today +1,36 %) — XLF-Rebound +1,03 %
+  - **V1 NEU 316,14** (ex-Blackout -5 %-Regel AKTIVIERT ab HEUTE CLOSE, alt 306,16 -8 %) SICHER (+6,10 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+11,03 %)
+  - V3 399,34 / V4 449,25 — nicht erreicht
+  - V5 EMA50 ~317,29 > EMA200 ~306,70 ✓ (Spread +10,59 stabil)
+  - V6 RSI(14) ~61 / RS_4w vs SPY +5,44 % → SICHER (RSI <80, RS positiv)
+  - **⚠ JPM Earnings 14.07.2026 BMO (3 HT) → Blackout 3 HT AKTIV bis Earnings → V1 -5 % Tightening greift**
+- **UNH**  431,655 $ (Entry 401,57, P/L +7,49 %, change_today +1,42 %) — **XLV -0,10 % flat, aber UNH Sektor-Winner** (Tageshoch 434,19 = NEUES Posit-Hoch)
+  - V1 369,44 SICHER (+16,84 % Puffer)
+  - V2 Stop **NEU 381,89** (Trail: NEUES Posit-Hoch 434,19 × 0,88; alt 378,54 vom 08.07.-Live-Hoch 430,155) SICHER (+13,03 %)
+  - V3 481,88 / V4 542,12 — nicht erreicht
+  - V5 EMA50 ~391,13 > EMA200 ~337,50 ✓ (Spread +53,63 sehr komfortabel)
+  - V6 RSI(14) ~67 / RS_4w vs SPY +4,42 % → SICHER
+- **LLY**  1.215,62 $ (Entry 1.193,89, P/L +1,82 %, change_today +0,09 %) — XLV flat, LLY neutral
+  - V1 1.098,38 SICHER (+10,67 % Puffer)
+  - V2 Stop 1.098,70 (Posit-Hoch 1.248,53 carry-over 07.07., kein neues Hoch heute — Tageshoch 1.228,81) SICHER (+10,64 %)
+  - V3 1.432,66 / V4 1.611,75 — nicht erreicht
+  - V5 EMA50 ~1.102,43 > EMA200 ~991,69 ✓ (Spread +110,74 komfortabel)
+  - V6 RSI(14) ~64 / RS_4w vs SPY +4,05 % → SICHER
+- **GOOGL**  358,88 $ (Entry 368,10, P/L -2,51 %, change_today -0,86 %) — XLC +0,97 % positiv, ABER GOOGL divergiert (Fill-Day+2 Konsolidierung fortgesetzt, Tagestief 351,105)
+  - V1 338,65 SICHER (+5,97 % Puffer, weiter engste Position aber SICHER)
+  - V2 Stop 328,36 (Posit-Hoch 373,14 carry-over 07.07., kein neues Hoch heute) SICHER (+9,29 %)
+  - V3 441,72 / V4 496,93 — nicht erreicht
+  - V5 EMA50 ~359,32 > EMA200 ~317,58 ✓ (Spread +41,74)
+  - V6 RSI(14) ~48 / RS_4w vs SPY -2,32 % → NICHT ausgelöst (V6 verlangt BEIDES RSI>80 UND RS<0; RSI weit unter 80)
+
+**V5/V6-Check heute: ALLE 4 POSITIONEN SICHER.** → **Keine Limit-Order für Fr 10.07. vorbereitet.** Pending Orders bleiben 0.
+
+**Schlechteste Position:** GOOGL -2,51 % (Fill-Day+2 setzt Konsolidierung fort trotz XLC-Support, V1-Puffer +5,97 % weiter engste aber sicher; RS_4w -2,32 % negativ verstärkt sich)
+**Beste Position:** UNH +7,49 % (change_today +1,42 %, NEUES Posit-Hoch 434,19 → V2-Trail 381,89)
+
+**Sektor-Update:** JPM XLF 1,02 % + UNH XLV 10,44 % + LLY XLV 9,83 % + GOOGL XLC 9,38 % = **30,67 % investiert**. XLV Total 20,27 % (unter 30 %-Cap ✓, 2/3 XLV). 4/8 Positions-Slots belegt.
+
+**Sektor-Performance heute (Alpaca IEX, ranking):**
+```
+XLK +2,16 % | XLY +1,35 % | XLF +1,03 % | XLC +0,97 % | XLI +0,39 % | XLB +0,20 % | XLRE +0,17 %
+XLV -0,10 % | XLU -0,55 % | XLP -1,42 % | XLE -1,44 %
+VXX -1,82 % (Vola-Entspannung post-FOMC, VIX ~17 GRÜN)
+```
+→ **Klare Rotation ZURÜCK in Tech/Growth: XLK/XLY/XLF/XLC alle grün, XLV flat.** Bot-Positionen: UNH+LLY XLV -0,10 % Sektor-Support fehlt aber UNH +1,42 % einzelwert-stark; JPM XLF +1,03 % Rebound-Tag; GOOGL XLC +0,97 % Sektor grün ABER GOOGL -0,86 % individuell-schwach (Divergenz). **XLK +2,16 % ohne Bot-Exposure → Alpha-Miss -0,818 % strukturell (AAPL/NVDA-KW29-Prep validiert).**
+
+**Daily Loss Cap (-3 %):** +0,023 % → GRÜN, kein Eingriff.
+**Weekly Loss Cap (-5 %):** -0,431 % → GRÜN, keine Stornierungen.
+**ATH-Drawdown (-15 % Alarm / -20 % Stopp):** -1,074 % → GRÜN.
+**Käufe KW28:** 2/2 → **KEIN weiterer Kauf möglich bis Mo 13.07.** (KW28 Slot-Lock).
+
+**⚠ JPM V1-Stop-Tightening AB JETZT AKTIVIERT:**
+- Regel: Earnings-Blackout 3 HT vor Earnings → V1 auf -5 % vom Entry
+- Berechnung: 332,78 × 0,95 = **316,14 $** (NEU)
+- Alt: 332,78 × 0,92 = 306,16 $ (auslaufend)
+- Aktueller Kurs 335,415 → Puffer neu +6,10 % (statt +9,66 % alt)
+- Gilt bis Q2-Earnings 14.07.2026 BMO (Mo 13.07. Kauf + Di 14.07. Blackout-Ende)
+- **Fr 10.07. Pre-Market ZWINGEND: Bei JPM < 316,14 → sofort V1-Market-Sell**
+
+**Watchlist Fr 10.07. + KW29-Prep (Alpaca K1-K3 carry-over Mi 08.07. Close, SPY_RS_63d +13,84 %):**
+```
+Sym    Last      Ranking KW29                                    Kommentar
+AAPL   ~318     LEAD — 3/3 K1-K3 (RS +10,33 %, RSI 62,81)       XLK +2,16 % heute massiv → Momentum-Restore validiert; K5-Recheck KW29 zwingend
+NVDA   ~212     NEU 2. XLK-Kandidat — 3/3 grenzwertig RS         XLK-Rebound +2,16 % → beste Sektor-Bestätigung
+CAT    ~948     Backup — 2/3 K2-Fail RSI 48,93                   K3 stärkstes RS +17,69 %; KW29-Recheck (RSI-Erholung möglich)
+AMZN   ~244     Backup — 2/3 K2-Fail                             K1-Spread eng; XLY +1,35 % heute positiv
+```
+→ **AAPL LEAD gestärkt** durch XLK-Rally +2,16 % (Sektor-Timing perfekt für Mo 13.07. Kauf)
+→ **NVDA neu 2. XLK-Kandidat** — starke Sektor-Bestätigung
+→ CAT/AMZN bleiben Backup
+
+**Datenqualitäts-Hinweise:**
+- Alpaca IEX-Bars 205d verfügbar für alle 4 Positionen — EMA50/200 + RSI(14) Wilder inkrementell berechnet aus Vortag
+- SPY IEX 751,55 vs 745,28 (Mi-Close) = +0,841 % als Ground-Truth für Alpha (Perplexity nannte 749,74/+0,54 % — moderate Diskrepanz)
+- Sektor-ETF-Marks über Alpaca IEX (12/12 erfolgreich)
+- Perplexity Watchlist-News-Query lieferte SPY-Daten mit Diskrepanz — Watchlist carry-over von Mi-Close-Screener
+
+**ClickUp:** [CLOSE] Tagesbilanz Task angelegt Prio 3 (Portfolio-Performance leicht positiv ABER Alpha stark negativ -0,818 % → Priorität Normal).
+
+> **Entscheidung Market Close:** Portfolio +0,023 % marginal positiv, aber deutliches Alpha-Miss -0,818 % durch XLK-Rally +2,16 % ohne Bot-Exposure. UNH neues Posit-Hoch 434,19 → V2-Trail 381,89 (+0,89 % Anhebung). GOOGL Fill-Day+2 Divergenz zu XLC (Sektor +0,97 %, GOOGL -0,86 %) verschärft sich — Watch KW29. Alle V1-V6 SICHER → keine Limit-Order für Fr 10.07. **KW28 Käufe 2/2 voll — bis Mo 13.07. KEIN weiterer Kauf.** **JPM V1-Stop-Tightening auf 316,14 (-5 %) AKTIVIERT** (Blackout 3 HT bis Q2 14.07. BMO).
+> **Zwingender Watch morgen:** JPM Pre-Market bei < 316,14 → sofort V1-Market-Sell (Puffer heute +6,10 %).
+> **Lessons-Tag:** (1) XLK-Rally +2,16 % ohne Bot-Exposure = -0,818 % Alpha-Miss → AAPL/NVDA-KW29-Prep-Ranking validiert (Sektor-Rotation zurück ins Growth deutlich vor KW29-Kauf-Fenster). (2) GOOGL divergiert zu XLC: Sektor +0,97 %, GOOGL -0,86 % → Fill-Day+2 zeigt jetzt AVGO/MU-Muster in abgeschwächter Form, RS_4w -2,32 % negativ verstärkt sich. (3) UNH einzelwert-stark ohne Sektor-Support (XLV -0,10 % flat) → Alpha innerhalb Sektor stark, aber Portfolio-Alpha durch XLV-Overweight belastet.
+> **Nächste Routine:** Fr 10.07. 08:30 ET Pre-Market Check (KW28 Tag 5, JPM-V1-Watch bei 316,14, Rebound-Prüfung GOOGL).
 
 ---
 

@@ -6,28 +6,33 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live 09.07. 09:37 ET | Gewinn/Verlust        | Stop-Loss   | TP1         | TP2         | Signale         |
-|--------|------------|-------------|-----------------------|-----------------------|-------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 331,935 $             |   -2,54 $ (-0,25 %)   | 306,16 $    | 399,34 $    | 449,25 $    | V1 SICHER       |
-| UNH    | 2026-06-18 | 401,57 $    | 426,27 $              | +592,80 $ (+6,15 %)   | 369,44 $    | 481,88 $    | 542,12 $    | V1 SICHER       |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.228,405 $           | +276,14 $ (+2,89 %)   | 1.098,38 $  | 1.432,66 $  | 1.611,75 $  | V1 SICHER       |
-| GOOGL  | 2026-07-07 | 368,10 $    | 358,4775 $            | -250,15 $ (-2,61 %)   | 338,65 $    | 441,72 $    | 496,93 $    | V1 SICHER       |
+| Symbol | Kaufdatum  | Kaufkurs    | Close 09.07. 16:00 ET | Gewinn/Verlust        | Stop-Loss     | TP1         | TP2         | Signale         |
+|--------|------------|-------------|-----------------------|-----------------------|---------------|-------------|-------------|-----------------|
+| JPM    | 2026-06-17 | 332,78 $    | 335,415 $             |   +7,90 $ (+0,79 %)   | **316,14 $** ⚠| 399,34 $    | 449,25 $    | V1 SICHER (Blackout -5 %) |
+| UNH    | 2026-06-18 | 401,57 $    | 431,655 $             | +722,06 $ (+7,49 %)   | 369,44 $      | 481,88 $    | 542,12 $    | V1 SICHER (V2 NEU 381,89) |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.215,62 $            | +173,84 $ (+1,82 %)   | 1.098,38 $    | 1.432,66 $  | 1.611,75 $  | V1 SICHER       |
+| GOOGL  | 2026-07-07 | 368,10 $    | 358,88 $              | -239,72 $ (-2,51 %)   | 338,65 $      | 441,72 $    | 496,93 $    | V1 SICHER       |
 
-**Gesamt investiert:** 30.372,45 $ (Marktwert Alpaca 09.07. 09:37 ET Live) | **Cash:** 68.626,60 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LOCK bis Mo 13.07.)
+**Gesamt investiert:** 30.365,53 $ (Marktwert Alpaca 09.07. 16:02 ET Close) | **Cash:** 68.626,60 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LOCK bis Mo 13.07.)
 
 ---
 
 ## Offene Orders (pending)
 
-_keine — Market Open 09.07. 09:37 ET (Do, KW28 Tag 4): Alle 4 V1 SICHER, kein Verkaufssignal, KEIN Kauf-Scan (Käufe-Slot LOCK 2/2 bis Mo 13.07.). Pending Orders bleiben 0._
+_keine — Market Close 09.07. 16:02 ET (Do, KW28 Tag 4): Alle 4 V1-V6 SICHER, kein Verkaufssignal, KEIN Kauf-Scan (Käufe-Slot LOCK 2/2 bis Mo 13.07.). Pending Orders bleiben 0._
 
-_JPM V1 306,16 SICHER +8,42 % Puffer; UNH V1 369,44 SICHER +15,35 %; LLY V1 1.098,38 SICHER +11,83 %; GOOGL V1 338,65 SICHER +5,85 % (engste Position, Fill-Day+2 Verengung fortgesetzt)._
+_**JPM V1 NEU 316,14** SICHER +6,10 % Puffer (Blackout -5 %-Tightening AKTIVIERT ab HEUTE CLOSE, gilt bis Q2 14.07. BMO); UNH V1 369,44 SICHER +16,84 %; LLY V1 1.098,38 SICHER +10,67 %; GOOGL V1 338,65 SICHER +5,97 % (engste Position, Fill-Day+2 Divergenz zu XLC verstärkt)._
 
-_Market Open 09.07. 09:37 ET: Equity 98.999,05 $ (Daily +0,030 % vs Mi-EOD 98.969,42). Weekly KW28 -0,423 % (Mo-Basis 99.420,34). DD -1,067 % (ATH 100.066,47). Guardrails alle GRÜN. Käufe-Slot LOCK 2/2._
+_**UNH V2-Trail NEU 381,89** (NEUES Posit-Hoch heute 434,19 × 0,88; alt 378,54 vom 08.07.). Alle anderen V2-Trails carry-over ohne neue Hochs._
 
-_**JPM Earnings 14.07.2026 BMO CONFIRMED → 3-HT-Blackout aktiviert AB HEUTE CLOSE → V1-Stop-Tightening auf -5 % (316,14 statt 306,16) ZWINGEND zur Close-Routine 09.07. 16:00 ET.**_
+_Market Close 09.07. 16:02 ET: Equity 98.992,13 $ (Daily +0,023 % vs Mi-EOD 98.969,42), SPY +0,841 % (745,28 → 751,55), **Alpha -0,818 %** (XLK +2,16 % Rally ohne Bot-Exposure). Weekly KW28 -0,431 % (Mo-Basis 99.420,34). DD -1,074 % (ATH 100.066,47). VIX ~17 (VXX -1,82 %). Guardrails alle GRÜN. Käufe-Slot LOCK 2/2._
 
-_Nächster Check: Do 09.07. 13:00 ET Midday Stop-Check (V1-V4-Watch aller 4 Positionen; keine Kauf-Aktivität möglich)._
+_Nächster Check: Fr 10.07. 08:30 ET Pre-Market Check (KW28 Tag 5, **JPM Pre-Market-Watch bei 316,14 zwingend**, Rebound-Prüfung GOOGL)._
+
+_JPM V5: EMA50 ~317,29 > EMA200 ~306,70 ✓ (Spread +10,59); V6 RSI ~61 <80, RS_4w vs SPY +5,44 % → SICHER._
+_UNH V5: EMA50 ~391,13 > EMA200 ~337,50 ✓ (Spread +53,63); V6 RSI ~67 <80, RS_4w +4,42 % → SICHER._
+_LLY V5: EMA50 ~1.102,43 > EMA200 ~991,69 ✓ (Spread +110,74); V6 RSI ~64 <80, RS_4w +4,05 % → SICHER._
+_GOOGL V5: EMA50 ~359,32 > EMA200 ~317,58 ✓ (Spread +41,74); V6 RSI ~48 <80 (RS_4w -2,32 % negativ verstärkt sich, aber V6 verlangt BEIDES) → SICHER._
 
 _JPM V5: EMA50 316,57 > EMA200 306,41 ✓ (Spread +10,16); V6 RSI 56,99 <80, RS_4w vs SPY +5,64 % → SICHER._
 _UNH V5: EMA50 389,48 > EMA200 336,55 ✓ (Spread +52,93); V6 RSI 62,23 <80, RS_4w +4,18 % → SICHER._
