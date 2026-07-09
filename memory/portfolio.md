@@ -1,6 +1,61 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-08 16:02 ET (Market Close KW28 Mi Tag 3, alle 4 V1-V6 SICHER, Daily -0,38 % Alpha -0,05 %, Weekly -0,45 %, DD -1,10 %, Guardrails GRÜN, KEIN Pending-Order für Do 09.07.)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-09 09:37 ET (Market Open KW28 Do Tag 4, alle 4 V1 SICHER, KEIN Kauf-Scan (Slot LOCK 2/2), Daily +0,03 %, Weekly -0,42 %, DD -1,07 %, Guardrails GRÜN, Pending-Orders 0)
+
+---
+
+## Market Open 2026-07-09 09:37 ET (Do, KW28 Tag 4) — No-Op (Slot LOCK), alle V1 SICHER
+
+```
+Alpaca clock:      is_open=true | next_close 09.07. 16:00 ET
+Equity:            98.999,05 $   (Alpaca Live 09:37 ET, vs last_equity 98.969,42 = Mi EOD-Mark)
+Cash:              68.626,60 $   (69,32 %, unverändert)
+Portfolio MV:      30.372,45 $   (30,68 %)
+Buying_power:     359.549,25 $
+Daily P/L:            +29,63 $   (+0,030 %)  [GRÜN — leichter Rebound nach Mi post-FOMC-Rutsch]
+ATH:              100.066,47 $    DD -1,067 % [GRÜN — Alarm bei -15 %]
+Weekly P/L KW28:  -0,423 %        (KW28 Mo-Basis 99.420,34 = Fr-Close)
+Käufe KW28:            2/2        LOCK bis Mo 13.07.
+Pending Orders:        0
+Guardrails:  Daily +0,03 % | Weekly -0,42 % | DD -1,07 % | Käufe 2/2 LOCK → ALLE 8 GRÜN
+```
+
+**Positionen Live V1 (Alpaca 09:37 ET, change_today = vs Mi-Close):**
+- **JPM**   331,935 $ (Entry 332,78, P/L -0,25 %, change_today +0,40 %) — leichte Erholung nach Mi -2,59 %
+  - V1 306,16 SICHER (+8,42 % Puffer)
+  - **JPM Earnings 14.07.2026 BMO CONFIRMED → 3-HT-Blackout aktiviert AB HEUTE CLOSE → V1-Stop-Tightening auf -5 % (316,14) ZWINGEND zur Close-Routine**
+- **UNH**   426,27 $ (Entry 401,57, P/L +6,15 %, change_today +0,16 %) — XLV stabil
+  - V1 369,44 SICHER (+15,35 % Puffer)
+- **LLY**  1.228,405 $ (Entry 1.193,89, P/L +2,89 %, change_today +1,03 %) — Rebound-Signal
+  - V1 1.098,38 SICHER (+11,83 % Puffer)
+  - V2 Trail 1.098,70 (carry-over Posit-Hoch 1.248,53 vom 07.07.)
+- **GOOGL** 358,4775 $ (Entry 368,10, P/L -2,61 %, change_today -0,95 %) — Fill-Day+2 Konsolidierung fortgesetzt
+  - V1 338,65 SICHER (+5,85 % Puffer, weiter engste Position aber SICHER)
+  - V2 Trail 328,36 (carry-over Posit-Hoch 373,14)
+
+→ **Alle 4 V1 SICHER, kein Verkaufssignal, keine Order-Aktivität.**
+
+**Kauf-Scan:** KEIN Scan durchgeführt (Käufe-Slot KW28 LOCK 2/2 bis Mo 13.07.).
+
+**Sektor-Update:** JPM XLF 1,01 % + UNH XLV 10,33 % + LLY XLV 9,93 % + GOOGL XLC 9,41 % = **30,68 %** investiert. XLV Total 20,26 % (unter 30 %-Cap ✓). 4/8 Positions-Slots belegt.
+
+**Guardrail-Status:** Alle GRÜN. Daily +0,03 % positiv (leichte Erholung vs Mi post-FOMC). Weekly -0,42 % weit unter -5 %-Cap.
+
+**Entscheidung Market Open:**
+- KEIN Kauf-Scan (Slot LOCK 2/2)
+- Alle 4 Positionen SICHER → keine V1/V2/V3/V4-Order
+- No-Op-Routine wie erwartet
+- JPM-Blackout aktiviert sich erst ab HEUTE CLOSE → V1-Tightening zur Close-Routine 16:00 ET
+
+**Watchlist KW29-Prep (Kauf-Fenster ab Mo 13.07.):**
+1. **AAPL** LEAD — 3/3 K1-K3 aus 08.07. Close (RS +10,33 %, RSI 62,81); XLK-Sektor-Support; K5-Recheck KW29 zwingend
+2. **NVDA** neu 2. XLK-Kandidat — 3/3 K1-K3 grenzwertig RS +1,37 %; K5-FwdPE-Recheck erforderlich
+3. **CAT** Backup — 2/3 K2-Fail RSI cool-off, K3 stärkstes RS +17,69 %; KW29-Recheck
+4. **AMZN** Backup — 2/3 K2-Fail, K1-Spread eng
+
+**Nächste Routine:** Do 09.07. 13:00 ET Midday Stop-Check (V1-V4-Watch aller 4 Positionen; keine Kauf-Aktivität möglich).
+
+**ClickUp:** [ROUTINE] Market Open Log-Task Prio 4 (Low, No-Op, Slot LOCK).
 
 ---
 
