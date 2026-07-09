@@ -1,6 +1,69 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-08 16:02 ET (Market Close KW28 Mi Tag 3, alle 4 V1-V6 SICHER, Daily -0,38 % Alpha -0,05 %, Weekly -0,45 %, DD -1,10 %, Guardrails GRÜN, KEIN Pending-Order für Do 09.07.)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-09 08:35 ET (Pre-Market KW28 Do Tag 4, alle 4 V1 SICHER, Daily -0,20 %, Weekly -0,65 %, DD -1,30 %, Guardrails GRÜN, JPM-Blackout-Aktivierung ab HEUTE CLOSE — V1-Tightening auf -5 % (316,14) beim 16:00 ET Close zwingend, KEIN Kauf-Scan (Slot LOCK 2/2))
+
+---
+
+## Pre-Market 2026-07-09 08:35 ET (Do, KW28 Tag 4) — Guardrails GRÜN, JPM-Blackout ab HEUTE CLOSE
+
+```
+Alpaca clock:      is_open=false | next_open Do 09.07. 09:30 ET | next_close 16:00 ET
+Equity:            98.770,84 $   (Alpaca Pre-Market Live, vs last_equity 98.969,42 = Mi EOD-Mark)
+Cash:              68.626,60 $   (69,48 %, unverändert)
+Portfolio MV:      30.144,11 $   (30,52 %)
+Buying_power:     358.910,27 $
+Daily P/L:            -198,58 $   (-0,201 %)  [GRÜN]
+ATH:              100.066,47 $    DD -1,295 % [GRÜN — Alarm bei -15 %]
+Weekly P/L KW28:  -0,654 %        (KW28 Mo-Basis 99.420,34 = Fr-Close)
+Käufe KW28:            2/2        LOCK bis Mo 13.07.
+Pending Orders:        0
+VIX:               ~16,8 Live     (Mi Close ~16,9, -0,5 % → Vola-Cool-off)
+SPY Pre-Market:    +0,371 %       (Alpaca IEX mid 748,05 vs Mi-Close 745,28) — echter Rebound
+10Y Treasury:      ~4,0-4,3 %     (Perplexity Inferenz)
+Guardrails:  Daily -0,20 % | Weekly -0,65 % | DD -1,30 % | VIX ~16,8 | Käufe 2/2 LOCK → ALLE 8 GRÜN
+```
+
+**Positionen Pre-Market (Alpaca Quotes 08:35 ET):**
+- **JPM**   331,50 $ (Entry 332,78, P/L -0,385 %, change_today +0,266 %) — XLF-Erholungs-Tick nach -1,91 %-Rutsch Mi
+  - V1 306,16 SICHER (+7,66 % Puffer)
+  - **⚠ JPM Earnings 14.07.2026 BMO CONFIRMED (Multi-Source Perplexity + JPM-IR) → 3-HT-Blackout AKTIV ab HEUTE 09.07. CLOSE → V1-Tightening V1 auf -5 % (332,78 × 0,95 = 316,14) beim 16:00 ET Close ZWINGEND**
+- **UNH**   425,00 $ (Entry 401,57, P/L +5,835 %, change_today -0,141 %) — flat pre-Open
+  - V1 369,44 SICHER (+15,03 %)
+  - **UNH Earnings 16.07.2026 BMO (Perplexity Consensus, unbestätigt) → 3-HT-Blackout ab Fr 10.07. Close = MORGEN Watch für V1-Tightening 381,49**
+- **LLY**  1.207,20 $ (Entry 1.193,89, P/L +1,115 %, change_today -0,71 %) — XLV weiter unter Druck
+  - V1 1.098,38 SICHER (+9,89 %)
+  - V2 Trail 1.098,70 (carry-over Posit-Hoch 1.248,53 vom 07.07.)
+  - **LLY Earnings-Update: 21.07.2026 BMO (Perplexity Consensus, vorher Memory-carry 05.08.) → 8 HT ab heute → Blackout ab 16.07. Close weit weg**
+- **GOOGL** 357,39 $ (Entry 368,10, P/L -2,911 %, change_today -1,253 %) — Fill-Day+2 Verengung setzt sich fort
+  - V1 338,65 SICHER (+5,52 % Puffer, engste Position aber SICHER)
+  - V2 Trail 328,36 (carry-over Posit-Hoch 373,14)
+  - **GOOGL Earnings-Update: 28.07.2026 AMC (Perplexity Consensus, vorher Memory-carry 22.07.) → 13 HT ab heute → Blackout ab 23.07. Close weit weg**
+
+→ **Alle 4 V1-V6 SICHER, keine Verkaufsentscheidung, keine Order-Aktivität.**
+
+**Earnings-Blackout-Check:**
+- JPM 14.07. BMO **CONFIRMED** → Blackout ab **09.07. Close** → **V1-Stop-Tightening HEUTE CLOSE zwingend**
+- UNH 16.07. BMO (Consensus unbestätigt) → Blackout ab 10.07. Close → Watch morgen
+- LLY 21.07. BMO (Consensus, aktualisiert vs 05.08. carry) → Blackout ab 16.07. Close → weit weg
+- GOOGL 28.07. AMC (Consensus, aktualisiert vs 22.07. carry) → Blackout ab 23.07. Close → weit weg
+
+**Guardrail-Status:** Alle GRÜN. Käufe-Slot LOCK bis Mo 13.07. (KW29-Start).
+
+**Entscheidung Market Open:**
+- KEIN Kauf-Scan (Slot LOCK 2/2)
+- Nur V1-V6-Watch aller 4 Positionen + Guardrail-Monitoring
+- Jobless Claims 08:30 ET → moderater Watch, SPY-PM +0,37 % impliziert kein Schock
+- **Fokus Close 16:00 ET:** JPM V1-Stop-Tightening auf 316,14 (Regel Earnings-Blackout)
+
+**Watchlist KW29-Prep (Kauf-Fenster ab Mo 13.07., carry-over):**
+1. **AAPL** LEAD — 3/3 K1-K3 (RS +10,33 %), K5-Recheck erforderlich; XLK-Support 08.07. +1,22 %
+2. **NVDA** neu — 3/3 K1-K3 (RS +1,37 % grenzwertig), K5-Recheck offen, XLK-Support
+3. **CAT** Backup — 2/3 (K2-Fail RSI 48,93 cool-off), K3 stärkstes RS +17,69 %
+4. **AMZN** Backup — 2/3 (K2-Fail RSI 49,50, K1-Spread eng), K5 offen
+
+**Nächste Routine:** Do 09.07. 13:00 ET Midday Stop-Check (V1-V4-Watch aller 4 Positionen; keine Kauf-Aktivität möglich; Vorbereitung JPM-Stop-Tightening für Close).
+
+**ClickUp:** [PRE-MARKET] Check Task angelegt Prio 4 (Low, No-Op-Routine, Slot LOCK, aber JPM-Stop-Tightening beim Close vormerken).
 
 ---
 

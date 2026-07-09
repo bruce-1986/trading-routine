@@ -4,6 +4,106 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-07-09 (Do, KW28 Tag 4) — Guardrails GRÜN, KEIN Kauf-Scan (Slot LOCK 2/2), JPM-Blackout ab HEUTE CLOSE
+
+**Alpaca Clock:** is_open=false, next_open Do 09.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.
+
+**Account Live 08:35 ET (Pre-Market):**
+```
+Equity:           98.770,84 $   (vs last_equity 98.969,42 → Daily -0,201 %) [GRÜN]
+Cash:             68.626,60 $   (69,48 %, unverändert)
+Portfolio_MV:     30.144,11 $   (30,52 %)
+Buying_power:    358.910,27 $
+Käufe KW28:       2/2 → LOCK bis Mo 13.07.
+Pending Orders:   0
+Trading_blocked:  false | Status: ACTIVE
+```
+
+**Reconciliation Memory ↔ Alpaca:** Memory Mi-Close 98.970,99 ↔ Alpaca last_equity 98.969,42 → -1,57 $ Diskrepanz (After-Hours-Mark, akzeptabel). Cash 68.626,60 exakt konsistent ✓.
+
+**Positionen Pre-Market Live (Alpaca Quotes 08:35 ET, change_today = vs Mi-Close):**
+- **JPM**   331,50 $ (Entry 332,78, P/L -0,385 %, change_today +0,266 %) — XLF Erholungs-Tick nach -1,91 %-Rutsch Mi
+  - V1 306,16 SICHER +7,66 % Puffer
+  - **⚠ JPM Q2 14.07.2026 BMO CONFIRMED (Perplexity+JPM-IR-Bestätigung heute) → 3-HT-Blackout AKTIV ab HEUTE 09.07. CLOSE → V1-Stop-Tightening auf -5 % (316,14 statt 306,16) beim Close heute ZWINGEND**
+- **UNH**   425,00 $ (Entry 401,57, P/L +5,835 %, change_today -0,141 %) — flat pre-Open
+  - V1 369,44 SICHER +15,03 % Puffer
+- **LLY**  1.207,20 $ (Entry 1.193,89, P/L +1,115 %, change_today -0,71 %) — XLV weiter unter Druck
+  - V1 1.098,38 SICHER +9,89 % Puffer
+  - V2 Trail 1.098,70 (carry-over Posit-Hoch 1.248,53 vom 07.07.)
+- **GOOGL** 357,39 $ (Entry 368,10, P/L -2,911 %, change_today -1,253 %) — Fill-Day+2 Verengung setzt sich fort
+  - V1 338,65 SICHER +5,52 % Puffer [engste Position, ABER weit über V1]
+  - V2 Trail 328,36 (carry-over Posit-Hoch 373,14)
+
+→ **Alle 4 V1-V6 SICHER, keine Order pending, keine Verkaufsentscheidung.**
+
+**Perplexity Macro Check (Pre-Market Live):**
+```
+VIX Spot Live:       ~16,8    (-0,5 % vs Mi Close ~16,9) → GRÜN (< 30)
+SPY Pre-Market:      Alpaca IEX mid 748,05 (+0,371 % vs Mi-Close 745,28) [Ground-Truth]
+                    (Perplexity nannte -0,2 bis -0,4 % — carry-over Datenqualitäts-Diskrepanz)
+VXX Pre-Market:      22,03 (Mi-Close-Mark, After-Hours flat)
+10Y Treasury:        ~4,0-4,3 % (Perplexity Inferenz, keine Live-Quote)
+Jobless Claims:      Wöchentlich heute (Do Standard-Release 08:30 ET)
+FOMC-Speaker:        Kein spezifischer heute laut Perplexity
+Top-News:           (1) S&P/Nasdaq/DJIA Mi -0,8/-0,9 % post-FOMC-Minutes-Selloff (Perplexity — Alpaca IEX SPY -0,333 %)
+                    (2) VIX bleibt subdued mid-teens trotz Equity-Softness
+                    (3) Labor-Data + Fed-Policy im Fokus (Jobless-Claims-Watch)
+```
+
+**Sonderfall SPY vs Perplexity:** Alpaca IEX SPY-Pre-Market POSITIV +0,371 % (echter Ground-Truth), Perplexity nannte -0,2 bis -0,4 % (veraltet/inferred). Alpaca als Ground-Truth. Konsistent mit VIX-Cool-off ~-0,5 % → moderate risk-on Pre-Market (Rebound vom Mi-Post-FOMC-Selloff).
+
+**Earnings-Blackout-Check (Perplexity 09.07.):**
+- **JPM Q2: 14.07.2026 BMO CONFIRMED** (Perplexity Multi-Source + JPM-IR) → 3 HT bis Earnings (Do 09, Fr 10, Mo 13, Di 14 = 3 HT)
+  - **3-HT-Blackout aktiv ab HEUTE 09.07. CLOSE** → **V1-Stop-Tightening JPM auf -5 % (316,14) beim Close heute ZWINGEND**
+- **UNH Q2: 16.07.2026 BMO** (Perplexity Multi-Source Consensus, nicht IR-bestätigt) → 5 HT ab heute → 3-HT-Blackout ab Fr 10.07. Close = MORGEN → **JETZT NICHT AKTIV**, aber Watch morgen
+- **LLY Q2: 21.07.2026 BMO** (Perplexity Update, vorher Memory-carry 05.08.) → 8 HT ab heute → 3-HT-Blackout ab 16.07. Close → **NICHT AKTIV**
+- **GOOGL Q2: 28.07.2026 AMC** (Perplexity Update, vorher Memory-carry 22.07.) → 13 HT ab heute → 3-HT-Blackout ab 23.07. Close → **NICHT AKTIV**
+
+→ **Heute noch KEIN Blackout aktiv.** Standard V1-Stops für alle 4 Positionen bleiben bis Close.
+→ **JPM-Stop-Tightening beim heutigen Close (16:00 ET) zwingend** (V1 306,16 → 316,14).
+→ **UNH-Blackout-Aktivierung morgen 10.07. Close** (V1 369,44 → 381,49) — Watch morgen Pre-Market.
+
+**Guardrail-Status Pre-Market (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,201 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,654 % (KW28 Mo-Basis 99.420,34)    [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,295 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,295 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY-PM +0,37 %                        [INAKTIV]
+6. VIX-Filter (>30):          ~16,8 Live                            [GRÜN]
+7. Earnings-Blackout (3 HT):  KEINER heute, JPM ab Close aktivieren [GRÜN heute]
+8. Max Käufe KW28:            2/2 → LOCK bis Mo 13.07.              [GESPERRT]
+```
+→ **STATUS: ALLE 8 GRÜN, aber Käufe-Slot LOCK aktiv.**
+
+**Entscheidung Market Open 09:30 ET:**
+- **KEIN Kauf-Scan** (Käufe-Slot 2/2 voll, LOCK bis Mo 13.07.)
+- **Nur Guardrail-Monitoring + V1-V6-Watch** aller 4 Positionen
+- Jobless Claims 08:30 ET → möglicher intraday-Vola-Kickstart bei Überraschung; SPY-Pre-Market +0,37 % impliziert kein Schock
+- **Zentraler Fokus heute:** Close-Routine 16:00 ET → **JPM V1-Stop-Tightening auf -5 % (316,14)** zwingend + UNH-Blackout-Vorbereitung für morgen
+
+**Watchlist KW29-Prep (Kauf-Fenster ab Mo 13.07., carry-over aus Mi-Close-Screen):**
+```
+Sym   Ranking Mi 08.07. Close        Status KW29                                       Kommentar
+AAPL  K1-K3 3/3 (RS +10,33 %)       LEAD KW29 — K5-Recheck erforderlich                XLK +1,22 % Mi-Support
+NVDA  K1-K3 3/3 (RS +1,37 %)        NEU — K5-Recheck offen                             XLK-Sektor-Support, RS grenzwertig
+CAT   K1-K3 2/3 (K2-Fail RSI 48,93) Backup — K2-Rebound-Watch, K3 stärkstes RS +17,69% Sektor XLI weiter unter Druck
+AMZN  K1-K3 2/3 (K2-Fail RSI 49,50) Backup — K1-Spread eng, K5 offen                   Nur wenn AAPL/NVDA ausfallen
+```
+→ Ranking KW29: **AAPL LEAD** / **NVDA 2. Kandidat** / **CAT Backup (K2-Rebound-Watch)** / **AMZN Backup**.
+
+**Datenqualitäts-Hinweise:**
+- Alpaca IEX SPY-Quote 748,05 als Ground-Truth (Perplexity Sample-Aktualität ungenau, carry-over-Bug)
+- Alpaca last_equity 98.969,42 vs Memory Mi-Close 98.970,99 = -1,57 $ Mini-Abweichung (After-Hours-Mark akzeptabel)
+- Perplexity Earnings-Update: **LLY nun 21.07. statt 05.08.** und **GOOGL nun 28.07. statt 22.07.** — beide Änderungen weit außerhalb 3-HT-Blackout, aber trade-log.md-Referenz aktualisieren
+- Alpaca `current_price` in Pre-Market = letzter Trade/Quote, kein offizieller Open-Preis; V1-Trigger erst bei Regulär-Session-Preis
+
+**ClickUp:** [PRE-MARKET] Check Task angelegt Prio 4 (Low, No-Op-Routine → keine besondere Aktion, nur Log).
+
+**Nächste Routine:** Do 09.07. 13:00 ET Midday Stop-Check (V1-V4-Watch aller 4 Positionen; keine Kauf-Aktivität möglich; Vorbereitung JPM-Stop-Tightening für Close).
+
+---
+
 ## Market Close 16:02 ET — 2026-07-08 (Mi, KW28 Tag 3) — Tagesbilanz post-FOMC, alle V5/V6 SICHER, KEINE Pending-Order für Do
 
 **Alpaca Clock:** is_open=false, next_open Do 09.07. 09:30 ET, next_close 16:00 ET.
