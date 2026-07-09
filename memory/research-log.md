@@ -4,6 +4,84 @@
 
 ---
 
+## Market Open 09:37 ET — 2026-07-09 (Do, KW28 Tag 4) — No-Op (Slot LOCK 2/2), alle V1 SICHER, leichter Rebound post-FOMC
+
+**Alpaca Clock:** is_open=true, next_close 09.07. 16:00 ET.
+
+**Account Live 09:37 ET:**
+```
+Equity:            98.999,05 $   (vs last_equity 98.969,42 = Mi EOD-Mark → Daily +0,030 %) [GRÜN]
+Cash:              68.626,60 $   (69,32 %, unverändert)
+Portfolio_MV:      30.372,45 $   (30,68 %)
+Buying_power:     359.549,25 $
+Käufe KW28:        2/2 → LOCK bis Mo 13.07.
+Pending Orders:    0
+Trading_blocked:   false | Status: ACTIVE
+```
+
+**Positionen Live V1 (Alpaca 09:37 ET, change_today = vs Mi-Close):**
+| Sym    | Live      | P/L     | Chg_today | V1-Stop    | V1-Puffer  | Status |
+|--------|-----------|---------|-----------|------------|------------|--------|
+| JPM    | 331,935   | -0,25 % | +0,40 %   | 306,16     | +8,42 %    | SICHER |
+| UNH    | 426,27    | +6,15 % | +0,16 %   | 369,44     | +15,35 %   | SICHER |
+| LLY    | 1.228,405 | +2,89 % | +1,03 %   | 1.098,38   | +11,83 %   | SICHER |
+| GOOGL  | 358,4775  | -2,61 % | -0,95 %   | 338,65     | +5,85 %    | SICHER (engste, Fill-Day+2 Verengung) |
+
+→ **Alle 4 V1 SICHER, keine Order pending, keine Verkaufsentscheidung.** Leichter Rebound-Tag (Daily +0,030 %) nach Mi post-FOMC-Rutsch.
+
+**LLY-Rebound-Signal:** +1,03 % change_today = XLV-Rotation-Comeback (Mi -1,60 %); Position P/L +2,89 % nach Mi +1,84 %. → Watchlist-Watch für Midday.
+
+**GOOGL-Verengung:** Fill-Day+2 Konsolidierung fortgesetzt (change_today -0,95 %, P/L -2,61 %). V1-Puffer schmilzt +6,45 % → +5,85 % (Mi-Close vs jetzt). Weiter engste Position aber SICHER (V1 338,65 $, aktuell 358,48 $ = +5,85 % Puffer).
+
+**Guardrail-Status Market Open (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     +0,030 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,423 % (KW28 Mo-Basis 99.420,34)    [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,067 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,067 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   INAKTIV                                [GRÜN]
+6. VIX-Filter (>30):          ~18-19 carry-over                     [GRÜN]
+7. Earnings-Blackout (3 HT):  KEINER heute (JPM ab Close aktiv)     [GRÜN heute]
+8. Max Käufe KW28:            2/2 → LOCK bis Mo 13.07.              [GESPERRT]
+```
+→ **STATUS: ALLE 8 GRÜN, aber Käufe-Slot LOCK aktiv.**
+
+**Perplexity-Query ENTFÄLLT:** Keine Kauf-Entscheidung (Slot LOCK) → kein Sektor-Scan erforderlich. Guardrail-Monitoring + V1-V6-Watch reicht.
+
+**Earnings-Blackout-Preview (aktueller Stand):**
+- **JPM Q2 14.07.2026 BMO CONFIRMED** → 3-HT-Blackout aktiviert ab **HEUTE CLOSE (09.07. 16:00 ET)** → **V1-Tightening auf -5 % (316,14) ZWINGEND zur Close-Routine**
+- UNH ~16.07. carry-unbestätigt / LLY 05.08. (19 HT) / GOOGL 22.07. (9 HT) — alle sicher
+
+**Sektor-Update:** JPM XLF 1,01 % + UNH XLV 10,33 % + LLY XLV 9,93 % + GOOGL XLC 9,41 % = **30,68 %** investiert. XLV Total 20,26 % (unter 30 %-Cap ✓). 4/8 Positions-Slots belegt.
+
+**Entscheidung Market Open:**
+- **KEIN Kauf-Scan** (Käufe-Slot 2/2 voll, LOCK bis Mo 13.07.)
+- **Nur Guardrail-Monitoring + V1-Watch** aller 4 Positionen
+- **Keine Order-Aktivität** — keine Sell-Signale, keine Buy-Slots
+- **Vorbereitung Close-Routine:** JPM-V1-Tightening auf -5 % (316,14) ZWINGEND ab 16:00 ET Close
+
+**Watchlist KW29-Prep (Kauf-Fenster ab Mo 13.07., aus Mi-Close-Screener):**
+```
+Sym    Ranking Mi 08.07. Close      Status KW29                                    Kommentar
+AAPL   3/3 K1-K3 (RS +10,33 %)     LEAD — K5-Recheck zwingend                     XLK-Sektor-Support (+1,22 % Mi)
+NVDA   3/3 K1-K3 (RS +1,37 %)      NEU 2. XLK-Kandidat, K5 offen                  Grenzwertig RS
+CAT    2/3 K2-Fail (RSI 48,93)     Backup — K3 stärkstes RS +17,69 %              KW29-Recheck
+AMZN   2/3 K2-Fail                  Backup — K1-Spread eng                         K5 offen
+```
+→ Ranking KW29: **AAPL LEAD** / **NVDA/CAT/AMZN Backup**.
+
+**Datenqualitäts-Hinweise:**
+- Alpaca last_equity 98.969,42 weicht -1,57 $ vs Memory Mi-Close 98.970,99 (After-Hours-Tick, akzeptabel)
+- Live-Marks als Ground-Truth für V1-Puffer-Rechnung (change_today vs Mi-Close verwendet)
+- Perplexity-Query aus Effizienzgründen übersprungen (No-Op-Routine, Slot LOCK)
+- VIX carry-over aus Mi (~18-19); explizite Live-Query nicht erforderlich für No-Op
+
+**ClickUp:** [ROUTINE] Market Open Log-Task Prio 4 (Low, No-Op, Slot LOCK, kein Alert-Kontext).
+
+**Nächste Routine:** Do 09.07. 13:00 ET Midday Stop-Check (KW28 Tag 4, V1-V4-Watch aller 4 Positionen; keine Kauf-Aktivität möglich).
+
+---
+
 ## Market Close 16:02 ET — 2026-07-08 (Mi, KW28 Tag 3) — Tagesbilanz post-FOMC, alle V5/V6 SICHER, KEINE Pending-Order für Do
 
 **Alpaca Clock:** is_open=false, next_open Do 09.07. 09:30 ET, next_close 16:00 ET.
