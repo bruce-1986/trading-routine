@@ -1,6 +1,59 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-09 09:37 ET (Market Open KW28 Do Tag 4, alle 4 V1 SICHER, KEIN Kauf-Scan (Slot LOCK 2/2), Daily +0,03 %, Weekly -0,42 %, DD -1,07 %, Guardrails GRÜN, Pending-Orders 0)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-09 13:07 ET (Midday KW28 Do Tag 4, alle 4 V1-V4 SICHER, Daily -0,110 %, Weekly -0,563 %, DD -1,205 %, Guardrails GRÜN, Pending-Orders 0)
+
+---
+
+## Midday 2026-07-09 13:07 ET (Do, KW28 Tag 4) — Stop-Check, alle SICHER
+
+```
+Alpaca clock:      is_open=true | next_close 09.07. 16:00 ET
+Positionen:        4/8 (JPM/UNH/LLY/GOOGL)
+Ø P/L (einfach):   +1,42 % (JPM +0,88 % / UNH +7,12 % / LLY +1,14 % / GOOGL -3,44 %)
+Schlechteste:      GOOGL -3,44 % (V1-Puffer +4,95 % — engste Position, verengt vs Open +5,85 %, aber SICHER)
+Beste:             UNH +7,12 % (V1-Puffer +16,43 %, marginal NEUES Posit-Hoch 430,155)
+Stops:             alle regulär — kein V1/V2/V3/V4-Trigger
+Daily P/L:           -108,97 $   (-0,110 %)  [GRÜN — vs last_equity 98.969,42 = Mi EOD-Mark]
+Equity:            98.860,45 $   (Cash 68.626,60 / MV 30.232,44)
+Buying_power:     359.161,18 $
+Weekly KW28 P/L:  -0,563 %        (Mo-Basis 99.420,34 = Fr-Close) [GRÜN]
+DD vs ATH:        -1,205 %        (ATH 100.066,47) [GRÜN]
+```
+
+**Live-Check V1–V4 (Alpaca IEX 13:07 ET):**
+- **JPM**  335,725 $ (Entry 332,78, P/L +0,88 %, MV 1.007,18)
+  - V1 306,16 SICHER (+9,66 % Puffer)
+  - V2 Stop ~302,11 (Posit-Hoch 343,31 carry-over 25.06.) SICHER (+11,13 %)
+  - V3 399,34 / V4 449,25 — weit entfernt
+  - **JPM Earnings 14.07.2026 BMO CONFIRMED → 3-HT-Blackout aktiviert AB HEUTE CLOSE → V1-Stop-Tightening auf -5 % (316,14) ZWINGEND zur Close-Routine 16:00 ET**
+- **UNH**  430,155 $ (Entry 401,57, P/L +7,12 %, MV 10.323,72)
+  - V1 369,44 SICHER (+16,43 % Puffer)
+  - V2 Stop **NEU 378,54** (Trail: NEUES Posit-Hoch 430,155 × 0,88; alt 378,48 vom 02.07.-Hoch 430,095) SICHER (+13,64 %)
+  - V3 481,88 / V4 542,12 — weit entfernt
+- **LLY**  1.207,545 $ (Entry 1.193,89, P/L +1,14 %, MV 9.660,36)
+  - V1 1.098,38 SICHER (+9,94 % Puffer)
+  - V2 Stop 1.098,70 (Posit-Hoch 1.248,53 carry-over 07.07., kein neues Hoch) SICHER (+9,91 %)
+  - V3 1.432,66 / V4 1.611,75 — weit entfernt
+- **GOOGL**  355,43 $ (Entry 368,10, P/L -3,44 %, MV 9.241,18) — Fill-Day+2 Verengung fortgesetzt (Open -2,61 % → Midday -3,44 %)
+  - V1 338,65 SICHER (+4,95 % Puffer, weiter engste Position aber SICHER)
+  - V2 Stop 328,36 (Posit-Hoch 373,14 carry-over 07.07.) SICHER (+8,24 %)
+  - V3 441,72 / V4 496,93 — weit entfernt
+
+→ **Keine Verkaufsorder.** Alle V1–V4 regulär SICHER — Puffer +4,95 % (GOOGL) bis +16,43 % (UNH).
+→ **Daily Loss Cap (-3 %) nicht erreicht** (-0,110 %). Keine Order-Stornierung nötig (keine Pending-Orders).
+
+**Guardrails-Status:**
+```
+1. Daily Loss Cap (-3 %):    -0,110 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):   -0,563 % (KW28 Mo-Basis 99.420,34)    [GRÜN]
+3. Drawdown-Alarm (-15 %):   -1,205 % vs ATH 100.066,47            [GRÜN]
+4. Käufe KW28:                2/2 (LOCK bis Mo 13.07.)             [KEIN weiterer Kauf KW28]
+```
+
+**ClickUp:** kein Alert (keine Stops, kein Cap → Logging-Disziplin gewahrt).
+
+> **Entscheidung:** No-Op — alle 4 Positionen halten. GOOGL Fill-Day+2 verengt sich weiter (-3,44 %), V1-Puffer +4,95 % engste Position aber sicher; V2-Trail 328,36 komfortabel. UNH marginal NEUES Posit-Hoch 430,155 → V2-Trail +0,06 auf 378,54. JPM/LLY stabil. Daily -0,11 % vs Mi-EOD-Mark GRÜN.
+> **Nächste Routine:** Do 09.07. 16:00 ET Market Close (Tagesbilanz + V5/V6-Check aller 4 Positionen + **JPM-Blackout-Aktivierung V1-Tightening auf 316,14 ZWINGEND** + Limit-Order für Fr 10.07. falls V5/V6-Trigger).
 
 ---
 
