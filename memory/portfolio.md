@@ -1,6 +1,88 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-10 16:02 ET (Market Close KW28 Fr Tag 5, Tagesbilanz, alle 4 V1-V6 SICHER, Daily -0,374 %, Alpha -0,825 % vs SPY, Weekly KW28 -0,803 %, DD -1,444 %, Guardrails GRÜN, Käufe-Slot 2/2 LOCK bis Mo 13.07., KEINE Limit-Order für Mo)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-10 17:10 ET (Weekly Review KW28 Fr Tag 5 abgeschlossen, Wochen -0,803 %, Alpha -2,156 % vs SPY, YTD -1,378 %, YTD-Alpha -12,10 %, XLV-Overweight strukturell Alpha-Killer 3 HT, Top-Sektoren KW29: XLE+3,45 %/XLK+2,94 %, LEAD-Kandidaten AAPL+NVDA)
+
+---
+
+## Wochenabschluss KW28 — 2026-07-10 (Fr, Weekly Review 17:00 ET)
+
+```
+Gesamtwert:        98.621,81 $   (Fr 10.07. Close, Alpaca IEX Ground-Truth)
+Cash:              68.626,60 $   (69,59 %)
+Investiert:        29.993,80 $   (30,41 %)
+Depot Wochenstart: 99.420,34 $   (Mo-Basis 06.07. = Fr-Close 03.07. NYSE-Feiertag = Do 02.07. Close)
+Wochenrendite:      -0,803 %     (-798,53 $)
+SPY-Wochenrendite:  +1,353 %     (Alpaca IEX 744,86 Do 02.07. → 754,94 Fr 10.07.)
+Alpha vs SPY:       -2,156 %     [DEUTLICH NEGATIV — XLV-Overweight + XLK-Rally-Miss]
+YTD Depot:          -1,378 %     ((98.621,81 - 100.000) / 100.000)
+YTD SPY:            +10,724 %    (Alpaca IEX 681,82 YE25 → 754,94)
+YTD Alpha:          -12,10 %     [DEUTLICH NEGATIV — Bot lebt 40 Tage, ~70 % Cash + Selektions-Verluste]
+ATH:              100.066,47 $   (30.06.2026)
+Drawdown:            -1,444 %    [GRÜN — Alarm bei -15 %]
+Offene Positionen:      4/8      (JPM XLF / UNH XLV / LLY XLV / GOOGL XLC)
+Nächste Woche max Käufe: 2/2     verfügbar (KW28-LOCK endet Fr Close, KW29-Slot ab Mo 13.07.)
+Watchlist KW29:  AAPL (LEAD XLK), NVDA (LEAD XLK), CAT (Backup XLI), AMZN (Backup XLY)
+```
+
+**Trade-Analyse KW28:**
+- Käufe: 2 → LLY Mo 06.07. (9.551,10 $ @ 1.193,89), GOOGL Di 07.07. (9.570,57 $ @ 368,10)
+- Verkäufe: 1 → MU V1-Stop Di 07.07. (Erlös 8.320,05 $ @ 924,45; realisierter Verlust -1.019,43 $ = -10,92 %)
+- Stop-Loss-Trigger: 1 (MU V1 -8 % → Gap-Open erhöhte Realized-Loss auf -10,92 %)
+- Ø Haltedauer geschlossen: 3 HT (MU 02.07. → 07.07.)
+- Win-Rate KW28: 0/1 (0 %) — 2. V1-Stop nach AVGO KW26
+
+**Sektor-Ranking KW28 (Alpaca IEX Do 02.07. → Fr 10.07., Ground-Truth):**
+```
+XLE +3,447 %  ← LEAD (kein Bot-Exposure)
+XLK +2,942 %  ← LEAD (kein Bot-Exposure nach MU-Sell)
+XLC +1,829 %  ← Bot 9,42 % via GOOGL
+SPY +1,353 %
+XLF +0,162 %  ← Bot 1,02 % via JPM
+XLY +0,077 %
+XLRE -0,559 %
+XLU -0,776 %
+XLP -1,029 %
+XLI -1,049 %
+XLV -1,765 %  ← Bot 19,97 % via UNH+LLY [SEKTOR-ROTATION-VERLIERER — Alpha-Killer]
+XLB -2,154 %
+VXX -4,259 %  (Vola stark entspannt, VIX-Woche 16-19 → 15-16)
+```
+→ **Top-3-Ranking KW29-Prep:** 1. XLE +3,45 % | 2. XLK +2,94 % | 3. XLC +1,83 %.
+→ **Bot-Portfolio strukturell im schwächsten Sektor (XLV) übergewichtet** — 2/3 XLV-Slot-Belegung durch UNH+LLY.
+
+**Sektorgewichtung Portfolio (Fr 10.07. Close, alle < 30 %-Cap):**
+```
+XLF  1,02 %  (JPM 1.009,14 $)
+XLV  19,97 % (UNH 10.189,68 $ + LLY 9.508,56 $)  ← 2/3 Sektor-Slots, aber unter Cap
+XLC  9,42 %  (GOOGL 9.286,42 $)
+Cash 69,59 %
+Total investiert: 30,41 %
+```
+→ Kein Cap-Verstoß, keine Reduktion nötig. Nur BEOBACHTUNG: XLV-Overweight zerrt an Alpha strukturell → KW29 XLK-Kauf würde Sektor-Balance verbessern.
+
+**Guardrails Wochenschluss (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,374 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,803 %                              [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,444 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,444 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +1,353 % KW28                     [INAKTIV]
+6. VIX-Filter (>30):          ~15-16 (VXX 21,13 KW28-Close)          [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM AKTIV bis Q2 14.07. BMO           [GRÜN operativ]
+8. Max Käufe KW28:            2/2 abgeschlossen, KW29 Slot ab Mo    [KW29 offen]
+```
+
+**Blackout-Roadmap KW29:**
+- **JPM Q2 14.07.2026 BMO** — Blackout weiter aktiv Mo (V1 316,14, +6,02 % Puffer). Ende Di 14.07. → V1 zurück auf -8 % (306,16) nach Earnings-Release.
+- **UNH Q2 16.07.2026 BMO** — 3-HT-Blackout aktivierbar ab **Mo 13.07. Close** → V1-Tightening auf -5 % (401,57 × 0,95 = **381,49 $** statt 369,44). ZWINGENDER Close-Routine-Task Mo.
+- **LLY Q2 05.08.2026 BMO** — 17 HT, weit weg.
+- **GOOGL Q2 22.07.2026** — 7 HT, 3-HT-Blackout aktivierbar ab **Fr 17.07. Close** → V1-Tightening auf -5 % (368,10 × 0,95 = 349,70 $ statt 338,65). Close-Routine-Task Fr.
+
+**Strategie-Status:** **STABIL** — Alle Regeln (K1-K5 Kaufsignale, V1-V6 Verkaufssignale, Blackout, Cap, Trailing) laufen wie designed. Zwei offene Beobachtungspunkte für Diskussion in nächsten Reviews (KW29/KW30): Fill-Day-Drop-Muster n=4 (3 von 4 letzten Käufen -Post-Fill-Selloff) und Sektor-Rotation-Anpassung. **KEINE Regel-Änderung KW29** — Sample zu klein.
+
+**Wochenschluss-Entscheidung:** No-Op für Mo 13.07. Pre-Market. AAPL/NVDA K5-Recheck Mo Pre-Market entscheidet Kauf-Order (Slot 2/2 verfügbar). UNH-Blackout-V1-Tightening zur Mo-Close-Routine vorbereitet.
+
+**Nächste Routine:** Mo 13.07. 08:30 ET Pre-Market Check (KW29 Tag 1, JPM-Blackout-V1-Watch 316,14, NVDA/AAPL K5-Recheck, UNH-Blackout-Vorbereitung).
 
 ---
 
