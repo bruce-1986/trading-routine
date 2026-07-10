@@ -6,28 +6,33 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live 10.07. 09:37 ET  | Gewinn/Verlust        | Stop-Loss     | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Close 10.07. 16:02 ET | Gewinn/Verlust        | Stop-Loss     | TP1         | TP2         | Signale         |
 |--------|------------|-------------|-----------------------|-----------------------|---------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 337,75 $              |  +14,91 $ (+1,49 %)   | **316,14 $** ⚠| 399,34 $    | 449,25 $    | V1 SICHER (Blackout -5 %) |
-| UNH    | 2026-06-18 | 401,57 $    | 427,58 $              | +624,24 $ (+6,48 %)   | 369,44 $      | 481,88 $    | 542,12 $    | V1 SICHER (V2 381,89)     |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.188,25 $            |  -45,10 $ (-0,47 %)   | 1.098,38 $    | 1.432,66 $  | 1.611,75 $  | V1 SICHER                 |
-| GOOGL  | 2026-07-07 | 368,10 $    | 356,805 $             | -293,64 $ (-3,07 %)   | 338,65 $      | 441,72 $    | 496,93 $    | V1 SICHER (engste +5,08 %)|
+| JPM    | 2026-06-17 | 332,78 $    | 336,38 $              |  +10,80 $ (+1,08 %)   | **316,14 $** ⚠| 399,34 $    | 449,25 $    | V1-V6 SICHER (Blackout -5 %) |
+| UNH    | 2026-06-18 | 401,57 $    | 424,57 $              | +552,00 $ (+5,73 %)   | 369,44 $      | 481,88 $    | 542,12 $    | V1-V6 SICHER (V2 381,89)     |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.188,57 $            |  -42,53 $ (-0,45 %)   | 1.098,38 $    | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER                 |
+| GOOGL  | 2026-07-07 | 368,10 $    | 357,17 $              | -284,20 $ (-2,97 %)   | 338,65 $      | 441,72 $    | 496,93 $    | V1-V6 SICHER (engste +5,19 %)|
 
-**Gesamt investiert:** 30.058,10 $ (Marktwert Alpaca 10.07. 09:37 ET Live) | **Cash:** 68.626,60 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 (LOCK bis Mo 13.07.)
+**Gesamt investiert:** 29.993,80 $ (Marktwert Alpaca 10.07. 16:02 ET Close) | **Cash:** 68.626,60 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 abgeschlossen (nächster Kauf-Slot ab Mo 13.07.)
 
 ---
 
 ## Offene Orders (pending)
 
-_keine — Market Open 10.07. 09:37 ET (Fr, KW28 Tag 5): Alle 4 V1 SICHER, kein Verkaufssignal. **KEIN Kauf-Scan** (Käufe-Slot LOCK 2/2 bis Mo 13.07.). Pending Orders bleiben 0._
+_keine — Market Close 10.07. 16:02 ET (Fr, KW28 Tag 5): Alle 4 V1-V6 SICHER, kein V5/V6-Trigger für Mo 13.07. **Käufe KW28 2/2 abgeschlossen** (LOCK-Ende Fr; neuer Slot 2/2 ab Mo 13.07.). Pending Orders bleiben 0._
 
-_V1-Puffer Live: JPM +6,84 % (316,14 Blackout), UNH +15,74 %, LLY +8,18 %, **GOOGL +5,08 % (engste, Fill-Day+3 Verengung von +5,97 % Do-Close)**._
+_V1-Puffer Close: JPM +6,02 % (316,14 Blackout), UNH +12,98 %, LLY +7,59 % (schwächste Tages-Bewegung -2,23 %), **GOOGL +5,19 % (engste, Fill-Day+3 Close vs Do +5,97 %)**._
 
-_LLY -2,36 % Tages-Schwäche fällt auf (XLV-Sektor-Rotation raus setzt sich fort) — V1-Puffer +8,18 % noch reichlich, Watch Midday._
+_V5 alle SICHER: JPM EMA50~318,04>EMA200~306,99 ✓; UNH EMA50~392,44>EMA200~338,37 ✓; LLY EMA50~1.105,81>EMA200~993,65 ✓; GOOGL EMA50~359,24>EMA200~317,97 ✓._
+_V6 alle SICHER: JPM RSI~62/RS+5,0%; UNH RSI~64/RS+3,8%; LLY RSI~60/RS+3,5%; GOOGL RSI~47/RS-2,5% (V6 verlangt BEIDES → nicht ausgelöst)._
 
-_Equity 98.675,68 (Daily -0,320 % vs Memory Do-Close 98.992,13), SPY +0,187 % (Do-Close 751,55 → Live 752,955), **Alpha -0,507 %** (LLY-Schwäche + GOOGL-Drift). Weekly KW28 -0,749 %. DD -1,390 %. VIX ~16 (VXX 21,43 -2,72 %). Guardrails alle GRÜN, Slot-LOCK aktiv._
+_Equity 98.621,81 (Daily -0,374 % vs Memory Do-Close 98.992,13), SPY +0,451 % (Do-Close 751,55 → Fr-Close 754,94), **Alpha -0,825 %** (XLV -0,78 % Rotation-raus 3. Tag: UNH-1,64 % / LLY-2,23 %). Weekly KW28 -0,803 %. DD -1,444 %. VIX ~15-16 (VXX -2,22 %). Guardrails alle GRÜN._
 
-_Nächster Check: Fr 10.07. 13:00 ET Midday Stop-Check (GOOGL/LLY-Verengung + JPM-Blackout-Watch)._
+_**UNH-Blackout Vorbereitung Mo 13.07. Close:** UNH Q2 16.07.2026 BMO → 3-HT-Blackout aktivierbar ab Mo 13.07. Close → V1-Stop-Tightening auf -5 % (401,57 × 0,95 = 381,49 $ statt 369,44) zwingend. Close-Routine Mo 13.07. Aktivierungs-Task._
+
+_**JPM-Blackout weiter aktiv:** V1 316,14 SICHER +6,02 % Puffer (bis Q2 14.07. BMO, 2 HT bis Earnings)._
+
+_Nächster Check: Mo 13.07. 08:30 ET Pre-Market Check (KW29 Tag 1, NVDA/AAPL K5-Recheck für Kauf-Slot, UNH-Blackout-Vorbereitung, JPM-V1-Watch)._
 
 _**JPM V1 NEU 316,14** SICHER +6,10 % Puffer (Blackout -5 %-Tightening AKTIVIERT ab HEUTE CLOSE, gilt bis Q2 14.07. BMO); UNH V1 369,44 SICHER +16,84 %; LLY V1 1.098,38 SICHER +10,67 %; GOOGL V1 338,65 SICHER +5,97 % (engste Position, Fill-Day+2 Divergenz zu XLC verstärkt)._
 
@@ -278,3 +283,4 @@ _Nächster Check: Do 09.07. 08:30 ET Pre-Market Check (KW28 Tag 4, JPM-Stop-Tigh
 | 2026-W25 | 100.000,00 $ (Mo 15.06.) | 99.962,66 $ (Fr 19.06. Holiday → Do 18.06. Close) | -0,037 % | -1,003 % | +0,966 % | 2 / 0 / 0 |
 | 2026-W26 | 99.962,66 $ (Mo-Basis 22.06.) | 100.025,35 $ (Fr 26.06. Close) | +0,063 % | -2,007 % (SPY 744,27→729,35) | +2,070 % | 1 / 1 (AVGO V1) / 0 |
 | 2026-W27 | 100.024,25 $ (Mo-Basis 29.06. = Fr-Close 26.06.) | 99.420,34 $ (Fr 03.07. NYSE-Feiertag → carry-over Do 02.07. Close) | -0,604 % | +2,127 % (SPY 729,35→744,86 Do 02.07.) | -2,731 % | 1 / 0 / 0 |
+| 2026-W28 | 99.420,34 $ (Mo-Basis 06.07. = Fr-Close 03.07. = Do 02.07.) | 98.621,81 $ (Fr 10.07. Close) | -0,803 % | +1,353 % (SPY 744,86→754,94) | -2,156 % | 2 (LLY 06.07. + GOOGL 07.07.) / 1 (MU V1 07.07.) / 1 (MU V1 07.07.) |
