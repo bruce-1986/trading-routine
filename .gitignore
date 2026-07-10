@@ -4,6 +4,9 @@
 *.key
 secrets/
 
+# Lokale Claude-Code-Konfiguration (maschinenspezifisch)
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db
