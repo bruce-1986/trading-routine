@@ -6,6 +6,64 @@
 
 ## Was funktioniert (bestätigte Patterns)
 
+### KW28 — 2026-07-10 — Weekly Review
+
+```
+Performance:    -0,803 %   | Alpha vs SPY: -2,156 %   (SPY +1,353 %; Mo-Basis Do 02.07. Close 744,86 → Fr 10.07. Close 754,94; Fr 03.07. NYSE-Feiertag)
+Seit Bot-Init (31.05.26): -1,378 % | YTD Depot: -1,378 % | SPY YTD +10,724 % (Alpaca IEX YE25 681,82 → 754,94) → YTD-Alpha -12,10 % (Bot lebt 40 Tage, ~70 % Cash)
+
+Beste Position diese Woche:    UNH +5,73 % kumuliert (vs Vorwoche Alpaca-Close 425,36 → Fr 10.07. 424,57 = -0,19 % KW28-Delta; XLV-Rotation-Verlierer 3 HT in Folge)
+Schlechteste Position diese Woche: MU -10,92 %   (V1 Stop-Loss Di 07.07., realisiert -1.019,43 $)
+Zusatz: GOOGL -2,97 % (Entry Di 07.07. 368,10 → Fr-Close 357,17; Fill-Day-Konsolidierung 3 HT) | LLY -3,71 % KW28-Delta (Mo-Fill-Close 1.203,28 → Fr 1.188,57; XLV-Rotations-Verlierer) | JPM +0,57 % KW28-Delta (Mo 334,47 → Fr 336,38; +0,29 % Fr allein)
+
+Käufe diese Woche:   2  (LLY Mo 06.07. 8 Sh @ 1.193,89 / GOOGL Di 07.07. 26 Sh @ 368,10)
+Verkäufe:            1  (MU V1 Stop-Loss Di 07.07., 9 Sh @ 924,45)
+Stop-Loss-Trigger:   1  (MU V1 -8 % → tatsächlicher Realized-Loss -10,92 % durch Gap unter Stop)
+Win-Rate KW28:       0/1 (0 %) — 3. Stop-Trigger 2. Zyklus mit Fill-Day-Drop-Muster
+Ø Haltedauer geschlossen:  3 Handelstage (MU 02.07.→07.07.)
+Realisiert KW28:     -1.019,43 $   | Realisiert kumuliert seit Bot-Init: -1.615,62 $
+Handelstage:         5 von 5 (keine Feiertage)
+```
+
+**Was gut lief:**
+- **V1 Hard-Stop triggerte wieder sauber:** MU V1 954,71 → Open-Break 09:37 ET (Pre-Market bereits 936,39). Market-Sell 9/9 Sh in 3 sec. Kein "warten auf Rebound", keine Override-Versuche. Disziplin bestätigt.
+- **GOOGL K5 Multi-Source validiert:** FwdPE 21,87/28,65 Konsens ≤35, RevGrowth +11,33 %. Trotz Fill-Day-Konsolidierung -2,97 % (Muster wiederholt sich, siehe unten) sind Fundamentals sauber, Position hält V1-Puffer +5,19 %.
+- **Blackout-Rule funktioniert wie designed:** JPM Q2 14.07. → V1-Tightening auf -5 % (316,14 statt 306,16) Do-Close aktiviert, +6,02 % Puffer Fr-Close SICHER. Regel-Automatik greift ohne manuelles Eingreifen.
+- **UNH V2-Trail hochgesetzt:** Do neues Posit-Hoch 434,19 → V2 auf 381,89 (+13,03 % Puffer Fr). Trailing-Disziplin ohne Ausrutscher.
+- **Weekly-Cap-Prüfung protokolliert:** Weekly -0,803 % <<< -5 %-Cap, keine Storno-Aktionen. Guardrail-Log konsistent geführt.
+
+**Was nicht gut lief:**
+- **Fill-Day-Drop-Muster jetzt 3/4 der letzten Käufe** (AVGO KW26 -8,69 %, MU KW27 -10,92 %, GOOGL KW28 -2,97 % Fill-Day+3). Nur LLY war Fill-Day positiv. Chase-Cap +0,5 % wird eingehalten, aber Post-Fill-Selloff systematisch. Sample steigt (n=4) → Ab KW29 Diskussion: „K4 Volume Cross-Check +30 min NACH Fill"-Erweiterung erwägen.
+- **XLV-Overweight zerstört Alpha strukturell:** 3 Handelstage in Folge XLV -Rotation-Verlierer (Fr -0,78 %, Do -0,10 %, Mi -1,34 %). UNH+LLY = 19,97 % Portfolio, XLV Sektor selbst KW28 -1,765 %. Bot war exakt im schwächsten Sektor konzentriert, während XLE +3,45 % / XLK +2,94 % ohne Bot-Exposure liefen.
+- **XLK-Rally +2,94 % KW28 ohne Bot-Exposure:** MU-Stop 07.07. entfernte einzige XLK-Position; danach XLK-Aufholrally 3 Tage. AAPL/NVDA-Watchlist stand seit Mi-Close bereit, aber Käufe-Slot 2/2 LOCK (LLY + GOOGL) verhinderte Umschichtung. Timing-Konflikt: XLV-Käufe früh in Woche vs XLK-Rally spät.
+- **Alpha KW28 -2,156 % (SPY +1,353 %, Bot -0,803 %):** Ähnliches Muster wie KW27 (-2,73 %). 2 Wochen in Folge >-2 % Alpha in Bull-Wochen. Bot-Struktur: ~70 % Cash + XLV-Overweight passt nicht zu KW28-Rotation. Kein Regel-Bruch, aber Erwartungs-Kalibrierung.
+- **Realisierter Verlust -1.019,43 $ KW28** (kumuliert -1.615,62 $) → nach 40 Tagen Bot-Leben Netto-Draw -1,378 %. Portfolio noch komfortabel im Bereich, aber Win-Rate 0/2 geschlossen (0 %) mahnt Selektion-Verbesserung an.
+
+**Strategie-Anpassung nötig:** NEIN — V1/V2/K5/Blackout/Weekly-Cap alle regelkonform. Diskussionspunkte für kommende Reviews (Sample zu klein für Regel-Änderung):
+1. **Fill-Day-Drop-Muster n=4** (AVGO/MU/GOOGL alle -Post-Fill-Selloff, LLY einziger positiver Fill-Day). Für KW29 monitoren: falls neuer Kauf ebenfalls Post-Fill-Drop, ab n=5 Cost-Averaging-Alternative oder K4-Post-Fill-Recheck erwägen.
+2. **Sektor-Rotation-Anpassung:** XLK/XLE waren KW28 Top-Sektoren; Bot war in XLV (schwächster Sektor -1,77 %) übergewichtet. Idee für Diskussion: „K3 RS_63d gewichten mit Sektor-4W-Momentum als K3+"-Filter, um Sektoren mit negativer 4W-Momentum als Kaufsignal zu dämpfen. Vorerst nur beobachten.
+3. **Cash-Quote ~70 % in Bull-Rally:** Bot participation weiter zu niedrig. K1-K5 sind streng → richtige Selektion, aber Opportunitäts-Kosten in Trend-Wochen bleiben. KW29 mit AAPL/NVDA-Kauf-Fenster ist der Test.
+
+**Watchlist nächste Woche (KW29, 13.07.→17.07.):**
+- **AAPL** (XLK, **LEAD**) — 3/3 K1-K3 carry-over Mi 08.07. (EMA50 292,89 > EMA200 271,56 / RSI 62,81 / RS_63d +10,33 %). K5 Multi-Source-Recheck Mo Pre-Market ZWINGEND. XLK-Sektor KW28 +2,94 % validiert Timing. Fr-Underperformance -0,27 % vs SPY +0,45 % = -0,72 % Alpha, Watch für Momentum-Restart.
+- **NVDA** (XLK, **LEAD 2**) — 3/3 K1-K3 grenzwertig (RS +1,37 % Mi carry) + **+4,092 % Sprung Fr 10.07.** = massives Momentum-Update. K5 FwdPE-Recheck zwingend Mo Pre-Market (historisch Range 35-95x, Konsens-Filter). Sektor-Support XLK.
+- **CAT** (XLI, Backup) — 2/3 K2-Fail RSI 48,93 (Mi-Close), K3 stärkstes RS +17,69 %. XLI KW28 -1,05 % Sektor-Schwäche, aber Fr +1,46 % Rebound → RSI-Recheck möglich.
+- **AMZN** (XLY, Backup) — 2/3 K2-Fail (RSI 49,50), K1-Spread eng. XLY KW28 +0,08 % flat, kaum Sektor-Rückenwind.
+- **XLE-Recheck offen:** XLE KW28 +3,45 % TOP-Sektor, aber bisher kein Bot-Kandidat in Watchlist. Perplexity 10.07. lieferte XOM FwdPE 10,9 ✓ / RevGrowth +2,4 % ✗ (< 10 % → K5 FAIL). KW29 Kandidatensuche COP/EOG/SLB via Perplexity-Multi-Query prüfen (aber Earnings 2.-3. Woche Juli häufig → Blackout-Risiko hoch).
+
+**Sektor-Priorität KW29 (Basis KW28 Top-3 XLE/XLK/XLC):**
+- **XLE LEAD (+3,45 %):** kein Kandidat aktuell → Kandidatenkuration KW29 zwingend
+- **XLK LEAD (+2,94 %):** AAPL LEAD / NVDA LEAD 2 — 2 Kauf-Slots verfügbar KW29, beide in K5-Recheck
+- **XLC (+1,83 %):** GOOGL bereits gehalten (9,42 %)
+
+**Sektor-Cap-Check aktuell:** JPM XLF 1,02 % / UNH+LLY XLV 19,97 % / GOOGL XLC 9,42 % — alle klar <30 %. Kein Verstoß, keine Reduktion nötig. Bei 2 XLK-Käufen KW29 (AAPL 10 % + NVDA 10 %) → XLK 20 %, Portfolio ~50 % investiert (immer noch komfortabel unter 80 %-Max).
+
+**UNH-Blackout-Aktivierung Mo 13.07. Close:** Q2 Do 16.07.2026 BMO → 3-HT-Blackout → V1 auf -5 % (401,57 × 0,95 = 381,49 statt 369,44). Zwingender Close-Routine-Task Mo.
+
+**JPM-Blackout-Ende Di 14.07.:** Q2 BMO → V1 316,14 gilt bis Earnings-Release, danach zurück auf -8 %-Regel (306,16). Erwartete Guidance-Reaktion Mi-Fr.
+
+---
+
 ### KW27 — 2026-07-03 — Weekly Review
 
 ```
