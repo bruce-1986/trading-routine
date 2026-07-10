@@ -4,6 +4,82 @@
 
 ---
 
+## Market Open 09:37 ET — 2026-07-10 (Fr, KW28 Tag 5) — No-Op, alle V1 SICHER, Kauf-Scan SKIPPED (Slot LOCK 2/2)
+
+**Alpaca Clock:** is_open=true, next_close 10.07. 16:00 ET.
+
+**Account Live 09:37 ET:**
+```
+Equity:            98.675,68 $   (Daily -0,320 % vs Memory Do-Close 98.992,13)   [GRÜN]
+Cash:              68.626,60 $   (69,55 %, unverändert)
+Portfolio_MV:      30.058,10 $   (30,46 %)
+Buying_power:     358.643,82 $
+Weekly KW28:       -0,749 %       (Mo-Basis 99.420,34)                            [GRÜN]
+DD vs ATH:         -1,390 %       (ATH 100.066,47)                                [GRÜN]
+Käufe KW28:        2/2 → LOCK bis Mo 13.07.                                       [GESPERRT]
+Pending Orders:    0
+Trading_blocked:   false | Status: ACTIVE
+last_equity Alpaca: 99.060,07 $ (After-Hours-Tick — Memory Do-Close als Ground-Truth)
+```
+
+**SPY-Ground-Truth:** Alpaca IEX SPY 752,955 vs Do-Close 751,55 → **+0,187 % Live**. Alpha = -0,320 % − 0,187 % = **-0,507 %** [NEGATIV].
+
+**Positionen Live V1-Check (Alpaca /v2/positions):**
+| Sym    | Live      | P/L     | Chg_today | V1-Stop         | V1-Puffer | Status |
+|--------|-----------|---------|-----------|-----------------|-----------|--------|
+| JPM    | 337,75    | +1,49%  | +0,68%    | **316,14 NEU** | +6,84 %   | SICHER (Blackout -5 % AKTIV) |
+| UNH    | 427,58    | +6,48%  | -0,95%    | 369,44          | +15,74 %  | SICHER (V2 381,89 hält) |
+| LLY    | 1188,25   | -0,47%  | -2,36%    | 1.098,38        | +8,18 %   | SICHER (schwächste Tages-Bewegung) |
+| GOOGL  | 356,805   | -3,07%  | -0,58%    | 338,65          | +5,08 %   | SICHER (engste, Fill-Day+3 Verengung) |
+
+→ **Alle 4 V1 SICHER, keine Sell-Order platziert.** V2-V6 carry-over von Do-Close, keine Neuberechnung nötig (kein neues Posit-Hoch heute, kein V5-Break, V6 alle mit RSI << 80).
+
+**Kauf-Scan SCHRITT 3–5 SKIPPED wegen Käufe-Slot LOCK 2/2:**
+- Guardrail-Prüfung Schritt 2 hat 2/2-Käufe-Cap als NEIN identifiziert → Routine schreibt gemäß Regel nur Log, Rest fertig.
+- Regelkonform: kein Perplexity-Sektor-Query, kein K1-K5-Recheck der Watchlist, keine Position-Sizing-Berechnung, keine Limit-Order.
+
+**Guardrails Open (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,320 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,749 %                              [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,390 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,390 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,187 % Live                     [INAKTIV]
+6. VIX-Filter (>30):          ~16 (VXX 21,43, -2,72 % vs Do)        [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM AKTIV (V1 316,14 SICHER)          [GRÜN operativ]
+8. Max Käufe KW28:            2/2 → LOCK bis Mo 13.07.              [GESPERRT]
+```
+→ **STATUS: 7/8 GRÜN + 1 SLOT-LOCK.** Guardrails erlauben Handel, aber Käufe-Slot blockiert.
+
+**Watchlist KW29-Prep (carry-over Do-Close, unverändert):**
+```
+AAPL  LEAD — 3/3 K1-K3 (RS +10,33 %, RSI 62,81)      XLK Do +2,16 % validiert Sektor-Timing
+NVDA  NEU 2. XLK-Kandidat — 3/3 grenzwertig RS       XLK-Rebound-Bestätigung
+CAT   Backup — 2/3 K2-Fail RSI 48,93                 K3 stärkstes RS +17,69 %
+AMZN  Backup — 2/3 K2-Fail, K1-Spread eng            XLY Do +1,35 % positiv
+```
+→ Ranking KW29: **AAPL LEAD** / **NVDA 2. XLK** / **CAT/AMZN Backup**. K5-Recheck AAPL/NVDA zwingend am Mo 13.07. Pre-Market.
+
+**Datenqualität:**
+- Alpaca `equity` 98.675,68 = Live 09:37. `last_equity` 99.060,07 ist Overnight-After-Hours-Tick — Memory Do-Close 98.992,13 als Ground-Truth (Konvention).
+- SPY Alpaca IEX 752,955 Live vs 751,55 Do-Close (Ground-Truth).
+- Alle 4 Position-Quotes /v2/positions Cross-Check mit /v2/stocks/trades/latest — konsistent.
+- Keine Perplexity-Queries (Slot-LOCK → kein Sektor/K5-Scan nötig).
+
+**Entscheidung Market Open 09:37 ET:**
+- **No-Op** — alle V1-V6 SICHER, keine Sell-Order platziert.
+- **Kauf-Scan SKIPPED** wegen Käufe-Slot LOCK 2/2 bis Mo 13.07.
+- **JPM V1-Blackout 316,14 SICHER** (+6,84 % Puffer).
+- **GOOGL Fill-Day+3-Verengung fortgesetzt** (+5,08 % Puffer, weiter engste Position) — Watch Midday.
+- **LLY -2,36 % Tages-Schwäche** — XLV-Rotation raus setzt sich fort, V1 +8,18 % noch reichlich.
+- **Alpha -0,507 %** durch LLY/GOOGL-Schwäche.
+
+**Nächste Routine:** Fr 10.07. 13:00 ET Midday Stop-Check.
+
+**ClickUp:** ITEM_246 Tier-Limit carry-over aus Pre-Market → Push-Notification als Fallback.
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-10 (Fr, KW28 Tag 5) — Guardrails GRÜN, JPM V1 316,14 SICHER, KEIN Kauf-Scan (Slot LOCK 2/2)
 
 **Alpaca Clock:** is_open=false, next_open Fr 10.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.
