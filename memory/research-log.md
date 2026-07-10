@@ -4,6 +4,105 @@
 
 ---
 
+## Market Close 16:02 ET — 2026-07-10 (Fr, KW28 Tag 5) — Tagesbilanz, alle V1-V6 SICHER, KEINE Pending-Order für Mo, KW28 abgeschlossen
+
+**Alpaca Clock:** is_open=false, next_open Mo 13.07. 09:30 ET, next_close 16:00 ET.
+
+**Account Close 16:02 ET:**
+```
+Equity:            98.621,81 $   (Daily -0,374 % vs Memory Do-Close 98.992,13)   [GRÜN]
+Cash:              68.626,60 $   (69,59 %, unverändert)
+Portfolio_MV:      29.993,80 $   (30,41 %)
+Weekly KW28:       -0,803 %      (Mo-Basis 99.420,34)                            [GRÜN]
+DD vs ATH:         -1,444 %      (ATH 100.066,47)                                [GRÜN]
+Käufe KW28:        2/2 → LOCK-Ende Fr Close, Kauf-Slot ab Mo 13.07. neu
+Pending Orders:    0             (V5/V6 alle SICHER)
+last_equity Alpaca: 99.060,07 $ (Do After-Hours-Tick — Memory Do-Close Ground-Truth)
+```
+
+**SPY-Ground-Truth:** Alpaca IEX SPY 754,94 vs Do-Close 751,55 → **+0,451 % Daily**. Alpha vs SPY = -0,374 % − 0,451 % = **-0,825 %** [NEGATIV].
+
+**Positionen Close V1-V6 (Alpaca IEX 210d Bars, EMA/RSI Wilder inkrementell):**
+| Sym    | Close    | P/L     | Chg_today | V1-Stop        | V1-Puffer | V5 Spread | V6 RSI  | Status |
+|--------|----------|---------|-----------|----------------|-----------|-----------|---------|--------|
+| JPM    | 336,38   | +1,08%  | +0,29%    | **316,14 NEU** | +6,02 %   | +11,05    | ~62     | SICHER (Blackout -5 % AKTIV) |
+| UNH    | 424,57   | +5,73%  | -1,64%    | 369,44         | +12,98 %  | +54,07    | ~64     | SICHER (V2 381,89 hält) |
+| LLY    | 1188,57  | -0,45%  | -2,23%    | 1.098,38       | +7,59 %   | +112,16   | ~60     | SICHER (schwächste Tages-Bewegung, XLV-Verlierer) |
+| GOOGL  | 357,17   | -2,97%  | -0,48%    | 338,65         | +5,19 %   | +41,27    | ~47     | SICHER (engste, Fill-Day+3 Divergenz zu XLC) |
+
+→ **Alle V1-V6 SICHER.** **KEINE Limit-Order für Mo 13.07.** Pending Orders bleiben 0.
+
+**Sektor-Performance heute (Alpaca IEX, ranking):**
+```
+XLB +1,193 % | XLP +1,100 % | XLC +0,968 % | XLU +0,632 % | XLE +0,502 % | XLRE +0,498 %
+XLI +0,472 % | XLF +0,306 % | XLY +0,278 % | XLK +0,267 %
+XLV -0,780 %  (einziger roter Sektor — Rotations-Verlierer 3. Tag)
+VXX -2,221 % (Vola-Entspannung fortgesetzt, VIX ~15-16 GRÜN)
+```
+→ **XLV-Rotation-raus 3. Tag in Folge (Fr -0,78 %, Do -0,10 %, Mi -1,34 %)** — Bot-Portfolio strukturell benachteiligt durch 2×XLV-Overweight.
+→ Bot-Sektor-Beteiligung: JPM XLF konsistent (+0,29 % vs Sektor +0,31 %), UNH+LLY XLV Rotation-Verlierer, GOOGL divergiert zu XLC (-0,48 % vs +0,97 %) → Fill-Day+3.
+→ **XLK +0,27 % mild — aber NVDA +4,09 % Sprung! AAPL -0,27 % underperformt.** KW29-Watchlist-Momentum-Shift.
+
+**Watchlist-Kandidaten Close-Bewegung Fr:**
+```
+Sym    Close Fr    Chg Fr        Ranking KW29 (Mo 13.07. Kauf-Slot)
+NVDA   210,99     +4,092 %      LEAD-Kandidat — 3/3 K1-K3 grenzwertig RS, aber massiver Tages-Sprung, K5-Recheck Mo Pre-Market
+AAPL   315,32     -0,266 %      LEAD-Kandidat — 3/3 K1-K3 (RS +10,33 % carry-Mi), aber underperformt heute
+CAT    951,67     +1,461 %      Backup — 2/3 K2-Fail RSI 48,93; XLI-Rebound heute
+AMZN   245,35     -0,652 %      Backup — 2/3 K2-Fail, K1-Spread eng
+```
+→ **KW29-LEAD-Ranking neu geordnet:** NVDA und AAPL auf Augenhöhe — K5-Multi-Source-Recheck beider Mo 13.07. Pre-Market entscheidet.
+
+**Watchlist morgen (= Mo 13.07. KW29 Tag 1):** NVDA (LEAD-Kandidat +4,09 % Sprung), AAPL (LEAD-Kandidat, underperformt heute), CAT (Backup, K2 Recheck), AMZN (Backup)
+
+**Guardrails Close (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,374 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,803 %                              [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,444 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,444 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,451 %                          [INAKTIV]
+6. VIX-Filter (>30):          ~15-16 (VXX -2,221 %)                 [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM AKTIV (V1 316,14 SICHER)          [GRÜN operativ]
+8. Max Käufe KW28:            2/2 → LOCK-Ende Fr, KW29 neu 2/2      [KW29 Slot verfügbar]
+```
+
+**⚠ Earnings-Blackout-Vorbereitung Mo 13.07. Close ZWINGEND:**
+- **JPM Q2 14.07.2026 BMO** — Blackout weiter aktiv (V1 316,14, +6,02 % Puffer, 2 HT bis Earnings)
+- **UNH Q2 16.07.2026 BMO** — 3-HT-Blackout aktivierbar **ab Mo 13.07. Close** → V1-Stop-Tightening auf -5 % vom Entry (401,57 × 0,95 = **381,49 $**, statt heutiger 369,44). Fr 10.07. Close 424,57 → geplanter Puffer +11,29 %. **Close-Routine Mo 13.07. Aktivierungs-Task**.
+- **LLY Q2 05.08.2026 BMO** — 17 HT — weit weg
+- **GOOGL Q2 22.07.2026** — 7 HT — 3-HT-Blackout ab Fr 17.07. Close (nächste Woche)
+
+**Weekly Loss Cap Prüfung KW28 abgeschlossen:**
+- Weekly P/L Fr Close = -0,803 % (Mo-Basis 99.420,34 → Fr-Close 98.621,81 = -798,53 $)
+- Cap-Trigger -5 %: **NEIN**, weit unter Schwelle
+- KEINE Pending-Order zu stornieren (bereits 0)
+- KEIN WEEKLY_CAP-Alert ClickUp
+
+**KW28-Wochenperformance-Zusammenfassung (für lessons-learned):**
+- Depot Start 99.420,34 $ (Mo 06.07.) → Ende 98.621,81 $ (Fr 10.07.)
+- Wochenergebnis: **-0,803 %** (-798,53 $)
+- SPY-Vergleich: 744,86 (Do 02.07. carry-over Mo-Basis KW28) → 754,94 (Fr 10.07.) = **+1,353 %**
+- Alpha KW28: **-2,156 %** [DEUTLICH NEGATIV]
+- Käufe KW28: 2 (LLY Mo, GOOGL Di) — beide gerade so über Wasser (LLY -0,45 %, GOOGL -2,97 %)
+- Verkäufe: 1 (MU V1 Di 07.07., -1.019,43 $ realisiert)
+- Sektor-Kontext: XLV 3-Tages-Rotation-raus (Mi-Fr) + XLK-Aufholrally ohne Bot-Exposure = Alpha-Miss strukturell
+- **Weekly Review Fr 17:00 ET fällig** (routines/weekly-review-routine.md)
+
+**Entscheidung Market Close 10.07.:**
+- Alle V1-V6 SICHER → keine Sell-Order für Mo 13.07.
+- KEIN Kauf-Slot verwendet (Slot LOCK 2/2 KW28 abgeschlossen)
+- **UNH-Blackout-V1-Tightening auf 381,49 ZWINGEND vorzubereiten für Close-Routine Mo 13.07.**
+- **NVDA/AAPL K5-Recheck Mo Pre-Market ZWINGEND** für Kauf-Entscheidung
+- Watchlist-Momentum-Shift: NVDA sprang, AAPL underperformt → K5-Recheck entscheidend
+
+**Nächste Routine:** Fr 10.07. 17:00 ET Weekly Review (KW28 Bilanz + lessons-learned Update).
+**Danach:** Mo 13.07. 08:30 ET Pre-Market Check (KW29 Tag 1).
+
+**ClickUp:** [CLOSE] Tagesbilanz Task Prio 3 (Portfolio -0,374 % + Alpha -0,825 % → Priorität Normal).
+
+---
+
 ## Market Open 09:37 ET — 2026-07-10 (Fr, KW28 Tag 5) — No-Op, alle V1 SICHER, Kauf-Scan SKIPPED (Slot LOCK 2/2)
 
 **Alpaca Clock:** is_open=true, next_close 10.07. 16:00 ET.
