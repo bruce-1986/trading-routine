@@ -1,6 +1,80 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-10 17:10 ET (Weekly Review KW28 Fr Tag 5 abgeschlossen, Wochen -0,803 %, Alpha -2,156 % vs SPY, YTD -1,378 %, YTD-Alpha -12,10 %, XLV-Overweight strukturell Alpha-Killer 3 HT, Top-Sektoren KW29: XLE+3,45 %/XLK+2,94 %, LEAD-Kandidaten AAPL+NVDA)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-13 08:35 ET (Pre-Market Mo KW29 Tag 1, alle 8 Guardrails GRÜN, JPM V1 316,14 SICHER +6,84 % Puffer letzter Blackout-Tag, GOOGL Fill-Day+4 engste +5,03 %, Kauf-Slot 2/2 verfügbar, NVDA/AAPL K5-Recheck im Open, UNH-Blackout-Aktivierung ab Close ZWINGEND V1→381,49)
+
+---
+
+## Pre-Market 2026-07-13 08:35 ET (Mo, KW29 Tag 1) — Guardrails alle GRÜN, Kauf-Slot 2/2 OFFEN
+
+```
+Alpaca clock:      is_open=false | next_open Mo 13.07. 09:30 ET | next_close 16:00 ET
+Equity:            98.587,61 $   (Pre-Market Live, vs Fr-Close Memory 98.621,81 → -0,035 %)
+Cash:              68.626,60 $   (69,61 %, unverändert)
+Portfolio MV:      29.961,01 $   (30,39 %, JPM 1.013,40 + UNH 10.218,96 + LLY 9.480,19 + GOOGL 9.248,46)
+Buying_power:     358.397,22 $
+Daily P/L:            -34,20 $   (-0,035 %)                                             [GRÜN — Cap -3 %]
+SPY Pre-Market:     -0,440 %     (Alpaca IEX 751,62 Live vs Fr-Close 754,94)
+VXX Live:           -0,014 %     (21,17 vs Fr-Close 21,13; VIX ~15,03 Fr Perplexity)    [GRÜN]
+ATH:              100.066,47 $    DD -1,479 % [GRÜN — Alarm bei -15 %]
+Weekly KW29:       -0,035 %       (Tag 1, Basis Fr-Close 98.621,81)                     [GRÜN — Cap -5 %]
+Käufe KW29:            0/2       SLOT VERFÜGBAR — Kauf-Scan im Market Open 09:30 ET     [OFFEN]
+Pending Orders:        0
+Guardrails: Daily -0,03 % | Weekly -0,03 % | DD -1,48 % | VIX ~15 | Käufe 0/2 offen → ALLE GRÜN
+```
+
+**Positionen Live V1-Check (Alpaca 08:35 ET):**
+- **JPM**   337,80 $ (Entry 332,78, P/L +1,51 %, chg_today +0,40 %) — XLF-stabil
+  - V1 **316,14** SICHER (+6,84 % Puffer, Blackout -5 % AKTIV letzter Tag bis Q2 Di 14.07. BMO)
+- **UNH**   425,79 $ (Entry 401,57, P/L +6,03 %, chg_today +0,28 %) — XLV milde Erholung
+  - V1 369,44 SICHER (+15,25 %), V2 381,89 SICHER (+11,50 %)
+  - **⚠ Blackout-Aktivierung ab Mo Close ZWINGEND → V1 auf -5 % (381,49) für Do 16.07. BMO**
+- **LLY**  1.185,02 $ (Entry 1.193,89, P/L -0,74 %, chg_today -0,30 %) — XLV-Schwäche 4. Tag milder
+  - V1 1.098,38 SICHER (+7,89 %), V2 1.098,70 SICHER (+7,87 %)
+- **GOOGL**  355,71 $ (Entry 368,10, P/L -3,37 %, chg_today -0,41 %) — **engste Position, Fill-Day+4 Verengung**
+  - V1 338,65 SICHER (+5,03 % Puffer, verengt von Fr +5,19 %)
+  - V2 328,36 SICHER (+8,33 %)
+
+**V1-V6-Check Pre-Market: ALLE 4 POSITIONEN SICHER. Keine Sell-Order platziert. Pending Orders bleiben 0.**
+
+**Guardrails Pre-Market (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,035 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,035 % (KW29 Tag 1)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,479 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,479 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY-PM -0,44 %                        [INAKTIV]
+6. VIX-Filter (>30):          ~15 (VXX flat 21,17)                  [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM AKTIV (V1 316,14 SICHER)          [GRÜN operativ]
+8. Max Käufe KW29:            0/2 → SLOT VERFÜGBAR                  [OFFEN]
+```
+
+**Earnings-Blackouts KW29:**
+- **JPM Q2 Di 14.07. BMO** — Blackout **letzter Tag** (V1 316,14, +6,84 % Puffer); Auslauf morgen Post-Release → V1 zurück auf -8 % (306,16)
+- **UNH Q2 Do 16.07. BMO** — 3-HT-Blackout aktivierbar **ab Mo 13.07. Close** → V1-Tightening -5 % (401,57 × 0,95 = **381,49 $** statt 369,44). ZWINGENDER Close-Routine-Task Mo.
+- **GOOGL Q2 22.07.** — 7 HT — 3-HT-Blackout ab Fr 17.07. Close
+- **LLY Q2 05.08.** — 17 HT — weit weg
+
+**Watchlist Kauf-Prep KW29 (Kauf-Scan im Market Open 09:30 ET):**
+- **NVDA 210,99** LEAD-Kandidat (+4,09 % Fr-Sprung, 3/3 K1-K3) — K5-Recheck zwingend
+- **AAPL 315,32** LEAD-Kandidat (-0,27 % Fr, 3/3 K1-K3, RS +10,33 % carry) — K5-Recheck zwingend
+- **CAT 951,67** Backup — 2/3 K2-Fail RSI 48,93 (Recheck möglich)
+- **AMZN 245,35** Backup — 2/3 K2-Fail, K1-Spread eng
+
+**Entscheidung Pre-Market:** No-Op-Positionsseite (alle V1 SICHER). **Kauf-Scan AKTIV im Market Open** (Slot 2/2, alle Guardrails GRÜN, NVDA/AAPL K5-Multi-Source-Recheck entscheidet LEAD).
+
+**Zwingende Watch-Punkte Market Open:**
+1. NVDA/AAPL K1-K5-Live-Recheck (Alpaca Bars + Perplexity K5)
+2. JPM Live-Watch bei < 316,14 (Blackout-V1, Puffer +6,84 %)
+3. GOOGL Live-Watch — Fill-Day+4 Verengung (V1-Puffer +5,03 %, engste Position)
+4. LLY XLV-Schwäche-4.-Tag-Fortsetzung — V1 +7,89 % Puffer noch reichlich
+
+**Datenqualität:**
+- Alpaca IEX SPY 751,62 Pre-Market als Ground-Truth
+- Perplexity Daily-Macro Date-in-Future-Bug (kein Live-VIX/News); Alpaca-VXX-Fallback erfolgreich
+- Perplexity Earnings JPM CONFIRMED; UNH-Suchergebnis-Lücke → Memory-Carry-Over Fr 10.07. genutzt
+- Alpaca last_equity 98.622,21 vs Memory Fr-Close 98.621,81 (+0,40 After-Hours-Drift)
+
+**Nächste Routine:** Mo 13.07. 09:30 ET Market Open (KW29 Tag 1, NVDA/AAPL K5-Scan + Kauf-Entscheidung).
 
 ---
 
