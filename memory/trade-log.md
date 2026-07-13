@@ -19,7 +19,27 @@
 
 ## Offene Orders (pending)
 
-_keine — Market Close 10.07. 16:02 ET (Fr, KW28 Tag 5): Alle 4 V1-V6 SICHER, kein V5/V6-Trigger für Mo 13.07. **Käufe KW28 2/2 abgeschlossen** (LOCK-Ende Fr; neuer Slot 2/2 ab Mo 13.07.). Pending Orders bleiben 0._
+| Symbol | Typ         | Menge | Limit    | TIF | Submit-Zeit           | Order-ID                                | Status | Grund |
+|--------|-------------|-------|----------|-----|-----------------------|------------------------------------------|--------|-------|
+| AAPL   | Limit Buy   | 31    | 316,90 $ | Day | 2026-07-13 09:41 ET   | dba7bc05-4c6d-4380-bed8-3e3c4fd842e4    | new    | Market-Open-Kauf-Signal 5/5 (K1-K5 alle ✓), Live 321,40 gappte +1,93 % > Limit → kein Sofort-Fill, wartet auf Pullback |
+
+_Market Open 13.07. 09:37 ET (Mo, KW29 Tag 1): **AAPL 5/5 K-Signal-LEAD** → Limit-Buy platziert @ 316,90 (max +0,5 % über Fr-Close 315,32). Live-Preis 321,40 (bid 321,20 / ask 321,48) über Limit-Cap → **kein Sofort-Fill** (regelkonform, Strategie-Deckel greift). Fill möglich bei Intraday-Pullback unter 316,90, sonst Expiry EOD ohne Kauf. Kauf-Slot KW29 1/2 operativ belegt._
+
+_**K-Signal-Details AAPL:** K1 EMA50 294,62 > EMA200 272,98 (Spread +21,65) ✓ | K2 RSI 63,57 ✓ | K3 RS_63d +12,40 % ✓ | K4 Vol-Extrapolation ~172 % Avg20 ✓ (9-min-Fenster) | K5 FwdPE 31-34 Konsens ~32,45 + RevGrowth +17 % ✓ (Earnings 30.07. → kein Blackout)._
+
+_**Rejected candidates:** NVDA (K3 -0,19 % RS marginal negativ — Fr-Sprung +4,09 % reichte nicht), CAT (K2 RSI 49,65 <50), AMZN (K3 -7,07 % RS)._
+
+_**V1-Puffer Live 09:37:** JPM +5,88 % (316,14 Blackout vorletzter Tag), UNH +15,65 %, LLY +6,69 % (XLV-Schwäche 4. Tag verstärkt), **GOOGL +5,12 % (engste, Fill-Day+4)**. Alle 4 V1-V6 SICHER._
+
+_Equity 98.525,80 (Daily -0,097 % vs Fr-Close 98.621,81), SPY -0,258 % (754,94 → 752,99), Alpha +0,161 % [leicht positiv]. Weekly KW29 -0,097 %. DD -1,540 %. VIX ~15 (Fr-Close carry-over). Guardrails alle GRÜN._
+
+_**Zwingender Watch Midday:** (1) AAPL Fill-Check bei Pullback < 316,90 → bei Fill Cash/Positionen-Update + BUY-Alert, (2) JPM V1 316,14 vorletzter Blackout-Tag, (3) GOOGL V1-Puffer +5,12 % engste Position, (4) LLY V1 1.098,38 +6,69 % Puffer._
+
+_Nächster Check: Mo 13.07. 13:00 ET Midday Stop-Check._
+
+---
+
+_Vorherige Order-Historie (carry-over):_
 
 _V1-Puffer Close: JPM +6,02 % (316,14 Blackout), UNH +12,98 %, LLY +7,59 % (schwächste Tages-Bewegung -2,23 %), **GOOGL +5,19 % (engste, Fill-Day+3 Close vs Do +5,97 %)**._
 

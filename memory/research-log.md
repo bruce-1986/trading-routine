@@ -4,6 +4,98 @@
 
 ---
 
+## Market Open 09:37 ET — 2026-07-13 (Mo, KW29 Tag 1) — AAPL 5/5 LEAD, Limit-Buy 316,90 x 31 platziert, NVDA K3-FAIL
+
+**Alpaca Clock:** is_open=true, next_close 13.07. 16:00 ET.
+
+**Account Live 09:37 ET:**
+```
+Equity:            98.525,80 $   (Daily -0,097 % vs Fr-Close 98.621,81)                 [GRÜN]
+Cash:              68.626,60 $   (69,66 %, unverändert)
+Portfolio_MV:      29.888,17 $   (30,34 %)
+Käufe KW29:        0/2 gefüllt (1 Pending)                                              [OFFEN]
+Pending Orders:    1 (AAPL Limit-Buy 316,90 x 31 Day, ID dba7bc05)
+Trading_blocked:   false | Status: ACTIVE
+```
+
+**SPY-Ground-Truth:** IEX Live 752,99 vs Fr-Close 754,94 → **-0,258 %**. Alpha vs SPY = -0,097 % − (-0,258 %) = **+0,161 %** [leicht positiv].
+
+**Positionen Open (Alpaca 09:37 ET):**
+| Sym    | Live     | P/L     | Chg_today | V1-Stop        | V1-Puffer | Status |
+|--------|----------|---------|-----------|----------------|-----------|--------|
+| JPM    | 334,82   | +0,61%  | -0,49%    | **316,14**     | +5,88 %   | SICHER (Blackout -5 % AKTIV, vorletzter Tag) |
+| UNH    | 427,235  | +6,39%  | +0,62%    | 369,44         | +15,65 %  | SICHER (V2 381,89, Blackout-Aktivierung ab Close) |
+| LLY    | 1.171,84 | -1,85%  | -1,41%    | 1.098,38       | +6,69 %   | SICHER (XLV-Schwäche 4. Tag intraday verstärkt) |
+| GOOGL  | 355,97   | -3,29%  | -0,34%    | 338,65         | +5,12 %   | SICHER (engste, Fill-Day+4) |
+
+→ **Alle 4 V1-V6 SICHER, keine Sell-Order platziert.**
+
+**Kandidaten-Scan Ergebnis (Alpaca 240d Bars + Perplexity K5):**
+
+| Sym  | K1 EMA Spread | K2 RSI  | K3 RS_63d    | K4 Vol*       | K5 FwdPE/RevGrw | Verdict     |
+|------|---------------|---------|--------------|---------------|-----------------|-------------|
+| **AAPL** | ✓ +21,65  | ✓ 63,57 | ✓ +12,40 %   | ✓ ~172 % pj   | ✓ 31-34 / +17 % | **5/5 LEAD** |
+| NVDA | ✓ +10,97      | ✓ 57,00 | ✗ **-0,19 %** | —             | —               | 2/3 FAIL   |
+| CAT  | ✓ +180,52     | ✗ **49,65** | ✓ +7,93 %  | —             | —               | 2/3 FAIL   |
+| AMZN | ✓ +6,86       | ✓ 51,08 | ✗ **-7,07 %** | —             | —               | 2/3 FAIL   |
+
+*K4 aus 9-min-Extrapolation Vol_ratio 0,04 × (390/9) ≈ 1,72 = 172 % Avg20
+
+**Signal-Nuance:** NVDA-Memory-Erwartung "3/3" widerlegt — Fr-Sprung +4,09 % reichte nicht für 63-Tage-RS-Turnaround. AAPL bleibt einziger 5/5-LEAD, K5 via 3 Perplexity-Quellen konsistent bestätigt.
+
+**K5 AAPL (Perplexity Multi-Source):**
+- Forward P/E: 32,45 (GuruFocus) / 34,61 (StockAnalysis) / 31,44 (TIKR) → Konsens ~32,45 → **≤ 35 ✓**
+- Umsatzwachstum YoY: +17 % (Q2 FY26 Meldung 30.04.2026, SEC 8-K) → **≥ 10 % ✓**
+- Nächstes Earnings: 30.07.2026 17:00 ET → 13 HT weg → 3-HT-Blackout ab Fr 24.07. Close → **HEUTE KEIN Blackout**
+
+**Position-Sizing AAPL (VIX ~15 < 25 → 10 %):**
+```
+Portfolio-Equity Live 09:37:   98.525,80 $
+Budget (10 %):                  9.852,58 $
+Prev-Close Fr 10.07. IEX:         315,32 $
+Limit (+0,5 %):                   316,90 $
+Shares (floor):                       31
+Max-Invest:                     9.823,90 $ (9,97 % Portfolio)
+```
+
+**Order-Details (Alpaca):**
+- Order-ID: **dba7bc05-4c6d-4380-bed8-3e3c4fd842e4**
+- Typ: Limit Buy AAPL 31 Sh @ 316,90 $ Day
+- Submit: 2026-07-13 09:41:00 ET
+- Status: `new` (accepted, working)
+- Live-Preis: bid 321,20 / ask 321,48 → gappte +1,93 % über Fr-Close, deutlich über Limit-Cap
+- **Kein Sofort-Fill** — regelkonform (Strategie: max +0,5 % über Vortagesschluss = harter Deckel)
+- Fill nur bei Intraday-Pullback unter 316,90 möglich; sonst EOD-Expiry
+
+**Guardrail-Status Market Open (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,097 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,097 % (KW29 Tag 1)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,540 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,540 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY-Live -0,258 %                     [INAKTIV]
+6. VIX-Filter (>30):          ~15 (Fr-Close carry-over)             [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM AKTIV (V1 316,14 SICHER)          [GRÜN operativ]
+8. Max Käufe KW29:            0/2 (1 Pending)                       [OFFEN]
+```
+
+**Datenqualitäts-Hinweise:**
+- Alpaca IEX 240d Bars für K1-K4 sauber (heutiger Partial-Bar via `end=2026-07-11T00:00:00Z` ausgeschlossen)
+- Erste Berechnung inklusive Partial-Bar hatte Signale verzerrt (AAPL prev_close fälschlich 321,12 statt korrekt 315,32) — Fix durch expliziten End-Cutoff
+- Perplexity K5 AAPL: 3 unabhängige Quellen für FwdPE, SEC 8-K für RevGrowth — Date-in-Future-Bug diesmal umgangen
+- SPY Alpaca IEX 752,99 als Ground-Truth für Alpha
+
+**ClickUp:** Weiter Tier-Limit ITEM_246 → Push-Notification als Fallback.
+
+**Entscheidung Market Open:**
+- **AAPL Limit-Buy 31 x 316,90 Day platziert** — regelkonformer max-0,5%-Deckel; kein Sofort-Fill bei Live 321,40; Fill-Wahrscheinlichkeit hängt an Intraday-Pullback
+- **Keine Sell-Order** — alle 4 V1-V6 SICHER
+- Kauf-Slot KW29 operativ bei 1/2 (Pending zählt bis Fill/Expiry)
+
+**Nächste Routine:** Mo 13.07. 13:00 ET Midday Stop-Check (AAPL-Fill-Check, JPM-Blackout-V1-Watch, GOOGL/LLY-Live-Watch, UNH-Blackout-Vorbereitung).
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-13 (Mo, KW29 Tag 1) — Guardrails GRÜN, JPM V1 316,14 SICHER, Kauf-Slot 2/2 verfügbar, NVDA/AAPL K5-Recheck im Open
 
 **Alpaca Clock:** is_open=false, next_open Mo 13.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.
