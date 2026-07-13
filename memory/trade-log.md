@@ -6,22 +6,23 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Close 10.07. 16:02 ET | Gewinn/Verlust        | Stop-Loss     | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Live 13.07. 13:00 ET  | Gewinn/Verlust        | Stop-Loss     | TP1         | TP2         | Signale         |
 |--------|------------|-------------|-----------------------|-----------------------|---------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 336,38 $              |  +10,80 $ (+1,08 %)   | **316,14 $** ⚠| 399,34 $    | 449,25 $    | V1-V6 SICHER (Blackout -5 %) |
-| UNH    | 2026-06-18 | 401,57 $    | 424,57 $              | +552,00 $ (+5,73 %)   | 369,44 $      | 481,88 $    | 542,12 $    | V1-V6 SICHER (V2 381,89)     |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.188,57 $            |  -42,53 $ (-0,45 %)   | 1.098,38 $    | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER                 |
-| GOOGL  | 2026-07-07 | 368,10 $    | 357,17 $              | -284,20 $ (-2,97 %)   | 338,65 $      | 441,72 $    | 496,93 $    | V1-V6 SICHER (engste +5,19 %)|
+| JPM    | 2026-06-17 | 332,78 $    | 334,42 $              |   +4,91 $ (+0,49 %)   | **316,14 $** ⚠| 399,34 $    | 449,25 $    | V1-V6 SICHER (Blackout -5 %) |
+| UNH    | 2026-06-18 | 401,57 $    | 429,27 $              | +664,80 $ (+6,90 %)   | 369,44 $      | 481,88 $    | 542,12 $    | V1-V6 SICHER (V2 382,09)     |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.188,92 $            |  -39,78 $ (-0,42 %)   | 1.098,38 $    | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER                 |
+| GOOGL  | 2026-07-07 | 368,10 $    | 355,63 $              | -324,19 $ (-3,39 %)   | 338,65 $      | 441,72 $    | 496,93 $    | V1-V6 SICHER (engste +5,03 %)|
+| AAPL   | 2026-07-13 | 316,86 $    | 316,51 $              |  -10,90 $ (-0,11 %)   | 291,51 $      | 380,23 $    | 427,76 $    | K1-K5 5/5 LEAD entry (Fill 11:31 ET) |
 
-**Gesamt investiert:** 29.993,80 $ (Marktwert Alpaca 10.07. 16:02 ET Close) | **Cash:** 68.626,60 $ | **Positionen:** 4/8 | **Käufe KW28:** 2/2 abgeschlossen (nächster Kauf-Slot ab Mo 13.07.)
+**Gesamt investiert:** 39.875,08 $ (Marktwert Alpaca 13.07. 13:00 ET Live) | **Cash:** 58.804,05 $ | **Positionen:** 5/8 | **Käufe KW29:** 1/2 gefüllt (AAPL), 1 Slot noch offen für KW29
 
 ---
 
 ## Offene Orders (pending)
 
-| Symbol | Typ         | Menge | Limit    | TIF | Submit-Zeit           | Order-ID                                | Status | Grund |
-|--------|-------------|-------|----------|-----|-----------------------|------------------------------------------|--------|-------|
-| AAPL   | Limit Buy   | 31    | 316,90 $ | Day | 2026-07-13 09:41 ET   | dba7bc05-4c6d-4380-bed8-3e3c4fd842e4    | new    | Market-Open-Kauf-Signal 5/5 (K1-K5 alle ✓), Live 321,40 gappte +1,93 % > Limit → kein Sofort-Fill, wartet auf Pullback |
+_Keine offenen Orders — AAPL-Limit dba7bc05 vollständig gefüllt 13.07. 11:31 ET @ 316,856452 $._
+
+_Midday 13.07. 13:00 ET Update: **AAPL Limit-Buy dba7bc05 GEFÜLLT 11:31:16 ET** @ 316,856452 $ × 31 Sh (Kaufwert 9.822,55 $ ≈ 9,96 % Equity). Intraday-Pullback von Open-Hoch 323,39 unter Limit-Cap 316,90 hat gefeuert → regelkonformer Entry ohne +0,5 %-Cap-Verletzung. Kauf-Slot KW29 1/2 verbraucht. Cash 68.626,60 → 58.804,05, Positionen 4 → 5, Equity 98.675,56 (Daily +0,054 % vs Fr-Close 98.622,21) [GRÜN]. V1-Check alle 5 SICHER (engste GOOGL +5,03 %). V2-Trails: AAPL 284,59 (max_high heute 323,39×0,88), JPM 302,11, UNH 382,09 (Hoch 434,19 09.07.), LLY 1.098,70, GOOGL 328,36. Keine Stops ausgelöst, keine ClickUp-Alerts. Nächster Check 16:00 ET Market Close mit UNH-Blackout-Aktivierung (V1→381,49) ZWINGEND._
 
 _Market Open 13.07. 09:37 ET (Mo, KW29 Tag 1): **AAPL 5/5 K-Signal-LEAD** → Limit-Buy platziert @ 316,90 (max +0,5 % über Fr-Close 315,32). Live-Preis 321,40 (bid 321,20 / ask 321,48) über Limit-Cap → **kein Sofort-Fill** (regelkonform, Strategie-Deckel greift). Fill möglich bei Intraday-Pullback unter 316,90, sonst Expiry EOD ohne Kauf. Kauf-Slot KW29 1/2 operativ belegt._
 
