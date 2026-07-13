@@ -1,8 +1,60 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-13 09:37 ET (Market Open Mo KW29 Tag 1, alle 8 Guardrails GRÜN, AAPL 5/5 LEAD-Kauf-Limit 316,90 x 31 platziert (Order-ID dba7bc05, kein Sofort-Fill Live 321,40 gappt über Limit), NVDA K3-FAIL RS -0,19 %, JPM V1 316,14 SICHER +5,88 % vorletzter Blackout-Tag, UNH-Blackout-Aktivierung ab Close ZWINGEND V1→381,49)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-13 13:00 ET (Midday Mo KW29 Tag 1, AAPL Limit-Buy 316,86 x 31 gefüllt 11:31 ET, 5/5 Positionen SICHER, Daily P/L +0,054 % GRÜN, kein Stop ausgelöst, UNH-Blackout-Aktivierung an Close weiter zwingend)
 
 ---
+
+## Midday 2026-07-13 13:00 ET (Mo, KW29 Tag 1) — AAPL FILL 11:31 ET, alle Stops regulär
+
+```
+Alpaca account:    equity 98.675,56 $ | last_equity (Fr-Close) 98.622,21 $
+Daily P/L:         +53,35 $  (+0,054 %)                                  [GRÜN — Cap -3 %]
+Cash:              58.804,05 $   (59,59 %, -9.822,55 vs Open durch AAPL-Fill)
+Portfolio MV:      39.875,08 $   (40,41 %; AAPL 9.811,66 + JPM 1.003,25 + UNH 10.302,48 + LLY 9.511,32 + GOOGL 9.246,38)
+Buying_power:     346.856,41 $
+Positionen:            5/8 (AAPL neu, Kauf-Slot KW29 1/2 belegt & gefüllt)
+Pending Orders:        0 (AAPL-Order-ID dba7bc05 vollständig gefüllt)
+```
+
+**Positionen-Check (Alpaca 13:00 ET Live):**
+| Symbol | Qty | Entry $     | Curr $   | UPnL %  | V1-Stop  | V1-Puffer | V2-Trail (max_high×0,88) | V2-Puffer |
+|--------|-----|-------------|----------|---------|----------|-----------|--------------------------|-----------|
+| AAPL   | 31  | 316,86      | 316,51   |  -0,11 % | 291,51 (-8 %) | +8,58 % | 284,59 (max 323,39 heute) | +11,22 % |
+| JPM    | 3   | 332,78      | 334,42   |  +0,49 % | **316,14** (Blackout -5 %) | +5,78 % | 302,11 (max 343,31 25.06.) | +10,70 % |
+| UNH    | 24  | 401,57      | 429,27   |  +6,90 % | 369,44 (-8 %) | +16,20 % | 382,09 (max 434,19 09.07.) | +12,35 % |
+| LLY    | 8   | 1.193,89    | 1.188,92 |  -0,42 % | 1.098,38 (-8 %) | +8,25 % | 1.098,70 (max 1.248,53 07.07.) | +8,22 % |
+| GOOGL  | 26  | 368,10      | 355,63   |  -3,39 % | 338,65 (-8 %) | +5,03 % | 328,36 (max 373,14 07.07.) | +8,30 % |
+
+**V1/V2-Check:** ALLE 5 POSITIONEN SICHER (kein Stop ausgelöst, keine Market-Sell platziert).
+**V3/V4-Check (TP1 +20 % / TP2 +35 %):** Kein Symbol nahe TP → keine Limit-Sell platziert.
+
+**Guardrails Midday:**
+```
+1. Daily Loss Cap (-3 %):     +0,054 %                                [GRÜN]
+2. Weekly Loss Cap (-5 %):    +0,054 % (KW29 Tag 1)                   [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,39 % vs ATH 100.066,47              [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,39 %                                 [GRÜN]
+5. Crash-Filter (SPY -5 %):   (nicht gemessen bei Midday)             [INAKTIV-Default]
+6. VIX-Filter (>30):          Carry-over ~15                          [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM AKTIV (V1 316,14 +5,78 % SICHER)    [GRÜN operativ]
+8. Max Käufe KW29:            1/2 gefüllt (Kauf-Slot 1 verbraucht)    [GRÜN]
+```
+
+**Best/Worst:**
+- Beste Position: **UNH +6,90 %** (Ø-Trailing V2 +12,35 %)
+- Schlechteste Position: **GOOGL -3,39 %** (V1-Puffer +5,03 % — engste Position, Fill-Day+4)
+- Ø P/L 5 Positionen: **+0,69 %**
+
+**Zwingende Watch-Punkte Market Close 16:00 ET:**
+1. **UNH-Blackout-Aktivierung** (Q2 Do 16.07. BMO) → V1-Tightening 401,57 × 0,95 = **381,49 $** statt 369,44 ZWINGEND
+2. **JPM Blackout letzter Tag** vor Q2 Di 14.07. BMO — V1 316,14 aktiv bis Post-Release
+3. **GOOGL V1-Puffer +5,03 %** engste Position weiter monitoren
+4. **AAPL Fill-Day+0** — heutiger Bar 323,39 max_high → V2-Trail 284,59 (wird morgen Close überprüft)
+
+**ClickUp:** Kein Alert (per Midday-Regel: nur bei Stop-Trigger oder Daily-Cap). Routine-Log unterdrückt.
+
+---
+
 
 ## Market Open 2026-07-13 09:37 ET (Mo, KW29 Tag 1) — AAPL 5/5 LEAD, Limit-Buy 316,90 x 31 platziert (kein Sofort-Fill)
 
