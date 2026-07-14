@@ -6,23 +6,25 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live 14.07. 09:37 ET | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
-|--------|------------|-------------|----------------------|-----------------------|-----------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 340,89 $             |  +24,33 $ (+2,44 %)   | 306,16 $        | 399,34 $    | 449,25 $    | V1-V4 SICHER (Post-Q2-Rally +1,90 % Tag) |
-| UNH    | 2026-06-18 | 401,57 $    | 425,47 $             | +573,60 $ (+5,95 %)   | **381,49 $**⚠   | 481,88 $    | 542,12 $    | V1-V4 SICHER (Blackout -5 % aktiv bis Do 16.07. BMO) |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.153,12 $           | -326,14 $ (-3,42 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V4 SICHER (engste +4,98 %, XLV-Druck Tag 5) |
-| GOOGL  | 2026-07-07 | 368,10 $    | 356,82 $             | -293,38 $ (-3,07 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V4 SICHER (+5,36 %, Rebound vs Open) |
-| AAPL   | 2026-07-13 | 316,86 $    | 314,18 $             |  -82,97 $ (-0,85 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V4 SICHER (Fill-Day+1) |
+| Symbol | Kaufdatum  | Kaufkurs    | Close 14.07. 16:02 ET | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
+|--------|------------|-------------|------------------------|-----------------------|-----------------|-------------|-------------|-----------------|
+| JPM    | 2026-06-17 | 332,78 $    | 342,32 $               |  +28,62 $ (+2,87 %)   | 306,16 $        | 399,34 $    | 449,25 $    | V1-V6 SICHER (Post-Q2-Rally Tag 2 +2,33 %, XLF-Outperform +2,11 %) |
+| UNH    | 2026-06-18 | 401,57 $    | 425,75 $               | +580,36 $ (+6,02 %)   | **381,49 $**⚠   | 481,88 $    | 542,12 $    | V1-V6 SICHER (Blackout -5 % aktiv bis Do 16.07. BMO, +1,14 % vs XLV-Sektor) |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.154,27 $             | -316,94 $ (-3,32 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (**engste +5,09 %**, RSI 49,90 gekippt, XLV -1,92 % Tag 6) |
+| GOOGL  | 2026-07-07 | 368,10 $    | 359,49 $               | -223,96 $ (-2,34 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V6 SICHER (+6,15 %, Fill-Day+6-Rebound +1,98 % vs XLC -0,13 %) |
+| AAPL   | 2026-07-13 | 316,86 $    | 314,85 $               |  -62,20 $ (-0,63 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V6 SICHER (Fill-Day+1, XLK-Underperform -2,05 % relativ) |
 
-**Gesamt investiert:** 39.475,35 $ (Marktwert Alpaca Live 14.07. 13:07 ET) | **Cash:** 58.804,04 $ | **Positionen:** 5/8 | **Käufe KW29:** 1/2 gefüllt (AAPL), 1 Slot noch offen für KW29
+**Gesamt investiert:** 39.595,84 $ (Marktwert Alpaca Close 14.07. 16:02 ET) | **Cash:** 58.804,04 $ | **Positionen:** 5/8 | **Käufe KW29:** 1/2 gefüllt (AAPL), 1 Slot noch offen bis Fr-Close
 
-_Midday 14.07. 13:07 ET Update: **Alle 5 Positionen V1-V4 SICHER**, keine Stops ausgelöst, keine Sell-Order platziert. Daily P/L -0,287 % (Equity 98.279,39 vs Alpaca last_equity 98.562,62) [GRÜN, Cap -3 % weit entfernt]. SPY +0,357 % → Alpha -0,644 % (XLV-Rotations-Verlierer Tag 5: LLY -2,43 %, UNH -0,84 % Cooldown). **Beste:** UNH +5,95 %. **Schlechteste:** LLY -3,42 %. **Engste V1-Position:** LLY +4,98 % Puffer (vs Open +4,80 % minimal aufgeholt); GOOGL +5,36 % (deutlich verbessert vs Open +4,17 % durch +1,22 % Fill-Day+5-Rebound). JPM Post-Earnings-Rally hält (+1,90 % Tag, +2,44 % vs Entry — V1 306,16 sehr komfortabel +11,34 %). UNH -0,84 % Cooldown normal (Blackout -5 % V1 381,49 SICHER +11,53 %). Weekly KW29 -0,347 %, DD -1,79 %. Alle 8 Guardrails GRÜN. Kein ClickUp Alert (Routine-Regel: nur bei Ereignis). Nächster Check: 16:00 ET Market Close._
+_Market Close 14.07. 16:02 ET Update: **Alle 5 Positionen V1-V6 SICHER**, keine Stops ausgelöst, keine Sell-Order platziert. Daily P/L -0,165 % (Equity 98.399,88 vs Alpaca last_equity 98.562,62) [GRÜN, Cap -3 %]. SPY +0,375 % → **Alpha -0,540 %** (XLV-Verlierer Tag 6: LLY -2,33 %, aber UNH nur -0,78 % Sektor-relative Stärke; AAPL -0,78 % vs XLK +1,27 % Fill-Day+1-Divergenz). **Beste:** JPM +2,87 % (Post-Q2-Rally Fortsetzung Tag 2). **Schlechteste:** LLY -3,32 % (XLV -1,92 % Tag 6). **Engste V1-Position:** LLY +5,09 % Puffer (RSI 49,90 unter 50 gekippt — Momentum-Neutralisierung); GOOGL +6,15 % (deutlicher Rebound vs Midday +5,36 %). Weekly KW29 -0,225 %, DD -1,67 %. Alle 8 Guardrails GRÜN. ClickUp ITEM_246 Tier-Limit → PushNotification an Owner. Nächster Check: Mi 15.07. 08:30 ET Pre-Market._
 
 ---
 
 ## Offene Orders (pending)
 
-_Keine offenen Orders — alle V1-V6 SICHER, KEINE Limit-Order platziert (AMD K5-Reject → kein Kauf)._
+_Keine offenen Orders — alle V1-V6 SICHER, KEINE Limit-Order für Mi 15.07. platziert._
+
+_Market Close 14.07. 16:02 ET: **V5/V6-Check alle 5 SICHER** (EMA50>EMA200 überall, RSI max 64,76 JPM << 80-Threshold; GOOGL RSI 49,45 + RS_4w -1,41 % erfüllt Teil-Bedingung V6 aber RSI << 80). **Keine Limit-Order für Mi 15.07.** LLY-Sonderfall: engste V1-Position +5,09 % Puffer, RSI(14) auf 49,90 gekippt (Momentum-Neutralisierung), XLV -1,92 % Tag 6 → Pre-Market-Watch Mi zwingend, aber V1 1.098,38 aktuell noch komfortabel. **UNH-Blackout weiter aktiv** bis Do 16.07. BMO (V1 381,49, Puffer +11,60 %). Weekly Loss Cap KW29 Tag 2 = -0,225 % [GRÜN, Cap -5 % weit entfernt] → keine Weekly-Cap-Aktion._
 
 _Market Open 14.07. 09:37 ET: **JPM V1-Reset AKTIVIERT** (Q2-Release BMO 7:00 AM ET + 8:30 AM Call — Blackout-Ende) → V1 alt 316,14 (-5 %) → V1 **NEU 306,16** (-8 %). Puffer 337,12 vs 306,16 = **+10,11 % SICHER**. JPM Post-Earnings-Reaction +0,75 % (Pre-Market-Loss -2,26 % vollständig aufgeholt). **UNH-Blackout weiter aktiv** bis Do 16.07. BMO (V1 381,49, Puffer +12,89 %)._
 
@@ -34,9 +36,11 @@ _**V1-Puffer Close:** JPM +5,84 % (316,14 Blackout letzter Tag), UNH +12,47 % (*
 
 _Equity 98.587,07 (Daily -0,036 % vs Alpaca last_equity 98.622,21), SPY -0,770 % (754,94 → 749,13), **Alpha +0,734 %** [POSITIV — AAPL +0,67 % vs XLK -2,44 % = +3,11 % relativer Outperform]. Weekly KW29 -0,036 % (Tag 1). DD -1,479 %. VIX ~16 (VXX +3,17 %). Guardrails alle GRÜN._
 
-_**Watchlist Di 14.07. + KW29-Slot 2/2:** AMD 3/3 K1-K3 LEAD (EMA50 474,46 > EMA200 321,86 ✓, RSI 52,97 ✓, RS_63d **+107,26 %** ✓ — Chip-Rally). K5-Recheck Multi-Source Di Pre-Market zwingend (FwdPE ≤ 35 + RevGrowth ≥ 10 % + Earnings-Blackout-Check). Backup: CAT 2/3 K2-Fail (RSI 46,87 knapp), NVDA 2/3 K3-Fail (RS -2,54 %)._
+_**Watchlist Mi 15.07. + KW29-Slot 2/2:** Vier 3/3 K1-K3 LEADS im Screener (16 Symbole gescannt): **AMD 548,16** (K1 +155,33 ✓, RSI 55,22 ✓, RS_63d +112,49 % ✓ — aber K5-FwdPE > 35 Multi-Source-Fail Di dokumentiert → gesperrt); **NVDA 211,79** (K1 +12,23 ✓, RSI 56,35 ✓, RS_63d +2,30 % ✓ — verbessert vs Mo 2/3 durch Chip-Rebound); **V 356,01** (K1 +1,41 marginal ✓, RSI 64,96 ✓, RS_63d +5,47 % ✓); **GS 1141,87** (K1 +118,64 ✓, RSI 67,63 ✓, RS_63d +18,55 % ✓ — Financials-Peer JPM). K5-Multi-Source-Recheck Mi Pre-Market zwingend für NVDA/V/GS (FwdPE ≤ 35 + RevGrowth ≥ 10 % + Earnings-Blackout + GS-Konzentrationscheck vs JPM)._
 
-_Nächster Check: Di 14.07. 08:30 ET Pre-Market Check — **JPM Q2-Earnings-Reaction BMO 8:30 AM ET**, UNH-V1 381,49 aktiv, GOOGL-V1 +4,10 % engste Position, AMD K5-Recheck._
+_Nächster Check: Mi 15.07. 08:30 ET Pre-Market Check — **LLY V1 1.098,38 aktiv +5,09 % Puffer engste** (RSI 49,90 gekippt, XLV-Tag-6), UNH-V1 381,49 Blackout bis Do BMO, GOOGL-V1 338,65 +6,15 %, NVDA/V/GS K5-Recheck für Slot 2/2._
+
+_**14.07. 09:37 ET Vorgängerstand carry-over — Watchlist Di:** AMD 3/3 K1-K3 LEAD (EMA50 474,46 > EMA200 321,86 ✓, RSI 52,97 ✓, RS_63d +107,26 % ✓ — Chip-Rally). K5-Recheck Multi-Source Di Pre-Market zwingend (FwdPE ≤ 35 + RevGrowth ≥ 10 % + Earnings-Blackout-Check). Backup: CAT 2/3 K2-Fail (RSI 46,87 knapp), NVDA 2/3 K3-Fail (RS -2,54 %)._
 
 ---
 
