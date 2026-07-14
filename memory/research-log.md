@@ -4,6 +4,106 @@
 
 ---
 
+## Market Open 09:37 ET — 2026-07-14 (Di, KW29 Tag 2) — Guardrails GRÜN, AMD K5-Reject FwdPE 36-68 > 35, KEIN KAUF, JPM V1-Reset 306,16 post-Q2-Release, LLY/GOOGL neue engste Positionen
+
+**Alpaca Clock:** is_open=true, next_close Di 14.07. 16:00 ET.
+
+**Account Live 09:37 ET:**
+```
+Equity:            98.281,72 $   (vs Mo-Close 98.587,07 → Daily -0,310 % / vs Alpaca last_eq 98.562,62 → -0,285 %)  [GRÜN]
+Cash:              58.804,04 $   (59,83 %, unverändert seit AAPL-Fill Mo 11:31 ET)
+Portfolio_MV:      39.477,68 $   (40,17 %, AAPL 9.752,60 + JPM 1.011,36 + UNH 10.335,96 + LLY 9.208,72 + GOOGL 9.172,02)
+Buying_power:     345.753,66 $
+Käufe KW29:        1/2 (AAPL Mo gefüllt) | Slot 2/2 bleibt OFFEN (AMD K5-Fail)
+Pending Orders:    0
+```
+
+**Positionen Live V1-Check (Alpaca IEX 09:37 ET):**
+| Sym    | Live     | P/L     | Chg_today | V1-Stop        | V1-Puffer | Status |
+|--------|----------|---------|-----------|----------------|-----------|--------|
+| AAPL   | 314,60   | -0,71 % | -0,904 %  | 291,51         | +7,92 %   | SICHER (Fill-Day+1) |
+| JPM    | 337,12   | +1,30 % | **+0,753 %** | **306,16 NEU** (Blackout ENDE) | **+10,11 %** | SICHER (Post-Release-POSITIV, PM-Loss aufgeholt) |
+| UNH    | 430,67   | +7,25 % | +0,380 %  | 381,49 (Blackout -5 %) | +12,89 % | SICHER (Blackout bis Do BMO) |
+| LLY    | 1.151,09 | -3,58 % | **-2,780 %** | 1.098,38    | **+4,80 %** | SICHER (**neue engste**, XLV Tag 5) |
+| GOOGL  | 352,77   | -4,16 % | +0,065 %  | 338,65         | +4,17 %   | SICHER (zweit-engste, Fill-Day+5) |
+
+→ **Alle 5 V1 SICHER, keine Sell-Order, Pending Orders 0.**
+→ **JPM Post-Release-Rebound VOLLZOGEN** (PM 326,97 -2,26 % → Live 337,12 +1,30 %). Q2-Release-Reaktion positiv. **V1-Reset 316,14 → 306,16 (-8 %)** durchgeführt nach Call 8:30 AM ET.
+→ **LLY / GOOGL neue engste Positionen** (+4,80 % / +4,17 %) — beide V1-Puffer < 5 %, LLY XLV-Verkaufsdruck 5. Tag, GOOGL Fill-Day+5-Divergenz.
+
+**AMD K5 Multi-Source-Recheck (Perplexity 09:38 ET, 5 Datenpunkte):**
+- Forward P/E NTM: GuruFocus 35,72 / GuruFocus term-page 36,98 / StockAnalysis 59,82 / MarketBeat 59,82 / ValueInvesting.io 68,65
+- Konsens: **~36-68x** — sogar niedrigste Quelle 35,72 > 35 Threshold
+- Trailing P/E (12M): 101,79 (GuruFocus) - 173,93 (StockAnalysis) — Hyper-Premium nach +117 % 63d Rally
+- Revenue Growth Q4 CY2025: **+34,1 % YoY** (10,27 Mrd $) — K5-Wachstum ✓, aber Bewertung dominiert
+- AMD Q2 2026 Earnings: **04.08.2026** (15 HT weg → kein Blackout)
+- **Verdikt: K5 FAIL, Kauf regelkonform abgelehnt.**
+
+**Alpaca Bars K1-K4 AMD (259d bis 13.07. Close inkl.):**
+- Close Mo 13.07.: 533,69 (Fr 557,85 → -4,33 % Mo, aber heute Live 560,87 = +5,09 % Gap-Up)
+- K1 EMA50 474,46 > EMA200 321,46 ✓ (Spread **+153,00**)
+- K2 RSI(14) Wilder 52,97 ✓ (50-70 Range)
+- K3 RS_63d = AMD +117,81 % - SPY +10,27 % = **+107,54 %** ✓ (dominanter Chip-Rally-Leader)
+- K4 Intraday-Vol 09:30-09:37 = 32.126 Sh IEX (extrap. Full-Day ~1,79 M vs Avg20 656.454 = **~2,7× Avg20**) ✓
+- **4/5-Signal, K5-FwdPE-Fail regelkonform-terminal**
+
+**Weitere Watchlist-Kandidaten (Rekap):**
+- CAT: 2/3 K2-Fail Mo Close (RSI 46,87 knapp unter 50) — kein Rescan im Open (K5-Prio-Reject bei AMD reicht)
+- NVDA: 2/3 K3-Fail (RS -2,54 %) — kein Rescan
+- TSLA: 2/3 K2-Fail — kein Rescan
+
+**Perplexity Macro Check (09:37 ET Live):**
+```
+SPY Live:                Alpaca IEX 750,48 → +0,180 % vs Mo-Close 749,13     [POSITIV — Rebound-Tag]
+VIX Live:                Perplexity Date-Bug (no Live-Retrieval)
+VXX Carry-Over:          Mo-Close 21,79 → VIX ~16-17 impliziert              [GRÜN]
+Makro-Events heute:      JPM Q2 2026 Earnings BMO RELEASED (7:00 AM ET Press + 8:30 AM Call)
+JPM Result-Detail:       Perplexity Date-Bug — kein indiziertes Transcript/8-K
+                         Alpaca Price-Action als Ground-Truth: +0,75 % Post-Release = Positive Reaction
+```
+
+**Sonderbeobachtung LLY XLV Tag 5:**
+- LLY Live 1.151,09 chg_today -2,780 % → V1-Puffer schmilzt von PM +7,43 % auf +4,80 % (Open)
+- XLV-Verkaufsdruck 5. Tag (KW28 Fr XLV -1,77 %, Mo XLV +0,31 % Rebound, aber LLY-eigenwert-schwach)
+- Wenn LLY-Trend anhält: V1 1.098,38 könnte innerhalb 1-2 HT gebrochen werden
+- Midday-Watch zwingend
+
+**Guardrail-Status Market Open (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,285 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,345 % (KW29 Tag 2, Basis Fr 98.621,81) [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,781 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,781 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY-Live +0,180 %                     [INAKTIV]
+6. VIX-Filter (>30):          ~16-17 (VXX 21,79 carry-over)         [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM ENDET post-Release, UNH aktiv      [GRÜN operativ, 1 Position -5 %-Tightening]
+8. Max Käufe KW29:            1/2 → Slot 2/2 bleibt OFFEN            [OFFEN]
+```
+→ **STATUS: ALLE 8 GRÜN. Kauf-Fenster war offen, aber AMD K5-Fail → KEIN Kauf.**
+
+**Entscheidung Market Open:** Regelkonformer **No-Buy** (AMD FwdPE > 35 Cap-Verletzung). Alle 5 Positionen SICHER (kein Sell). JPM V1-Reset auf 306,16 durchgeführt. Slot 2/2 KW29 bleibt bis Mi-Fr für neue Signal-Konstellation offen.
+
+**Zwingende Watch-Punkte Midday 13:00 ET:**
+1. **LLY V1-Puffer +4,80 %** engste Position — Break unter 1.098,38 löst V1-Market-Sell (XLV-Tag 5 Fortsetzung)
+2. **GOOGL V1-Puffer +4,17 %** zweit-engste — Fill-Day+5, Live-Watch
+3. **JPM Post-Earnings-Reaction-Fade-Prüfung** (V1 306,16 komfortabel, aber Reaction-Fade nicht ausgeschlossen)
+4. **UNH V1 381,49 (Blackout -5 %) SICHER +12,89 %** — Fortsetzung
+5. **AAPL Fill-Day+1** — V1 +7,92 % noch reichlich
+
+**Datenqualität:**
+- Alpaca IEX Live-Trades 6 Symbole (5 Positionen + AMD + SPY) ts 13:37 UTC = 09:37 ET
+- Alpaca Bars AMD 259d 2025-07-01 → 2026-07-13 EMA/RSI/RS (Wilder RSI, adjustment=split) sauber
+- Alpaca Bars AMD Intraday 1Min 09:30-09:37 ET für K4 Volume-Extrapolation
+- Perplexity K5-AMD 5 Datenpunkte (2 Sources auf GuruFocus divergent 35,72 vs 36,98; StockAnalysis+MarketBeat 59,82; ValueInvesting 68,65 → robuste Reject-Entscheidung)
+- Perplexity JPM Q2-Result Date-Bug (Transcript nicht indiziert) → Alpaca-Price-Action-Fallback erfolgreich
+- Alpaca account.equity 98.281,72 (Live 09:37); last_equity 98.562,62 (Mo After-Hours-Tick)
+
+**ClickUp:** ITEM_246 Tier-Limit weiter aktiv → Fallback PushNotification an Owner versendet.
+
+**Nächste Routine:** Di 14.07. 13:00 ET Midday Stop-Check (LLY/GOOGL V1-Watch beide < 5 % Puffer, JPM Post-Earnings-Verlauf, UNH-Blackout weiter aktiv).
+
+---
+
 ## Pre-Market 08:35 ET — 2026-07-14 (Di, KW29 Tag 2) — Guardrails GRÜN, JPM Q2-Earnings TODAY BMO 7:00 AM ET / 8:30 AM Call, JPM V1-Puffer verengt +3,43 %, UNH-Blackout V1 381,49 aktiv, AMD K5-Recheck für Kauf-Slot 2/2 im Open
 
 **Alpaca Clock:** is_open=false, next_open Di 14.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.

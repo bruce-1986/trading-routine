@@ -6,23 +6,25 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Close 13.07. 16:02 ET | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
-|--------|------------|-------------|-----------------------|-----------------------|-----------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 334,60 $              |   +5,25 $ (+0,53 %)   | **316,14 $** ⚠  | 399,34 $    | 449,25 $    | V1-V6 SICHER (Blackout letzter Tag) |
-| UNH    | 2026-06-18 | 401,57 $    | 429,04 $              | +661,68 $ (+6,87 %)   | **381,49 $ NEU**⚠| 481,88 $    | 542,12 $    | V1-V6 SICHER (**Blackout AKTIVIERT** -5 %) |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.183,95 $            |  -74,38 $ (-0,78 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER                 |
-| GOOGL  | 2026-07-07 | 368,10 $    | 352,54 $              | -406,14 $ (-4,24 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V6 SICHER (engste +4,10 %)|
-| AAPL   | 2026-07-13 | 316,86 $    | 317,47 $              |  +18,19 $ (+0,19 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V6 SICHER (Fill-Day+0)    |
+| Symbol | Kaufdatum  | Kaufkurs    | Live 14.07. 09:37 ET | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
+|--------|------------|-------------|----------------------|-----------------------|-----------------|-------------|-------------|-----------------|
+| JPM    | 2026-06-17 | 332,78 $    | 337,12 $             |  +13,02 $ (+1,30 %)   | **306,16 $** ⚠  | 399,34 $    | 449,25 $    | V1-V6 SICHER (**Blackout ENDET, V1 Reset -8 %**) |
+| UNH    | 2026-06-18 | 401,57 $    | 430,67 $             | +698,28 $ (+7,25 %)   | **381,49 $**⚠   | 481,88 $    | 542,12 $    | V1-V6 SICHER (Blackout -5 % aktiv bis Do 16.07. BMO) |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.151,09 $           | -342,40 $ (-3,58 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (engste +4,80 %) |
+| GOOGL  | 2026-07-07 | 368,10 $    | 352,77 $             | -398,58 $ (-4,16 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V6 SICHER (zweit-engste +4,17 %) |
+| AAPL   | 2026-07-13 | 316,86 $    | 314,60 $             |  -70,06 $ (-0,71 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V6 SICHER (Fill-Day+1) |
 
-**Gesamt investiert:** 39.784,84 $ (Marktwert Alpaca 13.07. 16:02 ET Close) | **Cash:** 58.804,05 $ | **Positionen:** 5/8 | **Käufe KW29:** 1/2 gefüllt (AAPL), 1 Slot noch offen für KW29
+**Gesamt investiert:** 39.480,66 $ (Marktwert Alpaca Live 14.07. 09:37 ET) | **Cash:** 58.804,04 $ | **Positionen:** 5/8 | **Käufe KW29:** 1/2 gefüllt (AAPL), 1 Slot noch offen für KW29
 
 ---
 
 ## Offene Orders (pending)
 
-_Keine offenen Orders — alle V5/V6 SICHER, KEINE Limit-Order für Di 14.07. platziert._
+_Keine offenen Orders — alle V1-V6 SICHER, KEINE Limit-Order platziert (AMD K5-Reject → kein Kauf)._
 
-_Market Close 13.07. 16:02 ET: **UNH V1-Stop-Tightening AKTIVIERT** (3-HT-Blackout Q2 Do 16.07.2026 BMO) → V1 alt 369,44 → V1 **NEU 381,49** (401,57 × 0,95). Puffer 429,04 vs 381,49 = **+12,47 % SICHER**. Gilt bis Q2 Do 16.07. BMO. Di 14.07. Pre-Market: UNH < 381,49 löst V1-Market-Sell sofort aus. **JPM-Blackout LETZTER Tag** vor Q2 Di 14.07. BMO — V1 316,14 aktiv bis morgen Post-Release (dann zurück auf -8 % = 306,16)._
+_Market Open 14.07. 09:37 ET: **JPM V1-Reset AKTIVIERT** (Q2-Release BMO 7:00 AM ET + 8:30 AM Call — Blackout-Ende) → V1 alt 316,14 (-5 %) → V1 **NEU 306,16** (-8 %). Puffer 337,12 vs 306,16 = **+10,11 % SICHER**. JPM Post-Earnings-Reaction +0,75 % (Pre-Market-Loss -2,26 % vollständig aufgeholt). **UNH-Blackout weiter aktiv** bis Do 16.07. BMO (V1 381,49, Puffer +12,89 %)._
+
+_**AMD K5-Reject:** Multi-Source-Recheck FwdPE 35,72-68,65 (GuruFocus 35,72 / StockAnalysis 59,82 / ValueInvesting 68,65) — **Konsens > 35, sogar niedrigste Quelle 35,72 verletzt Threshold**. Trailing P/E 101-174. K5-Wachstum ✓ (+34,1 % Rev Q4 CY2025), aber FwdPE-Cap 35 dominiert. K1 EMA+153,00 ✓, K2 RSI 52,97 ✓, K3 RS_63d +107,54 % ✓, K4 Vol ~2,7× Avg20 ✓ — 4/5. **Kauf abgelehnt regelkonform.** Backup CAT/NVDA/TSLA bereits Mo 2/3 Fail (K2/K3). **Slot 2/2 KW29 bleibt OFFEN.**_
 
 _**V5/V6-Check alle 5 SICHER:** AAPL EMA50 295,54 > EMA200 271,13 ✓ (Spread +24,41), RSI 64,92, RS_4w +5,63 %; JPM EMA50 318,70 > EMA200 306,51 ✓ (Spread +12,19), RSI 59,30, RS_4w +5,38 %; UNH EMA50 393,86 > EMA200 345,71 ✓ (Spread +48,15), RSI 61,70, RS_4w +4,65 %; LLY EMA50 1108,92 > EMA200 980,76 ✓ (Spread +128,16), RSI 56,39, RS_4w +0,20 %; GOOGL EMA50 358,95 > EMA200 314,06 ✓ (Spread +44,89), RSI 44,02, RS_4w -3,31 % (V6 verlangt BEIDES → nicht ausgelöst)._
 
