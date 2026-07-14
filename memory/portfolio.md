@@ -1,6 +1,65 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-14 09:37 ET (Market Open Di KW29 Tag 2, Daily -0,28 % GRÜN, alle Guardrails GRÜN, alle 5 Positionen V1 SICHER, JPM V1-Reset 316,14→306,16 nach Q2-Release, AMD K5-Reject FwdPE 36-68 > 35, KEIN KAUF, Slot 2/2 bleibt OFFEN)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-14 13:07 ET (Midday Stop-Check Di KW29 Tag 2, Daily -0,29 % GRÜN, alle Guardrails GRÜN, alle 5 Positionen V1 SICHER, keine Stops ausgelöst, LLY V1-Puffer +4,98 % engste, JPM Post-Earnings +2,44 % beste Tages-Reaction)
+
+---
+
+## Midday 2026-07-14 13:07 ET (Di, KW29 Tag 2) — Alle V1-V4 SICHER, keine Stops ausgelöst, Daily -0,29 % GRÜN
+
+```
+Alpaca clock:      is_open=true | next_close 14.07. 16:00 ET
+Equity:            98.279,39 $   (Live 13:07, vs Alpaca last_equity 98.562,62 → -0,287 %)
+Cash:              58.804,04 $   (59,83 %, unverändert seit AAPL-Fill Mo)
+Portfolio MV:      39.475,35 $   (40,17 %, AAPL 9.739,58 + JPM 1.022,67 + UNH 10.211,28 + LLY 9.224,96 + GOOGL 9.277,19)
+Buying_power:     345.747,13 $
+Daily P/L:           -283,23 $   (-0,287 % vs Alpaca last_equity)                        [GRÜN — Cap -3 %]
+SPY Live:            +0,357 %    (Alpaca IEX 751,805 vs Mo-Close 749,13)
+Alpha vs SPY:        -0,644 %    [NEGATIV — LLY -2,43 % XLV-Schwäche Tag 5 dominierend]
+ATH:              100.066,47 $    DD -1,786 % [GRÜN — Alarm bei -15 %]
+Weekly KW29:        -0,347 %      (Tag 2, Basis Fr-Close 98.621,81)                       [GRÜN — Cap -5 %]
+Käufe KW29:            1/2       Slot 2/2 bleibt OFFEN (AMD K5-Fail Open)                 [OFFEN]
+Pending Orders:        0         (keine Limit-/TP-Orders aktiv)
+VIX-Ref:            ~16-17        (VXX carry-over)                                        [GRÜN]
+Guardrails: Daily -0,29 % | Weekly -0,35 % | DD -1,79 % | VIX ~16 | Käufe 1/2 → ALLE GRÜN
+```
+
+**Positionen Live V1-Check (Alpaca IEX 13:07 ET):**
+- **AAPL**  314,18 $ (Entry 316,86, P/L -0,85 %, chg_today -0,99 %) — Fill-Day+1, mild negativ
+  - V1 291,51 SICHER (+7,78 % Puffer)
+- **JPM**   340,89 $ (Entry 332,78, P/L +2,44 %, chg_today **+1,90 %**) — **Post-Q2-Rally Fortsetzung**, +2,44 % Tages-Reaction
+  - V1 306,16 (post-Blackout Reset) SICHER (+11,34 % Puffer)
+- **UNH**   425,47 $ (Entry 401,57, P/L +5,95 %, chg_today -0,84 %) — Cooldown, Blackout aktiv
+  - V1 381,49 (Blackout -5 %) SICHER (+11,53 % Puffer)
+- **LLY**  1.153,12 $ (Entry 1.193,89, P/L -3,42 %, chg_today **-2,43 %**) — **XLV-Verkaufsdruck Tag 5, ENGSTE Position**
+  - V1 1.098,38 SICHER (+4,98 % Puffer — knappste, aber Puffer minimal aufgeholt vs Open +4,80 %)
+- **GOOGL**  356,82 $ (Entry 368,10, P/L -3,07 %, chg_today +1,22 %) — **Fill-Day+5 Rebound**, Puffer erweitert
+  - V1 338,65 SICHER (+5,36 % Puffer, vs Open +4,17 % deutlich verbessert)
+
+**V1-V4-Check Midday: ALLE 5 POSITIONEN SICHER.**
+- V1 (-8 % / -5 % bei UNH-Blackout): keine Position im Bereich
+- V2 (-12 % vom Posit-Hoch, carry-over): LLY 1.098,71 (Hoch 1.248,53 × 0,88) engste, aktueller Kurs 1.153,12 → SICHER
+- V3 (+20 % TP1): keine Position im Bereich — beste ist UNH bei 481,88 (aktuell 425,47, -11,7 % entfernt)
+- V4 (+35 % TP2): weit entfernt
+
+**Keine Sell-Order platziert. Keine Limit-Order platziert. Pending Orders bleiben 0.**
+
+**Ø P/L über alle 5 Positionen:** +0,21 % | **Beste:** UNH +5,95 % | **Schlechteste:** LLY -3,42 %
+
+**Guardrails Midday (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,287 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,347 % (KW29 Tag 2)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,786 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,786 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,357 %                          [INAKTIV]
+6. VIX-Filter (>30):          ~16-17                                [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH aktiv (V1 381,49)                 [GRÜN operativ]
+8. Max Käufe KW29:            1/2 → Slot 2/2 bleibt OFFEN           [OFFEN]
+```
+
+**Kein ClickUp Alert** (keine Stops ausgelöst, kein Daily Cap erreicht — Routine-Regel: nur bei Ereignis loggen).
+
+**Nächste Routine:** Di 14.07. 16:00 ET Market Close + Tagesbilanz.
 
 ---
 
