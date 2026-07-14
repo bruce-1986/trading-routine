@@ -4,6 +4,119 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-07-14 (Di, KW29 Tag 2) — Guardrails GRÜN, JPM Q2-Earnings TODAY BMO 7:00 AM ET / 8:30 AM Call, JPM V1-Puffer verengt +3,43 %, UNH-Blackout V1 381,49 aktiv, AMD K5-Recheck für Kauf-Slot 2/2 im Open
+
+**Alpaca Clock:** is_open=false, next_open Di 14.07. 09:30 ET, next_close 16:00 ET. Pre-Market-Session aktiv.
+
+**Account Live 08:35 ET (Pre-Market):**
+```
+Equity:            98.529,29 $   (vs Mo-Close 98.587,07 → Daily -0,059 %)  [GRÜN]
+Cash:              58.804,04 $   (59,68 %, unverändert seit AAPL-Fill Mo 11:31 ET)
+Portfolio_MV:      39.725,25 $   (40,32 %, AAPL 9.794,76 + JPM 980,91 + UNH 10.335,36 + LLY 9.440,00 + GOOGL 9.174,88)
+Buying_power:     346.446,86 $
+Trading_blocked:  false | Status: ACTIVE
+Käufe KW29:        1/2 (AAPL Mo gefüllt), Slot 2/2 offen für Kauf-Scan im Open
+Pending Orders:    0
+last_equity Alpaca: 98.562,62 $  (Mo After-Hours-Tick, +/-25 $ Drift vs Memory Mo-Close, akzeptabel)
+```
+
+**Positionen Pre-Market Live (Alpaca 08:35 ET, change_today = vs Mo-Close):**
+| Sym    | Live     | P/L     | Chg_today | V1-Stop        | V1-Puffer | Status |
+|--------|----------|---------|-----------|----------------|-----------|--------|
+| AAPL   | 315,96   | -0,28 % | -0,425 %  | 291,51         | +8,39 %   | SICHER (Fill-Day+1, milder PM-Drift) |
+| JPM    | 326,97   | -1,75 % | **-2,260 %** | **316,14** (Blackout) | **+3,43 %** | SICHER (**verengt**, PM-Drift vor Q2 BMO 7:00 AM ET) |
+| UNH    | 430,64   | +7,24 % | +0,361 %  | **381,49 NEU** (Blackout -5 %) | +12,88 % | SICHER |
+| LLY    | 1.180,00 | -1,16 % | -0,158 %  | 1.098,38       | +7,43 %   | SICHER (XLV-milde) |
+| GOOGL  | 352,88   | -4,13 % | +0,105 %  | 338,65         | +4,20 %   | SICHER (**engste** mit JPM verengt, Fill-Day+5) |
+
+→ **Alle 5 V1 SICHER, keine Pre-Market-Trigger, keine Order pending.**
+→ **JPM Pre-Market -2,26 % ungewöhnlich (Position-Puffer schmilzt von +5,84 % Mo Close auf +3,43 % PM)** — Pre-Earnings-Positioning-Drift oder Leak. V1 316,14 hält, aber jetzt zweit-engste Position nach GOOGL. **ZWINGENDER Watch bei Market Open + Post-BMO-Release 8:30 AM ET Call.**
+→ **UNH V1 381,49 (Blackout -5 %) SICHER +12,88 %** — Aktivierung Mo Close funktioniert wie geplant, Puffer klar reichlich.
+
+**Perplexity Macro Check (Pre-Market Live):**
+```
+VIX Live 14.07.:         Perplexity Date-in-Future-Bug — kein Live-Wert-Retrieval
+                         Suchergebnisse widersprüchlich (15,03-20,95, keine 14.07.-Bestätigung)
+SPY Pre-Market Alpaca IEX: mid 752,21 (bid 752,14 / ask 752,27, ts 12:35 UTC)
+                          → +0,410 % vs Mo-Close 749,13                             [POSITIV — Rebound-Tag]
+VXX Live 08:35 ET:        bid 21,79 (ask 0/leer, thin Pre-Market)                    [~+3,1 % vs Mo, aber unzuverlässig]
+                          → VIX ~16-17 impliziert (Mo Close VXX +3,17 % → Vola-Tick blieb)
+10Y Treasury:             N/A (Perplexity Date-Bug)
+Makro-Events heute:       **JPM Q2 2026 Earnings BMO 7:00 AM ET / Earnings Call 8:30 AM ET CONFIRMED** [JPM IR + Perplexity]
+                          Weitere Fed-Speak/CPI/PPI: keine im Perplexity-Retrieval
+Top-News:                 Perplexity Date-Bug — keine Live-Bewegungs-News
+```
+
+**Sonderfall SPY-PM +0,41 % + JPM Pre-Market -2,26 %:** Marktweiter Rebound, aber JPM-spezifische Schwäche vor eigenem Q2-Release ist auffällig (Pre-Earnings-Skepsis oder De-Risking großer Positionen). Financials-Sektor-Kontext heute wichtig (XLF-Watch im Open).
+
+**Earnings-Blackout-Check (Perplexity Multi-Query 6 Symbole):**
+- **JPM Q2 2026: Di 14.07.2026 BMO 7:00 AM ET / Call 8:30 AM ET CONFIRMED** [JPM IR + Perplexity source 1+3]
+  - **HEUTE Release-Tag** (0 HT bis Earnings, Mo 13.07. war Vortag)
+  - 3-HT-Blackout **AKTIV bis Post-Release 8:30 AM ET Call** → dann Ende
+  - V1 316,14 (-5 %) aktiv, PM-Puffer +3,43 % [VERENGT]
+  - **Post-Release-Task Di 14.07. Pre-Market: V1 zurück auf -8 % (306,16) nach 8:30 AM Call**
+- **UNH Q2 Do 16.07.2026 BMO** — Perplexity nicht bestätigt (Search-Result-Lücke), Memory-Carry-Over Fr 10.07. UNH IR 8 AM ET BMO — **2 HT bis Release** (Di, Mi, Do BMO)
+  - 3-HT-Blackout **AKTIV ab Mo 13.07. Close** — V1 381,49 (-5 %) aktiv, Puffer +12,88 %
+- **LLY Q2 05.08.2026 BMO** — Perplexity nicht bestätigt (NOT_FOUND), Memory-Carry — 16 HT — weit weg
+- **GOOGL Q2 22.07.2026** — Perplexity nicht bestätigt (NOT_FOUND), Memory-Carry — 6 HT — 3-HT-Blackout ab Fr 17.07. Close
+- **AAPL Q3 30.07.2026** — Perplexity NOT_FOUND, Memory-Carry — 12 HT — 3-HT-Blackout ab Fr 24.07. Close (fern)
+- **AMD Q2 (Kauf-Kandidat):** Perplexity NOT_FOUND → **K5-Multi-Source-Recheck Market Open zwingend** (AMD Q2-Earnings typisch Anfang August, aber Bestätigung via Perplexity + AMD IR im Open ZWINGEND vor Kauf-Order)
+
+→ **JPM = HEUTIGES Release-Ereignis, ansonsten nur UNH-Blackout aktiv.**
+→ **Post-JPM-BMO-Update Pre-Market Open ZWINGEND:** V1 316,14 → 306,16 zurücksetzen (nach 8:30 AM Call Release).
+
+**Guardrail-Status Pre-Market (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,059 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,096 % (KW29 Tag 2, Basis Fr 98.621,81) [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,536 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,536 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY-PM +0,410 % (Mo -0,770 %)         [INAKTIV]
+6. VIX-Filter (>30):          ~16-17 (VXX 21,79 thin bid)           [GRÜN]
+7. Earnings-Blackout (3 HT):  JPM RELEASE TODAY, UNH aktiv           [GRÜN operativ, 2 Positionen -5 %-Tightening]
+8. Max Käufe KW29:            1/2 → SLOT 2/2 VERFÜGBAR              [OFFEN]
+```
+→ **STATUS: ALLE 8 GRÜN, Kauf-Fenster für Market Open 09:30 ET OFFEN.**
+
+**Watchlist KW29 Kauf-Slot 2/2 (Kauf-Fenster ab Market Open 09:30 ET):**
+```
+Sym    Close Mo    Ranking KW29                                       K5-Recheck Status
+AMD    533,69     LEAD-Kandidat 3/3 K1-K3 (RS_63d +107,26 %)          K5 + Earnings-Blackout ZWINGEND im Open
+CAT    931,96     Backup 2/3 K2-Fail (RSI 46,87 knapp)                 K2-Recheck im Open
+NVDA   203,49     Backup 2/3 K3-Fail (RS -2,54 %)                      RS-Verbesserung watchen
+TSLA   394,86     2/3 K2-Fail (RSI 47,30)                              Backup-only
+```
+
+→ **Entscheidung Market Open 09:30 ET:** AMD K1-K5-Live-Recheck via Alpaca 259d Bars + Perplexity Multi-Source FwdPE/RevGrowth + AMD-Q2-Earnings-Datum (Blackout-Check zwingend, AMD-Earnings Anfang August typisch). Wenn K5 grün + kein Blackout → Kauf-Order Slot 2/2; sonst kein Kauf.
+
+**Datenqualitäts-Hinweise:**
+- Alpaca IEX SPY 752,21 Pre-Market als Ground-Truth
+- VXX bid-only 21,79 (ap=0 leer im Pre-Market, thin) → VIX-Referenz aus Mo-Close-Range 16-17 gehalten
+- Perplexity Date-in-Future-Bug bei Live-Werten VIX/SPY reproduziert — Alpaca-Fallback erfolgreich
+- Perplexity Earnings-Multi-Query: JPM Q2 CONFIRMED BMO 7:00 AM ET / 8:30 AM Call, andere NOT_FOUND (Suchergebnis-Lücke) → Memory-Carry-Over für UNH/LLY/GOOGL/AAPL/AMD genutzt
+- Alpaca `equity` 98.529,29 (Live PM); `last_equity` 98.562,62 (Mo After-Hours-Tick -24,45 $ vs Memory Mo-Close 98.587,07)
+- Position-Quotes /v2/positions als Pre-Market-Referenz (Alpaca IEX kein STO-PM-Feed)
+
+**ClickUp:** Routine-Log Prio 4 (Low, alle Guardrails GRÜN). Bei Tier-Limit ITEM_246 Fallback auf PushNotification.
+
+**Entscheidung Market Open 09:30 ET:**
+- **Kauf-Scan AKTIV** (Slot 2/2 verfügbar, alle Guardrails GRÜN)
+- **AMD K1-K5-Live-Recheck** (Alpaca Bars + Perplexity K5 + Earnings-Blackout-Check ZWINGEND)
+- **JPM Live-Watch bei < 316,14** → sofort V1-Market-Sell (PM-Puffer nur +3,43 %, zweit-engste)
+- **Post-JPM-BMO-Release-Update V1 316,14 → 306,16** nach Earnings-Call 8:30 AM ET (dann Blackout-Ende)
+- **GOOGL Live-Watch — engste Position** (V1-Puffer +4,20 %)
+- **UNH V1 381,49 hält** (+12,88 % Puffer, Blackout-Aktivierung Mo Close erfolgreich)
+
+**Zwingende Watch-Punkte Market Open:**
+1. JPM Q2 Earnings-Release 7:00 AM ET / Call 8:30 AM ET Reaction — Pre-Market-Puffer nur +3,43 %
+2. AMD K5 Multi-Source (FwdPE, RevGrowth) + Earnings-Blackout-Check zwingend
+3. GOOGL V1 338,65 engste Position (+4,20 % Puffer)
+4. Post-JPM-Release V1-Update auf 306,16
+
+**Nächste Routine:** Di 14.07. 09:30 ET Market Open (KW29 Tag 2, **JPM Q2-Earnings-Reaction post-8:30 AM Call**, AMD K5-Scan + Kauf-Entscheidung Slot 2/2, JPM-V1-Post-Release-Update 316,14 → 306,16).
+
+---
+
 ## Market Close 16:02 ET — 2026-07-13 (Mo, KW29 Tag 1) — Tagesbilanz, UNH-Blackout AKTIVIERT V1→381,49, Alpha +0,73 % dank AAPL-Outperform vs XLK -2,44 %
 
 **Alpaca Clock:** is_open=false, next_open Di 14.07. 09:30 ET, next_close 16:00 ET.
