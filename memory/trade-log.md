@@ -6,16 +6,18 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Live 15.07. 09:42 ET   | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Close 15.07. 16:02 ET  | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
 |--------|------------|-------------|------------------------|-----------------------|-----------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 349,38 $               |  +49,80 $ (+4,99 %)   | 306,16 $        | 399,34 $    | 449,25 $    | V1-V6 SICHER (Post-Q2-Rally Tag 3, XLF-Outperform) |
-| UNH    | 2026-06-18 | 401,57 $    | 418,05 $               | +395,52 $ (+4,10 %)   | **381,49 $**⚠   | 481,88 $    | 542,12 $    | V1-V6 SICHER (Blackout -5 % letzter Tag bis Do 16.07. BMO) |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.142,80 $             | -408,72 $ (-4,28 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (**engste +4,04 %**, RSI 49,90 gekippt, XLV-Watch) |
-| GOOGL  | 2026-07-07 | 368,10 $    | 364,19 $               | -101,63 $ (-1,06 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V6 SICHER (+7,54 %, Fill-Day+7 Rebound) |
-| AAPL   | 2026-07-13 | 316,86 $    | 319,15 $               |  +71,10 $ (+0,72 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V6 SICHER (Fill-Day+2 Rebound, +9,48 %) |
-| **GS** | 2026-07-15 | 1.141,74 $  | 1.140,38 $             |  -10,95 $ (-0,12 %)   | **1.050,40 $**  | 1.370,09 $  | 1.541,35 $  | V1-V6 SICHER (**Fill-Day+0**, alle 5 K-Signale grün, RS #1 +18,55 %) |
+| JPM    | 2026-06-17 | 332,78 $    | 346,91 $               |  +42,39 $ (+4,25 %)   | 306,16 $        | 399,34 $    | 449,25 $    | V1-V6 SICHER (Post-Q2-Rally Tag 3 neues Positions-Hoch, +0,54 % vs XLF, +13,31 %) |
+| UNH    | 2026-06-18 | 401,57 $    | 418,40 $               | +403,92 $ (+4,19 %)   | **381,49 $**⚠→**369,44** Do BMO | 481,88 $ | 542,12 $ | V1-V6 SICHER (Blackout-Cooldown letzter Tag, **Q2 morgen 16.07. BMO → V1-Reset 369,44 zwingend**) |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.156,19 $             | -301,58 $ (-3,16 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (**engste +5,26 %**, RSI 50,37 REKONVERTIERT, XLV +0,03 % neutralisiert, chg +0,32 % positives Reversal) |
+| GOOGL  | 2026-07-07 | 368,10 $    | 371,11 $               |  +78,29 $ (+0,82 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V6 SICHER (+9,58 %, Fill-Day+7 Rebound Tag 2, **P/L erstmals grün seit Fill**, +1,53 % vs XLC) |
+| AAPL   | 2026-07-13 | 316,86 $    | 327,64 $               | +334,29 $ (+3,40 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V6 SICHER (**Tages-Sieger chg +4,08 %**, Fill-Day+2 XLK-Rebell +5,18 % relativ, +12,39 %) |
+| **GS** | 2026-07-15 | 1.141,74 $  | 1.151,93 $             |  +81,49 $ (+0,89 %)   | **1.050,40 $**  | 1.370,09 $  | 1.541,35 $  | V1-V6 SICHER (**Fill-Day+0 P/L grün**, chg +1,05 %, +9,67 %, Fill-Day-Drop-Muster nicht ausgelöst) |
 
-**Gesamt investiert:** 48.706,31 $ (Marktwert Alpaca Live 15.07. 09:42 ET) | **Cash:** 49.670,09 $ | **Positionen:** 6/8 | **Käufe KW29:** 2/2 LOCK (AAPL 13.07. + GS 15.07.)
+**Gesamt investiert:** 49.352,99 $ (Marktwert Alpaca Close 15.07. 16:02 ET) | **Cash:** 49.670,09 $ | **Positionen:** 6/8 | **Käufe KW29:** 2/2 LOCK (AAPL 13.07. + GS 15.07., bis Mo 20.07. KW30)
+
+_Market Close 15.07. 16:02 ET Update: **Alle 6 Positionen V1-V6 SICHER**, keine Stops ausgelöst, keine Sell-Order platziert. Daily P/L +0,668 % (Equity 99.023,08 vs Alpaca last_equity 98.365,51) [GRÜN, Cap -3 %]. SPY +0,376 % → **Alpha +0,292 %** [POSITIV — Umkehr vs Di -0,54 %]. **Beste chg:** AAPL +4,08 % (XLK -1,10 % Sektor-Loser → +5,18 % relativer Outperform, Fill-Day+2). **Schlechteste chg:** UNH -1,60 % (Blackout-Cooldown letzter Tag pre-Q2). **Beste P/L:** JPM +4,25 % (Post-Q2 Tag 3 neues Positions-Hoch). **Engste V1-Position:** LLY +5,26 % Puffer (VERBESSERT vs Midday +4,16 %, RSI 50,37 rekonvertiert von 49,90). GOOGL/GS **erstmals P/L grün**. Weekly KW29 +0,407 % (Tag 3), DD -1,043 %, VIX ~15-16 (VXX -2,89 %). Alle 8 Guardrails GRÜN. ClickUp ITEM_246 Tag 3 → PushNotification an Owner. Nächster Check: Do 16.07. 08:30 ET Pre-Market (UNH Q2 BMO → V1 Reset 369,44 zwingend)._
 
 _Midday 15.07. 13:07 ET Update: **Alle 6 Positionen V1-V4 SICHER**, keine Stops ausgelöst, keine Sell-/Limit-Order platziert. Equity 98.840,56 (Daily **+0,483 %** vs Alpaca last_equity 98.365,51) [GRÜN, Cap -3 %]. SPY +0,411 % → **Alpha +0,072 %** (leicht positiv, AAPL/GOOGL/JPM-Rebound trägt vs LLY-XLV-Schwäche). **Beste chg_today:** AAPL +4,08 % (Fill-Day+2 Rebound, P/L +3,41 % erstmals grün), GOOGL +3,52 % (Fill-Day+7 P/L erstmals grün +1,10 %). **Schlechteste chg_today:** UNH -1,34 % (Blackout-Cooldown letzter Tag). **Engste V1-Position:** LLY +4,16 % Puffer (1.144,03 vs 1.098,38, XLV-Watch weiter aktiv) — leicht besser als Open +4,04 %. GS Fill-Day+0 mildes Drop -0,78 % (Muster AVGO/MU/LLY-abgemildert, kein Stop-Risk). Weekly KW29 +0,222 % (Tag 3), DD -1,225 %, VIX ~17. Alle 8 Guardrails GRÜN, Käufe 2/2 LOCK. Kein ClickUp-Alert (keine Ereignis-Trigger). Nächster Check: Mi 15.07. 16:00 ET Market Close._
 
@@ -27,7 +29,21 @@ _Market Close 14.07. 16:02 ET Update: **Alle 5 Positionen V1-V6 SICHER**, keine 
 
 ## Offene Orders (pending)
 
-_Keine offenen Orders — GS-Order 495b1c15 vollständig gefüllt 09:41:18 ET (4 sec nach Submit)._
+_Keine offenen Orders — GS-Order 495b1c15 vollständig gefüllt 09:41:18 ET Mi (4 sec nach Submit)._
+
+_Market Close 15.07. 16:02 ET: **V5/V6-Check alle 6 SICHER** (EMA50>EMA200 überall, RSI max 69,39 AAPL << 80-Threshold; alle RS_4w vs SPY positiv → V6 verlangt BEIDES, nicht ausgelöst). **Keine Limit-Order für Do 16.07.** LLY-Positive-Reversal: engste V1-Position +5,26 % Puffer (Verbesserung vs Midday +4,16 %), RSI(14) rekonvertiert 49,90→50,37 (Momentum-Neutralisierung überwunden), XLV +0,03 % neutralisiert nach 6 Tagen Schwäche → Pre-Market-Watch Do reduziert. **UNH-Blackout endet Do BMO** nach Q2-Release: V1-Reset von **381,49 (-5 %) → 369,44 (-8 %, 401,57×0,92)** zwingend nach Post-Release-Bestätigung. Weekly Loss Cap KW29 Tag 3 = +0,407 % [GRÜN, Cap -5 % weit entfernt] → keine Weekly-Cap-Aktion._
+
+_**V5/V6 Signal-Details alle 6 SICHER (Alpaca 271d Bars):** AAPL EMA50 297,57 > EMA200 271,39 ✓ (Spread +26,18), RSI 69,39 (höchste, aber <80), RS_4w +10,47 %; JPM EMA50 321,86 > EMA200 309,57 ✓ (Spread +12,29 engste), RSI 67,34, RS_4w +8,56 %; UNH EMA50 396,98 > EMA200 350,40 ✓ (Spread +46,58), RSI 53,31, RS_4w +1,72 %; LLY EMA50 1112,84 > EMA200 984,04 ✓ (Spread +128,80), RSI 50,37 rekonvertiert, RS_4w +2,38 %; GOOGL EMA50 359,53 > EMA200 314,21 ✓ (Spread +45,32), RSI 56,84, RS_4w +0,48 %; GS EMA50 1023,85 > EMA200 906,36 ✓ (Spread +117,49), RSI 68,78, RS_4w +6,89 %._
+
+_**Watchlist Do 16.07. + KW30-Slot-Vorbereitung (Käufe KW29 LOCK 2/2 bis Mo 20.07.):** Zwei 3/3 K1-K3 LEADS im Alpaca-Screener (12 Symbole): **V 355,31** (K1 +1,84 marginal ✓, RSI 64,10 ✓, RS_63d +4,51 % ✓ — K5 Median ~25 grün, aber Q3 ~28.07. AMC → **Blackout ab 23.07. Close aktivierbar**, Kauf-Fenster nur Mo-Mi 20.-22.07.); **PANW 353,99** (K1 +59,19 ✓, RSI 66,09 ✓, RS_63d **+109,47 %** #1 — K5-Multi-Source-FwdPE zwingend, Cybersecurity typisch > 35 wie AMD-Reject-Analogie). **AMD gesperrt** (K5-Fail Di dokumentiert). **NVDA verschlechtert** Mi 2/3 K3-Fail (-1,47 %) vs Di 3/3 (+2,30 %) durch XLK-1,10 % Tag heute. META/AMZN 2/3-Fail RS negativ. **Slot LOCK bis Mo 20.07. KW30** — bis dahin nur Beobachtung. Perplexity Watchlist-Query "Zukunftsdatum"-Refusal → Alpaca-Fallback._
+
+_Nächster Check: Do 16.07. 08:30 ET Pre-Market Check — **UNH Q2 BMO 7:00 AM ET → V1 Reset 369,44 nach Release zwingend**, LLY V1 1.098,38 +5,26 % Puffer engste (RSI rekonvertiert), GS Fill-Day+1 V1 1.050,40 +9,67 %, AAPL XLK-Divergenz-Fortsetzung, V/PANW K5-Vorbereitung._
+
+_**14.07. 16:02 ET Vorgängerstand carry-over — V5/V6 alle 5 SICHER:** AAPL EMA50 295,54 > EMA200 271,13 (Spread +24,41), RSI 64,92; JPM Spread +12,19, RSI 59,30; UNH Spread +48,15, RSI 61,70; LLY Spread +128,16, RSI 56,39; GOOGL Spread +44,89, RSI 44,02, RS_4w -3,31 % (V6 verlangt BEIDES → nicht ausgelöst)._
+
+---
+
+_Vorherige Order-Historie (carry-over):_
 
 _Market Close 14.07. 16:02 ET: **V5/V6-Check alle 5 SICHER** (EMA50>EMA200 überall, RSI max 64,76 JPM << 80-Threshold; GOOGL RSI 49,45 + RS_4w -1,41 % erfüllt Teil-Bedingung V6 aber RSI << 80). **Keine Limit-Order für Mi 15.07.** LLY-Sonderfall: engste V1-Position +5,09 % Puffer, RSI(14) auf 49,90 gekippt (Momentum-Neutralisierung), XLV -1,92 % Tag 6 → Pre-Market-Watch Mi zwingend, aber V1 1.098,38 aktuell noch komfortabel. **UNH-Blackout weiter aktiv** bis Do 16.07. BMO (V1 381,49, Puffer +11,60 %). Weekly Loss Cap KW29 Tag 2 = -0,225 % [GRÜN, Cap -5 % weit entfernt] → keine Weekly-Cap-Aktion._
 
