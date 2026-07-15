@@ -4,6 +4,87 @@
 
 ---
 
+## Pre-Market 08:36 ET — 2026-07-15 (Mi, KW29 Tag 3) — Guardrails GRÜN, LLY V1-Puffer +4,97 % engste, UNH-Blackout aktiv bis Do BMO, Slot 2/2 offen für NVDA/V/GS K5-Recheck (GS Q2 Di RELEASED — kein Blackout)
+
+**Alpaca Clock:** is_open=false, next_open Mi 15.07. 09:30 ET (in ~54 Min).
+
+**Account Pre-Market 08:36 ET:**
+```
+Equity:            98.179,42 $   (Alpaca Live, vs last_equity 98.365,51 → Daily -0,189 %)  [GRÜN]
+Cash:              58.804,04 $   (59,89 %, unverändert seit AAPL-Fill Mo)
+Portfolio_MV:      39.374,16 $   (40,11 %, AAPL 9.826,07 + JPM 1.035,89 + UNH 9.988,08 + LLY 9.223,92 + GOOGL 9.300,20)
+Buying_power:     345.467,23 $
+Käufe KW29:        1/2 | Slot 2/2 OFFEN (NVDA/V/GS K5-Recheck aktiv)
+Pending Orders:    0 (keine V-Trigger, kein Sell/Limit für heute)
+```
+
+**Positionen Live V1-Check (Alpaca 08:36 ET, alle 5 SICHER):**
+
+| Sym    | Curr     | P/L      | vs Close Di | V1-Stop  | V1-Puffer | Status |
+|--------|----------|----------|-------------|----------|-----------|--------|
+| AAPL   |  316,97  |  +0,04 % |  +0,674 %   | 291,51   | +8,73 %   | SICHER (Fill-Day+2 Rebound) |
+| JPM    |  345,30  |  +3,76 % |  +0,871 %   | 306,16   | +12,78 %  | SICHER (Post-Q2-Rally Tag 3) |
+| UNH    |  416,17  |  +3,64 % |  -2,251 %   | 381,49⚠  | +9,09 %   | SICHER (Blackout -5 % aktiv, -2,25 % Pre-Market-Drift) |
+| LLY    | 1.152,99 |  -3,43 % |  -0,111 %   | 1.098,38 | +4,97 %   | SICHER (**engste**, RSI-Erholung abwarten) |
+| GOOGL  |  357,70  |  -2,83 % |  -0,498 %   | 338,65   | +5,63 %   | SICHER (Fill-Day+7) |
+
+**Marktdaten Pre-Market:**
+- SPY Live 08:32 ET: **753,46** (vs Di-Close 751,94 = **+0,202 %**)
+- VXX letzter Trade Di EOD: 21,48 (Pre-Market thin, keine neue Referenz)
+- VIX (Perplexity): **17,16** (weit unter Filter-Schwelle 30) [GRÜN]
+- US 10Y Treasury: nicht extrahierbar (Perplexity Date-Bug typisch Pre-Market)
+- Makro-Events heute: keine Major-Releases identifiziert (Perplexity leer)
+- Top-News heute: keine dominanten Einzel-News Pre-Market
+
+**Guardrail-Status Pre-Market (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,189 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,449 % (KW29 Tag 3, Basis Fr 98.621,81)  [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,886 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,886 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,202 % Pre-Market               [INAKTIV]
+6. VIX-Filter (>30):          17,16 (Perplexity confirmed)          [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH V1 381,49 aktiv (Q2 Do 16.07. BMO)[GRÜN operativ]
+8. Max Käufe KW29:            1/2 → Slot 2/2 OFFEN                   [OFFEN]
+```
+
+**Earnings-Blackouts Update (Perplexity + Memory-Cross-Check):**
+- **UNH Q2 Do 16.07.2026 BMO CONFIRMED** — Blackout **letzter Tag** heute Mi 15.07., V1 381,49 aktiv (+9,09 % Puffer)
+- **JPM Q2 Di 14.07. RELEASED** — kein Blackout mehr, V1 306,16 (-8 %), Puffer +12,78 %
+- **GS Q2 Di 14.07. BMO RELEASED** (Perplexity: "14.07.2026 vor Börsenöffnung 7:30 AM ET") — **kein Blackout** für GS-Kauf-Prep, RS_63d +18,55 % ist Post-Q2-Rally-Signal
+- LLY Q2 05.08. | GOOGL Q2 22.07. | AAPL Q3 30.07. — alle > 3 HT weg
+- NVDA Q2 typisch Aug/Nov — K5-Recheck-Task für Market Open (Blackout-Fenster prüfen)
+- V Q3 FY26 typisch Ende Juli — K5-Recheck-Task für Market Open
+
+**Perplexity-Datenqualität-Hinweise:**
+- VIX 17,16 einzige verwertbare Live-Zahl (SPY-PM/10Y/Makro/News leer)
+- Alpaca IEX SPY 753,46 als Ground-Truth für Pre-Market-Bewegung
+- JPM-Earnings-Doppel-Report von Perplexity (JA 16.07.) ist Date-Bug — Memory JPM Q2 Di 14.07. RELEASED (Post-Rally +2,87 %) hat Vorrang
+- GS Q2 Datum-Recheck zeigt Di 14.07. BMO → Perplexity-Cross-Bug aufgelöst
+
+**Watchlist Slot 2/2 KW29 (K5-Recheck-Priorität für Market Open 09:30 ET):**
+1. **NVDA 211,79** (Close Di) — 3/3 K1-K3 LEAD, K5 zwingend: FwdPE ≤ 35 + RevGrowth ≥ 10 % + Earnings-Blackout-Check
+2. **V 356,01** (Close Di) — 3/3 K1-K3 LEAD (K1 +1,41 marginal), K5 zwingend
+3. **GS 1141,87** (Close Di) — 3/3 K1-K3 LEAD, K5 zwingend + **Konzentrations-Check vs JPM** (2. XLF-Financial nach LLY+UNH XLV-Cluster-Learning)
+4. AMD 548,16 gesperrt (K5 FwdPE > 35 Multi-Source Di-Reject terminal)
+
+**Zwingende Watch-Punkte Market Open 09:30 ET:**
+1. **LLY V1 1.098,38 +4,97 % Puffer engste** — Break unter 1.098,38 löst V1-Market-Sell
+2. **UNH V1 381,49 Blackout-Puffer +9,09 %** — letzter Tag vor Q2 Do BMO
+3. **GOOGL V1 338,65 +5,63 % zweitengste** — Fill-Day+7 Watch
+4. **NVDA/V/GS K5-Multi-Source-Recheck** vor Kauf-Order (FwdPE + RevGrowth + Earnings-Blackout + GS-Konzentration)
+5. AAPL/JPM Post-Rally-Weiterlauf (V1-Puffer beide > +8 %)
+
+**Entscheidung Pre-Market:**
+- **No-Op Positionsseite** (alle 5 V1 SICHER, keine Sell-Order)
+- **Kauf-Scan AKTIV bei Market Open 09:30 ET** (Slot 2/2 offen, Guardrails alle GRÜN, keine Crash/VIX-Sperre, kein Weekly-Cap-Trigger)
+
+**ClickUp:** Routine-Log Prio 4 (Low) — fallback PushNotification bei ITEM_246 Tier-Limit.
+
+**Nächste Routine:** Mi 15.07. 09:30 ET Market Open (KW29 Tag 3, NVDA/V/GS K5-Recheck für Slot 2/2, LLY V1-Watch engste, UNH-Blackout-Letzter-Tag).
+
+---
+
 ## Market Close 16:02 ET — 2026-07-14 (Di, KW29 Tag 2) — Tagesbilanz, V5/V6 alle SICHER, LLY engste V1 +5,09 % (RSI 49,90 gekippt), Watchlist Mi: NVDA/V/GS 3/3 K1-K3
 
 **Alpaca Clock:** is_open=false, next_open Mi 15.07. 09:30 ET.
