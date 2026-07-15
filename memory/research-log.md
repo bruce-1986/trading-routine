@@ -4,6 +4,128 @@
 
 ---
 
+## Market Open 09:42 ET — 2026-07-15 (Mi, KW29 Tag 3) — GS 8 Sh @ 1.141,74 GEFÜLLT, Slot 2/2 KW29 verbraucht, alle 5 K-Signale grün, Käufe-LOCK
+
+**Alpaca Clock:** is_open=true, next_close 15.07. 16:00 ET.
+
+**Account Post-Fill 09:42 ET:**
+```
+Equity:            98.376,40 $   (vs Alpaca last_equity 98.365,51 → +0,011 %)              [GRÜN]
+Cash:              49.670,09 $   (50,49 %, -9.133,95 vs Open durch GS-Fill)
+Portfolio_MV:      48.706,31 $   (49,51 %, 6 Positionen)
+Buying_power:     335.058,02 $
+Käufe KW29:        **2/2 LOCK** (AAPL Mo + GS Mi)                                          [LOCK]
+Pending Orders:    0 (GS-Order vollständig gefüllt)
+```
+
+**SPY-Ground-Truth:** Alpaca IEX SPY 754,84 vs Di-Close 751,94 → **+0,386 %**. Alpha vs SPY = +0,011 % − (+0,386 %) = **-0,375 %** [leicht negativ, aber GS Fill-Day-Effekt einbezogen].
+
+**Positionen Post-Fill Live 09:42 ET:**
+| Sym    | Live      | P/L      | Chg_today | V1-Stop         | V1-Puffer | Status |
+|--------|-----------|----------|-----------|-----------------|-----------|--------|
+| AAPL   |   319,15  |  +0,72 % |  +1,363 % | 291,51          | +9,48 %   | SICHER (Fill-Day+2 Rebound, XLK-Recovery) |
+| JPM    |   349,38  |  +4,99 % |  +1,893 % | 306,16          | +14,12 %  | SICHER (Post-Q2 Rally Tag 3, +2,11 % vs XLF) |
+| UNH    |   418,05  |  +4,10 % |  -1,679 % | 381,49⚠         | +9,58 %   | SICHER (Blackout letzter Tag bis Do 16.07. BMO) |
+| LLY    | 1.142,80  |  -4,28 % |  -0,845 % | 1.098,38        | **+4,04 %** | SICHER (**engste**, RSI 49,90 gekippt, XLV-Watch Tag 7) |
+| GOOGL  |   364,19  |  -1,06 % |  +1,302 % | 338,65          | +7,54 %   | SICHER (Fill-Day+7 Rebound, XLC-Outperform) |
+| **GS** | 1.140,38  |  -0,12 % |  +0,033 % | **1.050,40 NEU**| +8,57 %   | SICHER (**Fill-Day+0**, alle 5 K-Signale grün) |
+
+→ **Alle 6 V1-V6 SICHER.** LLY +4,04 % neu engste (verengt von PM +4,97 %).
+
+**GS KAUF-Details (Slot 2/2 KW29 GEFÜLLT):**
+- Limit-Order 1.147,58 $ Day (+0,5 % über Di-Close 1.141,87)
+- Submit 09:41:14 ET → Fill **09:41:18 ET** (4 sec, sehr schneller Fill)
+- 8/8 Sh @ **1.141,74375 avg** (unter Limit — Post-Submit-Dip auf 1.140,24 hat gefüllt)
+- Investiert 9.133,95 $ (9,28 % Portfolio)
+- V1 1.050,40 | TP1 1.370,09 | TP2 1.541,35
+- Alpaca Order-ID: 495b1c15-9346-4b97-a2f4-7278773753c3
+
+**K1-K5 GS validiert (Alpaca 270d Bars 2025-06-16 → 2026-07-14 + Perplexity K5):**
+```
+K1 EMA50 1.018,62 > EMA200 903,90 → Spread +114,73     ✓ (Golden Cross sehr breit)
+K2 RSI(14) Wilder 67,63                                 ✓ (50-70 Fenster, knapp oben)
+K3 RS_63d = GS +28,16 % - SPY +9,61 % = +18,55 %       ✓ (bester Screener-Wert)
+K4 Intraday 10min IEX 11.126 Sh, extrap 434k IEX/Tag   ✓ (~606 % Avg20 IEX 71.632)
+K5 FwdPE 14,74 / 17,04 / 17,53 / 16,66 → Median ~17    ✓ (klar ≤ 35, 51 % Puffer)
+   Rev-Growth Q2 2026 (Umsatz $20,34 Mrd 14.07.)        ✓ (Konsens +11,81 % YoY)
+   Q3 Earnings ~Mitte Oktober = >60 HT weg              ✓ (kein Blackout)
+```
+
+**Konkurrenz-Kandidaten K5-Recheck:**
+
+**NVDA (Live 211,65 -0,07 % vs Di):**
+- Perplexity Multi-Source FwdPE: 34,33 [GuruFocus heute] / 20,40 [StockAnalysis 2026-07-10] / 40,78 [ValueInvesting.io]
+- **Range 20,40-40,78 (Median 34,33)** — grenzwertig ≤ 35, aber Multi-Source-Uncertainty ±5-10 um Cap
+- Analogie AMD Di 14.07.: FwdPE 35,72-68,65 Multi-Source → K5-Reject
+- **NVDA-Verdikt: konservativ REJECT** (Bot-Persona "konservativ bei Unsicherheit" + K5-Cap-Nähe wie AMD-Muster)
+- Revenue Growth Q1 FY2026 +122,40 % ✓, aber K5-Bewertung dominiert
+- NVDA Q2 FY2026 typisch Ende August — kein Blackout aktuell
+
+**V (Live 353,56 -0,69 % vs Di):**
+- Perplexity Multi-Source FwdPE: 24,88 [Yahoo] / 22,78 [StockAnalysis] / 25,33 [ValueInvesting.io] / 21,28 [Intellectia 2026-06-14] / 30,15 [Eulerpool 2026-07-01] / 25,60 [LYNX 2026-07-03]
+- **Range 21,28-30,15 (Median ~25)** — klar ≤ 35 ✓ (K5-FwdPE-Puffer 29 % zu Cap)
+- Revenue Growth Q letztes gemeldet: +17,10 % YoY ✓
+- V Q3 FY26 Earnings: **~28.07.2026 AMC** (historischer Rhythmus letzter Dienstag Juli, Perplexity nicht explizit bestätigt via V IR) = **9 HT ab heute**
+- **3-HT-Blackout ab 23.07. Close aktivierbar** → V1-Stop-Tightening auf -5 % ab dann zwingend
+- **V-Verdikt: K5-grün, aber Earnings-Blackout-Risiko in 8 HT nach Kauf** vs GS (kein Blackout)
+
+**Warum GS vor V/NVDA gewählt:**
+1. **GS RS_63d +18,55 %** deutlich vor V (+5,47 %) und NVDA (+2,30 %) — Bot-Rule "höchste RS + alle Signale grün"
+2. **GS K5-FwdPE-Puffer** (Median 17 vs Cap 35 = 51 % Puffer) deutlich robuster als NVDA (34,33 vs 35 = <2 % Puffer) und breiter als V (25 vs 35 = 29 %)
+3. **GS Post-Q2-Momentum** (Q2 released 14.07., Umsatz-Beat, chg heute +0,86 % vs SPY +0,39 % Sektor-Outperform)
+4. **GS kein Earnings-Blackout in Sicht** (Q3 ~Mitte Oktober) vs V (9 HT weg → Blackout aktivierbar)
+5. **XLF-Konzentrations-Check bestanden:** JPM (1.048 = 1,07 %) + GS (9.123 = 9,27 %) = 10,34 % Portfolio, weit unter 30 %-Cap, 2 Positionen ≤ 3-Cap
+
+**Guardrail-Status Post-Fill (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     +0,011 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,249 % (KW29 Tag 3)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,689 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,689 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,386 %                          [INAKTIV]
+6. VIX-Filter (>30):          17,16 (Perplexity PM confirmed)        [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH V1 381,49 aktiv (letzter Tag)     [GRÜN operativ]
+8. Max Käufe KW29:            **2/2 LOCK** (AAPL Mo + GS Mi)         [LOCK]
+```
+
+**Sektor-Zusammensetzung Post-Fill (6 Positionen):**
+```
+XLK: AAPL 9.894 = 10,05 %
+XLC: GOOGL 9.469 = 9,62 %
+XLF: JPM 1.048 + GS 9.123 = 10.171 = 10,34 %  (2/3 Pos, unter 30 % ✓)
+XLV: UNH 10.033 + LLY 9.142 = 19.175 = 19,49 %  (2/3 Pos, unter 30 %)
+Cash: 49.670 = 50,49 %  (reichliche Reserve)
+Total invested: 49,51 % (unter 80 %-Cap)
+```
+
+**Zwingende Watch-Punkte Midday 13:00 ET:**
+1. **LLY V1 1.098,38 Puffer +4,04 %** engste Position — RSI 49,90 gekippt, XLV-Tag-7-Trend, Break unter 1.098,38 löst V1-Market-Sell
+2. **GS Fill-Day+0 Watch** — V1 1.050,40 +8,57 % noch komfortabel, aber Fill-Day-Drop-Muster (AVGO/MU/GOOGL-Divergenz) beachten
+3. **UNH V1 381,49 letzter Tag** — Blackout endet Do 16.07. BMO nach Q2-Release; Puffer +9,58 %
+4. **AAPL/JPM Post-Rally-Fortsetzung** — beide V1 komfortabel > +9 % Puffer
+5. **GOOGL Fill-Day+7 Rebound-Fortsetzung** — V1 +7,54 % erweitert vs Di +6,15 %
+
+**Datenqualität:**
+- Alpaca IEX Live-Trades 09:37-09:42 ET für 5 Positionen + GS + SPY + V + NVDA
+- Alpaca 270d Daily-Bars GS (Bar-Count validiert 270) + SPY (270) 2025-06-16 → 2026-07-14 mit adjustment=split — EMA50/EMA200 + Wilder RSI(14) full-history
+- Alpaca 1Min Intraday-Bars GS 09:30-09:39 (10 Bars) für K4-Volumen-Extrapolation
+- Perplexity K5 GS: 4 unabhängige FwdPE-Quellen + GS-Pressroom Q2-2026-Release Text
+- Perplexity K5 NVDA: 3 unabhängige FwdPE-Quellen (Range 20,40-40,78)
+- Perplexity K5 V: 6 unabhängige FwdPE-Quellen (Range 21,28-30,15, robust)
+- Alpaca account.equity 98.376,40 Post-Fill; last_equity 98.365,51
+
+**ClickUp:** POST /list/{id}/task → HTTP 403 OAuth-023 "Team(s) not authorized" — **neue Fehler-Klasse** vs Di ITEM_246 Tier-Limit HTTP 400. Fallback: **PushNotification an Owner erfolgreich versendet** mit BUY-Details.
+
+**Entscheidung Market Open 15.07.:**
+- **KAUF GS 8 Sh @ 1.141,74 GEFÜLLT** (Slot 2/2 KW29 verbraucht, Käufe-LOCK bis Mo 20.07. KW30)
+- **NVDA REJECT** (K5-FwdPE Uncertainty 20-41 wie AMD-Muster)
+- **V REJECT** (Earnings-Blackout-Risiko in 8 HT nach Kauf, GS besseres Profil)
+- **Alle 6 Positionen V1-V6 SICHER**, keine Sell-Order
+
+**Nächste Routine:** Mi 15.07. 13:00 ET Midday Stop-Check (**LLY V1 1.098,38 +4,04 % engste RSI-gekippt-Watch**, GS Fill-Day+0-Muster-Watch, UNH-Blackout letzter Tag, AAPL/JPM/GOOGL Post-Rally-Fortsetzung).
+
+---
+
 ## Pre-Market 08:36 ET — 2026-07-15 (Mi, KW29 Tag 3) — Guardrails GRÜN, LLY V1-Puffer +4,97 % engste, UNH-Blackout aktiv bis Do BMO, Slot 2/2 offen für NVDA/V/GS K5-Recheck (GS Q2 Di RELEASED — kein Blackout)
 
 **Alpaca Clock:** is_open=false, next_open Mi 15.07. 09:30 ET (in ~54 Min).
