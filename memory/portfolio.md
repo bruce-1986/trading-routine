@@ -1,6 +1,68 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-15 09:42 ET (Market Open Mi KW29 Tag 3, **GS 8 Sh @ 1.141,74 GEFÜLLT** Slot 2/2 KW29 belegt, alle 5 K-Signale grün, Käufe 2/2 KW29 LOCK, Cash 49.670,09 → 50,49 %, Positionen 6/8, LLY V1-Puffer +4,04 % engste, ClickUp 403 OAuth-Error → PushNotification-Fallback)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-15 13:07 ET (Midday Mi KW29 Tag 3, alle V1-V4 SICHER, keine Stops, Equity 98.840,56 Daily +0,48 % GRÜN, LLY +4,16 % V1-Puffer engste, GS Fill-Day+0 P/L -0,78 %)
+
+---
+
+## Midday 2026-07-15 13:07 ET (Mi, KW29 Tag 3) — Alle V1-V4 SICHER, keine Stops ausgelöst, Daily +0,48 % GRÜN, Post-Fill GS-Watch stabil
+
+```
+Alpaca clock:      is_open=true | next_close 15.07. 16:00 ET
+Equity:            98.840,56 $   (Live 13:07, vs Alpaca last_equity 98.365,51 → +0,483 %)
+Cash:              49.670,09 $   (50,25 %, unverändert seit GS-Fill 09:41 ET)
+Portfolio MV:      49.170,47 $   (49,75 %)
+Buying_power:     336.357,68 $
+Daily P/L:           +475,05 $   (+0,483 % vs Alpaca last_equity)                        [GRÜN — Cap -3 %]
+SPY Live:            +0,411 %    (Alpaca IEX 752,21 vs Di-Close 749,13; Alpaca-Konsistenz)
+Alpha vs SPY:        +0,072 %    [LEICHT POSITIV — AAPL/GOOGL/JPM-Rebound trägt, LLY/UNH-XLV-Schwäche kompensiert]
+ATH:              100.066,47 $    DD -1,225 % [GRÜN — Alarm bei -15 %]
+Weekly KW29:        +0,222 %      (Tag 3, Basis Fr-Close 98.621,81)                        [GRÜN — Cap -5 %]
+Käufe KW29:            2/2 LOCK  (AAPL Mo + GS Mi gefüllt)                                 [LOCK]
+Pending Orders:        0         (keine Limit-/TP-Orders aktiv)
+VIX-Ref:            ~16-17        (Perplexity 17,16 carry-over Open)                       [GRÜN]
+Guardrails: Daily +0,48 % | Weekly +0,22 % | DD -1,23 % | VIX ~17 | Käufe 2/2 LOCK → ALLE GRÜN
+```
+
+**Positionen Live V1-Check (Alpaca IEX 13:07 ET):**
+- **AAPL**  327,68 $ (Entry 316,86, P/L **+3,41 %**, chg_today **+4,08 %**) — Fill-Day+2 kräftiger Rebound
+  - V1 291,51 SICHER (+12,42 % Puffer)
+- **JPM**   347,255 $ (Entry 332,78, P/L **+4,35 %**, chg_today +1,44 %) — Post-Q2-Rally Tag 3
+  - V1 306,16 SICHER (+13,42 % Puffer)
+- **UNH**   420,04 $ (Entry 401,57, P/L +4,60 %, chg_today -1,34 %) — Blackout letzter Tag Cooldown
+  - V1 381,49 (Blackout -5 %) SICHER (+10,10 % Puffer)
+- **LLY**  1.144,03 $ (Entry 1.193,89, P/L **-4,18 %**, chg_today -0,89 %) — **XLV-Watch, ENGSTE Position**
+  - V1 1.098,38 SICHER (**+4,16 % Puffer** — engste seit Open)
+- **GOOGL**  372,135 $ (Entry 368,10, P/L +1,10 %, chg_today **+3,52 %**) — Fill-Day+7 kräftiger Rebound (P/L erstmals grün seit Fill)
+  - V1 338,65 SICHER (+9,89 % Puffer)
+- **GS**   1.132,84 $ (Entry 1.141,74, P/L -0,78 %, chg_today -0,78 %) — Fill-Day+0 mildes Fill-Day-Drop-Muster (AVGO/MU/LLY)
+  - V1 **1.050,40 NEU** SICHER (+7,85 % Puffer)
+
+**V1-V4-Check Midday: ALLE 6 POSITIONEN SICHER.**
+- V1 (-8 % / UNH -5 %): keine Position im Bereich, LLY engste +4,16 %
+- V2 (-12 % vom Posit-Hoch, carry-over): AAPL Trail ~288,36 (NEUES Hoch heute ~327,68 × 0,88); JPM Trail ~305,58 (NEUES Hoch 347,26 × 0,88); UNH Trail 382,09 (Hoch 434,19 09.07.); LLY Trail 1.098,71 (Hoch 1.248,53 07.07.) — knappste vs Kurs 1.144,03 = +4,12 %; GOOGL Trail ~328,36 (Hoch 373,14); GS Trail ~1.013,45 (Fill-Hoch 1.151,65) → alle SICHER
+- V3 (+20 % TP1): keine Position im Bereich — nächste ist UNH bei 481,88 (aktuell 420,04, -12,8 % entfernt)
+- V4 (+35 % TP2): weit entfernt
+
+**Keine Sell-Order platziert. Keine Limit-Order platziert. Pending Orders bleiben 0.**
+
+**Ø P/L über alle 6 Positionen:** +1,42 % | **Beste:** UNH +4,60 % | **Schlechteste:** LLY -4,18 %
+**Beste chg_today:** AAPL +4,08 % (Fill-Day+2 Rebound) | **Schlechteste chg_today:** UNH -1,34 %
+
+**Guardrails Midday (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     +0,483 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    +0,222 % (KW29 Tag 3)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,225 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,225 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,411 %                          [INAKTIV]
+6. VIX-Filter (>30):          ~17                                   [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH aktiv V1 381,49 (letzter Tag)     [GRÜN operativ]
+8. Max Käufe KW29:            2/2 LOCK bis Mo 20.07. KW30           [LOCK]
+```
+
+**Kein ClickUp Alert** (keine Stops ausgelöst, kein Daily Cap erreicht — Routine-Regel: nur bei Ereignis loggen).
+
+**Nächste Routine:** Mi 15.07. 16:00 ET Market Close + Tagesbilanz (LLY V1-Watch, UNH-Blackout letzter Tag, GS Fill-Day+0 → Close-Trailing-Berechnung).
 
 ---
 
