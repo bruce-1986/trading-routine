@@ -6,15 +6,18 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Close 14.07. 16:02 ET | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Live 15.07. 09:42 ET   | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
 |--------|------------|-------------|------------------------|-----------------------|-----------------|-------------|-------------|-----------------|
-| JPM    | 2026-06-17 | 332,78 $    | 342,32 $               |  +28,62 $ (+2,87 %)   | 306,16 $        | 399,34 $    | 449,25 $    | V1-V6 SICHER (Post-Q2-Rally Tag 2 +2,33 %, XLF-Outperform +2,11 %) |
-| UNH    | 2026-06-18 | 401,57 $    | 425,75 $               | +580,36 $ (+6,02 %)   | **381,49 $**⚠   | 481,88 $    | 542,12 $    | V1-V6 SICHER (Blackout -5 % aktiv bis Do 16.07. BMO, +1,14 % vs XLV-Sektor) |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.154,27 $             | -316,94 $ (-3,32 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (**engste +5,09 %**, RSI 49,90 gekippt, XLV -1,92 % Tag 6) |
-| GOOGL  | 2026-07-07 | 368,10 $    | 359,49 $               | -223,96 $ (-2,34 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V6 SICHER (+6,15 %, Fill-Day+6-Rebound +1,98 % vs XLC -0,13 %) |
-| AAPL   | 2026-07-13 | 316,86 $    | 314,85 $               |  -62,20 $ (-0,63 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V6 SICHER (Fill-Day+1, XLK-Underperform -2,05 % relativ) |
+| JPM    | 2026-06-17 | 332,78 $    | 349,38 $               |  +49,80 $ (+4,99 %)   | 306,16 $        | 399,34 $    | 449,25 $    | V1-V6 SICHER (Post-Q2-Rally Tag 3, XLF-Outperform) |
+| UNH    | 2026-06-18 | 401,57 $    | 418,05 $               | +395,52 $ (+4,10 %)   | **381,49 $**⚠   | 481,88 $    | 542,12 $    | V1-V6 SICHER (Blackout -5 % letzter Tag bis Do 16.07. BMO) |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.142,80 $             | -408,72 $ (-4,28 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (**engste +4,04 %**, RSI 49,90 gekippt, XLV-Watch) |
+| GOOGL  | 2026-07-07 | 368,10 $    | 364,19 $               | -101,63 $ (-1,06 %)   | 338,65 $        | 441,72 $    | 496,93 $    | V1-V6 SICHER (+7,54 %, Fill-Day+7 Rebound) |
+| AAPL   | 2026-07-13 | 316,86 $    | 319,15 $               |  +71,10 $ (+0,72 %)   | 291,51 $        | 380,23 $    | 427,76 $    | V1-V6 SICHER (Fill-Day+2 Rebound, +9,48 %) |
+| **GS** | 2026-07-15 | 1.141,74 $  | 1.140,38 $             |  -10,95 $ (-0,12 %)   | **1.050,40 $**  | 1.370,09 $  | 1.541,35 $  | V1-V6 SICHER (**Fill-Day+0**, alle 5 K-Signale grün, RS #1 +18,55 %) |
 
-**Gesamt investiert:** 39.595,84 $ (Marktwert Alpaca Close 14.07. 16:02 ET) | **Cash:** 58.804,04 $ | **Positionen:** 5/8 | **Käufe KW29:** 1/2 gefüllt (AAPL), 1 Slot noch offen bis Fr-Close
+**Gesamt investiert:** 48.706,31 $ (Marktwert Alpaca Live 15.07. 09:42 ET) | **Cash:** 49.670,09 $ | **Positionen:** 6/8 | **Käufe KW29:** 2/2 LOCK (AAPL 13.07. + GS 15.07.)
+
+_Market Open 15.07. 09:42 ET Update: **GS Limit-Buy 495b1c15 GEFÜLLT 09:41:18 ET** @ 1.141,74375 $ × 8 Sh (Kaufwert 9.133,95 $ ≈ 9,28 % Equity, unter Limit 1.147,58 = -0,51 % Fill-Preis-Vorteil). Alle 5 K-Signale grün validiert: K1 EMA-Spread +114,73 | K2 RSI(14) 67,63 | K3 RS_63d +18,55 % (bester Screener-Wert) | K4 IEX-Vol Extrap ~606 % Avg20 | K5 FwdPE Multi-Source Median ~17 (Range 14,74-17,53 klar ≤ 35), RevGrowth Q2 2026 released 14.07. (Umsatz 20,34 Mrd), kein Blackout. Konkurrenz-Rejects: NVDA K5 FwdPE-Range 20-41 grenzwertig (wie AMD Di), V K5 grün aber Earnings 28.07. AMC ≈ 9 HT weg (Blackout-Risiko). **Slot 2/2 KW29 belegt & gefüllt, Käufe-LOCK bis Mo 20.07. KW30.** Cash 58.804 → 49.670 (50,49 %), Positionen 5 → 6. Equity 98.376,40 (Daily +0,011 %). V1-Check alle 6 SICHER, LLY +4,04 % Puffer engste. Nächster Check 13:00 ET Midday Stop-Check._
 
 _Market Close 14.07. 16:02 ET Update: **Alle 5 Positionen V1-V6 SICHER**, keine Stops ausgelöst, keine Sell-Order platziert. Daily P/L -0,165 % (Equity 98.399,88 vs Alpaca last_equity 98.562,62) [GRÜN, Cap -3 %]. SPY +0,375 % → **Alpha -0,540 %** (XLV-Verlierer Tag 6: LLY -2,33 %, aber UNH nur -0,78 % Sektor-relative Stärke; AAPL -0,78 % vs XLK +1,27 % Fill-Day+1-Divergenz). **Beste:** JPM +2,87 % (Post-Q2-Rally Fortsetzung Tag 2). **Schlechteste:** LLY -3,32 % (XLV -1,92 % Tag 6). **Engste V1-Position:** LLY +5,09 % Puffer (RSI 49,90 unter 50 gekippt — Momentum-Neutralisierung); GOOGL +6,15 % (deutlicher Rebound vs Midday +5,36 %). Weekly KW29 -0,225 %, DD -1,67 %. Alle 8 Guardrails GRÜN. ClickUp ITEM_246 Tier-Limit → PushNotification an Owner. Nächster Check: Mi 15.07. 08:30 ET Pre-Market._
 
@@ -22,7 +25,7 @@ _Market Close 14.07. 16:02 ET Update: **Alle 5 Positionen V1-V6 SICHER**, keine 
 
 ## Offene Orders (pending)
 
-_Keine offenen Orders — alle V1-V6 SICHER, KEINE Limit-Order für Mi 15.07. platziert._
+_Keine offenen Orders — GS-Order 495b1c15 vollständig gefüllt 09:41:18 ET (4 sec nach Submit)._
 
 _Market Close 14.07. 16:02 ET: **V5/V6-Check alle 5 SICHER** (EMA50>EMA200 überall, RSI max 64,76 JPM << 80-Threshold; GOOGL RSI 49,45 + RS_4w -1,41 % erfüllt Teil-Bedingung V6 aber RSI << 80). **Keine Limit-Order für Mi 15.07.** LLY-Sonderfall: engste V1-Position +5,09 % Puffer, RSI(14) auf 49,90 gekippt (Momentum-Neutralisierung), XLV -1,92 % Tag 6 → Pre-Market-Watch Mi zwingend, aber V1 1.098,38 aktuell noch komfortabel. **UNH-Blackout weiter aktiv** bis Do 16.07. BMO (V1 381,49, Puffer +11,60 %). Weekly Loss Cap KW29 Tag 2 = -0,225 % [GRÜN, Cap -5 % weit entfernt] → keine Weekly-Cap-Aktion._
 
@@ -117,6 +120,31 @@ _Nächster Check: Do 09.07. 08:30 ET Pre-Market Check (KW28 Tag 4, JPM-Stop-Tigh
 ---
 
 ## Trades
+
+### KAUF (filled): GS am 2026-07-15
+- Limit-Order:    $1.147,58 (Day, +0,5 % über Vortagesschluss $1.141,87 = Di 14.07. Close)
+- Order-Submit:   09:41:14 ET, Fill 09:41:18 ET (**4 sec nach Submit — sehr schneller Fill**)
+- Fill:           8/8 Shares @ **$1.141,74375 avg** (deutlich unter Limit; Live-Preis war 1.151,65 vor Order-Submit, Post-Submit-Dip auf 1.140,24 hat gefüllt)
+- Menge:          8 Shares
+- Investiert:     9.133,95 $ (9,28 % Portfolio bei Fill)
+- Stop-Loss V1:   **$1.050,40** (-8 % vom Fill 1.141,74)
+- Trailing V2:    **$1.013,45** (-12 % vom Posit-Hoch = Fill-Preis 1.151,65 Live-Hoch vor Fill; final ab Close-Bar)
+- TP1 / V3:       **$1.370,09** (+20 % → 50 % verkaufen)
+- TP2 / V4:       **$1.541,35** (+35 % → Rest verkaufen)
+- Kaufsignale (Alpaca 270d Bars + Perplexity K5 Multi-Source):
+  - K1 ✓ EMA50 1.018,62 > EMA200 903,90 (Spread **+114,73** — Golden Cross sehr breit)
+  - K2 ✓ RSI(14) Wilder **67,63** (im 50-70 Fenster, knapp am oberen Ende)
+  - K3 ✓ RS_63d GS +28,16 % vs SPY +9,61 % → **+18,55 %** (bester Screener-Wert 15.07., dominiert Watchlist)
+  - K4 ✓ Intraday 10-min IEX-Vol 11.126 Sh → Extrap ~434k IEX/Tag vs Avg20-IEX 71.632 → **~606 % Avg20 IEX** >> 120 %-Hürde
+  - K5 ✓ Multi-Source Perplexity: FwdPE 14,74 [GuruFocus] / 17,04 [ValueInvesting.io] / 17,53 [YCharts] / 16,66 [Eulerpool 2026-07-10] → **Median ~17 klar ≤ 35** (breiter Puffer 51 % zu Cap); Revenue Growth Q2 2026 released 14.07. (Umsatz 20,34 Mrd $ bestätigt Rev-Growth ≥ 10 %, Analystenkonsens +11,81 % YoY erfüllt); Q3 Earnings ~Mitte Oktober = >60 HT weg → **kein Blackout**
+- Sektor:         XLF Financials — 2. XLF-Position mit JPM (nur ~1 % Portfolio); Sektor-Gewicht nach Fill **10,34 %** (JPM 1.048 + GS 9.123), 2/3 XLF-Positionen ≤ 3-Cap, weit unter 30 %-Gewicht-Cap
+- Earnings:       Q3 2026 ~Mitte Oktober (nicht bestätigt via GS IR — typischer Rhythmus) → >60 HT weg → **KEIN Blackout aktiv**
+- Konkurrenz-Rejects:
+  - **NVDA 211,65** — K5 FwdPE Multi-Source Range 20,40-40,78 (Median 34,33) → grenzwertig wie AMD Di, konservativ REJECT bei Uncertainty ≥ ±5 um Cap-Schwelle
+  - **V 353,56** — K5 FwdPE ~25 klar grün, aber V Q3 FY26 ~28.07. AMC = 9 HT weg → 3-HT-Blackout ab 23.07. Close aktivierbar → höheres Risiko-Profil vs GS (kein Blackout)
+- Status Fill:    Live nach Fill 09:42 ET: 1.140,38 (P/L -0,12 %, chg_today +0,033 %); V1 1.050,40 SICHER +8,57 % Puffer; V2 ~1.013,45 (Fill-Preis-Basis) SICHER
+- Alpaca Order-ID: 495b1c15-9346-4b97-a2f4-7278773753c3
+- ClickUp Task:   nicht angelegt (HTTP 403 OAuth-023 "Team(s) not authorized" — neue Fehler-Klasse vs Di ITEM_246 Tier-Limit); Fallback PushNotification an Owner erfolgreich versendet
 
 ### VERKAUF (V1 Stop-Loss filled): MU am 2026-07-07
 - Trigger:        Market Open 09:37 ET Live 925,86 $ < V1-Stop 954,71 $ (-3,01 % unter Stop; Pre-Market 08:35 ET war bereits 936,39 $)
