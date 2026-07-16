@@ -1,6 +1,85 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-16 09:37 ET (Market Open Do KW29 Tag 4, Käufe LOCK 2/2 → kein Kauf-Scan, UNH V1-Reset 381,49→369,44 nach Q2-Beat +7,94 %, alle 6 V1-V6 SICHER, Equity 99.548,85 Daily +0,533 % Alpha +0,861 % POSITIV)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-16 13:07 ET (Midday Stop-Check Do KW29 Tag 4, alle 6 V1-V4 SICHER, kein Stop, GS Fill-Day+1 Drop verstärkt chg -4,34 % → V1-Puffer 4,93 % ENGSTE, UNH Post-Rally-Give-back 451,75→431,02 aber P/L +7,34 %, Equity 99.185,51 Daily +0,166 % Alpha +0,471 % POSITIV)
+
+---
+
+## Midday 2026-07-16 13:07 ET (Do, KW29 Tag 4) — Alle 6 V1-V4 SICHER, GS Drop verstärkt (engste), UNH Rally-Give-back
+
+```
+Alpaca clock:      is_open=true | next_close 16.07. 16:00 ET
+Equity:            99.185,51 $   (Live 13:07, vs Alpaca last_equity 99.021,31 → +0,166 %)
+Cash:              49.670,08 $   (50,08 %, unverändert seit GS-Fill Mi 15.07.)
+Portfolio MV:      49.515,43 $   (49,92 %, 6 Positionen)
+Buying_power:     337.323,52 $
+Daily P/L:           +164,20 $   (+0,166 % vs Alpaca last_equity)                          [GRÜN — Cap -3 %]
+SPY Live IEX:       752,47       (vs Mi-Close 754,77 → -0,305 %)
+Alpha vs SPY:       +0,471 %     [POSITIV — UNH Rally-Give-back durch Rest kompensiert]
+ATH:              100.066,47 $   DD -0,881 % [GRÜN — leicht verschlechtert vs Open -0,52 %]
+Weekly KW29:        +0,571 %     (Tag 4 Midday, Basis Fr-Close 98.621,81)                  [GRÜN — Cap -5 %]
+Käufe KW29:            2/2 LOCK  (AAPL Mo + GS Mi gefüllt — bis Mo 20.07. KW30)             [LOCK]
+Pending Orders:        0
+VIX-Ref:            ~15-16       (carry-over, VXX Mi-Close 20,86 -2,89 %)                   [GRÜN]
+Guardrails: Daily +0,17 % | Weekly +0,57 % | DD -0,88 % | VIX ~15 | Käufe 2/2 LOCK → ALLE GRÜN
+```
+
+**Positionen Live V1-Check (Alpaca /v2/positions 13:07 ET):**
+
+| Sym    | Curr      | P/L      | Chg_today | V1-Stop        | V1-Puffer  | Status |
+|--------|-----------|----------|-----------|----------------|------------|--------|
+| UNH    |   431,025 | +7,34 %  | +2,99 %   | 369,44 ✓Reset  | +16,67 %   | SICHER (Post-Rally-Konsolidierung 451,75 Open → 431,02, Pump-and-Dump-Watch teilweise materialisiert) |
+| AAPL   |   332,09  | +4,81 %  | +1,40 %   | 291,51 (-8 %)  | +13,92 %   | SICHER (Rebound-Fortsetzung XLK-Rebell) |
+| JPM    |   345,21  | +3,74 %  | -0,49 %   | 306,16 (-8 %)  | +12,75 %   | SICHER (mildes Give-back nach Post-Q2 Tag 3) |
+| GOOGL  |   371,37  | +0,89 %  | +0,12 %   | 338,65 (-8 %)  | +9,66 %    | SICHER (stabil, Blackout Fr Close nähert) |
+| LLY    | 1.170,94  | -1,92 %  | +1,24 %   | 1.098,38 (-8 %)| +6,60 %    | SICHER (Reversal-Fortsetzung, XLV-Rebound, entspannt von Open +4,33 %) |
+| **GS** | 1.102,15  | -3,47 %  | **-4,34 %**| 1.050,40 (-8 %)| **+4,93 %**| SICHER (**engste** — Fill-Day+1 Drop-Muster VERSTÄRKT, aber V1 noch weg) |
+
+**V1-V4-Check: ALLE 6 POSITIONEN SICHER.** → **Keine Sell/Limit-Order platziert.**
+- V1 alle SICHER (GS engste +4,93 %, verschlechtert von Open +7,29 % durch Fill-Day+1 Drop -4,34 %)
+- V2 alle SICHER (LLY V2-Trail 1.098,70 engste, Puffer +6,58 %; UNH V2 auf altes Hoch 434,19 = 381,89 — Open 451,75 setzt neues Hoch, V2 update bei Close)
+- V3/V4 nicht ausgelöst (UNH P/L +7,34 % weit unter +20 %)
+
+**GS Fill-Day+1 Drop-Muster — Muster-Fortsetzung dokumentiert:**
+- Chg heute **-4,34 %** (Open war -2,18 %) → Verstärkung um 2,16 %-Punkte im Handelsverlauf
+- V1 1.050,40 bei Live 1.102,15 = **+4,93 % Puffer** (Schrumpfung von Open +7,29 % → -2,36 % pp)
+- Muster-Präzedenz: AVGO Fill-Day+3 Stop -8,69 % / MU Fill-Day+5 Stop -10,92 %
+- **Aktion:** Beobachtung, kein Alert (V1 noch komfortabel weg). Bei Break unter 1.100 mit weiterem Momentum → Close-Routine kritischer V1-Watch.
+
+**UNH Post-Rally-Konsolidierung — Pump-and-Dump-Watch teilweise materialisiert:**
+- Open 451,75 (chg +7,94 %) → Midday 431,02 = **-4,59 % vs Open** (Give-back von Q2-Beat-Rally-Peak)
+- P/L immer noch +7,34 % (Positions-Beitrag ~+706 $), chg_today +2,99 % positiv
+- V1 369,44 Reset (Standard nach Blackout-Ende), Puffer +16,67 % komfortabel
+- V2-Trail auf **~397,54** (Open-Hoch 451,75 × 0,88) update bei Close (endgültiges Tageshoch)
+
+**LLY-Entspannung:**
+- Open V1-Puffer +4,33 % (engste heute Open) → Midday +6,60 % (Rebound +1,24 %)
+- Chg +1,24 % Reversal-Fortsetzung (Mi war Pause, jetzt wieder positiv)
+- XLV-Rebound trägt (UNH-Q2-Effekt auf Sektor)
+- Engste V1 heute **wechselt von LLY zu GS** durch GS-Drop
+
+**Sektor-Impact (Live-Ableitung):**
+- XLV: UNH-Konsolidierung -4,59 % vs Open, LLY-Rebound +1,24 % → gemischt
+- XLK: AAPL +1,40 % Rebound-Fortsetzung
+- XLC: GOOGL +0,12 % stabil
+- XLF: JPM -0,49 % mild, **GS -4,34 % Fill-Day+1-Drop dominiert Sektor-Ausschlag** (GS-spezifisch, kein Sektor-Kontagion sichtbar)
+
+**Guardrails (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     +0,166 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    +0,571 % (KW29 Tag 4 Midday)          [GRÜN]
+3. Drawdown-Alarm (-15 %):    -0,881 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -0,881 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,305 %                          [INAKTIV]
+6. VIX-Filter (>30):          ~15-16                                [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH Blackout beendet, GOOGL ab Fr     [inaktiv heute]
+8. Max Käufe KW29:            2/2 LOCK bis Mo 20.07. KW30           [LOCK]
+```
+
+**ClickUp:** Kein Alert (keine Stops ausgelöst, kein Daily-Cap, GS-Puffer noch komfortabel). ClickUp-Tier-Limit-Muster carry-over.
+
+> **Entscheidung Midday 16.07.:** **Keine Aktion.** Alle 6 V1-V4 SICHER. **GS Fill-Day+1 Drop-Muster VERSTÄRKT** chg -4,34 % → V1-Puffer schrumpft 9,67 % → **4,93 % (engste heute)**, aber V1 1.050,40 noch nicht getroffen. **UNH Post-Rally-Give-back** von Open-Peak (Pump-and-Dump-Watch teilweise materialisiert), aber P/L +7,34 % weiter stark. LLY entspannt (+6,60 %), engste V1 wechselt LLY→GS. Daily P/L +0,166 % [GRÜN], Alpha +0,471 % POSITIV.
+> **Zwingender Watch Close 16:00 ET:** (1) GS Break unter 1.100 mit weiterer Verstärkung → V1-Watch aktivieren, (2) UNH neues Tageshoch für V2-Trail-Update (bei aktuellem Open-Hoch 451,75 = V2 397,54), (3) GOOGL-Blackout-Vorbereitung Fr Close (V1-Tightening 338,65 → 349,70 zwingend), (4) UNH V1-Reset carry-over 369,44 stabil.
+> **Nächste Routine:** Do 16.07. 16:00 ET Market Close + Tagesbilanz.
 
 ---
 
