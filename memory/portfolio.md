@@ -1,6 +1,102 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-16 13:07 ET (Midday Stop-Check Do KW29 Tag 4, alle 6 V1-V4 SICHER, kein Stop, GS Fill-Day+1 Drop verstärkt chg -4,34 % → V1-Puffer 4,93 % ENGSTE, UNH Post-Rally-Give-back 451,75→431,02 aber P/L +7,34 %, Equity 99.185,51 Daily +0,166 % Alpha +0,471 % POSITIV)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-16 16:02 ET (Market Close Do KW29 Tag 4, alle 6 V1-V6 SICHER, keine Limit-Order für Fr, GS-Puffer 4,29 % ENGSTE (Fill-Day+1 Close -4,91 %), GOOGL massiver Nachmittags-Drop chg -4,33 % nach stabilem Midday, UNH Post-Rally-Give-back von H 460,95 auf 423,28 aber P/L +4,87 %, Equity 98.480,38 Daily -0,546 % Alpha -0,030 % neutral)
+
+---
+
+## Market Close 2026-07-16 16:02 ET (Do, KW29 Tag 4) — Tagesbilanz, alle V1-V6 SICHER, GOOGL/GS Nachmittags-Drop, Alpha neutral
+
+```
+Alpaca clock:      is_open=false | next_open Fr 17.07. 09:30 ET | next_close 16:00 ET
+Gesamtwert:        98.480,38 $   (Alpaca equity Close)
+Cash:              49.670,08 $   (50,44 %, unverändert seit GS-Fill Mi 15.07.)
+Investiert (MV):   48.810,30 $   (49,56 %, AAPL 10.317 + JPM 1.029 + UNH 10.107 + LLY 9.364 + GOOGL 9.227 + GS 8.764)
+Buying_power:     335.349,16 $
+P/L heute:           -540,93 $   (-0,546 %)   [GRÜN — vs Alpaca last_equity 99.021,31, Cap -3 %]
+SPY-Tag:            -0,517 %     (Alpaca IEX 754,77 → 750,87)
+Alpha vs SPY:       -0,030 %     [NEUTRAL — UNH-Rally-Give-back und GOOGL-Nachmittags-Drop hoben sich gegen SPY-Schwäche auf]
+ATH:              100.066,47 $   DD -1,585 % [GRÜN — Alarm bei -15 %]
+Weekly P/L KW29:    -0,143 %     (Tag 4, Basis Fr-Close 98.621,81)                        [GRÜN — Cap -5 %]
+Käufe KW29:            2/2 LOCK  (AAPL Mo + GS Mi gefüllt — bis Mo 20.07. KW30)          [LOCK]
+Pending Orders:        0         (V5/V6 alle 6 SICHER — KEINE Limit-Order für Fr 17.07.)
+VIX-Ref:            ~15-16       (carry-over, keine belastbare Perplexity Close-Zahl)
+Guardrails: Daily -0,55 % | Weekly -0,14 % | DD -1,59 % | VIX ~15 | Käufe 2/2 LOCK → ALLE GRÜN
+```
+
+**Positionen Close V1-V6 (Alpaca IEX 262d Bars, EMA/RSI Wilder):**
+
+| Sym    | Close     | P/L      | Chg_today | V1-Stop        | V1-Puffer  | V5 Spread | V6 RSI | V6 RS_4w  | Status |
+|--------|-----------|----------|-----------|----------------|------------|-----------|--------|-----------|--------|
+| AAPL   |   332,81  | +5,04 %  | +1,62 %   | 291,51 (-8 %)  | +14,17 %   | +26,20    | 72,02  | +11,05 %  | SICHER (Tages-Sieger, RSI 72,02 höchste aber <80, XLK-Rebell) |
+| UNH    |   421,14  | +4,87 %  | +0,63 %   | 369,44 ✓Reset  | +13,99 %   | +49,10    | 56,53  | +3,46 %   | SICHER (Post-Q2-Rally-Give-back von Tageshoch 460,95 auf 421,14 = -8,64 % vs H, aber P/L bleibt +4,87 %) |
+| JPM    |   343,15  | +3,12 %  | -1,08 %   | 306,16 (-8 %)  | +12,08 %   | +13,97    | 63,11  | +3,78 %   | SICHER (Give-back nach Post-Q2-Rally Tag 3) |
+| LLY    | 1.170,50  | -1,96 %  | +1,20 %   | 1.098,38 (-8 %)| +6,57 %    | +128,69   | 53,18  | +3,94 %   | SICHER (Reversal-Fortsetzung, XLV-Rebound) |
+| GOOGL  |   354,87  | -3,59 %  | **-4,33 %**| 338,65 (-8 %) | +4,79 %    | +43,78    | 46,25  | -5,40 %   | SICHER (**Nachmittags-Kollaps** von Midday 371,37 auf 354,87 = -4,44 % im Handelsverlauf, Blackout-Vorbereitung Fr Close pending) |
+| **GS** | 1.095,46  | -4,05 %  | **-4,91 %**| 1.050,40 (-8 %)| **+4,29 %**| +121,35   | 56,71  | +0,23 %   | SICHER (**engste** — Fill-Day+1 Drop-Muster VOLLBILD, Muster wie AVGO/MU) |
+
+**V1-V6-Check: ALLE 6 POSITIONEN SICHER.** → **KEINE Sell/Limit-Order für Fr 17.07. platziert.**
+- V1 alle SICHER (GS engste +4,29 %, dann GOOGL +4,79 %)
+- V2-Trails aktualisiert (siehe Trade-Log)
+- V5 alle SICHER (Spreads +14 bis +129, kein Death-Cross-Risiko)
+- V6 alle SICHER (max RSI 72,02 AAPL <<80; GOOGL RSI 46,25 + RS_4w -5,40 % erfüllt Teil-Bedingung V6 aber RSI <<80 → verlangt BEIDES)
+
+**GOOGL Nachmittags-Kollaps — dokumentiert:**
+- Midday 13:07 ET: 371,37 (stabil, chg +0,12 %) → Close 16:02 ET: 354,87 (chg -4,33 %) = **-4,44 % im Nachmittag**
+- Intraday-Range: H 375,18 (Open+Pre-Q2-Rally-Fortsetzung) → L 352,365 (nahe Close) = -6,08 % Intraday-Absturz
+- Ursache-Hypothese: Late-Session-News-Trigger oder Rotation-Aus-XLC (XLC bisher LEAD-Sektor); Perplexity ohne belastbare Nachrichten
+- V1-Puffer +4,79 % (verschlechtert von Midday +9,66 %), aber V1 338,65 noch nicht getroffen
+- Blackout-Vorbereitung morgen (Fr 17.07. Close) V1-Tightening auf 349,70 (-5 %) zwingend
+
+**GS Fill-Day+1 Drop-Muster — VOLLBILD:**
+- Close chg -4,91 % Fill-Day+1 (Muster wie AVGO -5,77 % Fill-Day+1, MU -5,26 % Fill-Day+0)
+- V1 1.050,40 bei 1.095,46 = **+4,29 % Puffer** (verschlechtert von Midday +4,93 %, Open +7,29 %)
+- V1-Break unter 1.050,40 wäre Market-Sell sofort (Pre-Market Fr 17.07. 08:30 ET zwingender Watch)
+
+**UNH Post-Q2-Rally-Give-back — Pump-and-Dump-Muster materialisiert:**
+- Tageshoch 460,95 (chg +10,17 % vs Mi-Close) → Close 421,14 (chg +0,63 %) = **-8,64 % vs Tageshoch**
+- P/L bleibt +4,87 % (verschlechtert von Midday +7,34 %), Positions-Beitrag ~+470 $ = +0,47 %
+- V2-Trail-Update auf **NEU 405,64** (460,95 × 0,88, vorher 381,89 vom Hoch 434,19)
+- V1-Puffer +13,99 % (Reset auf 369,44 nach Blackout-Ende, komfortabel)
+
+**LLY-Reversal-Fortsetzung:**
+- Open 1.143,26 (-1,12 % vs Mi-Close) → Close 1.170,50 (+1,20 % vs Mi-Close, Tageshoch 1.188,19)
+- P/L verbessert von Mi Close -3,16 % auf -1,96 %
+- V1-Puffer +6,57 % (verbessert von Midday +6,60 %, entspannt von Open +4,33 %)
+- XLV-Rebound nach UNH-Q2-Rally getragen
+
+**V2-Trailing-Stop-Updates (heute neue Tageshochs):**
+| Sym | Tageshoch | Neuer V2 (×0.88) | Alt V2 | Status |
+|-----|-----------|------------------|--------|--------|
+| UNH |  460,95   |   405,64         | 381,89 | **AKTUALISIERT** (neues Posit-Hoch) |
+| AAPL|  334,65   |   294,49         | 284,59 | **AKTUALISIERT** (neues Fill-Day-Hoch) |
+| JPM |  348,83   |   306,97         | 302,11 | **AKTUALISIERT** (neues Post-Q2-Hoch) |
+| GOOGL| 375,18   |   330,16         | 328,36 | **AKTUALISIERT** (marginales neues Hoch) |
+| LLY | 1.188,19  | 1.045,61         |1.098,70| unverändert (V2 trailt nur UP, altes Hoch 1.248,53 höher) |
+| GS  | 1.150,10  | 1.012,09         |1.013,45| unverändert (V2 trailt nur UP, altes Fill-Hoch 1.151,65 höher) |
+
+**Sektor-Impact (Alpaca IEX Cross-Check nicht verfügbar für heute — Ableitung aus Positions-chg_today):**
+- XLV: UNH +0,63 % + LLY +1,20 % → Sektor stabil-positiv trotz UNH-Give-back
+- XLK: AAPL +1,62 % Rebell — XLK vermutlich weiter negativ oder neutral
+- XLC: GOOGL -4,33 % dominiert Sektor-Ausschlag → XLC vermutlich stark negativ (Rotation raus)
+- XLF: JPM -1,08 % + GS -4,91 % → Sektor negativ, GS Fill-Day+1 zieht runter
+
+**Guardrails (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,546 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,143 % (KW29 Tag 4)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,585 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,585 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,517 %                          [INAKTIV]
+6. VIX-Filter (>30):          ~15-16 (carry-over)                   [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH beendet, GOOGL ab Fr Close aktiv  [ÜBERGANG]
+8. Max Käufe KW29:            2/2 LOCK bis Mo 20.07. KW30           [LOCK]
+```
+
+**ClickUp:** Tagesbericht wird gesendet (bei ITEM_246 Tier-Limit Fallback → PushNotification).
+
+> **Entscheidung Close 16.07.:** **Alle 6 V1-V6 SICHER**, keine Sell/Limit-Order für Fr platziert. Portfolio **-0,546 % Daily / -0,030 % Alpha NEUTRAL** (SPY-Schwäche -0,517 % lief parallel). **GS-Puffer 4,29 % ENGSTE** (Fill-Day+1 Drop-Muster VOLLBILD wie AVGO/MU), **GOOGL Nachmittags-Kollaps** -4,44 % von 371,37 → 354,87 (Puffer 4,79 %). UNH Pump-and-Dump vollständig materialisiert vom Tageshoch 460,95 (-8,64 %), aber P/L +4,87 % positiv. LLY-Reversal-Fortsetzung. Weekly KW29 -0,143 %, DD -1,585 %. Käufe LOCK 2/2 bis Mo 20.07.
+> **Zwingender Watch Pre-Market Fr 08:30 ET:** (1) **GS 1.050,40 kritisch** (Puffer 4,29 %, Break → Market-Sell sofort), (2) **GOOGL 338,65** (Puffer 4,79 %, Blackout-Tightening Close), (3) UNH V1-Reset stabil, (4) LLY Reversal-Fortsetzung.
+> **Nächste Routine:** Fr 17.07. 08:30 ET Pre-Market Check (KW29 Tag 5, GS/GOOGL kritisch, GOOGL-Blackout-Aktivierung Close).
 
 ---
 
