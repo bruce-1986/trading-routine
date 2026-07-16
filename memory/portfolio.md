@@ -1,6 +1,93 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-15 16:02 ET (Market Close Mi KW29 Tag 3, alle V1-V6 SICHER, keine Limit-Order für Do, Equity 99.023,08 Daily +0,668 % Alpha +0,292 % GRÜN, LLY +5,26 % V1-Puffer engste, AAPL +4,08 % Tages-Sieger XLK-Rebell)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-16 09:37 ET (Market Open Do KW29 Tag 4, Käufe LOCK 2/2 → kein Kauf-Scan, UNH V1-Reset 381,49→369,44 nach Q2-Beat +7,94 %, alle 6 V1-V6 SICHER, Equity 99.548,85 Daily +0,533 % Alpha +0,861 % POSITIV)
+
+---
+
+## Market Open 2026-07-16 09:37 ET (Do, KW29 Tag 4) — UNH Q2-BEAT-Rally +7,94 %, kein Kauf-Scan (LOCK), V1-Reset UNH 369,44
+
+```
+Alpaca clock:      is_open=true | next_close 16.07. 16:00 ET
+Equity:            99.548,85 $   (Live 09:37, vs Alpaca last_equity 99.021,31 → +0,533 %)
+Cash:              49.670,08 $   (49,90 %, unverändert seit GS-Fill Mi 15.07.)
+Portfolio MV:      49.878,77 $   (50,10 %, 6 Positionen)
+Buying_power:     338.340,86 $
+Daily P/L:           +527,54 $   (+0,533 % vs Alpaca last_equity)                          [GRÜN — Cap -3 %]
+SPY Live IEX:       752,295      (vs Mi-Close 754,77 → -0,328 %)
+Alpha vs SPY:       +0,861 %     [POSITIV — UNH-Q2-Rally +7,94 % dominiert; UNH-Beitrag ~+1.204 $]
+ATH:              100.066,47 $   DD -0,517 % [GRÜN — verbessert vs Mi Close -1,043 %]
+Weekly KW29:        +0,940 %     (Tag 4, Basis Fr-Close 98.621,81)                          [GRÜN — Cap -5 %]
+Käufe KW29:            2/2 LOCK  (AAPL Mo + GS Mi gefüllt — bis Mo 20.07. KW30)             [LOCK]
+Pending Orders:        0
+VIX-Ref:            ~15,76-16,40 (Perplexity Do Pre-Market)                                  [GRÜN]
+Guardrails: Daily +0,53 % | Weekly +0,94 % | DD -0,52 % | VIX ~16 | Käufe 2/2 LOCK → ALLE GRÜN
+```
+
+**Positionen Live V1-Check (Alpaca /v2/positions 09:37 ET):**
+
+| Sym    | Curr      | P/L      | Chg_today | V1-Stop        | V1-Puffer | Status |
+|--------|-----------|----------|-----------|----------------|-----------|--------|
+| **UNH**|   451,75  | +12,50 % | **+7,94 %**| **369,44** ✓Reset | **+22,28 %** | SICHER (**Q2-BEAT Post-Release-Rally**, V1 von 381,49 auf 369,44 zurück, Puffer sprunghaft entspannt) |
+| AAPL   |   328,00  |  +3,52 % | +0,15 %   | 291,51 (-8 %)  | +12,52 %  | SICHER (Konsolidierung nach Mi-Rebell +4,08 %) |
+| GOOGL  |   371,17  |  +0,83 % | +0,07 %   | 338,65 (-8 %)  | +9,61 %   | SICHER (stabil, Blackout-Vorbereitung Fr 17.07. Close für Q2 22.07. AMC) |
+| **GS** | 1.126,96  |  -1,29 % | **-2,18 %**| 1.050,40 (-8 %)| +7,29 %   | SICHER (**Fill-Day+1 Drop-Muster** ausgelöst, aber Puffer komfortabel) |
+| JPM    |   342,34  |  +2,87 % | -1,32 %   | 306,16 (-8 %)  | +11,82 %  | SICHER (mildes Give-back nach Post-Q2-Rally 3 Tage) |
+| **LLY**| 1.145,99  |  -4,01 % | -0,92 %   | 1.098,38 (-8 %)| **+4,33 %**| SICHER (**engste**, Reversal Mi pausiert, XLV-Watch) |
+
+**V1-V6-Check: ALLE 6 POSITIONEN SICHER.** → **Keine Sell/Limit-Order platziert.**
+- V1 alle SICHER (LLY engste +4,33 %, UNH neuer Puffer +22,28 % nach Reset)
+- V2/V5/V6 carry-over aus Mi Close (RSI/EMA-Spreads/RS_4w alle im SICHER-Bereich, kein Trigger heute)
+
+**UNH V1-Reset — AKTIVIERT (Blackout-Ende Post-Release):**
+- Alt: V1 **381,49** (-5 % Blackout-Tight, aktiv Mo 13.07. Close bis Mi 15.07. Close)
+- Neu: V1 **369,44** (-8 % Standard = 401,57 × 0,92) → Puffer bei Live 451,75 = **+22,28 %** [KOMFORTABEL]
+- Trigger: Q2-Beat-Reaktion +7,94 % chg_today = Post-Release-Bestätigung erfüllt → Standard-V1 zurück
+
+**UNH-Q2-Rally Analyse:**
+- Chg +7,94 % (Pre-Market schon +6,80 %, Fortsetzung im regulären Handel)
+- Beitrag zu Portfolio: ~+1.204 $ = +1,20 % Equity (fast der gesamte Daily-P/L)
+- **Positions-Hoch NEU** wahrscheinlich intraday (Watch für V2-Trail-Update auf **~397,54** = 451,75×0,88, aktuell V2 basierend auf altem Hoch 434,19 = 381,89)
+- V2-Trail-Update erfolgt bei Close (endgültiges Tageshoch)
+
+**GS Fill-Day+1 Drop-Muster ausgelöst — dokumentierte Muster-Fortsetzung:**
+- Chg -2,18 % Fill-Day+1 (Muster wie AVGO -4,36 %/-5,77 %, MU -5,26 %/-5,85 %, aber abgeschwächt)
+- V1 1.050,40 bei Live 1.126,96 = +7,29 % Puffer (noch komfortabel, aber Verengung von Mi Close +9,67 %)
+- V2 basierend auf Fill-Preis-Hoch 1.151,65 = **1.013,45** (noch komfortabel, +11,20 % Puffer)
+- Muster-Beobachtung, keine Aktion nötig (V1-Stop weit weg)
+
+**Sektor-Impact (Live 09:37):**
+- XLV Rally durch UNH-Q2-Beat: UNH +7,94 % zieht Sektor mit
+- LLY -0,92 % XLV-Rebound nicht mitgenommen (RSI-Rekonvergenz Mi einmalig)
+- XLK stabil (AAPL +0,15 %)
+- XLC stabil (GOOGL +0,07 %)
+- XLF gemischt: JPM -1,32 % Give-back, GS -2,18 % Fill-Day+1 → Sektor-Rotation raus aus XLF
+
+**Guardrails (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     +0,533 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    +0,940 % (KW29 Tag 4)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -0,517 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -0,517 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,328 %                          [INAKTIV]
+6. VIX-Filter (>30):          ~15,76-16,40 (Perplexity Do)          [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH-Blackout ENDET nach Release       [ÜBERGANG — V1 zurück auf 369,44]
+8. Max Käufe KW29:            2/2 LOCK bis Mo 20.07. KW30           [LOCK]
+```
+
+**Käufe-LOCK:** Käufe KW29 2/2 belegt (AAPL 13.07. + GS 15.07.). Kein Kauf-Scan durchgeführt. Watchlist V + PANW für KW30 Mo 20.07. carry-over aus Mi Close.
+
+**GOOGL-Blackout-Vorbereitung (nicht heute):**
+- GOOGL Q2 **22.07.2026 AMC** → 3-HT-Blackout ab **Fr 17.07. Close** aktivierbar
+- V1-Tightening morgen (Fr) Close-Routine: 338,65 → **349,70** (-5 % = 368,10 × 0,95)
+- HEUTE noch KEINE Aktion — Blackout beginnt erst Fr Close
+
+**ClickUp:** POST /list/{id}/task → ITEM_246 Tier-Limit-Muster carry-over (Tag 4 in Folge erwartet). Fallback: **PushNotification an Owner** (UNH-Q2-Rally-Event = notify-würdig).
+
+> **Entscheidung Market Open 16.07.:** **KEIN Kauf-Scan** (Slot-LOCK 2/2). **UNH V1-Reset** von 381,49 → **369,44** nach Q2-Beat-Post-Release-Bestätigung (chg +7,94 % erfüllt Trigger). Portfolio **+0,533 % Daily / +0,861 % Alpha POSITIV** dominiert von UNH-Q2-Rally (~+1.204 $ Beitrag). Alle 6 V1-V6 SICHER, LLY engste +4,33 % (Reversal Mi pausiert, aber V1 weit weg). **GS Fill-Day+1 Drop-Muster** ausgelöst chg -2,18 % — Muster wie AVGO/MU aber abgeschwächt, V1-Puffer +7,29 % noch komfortabel. Weekly KW29 Tag 4 **+0,940 %**, DD -0,52 % (verbessert von Mi -1,04 %). VIX ~16 stabil. Käufe LOCK bis Mo 20.07.
+> **Zwingender Watch Midday 13:00 ET:** (1) UNH V2-Trail-Update bei neuem Tageshoch (Live 451,75 → V2 ~397,54); (2) GS Fill-Day+1-Drop-Fortsetzung (Break unter 1.100 wäre Warn-Signal, V1 1.050,40 aber weit weg); (3) LLY V1 1.098,38 +4,33 % Puffer engste; (4) UNH Post-Rally Konsolidierung/Pump-and-Dump-Watch.
+> **Nächste Routine:** Do 16.07. 13:00 ET Midday Stop-Check.
+
+---
 
 ---
 
