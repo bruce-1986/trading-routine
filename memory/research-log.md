@@ -4,6 +4,92 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-07-16 (Do, KW29 Tag 4) — UNH Q2 BMO POSITIV-Reaktion +6,80 %, alle Guardrails GRÜN, Käufe LOCK, V1-Reset UNH 369,44
+
+**Alpaca Clock:** is_open=false, next_open Do 16.07. 09:30 ET, next_close 16:00 ET.
+
+**Account Pre-Market 08:30 ET (Alpaca /v2/account):**
+```
+Equity:            99.760,19 $   (vs last_equity 99.021,31 → +0,7462 %) [GRÜN, Cap -3 %]
+Cash:              49.670,08 $   (49,79 %, unverändert seit GS-Fill 15.07.)
+Portfolio_MV:      50.090,11 $   (50,21 %, 6 Positionen)
+Long_MV:           50.090,11 $
+Buying_power:     338.932,62 $
+Käufe KW29:        2/2 LOCK      (bis Mo 20.07. KW30) [LOCK — kein Scan Market Open]
+Pending Orders:    0             (keine offenen aus Mi Close)
+```
+
+**Pre-Market Chg_today per Alpaca /v2/positions (offizielle Alpaca-Sicht vor Open):**
+| Sym    | Curr      | Vortag Close | Chg %      | P/L     | Bemerkung |
+|--------|-----------|--------------|------------|---------|-----------|
+| **UNH**|   447,00  |   418,40     | **+6,80 %**| +11,31 %| **Q2-BMO POSITIV-Reaktion — Beat wahrscheinlich** |
+| GOOGL  |   372,65  |   371,11     |   +0,47 %  |  +1,24 %| Rebound-Fortsetzung |
+| AAPL   |   328,46  |   327,64     |   +0,29 %  |  +3,66 %| stabil |
+| LLY    | 1.160,00  | 1.156,19     |   +0,29 %  |  -2,84 %| Reversal-Fortsetzung, V1-Puffer +5,61 % |
+| JPM    |   347,30  |   346,91     |   +0,11 %  |  +4,36 %| Post-Q2 stabil |
+| GS     | 1.146,25  | 1.151,93     |   -0,51 %  |  +0,40 %| Fill-Day+1 mildes Muster |
+
+→ Portfolio Pre-Market **+738,88 $ (+0,7462 %)** primär durch UNH-Q2-Rally getrieben (Beitrag ~+686 $ = ~+0,69 %).
+
+**Perplexity Daily-Macro-Query:** SPY-Pre-Market, 10Y-Yield, Makro-Events "Datenlücke" — Perplexity gab **VIX 15,76 (Cboe Spot 15.07.) / 16,40 (Finanzen.net 16.07.)** als einzige belastbare Zahl. SPY-Pre-Market und Makro-Events "nicht verfügbar in Search-Results". Fallback: Alpaca-Realdaten dienen als Ground-Truth für Portfolio-Bewegungen.
+
+**UNH-Q2-Release-Verifikation via Perplexity:** Actual-Zahlen "nicht in Search-Results verfügbar". Konsens-Preview (vor Bericht):
+- EPS-Konsens: **$4,84-4,85 Adj**
+- Revenue-Konsens: **$110,77-110,95 Mrd**
+- FY26 Guidance vorher: **> $18,25 Adj EPS**
+- Reported: **Alpaca-Reaktion +6,80 % Pre-Market** ist Ersatz-Signal → **Beat/Positive Guidance-Anpassung sehr wahrscheinlich** (bei EPS-Miss wäre Reaktion typisch negativ)
+
+**Earnings-Kalender Do 16.07.-Mo 20.07. (Perplexity + Memory-Cross-Check):**
+- **Do 16.07. BMO — UNH Q2** ✓ (heute, positiv reagiert)
+- Fr 17.07. — keine relevanten Positions-Earnings
+- Mo 20.07. — keine relevanten Positions-Earnings
+- **Mi 22.07. AMC — GOOGL Q2** → **3-HT-Blackout ab Fr 17.07. Close aktivierbar** → V1 auf **349,70 (368,10 × 0,95 = -5 %)** statt 338,65 zu tightenen (Aktion Fr Close-Routine, HEUTE noch NICHT)
+- Mi 30.07. — AAPL Q3 → Blackout ab Fr 24.07. Close aktivierbar
+
+**UNH V1-Reset — Blackout-Ende:**
+- Bisher: V1 **381,49** (-5 % Blackout-Tight, aktiv seit Mo 13.07. Close)
+- Neu ab HEUTE Post-Release: V1 **369,44** (-8 % Standard = 401,57 × 0,92) → Puffer bei aktuellem Pre-Market 447,00 = **+20,99 %** [KOMFORTABEL]
+- Regel: Nach Post-Release-Bestätigung (positive Reaktion +6,80 % Pre-Market) V1 zurück auf Standard-Level; keine weitere Tightening-Notwendigkeit
+
+**Guardrail-Status Pre-Market (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     +0,7462 % Pre-Market                    [GRÜN]
+2. Weekly Loss Cap (-5 %):    +1,156 % (KW29 Tag 4, kum. +0,407 % + 0,746 %) [GRÜN]
+3. Drawdown-Alarm (-15 %):    -0,306 % vs ATH 100.066,47 (verbessert)  [GRÜN]
+4. Drawdown-Stopp (-20 %):    -0,306 %                                 [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Vortag +0,376 %                      [INAKTIV]
+6. VIX-Filter (>30):          ~15,76-16,40 (VIX Do Pre-Market)         [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH endet HEUTE Post-Release → V1 369,44 [ÜBERGANG]
+8. Max Käufe KW29:            2/2 LOCK bis Mo 20.07. KW30              [LOCK — kein Scan]
+```
+→ **ALLE GUARDRAILS GRÜN. Kein Kaufscan (Slot-LOCK). Kein STOPP.**
+
+**Entscheidung Pre-Market Do 16.07.:**
+- **Market-Open-Scan JA/NEIN → NEIN** (Käufe KW29 2/2 LOCK bis Mo 20.07. KW30)
+- **UNH V1-Reset:** 381,49 → 369,44 nach Post-Release-Bestätigung (Pre-Market +6,80 % bestätigt Positiv-Reaktion) — zu setzen bei Market-Open-Routine 09:30 ET
+- **Watchlist-Vorbereitung KW30:** V + PANW (K5 Multi-Source zwingend im Weekly-Review Fr 17.07.)
+- **GOOGL-Blackout-Vorbereitung:** Fr 17.07. Close V1 auf 349,70 tightenen (HEUTE noch NICHT)
+
+**Zwingende Watch-Punkte Market Open 09:30 ET + Midday 13:00 ET:**
+1. UNH V1-Reset auf 369,44 im Positions-Memory tracken
+2. UNH Post-Release-Reaction sustained (kein Pump-and-Dump) — Watch für V2-Trail-Update bei neuem Positions-Hoch
+3. LLY V1 1.098,38 aktuell +5,61 % Puffer (verbessert von Mi Close +5,26 %) — Reversal-Fortsetzung
+4. GS Fill-Day+1 mildes -0,51 % Pre-Market (kein Stop-Risk, V1 1.050,40 +9,15 % Puffer)
+5. AAPL/JPM/GOOGL: alle stabil, keine Watch-Trigger
+
+**Datenqualität:**
+- Alpaca /v2/account + /v2/positions live Pre-Market 08:37 ET erfolgreich, alle 6 Positionen mit chg_today und plpc
+- Alpaca /v2/clock: is_open=false, next_open 09:30 ET
+- Perplexity Macro-Query lieferte VIX (15,76-16,40) als einzigen belastbaren Wert; SPY Pre-Market, 10Y Yield, News-Headlines "nicht verfügbar" — "Datenlücke Pre-Market"-Muster fortgesetzt
+- Perplexity UNH-Q2-Release-Verifikation: keine Actual-Zahlen → Alpaca-Reaktion +6,80 % als Ersatz-Signal
+
+**ClickUp:** Pending Sende-Versuch (ITEM_246 Tier-Limit weiter erwartet, Fallback PushNotification an Owner geplant)
+
+> **Entscheidung Pre-Market Do 16.07.:** Portfolio +0,7462 % Pre-Market (UNH-Q2-Rally +6,80 % Haupt-Treiber, ~+686 $ Beitrag), alle 8 Guardrails GRÜN, Käufe KW29 LOCK 2/2 → **kein Market-Open-Kaufscan**. UNH V1-Reset 381,49 → **369,44** zwingend bei Market-Open-Routine (Post-Release-Bestätigung durch +6,80 % Pre-Market-Rally erfüllt). Perplexity Macro-Query Datenlücke Pre-Market weiterhin — VIX 15,76-16,40 GRÜN einziger belastbarer Wert. GOOGL-Blackout-Vorbereitung Fr 17.07. Close (V1 auf 349,70 statt 338,65) im Kalender.
+> **Nächste Routine:** Do 16.07. 09:30 ET Market Open — UNH V1-Reset ausführen, kein Kaufscan (Slot-LOCK), Position-Update mit UNH Q2-Rally-Details.
+
+---
+
 ## Market Close 16:02 ET — 2026-07-15 (Mi, KW29 Tag 3) — Tagesbilanz, alle V1-V6 SICHER, Alpha +0,292 % POSITIV, Watchlist Do V+PANW 3/3-LEADS
 
 **Alpaca Clock:** is_open=false, next_open Do 16.07. 09:30 ET, next_close 16:00 ET.
