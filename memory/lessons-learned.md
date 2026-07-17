@@ -6,6 +6,69 @@
 
 ## Was funktioniert (bestätigte Patterns)
 
+### KW29 — 2026-07-17 — Weekly Review
+
+```
+Performance:    -0,417 %   | Alpha vs SPY: +1,128 %   (SPY -1,544 %; Basis Fr 10.07. Close 754,94 → Fr 17.07. Close 743,28)
+Seit Bot-Init (31.05.26): -1,789 % | YTD Depot: -1,789 % | SPY YTD +9,014 % (Alpaca IEX YE25 681,82 → 743,28) → YTD-Alpha -10,803 % (Bot lebt 47 Tage, ~50 % Cash)
+
+Beste Position diese Woche:    AAPL +5,33 % (Fill Mo 13.07. 316,86 → Fr 17.07. 333,75; XLK-Rebell, Fr +0,13 % vs XLK -2,24 % Sektor)
+Schlechteste Position:         GS -6,66 %  (Fill Mi 15.07. 1.141,74 → Fr 17.07. 1.065,71; Fill-Day+2 Drop-Muster VOLLBILD)
+Zusatz: GOOGL -5,80 % (Fill 07.07. → Fr Close, Fill-Day+8 Follow-Through, XLK-Rotation) | UNH +6,10 % (Q2 Beat Do 16.07. +7,94 % Rally, Post-Konsolidierung Fr stabil) | LLY -1,28 % (Reversal Tag 3, XLV +2,22 % Fr) | JPM +2,50 % (Post-Q2 Give-back Tag 4)
+
+Käufe diese Woche:   2  (AAPL Mo 13.07. 31 Sh @ 316,86 / GS Mi 15.07. 8 Sh @ 1.141,74)
+Verkäufe:            0
+Stop-Loss-Trigger:   0  (alle 6 V1-V6 SICHER Fr-Close, GS engste +1,46 %, GOOGL +2,40 %)
+Win-Rate KW29:       n/a (keine geschlossenen Trades)
+Realisiert KW29:     0 $   | Realisiert kumuliert seit Bot-Init: -1.615,62 $
+Handelstage:         5 von 5 (keine Feiertage)
+ATH:                 100.066,47 $ | DD -1,854 % (GRÜN, Alarm -15 %)
+Guardrails:          Alle 8 GRÜN am Fr-Close (Weekly-Cap-Puffer +4,589 %)
+```
+
+**Was gut lief:**
+- **Alpha-Woche trotz negativer Performance:** Depot -0,417 % vs SPY -1,544 % = +1,128 % Alpha. Cash-Puffer 50 % + XLV-Rebound Fr (+2,22 %) dämpfte XLK-Sektor-Verlust -2,24 %. Erste positive Wochen-Alpha-Woche seit KW26.
+- **UNH Q2-Beat Do 16.07. +7,94 %:** Blackout-Rule (V1-Tightening auf 381,49) ordnungsgemäß durch Beat obsolet gemacht, V1-Reset auf 369,44 nach Release. Trailing V2 auf 405,64 (Hoch 460,95 Tageshoch). Position +6,10 % über die Woche wurde weder überhitzt geschlossen (V3/V4 nicht getriggert bei 481,88/542,12) noch panisch gesenkt.
+- **JPM Post-Q2 Guidance-Rally Di/Mi 14.-15.07.:** Blackout-Ende nach Release, V1-Reset auf 306,16 (-8 % Standard), Position +2,50 % über die Woche stabil ohne Trigger.
+- **AAPL Entry-Timing perfekt:** Limit-Order 316,90 wurde bei Intraday-Pullback um 11:31 ET gefüllt (Chase-Cap +0,5 % gewahrt trotz Open-Hoch 323,39). Fill-Day-Drop-Muster diesmal umgangen: chg_today an folgenden Tagen +1,62/+4,08/-0,78/+0,13 %, kein Post-Fill-Selloff. +5,33 % Wochen-Beitrag.
+- **GS K5-Multi-Source Perplexity:** Median FwdPE ~17, breiter Puffer 51 % zu Cap 35. Konkurrenz-Rejects konsistent: NVDA K5 grenzwertig (Range 20-41), V K5 grün aber Blackout-Risiko (28.07. AMC). Regel-Disziplin gehalten.
+- **V1-Hard-Stop-Prinzip:** Trotz GS -6,66 % / GOOGL -5,80 % keine Panik-Exits. V1-Puffer +1,46 % / +2,40 % zwar kritisch, aber Regel = warten auf Break, kein Vorwegnehmen. Standhalten diszipliniert.
+
+**Was nicht gut lief:**
+- **Fill-Day-Drop-Muster jetzt n=5:** GS Fill-Day+2 -6,66 % erfüllt Muster VOLLBILD (Präzedenz AVGO Fill-Day+3 -8,69 % V1 / MU Fill-Day+4 -10,92 % V1). Nur LLY war Fill-Day positiv, AAPL diesmal ebenfalls. GS-Ausgang steht noch aus (Puffer +1,46 % kritisch). Sample n=5 groß genug für Diskussion in KW30.
+- **GOOGL Fill-Day+8 Follow-Through -5,80 %:** Do-Nachmittags-Kollaps -4,33 % + Fr -2,32 % = -6,63 % in 1,5 HT. XLC/XLK-Rotation-Verlierer bestätigt. V6 Teil-Bedingung (RS_4w -5,00 %) erfüllt, RSI aber 42,37 → V6 nicht ausgelöst. Fundamentaldaten OK, aber Timing der Positions-Konsolidierung nach 8 Handelstagen ist zu berücksichtigen.
+- **GOOGL-Blackout-Konflikt Regel-Lücke aufgedeckt:** V1_neu Blackout 349,70 > Kurs 346,76 = -0,84 % negativ → Blackout-Tightening würde Sofort-Stop auslösen. Regel „Bei Konflikt: nicht handeln" (Strategie-Lock, Option A) angewendet, Owner-Freigabe pending. **Grundsatz-Diskussion nötig:** Blackout-Zweck ist ex-ante Schutz vor Post-Earnings-Gap, nicht ex-post-Trigger — Regel sollte klarstellen, wie mit „Kurs bereits unter Blackout-V1 zum Aktivierungs-Zeitpunkt" umzugehen ist.
+- **XLV-Sektor-Konzentration 40,49 % des investierten Kapitals:** UNH (10.222) + LLY (9.433) = 19.655 vs Investiert 48.541 = 40,49 %. Am Gesamtportfolio (98.211) nur 20,01 %. **Regel-Deutung offen** (Weekly-Routine sagt „des investierten Kapitals"). Schwächste Position im Sektor: LLY (P/L -1,28 %) → **Watchlist für Reduktion falls Deutung streng.**
+- **YTD-Alpha -10,80 % (SPY YTD +9,01 %):** 47 Bot-Tage, ~50 % Cash im Durchschnitt. Bot-Struktur profitiert nicht ausreichend von Bull-Rally. K1-K5-Selektion streng — richtig, aber Opportunitäts-Kosten weiter hoch. KW30 mit 2 offenen Slots und LOCK-Ende Test der Rotation-Anpassung.
+
+**Strategie-Anpassung nötig:** NEIN — alle Regeln (V1/V2/V6/K1-K5/Blackout/Weekly-Cap/Sektor-Cap) regelkonform angewendet. Diskussions-Punkte für KW30:
+1. **Fill-Day-Drop-Muster n=5 bestätigt** (AVGO/MU/GOOGL/GS negative Fill-Day, LLY/AAPL positive). Ab n=6 (nächster Kauf-Fill) systematische K4-Post-Fill-Recheck-Erweiterung erwägen (30-Min-Volume-Confirm nach Fill).
+2. **GOOGL-Blackout-Konflikt-Regel:** Owner-Entscheidung + Strategie-Klarstellung: Wann greift Blackout-V1-Tightening, wenn Kurs bereits unter Blackout-V1 zum Aktivierungs-Zeitpunkt?
+3. **Sektor-Cap-Deutung XLV 40,49 %:** Klarstellung „vom investierten Kapital" vs „vom Gesamtportfolio". Regel-Text präzisieren.
+4. **Cash-Quote 50 % + Bull-Rally-Opportunitäten:** KW30 Slot 2/2 mit V/PANW-Priorität testen.
+
+**Watchlist nächste Woche (KW30, 20.07.→24.07.):**
+- **V (Visa) — XLF LEAD** — Fr-Close 358,51, K1 EMA +4,13 marginal ✓, K2 RSI 62,68 ✓, K3 RS_63d +7,82 % ✓. **Kauf-Fenster nur Mo-Mi 20.-22.07.** (Blackout ab 23.07. Close, Q3 ~28.07. AMC bestätigt). K5-Multi-Source-FwdPE Mo Pre-Market ZWINGEND.
+- **PANW (Palo Alto) — XLK LEAD 2** — Fr-Close 358,62, K1 +64,20 ✓, K2 RSI 67,33 ✓, K3 RS_63d +108,86 % (**#1 Screener**). K5-Multi-Source-FwdPE **zwingend** (Cybersecurity typisch > 35, AMD-Analogie).
+- **ABBV — XLV Backup** — Fr-Close 254,52, K1 +14,42 ✓, K2 RSI 64,43 ✓, K3 RS_63d +15,89 % ✓. **XLV Sektor-Cap-Risiko** (3. XLV-Position bei bereits Verstoß-Deutung).
+- **MRK — XLV Backup** — Fr-Close 127,48, RS +4,45 %, analoger XLV-Konflikt.
+- **JNJ — XLV Backup** — Fr-Close 253,01, RS +1,92 %, analoger XLV-Konflikt.
+- **LLY** (schwächste XLV-Position, P/L -1,28 %) → **Reduktions-Watch bei XLV-Cap-Streng-Deutung + neuem XLV-Kauf.**
+
+**Sektor-Priorität KW30 (Basis KW29 Sektor-Rebound Fr):**
+- **XLP LEAD Fr (+2,80 %) / XLV Fr (+2,22 %):** Defensiv-Rotation, aber im Wochenkontext eher gemischt (XLK bleibt strukturell stark).
+- **V + PANW (XLF + XLK, kein Sektor-Cap-Konflikt) priorisiert** vor ABBV/MRK/JNJ (alle XLV).
+- **XLE +0,92 % Fr:** Iran-Risiken → Öl fest. Kandidatensuche COP/EOG offen (bisher kein K3-K5-Konsens).
+
+**GS/GOOGL kritischer Watch Mo 20.07.:**
+- GS V1 1.050,40 (Puffer +1,46 %) — Fill-Day+2 Drop-Muster VOLLBILD, Break Mo → Market-Sell sofort. Pre-Market-Watch zwingend.
+- GOOGL V1 338,65 (Puffer +2,40 %) — Owner-Freigabe Blackout-Konflikt vor Open erforderlich. Q2-Earnings Mi 22.07. AMC (2 HT ab Mo).
+- KW30 Slot 2/2 verfügbar ab Mo, aber V/PANW-Käufe unabhängig vom GS/GOOGL-Verlauf zu planen.
+
+**Sektor-Cap-Check aktuell:** XLV 40,49 % investiert / 20,01 % Portfolio | XLK 21,31 % / 10,53 % | XLC 18,55 % / 9,17 % | XLF 19,67 % / 9,72 %. Bei strenger Deutung XLV-Verstoß, bei Portfolio-Deutung alle < 30 %. **Grundsatz-Klärung KW30 zwingend.**
+
+---
+
 ### KW28 — 2026-07-10 — Weekly Review
 
 ```

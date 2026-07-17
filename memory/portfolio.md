@@ -1,6 +1,59 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-17 16:02 ET (Market Close Tagesbilanz Fr KW29 Tag 5, alle 6 V1-V6 SICHER, kein Stop ausgelöst, KEINE Limit-Order für Mo 20.07., GS/GOOGL Puffer weiter kritisch <3%, GOOGL-Blackout-Konflikt Owner-Freigabe pending, Equity 98.216,93 Daily -0,312% Weekly -0,411%, Alpha +0,70% daily / +1,13% weekly, DD -1,848%, Watchlist V/PANW/ABBV/MRK/JNJ für KW30 Slot 2/2 verfügbar ab Mo)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-17 21:03 ET (Weekly Review KW29 Fr, Alpha-Woche +1,13% trotz Depot -0,42%, XLV-Sektor-Konzentration 40,49% investiert PRÜFUNG, GS/GOOGL Puffer <3% kritisch für Mo 20.07., Watchlist V/PANW LEAD + ABBV/MRK/JNJ Backup, YTD Depot -1,79% / SPY YTD +9,01% / YTD-Alpha -10,80%)
+
+---
+
+## Wochenabschluss KW29 — 2026-07-17 (Fr)
+
+```
+Gesamtwert:        98.211,21 $   (Alpaca /v2/account equity Fr-Close carry)
+Cash:              49.670,08 $   (50,58 %)
+Investiert:        48.541,13 $   (49,42 %)
+Wochenrendite:      -0,417 %     (Basis Fr-Close 10.07. 98.622,21 → Fr 17.07. 98.211,21)
+SPY-Woche:          -1,544 %     (Alpaca IEX 754,94 → 743,28)
+Alpha vs SPY:       +1,128 %     [POSITIV — Cash-Puffer 50 % + XLV-Rebound Fr dämpft XLK-Loss]
+YTD Rendite:        -1,789 %     (Startkapital 100.000 $)
+YTD Alpha:         -10,803 %     (SPY YTD +9,014 % vs YE25 681,82)
+ATH:              100.066,47 $   (16.06.2026 carry-over)
+Drawdown:           -1,854 %     [GRÜN — Alarm bei -15 %]
+Offene Positionen:      6/8      (AAPL, JPM, UNH, LLY, GOOGL, GS)
+Realisiert kumuliert: -1.615,62 $ (AVGO -596,19 + MU -1.019,43; keine geschlossenen Trades KW29)
+Käufe KW29:            2/2 LOCK  (AAPL Mo + GS Mi, LOCK endet Mo 20.07. KW30)
+Nächste Woche max. Käufe: 2 (Slot 2/2 verfügbar ab Mo 20.07.)
+```
+
+**Watchlist KW30 (Mo 20.07.):**
+- **LEADS (kein Sektor-Cap-Risiko):** V (XLF, RS +7,82 %, K5 Mo Pre zwingend) | PANW (XLK, RS +108,86 % #1, K5 Mo Pre zwingend)
+- **Backup (XLV-Sektor-Cap-Risiko):** ABBV (RS +15,89 %) | MRK (RS +4,45 %) | JNJ (RS +1,92 %)
+- **Reduktions-Watch bei XLV-Cap-Streng-Deutung:** LLY (schwächste XLV-Position, P/L -1,28 %)
+
+**Sektorgewichte-Check (Investiert-Basis vs Portfolio-Basis):**
+| Sektor | Positionen | MV       | % investiert | % Portfolio | Status |
+|--------|------------|----------|--------------|-------------|--------|
+| XLV    | UNH + LLY  | 19.655   | **40,49 %**  | 20,01 %     | **⚠ Deutung-Konflikt** (streng > 30 %, Portfolio < 30 %) |
+| XLK    | AAPL       | 10.344   | 21,31 %      | 10,53 %     | GRÜN |
+| XLF    | GS + JPM   | 9.546    | 19,67 %      | 9,72 %      | GRÜN |
+| XLC    | GOOGL      | 9.002    | 18,55 %      | 9,17 %      | GRÜN |
+
+Weekly-Review-Routine-Wortlaut: „Kein Sektor > 30 % des investierten Kapitals" → **XLV verletzt Deutung streng.** Am Gesamtportfolio (98.211) nur 20,01 % → unter Cap. **Grundsatz-Klärung Owner Mo zwingend.**
+
+**Guardrails Fr-Close 17.07.:**
+```
+1. Daily Loss Cap (-3 %):     -0,312 %                                      [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,417 % KW29 Final                           [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,854 % vs ATH 100.066,47                    [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,854 %                                      [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -1,011 % Fr                               [INAKTIV]
+6. VIX-Filter (>30):          ~15-17 (Perplexity Rotation defensive-heavy) [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Blackout-Konflikt Owner-Pending         [WARN]
+8. Max Käufe KW30 (Reset):    0/2 verfügbar Mo 20.07.                       [OFFEN]
+```
+
+**Nächste Routinen:**
+- Mo 20.07. 08:30 ET Pre-Market Check — GS V1 1.050,40 (Puffer +1,46 %) + GOOGL V1 338,65 (Puffer +2,40 %) zwingender Watch; Owner-Entscheidungen (Blackout-Konflikt + Sektor-Cap-Deutung) vor Open erforderlich.
+- Mo 20.07. 09:30 ET Market Open + Kaufsignal-Scan KW30 — V/PANW K5-Multi-Source-Recheck; ABBV/MRK/JNJ nur wenn XLV-Cap-Grundsatz geklärt.
+- Fr 24.07. 17:00 ET Weekly Review KW30.
 
 ---
 
