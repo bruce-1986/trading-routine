@@ -4,6 +4,93 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-07-17 (Fr, KW29 Tag 5) — GS/GOOGL Puffer KRITISCH <5%, GOOGL-Blackout-Konflikt bei Close, alle Guardrails GRÜN, Käufe LOCK
+
+**Alpaca Clock:** is_open=false, next_open Fr 17.07. 09:30 ET, next_close 16:00 ET.
+
+**Account Live 08:35 ET (Alpaca /v2/account):**
+```
+Equity:            98.288,46 $   (vs last_equity 98.524,71 → -0,240 %)   [GRÜN, Cap -3 %]
+Cash:              49.670,08 $   (50,53 %, unverändert seit GS-Fill Mi 15.07.)
+Portfolio_MV:      48.618,82 $   (49,47 %, 6 Positionen)
+Buying_power:     334.811,79 $
+Käufe KW29:        2/2 LOCK      (AAPL Mo + GS Mi gefüllt, bis Mo 20.07. KW30) [LOCK]
+Pending Orders:    0             (keine offenen, kein neuer Kauf-Scan)
+```
+
+**Konsistenz-Check:** Cash 49.670,08 unverändert seit GS-Fill (Memory ✓). Equity Pre-Market Delta zu Do-Close 98.480,38 → 98.288,46 = **-0,195 %** (leichte Pre-Market-Schwäche, konsistent mit GOOGL/GS Follow-Through).
+
+**Positionen Live 08:35 ET (Alpaca /v2/positions):**
+| Sym    | Curr      | Chg_today | P/L %    | V1-Stop        | V1-Puffer  | Status |
+|--------|-----------|-----------|----------|----------------|------------|--------|
+| AAPL   |   333,08  | -0,05 %   | +5,12 %  | 291,51 (-8 %)  | +14,26 %   | SICHER (stabil nach Do-Rebell) |
+| UNH    |   425,79  | +0,57 %   | +6,03 %  | 369,44 (-8 %)  | +15,25 %   | SICHER (Reset stabil, kein Rally-Give-back-2) |
+| JPM    |   342,50  | -0,19 %   | +2,92 %  | 306,16 (-8 %)  | +11,87 %   | SICHER (Konsolidierung) |
+| LLY    | 1.173,90  | +0,40 %   | -1,67 %  | 1.098,38 (-8 %)| +6,88 %    | SICHER (Reversal-Fortsetzung) |
+| **GOOGL**|  346,76 | **-2,17 %**| -5,80 % | 338,65 (-8 %)  | **+2,39 %**| **KRITISCH** (Fill-Day+8 Nachmittags-Kollaps setzt sich fort, Blackout-Konflikt Close!) |
+| **GS** | 1.079,98  | **-1,41 %**| -5,41 % | 1.050,40 (-8 %)| **+2,82 %**| **KRITISCH** (Fill-Day+2 Drop-Muster-Fortsetzung wie AVGO/MU) |
+
+→ **Alle 6 V1-V6 SICHER** (V1 nicht getroffen), aber GS und GOOGL Puffer <5 % [WARNUNG].
+
+**SPY-Ground-Truth Pre-Market:** Alpaca IEX SPY Latest-Bar (08:35 ET, 200 Sh) = **744,22** vs Do-Close 750,87 = **-0,886 %**. Alpha Pre-Market = -0,240 % − (-0,886 %) = **+0,646 % POSITIV** (Portfolio läuft besser als SPY dank UNH/LLY-Rebound). Aber: IEX-Pre-Market-Volumen minimal, Bar nur indikativ.
+
+**Perplexity Daily Macro Check — Zukunftsdatum-Refusal (Standard):**
+- VIX: Close 16.07. **16,73**, aktuell ~17,96 Pre-Market (im Konfidenz-Range der letzten Tage 15-18) [GRÜN, < 30]
+- SPY Premarket: nicht verfügbar → Alpaca-Fallback -0,886 % (siehe oben)
+- 10Y Treasury Yield: nicht verfügbar
+- Makro-Events heute: nicht verfügbar (Fr 17.07. — potenziell Retail Sales, Consumer Sentiment Uni Michigan Fr-Standard)
+- Top News: nicht verfügbar
+
+**Guardrail-Check nach Research (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,240 %                                        [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,338 % (KW29 Tag 5)                           [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,777 % vs ATH 100.066,47                      [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,777 %                                        [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY gestern -0,517 %                            [INAKTIV]
+6. VIX-Filter (>30):          16,73 / 17,96 Pre-Market                        [GRÜN]
+7. Earnings-Blackout (3 HT):  UNH beendet, GOOGL ab HEUTE Close aktivierbar   [ÜBERGANG]
+8. Max Käufe KW29:            2/2 LOCK bis Mo 20.07. KW30                     [LOCK]
+```
+
+**Earnings-Blackout-Check (Perplexity vs Memory carry-over):**
+- Perplexity behauptet "keine Overlap 17.-24.07." — **falsch für GOOGL** (Q2 22.07.2026 AMC bereits in Memory bestätigt)
+- **GOOGL Q2 22.07. AMC** = 3 HT ab heute → **3-HT-Blackout aktivierbar ab HEUTE Close** (Fr 17.07. Close-Routine ZWINGEND)
+- AAPL 30.07. AMC (>2 HT weg, kein Blackout), JPM/UNH bereits Q2 released, LLY 05.08. BMO (>2 Wo weg), GS Q3 ~Mitte Oktober (>60 HT weg)
+- Nur GOOGL relevant für heutige Blackout-Aktivierung
+
+**GOOGL-Blackout-Konflikt bei Close (kritisch dokumentiert):**
+- Standard-V1 338,65 aktiv Pre-Market: Puffer +2,39 % (aktueller Kurs 346,76)
+- Blackout-Tightening geplant Close: V1_neu = 368,10 × 0,95 = **349,70**
+- Falls Close bei ~346,76 (Pre-Market-Niveau): 346,76 < 349,70 → **V1_neu UNTER Wasser → Sofort-Stop im Moment der Aktivierung**
+- Regel-Auslegung: Blackout-Tightening greift nur, wenn Kurs > V1_neu bleibt. Bei Kurs < V1_neu ist Regel-Konflikt: entweder Tightening aussetzen und -8 % beibehalten (338,65) ODER Rule-strict Sofort-Stop im Close-Bar
+- **Entscheidung Pre-Market: nur DOKUMENTIEREN + ClickUp-Alert Prio 2 (Wichtig).** Endgültige Regel-Entscheidung in Close-Routine, wenn Kurs bekannt.
+- Best-Case: GOOGL bis Close über 349,70 zurück → Blackout-Tightening greift regelkonform
+- Worst-Case: GOOGL bleibt < 349,70 → Konflikt-Auflösung durch Strategie-Lock (keine Regel-Abweichung ohne Owner-Freigabe)
+
+**GS Fill-Day+2 Drop-Muster (VOLLBILD-Fortsetzung):**
+- Fill-Preis 15.07. 1.141,74 → Do-Close 1.095,46 (-4,05 %) → Fr Pre-Market 1.079,98 (-5,41 % kumuliert)
+- V1 1.050,40 bei 1.079,98 = +2,82 % Puffer (Verlauf: Fill Open +7,29 % → Do-Midday +4,93 % → Do-Close +4,29 % → Fr-Pre +2,82 %)
+- Muster-Analogie: AVGO Fill-Day+3 -8,69 % V1-Stop, MU Fill-Day+4 -10,92 % V1-Stop → GS Fill-Day+2 aktuell -5,41 %, kritisches Fenster
+- **Pre-Market-Alert erforderlich**, aber kein Sofort-Handel (Regel-strict: V1 nicht getroffen)
+
+**Pre-Market-Entscheidungs-Matrix:**
+- Kauf-Scan heute: **NEIN** (Slot LOCK 2/2 bis Mo 20.07.)
+- Neuer Sell-Trigger: **NEIN** (V1 nicht getroffen, keine V2/V3/V4/V5/V6)
+- ClickUp-Alert-Prio: **2 (Wichtig)** wegen 2 Positionen mit Puffer <5 % + GOOGL-Blackout-Konflikt-Vorwarnung
+- Nächster Check: Market Open 09:37 ET (Fr 17.07. KW29 Tag 5)
+
+**Datenqualität:**
+- Alpaca /v2/account + /v2/positions + /v2/clock Pre-Market Fr erfolgreich
+- Alpaca /v2/stocks/bars/latest SPY IEX = nur 200-Sh Pre-Market-Bar (indikativ)
+- Perplexity Daily-Macro + Earnings-Query beide "Zukunftsdatum-Refusal" (Standard-Muster seit KW28)
+- Memory carry-over als primäre Quelle für Earnings-Daten (bewährt seit LLY/UNH/GS-Blackouts)
+
+> **Entscheidung Pre-Market 17.07.:** **Kein Kauf-Scan** (LOCK), **keine Sofort-Aktion** (alle V1 SICHER). **GS 2,82 % und GOOGL 2,39 % KRITISCH** (Puffer <5 %). **GOOGL-Blackout-Konflikt Close** (V1_neu 349,70 vs Kurs 346,76 = -0,85 % negativ) — Regel-Entscheidung in Close-Routine. Alle 8 Guardrails GRÜN, aber Sub-Status GELB wegen 2 Positionen mit Puffer <5 %. ClickUp-Alert Prio 2.
+> **Nächste Routine:** Fr 17.07. 09:30 ET Market Open (Fokus: GS/GOOGL V1-Watch, kein Kauf-Scan wegen LOCK).
+
+---
+
 ## Market Close 16:02 ET — 2026-07-16 (Do, KW29 Tag 4) — Tagesbilanz, alle V1-V6 SICHER, GOOGL/GS Nachmittags-Drop, Alpha -0,030 % NEUTRAL
 
 **Alpaca Clock:** is_open=false, next_open Fr 17.07. 09:30 ET, next_close 16:00 ET.
