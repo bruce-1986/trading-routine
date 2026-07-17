@@ -1,6 +1,63 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-17 09:37 ET (Market Open Fr KW29 Tag 5, alle 6 V1 SICHER aber GS +1,26% und GOOGL +1,65% DRAMATISCH ENG, kein Kauf-Scan (LOCK 2/2), Equity 98.252,31 Daily -0,276% Weekly -0,375%, DD -1,813%, GOOGL-Blackout-Konflikt bei Close verschärft (Kurs 344,24 < V1_neu 349,70), PushNotification Prio 2 gesendet)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-17 13:07 ET (Midday Stop-Check Fr KW29 Tag 5, alle 6 V1-V4 SICHER, GS/GOOGL Puffer weiter eng aber leicht verbessert vs Open, keine Stops ausgelöst, Equity 98.390,73 Daily -0,136% Weekly -0,234%, DD -1,674%, keine Sell-Order, kein ClickUp-Alert)
+
+---
+
+## Midday 2026-07-17 13:07 ET (Fr, KW29 Tag 5) — Alle 6 V1-V4 SICHER, GS/GOOGL leicht erholt aber Puffer <3% weiter KRITISCH
+
+```
+Alpaca clock:      is_open=true | next_close 17.07. 16:00 ET
+Equity:            98.390,73 $   (Live 13:07 ET)
+Cash:              49.670,08 $   (50,48 %, unverändert)
+Portfolio MV:      48.726,53 $   (49,52 %, 6 Positionen)
+Buying_power:     335.098,13 $
+Daily P/L:           -133,98 $   (-0,136 % vs Alpaca last_equity 98.524,71)   [GRÜN — Cap -3 %]
+ATH:              100.066,47 $   DD -1,674 % [GRÜN — Alarm bei -15 %]
+Weekly P/L KW29:    -0,234 %     (Tag 5, Basis Fr-Close 98.621,81)             [GRÜN — Cap -5 %]
+Käufe KW29:            2/2 LOCK  (bis Mo 20.07. KW30)                          [LOCK]
+Pending Orders:        0
+Guardrails: Daily -0,14 % | Weekly -0,23 % | DD -1,67 % | Käufe 2/2 LOCK → ALLE GRÜN
+```
+
+**Positionen Live V1-Check (Alpaca /v2/positions 13:07 ET) — sortiert nach Puffer ENG→WEIT:**
+
+| Sym    | Curr      | P/L      | V1-Stop        | V1-Puffer  | V2-Trail  | V2-Puffer  | Status |
+|--------|-----------|----------|----------------|------------|-----------|------------|--------|
+| **GOOGL**|  346,53 | -5,85 %  |  338,65 (-8 %) | **+2,33 %**| 330,16    | +4,96 %    | SICHER **KRITISCH** (verbessert vs Open +1,65 %, aber immer noch <3 % Puffer) |
+| **GS** | 1.080,05  | -5,38 %  | 1.050,40 (-8 %)| **+2,82 %**| 1.013,45  | +6,57 %    | SICHER **KRITISCH** (verbessert vs Open +1,26 %, Fill-Day+2 Drop-Muster VOLLBILD) |
+| LLY    | 1.178,93  | -1,28 %  | 1.098,38 (-8 %)| +7,33 %    | 1.098,70  | +7,30 %    | SICHER (Reversal-Fortsetzung Tag 3, +0,72 % chg_today) |
+| JPM    |   343,21  | +3,14 %  |  306,16 (-8 %) | +12,10 %   | 306,97    | +11,81 %   | SICHER (leichter Rebound Post-Q2 Tag 4) |
+| AAPL   |   330,03  | +4,17 %  |  291,51 (-8 %) | +13,21 %   | 294,49    | +12,07 %   | SICHER (Fill-Day+4 stabil) |
+| UNH    |   432,59  | +7,72 %  |  369,44 ✓Reset | +17,09 %   | 405,64    | +6,64 %    | SICHER (Post-Q2-Konsolidierung, Tages-Sieger +1,71 % chg) |
+
+**V1-V4-Check: ALLE 6 POSITIONEN SICHER.** → **Keine Sell/Limit-Order platziert.**
+- V1 alle SICHER (GOOGL engste +2,33 %, dann GS +2,82 %)
+- V2 alle SICHER (UNH V2-Trail 405,64 engste bei +6,64 % Puffer)
+- V3/V4 nicht ausgelöst (UNH beste P/L nur +7,72 %, weit unter +20 %)
+- RSI/EMA werden bei Midday nicht geprüft (nur Market Open/Close)
+
+**Puffer-Entwicklung vs Open 09:37 ET:**
+- GS: +1,26 % → +2,82 % (**+1,56 %-Punkte verbessert**, Erholung von Fill-Day+2-Tief)
+- GOOGL: +1,65 % → +2,33 % (**+0,68 %-Punkte verbessert**, leicht rekonsolidiert nach Do-Nachmittags-Kollaps)
+- Beide Puffer bleiben **<3 %** → weiter kritischer Watch bis Close
+
+**Guardrails (alle 8):**
+```
+1. Daily Loss Cap (-3 %):     -0,136 %                              [GRÜN]
+2. Weekly Loss Cap (-5 %):    -0,234 % (KW29 Tag 5)                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,674 % vs ATH 100.066,47            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,674 %                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   (nicht abgerufen — Daily -0,14 %)     [INAKTIV]
+6. VIX-Filter (>30):          ~17 (carry-over)                      [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL ab Close heute aktivierbar      [ÜBERGANG]
+8. Max Käufe KW29:            2/2 LOCK bis Mo 20.07. KW30           [LOCK]
+```
+
+**ClickUp:** KEIN Alert (kein Stop ausgelöst, Daily Cap weit weg — Regel: kein Log um ClickUp nicht zu überfluten). PushNotification Prio 2 an Owner wegen weiterhin kritischer Puffer GS/GOOGL.
+
+> **Entscheidung Midday 13:07 Fr 17.07.:** **Alle 6 V1-V4 SICHER**, keine Sell-Order (V1 nicht erreicht, regelkonform Halten). GS und GOOGL haben sich vom Open leicht erholt (Puffer +1,56 pp / +0,68 pp), bleiben aber mit <3 % Puffer im kritischen Watch-Fenster. Daily -0,136 % [GRÜN weit von Cap -3 %].
+> **Nächste Routine:** Fr 17.07. 16:00 ET Market Close (GOOGL-Blackout-Aktivierung + V1-Tightening 349,70 zwingend prüfen; V5/V6-Check für Mo 20.07.).
 
 ---
 
