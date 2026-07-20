@@ -4,6 +4,90 @@
 
 ---
 
+## Market Open 09:41 ET — 2026-07-20 (Mo, KW30 Tag 1) — V-Kauf Slot 1/2 gefüllt, PANW K5-Reject, GS/GOOGL Rebound
+
+**Alpaca Clock:** is_open=true, next_close Mo 20.07. 16:00 ET.
+
+**Account 09:41 ET nach V-Fill (Alpaca /v2/account):**
+```
+Equity:            98.402,10 $   (+0,169 % vs last_equity 98.236,14)         [GRÜN]
+Cash:              40.026,28 $   (40,68 % post V-Kauf)
+Portfolio_MV:      58.352,91 $   (59,32 %, 7 Positionen)
+Buying_power:     323.557,42 $
+Käufe KW30:        1/2           (V gefüllt, Slot 2/2 verfügbar bis Fr 24.07.)
+Pending Orders:    0
+```
+
+**Watchlist-Scan-Ergebnis Mo 20.07. (5 K1-K3 LEADS aus Fr-Carry gescannt):**
+
+| Sym  | Close Fr | Live 09:38 | K1 EMA-Spread | K2 RSI | K3 RS_63d | K4 Vol Extrap | K5 FwdPE MultiSrc | K5 RevGrowth | Entsch. |
+|------|----------|------------|---------------|--------|-----------|---------------|-------------------|--------------|---------|
+| **V**    | 358,51 | 356,91 (-0,45 %) | +3,61 ✓ | 62,68 ✓ | +7,82 % ✓ | **157 % Avg20** ✓ | **24,4 / 24,8 / 27,0 (Med ~25)** ✓ | **17 % Q2 FY26** ✓ | **KAUF** |
+| PANW | 358,62 | 364,20 (+1,56 %) | +65,24 ✓ | 67,33 ✓ | +108,86 % ✓ | 121 % ✓ | **55,17 / 57,89 / 77,66 (>35 alle)** ✗ | 16 % Q2 FY25 ✓ | **REJECT K5** |
+| ABBV | 254,52 | 255,02 (+0,20 %) | +8,66 ✓ | 64,43 ✓ | +15,89 % ✓ | (nicht geprüft) | (nicht geprüft) | (nicht geprüft) | **BACKUP** — XLV-Cap-Owner-Pending |
+| MRK  | 127,48 | 127,30 (-0,14 %) | +12,55 ✓ | 57,87 ✓ | +4,45 % ✓ | (nicht geprüft) | (nicht geprüft) | (nicht geprüft) | **BACKUP** — XLV-Cap-Owner-Pending |
+| JNJ  | 253,01 | 253,09 (+0,03 %) | +22,04 ✓ | 54,42 ✓ | +1,92 % ✓ | (nicht geprüft) | (nicht geprüft) | (nicht geprüft) | **BACKUP** — XLV-Cap-Owner-Pending |
+
+**V-Kauf ausgeführt (Alpaca Order-ID 85d11ad8-fccc-4c6f-a55c-5cc6695999a2):**
+- Limit 360,30 (prev_close 358,51 × 1,005) → Fill 09:41:19 ET @ **357,177778 $ × 27 Sh** in 3 sec
+- Investiert 9.643,80 $ = 9,80 % Portfolio (Budget 10 % bei VIX < 25)
+- Stops: V1 328,60 (-8 %) | V2 314,32 (-12 %) | TP1 428,62 (+20 %) | TP2 482,20 (+35 %)
+- Sektor XLF (JPM+GS+V = 3/3 Positionen, 19,63 % Portfolio, unter 30 % Cap)
+
+**PANW K5-Reject-Analyse (permanent K5-blocked wie AMD 14.07.):**
+- FwdPE Range **42-78** aus 4 unabhängigen Quellen (GuruFocus current 55,17 / GuruFocus-Snap 57,89 / StockAnalysis 77,66 / GuruFocus älter 42,10)
+- Selbst niedrigste Quelle (42,10) verletzt K5-Cap 35 klar
+- Cybersecurity-Sektor-Typik: hohe Wachstums-Multiples permanent > 35 → K5-Block bis Multi-Source-Median klar unter 35 fällt
+
+**XLV-Trio (ABBV/MRK/JNJ) nicht aktiviert:**
+- Alle 3 K1-K3 3/3 grün (Fr-Screener bestätigt)
+- **XLV-Sektor-Cap-Deutungs-Frage Owner-Pending** (UNH 10.127 + LLY 9.362 = 19.489 $ = 33,39 % investiert / 19,80 % Portfolio)
+- Bei ABBV-Kauf ~9-10 % Portfolio → 3. XLV-Position wäre ~29-30 % investiert / ~14 % Portfolio → grenzwertig
+- **Warten auf Owner-Freigabe zur Sektor-Cap-Deutung** — heute nicht aktiviert (Strategie-Lock Pflichtregel 3)
+
+**Positionen-V1-Check 09:38 ET (alle 6 alte + V = 7 SICHER):**
+
+| Sym    | Live       | Fr-Close | Chg     | P/L %   | V1-Puffer  | Δ vs Fr-Close |
+|--------|------------|----------|---------|---------|------------|---------------|
+| **GS** | 1.079,81   | 1.065,22 | +1,37 % | -5,43 % | **+2,80 %**| +1,34 pp (Rebound) |
+| **GOOGL**|  356,78  | 346,77   | +2,88 % | -3,08 % | **+5,35 %**| +2,95 pp (Rebound) |
+| LLY    | 1.174,47   | 1.179,11 | -0,39 % | -1,63 % | +6,93 %    | -0,05 pp |
+| V (NEU)|   357,18   | 358,51   | Fill    | +0,00 % | +8,70 %    | Fill-Day+0 |
+| JPM    |   343,37   | 341,10   | +0,67 % | +3,18 % | +12,16 %   | +0,75 pp |
+| AAPL   |   331,25   | 333,74   | -0,75 % | +4,54 % | +13,64 %   | -0,85 pp |
+| UNH    |   421,45   | 426,09   | -1,08 % | +4,95 % | +14,08 %   | -1,24 pp |
+
+**GS/GOOGL Rebound-Kontext (positiv, aber Watch-Fenster nicht abgeschlossen):**
+- GS Puffer +2,80 % vs Fr-Close +1,46 % = **+1,34 pp Rebound**, aber weiter unter 3 % → Fill-Day+3-Muster-Watch fortgesetzt
+- GOOGL Puffer +5,35 % vs Fr-Close +2,40 % = **+2,95 pp starker Rebound**, **verlässt <3 %-Kritisch-Zone** (Blackout-Konflikt entspannt: V1_neu 349,70 nun +1,99 % positiv vs Fr-Close -0,84 % negativ)
+
+**GOOGL-Blackout-Konflikt-Update (Fortsetzung Option A):**
+- V1_neu Blackout 349,70 vs Kurs 356,78 = **+1,99 % positiv** (Fr-Close war -0,84 % negativ)
+- **Sofort-Stop-Risiko entfällt** bei aktueller Live-Notierung
+- **Option A Strategie-Lock bleibt aktiv** (Standard V1 338,65), Owner-Freigabe weiter pending für Blackout-Aktivierung ab heute Close
+- Blackout endet Di 22.07. Close (letzter Blackout-Tag = Mi 22.07. Open-Handel)
+
+**Guardrails Check nach V-Fill (alle 8 GRÜN):**
+```
+1. Daily Loss Cap:    +0,169 % (positiv)                                    [GRÜN]
+2. Weekly Loss Cap:   KW30 Tag 1 +0,169 %                                   [GRÜN]
+3. Drawdown-Alarm:    -1,664 % vs ATH 100.066,47                            [GRÜN]
+4. Drawdown-Stopp:    -1,664 %                                              [GRÜN]
+5. Crash-Filter:      SPY +0,665 % positiv                                  [INAKTIV]
+6. VIX-Filter:        18,28                                                 [GRÜN]
+7. Earnings-Blackout: GOOGL aktiv (Kurs > V1_neu, kein Sofort-Stop-Risiko) [WARN — Owner-Pending] |
+8. Max Käufe KW30:    1/2 (V gefüllt, Slot 2/2 offen)                      [FREI 1]
+```
+
+**Watchlist-Rest für Slot 2/2 (bis Fr 24.07.):**
+- **Priorität 1:** ABBV/MRK/JNJ (XLV) — nur bei Owner-Freigabe der Sektor-Cap-Deutung
+- **Priorität 2:** Neuer Screener-Run (post-V-Kauf) für alternative Sektoren XLK/XLI/XLP
+- **Sperren aktiv:** PANW (K5-Fail permanent), AMD (K5-Fail permanent)
+
+**Nächste Routine:** Mo 20.07. 13:00 ET Midday Stop-Check — V Fill-Day+0-Watch (AVGO/MU-Präzedenz für Fill-Day-Drop-Muster), GS/GOOGL Rebound-Fortsetzung prüfen, alle anderen V1 SICHER.
+
+---
+
 ## Pre-Market 08:36 ET — 2026-07-20 (Mo, KW30 Tag 1) — Alle 6 V1 SICHER, GS/GOOGL Pre-Market erholt aber Puffer weiter <3%, VIX 18,28 GRÜN, SPY Pre +0,44%, Chip-Selloff-Sorge XLK-Watch, GOOGL-Blackout weiter Owner-Pending, Kaufscan Open FREIGEGEBEN (Slot 2/2 KW30)
 
 **Alpaca Clock:** is_open=false, next_open Mo 20.07. 09:30 ET.
