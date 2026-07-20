@@ -4,6 +4,83 @@
 
 ---
 
+## Pre-Market 08:36 ET — 2026-07-20 (Mo, KW30 Tag 1) — Alle 6 V1 SICHER, GS/GOOGL Pre-Market erholt aber Puffer weiter <3%, VIX 18,28 GRÜN, SPY Pre +0,44%, Chip-Selloff-Sorge XLK-Watch, GOOGL-Blackout weiter Owner-Pending, Kaufscan Open FREIGEGEBEN (Slot 2/2 KW30)
+
+**Alpaca Clock:** is_open=false, next_open Mo 20.07. 09:30 ET.
+
+**Account Pre-Market 08:36 ET (Alpaca /v2/account):**
+```
+Equity:            98.240,91 $   (vs last_equity 98.236,14 → +0,005 % über Nacht flat)   [GRÜN]
+Cash:              49.670,08 $   (50,56 %, unverändert seit GS-Fill Mi 15.07.)
+Portfolio_MV:      48.572,91 $   (49,44 %, 6 Positionen)
+Buying_power:     334.678,64 $
+Käufe KW30:        0/2           (LOCK-Ende, KW30-Reset AKTIV — Slot 2/2 verfügbar)
+Pending Orders:    0             (V1-V6 alle 6 SICHER am Fr-Close, keine offenen Orders)
+Konsistenz vs portfolio.md Fr-Close 98.216,93 → +0,024 % (nachhandel, unkritisch)
+```
+
+**Guardrail-Check (alle 8) Pre-Market Snapshot:**
+```
+1. Daily Loss Cap (-3 %):     -0,005 % (Pre-Market, quasi-flat)                 [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 1 Start → 0,000 %                        [GRÜN — RESET]
+3. Drawdown-Alarm (-15 %):    -1,828 % vs ATH 100.066,47                        [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,828 %                                          [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Fr -1,011 % (nicht Trigger)                   [INAKTIV]
+6. VIX-Filter (>30):          18,28 (Perplexity spot, alt. 20,95)               [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Q2 22.07. AMC → Blackout aktiv Mo-Mi        [WARN — Owner-Pending]
+8. Max Käufe KW30:            0/2 (Slot 2/2 verfügbar)                          [FREI]
+```
+
+**Pre-Market Kurse (Alpaca /v2/positions current_price vs lastday_price = Fr-Close 17.07.) — sortiert nach V1-Puffer ENG→WEIT:**
+
+| Sym    | Pre-Market | Fr-Close | Chg PM   | P/L %    | V1-Stop       | V1-Puffer  | Δ vs Fr-Close-Puffer | Status |
+|--------|------------|----------|----------|----------|---------------|------------|----------------------|--------|
+| **GS** | 1.070,99   | 1.065,22 | +0,54 %  | -6,20 %  | 1.050,40      | **+1,96 %**| +0,50 pp (Erholung)  | SICHER **KRITISCH** (Fill-Day+3, weiter <3 %) |
+| **GOOGL**|  348,32  | 346,77   | +0,45 %  | -5,37 %  | 338,65        | **+2,86 %**| +0,46 pp (Erholung)  | SICHER **KRITISCH** (Blackout-Konflikt aktiv, Owner-Pending) |
+| LLY    | 1.175,00   | 1.179,11 | -0,35 %  | -1,58 %  | 1.098,38      | +6,98 %    | -0,32 pp             | SICHER |
+| JPM    |   341,50   | 341,10   | +0,12 %  | +2,62 %  |  306,16       | +11,54 %   | +0,13 pp             | SICHER |
+| AAPL   |   332,07   | 333,74   | -0,50 %  | +4,80 %  |  291,51       | +13,91 %   | -0,58 pp             | SICHER |
+| UNH    |   426,25   | 426,09   | +0,04 %  | +6,15 %  |  369,44       | +15,37 %   | +0,05 pp             | SICHER |
+
+→ **Alle 6 V1 Pre-Market SICHER**. GS/GOOGL zeigen leichte Pre-Market-Erholung (~+0,50 pp Puffer), bleiben aber unter 3 %-Schwelle → **kritischer Watch bei Open + Midday zwingend fortgesetzt**.
+
+**GS Fill-Day+3 Kontext:** Fill 15.07. 1.141,74 → PM 20.07. 1.070,99 = **-6,20 % kumuliert**. Präzedenz-Muster AVGO Fill-Day+3 -8,69 % / MU Fill-Day+4 -10,92 % beide V1 Stop-Auslöser → GS heute im **kritischen 3./4. Handelstag-Fenster**. Ohne Trend-Wende Puffer +1,96 % → 1,96/8 = **24,5 % des V1-Weges bereits verbraucht**.
+
+**GOOGL Blackout-Konflikt (Fortsetzung von Fr-Close, Owner-Pending):**
+- V1_neu Blackout = 368,10 × 0,95 = **349,70 (-5 %)** vs Standard V1 338,65 (-8 %)
+- Pre-Market-Kurs 348,32 < V1_neu 349,70 = **-0,40 % negativ** (Fr-Close war -0,84 %, leicht entspannt)
+- **Standard V1 338,65 bleibt aktiv** (Strategie-Lock Option A, Owner-Freigabe pending vor Open zwingend)
+
+**Perplexity Daily Macro Check (08:35 ET, sonar):**
+- **VIX:** 18,28 (spot, alternativ 20,95 andere Quelle — beide GRÜN < 30)
+- **SPY Pre-Market:** Alpaca IEX Quote 746,49/746,66 vs Fr-Close 743,28 = **+0,44 %** (positive Eröffnungsindikation)
+- **10Y Treasury Yield:** ~4,55 % (letzter Wert 17.07., Perplexity refused Zukunftsdatum → carry-over)
+- **Fed/CPI/PPI heute:** kein Ereignis vor Open (Perplexity: „not listed")
+- **Top News (24h):**
+  1. **Global Selloff Chipmakers** (AI-Valuation-Sorgen) → **XLK-Belastung Fortsetzung** — direkter Watchlist-Impact PANW
+  2. S&P 500 auf 1-Wo-Tief, Nasdaq 100 auf 5-Wo-Tief (Fr-Close-Momentum negativ)
+  3. VIX-Anstieg-Meldung (12,39 %) — konfliktäre Quelle, aber selbst 20,95 = GRÜN
+
+**Earnings-Blackout-Check offene Positionen (Perplexity, 2 Anfragen):**
+- **GOOGL Q2 22.07. AMC** — carry-over aus Fr-Close-Doku (Perplexity refused Zukunftsdatum, aber Portfolio.md-Zustand bindend) → **Blackout aktiv Mo-Mi 20.-22.07.**
+- **AAPL 30.07. AMC** — außerhalb 3-HT-Fenster [SICHER]
+- **GS, JPM, LLY, UNH:** keine Earnings im Fenster 20.-24.07. bestätigt [SICHER]
+
+**Sektor-Kontext für Kauf-Watchlist KW30:**
+- **XLK-Chip-Selloff-Fortsetzung** → **PANW (XLK Cybersecurity) VORSICHT** trotz K1-K3 3/3, K5-Multi-Source-FwdPE zwingend + Sektor-Momentum-Recheck bei Open
+- **V (XLF)** unbetroffen von Chip-Sektor → **priorisiert** wenn K5 grün
+- ABBV/MRK/JNJ (XLV) als Backup, aber XLV-Sektor-Cap-Deutungs-Frage weiter Owner-Pending
+
+**Entscheidung Pre-Market Mo 20.07.:**
+- **Kein Sell-Trigger** (alle V1 Pre SICHER, GS/GOOGL bleiben aber im engen Watch-Fenster für Open)
+- **Kaufscan Open 09:30 ET FREIGEGEBEN** (alle 8 Guardrails GRÜN, Slot 2/2 KW30 verfügbar)
+- **Priorität Watchlist:** V (Q3 ~28.07. → Kauf-Fenster Mo-Mi vor Blackout 23.07. Close) > PANW (XLK-Belastung erhöht Skepsis, K5-Multi-Source zwingend) > XLV-Backup nur bei Sektor-Cap-Freigabe
+- **Owner-Frage weiter offen:** GOOGL-Blackout-Tightening Option A/B/C — heute mit Blackout-Aktivierung akut (Fr-Notification unbeantwortet, PM-Puffer -0,40 % vs V1_neu 349,70)
+
+**Nächste Routine:** Mo 20.07. 09:30 ET Market Open + Kauf-Scan KW30 (V/PANW K5-Multi-Source-Recheck, XLV-Backup nur bei Sektor-Cap-Freigabe; GS/GOOGL V1-Watch zwingend engmaschig).
+
+---
+
 ## Market Close 16:02 ET — 2026-07-17 (Fr, KW29 Tag 5) — Tagesbilanz, alle 6 V1-V6 SICHER, GS/GOOGL Puffer <3% kritisch, GOOGL-Blackout-Konflikt Owner-Pending, Alpha +0,70% daily / +1,13% weekly POSITIV, Watchlist KW30 5 K1-K3 LEADS
 
 **Alpaca Clock:** is_open=false, next_open Mo 20.07. 09:30 ET, next_close Mo 20.07. 16:00 ET.
