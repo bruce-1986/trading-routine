@@ -1,6 +1,70 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-20 09:41 ET (Market Open Mo KW30 Tag 1, **V Kauf gefüllt 27 Sh @ 357,18**, alle 7 V1 SICHER, GS Rebound +2,80% / GOOGL Rebound +5,35% Puffer, VIX 18,28 GRÜN, SPY Open +0,44%, Käufe KW30 1/2, Slot 2/2 verbleibt)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-20 13:08 ET (Midday Mo KW30 Tag 1, alle 7 V1 SICHER — **GS Puffer +0,41% RAZOR-THIN**, GOOGL Puffer +4,36%, Daily -0,30% GRÜN, keine Stops ausgelöst, keine Orders platziert)
+
+---
+
+## Midday 2026-07-20 13:08 ET (Mo, KW30 Tag 1) — Alle 7 V1 SICHER, GS Puffer +0,41% RAZOR-THIN, keine Stops
+
+```
+Alpaca clock:      is_open=true | next_close Mo 20.07. 16:00 ET
+Equity:            97.946,18 $   (Alpaca /v2/account)
+Cash:              40.026,28 $   (40,87 %)
+Portfolio MV:      57.914,63 $   (59,13 %, 7 Positionen)
+Buying_power:     322.280,85 $
+Daily P/L:          -289,96 $     (-0,2952 % vs last_equity 98.236,14)     [GRÜN, Cap -3 %]
+ATH:              100.066,47 $   DD -2,119 % [GRÜN — Alarm bei -15 %]
+Weekly KW30:        -0,295 %     (Tag 1)                                    [GRÜN]
+SPY Live 13:08:   744,27         (vs Fr-Close 743,28 = +0,133 %)
+Alpha vs SPY:      -0,428 pp     (GS -Drag dominiert)                       [NEGATIV]
+Käufe KW30:            1/2       (V gefüllt, Slot 2/2 offen bis Fr 24.07.)
+Open Orders:           0
+Guardrails: alle 8 GRÜN
+```
+
+**Positionen Live 13:08 ET (nach Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Live       | Entry      | Chg vs Open | P/L %    | V1-Stop     | V1-Puffer      | Signal Δ vs Open |
+|--------|------------|------------|-------------|----------|-------------|----------------|------------------|
+| **GS** | 1.054,76   | 1.141,74   | -2,32 %     | **-7,62 %** | 1.050,40   | **+0,41 % 🔴** | SICHER (WEITER verschlechtert vs Open +2,80 %, Puffer -2,39 pp — Fill-Day+3 Drop-Muster VOLLBILD, ~4 $ vom V1) |
+| **GOOGL**|  353,43  | 368,10     | -0,94 %     | -3,99 %  | 338,65      | **+4,36 %**    | SICHER (leicht verschlechtert vs Open +5,35 %, Puffer -0,99 pp; Blackout Owner-Pending) |
+| LLY    | 1.165,96   | 1.193,89   | -0,72 %     | -2,34 %  | 1.098,38    | +6,15 %        | SICHER (verschlechtert vs Open +6,93 %, Puffer -0,78 pp) |
+| V (NEU)|   360,89   |   357,18   | +1,04 %     | +1,04 %  |   328,60    | +9,83 %        | SICHER (Fill-Day+0 leicht positiv, +1,04 pp vs Fill 357,18 → **kein Sofort-Drop-Muster** wie AVGO/MU) |
+| JPM    |   339,68   |   332,78   | -1,08 %     | +2,07 %  |   306,16    | +10,95 %       | SICHER (leicht verschlechtert vs Open +12,16 %, Puffer -1,21 pp) |
+| AAPL   |   324,64   |   316,86   | -2,00 %     | +2,46 %  |   291,51    | +11,37 %       | SICHER (verschlechtert vs Open +13,64 %, Puffer -2,27 pp; XLK-Divergenz?) |
+| UNH    |   422,20   |   401,57   | +0,18 %     | +5,14 %  |   369,44    | +14,28 %       | SICHER (leicht verbessert vs Open +14,08 %, Puffer +0,20 pp) |
+
+**Midday-Fazit:**
+- **Positionen geprüft:** 7/8 (ein Slot frei)
+- **Ø P/L (weighted):** **-0,76 %** (Unrealized PL -443,36 $ / Marktwert 58.358)
+- **Beste Position:** UNH +5,14 %
+- **Schlechteste Position:** GS -7,62 %
+- **Stops ausgelöst:** NEIN (alle 7 V1 SICHER; GS +0,41 % Puffer RAZOR-THIN, GOOGL +4,36 %)
+- **V3/V4 TP-Signale:** keine (max P/L +5,14 % — weit von +20 %-Schwelle)
+- **Daily P/L:** -0,2952 % [GRÜN, Cap -3 %]
+- **Neue Orders:** keine platziert (kein Stop-Trigger, kein TP-Trigger)
+
+**GS Fill-Day+3 Drop-Muster VOLLBILD — kritischer Watch Close 16:00 ET:**
+- Entry 15.07. 1.141,74 → Do-Close +1,42 % Puffer → Fr-Close +1,46 % → Mo-Open +2,80 % → **Mo-Midday +0,41 % ENGSTE ALLER ZEITEN**
+- Präzedenz: AVGO Fill-Day+3 V1-Stop -8,69 %, MU Fill-Day+4 V1-Stop -10,92 % → GS ist **im gleichen Muster-Fenster**
+- Δ zum V1: 1.054,76 - 1.050,40 = **4,36 $** = 0,41 % — jede Bewegung >-0,42 % triggert Market-Sell
+- Close-Routine muss GS V1 zwingend als Pre-Market-Watch für Di 21.07. markieren
+
+**Guardrails alle 8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     -0,295 %                                     [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 1 -0,295 %                          [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,119 %                                     [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,119 %                                     [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,133 %                                 [INAKTIV]
+6. VIX-Filter (>30):          18,28 (Pre-Wert, kein Update Midday)         [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Option A Strategie-Lock aktiv (V1_neu 349,70 < Kurs 353,43 = +1,07 % positiv, kein Sofort-Stop-Risiko) | V Q3 ab Do 23.07. Close [WARN — Owner-Pending] |
+8. Max Käufe KW30:            1/2 (V gefüllt, Slot 2/2 offen)              [FREI 1]
+```
+
+**Entscheidung Midday 13:08 Mo 20.07.:** **Keine Aktion** — regelkonform (alle V1 SICHER, kein TP-Trigger, Daily Cap fern). **PushNotification Prio 2 an Owner** wegen GS-Puffer +0,41 % (unter historischem Minimum, Fill-Day+3-Muster-Warnung). **Kein ClickUp-Alert** (Routine-Regel: nur bei Stop-Auslösung oder Daily-Cap). 
+
+**Nächste Routine:** Mo 20.07. 16:00 ET Market Close — **GS V1 1.050,40 zwingend prüfen** (Sofort-Sell bei Break), GOOGL V1 338,65 + Blackout-Aktivierungs-Frage, V Fill-Day+0 Close-Bar für V2-Trail-Berechnung.
 
 ---
 
