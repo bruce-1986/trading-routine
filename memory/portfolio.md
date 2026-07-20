@@ -1,6 +1,71 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-20 08:36 ET (Pre-Market Mo KW30 Tag 1, alle 6 V1 SICHER, GS PM +1,96% / GOOGL PM +2,86% leicht erholt aber weiter <3% kritisch, VIX 18,28 GRÜN, SPY Pre +0,44%, Chip-Selloff-Sorge XLK belastet PANW-Watch, GOOGL-Blackout Owner-Pending, Kaufscan Open FREIGEGEBEN Slot 2/2 KW30 verfügbar)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-20 09:41 ET (Market Open Mo KW30 Tag 1, **V Kauf gefüllt 27 Sh @ 357,18**, alle 7 V1 SICHER, GS Rebound +2,80% / GOOGL Rebound +5,35% Puffer, VIX 18,28 GRÜN, SPY Open +0,44%, Käufe KW30 1/2, Slot 2/2 verbleibt)
+
+---
+
+## Market Open 2026-07-20 09:41 ET (Mo, KW30 Tag 1) — V-Kauf gefüllt Slot 1/2, alle 7 V1 SICHER, GS/GOOGL Rebound
+
+```
+Alpaca clock:      is_open=true | next_close Mo 20.07. 16:00 ET
+Equity:            98.402,10 $   (Alpaca /v2/account, post V-Fill)
+Cash:              40.026,28 $   (40,68 %, post V-Kauf 9.643,80 $ verbraucht)
+Portfolio MV:      58.352,91 $   (59,32 %, 7 Positionen)
+Buying_power:     323.557,42 $
+Daily P/L:          +166,05 $     (+0,169 % vs last_equity 98.236,14)      [GRÜN]
+ATH:              100.066,47 $   DD -1,664 % [GRÜN — Alarm bei -15 %]
+Weekly KW30:        +0,169 %     (Tag 1, positiver Start)                   [GRÜN]
+Käufe KW30:            1/2       (V gefüllt, Slot 2/2 verfügbar bis Fr)     [FREI 1]
+VIX:                18,28        (Perplexity spot Pre)                       [GRÜN]
+SPY Live 09:38:    748,22        (vs Fr-Close 743,28 = +0,665 %)             [POSITIV]
+Guardrails: alle 8 GRÜN | Kauf-Slot 1/2 belegt V
+```
+
+**Positionen Live 09:41 ET nach V-Fill — sortiert nach Puffer ENG→WEIT:**
+
+| Sym    | Live       | Fr-Close | Chg      | P/L %    | V1-Stop       | V1-Puffer  | Status |
+|--------|------------|----------|----------|----------|---------------|------------|--------|
+| **GS** | 1.079,81   | 1.065,22 | +1,37 %  | -5,43 %  | 1.050,40      | **+2,80 %**| SICHER **KRITISCH** (Rebound vs Fr +1,34 pp) |
+| **GOOGL**|  356,78  | 346,77   | +2,88 %  | -3,08 %  | 338,65        | **+5,35 %**| SICHER (Rebound vs Fr +2,95 pp, Blackout Owner-Pending) |
+| LLY    | 1.174,47   | 1.179,11 | -0,39 %  | -1,63 %  | 1.098,38      | +6,93 %    | SICHER |
+| V (NEU)|   357,18   | 358,51   |  Fill 0 % | +0,00 %  |  328,60       | +8,70 %    | SICHER (Fill-Day+0) |
+| JPM    |   343,37   | 341,10   | +0,67 %  | +3,18 %  |  306,16       | +12,16 %   | SICHER |
+| AAPL   |   331,25   | 333,74   | -0,75 %  | +4,54 %  |  291,51       | +13,64 %   | SICHER |
+| UNH    |   421,45   | 426,09   | -1,08 %  | +4,95 %  |  369,44       | +14,08 %   | SICHER |
+
+**V-Kauf-Details:**
+- **Alpaca Order-ID:** 85d11ad8-fccc-4c6f-a55c-5cc6695999a2 — Fill 09:41:19 ET (3 sec)
+- **Fill-Preis:** 357,177778 $ × 27 Shares = 9.643,80 $ (9,80 % Portfolio, unter Limit 360,30 = -0,87 % Vorteil)
+- **Stops:** V1 328,60 (-8 %) | V2 314,32 (-12 %) | TP1 428,62 (+20 %) | TP2 482,20 (+35 %)
+- **K1-K5 alle grün:** EMA-Spread +3,61 marginal | RSI 62,68 | RS_63d +7,82 % | Vol 157 % Avg20 | FwdPE 24-27 (Median 25) | RevGrowth 17 % Q2 FY26
+- **Konkurrenz-Rejects:** PANW K5-FAIL (FwdPE 55-77 Multi-Source > 35, analog AMD); XLV-Trio (ABBV/MRK/JNJ) K1-K3 grün aber Sektor-Cap-Deutung Owner-Pending
+- **Nächstes Ereignis:** V Q3 FY26 Earnings ~28.-29.07. AMC → Blackout aktivierbar Do 23.07. Close
+
+**Sektor-Gewichte nach V-Fill:**
+| Sektor | Positionen | MV       | % investiert | % Portfolio | Status |
+|--------|------------|----------|--------------|-------------|--------|
+| XLF    | GS+JPM+V   | 19.309   | 33,08 %      | 19,62 %     | **⚠ investiert > 30 %**, Portfolio SAFE |
+| XLV    | UNH + LLY  | 19.489   | 33,39 %      | 19,80 %     | **⚠ investiert > 30 %**, Portfolio SAFE |
+| XLK    | AAPL       | 10.279   | 17,62 %      | 10,45 %     | GRÜN |
+| XLC    | GOOGL      |  9.276   | 15,90 %      |  9,43 %     | GRÜN |
+
+**⚠ Sektor-Cap-Deutungs-Frage:** V-Kauf hebt XLF auf 33,08 % investiert (analog XLV mit UNH+LLY 33,39 %). Am Gesamtportfolio (98.402) beide ~19-20 % → **unter Cap wenn Portfolio-Basis, verletzt bei investiert-Basis-Deutung** → **Owner-Klärung übertragen von XLV auf XLF-Kontext** (Weekly Review KW30 Grundsatz-Klärung zwingend).
+
+**Guardrails alle 8 GRÜN nach V-Fill:**
+```
+1. Daily Loss Cap (-3 %):     +0,169 % (Daily positiv nach V-Kauf)         [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 1 +0,169 %                          [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,664 %                                     [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,664 %                                     [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,665 % positiv                         [INAKTIV]
+6. VIX-Filter (>30):          18,28                                        [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Blackout aktiv (V1_neu 349,70 < Kurs 356,78 = +1,99 % positiv, kein Sofort-Stop-Risiko wie Fr) | V Q3 ab Do 23.07. Close [WARN — GOOGL Option A Strategie-Lock, Owner-Pending] |
+8. Max Käufe KW30:            1/2 (V gefüllt)                              [FREI 1]
+```
+
+**Entscheidung Market Open 09:41 Mo 20.07.:** **V-Kauf ausgeführt** — Slot 1/2 belegt. **Keine Sell-Order** (alle 7 V1 SICHER, GS/GOOGL Rebound schließt kritisches Watch-Fenster nicht ab). PushNotification Prio 2 + ClickUp TRADE_BUY Alert Prio 3 versendet.
+
+**Nächste Routine:** Mo 20.07. 13:00 ET Midday Stop-Check — V Fill-Day-Drop-Muster-Watch (AVGO/MU-Präzedenz), GS/GOOGL Rebound-Verhalten fortsetzen, alle anderen V1 SICHER.
 
 ---
 
