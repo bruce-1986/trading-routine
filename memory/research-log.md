@@ -4,6 +4,90 @@
 
 ---
 
+## Market Close 16:02 ET — 2026-07-20 (Mo, KW30 Tag 1) — Alle 7 V1-V6 SICHER, GS Puffer +0,50% RAZOR-THIN, KO+UPS Watchlist Di
+
+**Alpaca Clock:** is_open=false, next_open Di 21.07. 09:30 ET.
+
+**Account Close 16:02 ET (Alpaca /v2/account):**
+```
+Equity:            97.777,22 $   (vs last_equity 98.236,14 → -0,467 %)         [GRÜN, Cap -3 %]
+Cash:              40.026,28 $   (40,94 %)
+Portfolio_MV:      57.750,94 $   (59,06 %, 7 Positionen)
+Buying_power:     321.807,75 $
+Käufe KW30:        1/2           (V gefüllt Mo 20.07., Slot 2/2 offen bis Fr 24.07.)
+Pending Orders:    0             (V1-V6 alle 7 SICHER, keine Limit-Order Di)
+```
+
+**SPY & Market:**
+- SPY IEX Close 742,15 vs Fr-Close 743,28 = **-0,152 %** (Perplexity spot 743,76 intraday, aber Alpaca IEX ist bindend für Daily-Perf-Berechnung)
+- **Alpha vs SPY: -0,315 pp NEGATIV** (Portfolio -0,467 % vs SPY -0,152 %)
+- Größte Drags: LLY -2,777 % + AAPL -2,067 % + UNH -1,312 % + GS -0,957 %
+- Positive Rebounds: GOOGL +1,606 % + V +0,561 %
+
+**V5/V6-Check alle 7 SICHER (Standard-EMA 2/(N+1), Wilder-RSI, 264d Bars):**
+
+| Sym    | Close    | EMA50    | EMA200   | Spread   | RSI    | RS_4w   | RS_63d  | V5     | V6     |
+|--------|----------|----------|----------|----------|--------|---------|---------|--------|--------|
+| AAPL   |  326,65  |  301,36  |  274,18  |  +27,19  | 64,28  | +10,28% | +16,37% | SAFE   | SAFE   |
+| GOOGL  |  352,11  |  358,57  |  316,42  |  +42,14  | 45,82  | -3,68 % | -1,47 % | SAFE   | SAFE   |
+| GS     | 1055,66  | 1029,28  |  913,17  | +116,11  | 49,77  | -3,15 % | +9,50 % | SAFE   | SAFE   |
+| JPM    |  338,90  |  324,02  |  311,00  |  +13,02  | 57,66  | +4,82 % | +4,72 % | SAFE   | SAFE   |
+| LLY    | 1146,38  | 1118,70  |  991,60  | +127,10  | 47,72  | +4,95 % | +19,14% | SAFE   | SAFE   |
+| UNH    |  421,85  |  400,00  |  352,94  |  +47,06  | 54,62  | +5,78 % | +25,47% | SAFE   | SAFE   |
+| V      |  361,05  |  337,44  |  333,77  |  **+3,67 engste** | 64,29 | +10,95%| +9,32 % | SAFE   | SAFE   |
+
+→ **KEINE V5/V6-Trigger, KEINE Limit-Order für Di 21.07.**
+
+**GS Fill-Day+3 Drop-Muster VOLLBILD (kritischste Position):**
+- Entry 15.07. 1.141,74 → Fill-Day+3 Close 1.055,66 = **kumuliert -7,53 %**
+- V1-Puffer +0,50 % (5,26 $) = **engste aller Zeiten**, marginal besser als Midday +0,41 %
+- Präzedenz: AVGO Fill-Day+3 V1-Stop -8,69 % / MU Fill-Day+4 V1-Stop -10,92 %
+- **Pre-Market Di 21.07. 08:30 ET Watch zwingend** — Market-Sell-Bereitschaft bei Break < 1.050,40
+
+**GOOGL Blackout-Konflikt Fortsetzung (Owner-Pending):**
+- Q2 22.07.2026 AMC Earnings → nur noch **Di 21.07. + Mi 22.07.** Blackout-Fenster
+- V1_neu Blackout = 368,10 × 0,95 = **349,70** vs Standard V1 338,65
+- Close 352,11 > V1_neu 349,70 = **+0,69 % positiv** (entspannt vs Fr-Close -0,84 % negativ)
+- **Blackout-Tightening würde AKTUELL keinen Sofort-Stop auslösen** → Owner-Freigabe für Aktivierung möglich, aber weiter pending
+
+**Watchlist-Scan Di 21.07. (lokaler Alpaca-Screener über 20 Non-XLK/XLV/XLF/XLC Blue-Chips):**
+
+| Sym  | Sektor | Close   | K1 (EMA50>EMA200) | K2 (RSI 50-70) | K3 (RS_63d>0) | K1-3 |
+|------|--------|---------|-------------------|----------------|---------------|------|
+| **KO** | XLP | 82,11   | ✓ (Spread +5,22) | ✓ (50,08)     | ✓ (+3,89 %)   | **3/3 LEAD** |
+| **UPS**| XLI | 113,16  | ✓ (Spread +6,58) | ✓ (56,00)     | ✓ (+1,78 %)   | **3/3 LEAD** |
+| CAT  | XLI | 864,00  | ✓                | ✗ (37,89)     | ✓ (+4,22 %)   | 2/3  |
+| HON  | XLI | 226,20  | ✓                | ✓ (51,80)     | ✗ (-7,62 %)   | 2/3  |
+| RTX  | XLI | 194,44  | ✓                | ✓ (55,99)     | ✗ (-5,53 %)   | 2/3  |
+| GE   | XLI | 341,26  | ✓                | ✗ (43,12)     | ✓ (+7,76 %)   | 2/3  |
+| MMM  | XLI | 159,31  | ✓                | ✓ (52,00)     | ✗ (-1,43 %)   | 2/3  |
+| XOM  | XLE | 148,40  | ✓                | ✓ (61,15)     | ✗ (-3,19 %)   | 2/3  |
+| CVX  | XLE | 189,25  | ✓                | ✓ (65,78)     | ✗ (-1,66 %)   | 2/3  |
+| COP  | XLE | 115,69  | ✓                | ✓ (59,50)     | ✗ (-4,83 %)   | 2/3  |
+
+**Slot 2/2 KW30 Prio-Kandidaten Di 21.07.:**
+- **Priorität 1:** KO + UPS (kein Sektor-Cap, K4/K5 zwingend Pre-Market — beide Q2 Earnings Ende Juli Historik → **Blackout-Risiko-Check** zwingend, K5 FwdPE-Multi-Source)
+- **Priorität 2:** XLV-Trio (ABBV/MRK/JNJ) nur bei Owner-Freigabe Sektor-Cap-Deutung
+- **Sperren aktiv:** PANW (K5-Fail permanent, FwdPE 42-78 Multi-Source), AMD (K5-Fail permanent)
+
+**Guardrails Check Close (alle 8 GRÜN):**
+```
+1. Daily Loss Cap:    -0,467 %                                              [GRÜN]
+2. Weekly Loss Cap:   KW30 Tag 1 -0,467 %                                   [GRÜN]
+3. Drawdown-Alarm:    -2,288 % vs ATH 100.066,47                            [GRÜN]
+4. Drawdown-Stopp:    -2,288 %                                              [GRÜN]
+5. Crash-Filter:      SPY -0,152 % (nicht Trigger)                          [INAKTIV]
+6. VIX-Filter:        18,28 (carry-over Pre)                                [GRÜN]
+7. Earnings-Blackout: GOOGL aktiv (Kurs > V1_neu, kein Sofort-Stop-Risiko)  [WARN — Owner-Pending] |
+8. Max Käufe KW30:    1/2 (V gefüllt, Slot 2/2 offen bis Fr 24.07.)         [FREI 1]
+```
+
+**ClickUp-Task-Erstellung ERR "Team not authorized"** (dieselbe permanent-Fehler-Klasse wie GS 15.07. HTTP 403 OAuth-023 "Team(s) not authorized") — Fallback PushNotification Prio 3 (negative Perf-Regel) an Owner mit Tagesbilanz-Kernpunkten.
+
+**Nächste Routine:** Di 21.07. 08:30 ET Pre-Market Check — **GS V1 1.050,40 kritisch (+0,50 % engste aller Zeiten)**, GOOGL V1 338,65 + Blackout Owner-Freigabe zwingend vor Do 22.07. AMC, LLY RSI 47,72 Momentum-Watch, KO/UPS K5-Multi-Source-Recheck + Earnings-Blackout-Check für Slot 2/2 KW30.
+
+---
+
 ## Market Open 09:41 ET — 2026-07-20 (Mo, KW30 Tag 1) — V-Kauf Slot 1/2 gefüllt, PANW K5-Reject, GS/GOOGL Rebound
 
 **Alpaca Clock:** is_open=true, next_close Mo 20.07. 16:00 ET.
