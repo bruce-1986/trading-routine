@@ -4,6 +4,97 @@
 
 ---
 
+## Market Close 16:03 ET — 2026-07-21 (Di, KW30 Tag 2) — Alle 7 V1-V6 SICHER, GS Rebound-Tag +2,89 %, Daily +0,64 %, Alpha -0,16 pp, MMM NEUER 3/3-Lead
+
+**Alpaca Clock:** is_open=false, next_open Mi 22.07. 09:30 ET.
+
+**Account Close 16:03 ET (Alpaca /v2/account):**
+```
+Equity:            98.417,11 $   (portfolio_value)
+Cash:              40.026,27 $   (40,67 %)
+Portfolio_MV:      58.390,84 $   (59,33 %, 7 Positionen)
+Buying_power:     323.599,42 $
+Käufe KW30:        1/2           (V gefüllt Mo 20.07., Slot 2/2 offen bis Fr 24.07.)
+Pending Orders:    0             (keine V5/V6-Trigger → keine Limit-Order Mi)
+Daily P/L:         +0,6444 %     (vs last_equity 97.786,94, +630,17 $)
+Weekly KW30 Tag 2: +0,184 %      (vs Fr-Close 98.236,14)
+DD vs ATH:         -1,648 %      (ATH 100.066,47)
+SPY Close IEX:     748,155       (+0,8091 % vs Mo-Close 742,15)
+Alpha vs SPY:      -0,165 pp     (leicht negativ, Portfolio-Rebound aber SPY-Rebound stärker)
+```
+
+**Positionen Close 16:03 ET — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Close      | Entry      | Chg    | P/L %    | V1-Stop     | V1-Puffer     | Status |
+|--------|------------|------------|--------|----------|-------------|---------------|--------|
+| **GOOGL**|  347,36  | 368,10     | -1,32% | -5,63 %  | 338,65      | **+2,57 %**   | SICHER **ENGSTE** (Mo +3,97 % → -1,40 pp, Blackout-Aktivierungssensitivität -0,67 % neg V1_neu 349,70 > Kurs, Option A Lock, Owner-Freigabe LETZTE CHANCE Mi Vormittag) |
+| **GS** | 1.085,56   | 1.141,74   | +2,89% | -4,92 %  | 1.050,40    | **+3,35 %**   | SICHER **REBOUND-TAG** (Mo +0,50 % → +2,85 pp, Fill-Day+4-Muster AVGO/MU-Präzedenz überwunden) |
+| LLY    | 1.174,80   | 1.193,89   | +2,43% | -1,60 %  | 1.098,38    | +6,96 %       | SICHER REBOUND (Mo -2,78 % → +2,43 % chg, RSI ~49 XLV-Watch stabilisiert) |
+| V (NEU)|   355,82   |   357,18   | -1,32% | -0,38 %  |   328,60    | +8,28 %       | SICHER (Fill-Day+1 -1,32 % Konsolidierung, V5 EMA-Spread +4,17 marginal aber intakt) |
+| AAPL   |   327,305  | 316,86     | +0,22% | +3,30 %  |   291,51    | +12,28 %      | SICHER (leicht verbessert vs Mo +12,05 %) |
+| JPM    |   345,00   |   332,78   | +1,81% | +3,67 %  |   306,16    | +12,69 %      | SICHER (verbessert vs Mo +10,69 %) |
+| UNH    |   437,00   |   401,57   | +3,67% | +8,82 %  |   369,44    | **+18,29 %**  | SICHER **BESTE Chg heute + beste P/L Portfolio** |
+
+**V1-V6-Check alle 7 SICHER:** kein V1-Break (engste GOOGL +2,57 %), V2-Trail weit vom 52w-Hoch, V3/V4 max UNH +8,82 % (<< +20 % TP-Schwelle), V5/V6 alle SICHER (EMA50>EMA200 überall, RSI max ~64 << 80). **→ KEINE Limit-Order für Mi 22.07.**
+
+**GOOGL Blackout-Aktivierungssensitivität Verlauf (LETZTE CHANCE Mi Vormittag):**
+- Mo-Close +0,69 % positiv → Di-Pre +0,41 % positiv → Di-Open -0,05 % negativ → **Di-Close -0,67 % negativ**
+- V1_neu Blackout = 349,70 (368,10 × 0,95 = -5 %) > Kurs 347,36
+- Aktivierung würde JETZT Sofort-Stop auslösen → Option A Strategie-Lock beibehalten
+- Q2 CY26 Earnings Mi 22.07. AMC bestätigt (Perplexity Multi-Source Vortag)
+- **PushNotification Prio 3 an Owner** zwingend (Blackout-Entscheidung morgen Vormittag zeitkritisch)
+
+**Sektor-Gewichte Close (alle unter 30 %-Portfolio-Cap):**
+- XLF: GS+JPM+V 19.327 (33,10 % invest / 19,64 % Portfolio) ⚠ investiert>30% SAFE Portfolio
+- XLV: UNH+LLY 19.886 (34,06 % invest / 20,21 % Portfolio) ⚠ investiert>30% SAFE Portfolio
+- XLK: AAPL 10.146 (17,38 % invest / 10,31 % Portfolio) GRÜN
+- XLC: GOOGL 9.031 (15,47 % invest / 9,18 % Portfolio) GRÜN
+
+**Kandidaten-Scan Slot 2/2 KW30 (Alpaca-Screener 20 Non-XLK/XLV/XLF/XLC-Symbole, Di-Close als Basis, 306 komplette Bars):**
+
+| Sym | Close | EMA50 | EMA200 | Spread | RSI(14) | Ret63 | RS_63d | K1 | K2 | K3 | K/3 |
+|-----|-------|-------|--------|--------|---------|-------|--------|----|----|----|-----|
+| **MMM (NEU)** | 170,72 | 157,27 | 155,14 | +2,12 | **68,72** | +12,73 % | **+7,18** | ✓ | ✓ | ✓ | **3/3** |
+| **UPS** | 116,33 | 108,65 | 102,55 | +6,10 | 61,49 | +8,57 % | +3,02 | ✓ | ✓ | ✓ | **3/3** |
+| **ABBV** | 256,14 | 235,22 | 219,87 | +15,35 | 65,16 | +25,76 % | +20,21 | ✓ | ✓ | ✓ | **3/3** |
+| **MRK** | 126,26 | 121,36 | 109,05 | +12,31 | 54,94 | +7,85 % | +2,30 | ✓ | ✓ | ✓ | **3/3** |
+| **JNJ** | 250,66 | 243,87 | 220,34 | +23,53 | 51,92 | +8,66 % | +3,11 | ✓ | ✓ | ✓ | **3/3** |
+| KO | 81,96 | 81,11 | 76,45 | +4,66 | 49,55 ✗ | +8,57 % | +3,02 | ✓ | ✗ | ✓ | 2/3 |
+| CVX | 191,06 | 181,53 | 174,64 | +6,89 | 67,69 | +4,26 % | -1,29 | ✓ | ✓ | ✗ | 2/3 |
+| XOM | 151,70 | 145,15 | 137,48 | +7,67 | 65,99 | +2,76 % | -2,80 | ✓ | ✓ | ✗ | 2/3 |
+| CAT | 889,77 | 913,54 | 735,71 | +177,83 | 43,00 ✗ | +11,42 % | +5,87 | ✓ | ✗ | ✓ | 2/3 |
+| GE  | 340,64 | 340,17 | 309,34 | +30,83 | 42,71 ✗ | +12,24 % | +6,68 | ✓ | ✗ | ✓ | 2/3 |
+| HON,RTX,COP,DE,LMT,NOC,WMT,PG,PEP,COST | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 0-1/3 |
+
+**Kandidaten-Bewertung Slot 2/2 KW30:**
+- **MMM (NEU) 170,72** (XLI Industrials) — echter neuer Fund, K1-K3 3/3, RSI 68,72 knapp am Cap 70 (K2 grenzwertig). **K5-Recheck + Earnings-Blackout Mi Pre-Market zwingend** (Q2 typisch Ende Juli, 5-8 HT-Fenster kritisch). Priorität 1 für Mi.
+- **UPS 116,33** (XLI Industrials) — 3/3 K1-K3, aber **K5-permanent-FAIL** (Multi-Source-TTM -2,65 %, MRQ -0,3 % — alle Sources negativ, dokumentiert Di 21.07. Market Open) → REJECT stabil, kein Recheck nötig
+- **ABBV/MRK/JNJ** (XLV Healthcare, alle 3/3) — XLV-Sektor-Cap-Deutungsfrage weiter Owner-Pending. Aktuell XLV 20,21 % Portfolio + ~9 % Neuposition = ~29 % knapp am 30 %-Cap → nur bei Owner-Freigabe möglich.
+- **KO 81,96** — gefallen aus 3/3 (RSI 49,55 K2-Fail durch heutigen leichten Rücksetzer -0,18 %). K5-Konflikt aus Di Market Open weiter dokumentiert.
+- **AMD/PANW** — K5-permanent-blocked FwdPE > 35 Multi-Source (dokumentiert 14.07./17.07./20.07.)
+
+**Guardrail-Check alle 8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     +0,644 %                                          [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 2 +0,184 %                               [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,648 %                                          [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,648 %                                          [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,809 %                                      [INAKTIV]
+6. VIX-Filter (>30):          ~17-18 (carry-over Pre-Market Perplexity)         [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Mi AMC Tag 0 (Option A Owner-Pending, aktivierungssensitiv -0,67 % negativ) | MMM Q2 ~Ende Juli (5-8 HT — Recheck Mi Pre-Market) | [WARN — GOOGL zeitkritisch] |
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)                [FREI 1]
+```
+
+**Entscheidung Market Close 16:03 Di 21.07.:**
+- **Sell-Seite: keine Aktion** (alle 7 V1-V6 SICHER, keine V5/V6-Trigger, GS/LLY Rebound-Tag)
+- **Limit-Order Mi: KEINE** (kein V5/V6-Signal ausgelöst)
+- **GOOGL Blackout-Owner-Freigabe: PushNotification erneut Prio 3** (LETZTE CHANCE Mi Vormittag zwingend, Aktivierungssensitivität negativ)
+- **Slot 2/2 KW30 OFFEN** bis Fr 24.07. — MMM als neuer Top-Kandidat, K5-Recheck Mi Pre-Market
+
+**Nächste Routine:** Mi 22.07. 08:30 ET Pre-Market Check — GOOGL V1 338,65 + Blackout-Entscheidung LETZTE CHANCE, GS V1 1.050,40 (Rebound-Fortsetzung?), LLY V1 1.098,38 (Rebound-Fortsetzung?), MMM K5-Multi-Source-FwdPE + Rev-Growth + Q2-Earnings-Datum.
+
+---
+
 ## Market Open 09:40 ET — 2026-07-21 (Di, KW30 Tag 2) — Alle 7 V1-V6 SICHER, GS Puffer +2,17 % ERHOLT, KO+UPS K5-FAIL → KEIN Kauf
 
 **Alpaca Clock:** is_open=true, next_close Di 21.07. 16:00 ET.
