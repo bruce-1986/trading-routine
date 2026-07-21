@@ -4,6 +4,97 @@
 
 ---
 
+## Market Open 09:40 ET — 2026-07-21 (Di, KW30 Tag 2) — Alle 7 V1-V6 SICHER, GS Puffer +2,17 % ERHOLT, KO+UPS K5-FAIL → KEIN Kauf
+
+**Alpaca Clock:** is_open=true, next_close Di 21.07. 16:00 ET.
+
+**Account Live 09:40 ET (Alpaca /v2/account + latest trades):**
+```
+Equity:            97.780,68 $   (Live-Kalk aus Cash + Positions-MV)
+Cash:              40.026,27 $   (40,93 %)
+Portfolio_MV:      57.754,41 $   (59,07 %, 7 Positionen)
+Buying_power:     321.784,23 $
+Käufe KW30:        1/2           (V gefüllt Mo 20.07., Slot 2/2 offen bis Fr 24.07.)
+Pending Orders:    0
+Daily P/L:         -0,006 %      (vs last_equity 97.786,94, Reset bei Open)
+Weekly KW30 Tag 2: -0,464 %      (vs Fr-Close 98.236,14)
+DD vs ATH:         -2,284 %      (ATH 100.066,47)
+SPY Live:          745,67 (+0,474 % vs Mo-Close 742,15)
+```
+
+**Positionen Live 09:40 ET — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Live       | Entry      | P/L %   | V1-Stop     | V1-Puffer     | Status |
+|--------|------------|------------|---------|-------------|---------------|--------|
+| **GS** | 1.073,235  | 1.141,74   | -6,00 % | 1.050,40    | **+2,17 %**   | SICHER, **ERHOLT vs Mo-Close +0,50 %** um +1,67 pp (Fill-Day+4-Fenster AVGO/MU Präzedenz überstanden) |
+| **GOOGL**| 349,515   | 368,10     | -5,05 % | 338,65      | **+3,21 %**   | SICHER, aber Blackout-**AKTIVIERUNGSSENSIBEL:** V1_neu 349,70 > Kurs = -0,05 % neg |
+| LLY    | 1.145,55   | 1.193,89   | -4,05 % | 1.098,38    | +4,29 %       | SICHER, RSI < 50 Momentum-Watch (XLV) |
+| V (NEU)|   357,190  |   357,18   | +0,00 % |   328,60    | +8,70 %       | SICHER, Fill-Day+1 flat (kein Sofort-Drop-Muster wie AVGO/MU/GS) |
+| JPM    |   338,870  |   332,78   | +1,83 % |   306,16    | +10,68 %      | SICHER |
+| AAPL   |   324,720  |   316,86   | +2,48 % |   291,51    | +11,39 %      | SICHER |
+| UNH    |   424,570  |   401,57   | +5,73 % |   369,44    | +14,92 %      | SICHER, beste heute |
+
+**V1-V6-Check alle 7 SICHER (Live-Trade-Preise Alpaca 09:38-09:39 ET):** Kein V1-Break (engste GS +2,17 % erholt), V2-Trail weit vom 52w-Hoch, V3/V4 max UNH +5,73 % (<< +20 % TP-Schwelle), V5/V6 stabil (aus Mo-Close-Analyse: alle 7 EMA50>EMA200, RSI max 64 << 80). **→ Keine Sell-Order platziert.**
+
+**Kandidaten-Scan Slot 2/2 KW30 — Watchlist KO + UPS (K1-K5 Recheck):**
+
+**Alpaca Bars (Mo-Close 20.07. Basis für K1-K3, 284 komplette Bars ohne heutige Di-Session):**
+
+| Sym | Mo-Close | EMA50 | EMA200 | Spread | RSI(14) | Ret_63d | RS vs SPY | K1 | K2 | K3 |
+|-----|----------|-------|--------|--------|---------|---------|-----------|----|----|-----|
+| KO  | 82,11    | 81,12 | 75,53  | +5,59  | 50,36   | +9,12 % | **+4,33 pp** | ✓ | ✓ | ✓ |
+| UPS | 113,16   | 107,59| 100,17 | +7,42  | 56,16   | +8,09 % | **+3,30 pp** | ✓ | ✓ | ✓ |
+| SPY | 742,15   | 742,72| 702,94 | +39,78 | 47,88   | +4,79 % | Baseline    | -  | -  | -  |
+
+→ Beide 3/3 K1-K3 wie im Pre-Market-Scan bestätigt.
+
+**K4-Volumen:** Nicht evaluierbar (nur ~10 min in Session, keine repräsentative Extrapolation möglich).
+
+**K5-Recheck Multi-Source Perplexity:**
+
+**KO (Coca-Cola):**
+- **Forward P/E:** Yahoo 24-26x | StockAnalysis 23,93 / 25,46 | GuruFocus 23,59 | AlphaSpread TTM P/E 24,1 → **Median ~24, alle < 35** ✓
+- **Revenue Growth YoY:** StockAnalysis TTM **+5,1 %** ✗ | GuruFocus 3Y CAGR +6,9 % ✗ | Yahoo full-year +0,6-1,87 % ✗ | **ABER Perplexity Recheck Q1 FY26 MRQ +12,1 %** ✓ (Recheck-Widerspruch)
+- **Q2 CY26 Earnings:** **28.07.2026 BMO** bestätigt (StockAnalysis + Business Wire) — **5 HT weg, Standard-Blackout aktivierbar ab Do 23.07. Close** → nur Di+Mi Kauf-Fenster
+- **K5-Entscheidung: KONFLIKT** — TTM/Annual ✗ vs MRQ ✓, Multi-Source-Diskrepanz → **REJECT** nach LEVEL-0-Regel "No-Action bei Unsicherheit"
+- **Zusatzsignal:** KO Fr 17.07. **-4,58 % Drop** (85,48 Open → 81,565 Close, intraday-Range -5,47 %) unerklärt durch Perplexity — pre-Earnings-Weakness / News-Leak / -Sektor-Rotation möglich
+
+**UPS (United Parcel Service):**
+- **Forward P/E:** Yahoo/Zacks 14,23 | StockAnalysis 14,59 | GuruFocus 14,32 | → **Median ~14,4, alle < 35** ✓
+- **Revenue Growth YoY:** StockAnalysis TTM **-2,65 %** ✗ (2025 88,66 Mrd vs 2024 91,07 Mrd) | Perplexity Recheck MRQ **-0,3 %** ✗ | Q2 2025 -0,8 % ✗ | **alle Sources negativ** ✗
+- **Q2 CY26 Earnings:** **28.07.2026 BMO** bestätigt (StockAnalysis) — **5 HT weg, Standard-Blackout aktivierbar ab Do 23.07. Close**
+- **K5-Entscheidung: klar FAIL** — Multi-Source einig < 10 % (sogar negativ) → **REJECT**
+- **Zusatzsignal:** UPS Mo 20.07. **-3,88 % Drop** (117,73 Fr-Close → 113,16 Mo-Close, intraday-Low 112,68) unerklärt durch Perplexity — pre-Earnings-Weakness möglich
+
+**GOOGL-Blackout-Sensitivitätscheck Tag -1 (Perplexity Multi-Source):**
+- Q2 CY26 Earnings **Mi 22.07.2026 AMC** bestätigt
+- V1_neu Blackout = 368,10 × 0,95 = **349,70** vs Live 349,515 = **-0,05 % negativ**
+- → Blackout-Tightening würde JETZT einen Sofort-Stop auslösen (vs Pre-Market 08:36 +0,41 % pos, Mo-Close +0,69 % pos)
+- Option A Strategie-Lock (V1 = Standard 338,65) weiter aktiv → nicht auto-aktiviert
+- **Letzte Chance Owner-Freigabe HEUTE Di + morgen Mi Vormittag** vor Mi-Close-Earnings
+
+**Guardrail-Check alle 8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     -0,006 % Reset bei Open                            [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 2 -0,464 %                                [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,284 %                                           [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,284 %                                           [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,474 % (weit von -5 %)                       [INAKTIV]
+6. VIX-Filter (>30):          17,6-18,0 carry-over                               [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Mi AMC Tag -1 (Option A Owner-Pending, aktivierungssensibel) | KO/UPS 28.07. BMO (>3 HT, aber Kauf-Fenster eng) | [WARN — GOOGL] |
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07., aber K5-Blockade Top-Kandidaten) [FREI 1]
+```
+
+**Entscheidung Market Open 09:40 Di 21.07.:**
+- **Buy-Seite: KEIN Kauf** (KO K5-Konflikt Multi-Source + UPS K5-FAIL Multi-Source einig + beide pre-Q2-Earnings 28.07. + unerklärte 3-5 %-Drops → regelkonform REJECT)
+- **Sell-Seite: keine Aktion** (alle 7 V1-V6 SICHER, GS erholt auf +2,17 %)
+- **GOOGL Blackout-Owner-Freigabe: PushNotification erneut** (Aktivierungssensitivität erreicht, letzte Chance heute+morgen)
+- **Slot 2/2 KW30 bleibt OFFEN** bis Fr 24.07. (aber Kauf-Wahrscheinlichkeit KW30 gering wegen K5-Blockade der Top-Kandidaten)
+
+**Nächste Routine:** Di 21.07. 13:00 ET Midday Stop-Check — GS V1 1.050,40 (+2,17 % erholt), GOOGL V1 338,65 + Blackout-Sensitivität + Owner-Freigabe-Status, LLY RSI < 50 XLV-Watch, KO/UPS-Watchlist bleibt beobachtet aber K5 dauerhaft geblockt.
+
+---
+
 ## Pre-Market 08:30 ET — 2026-07-21 (Di, KW30 Tag 2) — Alle 8 Guardrails GRÜN, GS pre-Puffer ~+1,4% (entspannt vs Fr-Close +0,50%), Market-Open-Scan JA
 
 **Alpaca Clock:** is_open=false, next_open Di 21.07. 09:30 ET (in ~55 min).

@@ -1,6 +1,74 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-21 08:36 ET (Pre-Market Di KW30 Tag 2, alle 8 Guardrails GRÜN — **GS pre-Puffer ~+1,38 %** entspannt vs Mo-Close +0,50 %, GOOGL Blackout Tag -1 vor Mi 22.07. AMC, VIX 17,6-18,0, SPY Pre-Market +0,37 %, Market-Open-Scan JA für KO+UPS Slot 2/2)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-21 09:40 ET (Market Open Di KW30 Tag 2, alle 8 Guardrails GRÜN, GS Puffer +2,17 % ENTSPANNT vs Mo-Close +0,50 %, KEIN Kauf — KO K5-Konflikt + UPS K5-FAIL, Slot 2/2 KW30 bleibt OFFEN bis Fr 24.07.)
+
+---
+
+## Market Open 2026-07-21 09:40 ET (Di, KW30 Tag 2) — Alle 7 V1-V6 SICHER, GS Puffer +2,17 % ERHOLT, KO+UPS K5-FAIL → KEIN Kauf
+
+```
+Alpaca clock:      is_open=true | next_close Di 21.07. 16:00 ET
+Equity:            97.780,68 $   (Live-Kalk aus Cash + Positions-MV)
+Cash:              40.026,27 $   (40,93 %)
+Portfolio MV:      57.754,41 $   (59,07 %, 7 Positionen)
+Buying_power:     321.784,23 $
+Daily P/L:          -0,006 %      (vs Alpaca last_equity 97.786,94, Reset bei Open)  [GRÜN, Cap -3 %]
+ATH:              100.066,47 $   DD -2,284 % [GRÜN — Alarm bei -15 %]
+Weekly KW30:        -0,464 %      (Tag 2, vs Fr-Close 98.236,14)                     [GRÜN, Cap -5 %]
+SPY Live 09:40:    745,67         (vs Mo-Close 742,15 = +0,474 %)                    [POSITIV]
+VIX carry-over:    17,6-18,0      (Perplexity Pre-Market)                             [GRÜN]
+Käufe KW30:            1/2        (V gefüllt, Slot 2/2 offen bis Fr 24.07.)          [FREI 1]
+Open Orders:           0
+Guardrails: alle 8 GRÜN (GOOGL Blackout Tag -1 vor Mi 22.07. AMC weiter Owner-Pending Option A)
+```
+
+**Positionen Live 09:40 ET (Alpaca /v2/positions + latest trades) — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Live       | Entry      | Chg vs Open | P/L %    | V1-Stop     | V1-Puffer      | Signal Δ |
+|--------|------------|------------|-------------|----------|-------------|----------------|----------|
+| **GS** | 1.073,235  | 1.141,74   | +1,67 %     | -6,00 %  | 1.050,40    | **+2,17 %**    | SICHER, ERHOLT vs Mo-Close +0,50 % um +1,67 pp, Fill-Day+4-Fenster (AVGO/MU Präzedenz Fill-Day+3/+4 V1) |
+| **GOOGL**|  349,515 | 368,10     | -0,74 %     | -5,05 %  | 338,65      | **+3,21 %**    | SICHER, leicht verschlechtert vs Mo-Close +3,97 %, Blackout Tag -1 vor Mi AMC (V1_neu 349,70 > Kurs = -0,05 % neg → aktivierungssensibel, Owner-Freigabe zwingend heute) |
+| LLY    | 1.145,55   | 1.193,89   | -0,07 %     | -4,05 %  | 1.098,38    | +4,29 %        | SICHER, marginal verschlechtert vs Mo-Close +4,37 %, RSI unter 50 XLV-Watch |
+| V (NEU)|   357,190  |   357,18   | -0,00 %     | +0,00 %  |   328,60    | +8,70 %        | SICHER, Fill-Day+1 flat (kein Fill-Day+3-Muster-Trigger heute) |
+| JPM    |   338,870  |   332,78   | -0,01 %     | +1,83 %  |   306,16    | +10,68 %       | SICHER |
+| AAPL   |   324,720  |   316,86   | -0,59 %     | +2,48 %  |   291,51    | +11,39 %       | SICHER, verbessert vs Mo-Close +12,05 % durch weiteren Chg -0,59 % (XLK-Divergenz-Watch bleibt) |
+| UNH    |   424,570  |   401,57   | +0,64 %     | +5,73 %  |   369,44    | +14,92 %       | SICHER, verbessert vs Mo-Close +14,19 % um +0,73 pp |
+
+**V1-V6-Check alle 7 SICHER:** kein V1 gebrochen (engste GS +2,17 %), kein V2-Trail (52w-Hoch weit von Kurs), kein V3/V4 (max UNH +5,73 % << 20 % TP-Schwelle), V5/V6 stabil aus Mo-Close-Analyse (alle 7 EMA50>EMA200, RSI max 64 << 80). **→ Keine Sell-Order Di 09:40 ET.**
+
+**Market-Open-Scan Slot 2/2 KW30 — Entscheidung KEIN Kauf:**
+
+| Kandidat | K1 EMA-Spread | K2 RSI | K3 RS_63d vs SPY | K4 Vol | K5 FwdPE | K5 RevGrowth | Entscheidung |
+|----------|---------------|--------|------------------|--------|----------|--------------|--------------|
+| **KO**   | +5,59 ✓ (81,12/75,53) | 50,36 ✓ | +4,33 pp ✓ (+9,12 % vs +4,79 %) | offen (10 min in Session) | 23-26 ✓ | **KONFLIKT** TTM +5,1 % ✗ vs Q1 FY26 +12,1 % ✓ | **REJECT** (K5-Multi-Source-Konflikt + pre-Q2-Earnings 28.07. BMO 5 HT weg + Fr 17.07. -4,58 % Drop unerklärt → Level-0-Regel "No-Action bei Unsicherheit") |
+| **UPS**  | +7,42 ✓ (107,59/100,17) | 56,16 ✓ | +3,30 pp ✓ (+8,09 % vs +4,79 %) | offen (10 min in Session) | 14-15 ✓ | **FAIL** TTM -2,65 % ✗ und MRQ -0,3 % ✗ | **REJECT** (K5 klar negativ + Mo 20.07. -3,88 % Drop unerklärt + pre-Q2-Earnings 28.07.) |
+
+**Zusätzliche Warnsignale:**
+- **KO -4,58 % Fr 17.07.** (85,48 Open → 81,565 Close, intraday-High 85,52 → -Low 80,84 = -5,47 % Range) — Perplexity ohne News-Bestätigung, pre-Earnings-Weakness möglich
+- **UPS -3,88 % Mo 20.07.** (117,73 Fr-Close → 113,16 Mo-Close, intraday-Low 112,68) — Perplexity ohne News-Bestätigung, pre-Earnings-Weakness möglich
+- **Beide Q2-Earnings am 28.07. BMO** = 5 HT weg, Standard-Blackout aktivierbar ab Do 23.07. Close → sehr enges Kauf-Fenster (nur Di+Mi verbleibend), dann Blackout-Sperre
+
+**Guardrails alle 8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     -0,006 % (frisch nach Open, Reset)                [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 2 -0,464 %                               [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,284 %                                          [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,284 %                                          [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Live +0,474 %                                 [INAKTIV]
+6. VIX-Filter (>30):          17,6-18,0 (Perplexity carry-over Pre)             [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Mi 22.07. AMC Tag -1 (Option A Owner-Pending; V1_neu 349,70 > Kurs 349,515 = -0,05 % negativ → **aktivierungssensibel heute**) | [WARN] |
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)                [FREI 1]
+```
+
+**GOOGL-Blackout-Entscheidung SENSIBEL:**
+- V1_neu Blackout (368,10 × 0,95 = 349,70) vs Live 349,515 = **-0,05 % negativ** → Blackout-Aktivierung würde JETZT einen Sofort-Stop auslösen
+- Option A Strategie-Lock (Standard V1 338,65) weiter aktiv, aber der Puffer schmilzt (Mo-Close +0,69 % positiv → jetzt -0,05 % negativ)
+- **Letzte Chance heute Di + Mi Vormittag** für Owner-Blackout-Entscheidung vor Mi-Close-Earnings
+- PushNotification an Owner erneut zwingend (Blackout-Aktivierungssensitivität erreicht)
+
+**Entscheidung Market Open 09:40 Di 21.07.:** **Keine Aktion Buy-seitig** (regelkonform: KO K5-Konflikt + UPS K5-FAIL → REJECT beide). **Keine Aktion Sell-seitig** (alle 7 V1-V6 SICHER, GS erholt auf +2,17 %). **PushNotification Prio 3** an Owner (GOOGL Blackout aktivierungssensibel + KO/UPS REJECT-Begründung). ClickUp-Fallback wegen bekanntem "Team not authorized"-Fehler → nur PushNotification.
+
+**Nächste Routine:** Di 21.07. 13:00 ET Midday Stop-Check — GS V1 1.050,40 weiter Watch (Puffer +2,17 %), GOOGL V1 338,65 + Blackout-Entscheidung, LLY RSI-Watch, KO/UPS-Watchlist bleibt für Mi Slot 2/2 (aber K5 weiter Blockade → wahrscheinlich Slot 2/2 KW30 unbelegt bleibt).
 
 ---
 
