@@ -1,6 +1,61 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-20 16:02 ET (Market Close Mo KW30 Tag 1, alle 7 V1-V6 SICHER — **GS Puffer +0,50% RAZOR-THIN**, GOOGL +3,97%, LLY +4,37%, Daily -0,467% GRÜN, Alpha -0,315 pp NEGATIV, keine Stops ausgelöst, KEINE Limit-Order für Di 21.07. platziert)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-21 08:36 ET (Pre-Market Di KW30 Tag 2, alle 8 Guardrails GRÜN — **GS pre-Puffer ~+1,38 %** entspannt vs Mo-Close +0,50 %, GOOGL Blackout Tag -1 vor Mi 22.07. AMC, VIX 17,6-18,0, SPY Pre-Market +0,37 %, Market-Open-Scan JA für KO+UPS Slot 2/2)
+
+---
+
+## Pre-Market 2026-07-21 08:36 ET (Di, KW30 Tag 2) — Alle 8 Guardrails GRÜN, GS pre-Puffer ~+1,38 % entspannt, Market-Open-Scan JA
+
+```
+Alpaca clock:      is_open=false | next_open Di 21.07. 09:30 ET (in ~55 min)
+Equity:            97.656,39 $   (Alpaca /v2/account)
+Cash:              40.026,27 $   (40,99 %)
+Portfolio MV:      57.630,12 $   (59,01 %, 7 Positionen)
+Buying_power:     321.469,41 $
+Daily P/L (overnight): -0,133 %  (vs last_equity 97.786,94, Reset bei Open)   [GRÜN, Cap -3 %]
+ATH:              100.066,47 $   DD -2,409 % [GRÜN — Alarm bei -15 %]
+Weekly KW30:        -0,590 %     (Tag 2, vs Fr-Close 98.236,14)               [GRÜN, Cap -5 %]
+SPY Pre-Market:    744,91         (vs Mo-Close 742,15 = +0,37 %)               [Crash-Filter INAKTIV]
+VIX (Perplexity):  17,6-18,0     (vs Vortag 18,65 = -5-6 %)                   [GRÜN, < 30]
+10Y Treasury:      4,25-4,35 %   (leicht höher vs Vortag)
+Käufe KW30:            1/2       (Slot 2/2 offen bis Fr 24.07.)
+Open Orders:           0
+Guardrails: alle 8 GRÜN (GOOGL Blackout Owner-Pending Option A Strategie-Lock)
+```
+
+**Positionen Pre-Market 08:36 ET (Alpaca /v2/positions, current_price = stale/pre-market letzter Trade):**
+
+| Sym    | Cur.Price  | Entry      | P/L %    | V1-Stop     | V1-Puffer     | Status |
+|--------|------------|------------|----------|-------------|---------------|--------|
+| **GS** | 1.064,88   | 1.141,74   | -6,73 %  | 1.050,40    | **~+1,38 %**  | entspannt vs Mo-Close +0,50 %, aber Quote-Spread breit → Open-Bestätigung zwingend |
+| **GOOGL**|  351,14  | 368,10     | -4,61 %  | **338,65** (Option A) | ~+3,69 % | Q2 Mi 22.07. AMC bestätigt → Blackout Tag -1, Owner-Pending V1_neu 349,70 (Kurs +0,41 % darüber) |
+| LLY    | 1.140,13   | 1.193,89   | -4,50 %  | 1.098,38    | ~+3,80 %      | (leicht verschlechtert vs Mo-Close +4,37 %) |
+| V (NEU)|   358,07   |   357,18   | +0,25 %  |   328,60    | ~+8,97 %      | Fill-Day+1 (kein Sofort-Drop-Muster wie AVGO/MU/GS) |
+| JPM    |   339,00   |   332,78   | +1,87 %  |   306,16    | ~+10,73 %     | |
+| AAPL   |   325,00   |   316,86   | +2,57 %  |   291,51    | ~+11,49 %     | (leicht verschlechtert vs Mo-Close +12,05 %) |
+| UNH    |   421,06   |   401,57   | +4,85 %  |   369,44    | ~+13,97 %     | (leicht verschlechtert vs Mo-Close +14,19 %) |
+
+**Guardrails alle 8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     -0,133 % overnight, Reset bei Open              [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 2 -0,590 %                             [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,409 %                                        [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,409 %                                        [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Mo -0,152 %, Pre +0,37 %                    [INAKTIV]
+6. VIX-Filter (>30):          17,6-18,0                                       [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Mi 22.07. AMC (Owner-Pending Option A)   [WARN] |
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)              [FREI 1]
+```
+
+**Pre-Market-Entscheidung:**
+- Guardrail-Status: **GRÜN**
+- VIX: **17,6-18,0** | SPY Pre-Market: **+0,37 %**
+- Earnings-Blackouts: **NUR GOOGL** (Mi 22.07. AMC — Option A Strategie-Lock)
+- Market-Open-Scan: **JA** (Slot 2/2 KW30 offen, Prio KO + UPS K4/K5-Bestätigung)
+- **Kritisch:** GS V1 1.050,40 Sofort-Sell bei Break (Bestätigung Open 09:30 zwingend, Alpaca Pre-Quote-Spread unzuverlässig)
+- **Blackout-Owner-Erinnerung:** letzte Chance heute Di + Mi Vormittag für GOOGL-Blackout-Entscheidung vor Mi-Close-Earnings
+
+**Nächste Routine:** Di 21.07. 09:30 ET Market Open + Kaufsignal-Scan (KO + UPS K4/K5, GS V1-Bestätigung).
 
 ---
 

@@ -4,6 +4,85 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-07-21 (Di, KW30 Tag 2) — Alle 8 Guardrails GRÜN, GS pre-Puffer ~+1,4% (entspannt vs Fr-Close +0,50%), Market-Open-Scan JA
+
+**Alpaca Clock:** is_open=false, next_open Di 21.07. 09:30 ET (in ~55 min).
+
+**Account Pre-Market 08:36 ET (Alpaca /v2/account):**
+```
+Equity:            97.656,39 $   (vs last_equity 97.786,94 → -0,133 %)         [GRÜN, overnight-Drift]
+Cash:              40.026,27 $   (40,99 %)
+Portfolio_MV:      57.630,12 $   (59,01 %, 7 Positionen)
+Buying_power:     321.469,41 $
+Käufe KW30:        1/2           (V gefüllt Mo 20.07., Slot 2/2 offen bis Fr 24.07.)
+Pending Orders:    0
+Status:            ACTIVE, trading_blocked=false, PDT=None
+```
+
+Konsistenzcheck vs Mo-Close (97.777,22): Δ -120,83 $ = -0,124 % overnight-Repricing durch stale/pre-market Quotes auf Positionen (GS current_price 1.064,88 vs Close 1.055,66 = +0,87 %; GOOGL 351,14 vs 352,11 = -0,28 %; LLY 1.140,13 vs 1.146,38 = -0,55 %). Werte grundsätzlich konsistent — keine Alpaca-vs-Memory-Diskrepanz.
+
+**Positionen aktuell (Alpaca /v2/positions, current_price ist stale/pre-market letzter Trade):**
+
+| Sym    | Cur.Price  | Entry      | P/L %   | V1-Stop     | V1-Puffer     | Status |
+|--------|------------|------------|---------|-------------|---------------|--------|
+| **GS** | 1.064,88   | 1.141,74   | **-6,73 %** | 1.050,40 | **~+1,38 %**  | pre-Puffer entspannt vs Mo-Close +0,50 % (aber Alpaca-Quote ap=1.108/bp=1.014 SEHR breit → unzuverlässig, Bestätigung erst Open 09:30) |
+| **GOOGL**| 351,14   | 368,10     | -4,61 % | 338,65      | ~+3,69 %      | Q2-Blackout Tag -1 (Earnings Mi 22.07. AMC bestätigt via Perplexity — Owner-Pending Blackout-Aktivierung) |
+| LLY    | 1.140,13   | 1.193,89   | -4,50 % | 1.098,38    | ~+3,80 %      | (leicht verschlechtert vs Close +4,37 %) |
+| V (NEU)|   358,07   |   357,18   | +0,25 % |   328,60    | ~+8,97 %      | Fill-Day+1 (kein Sofort-Drop-Muster) |
+| JPM    |   339,00   |   332,78   | +1,87 % |   306,16    | ~+10,73 %     | |
+| AAPL   |   325,00   |   316,86   | +2,57 % |   291,51    | ~+11,49 %     | |
+| UNH    |   421,06   |   401,57   | +4,85 % |   369,44    | ~+13,97 %     | |
+
+**Guardrail-Check alle 8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     -0,133 % overnight (Reset bei Open)              [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 2 -0,590 % (vs Fr-Close 98.236,14)      [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,409 % vs ATH 100.066,47                       [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,409 %                                          [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Mo -0,152 % (weit von -5 %)                  [INAKTIV]
+6. VIX-Filter (>30):          VIX 17,6-18,0 (Perplexity spot, -5-6 % vs Vt.)   [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Mi 22.07. AMC bestätigt → Blackout aktiv Owner-Pending Option A Strategie-Lock (V1_neu 349,70 < Kurs 351,14 = +0,41 % positiv, kein Sofort-Stop-Risiko) | V Q3 ~28-29.07. AMC (~5-6 HT weg, kein Blackout) | [WARN — GOOGL Owner-Pending] |
+8. Max Käufe KW30:            1/2 (V gefüllt, Slot 2/2 offen bis Fr 24.07.)    [FREI 1]
+```
+
+**Perplexity Daily Macro Check (Di 21.07.2026):**
+- **VIX:** 17,6–18,0 (Vortagesschluss 18,65 → -5-6 %) — GRÜN
+- **SPY Pre-Market:** +0,2 bis +0,4 % (aus ES-Futures abgeleitet; Alpaca Live-Quote SPY 744,91 vs Mo-Close 742,15 = **+0,37 %**)
+- **10Y Treasury:** 4,25-4,35 % (leicht höher vs Vortag)
+- **Makro-Events heute:** KEINE FOMC, KEINE Powell-Rede, KEINE CPI/PCE/NFP. Nur PMI/Regional Fed Surveys + Housing-Daten (sekundär, geringes Marktbewegungspotenzial)
+- **Top 3 News:** (1) Q2-Earnings Large-Caps Tech/Consumer prägen Index (2) Anstieg Langfrist-Renditen nach robusten US-Daten → Fed-Cut-Repricing (3) US-China Tech-Restriktionen + US-Haushalt-Blockaden belasten Sentiment
+- **Guardrail-Check:** VIX < 30 ✓, SPY Pre-Market > -2 % ✓ (+0,37 %), Crash-Filter INAKTIV → **Kaufscan Market Open ERLAUBT**
+
+**Earnings-Blackout-Check (Perplexity, nächste 3 HT = Di 21.07., Mi 22.07., Do 23.07.):**
+- AAPL, GS, JPM, LLY, UNH, V, KO, UPS: **NEIN** (alle bereits berichtet / >3 HT weg)
+- **GOOGL: JA Mi 22.07. AMC bestätigt** (Perplexity Multi-Source-Check) → Blackout-Situation heute Tag -1:
+  - Option A Strategie-Lock (V1 = Standard 338,65) weiter aktiv, Owner-Freigabe für V1_neu 349,70 pending
+  - Kurs 351,14 > V1_neu 349,70 = +0,41 % positiv → Blackout-Tightening würde AKTUELL keinen Sofort-Stop auslösen
+  - **Letzte Chance heute Di + Mi Vormittag für Owner-Blackout-Entscheidung vor Mi-Close-Earnings**
+- **Aktion:** GOOGL Stop bleibt 338,65 (Option A Strategie-Lock), erneute PushNotification an Owner mit Blackout-Erinnerung
+
+**GS Fill-Day+4 Watch (kritischste Position):**
+- Entry 15.07. 1.141,74 → Fill-Day+3 Mo-Close 1.055,66 (-7,53 %) → Pre-Market Di ~1.064,88 (Alpaca Quote unzuverlässig, +0,87 % overnight)
+- V1-Puffer pre-Open **~+1,38 %** — deutlich entspannter als Mo-Close +0,50 %, aber Alpaca Quote-Spread bp 1.014,79 / ap 1.108,17 extrem breit (nicht handelbar)
+- **Bestätigung erst Market Open 09:30 ET** — bei Break V1 1.050,40 sofort Market-Sell
+- Präzedenz-Warnung: AVGO Fill-Day+3 V1-Stop / MU Fill-Day+4 V1-Stop — GS aktuell im Muster-Fenster, Watch bleibt kritisch
+
+**Watchlist Market Open Scan (Slot 2/2 KW30 offen bis Fr 24.07.):**
+- **KO 82,11** (XLP, K1-3 3/3 aus Mo-Screener): K4/K5 zwingend Market Open bestätigen (Volume, FwdPE Multi-Source, Q2-Blackout Historik-Check)
+- **UPS 113,16** (XLI, K1-3 3/3 aus Mo-Screener): K4/K5 zwingend Market Open bestätigen (Volume, FwdPE Multi-Source, Q2-Blackout Historik-Check)
+- **Backup 2/3 (K3-Fail RS negativ):** HON, RTX, CVX, XOM, COP, MMM
+- **XLV-Backup Owner-Pending:** ABBV/MRK/JNJ (Sektor-Cap-Deutungs-Frage)
+- **Permanent-blockiert:** PANW (K5 FwdPE 42-78), AMD (K5)
+
+**Entscheidung Pre-Market Di 21.07.:**
+- **Guardrail-Status:** GRÜN (alle 8)
+- **Kauf heute:** Market Open Scan JA — Slot 2/2 verfügbar, Prio KO + UPS (K4/K5 Bestätigung zwingend)
+- **GS-Watch:** V1 1.050,40 Sofort-Sell-Bereitschaft bei Break (Puffer pre ~+1,38 %)
+- **GOOGL-Blackout:** Owner-Pending, PushNotification-Erinnerung (letzte Chance vor Mi AMC)
+- **Nächster Check:** Di 21.07. 09:30 ET Market Open + Kaufsignal-Scan
+
+---
+
 ## Market Close 16:02 ET — 2026-07-20 (Mo, KW30 Tag 1) — Alle 7 V1-V6 SICHER, GS Puffer +0,50% RAZOR-THIN, KO+UPS Watchlist Di
 
 **Alpaca Clock:** is_open=false, next_open Di 21.07. 09:30 ET.
