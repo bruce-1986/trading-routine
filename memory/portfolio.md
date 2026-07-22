@@ -1,6 +1,82 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-21 16:03 ET (Market Close Di KW30 Tag 2, alle 7 V1-V6 SICHER, GS Rebound-Tag +2,89 % chg, KEINE Limit-Order für Mi 22.07., Daily +0,64 %, Alpha -0,16 pp, Weekly KW30 +0,18 %)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-22 08:36 ET (Pre-Market Mi KW30 Tag 3, alle 7 V1 SICHER Puffer erholt, GOOGL Blackout LETZTE CHANCE Owner-Freigabe HEUTE vor AMC, MMM K5-FAIL, Slot 2/2 Owner-Pending, Daily +0,09 %, Weekly +0,27 %)
+
+---
+
+## Pre-Market 2026-07-22 08:36 ET (Mi, KW30 Tag 3) — Alle 7 V1 SICHER (Puffer erholt), GOOGL Blackout aktivierungssensitiv weiter negativ HEUTE letzte Chance, MMM K5-FAIL Multi-Source
+
+```
+Alpaca clock:      is_open=false | next_open Mi 22.07. 09:30 ET | next_close 16:00 ET
+Equity:            98.500,63 $   (Alpaca /v2/account, portfolio_value)
+Cash:              40.026,27 $   (40,64 %)
+Portfolio MV:      58.471,25 $   (59,36 %, 7 Positionen)
+Buying_power:     323.833,30 $
+Daily P/L Pre:      +85,53 $     (+0,087 % vs last_equity 98.415,10)             [GRÜN, Cap -3 %]
+                    +83,52 $     (+0,085 % vs Memory 21.07. Close 98.417,11)
+ATH:              100.066,47 $   DD -1,566 % [GRÜN — Alarm bei -15 %]
+Weekly KW30 Tag 3:  +0,269 %     (vs Fr-Close 98.236,14)                         [GRÜN, Cap -5 %]
+VIX:              ~17-18         (Perplexity)                                    [GRÜN, <30]
+SPY Pre:          ±0,3 %         (Futures-Indikation)                            [Crash-Filter INAKTIV]
+10Y Treasury:     ~3,9-4,0 %     (leicht niedriger vs Vortag)
+Käufe KW30:            1/2       (V gefüllt Mo 20.07., Slot 2/2 offen bis Fr 24.07.)
+Open Orders:           0
+Guardrails:        7/8 GRÜN + 1 WARN (GOOGL Blackout Tag 0 AMC HEUTE, Owner-Freigabe LETZTE CHANCE)
+```
+
+**Positionen Pre-Market 08:36 ET (Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Pre-Kurs   | Entry      | P/L %    | V1-Stop     | V1-Puffer       | Δ vs Close  | Status |
+|--------|------------|------------|----------|-------------|-----------------|-------------|--------|
+| **GOOGL**|  348,07  | 368,10     | -5,44 %  | 338,65      | **+2,78 %** 🔴  | +0,21 pp    | SICHER ENGSTE (Blackout Tag 0 AMC HEUTE, V1_neu 349,70 > Kurs = **-0,47 % negativ** → Aktivierung würde Sofort-Stop; verbessert vs Close -0,67 %; Option A Strategie-Lock aktiv, **Owner-Freigabe LETZTE CHANCE bis 15:59 ET**) |
+| **GS** | 1.088,27   | 1.141,74   | -4,68 %  | 1.050,40    | **+3,60 %**     | +0,25 pp    | SICHER (Rebound-Fortsetzung Tag+1 vs Close +3,35 %, Fill-Day+5, Muster überwunden) |
+| LLY    | 1.173,00   | 1.193,89   | -1,75 %  | 1.098,38    | +6,79 %         | -0,17 pp    | SICHER (marginal verschlechtert vs Close +6,96 %, RSI-Watch nach Rebound +2,43 % Vortag) |
+| V (NEU)|   356,40   |   357,18   | -0,22 %  |   328,60    | +8,46 %         | +0,18 pp    | SICHER (Fill-Day+2, V5 EMA-Spread bleibt marginal aber Golden Cross intakt) |
+| AAPL   |   327,75   |   316,86   | +3,44 %  |   291,51    | +12,43 %        | +0,15 pp    | SICHER (leicht verbessert vs Close +12,28 %) |
+| JPM    |   345,40   |   332,78   | +3,79 %  |   306,16    | +12,82 %        | +0,13 pp    | SICHER (leicht verbessert vs Close +12,69 %) |
+| UNH    |   438,00   |   401,57   | +9,07 %  |   369,44    | **+18,56 %**    | +0,27 pp    | SICHER (Beste-P/L komfortabel, verbessert vs Close +18,29 %) |
+
+**Konsistenz-Check Memory vs Alpaca:**
+- Cash: Memory 40.026,27 = Alpaca 40.026,27 ✓
+- Positionen: Memory 7 = Alpaca 7 ✓ (AAPL/GOOGL/GS/JPM/LLY/UNH/V)
+- Equity Alpaca 98.500,63 vs Memory Close 98.417,11 → +83,52 $ Pre-Market-Drift (+0,085 %), Positionen Live-MV 58.471,25 vs Memory 58.390,84 = +80,41 $ (Pre-Market-Bewegung)
+
+**Guardrail-Status Pre-Market:**
+```
+1. Daily Loss Cap (-3 %):     Pre +0,087 %                                        [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 3 +0,269 %                                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,566 %                                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,566 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Pre ±0,3 %                                      [INAKTIV]
+6. VIX-Filter (>30):          ~17-18 (Perplexity)                                 [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Mi 22.07. AMC Tag 0 aktivierungssensitiv -0,47 % (Owner-Pending LETZTE CHANCE) | [WARN] |
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)                  [FREI 1]
+```
+
+**GOOGL Blackout-Aktivierungssensitivität Verlauf — LETZTE ENTSCHEIDUNGSCHANCE (heute Vormittag):**
+- Mo-Close +0,69 % positiv → Di-Pre +0,41 % positiv → Di-Open -0,05 % negativ → Di-Close -0,67 % negativ → **Mi-Pre -0,47 % negativ**
+- V1_neu Blackout 349,70 (368,10 × 0,95 = -5 %) > Kurs 348,07 → Aktivierung würde Sofort-Stop auslösen
+- Q2 CY26 Earnings HEUTE Mi 22.07. AMC bestätigt (Perplexity Multi-Source [1][2][6][10][16])
+- **Owner-Freigabe muss bis 15:59 ET erfolgen** — danach ist Blackout obsolet (Earnings-Ereignis eingetreten, Post-Release Reset)
+- **Empfehlung:** Option A Strategie-Lock beibehalten — Aktivierung wäre bei aktueller Kurslage funktional wirkungslos (Sofort-Stop-auslösend statt Schutz)
+
+**MMM K5-Multi-Source-Recheck — REJECT (Watchlist-Prio Slot 2/2 KW30 entfällt):**
+- Q2 CY26 Earnings **BMO Di 21.07. bereits gemeldet** — kein Blackout mehr
+- FwdPE Multi-Source: GuruFocus ~19,0x / StockAnalysis ~18,5x / AlphaSpread ~18,0x → alle ≤ 35 ✓
+- **TTM Revenue-Growth YoY: +2,4 %** (Q2 2026: 6,5 Mrd $) → **K5-FAIL** (Kriterium ≥ +10 %)
+- → **MMM REJECT** (analog UPS K5 dauerhaft-blocked)
+
+**Slot 2/2 KW30 Verfügbare Kandidaten (nach MMM/UPS-REJECT):**
+- **ABBV / MRK / JNJ** (XLV, alle 3/3 K1-K3) — **XLV-Sektor-Cap-Entscheidung Owner-Pending** (aktuell 20,21 % + neu ~9 % = ~29 % knapp am 30 %-Cap)
+- Alternative: Market-Open frische Screener-Runde (XLI/XLP/XLE/XLU/XLB) mit neuen 5 K-Signalen-Recheck
+
+**Entscheidung Market-Open-Scan:** **JA** (7/8 Guardrails GRÜN, Slot 2/2 offen bis Fr 24.07.)
+- Kauf nur bei Owner-Freigabe XLV-Sektor-Cap (ABBV/MRK/JNJ) oder neuer 3/3-Kandidat aus Alt-Screener
+- **Wahrscheinlichkeit Kauf KW30 GERING** ohne Owner-Freigabe
+
+**PushNotification Prio 3 an Owner:** GOOGL Blackout-Entscheidung HEUTE Vormittag zeitkritisch (LETZTE CHANCE vor AMC).
+
+**Nächste Routine:** Mi 22.07. 09:30 ET Market Open + Kaufsignal-Scan — GOOGL/GS V1-Watch, ABBV/MRK/JNJ K4/K5-Recheck falls Owner Sektor-Cap freigibt, alternative Non-XLK/XLV/XLF/XLC-Screener-Runde.
 
 ---
 
