@@ -4,6 +4,69 @@
 
 ---
 
+## Market Open 09:40 ET — 2026-07-22 (Mi, KW30 Tag 3) — Alle 7 V1-V6 SICHER, KEIN Kauf (LEVEL 0), Sektor-RS XLE #1 aber K3-blocked
+
+**Alpaca Clock:** is_open=true, next_close Mi 22.07. 16:00 ET.
+
+**Account Live 09:40 ET (Alpaca /v2/account):**
+```
+Equity:            98.406,07 $   (portfolio_value)
+Cash:              40.026,27 $   (40,67 %)
+Portfolio_MV:      58.379,80 $   (59,33 %, 7 Positionen, Alpaca /v2/positions live)
+Buying_power:     323.568,52 $
+Käufe KW30:        1/2           (V gefüllt Mo 20.07., Slot 2/2 offen bis Fr 24.07.)
+Pending Orders:    0
+Daily P/L:         -0,009 %      (vs last_equity 98.415,10, -9,03 $)
+Weekly KW30 Tag 3: +0,173 %      (vs Fr-Close 98.236,14, +169,93 $)
+DD vs ATH:         -1,659 %      (ATH 100.066,47)
+```
+
+**Positionen Live 09:40 ET (Alpaca latest trades IEX) — sortiert Puffer ENG→WEIT:**
+- GOOGL 346,78 (P/L -5,79 %) V1-Puffer **+2,40 % ENGSTE**, Blackout Tag 0 AMC HEUTE V1_neu 349,70 > Kurs = -0,84 % neg
+- GS 1.094,14 (P/L -4,17 %) V1-Puffer +4,16 % (Rebound-Tag+2)
+- LLY 1.166,11 (P/L -2,33 %) V1-Puffer +6,17 %
+- V 355,11 (P/L -0,58 %) V1-Puffer +8,07 %
+- AAPL 327,755 (P/L +3,44 %) V1-Puffer +12,43 %
+- JPM 345,355 (P/L +3,78 %) V1-Puffer +12,80 %
+- UNH 435,73 (P/L +8,51 %) V1-Puffer **+17,94 %**, Beste-P/L
+
+**SPY Live 747,295 vs Fr-Close 743,28 = +0,540 %** (Crash-Filter INAKTIV). Alpha vs SPY -0,549 pp (Portfolio ±0 vs SPY +0,540 %) [LEICHT NEGATIV Momentaufnahme 10min in Session].
+
+**Perplexity Sektor-Strength-Check (Mi 22.07. 09:40 ET):**
+- **XLE** — 3M-Return **+6,23 %** klar #1 (momentum-trend positiv/führend)
+- **XLI** — Leading-Quadrant im RS-Schema (kein exakter 3M-Wert belegt)
+- **XLU** — defensiv-vorne (kein exakter 3M-Wert belegt)
+- Top-News: Mittelost-Spannungen US/Iran-Öl (XLE-treibend), VIX-Regime neutral/chop, S&P nahe Hoch
+
+**K1-K5-Kompatibilität der starken Sektoren (vs Pre-Market-Screener):**
+- **XLE-Top-Holdings** (XOM/CVX/COP): alle **K3-FAIL** (Ret63 vs SPY negativ -1,29 % bis -4,63 %) — Sektor läuft jetzt, aber 63d-Rückblick noch negativ → REJECT alle
+- **XLI-Top-Kandidaten** (MMM/UPS/HON/RTX/CAT/DE/LMT/NOC): MMM heute **K5-REJECT** (TTM Rev +2,4 % << 10 %), UPS K5-permanent-FAIL (-2,65 %), HON K3 -55,55 %, RTX K3 -6,62 %, CAT K2 43,00 <50, DE K3 -6,84 %, LMT K3 -18,33 %, NOC K3 -27,76 % → REJECT alle
+- **XLU**: nicht gescreent (Zeit-Constraint 09:40 ET, aber typische Top-Holdings NEE/DUK/SO defensiv-langsam → K3-Risiko hoch)
+- **XLV-Backup** (ABBV 256,14 / MRK 126,26 / JNJ 250,66): alle 3/3 K1-K3 ✓, aber **XLV-Sektor-Cap-Owner-Entscheidung Pending** (aktuell 20,10 % + neu ~9 % = ~29 % formal <30 %-Cap, aber Owner-Ambiguität dauert seit KW29 an → LEVEL 0)
+
+**Entscheidung Market-Open-Scan Mi 09:40 ET:** **KEIN Kauf**
+- Kein 5/5 K-Signal-Kandidat außerhalb XLV bestätigt
+- XLV-Trio Owner-Pending → **LEVEL 0 "No-Action bei Unsicherheit"**
+- Slot 2/2 KW30 bleibt OFFEN bis Fr 24.07.
+
+**V1-V6-Sell-Check alle 7 SICHER:**
+- V1 (Stop-Loss -8%): engste GOOGL +2,40 %, alle >4 %
+- V2 (52w-Trailing): keine Verletzung
+- V3/V4 (Gewinn ≥20/35%): max UNH +8,51 % << 20 %-Schwelle
+- V5 (EMA50<EMA200): alle negativ (Golden Cross intakt, Details siehe Close 21.07.)
+- V6 (RSI>80 UND RS_4w<0): max RSI ~64 (AAPL/V) << 80-Threshold
+- **→ KEINE Sell-Order 09:40 ET**
+
+**GOOGL Blackout-Verlauf HEUTE (Timeline):**
+- Mo-Close +0,69 % pos → Di-Pre +0,41 % → Di-Open -0,05 % → Di-Close -0,67 % → Mi-Pre -0,47 % → **Mi-Open 09:40 -0,84 % NEGATIV** (weiter verschlechtert)
+- V1_neu Blackout 349,70 > Kurs 346,78 → Aktivierung würde AKTUELL Sofort-Stop auslösen
+- **Owner-Freigabe LETZTE CHANCE bis 15:59 ET** vor AMC Q2 Earnings
+- Empfehlung: Option A Strategie-Lock beibehalten (funktional wirkungslos bei aktueller Kurslage)
+
+**Nächste Routine:** Mi 22.07. 13:00 ET Midday Stop-Check.
+
+---
+
 ## Pre-Market 08:36 ET — 2026-07-22 (Mi, KW30 Tag 3) — Alle 7 V1 Pre SICHER (Puffer erholt), GOOGL Blackout-Sensitivität HEUTE LETZTE CHANCE Owner-Freigabe, MMM K5-FAIL Multi-Source, Slot 2/2 Owner-Pending
 
 **Alpaca Clock:** is_open=false, next_open Mi 22.07. 09:30 ET, timestamp 2026-07-22 08:36:08 ET.
