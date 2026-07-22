@@ -1,6 +1,90 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-22 09:40 ET (Market Open Mi KW30 Tag 3, alle 7 V1-V6 SICHER, KEIN Kauf, GOOGL Blackout LETZTE CHANCE Owner-Freigabe HEUTE vor AMC, XLE/XLI-Kandidaten K5/K3-FAIL, Slot 2/2 Owner-Pending, Daily ±0 %, Weekly +0,17 %)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-22 16:03 ET (Market Close Mi KW30 Tag 3, alle 7 V1-V6 SICHER, KEINE Limit-Order Do 23.07., GOOGL Q2 AMC HEUTE released Post-Close → morgen Reaktion kritisch, Puffer +1,07 % ENGSTE ALLER ZEITEN, Daily -0,33 %, Weekly -0,15 %, Alpha -0,24 pp)
+
+---
+
+## Market Close 2026-07-22 16:03 ET (Mi, KW30 Tag 3) — Alle 7 V1-V6 SICHER, KEINE Limit-Order Do 23.07., GOOGL Q2 AMC released HEUTE Post-Close, Puffer +1,07 % KRITISCH ENGSTE
+
+```
+Alpaca clock:      is_open=false | next_open Do 23.07. 09:30 ET | next_close Do 23.07. 16:00 ET
+Equity End:        98.087,79 $   (Alpaca /v2/account, portfolio_value)
+Cash:              40.026,27 $   (40,81 %)
+Portfolio MV:      58.061,52 $   (59,19 %, 7 Positionen)
+Buying_power:     322.677,33 $
+Daily P/L:          -327,31 $    (-0,3326 % vs last_equity 98.415,10)              [GRÜN, Cap -3 %]
+ATH:              100.066,47 $   DD -1,977 % [GRÜN — Alarm bei -15 %]
+Weekly KW30 Tag 3:  -0,151 %     (vs Fr-Close 98.236,14, -148,35 $)                [GRÜN, Cap -5 %]
+SPY IEX Close:     747,49        (vs Di-Close 748,155 = -0,089 %; vs Fr-Close 743,28 = +0,566 %)
+Alpha vs SPY:      -0,244 pp     (Portfolio -0,333 vs SPY -0,089)                  [LEICHT NEGATIV]
+Alpha Weekly:      -0,717 pp     (Portfolio -0,151 vs SPY +0,566)                  [NEGATIV]
+VIX:               ~17-18        (Perplexity carry-over, keine Auffrischung)       [GRÜN, <30]
+Käufe KW30:            1/2       (V gefüllt Mo 20.07., Slot 2/2 offen bis Fr 24.07.)
+Open Orders:           0
+Guardrails:        7/8 GRÜN + 1 WATCH (GOOGL Q2 AMC released HEUTE Post-Close, morgen Öffnungs-Reaktion kritisch)
+```
+
+**Positionen Close 16:03 ET (Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Close      | Entry      | P/L %    | chg heute | V1-Stop     | V1-Puffer       | Status |
+|--------|------------|------------|----------|-----------|-------------|-----------------|--------|
+| **GOOGL**|  342,27  | 368,10     | -7,02 %  | -1,41 %   | 338,65      | **+1,07 %** 🔴🔴| SICHER ABER KRITISCH ENGSTE ALLER ZEITEN (verschlechtert vs Open +2,40 % um -1,33 pp; **Q2 Earnings AMC HEUTE Post-Close released** — Preview ~$2,87 EPS / $116,5-116,9 B Rev / Capex-Guidance hoch erwartet; Reaktion morgen Öffnung kritisch, V1-Bruch bei jedem -1,08 %-Move → Sofort-Sell-Watch Do Pre-Market/Open zwingend, Owner-Freigabe LETZTE CHANCE VERPASST 15:59 ET, Blackout jetzt obsolet Post-Release) |
+| **GS** | 1.098,20   | 1.141,74   | -3,81 %  | +1,16 %   | 1.050,40    | **+4,55 %**     | SICHER (Rebound-Tag+2, verbessert vs Open +4,16 % um +0,39 pp, Fill-Day+5-Muster AVGO/MU überwunden) |
+| LLY    | 1.159,11   | 1.193,89   | -2,91 %  | -1,39 %   | 1.098,38    | +5,53 %         | SICHER (verschlechtert vs Open +6,17 % um -0,64 pp, XLV-Konsolidierungstag, RSI ~48 unter 50) |
+| V      |   353,42   |   357,18   | -1,05 %  | -0,67 %   |   328,60    | +7,55 %         | SICHER (Fill-Day+2, V5 EMA-Spread +5,63 marginal aber Golden Cross intakt, RSI ~57) |
+| AAPL   |   326,12   |   316,86   | +2,92 %  | -0,49 %   |   291,51    | +11,87 %        | SICHER (leicht verschlechtert vs Open +12,43 % um -0,56 pp) |
+| JPM    |   348,90   |   332,78   | +4,84 %  | +1,06 %   |   306,16    | +13,96 %        | SICHER (verbessert vs Open +12,80 %, XLF-Rebound Tag+2) |
+| UNH    |   431,31   |   401,57   | +7,41 %  | -1,16 %   |   369,44    | **+16,74 %**    | SICHER (leicht verschlechtert vs Open +17,94 %, Beste-P/L bleibt komfortabel) |
+
+**V1-V6-Check alle 7 SICHER — Details (Alpaca Bars 210d):**
+- V1 (Stop -8 %) alle sicher, **GOOGL +1,07 % KRITISCH ENGSTE ALLER ZEITEN** (bislang GS Mo 20.07. +0,50 % war Rekord), alle anderen >4 %
+- V2 (52w × 0,88) keine Verletzung (keine Position nahe 52w-Hoch)
+- V3/V4 (Gewinn ≥ 20 % / 35 %) — max UNH +7,41 % << 20 %
+- V5 (EMA50 < EMA200) alle negativ (Golden Cross intakt): GOOGL Spread +38,06 / GS +119,99 / LLY +115,24 / AAPL +26,98 / V +5,63 (marginal) / JPM +12,73 / UNH +51,28
+- V6 (RSI > 80 UND RS_4w < 0) — max RSI 66,01 (JPM) << 80, GOOGL RSI 40,23 + RS_4w -3,10 % erfüllt V6-Teil aber RSI << 80, GS RSI 56,56 + RS_4w -1,57 % analog → V6 verlangt BEIDES → nicht ausgelöst
+- **→ KEINE Sell-Order 16:03 ET, KEINE Limit-Order für Do 23.07.** platziert
+
+**GOOGL Q2 Earnings AMC HEUTE Post-Close — Watch Do 23.07. Pre-Market/Open:**
+- Preview (Perplexity): EPS ~$2,87 / Revenue $116,5–116,9 Mrd / Capex-Guidance hoch erwartet
+- Blackout jetzt **obsolet** (Post-Release), Owner-Freigabe LETZTE CHANCE 15:59 ET VERPASST
+- V1 338,65 Puffer nur +1,07 % → **jede -1,08 %-Morgen-Reaktion triggert V1 Sofort-Sell**
+- **Sofort-Sell-Watch Do 23.07. 08:30 ET Pre-Market + 09:30 ET Open zwingend**
+- Historische GOOGL Q2-Post-Release-Volatilität: Median-Move ±3-5 % (typische Big-Tech-Post-Earnings)
+
+**Sektor-Gewichte Close (leicht verändert vs Open durch Marktwert-Bewegung):**
+| Sektor | Positionen | MV       | % investiert | % Portfolio | Status |
+|--------|------------|----------|--------------|-------------|--------|
+| XLF    | GS+JPM+V   | 19.374,64| 33,37 %      | 19,75 %     | ⚠ investiert > 30 %, Portfolio SAFE |
+| XLV    | UNH + LLY  | 19.624,32| 33,80 %      | 20,00 %     | ⚠ investiert > 30 %, Portfolio SAFE |
+| XLK    | AAPL       | 10.109,72| 17,41 %      | 10,31 %     | GRÜN |
+| XLC    | GOOGL      |  8.899,06| 15,33 %      |  9,07 %     | GRÜN |
+
+**Watchlist Do 23.07. (Perplexity Sektor-RS + K1-K3 Vorab-Prüfung):**
+- **Sektor-RS 4w (Perplexity):** XLK, XLI, XLE, XLF, XLV (Top-5)
+- **Sektor-RS 3M (Perplexity):** XLK, XLE, XLV, XLI, XLB
+- **Top-3M-Momentum-Stocks Perplexity:** NVDA, AVGO (Broadcom), META, MSFT, AMZN — **alle 5 aus XLK/XLC blockiert oder K5-anfällig** (AVGO K5-Range grenzwertig, NVDA K5-Range 20-41 grenzwertig historisch, META/GOOGL bereits XLC-belegt, AMZN XLC → doppel-Sektor)
+- **XLE-Kandidaten** (XOM/CVX/COP): K3-FAIL im Vortag-Screener (Ret63 vs SPY negativ) → REJECT
+- **XLI-Kandidaten** MMM K5-FAIL (Rev +2,4 %) + UPS K5-permanent-FAIL — durchweg blockiert
+- **XLV-Backup** ABBV 3/3 / MRK 3/3 / JNJ 3/3 K1-K3 ✓ — **XLV-Sektor-Cap-Owner-Entscheidung Pending** (20,00 % + neu ~9 % = ~29 % formal <30 %-Cap, aber Owner-Ambiguität seit KW29)
+- **Bewertung:** Kein 5/5 K-Signal-Kandidat außerhalb XLV bestätigt → **Slot 2/2 KW30 bleibt offen bis Fr 24.07.**, Kauf-Wahrscheinlichkeit GERING ohne Owner-Freigabe
+
+**Weekly Loss Cap Check KW30:** Weekly -0,151 % > -5 % → **NICHT ausgelöst, keine Cash-Aktion, keine Order-Stornierung** (auch nichts pending).
+
+**Guardrails 7/8 GRÜN + 1 WATCH:**
+```
+1. Daily Loss Cap (-3 %):     -0,333 %                                          [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 3 -0,151 %                               [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,977 %                                          [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,977 %                                          [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Close -0,089 % vs Di, +0,566 % Weekly         [INAKTIV]
+6. VIX-Filter (>30):          ~17-18 (carry-over Pre)                           [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Q2 AMC released HEUTE Post-Close → obsolet, morgen V1-Watch zwingend | [WATCH]
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)                [FREI 1]
+```
+
+**Entscheidung Market Close 16:03 Mi 22.07.:** **Keine Sell-Order platziert** (alle 7 V1-V6 SICHER). **Keine Limit-Order für Do 23.07.** (alle V5/V6 SICHER). **PushNotification Prio 2** an Owner (GOOGL Q2 Post-Release Morgen-Reaktion kritisch, Puffer +1,07 % KRITISCH ENGSTE ALLER ZEITEN). **ClickUp Tagesbericht Prio 3** (negative Perf) — Fallback PushNotification wenn ClickUp-Fehler.
+
+**Nächste Routine:** Do 23.07. 08:30 ET Pre-Market — GOOGL V1 338,65 zwingender Watch (Post-Q2-Reaktion Öffnung), GS V1 1.050,40 Rebound-Fortsetzung, LLY RSI-Watch nach -1,39 % Tag.
 
 ---
 
