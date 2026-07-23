@@ -1,6 +1,98 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-23 13:07 ET (Midday Stop-Check Do KW30 Tag 4, alle 6 V1-V4 SICHER, keine Stops ausgelöst, Daily -1,08 %, Weekly -1,23 %, DD -3,03 %, SPY -1,28 %, VIX ~17-18 GRÜN, Cash 49,87 %, Käufe 1/2 KW30)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-23 16:03 ET (Market Close Tagesbilanz Do KW30 Tag 4, alle 6 V1-V6 SICHER, KEINE Limit-Order für Fr 24.07., Daily -0,95 %, Alpha +0,31 pp vs SPY -1,26 %, Weekly -1,10 %, DD -2,91 %, VIX ~17-18 GRÜN, Cash 49,80 %, Käufe 1/2 KW30 Slot 2/2 offen letzter Handelstag Fr)
+
+---
+
+## Market Close 2026-07-23 16:03 ET (Do, KW30 Tag 4) — Tagesbilanz: Alle 6 V1-V6 SICHER, Alpha +0,31 pp POSITIV, keine Limit-Order Fr, PSX-Watchlist
+
+```
+Alpaca clock:      is_open=false | next_open Fr 24.07. 09:30 ET | next_close Fr 24.07. 16:00 ET
+Equity End:        97.152,97 $   (Alpaca /v2/account portfolio_value)
+Cash:              48.385,53 $   (49,80 %, unverändert seit Open Post-GOOGL-Sell)
+Portfolio MV End:  48.767,44 $   (50,20 %, 6 Positionen)
+Buying_power:      48.385,53 $   (last_equity=0 Paper-Reset-Artefakt)
+Daily P/L End:       -934,82 $   (-0,953 % vs Mi-Close 98.087,79)                 [GRÜN, Cap -3 %]
+SPY Close 23.07.:   738,06        (vs Mi-Close 747,49 = -1,262 %)                 [Crash-Filter INAKTIV, <5 %]
+Alpha vs SPY:      +0,309 pp     POSITIV (Cash-Puffer 49,80 % dämpft Verlust)
+ATH:              100.066,47 $   DD -2,912 % [GRÜN — Alarm bei -15 %]
+Weekly KW30 Tag 4:  -1,103 %     (vs Fr-Close 98.236,14, -1.083,17 $)             [GRÜN, Cap -5 %]
+VXX Close:          22,61         (VIX-Proxy → VIX ~17-18 carry-over)             [GRÜN, <30]
+Käufe KW30:            1/2       (Slot 2/2 offen letzter Handelstag Fr 24.07.)
+Open Orders:           0          (KEINE Limit-Order platziert für Fr)
+Guardrails:        8/8 GRÜN
+```
+
+**Positionen Close 16:00 ET (Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Cur Close  | Entry      | P/L %    | chg_today  | V1-Stop     | V1-Puffer    | V5 (EMA50/200) | V6 (RSI/RS4w) | Status |
+|--------|-----------|-----------|---------|-----------|------------|--------------|----------------|---------------|--------|
+| **GS** | 1.074,72  | 1.141,74  | -5,87 % | -2,14 %   | 1.050,40   | **+2,32 %** | ✓ 1.042/933 diff +109 | ✓ RSI 51,86 / RS4w -0,91 % | SICHER **ENGSTE**, Fill-Day+6 Give-back verstärkt (Midday +2,50 % → Close +2,32 %, -0,55 pp vs Open), 24,32 $ vom V1 |
+| V      |   351,85  |   357,18  | -1,49 % | -0,45 %   |   328,60   | +7,08 %      | ✓ 341/332 diff +8,4 | ✓ RSI 54,27 / RS4w +5,09 % | SICHER (marginal vs Midday +6,77 %, Fill-Day+3 Konsolidierung, V5 EMA-Spread marginal aber intakt) |
+| LLY    | 1.185,31  | 1.193,89  | -0,72 % | +1,92 %   | 1.098,38   | +7,92 %      | ✓ 1.131/1.020 diff +111 | ✓ RSI 55,30 / RS4w +5,45 % | SICHER (verbessert vs Midday +7,55 %, XLV-Rebound Fortsetzung Tag+1 **Best-chg heute**) |
+| AAPL   |   321,66  |   316,86  | +1,52 % | -1,30 %   |   291,51   | +10,34 %     | ✓ 308/280 diff +27 | ✓ RSI 58,25 / RS4w +8,98 % | SICHER (verschlechtert vs Midday +9,99 %, chg -1,30 %) |
+| JPM    |   349,90  |   332,78  | +5,14 % | +0,49 %   |   306,16   | +14,29 %     | ✓ 327/313 diff +13 | ✓ RSI 65,76 / RS4w +4,23 % | SICHER (leicht verbessert vs Midday +13,62 %) |
+| UNH    |   423,59  |   401,57  | +5,48 % | -1,79 %   |   369,44   | +14,65 %     | ✓ 413/360 diff +53 | ✓ RSI 53,27 / RS4w +3,69 % | SICHER (verbessert vs Midday +14,23 %, chg -1,79 % XLV-gemischt) |
+
+**V1-V6 Vollständiger Check 6 SICHER (Market Close Signal-Prüfung):**
+- V1 (Stop -8 %) — 6 SICHER, Puffer +2,32 % GS bis +14,65 % UNH (kein Break)
+- V2 (Trailing -12 %) — kein 52w-Hoch relevant, kein Trigger
+- V3 (TP1 +20 %) — max +5,48 % UNH << 20 %, kein Trigger
+- V4 (TP2 +35 %) — kein Trigger
+- **V5 (EMA50<EMA200) — 6 SICHER**, alle Golden Cross intakt (min V EMA-Spread +8,4)
+- **V6 (RSI>80 UND RS_4w<0) — 6 SICHER**, max RSI 65,76 JPM << 80-Threshold (nur GS RS_4w -0,91 % negativ, aber RSI 51,86 << 80)
+
+**→ KEINE Limit-Order für Fr 24.07. platziert** (kein V5/V6-Trigger)
+
+**Tages-Highlights:**
+- **Best chg_today:** LLY +1,92 % (XLV-Rebound Fortsetzung Tag+1, RSI 55,30 rekonvertiert stabil, Puffer verbessert +6,52 % → +7,92 %)
+- **Worst chg_today:** GS -2,14 % (Fill-Day+6 Give-back verstärkt, Puffer +2,87 % → +2,32 % **NEUE ENGSTE ALLER ZEITEN Fill-Zeitraum**, aber V1-Break-Distanz 24,32 $)
+- **Best P/L:** UNH +5,48 % (+528,48 $)
+- **Worst P/L:** GS -5,87 % (-536,19 $)
+- **UNH -1,79 % / AAPL -1,30 %** milde Give-back trotz XLV-Rebound (UNH-Sektor-Divergenz LLY vs UNH)
+- **Alpha +0,31 pp POSITIV** (Cash-Puffer 49,80 % dämpft, Portfolio-Fokus-Positionen mildere Give-back vs SPY -1,26 % Breitmarkt-Sell)
+
+**Daily/Weekly Loss Cap Check:**
+- Daily -0,953 % > Cap -3 % → **GRÜN**
+- Weekly KW30 Tag 4 -1,103 % > Cap -5 % → **GRÜN** (keine pending-Order-Stornierung, kein Kauf-Sperre)
+
+**Sektor-Struktur Post-GOOGL-Sell (Live Close 16:00 ET):**
+| Sektor | Positionen | MV        | % investiert | % Portfolio | Status |
+|--------|------------|-----------|--------------|-------------|--------|
+| XLV    | UNH + LLY  | 19.648,64 | 40,29 %      | 20,23 %     | ⚠ investiert > 30 %, Portfolio SAFE |
+| XLF    | GS+JPM+V   | 19.147,34 | 39,26 %      | 19,71 %     | ⚠ investiert > 30 %, Portfolio SAFE (3-Pos-Cap intakt) |
+| XLK    | AAPL       |  9.971,46 | 20,45 %      | 10,26 %     | GRÜN |
+| XLC    | —          |     0     |  0 %         |  0 %        | GRÜN (GOOGL raus) |
+
+**Watchlist Fr 24.07. — Slot 2/2 KW30 letzter Handelstag (Alpaca-Screener K1-K3):**
+- **PSX (XLE, K1-K3 3/3 ✓✓✓)** — Hauptkandidat, RSI 67,60 (im Cap 55-70), RS_63d vs SPY **+25,0 % #1**, ret_20d +22,6 %, EMA50 185/200 163 diff +22 — Refining/Marketing-Leadership XLE
+- **FTI (XLE, K1-K3 3/3 ✓✓✓)** — Backup, RSI 66,80, RS_63d +1,5 %, ret_20d +18,3 %, EMA50 70,6/200 61,1 diff +9,5 — Energy Services
+- **DE (XLI, K1-K3 3/3 ✓✓✓)** — Backup, RSI 56,40, RS_63d +1,4 %, ret_20d +1,4 %, EMA50 592/200 552 diff +40 — Industrials-Leader
+- Rejects: CVX RSI 71,0 K2-FAIL (>70), UNP RSI 71,0 K2-FAIL, EQNR RSI 76,4 K2-FAIL, CAT RSI 43,9 K2-FAIL, LMT EMA50 521 < EMA200 542 K1-FAIL, TPR RS -8,6 % K3-FAIL, NEE RS -4,0 % K3-FAIL
+- K4/K5 zwingend Fr Market Open (Volumen + FwdPE + RevGrowth + Blackout-Check)
+- XLE nach GOOGL-Sell = 0 % Portfolio → PSX/FTI-Add unkritisch (max Add ~10 % << 30 %-Cap)
+- XLI nach GOOGL-Sell = 0 % Portfolio → DE-Add unkritisch
+
+**Guardrails 8/8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     -0,953 % (vs Mi-Close 98.087,79)                    [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 4 -1,103 % (vs Fr-Close 98.236,14)         [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,912 %                                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,912 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Close -1,262 % vs Mi-Close                      [INAKTIV]
+6. VIX-Filter (>30):          ~17-18 (VXX 22,61 Proxy)                            [GRÜN]
+7. Earnings-Blackout (3 HT):  Keine bestätigt                                     [GRÜN]
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)                  [FREI 1]
+V-Regel: 6/6 V1-V6 SICHER (keine Trigger, keine Limit-Order)
+```
+
+**Entscheidung Market Close 16:03 Do 23.07.:**
+- **Keine Sell-/Limit-Order** (6 V1-V6 SICHER, keine V5/V6-Trigger)
+- **Weekly Loss Cap nicht ausgelöst** (-1,103 % > -5 %)
+- **ClickUp Tagesbericht Prio 4** (positive Alpha vs SPY trotz negativer absoluter Perf → Fallback PushNotification bei Fehler)
+- **PushNotification Prio 3** (Tages-Zusammenfassung, GS-Puffer-Watch für Fr Pre-Market)
+
+**Nächste Routine:** Fr 24.07. 08:30 ET Pre-Market Check — **GS V1 1.050,40 Puffer +2,32 % ENGSTE Watch** (Fill-Day+7 Give-back-Fortsetzung-Risiko), PSX/FTI/DE K4/K5-Vollcheck als Slot 2/2 KW30 letzter Handelstag, LLY XLV-Rebound-Fortsetzung, Alpaca-Bar-Update EMA/RSI.
 
 ---
 

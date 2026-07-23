@@ -4,6 +4,86 @@
 
 ---
 
+## Market Close 16:03 ET — 2026-07-23 (Do, KW30 Tag 4) — Tagesbilanz: 6 V1-V6 SICHER, Alpha +0,31 pp POSITIV, keine Limit-Order Fr, PSX-Watchlist Slot 2/2 letzter Handelstag
+
+**Alpaca Clock:** is_open=false, timestamp 2026-07-23 16:02:52 ET, next_close Fr 24.07. 16:00 ET.
+
+**Alpaca /v2/account (Close 16:00 ET):**
+- portfolio_value: **97.152,97 $** (vs Mi-Close 98.087,79 = **-934,82 $ / -0,953 % Daily**) [GRÜN]
+- cash: **48.385,53 $** (49,80 %, unverändert seit Open Post-GOOGL-Sell)
+- long_market_value: 48.767,44 $ (6 Positionen)
+- buying_power: 48.385,53 $
+
+**Marktdaten (Alpaca IEX Close):**
+- **SPY Close 23.07.:** 738,06 $ vs Mi-Close 747,49 = **-1,262 %** [Crash-Filter INAKTIV]
+- **VXX Close:** 22,61 (VIX-Proxy → VIX ~17-18 carry-over) [GRÜN, <30]
+- **Alpha vs SPY:** Daily -0,953 % vs SPY -1,262 % = **+0,309 pp POSITIV** (Cash-Puffer 49,80 % dämpft SPY-Breitmarkt-Sell, Portfolio-Fokus-Positionen mildere Give-back)
+
+**Vollcheck V1-V6 6 SICHER (Close):**
+| Sym  | Cur     | V1-Puffer | EMA50   | EMA200  | V5 diff  | RSI14 | RS_4w vs SPY | V5    | V6    |
+|------|--------|-----------|---------|---------|----------|-------|--------------|-------|-------|
+| GS   | 1.074,72| **+2,32 %** | 1.042  | 933    | +109     | 51,86 | -0,91 %      | SICHER | SICHER (RSI<80) |
+| V    |   351,85| +7,08 %   | 341    | 332    | +8,4     | 54,27 | +5,09 %      | SICHER | SICHER |
+| LLY  | 1.185,31| +7,92 %   | 1.131  | 1.020  | +111     | 55,30 | +5,45 %      | SICHER | SICHER |
+| AAPL |   321,66| +10,34 %  | 308    | 280    | +27      | 58,25 | +8,98 %      | SICHER | SICHER |
+| JPM  |   349,90| +14,29 %  | 327    | 313    | +13      | 65,76 | +4,23 %      | SICHER | SICHER |
+| UNH  |   423,59| +14,65 %  | 413    | 360    | +53      | 53,27 | +3,69 %      | SICHER | SICHER |
+
+**→ Keine V5/V6-Trigger, KEINE Limit-Order für Fr 24.07. platziert**
+
+**Kaufsignal-Watchlist Fr 24.07. — Slot 2/2 KW30 letzter Handelstag (Alpaca-Screener K1-K3):**
+| Sym | Sektor | Cur    | RSI14  | RS_63d vs SPY | ret_20d | EMA50/200 diff | K1 | K2 | K3 | Bemerkung |
+|-----|--------|--------|--------|---------------|---------|-----------------|----|----|----|-----------|
+| **PSX** | XLE | 206,92 | 67,60 | **+25,0 %** #1 | +22,6 % | +21,9 | ✓ | ✓ | ✓ | **Hauptkandidat**, Refining/Marketing-Leadership |
+| FTI | XLE | 76,03 | 66,80 | +1,5 %       | +18,3 % | +9,5 | ✓ | ✓ | ✓ | Backup Energy Services |
+| DE  | XLI | 610,05 | 56,40 | +1,4 %       | +1,4 %  | +40 | ✓ | ✓ | ✓ | Backup Industrials |
+| CVX | XLE | 194,42 | 71,00 | +0,6 %       | +13,3 % | +5,6 | ✓ | ✗ | ✓ | K2-FAIL (RSI>70) |
+| UNP | XLI | 303,95 | 71,00 | +18,1 %      | +16,9 % | +21,7 | ✓ | ✗ | ✓ | K2-FAIL (RSI=70,04 knapp) |
+| EQNR| XLE | 40,94 | 76,40 | +4,0 %       | +29,5 % | +3,6 | ✓ | ✗ | ✓ | K2-FAIL (RSI>>70) |
+| CAT | XLI | 893,86 | 43,90 | +6,7 %       | -10,1 % | +164 | ✓ | ✗ | ✓ | K2-FAIL (RSI<55) |
+| LMT | XLI | 567,78 | 68,10 | -1,6 %       | +15,5 % | -20,9 | ✗ | ✓ | ✗ | K1-Death-Cross + K3-negativ |
+| TPR | XLY | 139,14 | 44,70 | -8,6 %       | -7,1 %  | +5   | ✓ | ✗ | ✗ | K2+K3-FAIL |
+| NEE | XLU | 89,82 | 57,90 | -4,0 %       | +2,5 %  | +1,1 | ✓ | ✓ | ✗ | K3-FAIL |
+
+**Sektor-ETF-Momentum (Close, Ref: Wahl neuer Sektoren):**
+- **XLE +5,08 % 63d (RS +1,30 % vs SPY)** RSI 68,3 — Momentum-Leader Sektor
+- **XLI +6,38 % 63d (RS +2,60 % vs SPY)** RSI 55,96 — Momentum-Sektor #1
+- XLU +2,96 % 63d (RS -0,82 %) RSI 59,2 — schwächer
+- XLP +1,38 % 63d (RS -2,40 %) — schwach
+- XLB -2,93 % 63d — schwach
+- XLY -8,61 % 63d — schwächster
+
+**Sektor-Struktur Post-GOOGL-Sell (Close):**
+- XLV 20,23 % Portfolio (UNH+LLY)
+- XLF 19,71 % Portfolio (GS+JPM+V, 3-Pos-Cap intakt)
+- XLK 10,26 % Portfolio (AAPL)
+- XLE/XLI/XLU/XLP/XLB/XLY/XLC = 0 % (PSX/FTI/DE Add unkritisch)
+
+**Guardrails Close 16:03 ET:**
+```
+1. Daily Loss Cap (-3 %):     -0,953 % (vs Mi-Close 98.087,79)                    [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 4 -1,103 % (vs Fr-Close 98.236,14)         [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,912 % (vs ATH 100.066,47)                        [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,912 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Close -1,262 %                                  [INAKTIV]
+6. VIX-Filter (>30):          ~17-18 (VXX 22,61 Proxy)                            [GRÜN]
+7. Earnings-Blackout (3 HT):  Keine bestätigt                                     [GRÜN]
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen letzter Handelstag Fr 24.07.)   [FREI 1]
+V-Regel: 6/6 V1-V6 SICHER (Vollcheck V5+V6 Close-Signal-Prüfung)
+```
+
+**Entscheidung Market Close 16:03:**
+- **Keine Sell-/Limit-Order** (6 V1-V6 SICHER, keine V5/V6-Trigger)
+- **Weekly Loss Cap nicht ausgelöst** (-1,103 % > -5 %) → keine pending-Order-Storno, kein Kauf-Sperre
+- **ClickUp Tagesbericht Prio 4** (positive Alpha trotz negativer absoluter Perf)
+- **PushNotification Prio 3 an Owner** (Tages-Zusammenfassung, GS-Puffer-Watch Fr Pre-Market Fill-Day+7)
+
+**Watchlist morgen (Fr 24.07.):** PSX (XLE, K1-K3 3/3 ✓, Hauptkandidat) | FTI (XLE, K1-K3 3/3 ✓, Backup) | DE (XLI, K1-K3 3/3 ✓, Backup) — K4/K5 zwingend Fr Market Open (Volumen ≥125 % Avg20 + FwdPE≤35 + RevGrowth≥10 % + kein Earnings-Blackout 3 HT).
+
+**Nächster Check:** Fr 24.07. 08:30 ET Pre-Market Check — **GS V1 1.050,40 Puffer +2,32 % ENGSTE Watch** (Fill-Day+7 Give-back-Risiko), LLY XLV-Rebound-Fortsetzung, PSX K4/K5-Multi-Source-Recheck, Alpaca-Bar-Update.
+
+---
+
 ## Market Open 09:38 ET — 2026-07-23 (Do, KW30 Tag 4) — ✅ GOOGL V1-Market-Sell ausgeführt, 6 V1-V6 SICHER, kein neuer Kauf (Slot 2/2 offen)
 
 **Alpaca Clock:** is_open=true, timestamp 2026-07-23 09:37:43 ET, next_close 16:00 ET.
