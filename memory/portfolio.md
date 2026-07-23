@@ -1,6 +1,87 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-23 08:36 ET (Pre-Market Do KW30 Tag 4, 🔴 **GOOGL V1 VERLETZT** Pre-Market nach Q2-Beat-Aftermarket-Selloff, Market-Sell Open 09:30 ET ZWINGEND, sonstige 6 V1-V6 SICHER, Daily -0,84 %, Weekly -0,99 %, DD -2,80 %, VIX ~17-18 GRÜN)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-23 09:38 ET (Market Open Do KW30 Tag 4, ✅ **GOOGL V1-Market-Sell ausgeführt** @ 321,51 × 26 Sh, Realisierter Verlust -1.211,34 $ (-12,65 %), sonstige 6 V1-V6 SICHER, Daily -0,93 %, Weekly -1,08 %, DD -2,89 %, VIX ~17-18 GRÜN, Cash 49,79 %, Käufe 1/2 KW30)
+
+---
+
+## Market Open 2026-07-23 09:38 ET (Do, KW30 Tag 4) — ✅ GOOGL V1-Market-Sell ausgeführt, 6 Positionen V1-V6 SICHER, kein neuer Kauf
+
+```
+Alpaca clock:      is_open=true | now Do 23.07. 09:38 ET | next_close Do 23.07. 16:00 ET
+Equity Live:       97.176,52 $   (Alpaca /v2/account, Post-GOOGL-Sell)
+Cash:              48.385,53 $   (49,79 %, +8.359,26 vs Pre nach GOOGL-Sell)
+Portfolio MV Live: 48.790,99 $   (50,21 %, 6 Positionen nach GOOGL-Close)
+Buying_power:      48.385,53 $
+Daily P/L Open:     -911,27 $    (-0,929 % vs Mi-Close 98.087,79)                  [GRÜN, Cap -3 %]
+ATH:              100.066,47 $   DD -2,888 % [GRÜN — Alarm bei -15 %]
+Weekly KW30 Tag 4:  -1,079 %     (vs Fr-Close 98.236,14, -1.059,62 $)              [GRÜN, Cap -5 %]
+SPY Live 09:39:    741,61        (vs Mi-Close 747,49 = -0,787 %)                   [Crash-Filter INAKTIV]
+VIX-Proxy VXX:     22,55         (VIX ~17-18 carry-over)                           [GRÜN, <30]
+Käufe KW30:            1/2       (Slot 2/2 offen bis Fr 24.07.)
+Open Orders:           0
+Guardrails:        8/8 GRÜN, GOOGL V1-Regel-Trigger AUSGEFÜHRT (Market-Sell fill @ 321,51)
+```
+
+**GOOGL Market-Sell Details (Alpaca Order 73cac698-9a42-465c-9e5f-32c754eff1c5):**
+- Order Type: Market Sell (Day, position_intent=sell_to_close)
+- Fill Time: 2026-07-23 09:38:05.726 ET (0,5 sec nach Submission)
+- Fill: 26 Shares × **321,51 $** = **8.359,26 $** Erlös
+- Realisierter Verlust: **-1.211,34 $ (-12,65 %)** vs Entry 368,10 $ (07.07.2026)
+- Grund: V1 338,65 verletzt Pre-Market -4,26 % + Open -4,91 % nach Q2 CY26 Earnings-Beat-Selloff (EPS 9,11 / Rev 119,8 Mrd BEAT, aber Aftermarket -4,2 % + Pre -4,6 % wegen Capex-Guidance-Sorge, Marktreaktion NEGATIV überwiegt Fundamentals)
+
+**Positionen Live 09:38 ET (Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym    | Cur Live   | Entry      | P/L %     | V1-Stop     | V1-Puffer    | Status |
+|--------|-----------|-----------|----------|------------|--------------|--------|
+| **GS** | 1.080,55  | 1.141,74  | -5,36 %  | 1.050,40   | **+2,87 %** | SICHER **ENGSTE**, Fill-Day+6 Give-back -1,61 % (verschlechtert vs Mi-Close +4,55 % um -1,68 pp, 30,15 $ vom V1) |
+| V      |   349,19  |   357,18  | -2,24 %  |   328,60   | +6,27 %      | SICHER (verschlechtert vs Close +7,55 % um -1,28 pp, Fill-Day+3 Konsolidierung, V5 EMA-Spread +5,63) |
+| LLY    | 1.170,00  | 1.193,89  | -2,00 %  | 1.098,38   | +6,52 %      | SICHER (verbessert vs Close +5,53 % um +0,99 pp, XLV-Rebound chg +0,60 %) |
+| AAPL   |   322,21  |   316,86  | +1,69 %  |   291,51   | +10,53 %     | SICHER (verschlechtert vs Close +11,87 %, chg -1,13 %) |
+| JPM    |   348,44  |   332,78  | +4,71 %  |   306,16   | +13,81 %     | SICHER (marginal, chg +0,07 % flat, 3 Shares) |
+| UNH    |   429,42  |   401,57  | +6,94 %  |   369,44   | +16,24 %     | SICHER (marginal verschlechtert vs Close +16,74 %, chg -0,44 %) |
+
+**V1-V6-Check 6 SICHER (Post-GOOGL-Sell):**
+- V1 (Stop -8 %) — 6 SICHER (Puffer +2,87 % GS bis +16,24 % UNH)
+- V2 (Trailing -12 %) — kein 52w-Hoch-Trigger
+- V3/V4 (TP1/TP2 20/35 %) — max +6,94 % UNH << 20 %
+- V5/V6 (EMA/RSI) — EMA50>EMA200 überall Golden Cross intakt, max RSI ~64 << 80-Threshold aus Vortagsberechnung
+
+**Sektor-Struktur Post-GOOGL-Sell (Live 09:38 ET):**
+| Sektor | Positionen | MV       | % investiert | % Portfolio | Status |
+|--------|------------|----------|--------------|-------------|--------|
+| XLF    | GS+JPM+V   | 19.117,85| 39,18 %      | 19,67 %     | ⚠ investiert > 30 %, Portfolio SAFE (3-Pos-Cap intakt) |
+| XLV    | UNH + LLY  | 19.666,08| 40,31 %      | 20,24 %     | ⚠ investiert > 30 %, Portfolio SAFE |
+| XLK    | AAPL       |  9.988,51| 20,47 %      | 10,28 %     | GRÜN |
+| XLC    | —          |     0    |  0 %         |  0 %        | GRÜN (GOOGL raus) |
+
+**Kaufsignal-Scan Slot 2/2 KW30 — LEVEL 0 No-Action bei Unsicherheit:**
+- Perplexity Sektor-Check keine belastbaren 3M-RS-Daten geliefert (Refusal, allgemeine ETF-Infos ohne konkrete 3M-Performance)
+- XLV nach GOOGL-Sell = 20,24 % Portfolio + neuer XLV ~9 % = ~29,24 % knapp <30 %-Cap, aber **Owner-Sektor-Cap-Ambiguität persistiert** (ABBV/MRK/JNJ 3/3 K1-K3 aus Pre-Market Watchlist)
+- XLK-Backup: NVDA/META/MSFT/AMZN blockiert (Sektor-Cap) oder AVGO/MU K5-anfällig
+- XLE-Kandidaten K3-FAIL bislang, XLI MMM/UPS K5-FAIL bislang
+- **Slot 2/2 KW30 bleibt OFFEN bis Fr 24.07.** — kein neuer Kauf ausgeführt, Kauf-Wahrscheinlichkeit weiter GERING ohne Owner-XLV-Freigabe oder frischen K5-Kandidaten
+
+**Guardrails 8/8 GRÜN (Post-Sell):**
+```
+1. Daily Loss Cap (-3 %):     -0,929 % (vs Mi-Close 98.087,79)                    [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 4 -1,079 % (vs Fr-Close 98.236,14)         [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,888 %                                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,888 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Live -0,787 % vs Mi-Close                       [INAKTIV]
+6. VIX-Filter (>30):          ~17-18 (VXX 22,55 Proxy)                            [GRÜN]
+7. Earnings-Blackout (3 HT):  Keine bestätigt (Perplexity)                        [GRÜN]
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)                  [FREI 1]
+V-Regel: GOOGL V1 AUSGEFÜHRT — sonstige 6 V1-V6 SICHER
+```
+
+**Entscheidung Market Open 09:38 Do 23.07.:**
+- **GOOGL V1-Market-Sell AUSGEFÜHRT** ✅ Fill @ 321,51 × 26 Sh, Realisierter Verlust -1.211,34 $
+- **KEIN weiterer Sell/Kauf** (6 V1-V6 SICHER, Slot 2/2 KW30 offen aber No-Action)
+- **PushNotification Prio 1 Owner** ✅ (V1-Trigger + Fill-Details)
+- **ClickUp Critical Alert** ✗ ITEM_246 persistent → PushNotification Fallback ausgeführt
+- **ClickUp Routine-Log Prio 4** — Fallback PushNotification bei Fehler
+
+**Nächste Routine:** Do 23.07. 13:00 ET Midday Stop-Check — GS V1 1.050,40 Puffer +2,87 % ENGSTE, V/LLY-Watch, UNH XLV-Konsolidierung.
 
 ---
 
