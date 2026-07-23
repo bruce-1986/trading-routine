@@ -4,6 +4,82 @@
 
 ---
 
+## Pre-Market 08:36 ET — 2026-07-23 (Do, KW30 Tag 4) — 🔴 GOOGL V1 VERLETZT Pre-Market nach Q2-Beat-Aftermarket-Selloff, Market-Open-Sell ZWINGEND, sonstige 6 V1-V6 SICHER
+
+**Alpaca Clock:** is_open=false, next_open Do 23.07. 09:30 ET, next_close Do 23.07. 16:00 ET, timestamp 2026-07-23 08:36:03 ET.
+
+**Alpaca /v2/account (08:36 ET Pre-Market):**
+- portfolio_value: **97.267,18 $** (vs Mi-Close 98.087,79 = **-820,61 $ / -0,837 % overnight**)
+- cash: 40.026,27 $ (41,15 %, unverändert)
+- equity: 97.267,18 $
+- buying_power: 40.026,27 $ (last_equity 0 = Pre-Market-Reset-Artefakt)
+- status: ACTIVE
+
+**Portfolio MV Live: 57.240,81 $ (Alpaca /v2/positions, 7 Pos).**
+
+**GOOGL Q2 CY26 Earnings (Perplexity Multi-Source, Mi 22.07. AMC released):**
+- **EPS 9,11 $** (Konsens 2,88–2,89 → **BEAT +216 %**, aber Multi-Source-Konsens war ~2,88 vor Split/Adjustments — Split-Faktor prüfen offen)
+- **Revenue 119,8 Mrd. $** (Konsens 116,5–116,9 → **BEAT +2,5 %**)
+- **Aftermarket Mi 22.07.:** ~327,40 $ (**-4,2 %** vs Close 341,91)
+- **Pre-Market Do 23.07. 08:15 ET:** ~326,10 $ (**-4,6 %**); Alpaca /v2/stocks/GOOGL/trades/latest 08:36 ET → **324,23 $ × 50 Sh** (**-5,26 %** vs Mi-Close, **-11,96 % vs Entry 368,10**)
+- **Interpretation:** Trotz Earnings-BEAT-Sell-off (typisch bei hohem Erwartungs-Setup + Capex-Guidance-Sorge) — Marktreaktion NEGATIV überwiegt Fundamentals
+
+**V1-Puffer Pre-Market alle 7 (sortiert eng→weit, Alpaca /v2/positions current_price):**
+| Sym    | Cur Pre    | Entry      | P/L %    | V1-Stop     | Puffer     | Status                    |
+|--------|-----------|-----------|---------|------------|-----------|---------------------------|
+| **GOOGL** | 324,06 (Alpaca current_price) / 324,23 (latest trade) | 368,10 | **-11,96 %** | 338,65 | **-4,26 %** 🔴🔴🔴 | **V1 VERLETZT Pre-Market → Market-Sell 09:30 ET Sofort-Öffnung ZWINGEND** |
+| GS     | 1.086,01  | 1.141,74  | -4,88 % | 1.050,40   | +3,39 %   | SICHER (verschlechtert vs Mi-Close +4,55 % um -1,16 pp overnight-Drift) |
+| LLY    | 1.151,00  | 1.193,89  | -3,59 % | 1.098,38   | +4,79 %   | SICHER (leicht verschlechtert vs Mi-Close +5,53 % um -0,74 pp) |
+| V      | 353,38    | 357,18    | -1,06 % | 328,60     | +7,54 %   | SICHER (marginal verschlechtert vs Mi-Close +7,55 %) |
+| AAPL   | 324,33    | 316,86    | +2,36 % | 291,51     | +11,26 %  | SICHER (leicht verschlechtert vs Mi-Close +11,87 % um -0,61 pp) |
+| JPM    | 349,12    | 332,78    | +4,91 % | 306,16     | +14,03 %  | SICHER (marginal verbessert vs Mi-Close +13,96 %) — **HINWEIS: Nur 3 Shares in Alpaca (Alpaca /v2/orders bestätigt Original-Fill 17.06. 3 Sh @ 332,78), Portfolio/Trade-Log-Discrepancy pre-existing, MV 1.047,36** |
+| UNH    | 428,18    | 401,57    | +6,63 % | 369,44     | +15,90 %  | SICHER (leicht verschlechtert vs Mi-Close +16,74 % um -0,84 pp) |
+
+**Makro & Perplexity (Do 23.07. Pre):**
+- **VIX:** ~17–18 (Perplexity, Realtime-Bandbreite 17,6-18,8) [GRÜN, <30]
+- **SPY Pre-Market:** Alpaca /v2/stocks/SPY/trades/latest 08:28 ET **742,12 $** vs Mi-Close 747,49 = **-0,718 %** (Perplexity Realtime-% nicht verfügbar, harte Alpaca-Trade-Quote genommen)
+- **10Y Treasury:** Perplexity keine harte Realtime-Zahl (~3,9-4,0 % carry-over)
+- **Makro heute (US):** Jobless Claims wöchentlich, ggf. PMI-Flash, keine FOMC/CPI/PPI/NFP (Perplexity kein konkreter Kalender)
+- **Top-News:** GOOGL Q2 Post-Release Marktreaktion dominant; keine anderen konkreten Katalysatoren aus Perplexity
+
+**Earnings-Blackout 3 HT (Do 24.07. - Mo 28.07.) Perplexity:**
+- **Kein detaillierter S&P-500-Kalender für 24./25./28.07. verfügbar** (Perplexity: "Anbieter veröffentlichen Tageslisten erst wenige Wochen vor Quartal")
+- Position-Watch: AAPL/JPM/GS/UNH/LLY/V/GOOGL — **kein bestätigter Blackout-Eintrag** in Perplexity-Multi-Source für diesen Zeitraum
+- Bei Unsicherheit: **Stop-Loss -8 % V1-Standard beibehalten**, keine unnötige V1-Tightening auf -5 %
+- Owner-Notification bei tagesgenauer Info empfohlen
+
+**Guardrails Pre-Market 08:36 ET:**
+```
+1. Daily Loss Cap (-3 %):     -0,837 % (vs Mi-Close 98.087,79)                  [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 4 -0,986 % (vs Fr-Close 98.236,14)       [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,797 % (vs ATH 100.066,47)                      [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,797 %                                          [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Pre -0,718 % vs Mi-Close                      [INAKTIV]
+6. VIX-Filter (>30):          ~17-18                                            [GRÜN]
+7. Earnings-Blackout (3 HT):  GOOGL Post-Release obsolet, keine neuen bestätigt [GRÜN]
+8. Max Käufe KW30:            1/2 (Slot 2/2 offen bis Fr 24.07.)                [FREI 1]
+V-Regel: **GOOGL V1 VERLETZT Pre-Market** → Market-Sell 09:30 ET Öffnung ZWINGEND
+```
+
+**Entscheidung Market-Open-Scan Do 23.07.:**
+- **PRIO 1 (Kritisch):** **GOOGL V1 338,65 VERLETZT Pre-Market (324,23 = -4,26 % unter Stop)** → **Market-Sell 26 Shares @ Open 09:30 ET SOFORT** (V1-Regel: Market Order SOFORT). Cash-Zufluss geschätzt ~8.430 $ bei Open-Preis ~324, Realisierter Verlust geschätzt **-1.140 $ (-11,96 %)** vs Entry 368,10.
+- **PRIO 2:** Nach GOOGL-Sell: 6 Positionen offen, Cash ~48.460 $ (~49,8 %), Slot 2/2 KW30 offen bis Fr 24.07. — **Kauf-Wahrscheinlichkeit weiterhin GERING** ohne Owner-XLV-Freigabe (ABBV/MRK/JNJ 3/3 K1-K3 Sektor-Cap-Pending) oder frischen K5-Kandidaten außerhalb XLK/XLC/XLV
+- **PRIO 3:** GS Rebound-Fortsetzung (Puffer +3,39 % erholt vs Mo-Tief), LLY RSI-Watch, kein weiterer V1-Alarm
+
+**GOOGL-Post-Sell Sektor-Struktur (nach Market-Open-Execution):**
+- XLC-Sektor: 0 % (GOOGL war einzige XLC-Position)
+- XLF unverändert 33,37 % investiert / 19,75 % Portfolio (GS+JPM+V)
+- XLV unverändert 33,80 % investiert / 20,00 % Portfolio (UNH+LLY)
+- XLK unverändert (AAPL)
+
+**ClickUp:** Critical-Alert Prio 1 (V1-Trigger GOOGL) + Routine-Log Prio 4 (Pre-Market fertig). Fallback PushNotification bei ClickUp-"Team not authorized"-Persistenz.
+
+**PushNotification Owner Prio 1** (V1 GOOGL Pre-Market Trigger, Sofort-Sell Market Open zwingend, Realisierter Verlust ~-1.140 $).
+
+**Nächster Check:** Do 23.07. 09:30 ET Market Open — **GOOGL V1-Market-Sell Sofort-Öffnung Ausführung**, danach Kaufsignal-Scan Slot 2/2 KW30 (Kauf-Wahrscheinlichkeit GERING).
+
+---
+
 ## Market Close 16:03 ET — 2026-07-22 (Mi, KW30 Tag 3) — Alle 7 V1-V6 SICHER, KEINE Limit-Order Do 23.07., GOOGL Q2 AMC Post-Close released, Puffer +1,07 % KRITISCH
 
 **Alpaca Clock:** is_open=false, next_open Do 23.07. 09:30 ET, next_close Do 23.07. 16:00 ET, timestamp 2026-07-22 16:02:52 ET.
