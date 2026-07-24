@@ -4,6 +4,67 @@
 
 ---
 
+## Pre-Market 08:36 ET — 2026-07-24 (Fr, KW30 Tag 5 letzter Handelstag) — Alle 6 V1 SICHER, V-Blackout-AKTIVIERUNG (Q3 Di 28.07. AMC), GS-Rebound Tag+2, Slot 2/2 offen, PSX-Hauptkandidat
+
+**Alpaca Clock:** is_open=false, timestamp 2026-07-24 08:36:19 ET, next_open Fr 24.07. 09:30 ET, next_close Fr 24.07. 16:00 ET.
+
+**Alpaca /v2/account (Pre-Market 08:36 ET):**
+- portfolio_value: **97.330,71 $** (vs Do-Close 97.152,97 = **+177,74 $ / +0,183 % Pre-Drift**) [GRÜN]
+- cash: **48.385,51 $** (49,71 %, unverändert)
+- long_market_value: 48.945,20 $ (6 Positionen)
+- buying_power: 330.588,60 $ (Paper-Margin-Artefakt, effektiv Cash-Budget)
+- Konsistenz mit portfolio.md Close 23.07. bestätigt ✓
+
+**Marktdaten Pre-Market 08:30-08:36 ET:**
+- **SPY Pre 740,66 $** vs Do-Close 738,06 = **+0,352 %** (leichter Rebound nach Do -1,26 %) [Crash-Filter INAKTIV]
+- **VXX Pre 22,21** vs Do-Close 22,61 = **-1,77 %** (Vol-Compression, VIX-Proxy → VIX ~17-18) [GRÜN <30]
+- **VIX Perplexity: 18,24** (Realtime ET) [GRÜN, weit <25 → volle 10 %-Position-Size erlaubt]
+- **10Y Treasury Yield:** keine belastbare Realtime-Quote (Perplexity)
+- **Makro heute:** KEINE FOMC/CPI/PCE/NFP-Release, Perplexity nennt keine hochrangigen Katalysatoren; Earnings-Highlights Fr **AXP, VZ, NEE, SLB, CNI** (nicht im Portfolio, marktbewegend Financials/Utilities/Energy)
+- **Top-News:** Perplexity liefert keine belastbaren Overnight-Top-News (nur allgemeine Vol-/KI-Kommentare)
+
+**Pre-Market V1-Puffer alle 6 SICHER (sortiert eng→weit):**
+| Sym  | Pre-Cur  | chg_pre% | V1        | V1-Puffer   | Δ$ zum V1 | Status |
+|------|----------|----------|-----------|-------------|-----------|--------|
+| GS   | 1.086,00 | +1,05 %  | 1.050,40  | **+3,39 %** | 35,60 $   | SICHER **ENGSTE**, Rebound-Tag+2 verbessert vs Do-Close +2,32 % um +1,07 pp |
+| V    |   353,39 | +0,44 %  | 328,60→**339,32** | +7,54 % / +4,15 % neu | 24,79 / 14,07 $ | SICHER, **BLACKOUT-AKTIVIERUNG V1_neu 339,32 $** (Kaufkurs 357,178 × 0,95, Q3 Di 28.07. AMC bestätigt) |
+| LLY  | 1.183,63 | -0,14 %  | 1.098,38  | +7,76 %     | 85,25 $   | SICHER, marginale Konsolidierung vs Do-Close +7,92 % |
+| AAPL |   322,53 | +0,27 %  |   291,51  | +10,64 %    | 31,02 $   | SICHER, marginale Verbesserung vs Do-Close +10,34 % |
+| JPM  |   351,12 | +0,35 %  |   306,16  | +14,69 %    | 44,96 $   | SICHER, marginale Verbesserung vs Do-Close +14,29 % |
+| UNH  |   424,79 | +0,28 %  |   369,44  | +14,98 %    | 55,35 $   | SICHER, marginale Verbesserung vs Do-Close +14,65 % |
+
+**Earnings-Blackout 3 HT (Fr 24., Mo 27., Di 28.07.) — Perplexity Multi-Source-Check:**
+- **V (Visa): Q3 FY26 Di 28.07. AMC BESTÄTIGT** [1][2] → Fr 24.07. = HT-3 vor Earnings → **3-HT-Blackout AKTIV** → **Stop verengen auf -5 % (V1_neu 339,32 $)**, Owner-Info-Level (kein Sofort-Stop-Risiko, Kurs 353,39 > V1_neu +4,15 %)
+- AAPL, JPM, UNH, LLY, GS — kein Blackout in Fenster (Perplexity NEIN, alle Q2 CY26 bereits gemeldet Mitte Juli, nächste Q3 ~Ende Oktober)
+- Watchlist PSX, FTI, DE — kein Blackout in Fenster (Perplexity NEIN)
+
+**Guardrail-Status 8/8 GRÜN:**
+```
+1. Daily Loss Cap (-3 %):     Pre +0,183 % (vs Do-Close 97.152,97)                 [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 5 -0,922 % (vs Fr-Close 98.236,14)          [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,734 %                                             [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,734 %                                             [GRÜN]
+5. Crash-Filter (SPY -5 %):   Do -1,26 % / Pre +0,35 %                             [GRÜN INAKTIV]
+6. VIX-Filter (>30):          VIX 18,24 / VXX 22,21                                [GRÜN <25 volle Pos-Size]
+7. Earnings-Blackout (3 HT):  V AKTIV (Q3 Di 28.07. AMC) → V1_neu 339,32 $         [WARN → Aktion]
+8. Max. Käufe (2/Woche):      KW30 1/2 (Slot 2/2 offen letzter HT)                 [GRÜN]
+```
+
+**Kaufsignal-Watchlist Fr 24.07. Market Open — Slot 2/2 KW30 letzter Handelstag (aus Do-Close Screener K1-K3):**
+| Sym | Sektor | Ref-Kurs | RSI14 | RS_63d | ret_20d | K1 | K2 | K3 | K4/K5 | Bemerkung |
+|-----|--------|----------|-------|--------|---------|----|----|----|-------|-----------|
+| **PSX** | XLE | 206,92 | 67,60 | **+25,0 %** #1 | +22,6 % | ✓ | ✓ | ✓ | zwingend Market Open | **Hauptkandidat**, Refining/Marketing-Leader, XLE 0 % im Depot (Post-GOOGL), kein Blackout, unkritisch |
+| FTI | XLE | 76,03 | 66,80 | +1,5 % | +18,3 % | ✓ | ✓ | ✓ | zwingend Market Open | Backup Energy Services, kein Blackout |
+| DE  | XLI | 610,05 | 56,40 | +1,4 % | +1,4 % | ✓ | ✓ | ✓ | zwingend Market Open | Backup Industrials, kein Blackout |
+
+**Entscheidung Pre-Market:**
+- **Kaufscan bei Market Open 09:30 ET: JA** (letzter Handelstag KW30 Slot 2/2, alle Guardrails GRÜN, VIX <25 volle Pos-Size, 3 K1-K3-Kandidaten kein Blackout)
+- **V-Blackout-Aktivierung: JA** (V1_neu 339,32 $ statt 328,60, ohne Sofort-Stop-Risiko da Kurs 353,39 > 339,32 = +4,15 % Puffer)
+- **PSX Priorität 1** (RS #1 +25 %, XLE-Sektor 0 % Portfolio = maximaler Diversifikations-Nutzen, kein Sektor-Cap-Risiko)
+- **KEINE offenen Sell-Orders**, keine Limit-Order für heute pre-Open platziert
+
+---
+
 ## Market Close 16:03 ET — 2026-07-23 (Do, KW30 Tag 4) — Tagesbilanz: 6 V1-V6 SICHER, Alpha +0,31 pp POSITIV, keine Limit-Order Fr, PSX-Watchlist Slot 2/2 letzter Handelstag
 
 **Alpaca Clock:** is_open=false, timestamp 2026-07-23 16:02:52 ET, next_close Fr 24.07. 16:00 ET.
