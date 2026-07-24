@@ -1,6 +1,128 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 16:00 ET (Market Close Fr KW30 Tag 5 letzter HT, **Tagesbilanz**, alle 6 V1-V6 SICHER, **KEINE Sell-/Limit-Order platziert für Mo 27.07.**, Equity End 97.526,60 $, Cash 48.385,51 = 49,61 %, Daily P/L +376,57 $ (**+0,388 %** GRÜN), Alpha **+0,274 pp** vs SPY +0,114 %, DD -2,538 %, Weekly KW30 -0,722 %, ATH 100.066,47 unverändert, GS Puffer **+1,03 % ENGSTE** Fill-Day+7 Close-Give-back weiter, AAPL Best chg **+3,59 %** XLK-Rebound, LLY Best chg intraday +0,86 %, UNH Worst chg -0,75 %, Käufe KW30 Final 1/2, Watchlist Mo: GE HON F D EOG)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 17:00 ET (**Weekly Review KW30 Abschluss**, Equity Fr-Close-Alpaca 97.513,66 $, Cash 48.385,51 = 49,62 %, Weekly **-0,736 %** vs SPY -0,589 % = **Alpha -0,147 pp**, YTD Depot **-2,486 %** vs SPY YTD +8,373 % = **YTD-Alpha -10,86 pp**, Käufe KW30 Final 1/2 (V 20.07.), Realisiert KW30 -1.211,34 $ (GOOGL V1-Stop), Realisiert kumuliert -2.826,96 $, ATH 100.066,47 unverändert, DD -2,486 %, Top-3 Sektoren KW30: **XLE +3,35 % / XLU +2,48 % / XLI +1,79 %**, Watchlist KW31 EOG (Hauptkandidat XLE) + neue XLU/XLI-Screener Mo)
+
+---
+
+## Weekly Review 2026-07-24 17:00 ET (Fr, KW30 Abschluss)
+
+```
+Depot Fr 17.07. Close:  98.236,14 $
+Depot Fr 24.07. Live:   97.513,66 $   (Alpaca /v2/account, portfolio_value 49.128,15, Cash 48.385,51)
+Wochenrendite KW30:    -0,7355 %      (-722,48 $)
+SPY Fr 17.07. Close:      743,28
+SPY Fr 24.07. Close:      738,90
+SPY Wochenrendite:     -0,589 %
+Alpha KW30:            -0,147 pp
+
+YTD Depot (Init 100k):   -2,486 %
+YTD SPY (YE25 681,82):   +8,373 %
+YTD-Alpha:              -10,86 pp
+
+ATH:                   100.066,47 $
+Drawdown:                 -2,486 %    [GRÜN — Alarm bei -15 %]
+Weekly-Cap-Puffer:        +4,264 pp   (Cap -5 %)
+VIX/VXX:                  ~18 / 22    [GRÜN <25]
+Offene Positionen:         6/8
+Cash-Quote:               49,62 %     (Cash 48.385,51 / Equity 97.513,66)
+Investiert-Quote:         50,38 %     (MV 49.128,15)
+```
+
+**Wochenaktivität KW30 (Mo 20.07. → Fr 24.07.):**
+- **1 Kauf:** V (Mo 20.07. 09:41 ET Limit-Buy 27 Sh @ 357,178 = 9.643,80 $, alle 5 K-Signale multi-source ✓, Blackout Tag+1 aktiv V1_neu 339,32)
+- **1 Verkauf (V1-Stop):** GOOGL (Do 23.07. 09:38 ET Market-Sell 26 Sh @ 321,51 = 8.359,26 $, Realisierter Verlust -1.211,34 $ / -12,65 % vs Entry 368,10, Haltedauer 12 HT, Gap-Slippage -4,65 pp durch Q2-Post-Release-Overnight)
+- **Slot 2/2 KW30 verfallen:** PSX/FTI/DE alle K5- bzw. Timing-REJECT Fr 24.07. Open (LEVEL 0 No-Action bei Unsicherheit)
+
+**Position-Weekly-Moves (Fr 17.07. Close → Fr 24.07. Close, Alpaca IEX):**
+
+| Sym  | 17.07.   | 24.07.   | Weekly Δ | Bester Tag       | Anmerkung |
+|------|----------|----------|----------|------------------|-----------|
+| JPM  |   341,10 |   353,14 | **+3,53 %** | Fr +0,95 %      | Beste-Position KW30, XLF-Rebound |
+| LLY  | 1.178,57 | 1.196,14 | +1,49 %  | Fr +0,86 %      | XLV-Rebound Tag+2, P/L wieder GRÜN |
+| AAPL |   333,75 |   333,05 | -0,21 %  | Fr **+3,59 %**  | XLK-Volatilität aber Fr-Rebell |
+| GS   | 1.065,71 | 1.061,25 | -0,42 %  | Mo +2,89 %      | Fill-Day+7 Give-back, V1-Puffer +1,03 % ENGSTE |
+| V    |   357,18 |   355,62 | -0,44 % (vs Entry -0,40 %) | Fr +1,18 %      | Kauf Mo, Blackout Tag+1 vor Q3 Di 28.07. |
+| UNH  |   426,06 |   420,67 | **-1,27 %** | Di +3,67 %      | XLV-Divergenz vs LLY, Worst chg Fr -0,75 % |
+| GOOGL |  346,76 |   321,51 (Sell) | **-7,28 %** (Sell-Move) | Mi +1,61 %      | V1-Stop Do -12,65 % realisiert |
+
+**Sektor-Ranking KW30 (Alpaca IEX Fr 17.07. → Fr 24.07.):**
+
+| Rank | Sektor | Weekly % | Bemerkung |
+|------|--------|----------|-----------|
+| 1  | **XLE** | **+3,35 %** | Energy Top-Sektor, Iran-Öl + Rebound |
+| 2  | **XLU** | **+2,48 %** | Utilities, Defensiv-Rotation |
+| 3  | **XLI** | **+1,79 %** | Industrials, GE Q2-Beat 16.07. |
+| 4  | XLB    | +1,46 %  | Materials |
+| 5  | XLRE   | +1,12 %  | Real Estate |
+| 6  | XLV    | +0,92 %  | Healthcare, LLY-Rebound Tag+2 |
+| 7  | XLK    | +0,22 %  | Tech, AAPL Fr-Rebell |
+| 8  | XLF    | +0,13 %  | Financials, JPM-Beste dennoch Sektor-Flat |
+| 9  | XLP    | -1,28 %  | Staples |
+| 10 | XLC    | **-3,95 %** | Comm Services, GOOGL-Selloff dominiert |
+| 11 | XLY    | **-5,19 %** | Consumer Disc Bottom |
+
+**SPY:** -0,589 % (Ref).
+
+**Sektor-Gewichtung Portfolio Fr-Close (V1-Regel "kein Sektor > 30 % investiert"):**
+
+| Sektor | Positionen | MV $ | % investiert (49.141) | % Portfolio (97.514) | Deutung |
+|--------|-----------|------|------------------------|------------------------|---------|
+| XLV | UNH + LLY | 19.657 | **40,00 %** ⚠ | 20,16 % | strenge Deutung VIOLATION, Portfolio-Deutung OK |
+| XLF | GS + JPM + V | 19.154 | **38,98 %** ⚠ | 19,64 % | strenge Deutung VIOLATION, Portfolio-Deutung OK |
+| XLK | AAPL | 10.329 | 21,02 % | 10,59 % | OK |
+| Cash | — | 48.386 | — | 49,62 % | OK (>20 % Min) |
+
+**Owner-Entscheidung Sektor-Cap-Deutung KW31 zwingend** (blockiert 3.-XLV- und 4.-XLF-Kandidaten formal).
+- Bei strenger Deutung schwächste XLV = **LLY +0,18 %** → Reduktions-Watch
+- Bei strenger Deutung schwächste XLF = **GS -7,05 %** → Reduktions-Watch (aber V1 aktiv)
+
+**Fundamentals-Screen KW31-Kandidaten (Perplexity Multi-Source):**
+
+| Sym | Sektor | FwdPE | RevGr YoY | MCap $B | NextEarn | K5 | Verdikt |
+|-----|--------|-------|-----------|---------|----------|-----|---------|
+| **EOG** | XLE #1 | **9,98** | **+15,63 %** | 72,06 | ~Nov 2026 | ✓ | **HAUPTKANDIDAT KW31** |
+| GE | XLI #3 | 47,61 | +24,70 % | 385 | 16.07. (past) | ✗ FwdPE>35 | DROP |
+| HON | XLI #3 | 20,86 | +2,40 % | 137 | 23.07. (past) | ✗ RevGr<10 | DROP |
+| D | XLU #2 | 17,83 | +7,49 % | 41 | 31.07. Fr | ✗ RevGr<10 | DROP |
+| F | XLY (nicht Top-3) | 9,58 | +430,80 %* | 56 | 29.07. Mi | ⚠ Blackout | SKIP KW31 (Basis-Effekt + Earnings Di+1 nach Kauf) |
+
+**KW31 Zusatz-Screener zwingend Mo Pre-Market:** frische XLU-Kandidaten (NEE/DUK/SO/AEP/EXC) + XLI-Kandidaten (UNP/CAT/DE Re-Check) K5-Prä-Screen.
+
+**Guardrails Wochenabschluss KW30:**
+```
+1. Daily Loss Cap (-3 %):     Fr +0,388 % (letzter HT)                             [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Final -0,736 %                                  [GRÜN, Puffer +4,264 pp]
+3. Drawdown-Alarm (-15 %):    -2,486 %                                             [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,486 %                                             [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY KW30 -0,589 %                                    [INAKTIV]
+6. VIX-Filter (>30):          ~18                                                   [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV Tag+1 vor Q3 Di 28.07. AMC (V1_neu 339,32)   [WARN]
+8. Max Käufe KW31:            Reset 2/2 Mo 27.07.                                  [GRÜN]
+```
+
+**Wochenabschluss KW30:**
+```
+Gesamtwert:            97.513,66 $
+Cash:                  48.385,51 $ (49,62 %)
+Investiert:            49.128,15 $ (50,38 %, 6 Positionen)
+Wochenrendite:         -0,736 %
+Alpha vs SPY:          -0,147 pp
+YTD Rendite:           -2,486 %
+YTD Alpha:            -10,86 pp
+ATH:                  100.066,47 $
+Drawdown:              -2,486 %
+Offene Positionen:     6/8
+Nächste Woche max. Käufe: 2 (Slot 1/2 EOG-Priorität, Slot 2/2 XLU/XLI-Screener)
+Watchlist KW31: EOG (Hauptkandidat XLE), + XLU/XLI-Screener Mo
+```
+
+**Strategie-Status:** STABIL — alle V1-V6/K1-K5/Blackout/Weekly-Cap regelkonform. Diskussions-Punkte KW31: (1) Sektor-Cap-Deutung Owner-Klärung ZWINGEND, (2) Cash-Quote-Optimierung bei VIX <20, (3) Screener-Universe-Erweiterung MidCap 400.
+
+**Nächste Routine:** Mo 27.07. 08:30 ET Pre-Market Check KW31 Tag 1 — GS V1 1.050,40 Puffer +1,03 % Wochenend-Watch zwingend, V Blackout letzter HT vor Q3 Di 28.07. AMC, EOG K4/K5-Vollcheck Market Open + XLU/XLI-Screener frische Runde.
+
+---
+
+## Market Close 2026-07-24 16:00 ET (Fr, KW30 Tag 5 letzter HT) — Tagesbilanz: P/L +376,57 $ (+0,388 %) Alpha +0,274 pp, 6 V1-V6 SICHER, KEINE Pending-Orders Mo
 
 ---
 

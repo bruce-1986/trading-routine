@@ -6,6 +6,73 @@
 
 ## Was funktioniert (bestätigte Patterns)
 
+### KW30 — 2026-07-24 — Weekly Review
+
+```
+Performance:    -0,736 %   | Alpha vs SPY: -0,147 pp   (SPY -0,589 %; Basis Fr 17.07. Close 743,28 → Fr 24.07. Close 738,90)
+Seit Bot-Init (31.05.26): -2,486 % | YTD Depot: -2,486 % | SPY YTD +8,373 % (Alpaca IEX YE25 681,82 → 738,90) → YTD-Alpha -10,86 pp (Bot lebt 54 Tage, ~50 % Cash)
+
+Beste Position diese Woche:    JPM +3,53 %  (Fr 17.07. 341,10 → Fr 24.07. 353,14; XLF-Rebound Fr +0,95 %, Fill-Day+13 Post-Q2-Stabilisierung)
+Schlechteste Position (open):  UNH -1,27 %  (426,06 → 420,67; XLV-Divergenz vs LLY, Fr chg -0,75 % Worst chg Fr)
+Schlechteste Position (closed): GOOGL V1-Stop -12,65 % REALISIERT  (Sell Do 23.07. 09:38 ET Market Order @ 321,51 × 26 Sh, Erlös 8.359,26 $, Verlust -1.211,34 $; Entry 07.07. → Exit 23.07. = 12 HT Haltedauer)
+Zusatz: LLY +1,49 % (1.178,57 → 1.196,14, XLV-Rebound Tag+2 Fr +0,86 %) | AAPL -0,21 % (333,75 → 333,05, XLK-Volatilität aber Fr Best chg +3,59 % Rebound) | V -0,81 % (Fill Mo 20.07. 357,18 → Fr 355,74, Fill-Day-Muster nicht bestätigt, Blackout aktiv Tag+1 vor Q3 Di 28.07. AMC) | GS -0,42 % (1.065,71 → 1.061,23, Fill-Day+7 Give-back-Fortsetzung, V1-Puffer +1,03 % ENGSTE)
+
+Käufe diese Woche:   1  (V Mo 20.07. 27 Sh @ 357,178 = 9.643,80 $ ≈ 9,80 % Equity, Fill in 3 sec bei Limit 360,30)
+Verkäufe:            1  (GOOGL Do 23.07. V1-Stop-Loss)
+Stop-Loss-Trigger:   1  (V1 -8 % strikt; V1 338,65 verletzt Pre-Market/Open Do 23.07.)
+Win-Rate KW30:       0/1 = 0 % (GOOGL Verlust-Exit)
+Realisiert KW30:     -1.211,34 $   | Realisiert kumuliert seit Bot-Init: -2.826,96 $
+Handelstage:         5 von 5 (keine Feiertage)
+ATH:                 100.066,47 $ | DD -2,486 % (GRÜN, Alarm -15 %)
+Guardrails:          Alle 8 GRÜN am Fr-Close (Weekly-Cap-Puffer +4,264 %; V-Blackout WARN 1)
+Käufe KW30 Final:    1/2  (Slot 2/2 verfallen — PSX/FTI/DE alle K5- bzw. Timing-REJECT Fr Open)
+```
+
+**Was gut lief:**
+- **V1-Regel sauber gefeuert bei GOOGL:** Fill-Day+8 Follow-Through Do -4,26 % Pre-Market + Open -4,91 % → V1 338,65 klar gebrochen → Market-Sell 09:38:05 ET @ 321,51 in 5 sec ausgeführt. Regel-Disziplin ohne Panik oder Übersteuerung. GOOGL-Blackout-Konflikt-Frage (KW29 offen) hat sich durch Q2-Release Mi 22.07. AMC selbst aufgelöst — retrospektiv Option A (Strategie-Lock) korrekt: hätte Blackout-Tightening ausgelöst, wäre Sell 2 HT früher zu ähnlichem Preis erfolgt.
+- **V-Kauf Mo 20.07. sauber platziert:** Alle 5 K-Signale multi-source validiert (K5 FwdPE Median ~25 aus 3 Quellen, RevGr +17 % YoY Q2 FY26), Fill @ 357,18 = -0,87 % unter Limit 360,30 (Chase-Cap gewahrt). Kauf-Fenster Mo-Mi vor Q3-Blackout ab Do 23.07. Close eingehalten. V-Blackout aktiviert V1_neu 339,32 mit +4,84 % Puffer (kein Sofort-Stop-Risiko wie bei GOOGL) → **Blackout-Regel funktioniert wenn Kauf-Zeitpunkt korrekt gewählt**.
+- **AAPL XLK-Rebell Fr:** Best chg +3,59 % (XLK +0,22 % Wochen-Rebound), P/L +5,16 % (nahezu flat vs KW29-Ende +5,33 %), keine Panik-Zwischen-Sells bei Do -1,30 %.
+- **LLY XLV-Rebound Tag+2:** Woche +1,49 %, P/L nach 3 Wochen Konsolidierung wieder GRÜN (+0,18 %), keine Reduktions-Panik trotz XLV-Cap-Diskussion.
+- **PSX/FTI/DE Screener-Disziplin Fr Slot 2/2:** Alle 3 K1-K3-Kandidaten multi-source REJECT: PSX K5-FAIL RevGr +6,9 % <10 % (analog KO/MMM/UPS-Präzedenz), FTI K5 ✓ aber Timing-Blackout-Aktivierung Mo Tag+1 nach Kauf (nur 4 HT vor Do 30.07. Earnings vs V-Präzedenz 6 HT Buffer → LEVEL 0 "No-Action bei Unsicherheit"), DE K5-FAIL RevGr +9,6 % marginal aber strikt. Slot 2/2 verfällt sauber ohne Zwang-Kauf.
+- **Weekly-Loss-Cap-Puffer komfortabel:** -0,736 % vs Cap -5 % = +4,264 pp Puffer. Trotz GOOGL-Stop 5-tägig moderate Wochen-Kurve.
+
+**Was nicht gut lief:**
+- **GOOGL V1-Stop -12,65 % (nicht -8 %):** V1-Regel spezifiziert -8 % Stop, aber Market-Order Do Open @ 321,51 vs V1 338,65 = Gap -4,65 pp durch Pre-Market-Selloff. **Gap-Risiko bei Post-Earnings-Trigger:** GOOGL Q2-Release Mi 22.07. AMC → Do Pre-Market Overnight-Gap. Kein Regel-Verstoß (V1 = Market-Order sofort), aber **Slippage-Ausmaß dokumentiert für Fill-Day-Muster-Statistik n=6.** Realisiert -1.211,34 $ (grösster Einzelverlust seit MU KW28 -1.019,43 $).
+- **Fill-Day-Drop-Muster jetzt n=6:** GOOGL erfüllt Muster VOLLBILD (Fill 07.07. → V1 23.07. = 12 HT-Peak-to-V1), MU Fill-Day+4, GS Fill-Day+2 (überstanden), AVGO Fill-Day+3, V Fill-Day+0 (überstanden), AAPL Fill-Day (überstanden). **Neutrale Verteilung:** 3× V1 realisiert (MU/AVGO/GOOGL) vs 3× überstanden (GS/V/AAPL) → K4-Post-Fill-Recheck-Erweiterung noch nicht statistisch zwingend, aber Muster-Watch weiter beibehalten.
+- **YTD-Alpha weiter negativ -10,86 pp:** SPY +8,37 % vs Depot -2,49 % nach 54 Bot-Tagen. GOOGL-Realized-Loss weitet die Lücke aus (-2 Wochen-Puffer verloren). Cash-Quote 49,61 % strukturell zu hoch für Bull-Rally. **Grundsatz-Diskussion KW31:** Position-Sizing bei VIX <20 aggressiver (Bot-Regel: max 10 % Pos, 8 Positionen = max 80 % investiert, aktuell 50,4 %).
+- **Sektor-Cap-Deutung XLV/XLF beide 40 %/39 % investiert:** UNH+LLY 19.657 / 49.141 = 40,00 %, GS+JPM+V 19.154 / 49.141 = 38,98 %. **Beide über 30 %-Cap "des investierten Kapitals"** aber am Gesamtportfolio nur ~20 % je. Owner-Entscheidung KW29 offen → **KW31 zwingend klären** (blockiert XLE/XLI/XLU-Neukäufe von Format).
+- **1 Kauf KW30 statt 2:** Slot 2/2 verfallen mangels K5-Kandidat aus Top-Sektoren. **Screener-Universe zu eng** (Fokus auf Top-3-M-RS, aber Fundamentals-Filter K5 hart). KW31 Universe auf S&P + MidCap 400 + K5-Prä-Screen erweitern.
+
+**Strategie-Anpassung nötig:** NEIN — alle Regeln (V1/V6/K1-K5/Blackout/Weekly-Cap) regelkonform. Diskussions-Punkte KW31:
+1. **Sektor-Cap-Deutung XLV/XLF Owner-Klärung ZWINGEND** (blockiert 3.-XLV- und 4.-XLF-Käufe formal, aber Portfolio-Basis unkritisch). Bis Klärung: neue Käufe nur in XLK/XLE/XLI/XLU/XLC/XLB/XLP/XLY/XLRE.
+2. **Cash-Quote 49,6 % vs Bull-Rally:** Bei VIX <20 stabil Position-Sizing prüfen (10 % vs 12 %?).
+3. **Screener-Universe erweitern:** MidCap 400 + K5-Prä-Screen vor RS-Ranking, um Slot-Verfall zu vermeiden.
+4. **Fill-Day-Muster n=6 stabil neutral:** keine Änderung K4-Regel nötig, weiter beobachten.
+
+**Watchlist nächste Woche (KW31, 27.07.→31.07.):**
+- **EOG (Energy XLE) — HAUPTKANDIDAT** — Alpaca-IEX Fr-Close ~123 $, K1 EMA50 136,79 > EMA200 127,93 ✓, K2 RSI 67,1 ✓, K3 RS_63d +5,1 pp ✓, K5 Multi-Source FwdPE **9,98** ✓ (Perplexity), **RevGr YoY +15,63 %** ✓, MCap $72 B, **keine Earnings imminent** (letzte 05.05.26, nächste ~Anfang November). **XLE #1 Sektor KW30 +3,35 %**, Portfolio-XLE 0 % → unkritisch.
+- **GE — DROP** (K5-FAIL FwdPE 47,61 > 35, Kandidatur verworfen)
+- **HON — DROP** (K5-FAIL RevGr +2,40 % < 10 %)
+- **D — DROP** (K5-FAIL RevGr +7,49 % < 10 %; XLU aber #2 Sektor — Ersatz suchen)
+- **F — SKIP KW31 Woche wegen Earnings** (Q2 29.07. Mi vermutet, Blackout-Aktivierung sofort — analog FTI-Präzedenz "zu knapp")
+- **Backup XLI-Suche:** UNP/CAT/DE/LMT alle KW30 K3/K5-FAIL → **frische XLI-Screener-Runde Mo 27.07. Pre-Market**
+- **Backup XLU-Suche:** neue XLU-Kandidaten (NEE/DUK/SO/AEP/EXC) K5-Prä-Screen Mo Pre-Market
+
+**Sektor-Priorität KW31 (Basis KW30 Sektor-Rebound):**
+- **XLE #1 (+3,35 %):** EOG priorisiert (kein Sektor-Cap-Risiko, aktuell 0 % Portfolio)
+- **XLU #2 (+2,48 %):** neuer Screener zwingend (D K5-FAIL)
+- **XLI #3 (+1,79 %):** GE/HON DROP → neuer Screener zwingend
+- **XLC Bottom (-3,95 %) / XLY Bottom (-5,19 %):** Meidung, keine Käufe
+
+**GS/V kritischer Watch Mo 27.07.:**
+- GS V1 1.050,40 (Puffer +1,03 % ENGSTE, Fill-Day+7 Give-back Close-Fortsetzung) — Break Mo Pre-Market → Market-Sell sofort. Wochenend-Watch zwingend.
+- V V1-Blackout 339,32 (Puffer +4,84 %, Q3 Di 28.07. AMC) — letzter HT vor Earnings-Release, kein Sofort-Stop-Risiko aber Post-Earnings-Gap-Risiko Mi 29.07.
+- KW31 Slot 1/2 nach EOG (falls Fr Close ~123 EMA-Diff bleibt stabil), Slot 2/2 aus XLU/XLI-Screener.
+
+**Sektor-Cap-Check aktuell:** XLV 40,00 % investiert / 20,16 % Portfolio | XLF 38,98 % / 19,64 % | XLK 21,02 % / 10,59 %. **Bei strenger Deutung: XLV + XLF Verstoß** (schwächste XLV: LLY +0,18 %, schwächste XLF: GS -7,05 %). Bei Portfolio-Deutung alle < 30 %. **KW31 Owner-Klärung zwingend Priorität 1.**
+
+---
+
 ### KW29 — 2026-07-17 — Weekly Review
 
 ```
