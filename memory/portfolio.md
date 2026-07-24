@@ -1,6 +1,94 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 08:36 ET (Pre-Market Fr KW30 Tag 5 letzter HT, alle 6 V1 SICHER, Pre-Drift +0,183 % vs Do-Close 97.152,97, Equity 97.330,71, Cash 48.385,51 = 49,71 %, DD -2,73 %, VIX 18,24 GRÜN, SPY Pre +0,35 %, VXX -1,77 %, **V-Blackout AKTIV Q3 Di 28.07. AMC → V1_neu 339,32 $** ohne Sofort-Stop-Risiko, Käufe 1/2 KW30 Slot 2/2 offen, Market-Open-Scan JA mit PSX/FTI/DE)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 09:38 ET (Market Open Fr KW30 Tag 5 letzter HT, alle 6 V1-V6 SICHER, **KEIN Kauf Slot 2/2 verfällt** — PSX K5-FAIL RevGrowth +6,9 % <10 %, FTI K5 ✓ aber Earnings 30.07. in 4 HT → Blackout Tag+1 nach Kauf zu riskant LEVEL 0, DE K5-FAIL RevGrowth +9,6 % <10 %, Equity 97.282, Cash 48.386 = 49,74 %, DD -2,78 %, SPY +0,19 %, Alpha -0,06 pp, V-Blackout aktiv V1_neu 339,32, GS Puffer +1,84 % ENGSTE)
+
+---
+
+## Market Open 2026-07-24 09:38 ET (Fr, KW30 Tag 5 letzter HT) — Kaufsignal-Scan: KEIN Kauf (alle 3 Kandidaten K5-Blockiert), 6 V1-V6 SICHER, Slot 2/2 verfällt
+
+```
+Alpaca clock:      is_open=true | now Fr 24.07. 09:38 ET | next_close Fr 24.07. 16:00 ET
+Equity Live:       97.282,89 $   (Alpaca /v2/account)
+Cash:              48.385,51 $   (49,74 %, unverändert)
+Portfolio MV Live: 48.897,38 $   (50,26 %, 6 Positionen)
+Buying_power:     330.451,47 $   (Paper-Margin, effektiv Cash-Budget)
+Daily P/L Live:      +132,86 $   (+0,137 % vs Do-Close 97.152,97)                [GRÜN, Cap -3 %]
+SPY Live 09:38:     739,46        (vs Do-Close 738,06 = +0,189 %)                [Crash-Filter INAKTIV]
+Alpha vs SPY:      -0,056 pp     NEUTRAL (Cash-Puffer 49,74 % dämpft SPY-Rebound)
+ATH:              100.066,47 $   DD -2,783 % [GRÜN — Alarm bei -15 %]
+Weekly KW30 Tag 5:  -0,972 %     (vs Fr-Close 98.236,14, -953,25 $)              [GRÜN, Cap -5 %]
+VIX/VXX Live:       ~18 / 22,2   [GRÜN, <25 volle Pos-Size wäre möglich]
+Käufe KW30:            1/2       (Slot 2/2 verfällt Ende Fr, kein Kauf möglich)
+Open Orders:           0          (KEINE Limit-Order platziert)
+Guardrails:        8/8 GRÜN
+```
+
+**Positionen Live 09:38 ET (Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym  | Cur Live | Qty | Entry     | P/L %    | V1-Stop      | V1-Puffer   | Status |
+|------|----------|-----|-----------|----------|--------------|-------------|--------|
+| **GS**   | 1.069,68 | 8  | 1.141,74  | -6,31 %  | 1.050,40     | **+1,84 %** | SICHER **ENGSTE** verschlechtert vs Pre +3,39 %, Fill-Day+7 Give-back-Fortsetzung |
+| V    |   352,26 | 27 |   357,18  | -1,38 %  | **339,32** 🟡BLACKOUT | +3,81 % | SICHER (Blackout Standard 328,60 → 339,32 aktiviert, Q3 Di 28.07. AMC) |
+| LLY  | 1.192,00 | 8  | 1.193,89  | -0,16 %  | 1.098,38     | +8,52 %     | SICHER |
+| AAPL |   325,46 | 31 |   316,86  | +2,71 %  |   291,51     | +11,64 %    | SICHER |
+| JPM  |   348,51 | 3  |   332,78  | +4,73 %  |   306,16     | +13,83 %    | SICHER |
+| UNH  |   423,25 | 24 |   401,57  | +5,40 %  |   369,44     | +14,56 %    | SICHER |
+
+**V1-V6 Vollcheck 6 SICHER:**
+- V1 (Stop -8 %) — 6 SICHER, min GS +1,84 % (24,32 $ vom Break)
+- V2/V3/V4 — kein Trigger (kein 52w-Hoch relevant, max +5,40 % UNH << 20 %)
+- V5 (EMA50<EMA200) — 6 SICHER, alle Golden Cross intakt (Vortag-Basis)
+- V6 (RSI>80 UND RS_4w<0) — 6 SICHER, max RSI 65,76 JPM (Vortag) << 80
+
+**→ KEINE Sell-/Limit-Order platziert**
+
+**Kaufsignal-Scan Slot 2/2 KW30 — LEVEL 0 No-Action bei Unsicherheit:**
+
+| Sym | K1 EMA | K2 RSI | K3 RS | K4 Vol* | K5 P/E + Growth        | Blackout | Decision |
+|-----|--------|--------|-------|---------|------------------------|----------|----------|
+| **PSX** | ✓ | ✓ 67,60 | ✓ +25 % | offen** | ✗ Growth +6,9 % <10 %  | frei     | **REJECT K5-FAIL** |
+| FTI     | ✓ | ✓ 66,80 | ✓ +1,5 %| offen** | ✓ P/E 19,4 + Growth 11,6 % | Earnings 30.07. → 4 HT → Blackout Mo (Tag+1) | **REJECT LEVEL 0 Timing** |
+| DE      | ✓ | ✓ 56,40 | ✓ +1,4 %| offen** | ✗ Growth +9,6 % <10 %  | Earnings 14.08. frei | **REJECT K5-FAIL** |
+
+*K4 Session-Vol so früh (09:38) nicht belastbar, formal offen — aber irrelevant weil K5-Fail dominierend
+**Perplexity Multi-Source K5-Verifikation: PSX Zacks/Yahoo/GuruFocus P/E 10.8-11.9 ✓ aber RevGrowth Q1 CY26 +6,9 % (MarketBeat); FTI P/E 19,4 + Q1 26 +11,6 %; DE P/E 23 + Q3 FY25 +9,6 %
+
+**Rationale KEIN Kauf:**
+- PSX Hauptkandidat: RevGrowth +6,9 % KLAR unter 10 %-Cap → strikte Regel-Anwendung REJECT
+- FTI: alle 5 K-Signale ✓ ABER Earnings-Blackout in nur 4 HT (Do 30.07. Fenster) → Blackout aktiviert bereits Mo 27.07. am Tag+1 nach Kauf → analog V-Muster (Kauf 20.07., Blackout aktiv 24.07.) aber V hatte 6 HT Buffer, FTI nur 4 HT → **zu knapp, LEVEL 0 "No-Action bei Unsicherheit"** (Kauf direkt vor Earnings-Reporting-Risiko + Fill-Day+1 Give-back-Muster + Sofort-Blackout-Aktivierung)
+- DE: RevGrowth +9,6 % KNAPP unter 10 %-Cap → strikte Regel FAIL, kein K5-Multi-Source-Override rechtfertigbar bei -0,4 pp Diff
+- Weitere Kandidaten aus Do-Close-Screener bereits Rejects (CVX/UNP/EQNR K2-FAIL, CAT K2-FAIL, LMT K1-FAIL, TPR/NEE K3-FAIL)
+
+**→ Slot 2/2 KW30 verfällt Ende Fr 24.07. ohne Kauf. KW30 final: 1 Kauf (V 20.07.).**
+
+**Sektor-Struktur unverändert (kein Trade):**
+| Sektor | Positionen | MV        | % Portfolio | Status |
+|--------|------------|-----------|-------------|--------|
+| XLV    | UNH + LLY  | 19.694,12 | 20,25 %     | GRÜN <30 % |
+| XLF    | GS+JPM+V   | 19.113,99 | 19,65 %     | GRÜN, 3-Pos-Cap intakt |
+| XLK    | AAPL       | 10.089,27 | 10,37 %     | GRÜN |
+| XLC/XLE/XLI | —      |     0     |  0 %        | GRÜN |
+
+**Guardrails 8/8 GRÜN + 1 WARN (V-Blackout aktiv, kein Aktion nötig):**
+```
+1. Daily Loss Cap (-3 %):     +0,137 %                                            [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 5 -0,972 %                                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,783 %                                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,783 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,189 %                                        [INAKTIV]
+6. VIX-Filter (>30):          ~18 / VXX 22,2                                      [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV V1_neu 339,32 (kein Sofort-Stop-Risiko)     [WARN]
+8. Max Käufe KW30:            1/2 (Slot 2/2 verfällt Ende Fr, kein K1-K5 ✓ ohne Blackout-Risiko) [GRÜN]
+```
+
+**Entscheidung Market Open 09:38 Fr 24.07.:**
+- **KEIN Kauf** (LEVEL 0 No-Action: alle 3 K1-K3-Kandidaten K5-blockiert oder Timing-blockiert)
+- **KEINE Sell-/Limit-Order** (6 V1-V6 SICHER)
+- **V-Blackout-Aktivierung dokumentiert** (V1_neu 339,32 statt 328,60, Puffer +3,81 % ohne Sofort-Stop-Risiko)
+- **ClickUp Routine-Log Prio 4** (Info-Level, Fallback PushNotification bei Fehler)
+- **PushNotification Prio 3** an Owner (Slot 2/2 verfällt + V-Blackout Aktivierung + GS ENGSTE +1,84 %)
+
+**Nächste Routine:** Fr 24.07. 13:00 ET Midday Stop-Check — **GS V1 1.050,40 Puffer +1,84 % ENGSTE** (Fill-Day+7 Give-back-Fortsetzung-Risiko), V Blackout-Puffer +3,81 % Watch, LLY XLV-Konsolidierung.
 
 ---
 
