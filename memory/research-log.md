@@ -4,6 +4,84 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-07-24 (Fr, KW30 Tag 5 letzter HT) — Tagesbilanz + Watchlist Mo 27.07.: GE HON F D EOG (K1-K3 ✓)
+
+**Alpaca Clock Close:** is_open=false, next_open Mo 27.07. 09:30 ET.
+
+**Alpaca /v2/account Close 16:00 ET:**
+- equity_end: **97.526,60 $** (vs last_equity 97.150,03 = **+376,57 $ / +0,388 % Daily**) [GRÜN]
+- cash: 48.385,51 $ (49,61 %, unverändert)
+- long_market_value: 49.141,09 $ (6 Positionen)
+
+**Marktdaten Close 24.07.:**
+- **SPY Close 738,90** (Alpaca IEX, n=21.063 Trades) vs Do-Close 738,06 = **+0,114 %** (Perplexity meldete abweichende Werte 744,78 — Alpaca IEX authoritative für Alpha-Berechnung) [Crash-Filter INAKTIV]
+- **VIX/VXX** ~18 / ~22 (carry-over) [GRÜN, <25]
+- **Alpha vs SPY:** Daily +0,388 % vs SPY +0,114 % = **+0,274 pp POSITIV** (AAPL XLK-Rebound-Beitrag dominant)
+
+**V1-V6-Vollcheck Close 6 SICHER (Alpaca IEX 260d Bars):**
+
+| Sym  | Close    | Qty | V1        | V1-Puffer   | RSI14  | EMA50/EMA200 Diff | Status |
+|------|----------|-----|-----------|-------------|--------|-------------------|--------|
+| GS   | 1.061,23 | 8   | 1.050,40  | **+1,03 % ENGSTE** | 49,76 | +13,39 % | SICHER Fill-Day+7 Give-back Close, 10,83 $ vom V1 |
+| V    |   355,74 | 27  | **339,32** 🟡BLACKOUT | +4,84 % | 57,66 | +1,76 % | SICHER V-Blackout Tag+1/3 Q3 Di 28.07. AMC |
+| LLY  | 1.196,04 | 8   | 1.098,38  | +8,89 %     | 57,21 | +13,38 % | SICHER XLV-Rebound Tag+2 |
+| UNH  |   420,38 | 24  |   369,44  | +13,79 %    | 51,42 | +14,02 % | SICHER XLV-Divergenz vs LLY |
+| AAPL |   333,20 | 31  |   291,51  | +14,30 %    | 65,55 | +11,24 % | SICHER **Best chg +3,59 % XLK-Rebound** |
+| JPM  |   353,21 | 3   |   306,16  | +15,37 %    | 68,01 | +5,39 %  | SICHER XLF-Rebound Close |
+
+**V5 (EMA50<EMA200) 6 SICHER** — kein Death Cross, keine Sell-Order für Mo platziert.
+**V6 (RSI>80 & RS<0) 6 SICHER** — max RSI JPM 68,01 << 80.
+
+**Weekly KW30 Final:** -0,722 % (vs Fr-Close 18.07. 98.236,14) [GRÜN, Cap -5 %]. Käufe KW30 Final: 1/2 (V 20.07.).
+
+**Watchlist Mo 27.07. — K1-K3 ✓ Screening (Alpaca IEX 260d, 40 Kandidaten Non-Tech/Non-Healthcare):**
+
+| Sym  | Sektor           | Close    | EMA50    | EMA200   | RSI14 | RS_63d pp | Notes |
+|------|------------------|----------|----------|----------|-------|-----------|-------|
+| **GE** | Industrials     | 353,74   | 341,07   | 311,31   | 53,0  | **+21,0**  | **#1 RS**, sauber Momentum, KL4/K5 Prüfung Mo Open |
+| HON  | Industrials      | 243,09   | 226,44   | 221,40   | 65,2  | +9,1      | RSI Cap-nah, K4-Vol/K5-Fundamentals Prüfung |
+| F    | Consumer Disc    |  14,36   |  13,98   |  13,09   | 54,6  | +10,8     | Auto-Sektor, K5-RevGrowth kritisch (F Marge historisch niedrig) |
+| D    | Utilities        |  71,09   |  68,29   |  63,75   | 59,0  | +9,4      | Utilities-Diversifikation gut vs Portfolio, K5-Div-freundlich |
+| EOG  | Energy           | 146,38   | 136,79   | 127,93   | 67,1  | +5,1      | Energy-Diversifikation, RSI Cap-nah, K5-Oil-preis-abhängig |
+
+**Rejects K1-K3 aus 40er-Screen:**
+- MU/AMAT/LRCX/CVX/XOM RSI außer Cap 50-70 oder Tech-Ausschluss
+- NCLH/COR/BSX K1-FAIL (EMA50<EMA200)
+- WFC/BAC K1-K3 ✓ aber Financials-Sektorlimit (2 im Portfolio JPM+GS, +V=3 → max erreicht)
+
+**Sektor-Diversifikation Watchlist:** Bewusst Non-Tech/Non-Healthcare/Non-Financials — Portfolio bereits XLV 20,15 % (LLY+UNH), XLF 19,73 % (GS+JPM+V), XLK 10,59 % (AAPL). Neue Käufe Mo idealerweise Industrials (GE/HON), Utilities (D), Energy (EOG), Consumer Disc (F) für Diversifikations-Boost.
+
+**Guardrail-Status 8/8 GRÜN + 1 WARN:**
+```
+1. Daily Loss Cap (-3 %):     +0,388 %                                            [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Final -0,722 %                                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,538 %                                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,538 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,114 %                                        [INAKTIV]
+6. VIX-Filter (>30):          ~18                                                 [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV V1_neu 339,32 (kein Sofort-Stop-Risiko)     [WARN]
+8. Max Käufe KW30:            1/2 Final                                           [GRÜN]
+```
+
+**Entscheidung Close 16:00 Fr 24.07.:**
+- **KEINE Sell-/Limit-Order für Mo 27.07. platziert** (6 V1-V6 SICHER)
+- **KEIN Stop ausgelöst**
+- **ClickUp Task erstellt**: [CLOSE] Tagesbilanz 869e97vn8 Prio 4 (Low, positive Perf)
+- **PushNotification Prio 4 Owner**: Routine-Spec Close-Notification
+
+**Tages-Highlights:**
+- Best chg: AAPL +3,59 % (XLK-Rebound, dominiert Alpha +0,27 pp)
+- Worst chg: GS -1,26 % (Fill-Day+7 Give-back Close, Puffer +1,03 % ENGSTE)
+- Best P/L: JPM +6,14 %
+- Worst P/L: GS -7,05 %
+- V-Blackout Tag+1/3 aktiv, Rebound Close +1,18 %
+
+**Watchlist morgen (Mo 27.07.):** GE (Industrials, RS +21 pp #1), HON (Industrials, RS +9,1 pp), F (Consumer Disc, RS +10,8 pp), D (Utilities, RS +9,4 pp), EOG (Energy, RS +5,1 pp)
+
+**Nächste Routine:** Mo 27.07. 08:30 ET Pre-Market Check KW31 Tag 1 — GS V1-Puffer +1,03 % ENGSTE Wochenend-Watch zwingend, V-Blackout letzter Tag vor Q3 (Di 28.07. AMC), Watchlist K4/K5 Prüfung 09:30 Market Open.
+
+---
+
 ## Market Open 09:38 ET — 2026-07-24 (Fr, KW30 Tag 5 letzter Handelstag) — KEIN Kauf: PSX K5-FAIL RevGrowth +6,9 %, FTI Timing-Blockiert, DE K5-FAIL +9,6 %
 
 **Alpaca Clock:** is_open=true, timestamp 2026-07-24 09:38:07 ET, next_close Fr 24.07. 16:00 ET.
