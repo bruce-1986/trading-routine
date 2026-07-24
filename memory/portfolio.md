@@ -1,6 +1,79 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 09:38 ET (Market Open Fr KW30 Tag 5 letzter HT, alle 6 V1-V6 SICHER, **KEIN Kauf Slot 2/2 verfällt** — PSX K5-FAIL RevGrowth +6,9 % <10 %, FTI K5 ✓ aber Earnings 30.07. in 4 HT → Blackout Tag+1 nach Kauf zu riskant LEVEL 0, DE K5-FAIL RevGrowth +9,6 % <10 %, Equity 97.282, Cash 48.386 = 49,74 %, DD -2,78 %, SPY +0,19 %, Alpha -0,06 pp, V-Blackout aktiv V1_neu 339,32, GS Puffer +1,84 % ENGSTE)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 13:07 ET (Midday Fr KW30 Tag 5 letzter HT, alle 6 V1-V4 SICHER, **KEINE Stops ausgelöst**, Equity 97.522,81, Cash 48.385,51 = 49,61 %, Daily +0,38 % GRÜN, DD -2,54 %, SPY +0,38 %, Alpha +0,00 pp, GS Puffer +1,62 % ENGSTE Fill-Day+7 leicht verschlechtert vs Open, AAPL Best chg +3,45 % / LLY Best +1,34 %, UNH Worst chg -0,85 %)
+
+---
+
+## Midday 2026-07-24 13:07 ET (Fr, KW30 Tag 5 letzter HT) — Stop-Check: 6 V1-V4 SICHER, keine Trigger, Daily P/L +0,38 % GRÜN
+
+```
+Alpaca clock:      is_open=true | now Fr 24.07. 13:07 ET | next_close Fr 24.07. 16:00 ET
+Equity Live:       97.522,81 $   (Alpaca /v2/account)
+Cash:              48.385,51 $   (49,61 %, unverändert)
+Portfolio MV Live: 49.137,30 $   (50,39 %, 6 Positionen)
+Buying_power:     331.126,47 $   (Paper-Margin)
+Daily P/L Live:      +372,78 $   (+0,384 % vs Alpaca last_equity 97.150,03)      [GRÜN, Cap -3 %]
+SPY Live 13:07:     740,88        (vs Do-Close 738,06 = +0,382 %)                [Crash-Filter INAKTIV]
+Alpha vs SPY:      +0,002 pp     NEUTRAL (Portfolio-Rebound gleichauf SPY)
+ATH:              100.066,47 $   DD -2,542 % [GRÜN — Alarm bei -15 %]
+Weekly KW30 Tag 5:  -0,727 %     (vs Fr-Close 98.236,14, -713,33 $)              [GRÜN, Cap -5 %]
+VIX/VXX (carry):   ~18 / ~22     [GRÜN, <25]
+Käufe KW30:            1/2       (Slot 2/2 verfällt Ende Fr, kein Kauf)
+Open Orders:           0          (KEINE Limit-Order platziert)
+Guardrails:        8/8 GRÜN + 1 WARN (V-Blackout aktiv, kein Aktion)
+```
+
+**Positionen Live 13:07 ET (Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym  | Cur Live | Qty | Entry     | P/L %    | chg_today | V1-Stop      | V1-Puffer   | Status |
+|------|----------|-----|-----------|----------|-----------|--------------|-------------|--------|
+| **GS**   | 1.067,37 | 8  | 1.141,74  | -6,51 %  | -0,68 %   | 1.050,40     | **+1,615 %** | SICHER **ENGSTE** verschlechtert vs Open +1,84 % um -0,22 pp, Fill-Day+7 Give-back leicht fortgeführt, 16,97 $ vom V1 |
+| V    |   353,01 | 27 |   357,18  | -1,17 %  | +0,40 %   | **339,32** 🟡BLACKOUT | +4,035 % | SICHER (Blackout V1_neu, marginal verbessert vs Open +3,81 %) |
+| LLY  | 1.201,81 | 8  | 1.193,89  | +0,66 %  | +1,34 %   | 1.098,38     | +9,417 %    | SICHER (P/L wieder GRÜN, **Best chg +1,34 % XLV-Rebound Tag+2**) |
+| UNH  |   419,98 | 24 |   401,57  | +4,59 %  | -0,85 %   |   369,44     | +13,681 %   | SICHER (verschlechtert vs Open +14,56 %, **Worst chg heute**, UNH-vs-LLY XLV-Divergenz Tag+2) |
+| AAPL |   332,75 | 31 |   316,86  | +5,02 %  | +3,45 %   |   291,51     | +14,148 %   | SICHER (**Best chg heute** stark verbessert vs Open +2,71 %) |
+| JPM  |   352,70 | 3  |   332,78  | +5,98 %  | +0,80 %   |   306,16     | +15,200 %   | SICHER (leicht verbessert vs Open +4,73 %, XLF-Rebound) |
+
+**V1-V4 Midday-Check (RSI/EMA nicht Teil Midday) 6 SICHER:**
+- V1 (Stop -8 %) — 6 SICHER, min GS +1,615 % (16,97 $ vom Break, chg -0,68 % leichte Give-back-Fortsetzung Fill-Day+7)
+- V2 (Trailing -12 %) — kein 52w-Hoch relevant, kein Trigger
+- V3 (+20 % TP1) — max +5,98 % JPM << 20 %, kein Trigger
+- V4 (+35 % TP2) — kein Trigger
+
+**→ KEINE Sell-/Limit-Order platziert. KEIN Stop ausgelöst. KEINE Order storniert.**
+
+**Daily Loss Cap Check:**
+- daily_pnl_pct = (97.522,81 - 97.150,03) / 97.150,03 * 100 = **+0,384 %** > Cap -3 % → **GRÜN**
+- Keine Order-Stornierung, kein DAILY_CAP-Alert
+
+**Tages-Highlights Midday:**
+- Best chg: AAPL +3,45 % (XLK-Rebound Fr, verbessert vs Open +2,71 %)
+- Sekundär best: LLY +1,34 % (XLV-Rebound Tag+2 Fortsetzung, P/L wieder GRÜN)
+- Worst chg: UNH -0,85 % (XLV-Divergenz vs LLY, aber Puffer +13,68 % komfortabel)
+- Best P/L: JPM +5,98 %
+- Worst P/L: GS -6,51 % (aber Puffer +1,62 % SICHER, +16,97 $ vom V1)
+- Alpha +0,002 pp NEUTRAL (Portfolio +0,38 % ≈ SPY +0,38 %)
+
+**Guardrails 8/8 GRÜN + 1 WARN (V-Blackout aktiv, kein Aktion nötig):**
+```
+1. Daily Loss Cap (-3 %):     +0,384 %                                            [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW30 Tag 5 -0,727 %                                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,542 %                                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,542 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,382 %                                        [INAKTIV]
+6. VIX-Filter (>30):          ~18 (carry-over)                                    [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV V1_neu 339,32 (kein Sofort-Stop-Risiko)     [WARN]
+8. Max Käufe KW30:            1/2 (Slot 2/2 verfällt Ende Fr, kein Kandidat)      [GRÜN]
+```
+
+**Entscheidung Midday 13:07 Fr 24.07.:**
+- **KEIN Stop ausgelöst** (6 V1-V4 SICHER)
+- **KEINE Sell-Order** (kein Trigger)
+- **KEINE Order-Stornierung** (Daily +0,38 % >> Cap -3 %)
+- **KEIN ClickUp-Alert** (Routine-Spec: nur bei Stops oder Daily Cap)
+- **KEINE PushNotification** (Routine-Spec: nur bei Stops oder Daily Cap; Silence bei Regulärlauf per Prompt "when the run comes up empty — silence")
+
+**Nächste Routine:** Fr 24.07. 16:00 ET Market Close + Tagesbilanz — **GS V1 1.050,40 Puffer +1,62 % ENGSTE** (Fill-Day+7 zwingender Close-Watch), V-Blackout-Puffer +4,03 %, LLY XLV-Rebound-Fortsetzung Tag+2, KW30 letzte Handelstag-Bilanz + V5/V6-Vollcheck.
 
 ---
 
