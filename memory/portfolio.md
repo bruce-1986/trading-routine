@@ -1,6 +1,6 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-23 16:03 ET (Market Close Tagesbilanz Do KW30 Tag 4, alle 6 V1-V6 SICHER, KEINE Limit-Order für Fr 24.07., Daily -0,95 %, Alpha +0,31 pp vs SPY -1,26 %, Weekly -1,10 %, DD -2,91 %, VIX ~17-18 GRÜN, Cash 49,80 %, Käufe 1/2 KW30 Slot 2/2 offen letzter Handelstag Fr)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 08:36 ET (Pre-Market Fr KW30 Tag 5 letzter HT, alle 6 V1 SICHER, Pre-Drift +0,183 % vs Do-Close 97.152,97, Equity 97.330,71, Cash 48.385,51 = 49,71 %, DD -2,73 %, VIX 18,24 GRÜN, SPY Pre +0,35 %, VXX -1,77 %, **V-Blackout AKTIV Q3 Di 28.07. AMC → V1_neu 339,32 $** ohne Sofort-Stop-Risiko, Käufe 1/2 KW30 Slot 2/2 offen, Market-Open-Scan JA mit PSX/FTI/DE)
 
 ---
 
