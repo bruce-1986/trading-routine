@@ -1,6 +1,93 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-27 13:07 ET (**Midday KW31 Tag 1 — GS V1 STOP_LOSS AUSGELÖST**, Sell 8 Sh @ 1.040,25 realisierter Verlust -811,95 $ (-8,89 %), Equity 97.629,71 $, Cash 56.707,51 = 58,08 %, Daily +0,103 %, Weekly KW31 Tag 1 +0,105 %, Alpha vs SPY +0,446 pp POSITIV (Sell vor weiterem XLF-Drop), DD -2,435 %, 5 V1-V6 SICHER min V-Blackout +6,88 %, Käufe KW31 0/2 (Slot 1/2 offen, Slot 2/2 offen), ClickUp Critical Alert ITEM_246 Fehler → PushNotification Fallback)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-27 16:03 ET (**Market Close KW31 Tag 1 — Tagesbilanz**, Equity 97.602,90 $ Daily **+0,075 %** [GRÜN], SPY Close 738,85 vs Fr 738,90 = **-0,007 %** [Crash-Filter INAKTIV], Alpha **+0,082 pp POSITIV** knapp, Cash 56.707,51 = 58,10 %, MV 40.895,39 = 41,90 %, DD -2,462 % [GRÜN], Weekly KW31 Tag 1 **+0,078 %** [GRÜN], **5 V1-V6 SICHER Vollcheck** min V-Blackout +6,86 % ENGSTE, alle Golden Cross intakt max RSI JPM 69,94 << 80, Käufe KW31 0/2 Slot 1/2 + 2/2 offen, **keine Pending-Order für Di 28.07.**, Watchlist Di: EOG (Rebound-Watch), GE (RS #1 aber K5 persistent) / PSX (RS #2 aber K5 persistent), 8/8 GRÜN + 1 WARN V-Blackout Tag+2/2 letzter HT vor Q3 Di 28.07. AMC)
+
+---
+
+## Market Close 2026-07-27 16:03 ET (Mo, KW31 Tag 1) — Tagesbilanz: 5/8 Positionen V1-V6 SICHER, Daily +0,075 %, Alpha +0,082 pp knapp POSITIV, keine Pending-Order, Slot 1/2 KW31 offen
+
+```
+Alpaca clock:      is_open=false | close_ts Mo 27.07. 16:00 ET | next_open Di 28.07. 09:30 ET
+Equity Close:      97.602,90 $   (Alpaca /v2/account)
+Cash:              56.707,51 $   (58,10 %, unverändert nach GS-Sell Midday)
+Portfolio MV:      40.895,39 $   (41,90 %, 5 Positionen)
+Buying_power:     341.337,13 $   (Paper-Margin)
+Daily P/L:            +73,32 $   (+0,075 % vs last_equity 97.529,58)                  [GRÜN, Cap -3 %]
+SPY Close:           738,85       (vs Fr Close 738,90 = -0,007 % effektiv flat)         [Crash-Filter INAKTIV]
+Alpha vs SPY:       +0,082 pp    POSITIV knapp
+ATH:              100.066,47 $   DD -2,462 % [GRÜN — Alarm bei -15 %]
+Weekly KW31 Tag 1:  +0,078 %      (vs Fr Close 97.526,60, +76,30 $)                     [GRÜN, Cap -5 %]
+Käufe KW31:            0/2       (Slot 1/2 offen, Slot 2/2 offen)
+Open Orders:           0          (KEINE Pending-Order für Di 28.07.)
+Guardrails:        8/8 GRÜN + 1 WARN (V-Blackout Tag+2/2 letzter HT vor Q3 Di 28.07. AMC)
+```
+
+**Positionen Close 16:03 ET (5 Positionen, sortiert Puffer ENG→WEIT):**
+
+| Sym  | Close    | Qty | Entry     | P/L %    | chg_today | V1-Stop     | V1-Puffer  | EMA50/200 | RSI    | Status |
+|------|----------|-----|-----------|----------|-----------|-------------|------------|-----------|--------|--------|
+| V    |  362,60  | 27  |  357,18   | +1,52 %  | +1,93 %   | **339,32** 🟡BLACKOUT | **+6,86 %** | +1,85 % | 62,48 | SICHER **ENGSTE** verbessert vs Midday +6,88 %/Open +6,27 %, V1-V6 alle safe, EMA-Diff engste aber intakt |
+| LLY  | 1.197,88 | 8   | 1.193,89  | +0,33 %  | +0,15 %   | 1.098,38    | +9,06 %    | +12,38 %  | 57,44 | SICHER stabil vs Midday +9,15 % |
+| UNH  |  416,80  | 24  |  401,57   | +3,79 %  | -0,94 %   |   369,44    | +12,82 %   | +13,92 %  | 49,41 | SICHER **Worst chg** verschlechtert vs Midday +13,47 % XLV-Give-back |
+| AAPL |  337,15  | 31  |  316,86   | +6,41 %  | +1,24 %   |   291,51    | +15,66 %   | +10,30 %  | 67,61 | SICHER verbessert vs Midday +15,25 % XLK-Rebound |
+| JPM  |  355,78  | 3   |  332,78   | +6,91 %  | +0,73 %   |   306,16    | +16,21 %   | +4,95 %   | 69,94 | SICHER **Best P/L** verbessert vs Midday +15,35 %, RSI näher 80 aber weit unter |
+
+**V1-V6-Vollcheck Close 5 SICHER:**
+- V1 (Stop -8 %) — 5 SICHER, min V +6,86 % Blackout (Blackout V1_neu 339,32; Puffer 23,28 $ vom Break)
+- V2 (Trailing -12 %) — kein 52w-Hoch relevant, kein Trigger
+- V3 (+20 % TP1) — max +6,91 % JPM << 20 %, kein Trigger
+- V4 (+35 % TP2) — kein Trigger
+- **V5 (EMA50<EMA200 = Death Cross) — 5 SICHER** (Alpaca IEX Bars bis 27.07., Golden Cross intakt): V EMA-Diff +1,85 % (**engste**, verschlechtert vs Fr +1,76 % nach V-Rebound → EMA50 pushed higher, aber intakt), JPM +4,95 %, AAPL +10,30 %, LLY +12,38 %, UNH +13,92 % — kein Death Cross
+- **V6 (RSI>80 & RS_4w vs SPY<0) — 5 SICHER**: max **RSI JPM 69,94** (verschlechtert vs Midday geschätzt / Fr 68,01, näher 80 aber weit unter), AAPL 67,61, V 62,48, LLY 57,44 (RS_4w -2,06 pp aber RSI << 80), UNH 49,41 (RS_4w -3,61 pp aber RSI << 80) — alle << 80
+
+**→ KEINE Sell-/Limit-Order für Di 28.07. platziert. KEIN Stop-Trigger. Keine V5/V6-Order pending.**
+
+**Watchlist Di 28.07. (K1-K3 aus Alpaca IEX Bars 27.07. Close, K4/K5 zwingend bei Market Open):**
+
+| Sym | Close   | chg   | EMA50/200 diff | RSI    | RS_63d vs SPY | K1 | K2 | K3 | K5 vorbekannt | Decision Tue |
+|-----|---------|-------|----------------|--------|---------------|----|----|----|--------------|--------------|
+| GE  | 361,66  | +2,24 % | +8,15 %      | 58,17  | **+23,55 pp #1** | ✓ | ✓ | ✓ | ✗ FwdPE Median 44,72 (>35) | **REJECT** K5 persistent, kein Kauf |
+| PSX | 207,75  | +0,47 % | +15,82 %     | 68,09  | **+24,10 pp #2** | ✓ | ✓ | ✓ | ✗ RevGr Q +6,9 % (<10 %) | **REJECT** K5 persistent |
+| F   |  14,69  | +2,30 % | +5,49 %      | 59,43  | +15,13 pp     | ✓ | ✓ | ✓ | K5 offen | **SKIP** Blackout Q2 Di 28.07. AMC |
+| HON | 245,76  | +1,10 % | +3,37 %      | 67,03  | +11,81 pp     | ✓ | ✓ | ✓ | ✗ RevGr +2,4 % (<10 %) | **REJECT** K5 persistent |
+| EOG | 140,32  | **-4,14 %** | +8,75 %  | 53,54  | +1,90 pp      | ✓ | ✓ | ✓ | ✓ FwdPE 9,98 + RevGr +15,63 % | **WATCH** Rebound-Watch, Momentum-Bruch heute → wenn Di Rebound + Volumen ≥120 % → K4-Check + Kauf |
+| DE  | 624,78  | -0,55 % | +8,52 %      | 60,83  | +7,56 pp      | ✓ | ✓ | ✓ | ✗ RevGr +9,6 % (<10 %) | **REJECT** K5 persistent |
+| D   |  70,27  | -1,15 % | +6,78 %      | 53,41  | +8,82 pp      | ✓ | ✓ | ✓ | ✗ RevGr +7,49 % | **REJECT** K5 persistent |
+| NEE |  88,81  | -1,07 % | +3,64 %      | 52,24  | **-10,29 pp** | ✓ | ✓ | ✗ | offen | **DROP** K3-FAIL |
+| DUK | 128,84  | -1,23 % | +1,35 %      | 56,32  | **-2,26 pp**  | ✓ | ✓ | ✗ | offen | **DROP** K3-FAIL |
+
+**→ Watchlist Di 28.07. Primärkandidat: EOG (bei Rebound + K4-Volumen ≥120 % + K5-Recheck).** Alle klassischen RS-Leader (GE/PSX/HON/D/DE) K5-persistent-FAIL. F Blackout AMC. **Slot 1/2 KW31 bleibt OFFEN.**
+
+**Guardrails 8/8 GRÜN + 1 WARN (V-Blackout Tag+2/2 letzter HT vor Q3):**
+```
+1. Daily Loss Cap (-3 %):     +0,075 %                                                [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 1 +0,078 %                                     [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,462 %                                                [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,462 %                                                [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,007 %                                            [INAKTIV]
+6. VIX-Filter (>30):          carry-over Mo 19-21                                     [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV Tag+2/2 letzter HT vor Q3 Di 28.07. AMC        [WARN]
+8. Max Käufe KW31:            0/2 Slot 1/2 + 2/2 offen                                [GRÜN]
+```
+
+**Sektor-Struktur Close (Post-GS-Sell konstant):**
+
+| Sektor | Positionen | MV Close $ | % Portfolio (97.603) | Status |
+|--------|-----------|-----------|-----------------------|--------|
+| XLV | UNH + LLY | 19.586,20 | 20,07 % | GRÜN <30 % |
+| XLF | JPM + V | 10.857,54 | 11,13 % | GRÜN |
+| XLK | AAPL | 10.451,65 | 10,71 % | GRÜN |
+| Cash | — | 56.707,51 | 58,10 % | GRÜN (>20 % Min, hoch nach GS-Sell) |
+
+**Entscheidung Market Close Mo 27.07.:**
+- **KEIN Trade**, keine Pending-Order für Di 28.07. platziert
+- **5 V1-V6 alle SICHER**, engste V +6,86 % Blackout (Q3 Di 28.07. AMC letzter HT)
+- **Slot 1/2 KW31 OFFEN** — EOG Rebound-Watch Primärkandidat, alle anderen K5-persistent-FAIL
+- **Weekly Loss Cap** GRÜN weit von -5 %-Cap
+- **ClickUp Tagesbericht Prio 4** → **ERR ITEM_246 persistent** ("Max usage for custom task types reached", bekannter Fehler seit Wochen) → Fallback: direkt in Memory/Trade-Log geschrieben (Memory-First-Regel Trade-Skill)
+- **PushNotification unterlassen** (empty run: kein Trade, alle safe, keine Aktion + ClickUp-ITEM_246-Fehler ist bekannt persistent → nicht neu alarmierend — Silence-Rule)
+
+**Nächste Routine:** Di 28.07. 08:30 ET Pre-Market KW31 Tag 2 — **V Q3 CY26 AMC HEUTE** (Blackout letzter Tag, V1_neu 339,32 Puffer +6,86 % sicher aber Watch), EOG Rebound-Watch für Slot 1/2, K5-Multi-Source-Recheck der EOG-Kandidatur, VIX-Check für Pos-Size-Kalibrierung, F Q2 AMC nur Info (nicht im Portfolio).
 
 ---
 
