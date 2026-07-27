@@ -1,6 +1,107 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-24 17:00 ET (**Weekly Review KW30 Abschluss**, Equity Fr-Close-Alpaca 97.513,66 $, Cash 48.385,51 = 49,62 %, Weekly **-0,736 %** vs SPY -0,589 % = **Alpha -0,147 pp**, YTD Depot **-2,486 %** vs SPY YTD +8,373 % = **YTD-Alpha -10,86 pp**, Käufe KW30 Final 1/2 (V 20.07.), Realisiert KW30 -1.211,34 $ (GOOGL V1-Stop), Realisiert kumuliert -2.826,96 $, ATH 100.066,47 unverändert, DD -2,486 %, Top-3 Sektoren KW30: **XLE +3,35 % / XLU +2,48 % / XLI +1,79 %**, Watchlist KW31 EOG (Hauptkandidat XLE) + neue XLU/XLI-Screener Mo)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-27 09:38 ET (**Market Open KW31 Tag 1**, Equity Live 97.903,67 $, Cash 48.385,51 = 49,42 %, Daily +0,384 %, Weekly KW31 Tag 1 +0,387 %, Alpha vs SPY -0,448 pp (Cash-Puffer-Dämpfung), DD -2,161 %, 6 V1-V6 SICHER min GS +3,23 %, V-Blackout Tag+1/2 vor Q3 Di 28.07. AMC Puffer +6,27 %, Käufe KW31 0/2 (Slot 1/2 offen), **KEIN Kauf**: EOG intraday -1,71 % + K4 formal offen + XLE-Sektor -0,90 % REJECT LEVEL 0, GE K5-Multi-Source-Median 44,72 >35-Cap REJECT, HON/D K5-FAIL, F Blackout SKIP, XLU/XLI-Screener alle intraday flat/negativ)
+
+---
+
+## Market Open 2026-07-27 09:38 ET (Mo, KW31 Tag 1) — Kaufsignal-Scan: KEIN Kauf (EOG intraday-Weakness + K4 formal offen + GE K5-FAIL), 6 V1-V6 SICHER, Slot 1/2 OFFEN
+
+```
+Alpaca clock:      is_open=true | now Mo 27.07. 09:38 ET | next_close Mo 27.07. 16:00 ET
+Equity Live:       97.903,67 $   (Alpaca /v2/account)
+Cash:              48.385,51 $   (49,42 %, unverändert vs Fr Close)
+Portfolio MV Live: 49.518,16 $   (50,58 %, 6 Positionen, +377,07 $ vs Fr Close)
+Buying_power:     332.152,96 $   (Paper-Margin)
+Daily P/L Live:      +374,09 $   (+0,384 % vs Alpaca last_equity 97.529,58)      [GRÜN, Cap -3 %]
+SPY Live 09:39:     745,05        (vs Fr Close 738,90 = +0,832 %)                 [Crash-Filter INAKTIV]
+Alpha vs SPY:      -0,448 pp     NEGATIV (Cash-Puffer 49,42 % dämpft Rebound-Beta)
+ATH:              100.066,47 $   DD -2,161 % [GRÜN — Alarm bei -15 %]
+Weekly KW31 Tag 1:  +0,387 %      (vs Fr Close 97.526,60, +377,07 $ frischer Start) [GRÜN, Cap -5 %]
+VIX Mo Pre:         19-21         (Fr-Close 18,70 +12,4 %, Mo-Anstieg +0,6 bis +2,3 pp aber <25) [GRÜN]
+Käufe KW31:            0/2       (Slot 1/2 offen, Slot 2/2 offen)
+Open Orders:           0          (KEINE Limit-Order platziert)
+Guardrails:        8/8 GRÜN + 1 WARN (V-Blackout Tag+1/2 letzter HT vor Q3)
+```
+
+**Positionen Live 09:38 ET (Alpaca /v2/positions) — sortiert Puffer ENG→WEIT:**
+
+| Sym  | Cur Live | Qty | Entry     | P/L %    | chg_today | V1-Stop      | V1-Puffer   | Status |
+|------|----------|-----|-----------|----------|-----------|--------------|-------------|--------|
+| **GS**   | 1.084,34 | 8  | 1.141,74  | -5,03 %  | **+2,18 %** | 1.050,40     | **+3,23 %** | SICHER **ENGSTE** verbessert vs Fr-Close +1,03 % um +2,20 pp, Fill-Day+7-Rebound-Tag+1 überstanden |
+| V    |   360,61 | 27 |   357,18  | +0,96 %  | +1,37 %   | **339,32** 🟡BLACKOUT | +6,27 % | SICHER (Blackout Tag+1/2 vor Q3 Di 28.07. AMC, verbessert vs Fr-Close +4,84 %, XLF-Rebound + Pre-Earnings-Bid) |
+| LLY  | 1.197,54 | 8  | 1.193,89  | +0,31 %  | +0,13 %   | 1.098,38     | +9,03 %     | SICHER (verbessert vs Fr-Close +8,89 %, XLV-Konsolidierung nach Rebound Tag+2) |
+| UNH  |   419,00 | 24 |   401,57  | +4,34 %  | -0,41 %   |   369,44     | +13,41 %    | SICHER (verschlechtert vs Fr-Close +13,79 %, **Worst chg heute** XLV-Konsolidierung) |
+| AAPL |   335,44 | 31 |   316,86  | +5,86 %  | +0,73 %   |   291,51     | +15,07 %    | SICHER (verbessert vs Fr-Close +14,30 %, XLK stabil nach XLK-Rebound Fr) |
+| JPM  |   357,75 | 3  |   332,78  | +7,51 %  | +1,29 %   |   306,16     | **+16,85 %** | SICHER (verbessert vs Fr-Close +15,37 %, **Best chg heute** XLF-Rebound Fortsetzung, RSI 71,68 näher am 80-Watch aber weit unter) |
+
+**V1-V6-Vollcheck Market Open 6 SICHER:**
+- V1 (Stop -8 %) — 6 SICHER, min GS +3,23 % (33,94 $ vom Break, deutlich verbessert vs Fr-Close +1,03 %)
+- V2 (Trailing -12 %) — kein 52w-Hoch relevant, kein Trigger
+- V3 (+20 % TP1) — max +7,51 % JPM << 20 %, kein Trigger
+- V4 (+35 % TP2) — kein Trigger
+- **V5 (EMA50<EMA200) — 6 SICHER** (Alpaca IEX Bars bis 27.07., Golden Cross intakt): V EMA-Diff +2,82 % (**engste** aber verbessert vs Fr-Close +1,76 %, XLF-Rebound + Pre-Earnings-Bid), JPM +7,16 %, AAPL +10,91 %, UNH +11,48 %, LLY +11,59 %, GS +14,11 % — kein Death Cross
+- **V6 (RSI>80 & RS<0) — 6 SICHER**: max **RSI JPM 71,68** (Watch näher am 80-Threshold aber weit unter, verschlechtert vs Fr-Close 68,01), AAPL 66,80, V 61,07, LLY 57,22, GS 54,20, UNH 50,49 — alle << 80
+
+**→ KEINE Sell-/Limit-Order platziert. KEIN Stop ausgelöst. KEINE Order storniert.**
+
+**Kaufsignal-Scan Slot 1/2 KW31 — LEVEL 0 No-Action bei Unsicherheit:**
+
+| Sym | K1 EMA | K2 RSI | K3 RS_63d | K4 Vol | K5 P/E + Growth | chg today | Blackout | Decision |
+|-----|--------|--------|-----------|--------|-----------------|-----------|----------|----------|
+| **EOG** | ✓ +7,49 % | ✓ 61,72 | ✓ +4,25 pp | offen* + Weakness | ✓ 9,98 + 15,63 % | **-1,71 %** Gap-Down | frei | **REJECT LEVEL 0** |
+| GE | ✓ | ✓ ~62 | ✓ +21 pp #1 | ✓ likely | ✗ Median 44,72 (Y 34,72 / Z 45,19 / SA 47,61 / GF 44,72) + RevGr +24,6 % ✓ | **+3,16 %** | frei | **REJECT K5-Median-FAIL** |
+| HON | ✓ | ✓ | ✓ +9,1 pp | offen | ✗ RevGr +2,4 % | +1,33 % | frei | **REJECT K5-FAIL** |
+| F | ✓ | ✓ | ✓ +10,8 pp | offen | ⚠ P/E 9,58 + RevGr +430 %* | +2,40 % | Q2 Di 28.07. AMC | **SKIP Blackout** |
+| D | ✓ | ✓ | ✓ +9,4 pp | offen | ✗ RevGr +7,49 % | -0,19 % (XLU flat) | frei | **REJECT K5-FAIL** |
+| NEE | offen | offen | offen | offen | offen | +0,01 % (XLU flat) | offen | **DROP kein Momentum** |
+| DUK | offen | offen | offen | offen | offen | -0,60 % (XLU neg) | offen | **DROP kein Momentum** |
+| SO / AEP / EXC | offen | offen | offen | offen | offen | -0,13 % / -0,30 % / -0,29 % | offen | **DROP kein Momentum** |
+| UNP | offen | offen | offen | offen | offen | **-1,23 %** (XLI trotz Rebound) | offen | **DROP kein Momentum** |
+| CAT | offen | offen | offen | offen | offen | -0,57 % | offen | **DROP kein Momentum** |
+| DE | ✓ | ✓ | ✓ +1,4 pp | offen | ✗ RevGr +9,6 % | -0,19 % | frei (nächste Earnings 14.08.) | **REJECT K5-FAIL persistent** |
+
+*K4 Session-Vol so früh (09:38, 9/390 Min) nicht belastbar; pro-rata extrapoliert EOG 3.735×43,33 ~161.850 vs avg20 132.445 = ~122 % grenzwertig aber unzuverlässig; K5-Prä-Screen EOG Multi-Source Fr FwdPE 9,98 + RevGr +15,63 % ✓ solide.
+
+**Rationale KEIN Kauf Slot 1/2:**
+- **EOG**: alle 4 klassischen K1-K3+K5-Signale ✓, aber Intraday-Weakness -1,71 % chg + Gap-Down Open -2,08 % + XLE-Sektor -0,90 % kontra Pre-Market Iran/Oil-Bull-Thesis → **Momentum-Quality-Thesis intraday verletzt**, Kauf bei Weakness = "Falling Knife"-Muster. K4 formal offen (Session zu früh), pro-rata Extrapolation grenzwertig 122 % — nicht robust genug für Kauf. **LEVEL 0 "No-Action bei Unsicherheit" + Re-Check Midday 13:00 ET oder Di Pre-Market**.
+- **GE**: Perplexity Multi-Source Recheck **FwdPE Median 44,72** (3 von 4 Sources 44-48 >35-Cap, nur Yahoo 34,72 knapp unter) → strikte Regel-Anwendung analog MMM-Präzedenz REJECT. RS #1 +21 pp wäre stark aber K5 dominiert.
+- **HON/D/DE**: K5-FAIL RevGr <10 %-Cap persistent.
+- **F**: Q2 Earnings Di 28.07. AMC bestätigt → SKIP KW31 (Blackout aktivieren nach Kauf sofort → nicht rechtfertigbar).
+- **XLU-Screener (NEE/DUK/SO/AEP/EXC) alle intraday flat/negativ** → kein Momentum-Signal, K1-K3-Vollcheck nicht sinnvoll ohne Momentum-Basis (Zeitkosten).
+- **XLI-Screener (UNP/CAT/DE) alle intraday negativ** → kein Momentum-Signal, XLI-Rebound Ø +0,94 % dominiert von GE (K5-FAIL) und HON (K5-FAIL).
+
+**→ Slot 1/2 KW31 bleibt OFFEN. Re-Check Midday 13:00 ET (EOG Intraday-Reversal-Potenzial) und/oder Di 28.07. Pre-Market (K4 EOD-Volumen-Verifikation Mo + frische XLU/XLI-Screener-Runde).**
+
+**Sektor-Struktur (kein Trade, live 09:38):**
+
+| Sektor | Positionen | MV Live $ | % Portfolio (97.904) | Status |
+|--------|-----------|-----------|-----------------------|--------|
+| XLV | UNH + LLY | 19.636,64 | 20,06 % | GRÜN <30 % |
+| XLF | GS + JPM + V | 19.459,99 | 19,88 % | GRÜN, 3-Pos-Cap intakt |
+| XLK | AAPL | 10.410,42 | 10,63 % | GRÜN |
+| Cash | — | 48.385,51 | 49,42 % | GRÜN (>20 % Min) |
+
+**Guardrails 8/8 GRÜN + 1 WARN (V-Blackout Tag+1/2 aktiv, kein Aktion nötig):**
+```
+1. Daily Loss Cap (-3 %):     +0,384 %                                            [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 1 +0,387 %                                 [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,161 %                                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,161 %                                            [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,832 %                                        [INAKTIV]
+6. VIX-Filter (>30):          Mo Pre 19-21 (Fr 18,70 +12,4 %)                     [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV Tag+1/2 vor Q3 Di 28.07. AMC (V1_neu 339,32, Puffer +6,27 % sicher) [WARN]
+8. Max Käufe KW31:            0/2 Slot 1/2 + 2/2 offen                            [GRÜN]
+```
+
+**Entscheidung Market Open 09:38 Mo 27.07.:**
+- **KEIN Kauf** (Slot 1/2 offen, EOG deferred wg Intraday-Weakness + K4-Unsicherheit, GE K5-Median-FAIL, alle Alternativen K5-FAIL/Blackout/kein Momentum)
+- **KEIN Sell/Stop** (6 V1-V6 SICHER, min GS Puffer +3,23 %)
+- **KEINE Limit-Order für Di 28.07.** (kein Kauf-Signal grün)
+- **KEIN ClickUp Critical Alert** (kein Trade, kein Stop)
+- **ClickUp Routine-Log Prio 4** wird gesendet (Owner-Info Slot 1/2 offen)
+- **PushNotification Silence** (Silence-Rule respektiert — kein Trade, alle safe, EOG deferred; kein Owner-Actionable)
+
+**Nächste Routine:** Mo 27.07. 13:00 ET Midday Stop-Check — **GS V1 1.050,40 Puffer +3,23 % ENGSTE Rebound-Fortsetzung Watch**, V Blackout letzter HT vor Q3 Di 28.07. AMC (nur Info), **EOG Intraday-Reversal-Watch für Slot 1/2 potenzielles Nachmittag-Kauf-Fenster** (K4 gegen EOD besser bewertbar), JPM RSI 71,68 Watch (näher am 80-Threshold).
 
 ---
 
