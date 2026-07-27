@@ -1,6 +1,83 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-27 09:38 ET (**Market Open KW31 Tag 1**, Equity Live 97.903,67 $, Cash 48.385,51 = 49,42 %, Daily +0,384 %, Weekly KW31 Tag 1 +0,387 %, Alpha vs SPY -0,448 pp (Cash-Puffer-Dämpfung), DD -2,161 %, 6 V1-V6 SICHER min GS +3,23 %, V-Blackout Tag+1/2 vor Q3 Di 28.07. AMC Puffer +6,27 %, Käufe KW31 0/2 (Slot 1/2 offen), **KEIN Kauf**: EOG intraday -1,71 % + K4 formal offen + XLE-Sektor -0,90 % REJECT LEVEL 0, GE K5-Multi-Source-Median 44,72 >35-Cap REJECT, HON/D K5-FAIL, F Blackout SKIP, XLU/XLI-Screener alle intraday flat/negativ)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-27 13:07 ET (**Midday KW31 Tag 1 — GS V1 STOP_LOSS AUSGELÖST**, Sell 8 Sh @ 1.040,25 realisierter Verlust -811,95 $ (-8,89 %), Equity 97.629,71 $, Cash 56.707,51 = 58,08 %, Daily +0,103 %, Weekly KW31 Tag 1 +0,105 %, Alpha vs SPY +0,446 pp POSITIV (Sell vor weiterem XLF-Drop), DD -2,435 %, 5 V1-V6 SICHER min V-Blackout +6,88 %, Käufe KW31 0/2 (Slot 1/2 offen, Slot 2/2 offen), ClickUp Critical Alert ITEM_246 Fehler → PushNotification Fallback)
+
+---
+
+## Midday 2026-07-27 13:07 ET (Mo, KW31 Tag 1) — 🔴 GS V1-STOP_LOSS ausgelöst @ 1.040,25 $, 5 verbleibende Positionen V1-V4 SICHER
+
+```
+Alpaca clock:      is_open=true | now Mo 27.07. 13:07 ET | next_close Mo 27.07. 16:00 ET
+Equity Live:       97.629,71 $   (Alpaca /v2/account post-Sell)
+Cash:              56.707,51 $   (58,08 %, +8.322,00 GS-Sell-Erlös vs Open 48.385,51)
+Portfolio MV Live: 40.922,20 $   (41,92 %, 5 Positionen, -8.595,96 vs Open 49.518,16)
+Buying_power:     341.412,21 $   (Paper-Margin)
+Daily P/L Live:      +100,13 $   (+0,103 % vs Alpaca last_equity 97.529,58)         [GRÜN, Cap -3 %]
+SPY Live 13:07:     736,37        (vs Fr Close 738,90 = -0,343 %)                    [Crash-Filter INAKTIV]
+Alpha vs SPY:      +0,446 pp     POSITIV (GS-Sell vor weiterem XLF-Drop + Cash-Puffer)
+ATH:              100.066,47 $   DD -2,435 % [GRÜN — Alarm bei -15 %]
+Weekly KW31 Tag 1:  +0,105 %      (vs Fr Close 97.526,60, +103,11 $)                 [GRÜN, Cap -5 %]
+Käufe KW31:            0/2       (Slot 1/2 offen, Slot 2/2 offen — Re-Check EOD Mo/Di Pre-Market)
+Open Orders:           0          (KEINE offene Order nach GS-Sell)
+Guardrails:        8/8 GRÜN + 1 WARN (V-Blackout Tag+1/2 letzter HT vor Q3 Di 28.07. AMC)
+```
+
+**🔴 GS V1-STOP_LOSS-Execution (Alpaca Order 944ad09f-8857-4715-87a8-c9095db7d682):**
+- Kaufkurs: 1.141,74 $ (Kauf 2026-07-15)
+- V1-Stop: 1.050,40 $ (Kaufkurs × 0,92)
+- Trigger: Aktueller Kurs 1.040,57 $ (Midday 13:06 ET Alpaca /trades/latest) < V1 1.050,40 = **-9,83 $ unter Break**
+- Market-Sell platziert: 13:07:25 ET, gefüllt 13:07:26 ET (Fill in **1 sec**)
+- Fill-Preis: 1.040,25 $ × 8 Sh = Erlös **8.322,00 $**
+- Realisierter Verlust: **-811,95 $ (-8,89 %)** vs cost_basis 9.133,95
+- Muster: **GS Fill-Day+7 Rebound-Tag+1-Reversal** (Open chg +2,18 % / 1.084,34 → Midday -1,90 % / 1.040,57, Intraday-Reversal -3,84 pp)
+
+**Positionen Live 13:07 ET POST-SELL (5 verbleibend, sortiert Puffer ENG→WEIT):**
+
+| Sym  | Cur Live  | Qty | Entry     | P/L %    | chg_today | V1-Stop      | V1-Puffer   | Status |
+|------|-----------|-----|-----------|----------|-----------|--------------|-------------|--------|
+| V    |   362,68  | 27  |   357,18  | +1,54 %  | +1,95 %   | **339,32** 🟡BLACKOUT | **+6,88 %** | SICHER **ENGSTE** verbessert vs Open +6,27 %, XLF-Rebound-Fortsetzung + Pre-Earnings-Bid |
+| LLY  | 1.198,85  | 8   | 1.193,89  | +0,42 %  | +0,24 %   | 1.098,38     | +9,15 %     | SICHER (verbessert vs Open +9,03 %) |
+| UNH  |   419,25  | 24  |   401,57  | +4,40 %  | -0,35 %   |   369,44     | +13,47 %    | SICHER (verbessert marginal vs Open +13,41 %) |
+| AAPL |   336,05  | 31  |   316,86  | +6,06 %  | +0,91 %   |   291,51     | +15,25 %    | SICHER (verbessert vs Open +15,07 %) |
+| JPM  |   353,16  | 3   |   332,78  | +6,12 %  | -0,01 %   |   306,16     | +15,35 %    | SICHER (verschlechtert vs Open +16,85 %, JPM Give-back vs Open) |
+
+**V1-V4-Vollcheck Midday 5 SICHER:**
+- V1 (Stop -8 %) — 5 SICHER, min V +6,88 % (Blackout V1_neu 339,32; Puffer 23,36 $ vom Break)
+- V2 (Trailing -12 %) — kein 52w-Hoch relevant, kein Trigger
+- V3 (+20 % TP1) — max +6,12 % JPM << 20 %, kein Trigger
+- V4 (+35 % TP2) — kein Trigger
+- V5/V6 NICHT geprüft (Midday-Regel, nur bei Market Open & Close)
+
+**Guardrails 8/8 GRÜN + 1 WARN (V-Blackout Tag+1/2 aktiv):**
+```
+1. Daily Loss Cap (-3 %):     +0,103 % (post-Sell, GS-Verlust bereits eingepreist)  [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 1 +0,105 %                                   [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,435 %                                              [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,435 %                                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,343 %                                          [INAKTIV]
+6. VIX-Filter (>30):          carry-over Mo 19-21                                   [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV Tag+1/2 vor Q3 Di 28.07. AMC (V1_neu 339,32, Puffer +6,88 %) [WARN]
+8. Max Käufe KW31:            0/2 Slot 1/2 + 2/2 offen                              [GRÜN]
+```
+
+**Sektor-Struktur POST-GS-SELL:**
+
+| Sektor | Positionen | MV Live $ | % Portfolio (97.630) | Status |
+|--------|-----------|-----------|-----------------------|--------|
+| XLV | UNH + LLY | 19.652,80 | 20,13 % | GRÜN <30 % |
+| XLF | JPM + V (GS raus) | 10.851,85 | 11,12 % | GRÜN, 2-Pos statt 3 |
+| XLK | AAPL | 10.417,55 | 10,67 % | GRÜN |
+| Cash | — | 56.707,51 | 58,08 % | GRÜN (>20 % Min, deutlich erhöht +8,66 pp) |
+
+**Entscheidung Midday 13:07 Mo 27.07.:**
+- **🔴 GS Market-Sell ausgeführt** (V1 1.050,40 verletzt bei Live-Kurs 1.040,57, Fill 1.040,25 in 1 sec)
+- **KEIN weiterer Sell/Stop** (5 verbleibende V1-V4 SICHER)
+- **KEINE Order storniert** (keine offene Limit-Order vorher)
+- **Daily Loss Cap NICHT ausgelöst** (+0,103 %, GS-Verlust bereits eingepreist da unrealized_pl vorher bereits in equity)
+- **ClickUp Critical Alert STOP_LOSS Prio 1** → ERR ITEM_246 (persistent bekannter Fehler) → **PushNotification Fallback ausgeführt**
+- **Slot 1/2 KW31 bleibt OFFEN** (kein Kauf-Signal grün, Re-Check EOD Mo 16:00 ET oder Di 28.07. Pre-Market)
+
+**Nächste Routine:** Mo 27.07. 16:00 ET Market Close — **EOD-Screener zwingend** (EOG Intraday-Reversal-Watch, K4 EOD-Volumen-Verifikation für EOG/GE-Reject bestätigen, frische XLU/XLI-Runde), V-Blackout Tag+2/2 letzter HT vor Q3 Di 28.07. AMC nur Info (Puffer +6,88 % sicher), V5/V6-Vollcheck alle 5 zwingend.
 
 ---
 
