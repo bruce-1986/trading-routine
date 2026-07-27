@@ -4,6 +4,80 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-07-27 (Mo, KW31 Tag 1) — Alle 8 Guardrails GRÜN + 1 WARN (V-Blackout Tag+1/2 vor Q3 Di 28.07. AMC), SPY Pre +0,81 %, VIX leicht hoch 19-21 aber <25, EOG-Hauptkandidat + XLU/XLI-Screener Market Open
+
+**Alpaca Clock:** is_open=false, next_open Mo 27.07. 09:30 ET.
+
+**Alpaca /v2/account Pre-Market 08:37 ET:**
+- portfolio_value: **97.886,97 $** (vs last_equity 97.529,58 = **+357,39 $ / +0,366 % Pre-Drift**) [GRÜN, Cap -3 %]
+- cash: 48.385,51 $ (49,43 %, unverändert vs Fr Close)
+- MV live: 49.501,46 $ (6 Positionen, +360,37 $ vs Fr Close 49.141,09)
+- buying_power: 332.146,14 $ (Paper-Margin)
+- status: ACTIVE, trading_blocked=False, account_blocked=False
+- ATH: 100.066,47 $ | DD **-2,178 %** [GRÜN — Alarm bei -15 %]
+- **Konsistenz Alpaca vs portfolio.md:** ✓ (Fr Close 97.526,60 → Alpaca last_equity 97.529,58, Delta +2,98 $ Rundungsdrift, alle 6 Positionen mit exakter Qty/Entry deckungsgleich)
+
+**Marktdaten Pre-Market Alpaca IEX:**
+- **SPY Pre 744,90** (Alpaca last trade 08:31 ET) vs Fr Close 738,90 = **+0,812 %** [Crash-Filter INAKTIV]
+- **QQQ Pre 693,78** (Alpaca last trade 08:10 ET)
+- **VXX Pre 22,32** (Fr Close carry, kein Pre-Trade)
+- **VIX Perplexity Multi-Source:** Fr Close ~18,70 (+12,4 % chg Fr) → Mo Pre **19-21 Range** (Investing.com Snapshot 19,31 [6] / MarketWatch 20,95 [4]) → **Anstieg vs Fr um +0,6 bis +2,3 pp aber weit <25** [GRÜN, volle 10 %-Pos-Size erlaubt]
+- **US 10Y Treasury:** Perplexity liefert ~4,27 % (indikativ, kein sauberer Zeitstempel) [neutral, kein Katalysator]
+- **Alpha vs SPY Pre-Drift:** +0,366 % Depot vs SPY +0,812 % = **-0,446 pp NEGATIV Pre-Drift** (Cash-Puffer 49,43 % dämpft Rebound-Beta gegenüber Breit-Markt-Anstieg)
+
+**Makro-Ereignisse heute (Mo 27.07.):**
+- Perplexity findet KEINE spezifischen Fed/CPI/PCE/NFP-Releases für 27.07.2026 (Kalender-Datenlücke). Typisches Mo-Muster: Dallas Fed Manufacturing möglich, Fed-Speaker sekundär. **Kein primärer Katalysator identifiziert.**
+- **Top-Themen seit Fr Close:** (1) Oil-Preise >$100 (Brent), Middle East Tensions → **Energy-Rotation weiter aktiv** ✓ EOG-Priorität; (2) AI-Spending-Sorgen trotz Q2-Earnings-Beats (Semiconductor-Selloff-Fortsetzung); (3) Rate-Erwartungen leicht neu justiert.
+
+**V1-V6-Vollcheck Pre-Market 6 SICHER (sortiert eng→weit):**
+
+| Sym  | Pre 08:37 | Qty | V1        | V1-Puffer     | chg vs Fr Close | Status |
+|------|-----------|-----|-----------|---------------|-----------------|--------|
+| **GS**   | 1.079,05  | 8   | 1.050,40  | **+2,73 %**   | **+1,68 %** ENGSTE VERBESSERT | SICHER Fill-Day+7 Rebound, +1,70 pp vs Close +1,03 % |
+| V    |   359,99  | 27  | **339,32** 🟡BLACKOUT | +6,09 %     | +1,19 %        | SICHER V-Blackout Tag+1/2 vor Q3 Di 28.07. AMC 5:00 PM ET [1][2] |
+| LLY  | 1.199,89  | 8   | 1.098,38  | +9,24 %       | +0,32 %        | SICHER XLV-Rebound Tag+3 |
+| UNH  |   421,80  | 24  |   369,44  | +14,17 %      | +0,34 %        | SICHER XLV-Rebound |
+| AAPL |   334,29  | 31  |   291,51  | +14,68 %      | +0,33 %        | SICHER XLK stabil |
+| JPM  |   356,33  | 3   |   306,16  | **+16,39 %**  | +0,88 %        | SICHER (weiteste), XLF-Rebound Fortsetzung |
+
+**V5/V6 aus Fr-Close-Basis alle 6 SICHER carry-over** (EMA50>EMA200 überall Golden Cross intakt, max RSI JPM 68,01 << 80).
+
+**Earnings-Blackout 3 HT (Perplexity Multi-Source Fenster Mo/Di/Mi):**
+- **V Q3 FY26 Di 28.07. AMC BESTÄTIGT 5:00 PM ET** [Visa IR release 07.07.2026, MarketBeat, Investing.com, MarketScreener] → **V-Blackout AKTIV Tag+1/2 vor Earnings**, V1_neu 339,32 unverändert, Puffer +6,09 % sicher — kein Aktion nötig, keine Sell-Order
+- **UNH/JPM/GS/LLY/AAPL:** kein Q3 CY26 Datum in Perplexity-Sources confirmed (nur estimated Mitte-Oktober), **kein Blackout in nächsten 3 HT**
+- **Watchlist F (Ford) Q2 2026 Di 28.07. AMC BESTÄTIGT 4:05 PM ET** [Ford BusinessWire IR, MarketBeat, Nasdaq] → **F NICHT KAUFBAR KW31 (SKIP)** wie in portfolio.md notiert
+- GE/HON/D/EOG: KEIN Earnings-Release im Fenster 27.-31.07.2026 (GE Q2 bereits 16.07. released) → **KAUFBAR ohne Blackout**
+
+**Watchlist KW31 Slot 1/2 + 2/2 (aus Fr-Close-Screener K1-K3 ✓, K4/K5 zwingend Market Open):**
+1. **EOG** (Energy XLE #1 KW30, K1-K3 3/3 ✓, RSI 67,1 Cap-nah, RS_63d +5,1 pp, K5-Prä-Screen ✓ FwdPE 9,98 + RevGr +15,63 %) — **HAUPTKANDIDAT KW31** (Oil-Rally-Rückenwind ✓)
+2. **GE** (Industrials, K1-K3 3/3, RS_63d +21,0 pp #1) — K5-Recheck Mo Market Open (Fr-Screener FwdPE 47,61 K5-FAIL → prüfen ob Multi-Source-Override)
+3. **HON** (Industrials, K1-K3 3/3, RSI 65,2, RS_63d +9,1 pp) — K5 Fr-Screener FAIL RevGr +2,4 %, DROP
+4. **D** (Utilities, K1-K3 3/3, RSI 59,0, RS_63d +9,4 pp) — K5 Fr-Screener FAIL RevGr +7,49 %, DROP
+5. **F** (Consumer Disc, K1-K3 3/3) — **Blackout Di 28.07. AMC → SKIP KW31**
+- **Zusatz-Screener zwingend Mo Market Open:** frische XLU-Kandidaten (NEE/DUK/SO/AEP/EXC) + XLI (UNP/CAT/DE Re-Check)
+
+**Guardrail-Status 8/8 GRÜN + 1 WARN:**
+```
+1. Daily Loss Cap (-3 %):     Pre-Drift +0,366 %                                    [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 1 startet frisch (+0,462 % vs Fr Close)      [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,178 % vs ATH 100.066,47                            [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,178 %                                              [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Pre +0,812 %                                      [INAKTIV]
+6. VIX-Filter (>30):          Mo Pre 19-21 (Anstieg vs Fr 18,7, aber <25)           [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV V1_neu 339,32 (Puffer +6,09 % sicher)         [WARN]
+8. Max Käufe KW31:            0/2 (Reset heute)                                     [GRÜN]
+```
+
+**Entscheidung Market-Open-Scan:** **JA** — KW31 Slot 1/2 EOG-Priorität (Energy-Rotation-Rückenwind ✓ + K1-K5 alle ✓ Prä-Screen), Slot 2/2 XLU/XLI-Screener frische Runde Mo Market Open zwingend. GE K5-Recheck (FwdPE-Multi-Source), HON/D K5-FAIL bereits konfirmiert DROP, F Blackout SKIP.
+
+**ClickUp Routine-Log Prio 4** wird nach Fertigstellung dieser Routine gesendet.
+
+**PushNotification Prio 4 Owner** — Routine-Zusammenfassung.
+
+**Nächster Check:** Mo 27.07. 09:30 ET Market Open + Kaufsignal-Scan — **EOG K4/K5-Vollcheck + Limit-Order (Slot 1/2)**, GS V1 1.050,40 Puffer +2,73 % Rebound-Fortsetzung Watch, V-Blackout letzter Tag vor Q3 (Di 28.07. AMC) nur Info, XLU/XLI-Frisch-Screener für Slot 2/2.
+
+---
+
 ## Market Close 16:00 ET — 2026-07-24 (Fr, KW30 Tag 5 letzter HT) — Tagesbilanz + Watchlist Mo 27.07.: GE HON F D EOG (K1-K3 ✓)
 
 **Alpaca Clock Close:** is_open=false, next_open Mo 27.07. 09:30 ET.
