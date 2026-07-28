@@ -1,6 +1,96 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-28 08:36 ET (**Pre-Market KW31 Tag 2**, Equity 98.072,46 $ Pre-Drift **+0,472 %** [GRÜN], SPY Pre 739,87 vs Mo Close 738,85 = **+0,138 %** [Crash-Filter INAKTIV], Cash 56.707,49 = 57,82 %, MV Live 41.364,97 = 42,18 %, DD -1,993 % [GRÜN], Weekly KW31 Tag 2 **+0,559 %** [GRÜN], **5 V1-V6 SICHER Pre-Market alle Puffer verbessert**, min V-Blackout +9,04 % ENGSTE, **🔴 AAPL-Blackout NEU AKTIVIERT Q3 FY26 Do 30.07. AMC bestätigt Multi-Source HT-2 heute** V1_neu 301,02 Puffer +12,59 %, V-Blackout Q3 CY26 AMC HEUTE letzter HT, VIX ~16-19 GRÜN <25 volle Pos-Size, Käufe KW31 0/2 Slot 1/2 offen EOG-Rebound-Watch Market Open, **keine Pending-Order**, 8/8 GRÜN + 2 WARN V + AAPL Blackout)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-28 09:38 ET (**Market Open KW31 Tag 2**, Equity Live 98.026,26 $ Daily **+0,424 %** [GRÜN], SPY Live 738,27 vs Mo Close 738,85 = **-0,079 %** [Crash-Filter INAKTIV], Alpha **+0,503 pp POSITIV** Cash-defensiv, Cash 56.707,49 = 57,85 %, MV Live 41.318,77 = 42,15 %, DD -2,039 % [GRÜN], Weekly KW31 Tag 2 **+0,512 %** [GRÜN], **5 V1-V6 SICHER Vollcheck, KEIN Kauf, EOG LEVEL 0 SKIP**, min V-Blackout +7,84 % ENGSTE verschlechtert vs Pre +9,04 % (Post-Open Konsolidierung), **AAPL Blackout HT-2 V1_neu 301,02 Puffer +12,88 %**, V-Blackout Q3 CY26 AMC HEUTE 5:00 PM ET letzter HT, VXX 22,38 GRÜN <25 volle Pos-Size, Käufe KW31 0/2 Slot 1/2 bleibt OFFEN Re-Check Midday/Mi Pre-Market, **keine Pending-Order**, 8/8 GRÜN + 2 WARN V + AAPL Blackout)
+
+---
+
+## Market Open 2026-07-28 09:38 ET (Di, KW31 Tag 2) — KEIN Kauf: EOG K4 formal offen + Rebound +0,74 % zu schwach + Fed Mi 29.07. Unsicherheit → LEVEL 0 No-Action. Alle 5 V1-V6 SICHER, Alpha +0,503 pp POSITIV knapp, Slot 1/2 KW31 OFFEN Re-Check Midday.
+
+```
+Alpaca clock:      is_open=true | 09:38 ET | next_close Di 28.07. 16:00 ET
+Equity Live:       98.026,26 $   (Alpaca /v2/account, Daily +414,05 $ / +0,424 % vs last_equity 97.612,21)
+Cash:              56.707,49 $   (57,85 %, unverändert)
+Portfolio MV Live: 41.318,77 $   (42,15 %, 5 Positionen, -46,20 vs Pre 41.364,97)
+Buying_power:     342.522,52 $   (Paper-Margin)
+Daily P/L:         +414,05 $     (+0,424 %)                                              [GRÜN, Cap -3 %]
+SPY Live 09:38:      738,27       (vs Mo Close 738,85 = -0,079 %)                        [Crash-Filter INAKTIV]
+Alpha vs SPY:       +0,503 pp    POSITIV (Cash-Puffer 57,85 % dämpft aber LLY/AAPL-Rebound-Beta > SPY-Flat)
+VXX Live:            22,38        (VIX-Proxy, vs Mo Close 22,225 = +0,7 %)               [GRÜN <25 volle Pos-Size]
+ATH:              100.066,47 $   DD -2,039 % [GRÜN — Alarm bei -15 %]
+Weekly KW31 Tag 2: +0,512 %       (vs Fr Close 97.526,60, +499,66 $)                     [GRÜN, Cap -5 %]
+Käufe KW31:            0/2       (Slot 1/2 bleibt OFFEN, Slot 2/2 offen)
+Open Orders:           0          (KEINE Pending-Order)
+Guardrails:        8/8 GRÜN + 2 WARN (V-Blackout letzter HT AMC HEUTE + AAPL-Blackout HT-2)
+```
+
+**Positionen Live 09:38 ET (5 Positionen, sortiert Puffer ENG→WEIT):**
+
+| Sym  | Cur      | Qty | Entry     | P/L %    | chg_today | V1-Std      | V1-Blackout   | V1-Puffer  | Blackout-Status |
+|------|----------|-----|-----------|----------|-----------|-------------|---------------|------------|-----------------|
+| V    |  365,93  | 27  |  357,18   | +2,45 %  | +0,94 %   | 328,60      | **339,32 🟡** | **+7,84 %** ENGSTE (verschlechtert vs Pre +9,04 %, Post-Open Give-back von 370,00) | AKTIV letzter HT Q3 CY26 HEUTE AMC 5:00 PM ET |
+| LLY  | 1.218,81 | 8   | 1.193,89  | +2,09 %  | +1,78 %   | 1.098,38    | —             | +10,96 %   verbessert vs Pre +10,41 % XLV-Rebound | inaktiv (Q2 Mi 05.08. BMO, Blackout ab Do 30.07.) |
+| AAPL |  339,79  | 31  |  316,86   | +7,24 %  | +0,86 %   | 291,51      | **301,02 🟡** | **+12,88 %** verbessert vs Pre +12,59 % XLK-Bid | **🔴 AKTIV Q3 FY26 Do 30.07. AMC HT-2 HEUTE** |
+| UNH  |  419,60  | 24  |  401,57   | +4,49 %  | +0,47 %   | 369,44      | —             | +13,58 %   verschlechtert vs Pre +13,85 % XLV-Divergenz | inaktiv (Q3 ~Mitte Okt) |
+| JPM  |  355,48  | 3   |  332,78   | +6,82 %  | -0,20 %   | 306,16      | —             | +16,11 %   verschlechtert vs Pre +17,11 % XLF-Give-back Best P/L | inaktiv (Q3 ~Mitte Okt) |
+
+**V1-V6-Vollcheck Market Open 5 SICHER:**
+- V1 (Stop -8 % / Blackout -5 %) — 5 SICHER, min V-Blackout +7,84 % ENGSTE (verschlechtert vs Pre +9,04 % um -1,20 pp, V-Give-back von Pre-Peak 370 auf Live 365,93 = -1,10 %)
+- V2 (Trailing -12 %) — kein 52w-Hoch relevant, kein Trigger
+- V3 (+20 % TP1) — max JPM +6,82 % << 20 %, kein Trigger
+- V4 (+35 % TP2) — kein Trigger
+- V5 (EMA50<EMA200 Death Cross) — 5 SICHER, aus Mo Close-Bars alle Golden Cross intakt (V EMA-Diff +1,85 % engste aber intakt, keine EOD-Bar heute)
+- V6 (RSI>80 & RS<0) — 5 SICHER, aus Mo Close max RSI JPM 69,94 << 80
+
+**→ KEINE Sell-/Limit-Order platziert. KEIN Stop-Trigger.**
+
+**Kaufsignal-Scan Slot 1/2 KW31 — EOG SKIP LEVEL 0 No-Action:**
+
+| Kriterium | EOG Wert | Cap | Erfüllt |
+|-----------|----------|-----|---------|
+| K1 EMA50>EMA200 | 136,54 / 125,52 diff +8,78 % | > 0 | ✓ |
+| K2 RSI(14) | 54,53 | 50-70 | ✓ |
+| K3 RS_63d vs SPY | +2,54 pp (EOG +6,12 % vs SPY +3,58 %) | > 0 | ✓ |
+| K4 Volumen | Session-Vol 1.302 / avg20 128.200 = 1,02 % bei 8 Min in Session (pro-rata 63.472 = ~49 % avg20 unzuverlässig zu früh) | ≥ 120 % | **✗ formal offen** |
+| K5 FwdPE / RevGr YoY | 9,98 / +15,63 % vorbekannt Mo | ≤ 35 / ≥ 10 % | ✓ |
+
+- **chg today +0,74 %** (Cur 141,36 vs Mo Close 140,32) → milder Rebound, aber NICHT konvinzent stark (Momentum-Bruch -4,14 % Mo nicht überwunden)
+- **XLE-Sektor-Rückenwind heute unklar** (kein Realtime-Sektor-Check erfolgt, Mo XLE -0,90 % war Kontra-Öl-Narrative)
+- **Fed-Meeting Mi 29.07.** schafft zusätzliche Unsicherheit → LEVEL 0 restriktiv
+- **Watchlist-Rest** GE/PSX/HON/DE/D K5-persistent-FAIL, F SKIP Blackout AMC heute, NEE/DUK K3-FAIL — kein Alternativ-Kandidat verfügbar
+
+**→ EOG SKIP: Re-Check Midday 13:00 ET (K4 Volumen EOD-realistisch bewertbar + Intraday-Rebound-Konsolidierung). Slot 1/2 KW31 bleibt OFFEN.**
+
+**Guardrails Market Open 8/8 GRÜN + 2 WARN:**
+```
+1. Daily Loss Cap (-3 %):     Daily +0,424 %                                             [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 2 +0,512 %                                        [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,039 %                                                   [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,039 %                                                   [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,079 %                                               [INAKTIV]
+6. VIX-Filter (>30):          VXX 22,38 (Proxy VIX ~16-19)                               [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV letzter HT + AAPL AKTIV HT-2                       [WARN x2]
+8. Max Käufe KW31:            0/2 (Slot 1/2 + 2/2 offen)                                 [GRÜN]
+```
+
+**Sektor-Struktur unverändert vs Pre-Market:**
+
+| Sektor | Positionen | MV Live $ | % Portfolio (98.026) | Status |
+|--------|-----------|-----------|-----------------------|--------|
+| XLV | UNH + LLY | 19.820,84 | 20,22 % | GRÜN <30 % |
+| XLF | JPM + V | 10.946,55 | 11,17 % | GRÜN |
+| XLK | AAPL | 10.533,49 | 10,74 % | GRÜN |
+| Cash | — | 56.707,49 | 57,85 % | GRÜN (>20 % Min, hoch) |
+
+**Entscheidung Market Open Di 28.07.:**
+- **KEIN Kauf** — EOG K4 formal offen + Rebound zu schwach → LEVEL 0 No-Action
+- **KEINE Sell-/Limit-Order** — alle 5 V1-V6 SICHER
+- **Slot 1/2 KW31 bleibt OFFEN** — Re-Check Midday 13:00 ET für EOG K4 EOD-realistischer Volumen-Bewertung
+- **AAPL Blackout V1_neu 301,02** Info-only, Puffer +12,88 % sicher aktivierbar ohne Alpaca-Order-Änderung
+- **V-Blackout letzter HT** — Post-Earnings-Reaktion Mi 29.07. Pre-Market Watch zwingend
+- **ClickUp Routine-Log Prio 4** wird gesendet
+- **PushNotification Silence** (empty run: kein Trade, alle safe, EOG deferred — Silence-Rule "wenn Run leer kommt, ist Schweigen die freundliche Wahl")
+
+**Nächste Routine:** Di 28.07. 13:00 ET Midday Stop-Check — EOG K4 EOD-realistische Volumen-Bewertung + evtl. Nachmittag-Kauf-Fenster, V-Blackout Post-Earnings-Bid Watch (V ENGSTE Puffer +7,84 %), AAPL Blackout V1_neu 301,02 nur Info.
 
 ---
 
