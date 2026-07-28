@@ -1,6 +1,69 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-28 09:38 ET (**Market Open KW31 Tag 2**, Equity Live 98.026,26 $ Daily **+0,424 %** [GRÜN], SPY Live 738,27 vs Mo Close 738,85 = **-0,079 %** [Crash-Filter INAKTIV], Alpha **+0,503 pp POSITIV** Cash-defensiv, Cash 56.707,49 = 57,85 %, MV Live 41.318,77 = 42,15 %, DD -2,039 % [GRÜN], Weekly KW31 Tag 2 **+0,512 %** [GRÜN], **5 V1-V6 SICHER Vollcheck, KEIN Kauf, EOG LEVEL 0 SKIP**, min V-Blackout +7,84 % ENGSTE verschlechtert vs Pre +9,04 % (Post-Open Konsolidierung), **AAPL Blackout HT-2 V1_neu 301,02 Puffer +12,88 %**, V-Blackout Q3 CY26 AMC HEUTE 5:00 PM ET letzter HT, VXX 22,38 GRÜN <25 volle Pos-Size, Käufe KW31 0/2 Slot 1/2 bleibt OFFEN Re-Check Midday/Mi Pre-Market, **keine Pending-Order**, 8/8 GRÜN + 2 WARN V + AAPL Blackout)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-28 13:09 ET (**Midday Stop-Check KW31 Tag 2**, Equity Live 98.287,09 $ Daily **+0,691 %** [GRÜN], SPY Live 741,73 vs Mo Close 738,85 = **+0,390 %** [Crash-Filter INAKTIV], Alpha **+0,301 pp POSITIV** knapp, Cash 56.707,49 = 57,70 %, MV Live 41.579,60 = 42,30 %, DD -1,778 % [GRÜN], Weekly KW31 Tag 2 **+0,780 %** [GRÜN], **5 V1 SICHER, KEIN Stop-Trigger, kein V3/V4-Trigger**, min V-Blackout **+8,70 % ENGSTE verbessert** vs Market Open +7,84 % (Post-Open Rebound +0,79 % V), **AAPL Blackout HT-2 V1_neu 301,02 Puffer +12,74 %**, Ø P/L **+5,26 %**, Best P/L JPM +7,12 %, Schlechteste LLY +2,27 %, **Daily Loss Cap Check: weit von -3 %, 0 offene Limit-Orders zum Stornieren**, Käufe KW31 0/2 unverändert, **keine Pending-Order**, 8/8 GRÜN + 2 WARN V + AAPL Blackout)
+
+---
+
+## Midday Stop-Check 2026-07-28 13:09 ET (Di, KW31 Tag 2) — Alle 5 V1 SICHER, KEIN Stop-Trigger, KEIN Daily-Cap-Trigger. Puffer alle verbessert vs Market Open (breite Marktstärke SPY +0,39 %, UNH-XLV-Momentum +2,67 % Best chg, V-Blackout Puffer verbessert +7,84 %→+8,70 % Post-Open Bid).
+
+```
+Midday 13:09 [2026-07-28]:
+Positionen: 5/8 | Ø P/L: +5,26 %
+Schlechteste Position: LLY +2,27 %
+Beste Position: JPM +7,12 %
+Stops: alle regulär (5/5 V1 SICHER, keine V3/V4-Trigger)
+Daily P/L: +0,691 % [GRÜN, Cap -3 %]
+```
+
+**Account Live 13:09 ET:**
+```
+Equity Live:       98.287,09 $   (Daily +674,88 $ / +0,691 % vs last_equity 97.612,21)
+Cash:              56.707,49 $   (57,70 %, unverändert)
+Portfolio MV Live: 41.579,60 $   (42,30 %, 5 Pos, +260,83 $ vs Market Open 41.318,77)
+SPY Live 13:09:      741,73       (vs Mo Close 738,85 = +0,390 %)                     [Crash-Filter INAKTIV]
+Alpha vs SPY:       +0,301 pp    POSITIV knapp (Cash-Puffer 57,70 % dämpft, aber UNH/LLY-XLV-Rebound + V-Bid stützen)
+Weekly KW31 Tag 2: +0,780 %       (vs Fr Close 97.526,60, +760,49 $)                  [GRÜN, Cap -5 %]
+DD vs ATH:         -1,778 %       (vs 100.066,47)                                     [GRÜN]
+Open Orders:           0          (nichts zu stornieren)
+Käufe KW31:            0/2       (Slot 1/2 + 2/2 offen, EOG Re-Check EOD/Mi Pre-Market)
+```
+
+**Positionen Live 13:09 ET (5 Positionen, sortiert Puffer ENG→WEIT):**
+
+| Sym  | Cur      | Qty | Entry     | P/L %    | chg_today | V1-Std      | V1-Blackout   | V1-Puffer  | Blackout-Status |
+|------|----------|-----|-----------|----------|-----------|-------------|---------------|------------|-----------------|
+| V    |  368,83  | 27  |  357,18   | +3,26 %  | +1,72 %   | 328,60      | **339,32 🟡** | **+8,70 %** ENGSTE (verbessert vs MO +7,84 % um +0,86 pp, Post-Open Bid Rebound) | AKTIV letzter HT Q3 CY26 HEUTE AMC 5:00 PM ET |
+| LLY  | 1.220,96 | 8   | 1.193,89  | +2,27 %  | +1,93 %   | 1.098,38    | —             | +11,16 %   verbessert vs MO +10,96 % XLV-Fortsetzung | inaktiv (Q2 Mi 05.08. BMO, Blackout ab Do 30.07.) |
+| AAPL |  339,38  | 31  |  316,86   | +7,11 %  | +0,66 %   | 291,51      | **301,02 🟡** | **+12,74 %** marginal verschlechtert vs MO +12,88 % (AAPL -0,12 % vs MO Give-back) | **🔴 AKTIV Q3 FY26 Do 30.07. AMC HT-2 HEUTE** |
+| UNH  |  427,92  | 24  |  401,57   | +6,56 %  | +2,67 %   | 369,44      | —             | +15,83 %   verbessert vs MO +13,58 % **Best chg XLV-Momentum** | inaktiv (Q3 ~Mitte Okt) |
+| JPM  |  356,49  | 3   |  332,78   | +7,12 %  | +0,20 %   | 306,16      | —             | +16,44 %   verbessert vs MO +16,11 % Best P/L | inaktiv (Q3 ~Mitte Okt) |
+
+**V1/V2/V3/V4-Check Midday:**
+- V1 (Stop -8 % / Blackout -5 %) — 5 SICHER, min V-Blackout **+8,70 % ENGSTE verbessert vs MO +7,84 %** um +0,86 pp (V chg +1,72 % Post-Open Bid, Blackout-Puffer stabil)
+- V2 (Trailing -12 %) — kein 52w-Hoch relevant, kein Trigger
+- V3 (+20 % TP1) — max JPM +7,12 % / AAPL +7,11 % << 20 %, kein Trigger
+- V4 (+35 % TP2) — kein Trigger
+- V5/V6 werden bei Midday NICHT geprüft (Routine-Regel, nur Market Open & Close)
+
+**Daily Loss Cap Check:**
+- Daily +0,691 % [weit von -3 %-Cap, GRÜN]
+- Keine Limit-Orders zum Stornieren (0 offene Orders)
+
+**Guardrails Midday 8/8 GRÜN + 2 WARN:**
+```
+1. Daily Loss Cap (-3 %):     Daily +0,691 %                                             [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 2 +0,780 %                                        [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,778 %                                                   [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,778 %                                                   [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,390 %                                               [INAKTIV]
+6. VIX-Filter (>30):          VXX ~22 (Proxy VIX ~16-19)                                 [GRÜN <25]
+7. Earnings-Blackout (3 HT):  V AKTIV letzter HT + AAPL AKTIV HT-2                       [WARN x2]
+8. Max Käufe KW31:            0/2 (Slot 1/2 + 2/2 offen)                                 [GRÜN]
+```
+
+**→ KEIN Stop, KEIN Daily-Cap-Trigger, KEIN ClickUp Alert (Routine-Spec: nur bei Stops/Cap), KEIN PushNotification (empty run — Silence-Rule respektiert).**
+
+Nächster Check: **Di 28.07. 16:00 ET Market Close** — V Q3 CY26 AMC HEUTE 5:00 PM ET (Blackout Post-Earnings-Reaktion morgen relevant), AAPL Blackout HT-2 (Do 30.07. AMC), V5/V6-Vollcheck alle 5 zwingend, EOD-Screener für Slot 1/2 EOG K4-EOD-Volumen-Verifikation + evtl. weitere Kandidaten.
 
 ---
 
