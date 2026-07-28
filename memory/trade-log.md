@@ -6,13 +6,13 @@
 
 ## Offene Positionen
 
-| Symbol | Kaufdatum  | Kaufkurs    | Pre 28.07. 08:35 ET    | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
+| Symbol | Kaufdatum  | Kaufkurs    | Close 28.07. 16:00 ET  | Gewinn/Verlust        | Stop-Loss       | TP1         | TP2         | Signale         |
 |--------|------------|-------------|------------------------|-----------------------|-----------------|-------------|-------------|-----------------|
-| UNH    | 2026-06-18 | 401,57 $    | 419,60 $               | +432,72 $ (+4,49 %)   | 369,44 $        | 481,88 $    | 542,12 $    | V1-V6 SICHER (Puffer +13,58 % verschlechtert vs Pre +13,85 % XLV-Divergenz) |
-| JPM    | 2026-06-17 | 332,78 $    | 355,48 $               | +68,10 $ (+6,82 %)    | 306,16 $        | 399,34 $    | 449,25 $    | V1-V6 SICHER **Best P/L** (Puffer +16,11 % verschlechtert vs Pre +17,11 % XLF-Give-back) |
-| AAPL   | 2026-07-13 | 316,86 $    | 339,79 $               | +710,94 $ (+7,24 %)   | **301,02 $ 🟡BLACKOUT** (Standard 291,51) | 380,23 $    | 427,76 $    | V1-V6 SICHER (Puffer +12,88 % vs Blackout-V1_neu verbessert vs Pre +12,59 % XLK-Bid, **🔴 Q3 FY26 Do 30.07. AMC 5:00 PM ET AKTIV HT-2 HEUTE**) |
-| LLY    | 2026-07-06 | 1.193,89 $  | 1.218,81 $             | +199,34 $ (+2,09 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (Puffer +10,96 % verbessert vs Pre +10,41 % XLV-Rebound. **Q2 CY26 Mi 05.08. BMO bestätigt — Blackout aktivierbar ab Do 30.07. HT-3**) |
-| V      | 2026-07-20 | 357,18 $    | 365,93 $               | +236,31 $ (+2,45 %)   | **339,32 $ 🟡BLACKOUT** (Standard 328,60) | 428,62 $    | 482,20 $    | V1-V6 SICHER **ENGSTE** (Puffer +7,84 % vs Blackout-V1_neu verschlechtert vs Pre +9,04 % Post-Open Give-back von Pre-Peak 370 auf 365,93, **Q3 CY26 Di 28.07. AMC HEUTE 5:00 PM ET — Blackout letzter Tag**) |
+| UNH    | 2026-06-18 | 401,57 $    | 425,44 $               | +572,88 $ (+5,94 %)   | 369,44 $        | 481,88 $    | 542,12 $    | V1-V6 SICHER (Puffer +15,16 % XLV-Momentum, chg_today +1,868 %; V5 EMA50 404,92>EMA200 343,39 ✓, V6 RSI 56,32 / RS +2,19 pp) |
+| JPM    | 2026-06-17 | 332,78 $    | 357,35 $               | +73,71 $ (+7,38 %)    | 306,16 $        | 399,34 $    | 449,25 $    | V1-V6 SICHER **Best P/L tied AAPL** (Puffer +16,72 % Best-Puffer, chg_today +0,323 %; V5 EMA50 329,20>EMA200 309,71 ✓, V6 **RSI 71,00 max WATCH <80** / RS +8,99 pp) |
+| AAPL   | 2026-07-13 | 316,86 $    | 340,234 $              | +724,69 $ (+7,38 %)   | **301,02 $ 🟡BLACKOUT HT-1** (Standard 291,51) | 380,23 $    | 427,76 $    | V1-V6 SICHER **Best P/L tied JPM** (Puffer +13,03 % vs Blackout-V1_neu, chg_today +0,986 %; V5 EMA50 307,70>EMA200 277,53 ✓, V6 RSI 69,19 / RS +20,71 pp. **🔴 Q3 FY26 Do 30.07. AMC AKTIV HT-1 morgen**) |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.222,608 $            | +229,76 $ (+2,41 %)   | 1.098,38 $      | 1.432,66 $  | 1.611,75 $  | V1-V6 SICHER (Puffer +11,31 % XLV-Rebound **Best chg +2,094 %**; V5 EMA50 1.133,84>EMA200 1.017,57 ✓, V6 RSI 61,78 / **RS -0,58 pp knapp neg** aber RSI <<80. Q2 CY26 Mi 05.08. BMO — Blackout ab Do 30.07. HT-3) |
+| V      | 2026-07-20 | 357,18 $    | 367,748 $              | +285,40 $ (+2,96 %)   | **339,32 $ 🟡BLACKOUT letzter HT** (Standard 328,60) | 428,62 $    | 482,20 $    | V1-V6 SICHER **ENGSTE +8,38 %** vs Blackout-V1_neu (chg_today +1,439 % Post-Earnings-Bid; V5 EMA50 341,72>EMA200 330,48 ✓ engster Spread +11,24, V6 RSI 65,34 / RS +7,36 pp. **Q3 CY26 Di 28.07. AMC HEUTE ~17:00 ET — Post-Earnings-Watch Mi Pre-Market 08:30 ET zwingend**) |
 
 **Gesamt investiert Live:** 41.318,77 $ (Market Open 28.07. 09:38 ET, 5 Positionen) | **Cash:** 56.707,49 $ (57,85 %) | **Positionen:** 5/8 | **Käufe KW31:** 0/2 (Slot 1/2 bleibt OFFEN Re-Check Midday, Slot 2/2 offen) | **Pending Order:** KEINE
 

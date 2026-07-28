@@ -4,6 +4,80 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-07-28 (Di, KW31 Tag 2) — Tagesbilanz +0,651 % [GRÜN], Alpha +0,388 pp POSITIV, V5/V6-Vollcheck alle 5 SICHER, KEINE Pending-Order, Watchlist morgen: EOG carry-over + PANW/GH/ILMN/ICLR.
+
+**Alpaca /v2/account Market Close 16:00 ET:**
+- equity: **98.247,40 $** (Daily +635,19 $ / **+0,651 %** vs last_equity 97.612,21) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (57,72 %, unverändert)
+- MV: 41.539,91 $ (5 Positionen, -39,69 $ vs Midday 41.579,60)
+- Weekly KW31 Tag 2: **+0,739 %** (vs Fr Close 97.526,60, +720,80 $) [GRÜN, Cap -5 %]
+- DD vs ATH: **-1,818 %** [GRÜN, Alarm bei -15 %]
+- Open Orders: KEINE
+
+**SPY Close 740,795** (Alpaca IEX 1D-Bar vs Mo Close 738,85 = **+0,263 %**) [Crash-Filter INAKTIV]
+**Alpha: +0,388 pp POSITIV** (Portfolio +0,651 % > SPY +0,263 %; LLY +2,09 % XLV-Rebound + UNH +1,87 % + V +1,44 % Post-Earnings-Bid + AAPL +0,99 % + JPM +0,32 % zieht Portfolio hoch trotz 57,72 % Cash-Puffer-Dämpfung)
+
+*Perplexity SPY-Query: 744,78 -0,13 % zeigt Stale-Data-Issue (letzte Datenpunkte in Search-Results zeitlich abweichend), Alpaca IEX 740,795 als primäre Quelle verwendet.*
+
+**Positions-Snapshot Close:**
+
+| Sym  | Cur      | chg_today | P/L %   | V1-Puffer | V5 EMA50>200 | V6 RSI/RS4w |
+|------|----------|-----------|---------|-----------|--------------|-------------|
+| V    |  367,748 | +1,439 %  | +2,96 % | +8,38 % Blackout ENGSTE | 341,72>330,48 ✓ | 65,34 / +7,36 pp |
+| LLY  | 1.222,608| +2,094 %  | +2,41 % | +11,31 %  | 1.133,84>1.017,57 ✓ | 61,78 / -0,58 pp (knapp neg) |
+| AAPL |  340,234 | +0,986 %  | +7,38 % | +13,03 % Blackout | 307,70>277,53 ✓ | 69,19 / +20,71 pp |
+| UNH  |  425,44  | +1,868 %  | +5,94 % | +15,16 %  | 404,92>343,39 ✓ | 56,32 / +2,19 pp |
+| JPM  |  357,35  | +0,323 %  | +7,38 % | +16,72 %  | 329,20>309,71 ✓ | 71,00 / +8,99 pp |
+
+Ø P/L +5,21 %, Best AAPL/JPM +7,38 %, Worst LLY +2,41 %.
+
+**V5/V6-Vollcheck (Alpaca IEX 200d-Historie, Wilder-RSI):**
+- V5 (EMA50<EMA200 Death Cross): alle 5 SICHER, engster Spread V +11,24 (V EMA50 341,72 > EMA200 330,48). **Kein Trigger.**
+- V6 (RSI>80 UND RS4w<0): kein Trigger. Max RSI JPM 71,00 (<80). Einziger RS4w<0 = LLY -0,58 pp knapp, aber RSI 61,78 << 80. V6 verlangt BEIDES.
+- **→ KEINE V5/V6-Sell-Limit-Order für Mi 29.07. platziert.**
+
+**Weekly Loss Cap Check:**
+- Weekly +0,739 % (Portfolio 98.247,40 vs Fr 97.526,60 = +720,80 $) [GRÜN, weit von -5 %-Cap]
+- Keine Aktion, keine Order-Stornierung, kein WEEKLY_CAP-Alert.
+
+**Watchlist Mi 29.07. — Kandidaten für Slot 1/2 KW31 (K4/K5 vollständig bei Market Open):**
+
+| Symbol | Sektor | Grund | K1-K3 Status | Nächste Earnings |
+|--------|--------|-------|--------------|------------------|
+| EOG    | XLE Energy | Carry-over aus heute — K1-K3 ✓ pre-verifiziert (EMA50 136,54>EMA200 125,52 +8,78 %, RSI 54,53, RS_63d +2,54 pp). K4 EOD zu verifizieren, Fed-Uncertainty-Watch | ✓✓✓ | ~Anfang August (Q2 FY26, zu prüfen) |
+| PANW   | XLK Software | Perplexity Momentum-Scanner Top-Rank, +125,60 % 3M | K1-K3 zu verifizieren Mi Open | zu verifizieren |
+| GH     | XLV Health Care Non-Pharma | Perplexity #1 Momentum, +66,30 % 3M | K1-K3 zu verifizieren | zu verifizieren |
+| ILMN   | XLV Health Care Non-Pharma | +50,52 % 3M composite momentum score | K1-K3 zu verifizieren | zu verifizieren |
+| ICLR   | XLV Health Care Non-Pharma | +58,97 % 3M scanner rank | K1-K3 zu verifizieren | zu verifizieren |
+
+**Constraint-Check Watchlist:**
+- **XLV-Sektor-Cap 30 %** — aktuell UNH 10,4 % + LLY 9,96 % = 20,3 %. GH/ILMN/ICLR wären 3. XLV-Position + Cap-Check bei Fill nötig (Fill-Wert würde XLV auf ~30-31 % pushen — GRENZWERTIG, K5-Sektor-Prio muss dann filtern).
+- **PANW** würde 1. XLK-Position (nach MU-Verkauf 07.07. leer) → XLK-Diversifikation ✓
+- **EOG** wäre 1. XLE-Position → XLE-Diversifikation ✓ (aktuell keine Energy-Exposure)
+- **Fed-Meeting Mi 29.07.**: FOMC-Statement 14:00 ET + Powell-Pressekonferenz 14:30 ET → **LEVEL 0 restriktiv default** vor Event-Volatilität. Kauf ggf. Do 30.07. nach Fed-Reaktion; Market Open Mi 29.07. voraussichtlich EXPLICIT NO-BUY analog GS Fill-Day+7-Präzedenz.
+
+**V-Post-Earnings-Reaktion Watch Mi 29.07. Pre-Market 08:30 ET zwingend:**
+- V berichtete heute AMC ~17:00 ET (Q3 CY26 letzter HT)
+- Alpaca Close-Snapshot 16:00 ET (equity 98.247,40) enthält Post-Earnings-Bewegung NICHT
+- Pre-Market-Kurs Mi 29.07. zeigt Post-Earnings-Reaktion; Break unter Blackout 339,32 (-7,7 % vom Close 367,748) → V1-Blackout-Sell Market-Order sofort
+- Bei starkem Post-Earnings-Rally (>+3 %) → RSI-Watch für V6 (aktuell 65,34), aber V6 verlangt RS<0 → wahrscheinlich weiter SICHER
+
+**AAPL Blackout HT-1 aktiv ab Mi 29.07. Open** (Q3 FY26 Do 30.07. AMC):
+- V1_neu 301,02 (statt Std 291,51), Close-Puffer +13,03 %
+- Bei starkem Pre-Market-Drop (<-4 %) → Break-Watch aktivieren
+
+**Entscheidung Market Close Di 28.07.:**
+- **KEINE Sell-Order** — alle 5 V1-V6 SICHER
+- **KEINE Kauf-Order** — Market Close-Routine nur für Tagesbilanz + Watchlist
+- **Watchlist aktiviert** für Mi 29.07. Pre-Market 08:30 ET Erst-Screening
+- **Fed-Meeting-Warnung** für Mi 29.07. dokumentiert
+- **ClickUp Tagesbericht Prio 4** (positive Performance) — CLICKUP_LIST_ID Standard-Liste
+- **PushNotification** — JA (Watchlist neu + V-Post-Earnings-Watch + Fed-Meeting-Reminder Owner-relevant für Mi Pre-Market)
+
+**Nächste Routine:** Mi 29.07. 08:30 ET Pre-Market — V-Post-Earnings-Reaktion + AAPL Blackout HT-1 + EOG-Rebound-Watch + Watchlist K1-K3 Erst-Screening + Fed-Meeting-Vorbereitung.
+
+---
+
 ## Market Open 09:38 ET — 2026-07-28 (Di, KW31 Tag 2) — KEIN Kauf: EOG SKIP LEVEL 0 (K4 formal offen bei 8 Min Session, chg +0,74 % Rebound zu schwach, Fed Mi 29.07. Unsicherheit). 5 V1-V6 SICHER, Alpha +0,503 pp POSITIV, Slot 1/2 OFFEN Re-Check Midday.
 
 **Alpaca Clock:** is_open=true, 09:38 ET, next_close Di 28.07. 16:00 ET.
