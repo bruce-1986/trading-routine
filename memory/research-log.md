@@ -4,6 +4,82 @@
 
 ---
 
+## Market Open 09:38 ET — 2026-07-28 (Di, KW31 Tag 2) — KEIN Kauf: EOG SKIP LEVEL 0 (K4 formal offen bei 8 Min Session, chg +0,74 % Rebound zu schwach, Fed Mi 29.07. Unsicherheit). 5 V1-V6 SICHER, Alpha +0,503 pp POSITIV, Slot 1/2 OFFEN Re-Check Midday.
+
+**Alpaca Clock:** is_open=true, 09:38 ET, next_close Di 28.07. 16:00 ET.
+
+**Alpaca /v2/account Market Open 09:38 ET:**
+- portfolio_value: **98.026,26 $** (Daily **+0,424 %** vs last_equity 97.612,21, +414,05 $) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (57,85 %, unverändert)
+- MV Live: 41.318,77 $ (5 Positionen, -46,20 $ vs Pre 41.364,97)
+- Buying_power: 342.522,52 $ (Paper-Margin)
+- ATH 100.066,47 | DD **-2,039 %** [GRÜN, Alarm bei -15 %]
+- Weekly KW31 Tag 2 **+0,512 %** (vs Fr Close 97.526,60, +499,66 $) [GRÜN, Cap -5 %]
+- Trading_blocked: false | Open Orders: **KEINE**
+
+**Marktdaten Market Open (Alpaca IEX):**
+- **SPY Live 09:38 738,27** vs Mo Close 738,85 = **-0,079 %** effektiv flat [Crash-Filter INAKTIV]
+- **Alpha vs SPY: +0,503 pp POSITIV** (Portfolio +0,424 % vs SPY -0,079 %; LLY +1,78 % XLV-Rebound Best chg + AAPL +0,86 % XLK-Bid + V +0,94 % + UNH +0,47 % > JPM -0,20 % Give-back — Cash-Puffer 57,85 % dämpft, aber Position-Beta liefert positives Alpha bei SPY-Flat)
+- **VXX Live 22,38** (VIX-Proxy, vs Mo Close 22,225 = +0,7 % marginal Vol-Tick) [GRÜN <25 volle Pos-Size]
+
+**V1-V6-Vollcheck Market Open 5 SICHER (Alpaca Cur Prices 09:38 ET):**
+
+| Sym  | Cur      | Qty | Entry     | P/L %    | chg_today | V1-Standard | V1-Blackout  | V1-Puffer      | Blackout-Status |
+|------|----------|-----|-----------|----------|-----------|-------------|--------------|----------------|-----------------|
+| V    |  365,93  | 27  |  357,18   | +2,45 %  | +0,94 %   | 328,60      | **339,32 🟡** | **+7,84 %** ENGSTE verschlechtert vs Pre +9,04 % (Post-Open Give-back von Pre-Peak 370,00) | AKTIV letzter HT Q3 CY26 HEUTE AMC 5:00 PM ET |
+| LLY  | 1.218,81 | 8   | 1.193,89  | +2,09 %  | +1,78 %   | 1.098,38    | —            | +10,96 %       verbessert vs Pre +10,41 % XLV-Rebound Best chg | inaktiv (Q2 Mi 05.08. BMO, Blackout ab Do 30.07.) |
+| AAPL |  339,79  | 31  |  316,86   | +7,24 %  | +0,86 %   | 291,51      | **301,02 🟡** | **+12,88 %**   verbessert vs Pre +12,59 % XLK-Bid | **AKTIV Q3 FY26 Do 30.07. AMC HT-2 HEUTE** |
+| UNH  |  419,60  | 24  |  401,57   | +4,49 %  | +0,47 %   | 369,44      | —            | +13,58 %       verschlechtert vs Pre +13,85 % XLV-Divergenz | inaktiv (Q3 ~Mitte Okt) |
+| JPM  |  355,48  | 3   |  332,78   | +6,82 %  | -0,20 %   | 306,16      | —            | +16,11 %       verschlechtert vs Pre +17,11 % **Best P/L** XLF-Give-back Worst chg | inaktiv (Q3 ~Mitte Okt) |
+
+**V1-Puffer Übersicht (eng→weit):** V +7,84 % Blackout **ENGSTE** | LLY +10,96 % | AAPL +12,88 % Blackout | UNH +13,58 % | JPM +16,11 %
+
+**V3/V4-Check:** max P/L JPM +6,82 % / AAPL +7,24 % << 20 %-TP1, kein Trigger.
+**V5-Check:** aus Mo Close-Bars Golden Cross alle intakt (V EMA-Diff +1,85 % engste aber intakt, keine EOD-Bar heute).
+**V6-Check:** aus Mo Close max RSI JPM 69,94 << 80.
+**→ KEINE Sell-/Limit-Order platziert.**
+
+**Kaufsignal-Scan EOG Slot 1/2 KW31 — SKIP LEVEL 0 No-Action:**
+
+| Kriterium | EOG Wert | Cap | Erfüllt |
+|-----------|----------|-----|---------|
+| K1 EMA50>EMA200 | 136,54 / 125,52 diff +8,78 % | > 0 | ✓ |
+| K2 RSI(14) | 54,53 (aus Mo Close-Bars) | 50-70 | ✓ |
+| K3 RS_63d vs SPY | +2,54 pp (EOG +6,12 % vs SPY +3,58 %) | > 0 | ✓ |
+| K4 Volumen | Session 1.302 / avg20 128.200 = 1,02 % bei 8 Min Session-Zeit. Pro-rata Extrapolation 63.472 = ~49 % avg20 UNZUVERLÄSSIG zu früh | ≥ 120 % | **✗ formal offen** |
+| K5 FwdPE / RevGr YoY | 9,98 / +15,63 % vorbekannt Mo Multi-Source | ≤ 35 / ≥ 10 % | ✓ |
+
+- **EOG chg today +0,74 %** (Cur 141,36 vs Mo Close 140,32) → milder Rebound, aber Mo Momentum-Bruch -4,14 % NICHT überwunden. Kauf bei Half-Rebound = kein klares Momentum-Signal, Momentum-Quality-Thesis verletzt
+- **Fed-Meeting Mi 29.07.** → zusätzliche 24h-Volatilität-Unsicherheit vor primärem Katalysator, LEVEL 0 restriktiv analog GS Fill-Day+7-Präzedenz (Kauf vor Event-Volatilität = zusätzliches Risiko)
+- **Watchlist-Rest** GE/PSX/HON/DE/D K5-persistent-FAIL, F SKIP Blackout AMC heute, NEE/DUK K3-FAIL — kein Alternativ-Kandidat verfügbar
+
+**→ EOG SKIP: Re-Check Midday 13:00 ET (K4 EOD-realistisch bewertbar + Intraday-Rebound-Konsolidierung), evtl. Nachmittag-Kauf-Fenster wenn Rebound klar bestätigt + K4 ≥ 120 % avg20. Slot 1/2 KW31 bleibt OFFEN.**
+
+**Guardrails Market Open 8/8 GRÜN + 2 WARN:**
+```
+1. Daily Loss Cap (-3 %):     Daily +0,424 %                                             [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 2 +0,512 %                                        [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,039 %                                                   [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,039 %                                                   [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,079 %                                               [INAKTIV]
+6. VIX-Filter (>30):          VXX 22,38 (Proxy VIX ~16-19)                               [GRÜN <25]
+7. Earnings-Blackout (3 HT):  **V AKTIV letzter HT + AAPL AKTIV HT-2**                   [WARN x2]
+8. Max Käufe KW31:            0/2 (Slot 1/2 + 2/2 offen)                                 [GRÜN]
+```
+
+**Entscheidung Market Open Di 28.07.:**
+- **KEIN Kauf** — EOG K4 formal offen + Rebound zu schwach → LEVEL 0 No-Action
+- **KEINE Sell-/Limit-Order** — alle 5 V1-V6 SICHER
+- **Slot 1/2 KW31 bleibt OFFEN** — Re-Check Midday 13:00 ET zwingend
+- **AAPL Blackout V1_neu 301,02** Info-only, Puffer +12,88 % sicher aktivierbar
+- **V-Blackout letzter HT** — Post-Earnings-Reaktion Mi 29.07. Pre-Market Watch zwingend
+- **ClickUp Routine-Log Prio 4** wird gesendet
+- **PushNotification Silence** (empty run: kein Trade, alle safe, EOG deferred, Silence-Rule respektiert)
+
+**Nächste Routine:** Di 28.07. 13:00 ET Midday Stop-Check — EOG K4 EOD-realistisch bewertbar + Intraday-Rebound-Konsolidierung, V-Blackout Post-Earnings-Bid Watch (ENGSTE Puffer +7,84 %), AAPL Blackout V1_neu 301,02 Info-only, Fed-Meeting Mi 29.07. Vorbereitung.
+
+---
+
 ## Pre-Market 08:36 ET — 2026-07-28 (Di, KW31 Tag 2) — 🔴 AAPL-Blackout NEU AKTIVIERT (Q3 FY26 Do 30.07. AMC bestätigt Multi-Source, HT-2 vor Earnings, Memory-Fehler von Fr 24.07. korrigiert), V-Blackout Q3 CY26 AMC HEUTE 5:00 PM ET letzter Tag. 5 V1-V6 SICHER Pre-Drift +0,472 %, Slot 1/2 KW31 offen — EOG Rebound-Watch Market Open zwingend.
 
 **Alpaca Clock:** is_open=false, 08:36 ET, next_open Di 28.07. 09:30 ET.
