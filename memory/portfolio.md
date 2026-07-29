@@ -1,6 +1,103 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-29 08:36 ET (**Pre-Market KW31 Tag 3**, Equity Pre **98.019,76 $** Daily **-0,261 %** [GRÜN vs last_equity 98.276,07], SPY Pre 740,63 vs Di Close 740,795 = **-0,022 %** flat [Crash-Filter INAKTIV], **VIX ~16-17 GRÜN <25 volle Pos-Size**, Cash 56.707,49 = 57,85 %, MV 41.312,27 = 42,15 %, DD **-2,045 %** [GRÜN], Weekly KW31 Tag 3 **+0,506 %** [GRÜN weit von -5 %-Cap], **5 V1 SICHER**, min V-Blackout **+5,86 % ENGSTE Post-Earnings-Give-back** (V chg -2,013 % vs Di Close 367,748, verschlechtert vs Di Close-Puffer +8,38 % um -2,52 pp, aber weiterhin sicher), **AAPL Blackout HT-1 heute aktiv V1_neu 301,02 Puffer +12,65 %**, Ø P/L **+4,75 %**, Best P/L JPM +7,44 %, Schlechteste V +0,57 %, Käufe KW31 0/2 unverändert, **KEINE Pending-Order**, 8/8 GRÜN + 3 WARN (V-Post-Earnings + AAPL-Blackout HT-1 + Fed-Meeting-Vol), **Fed-Meeting HEUTE 14:00 ET FOMC + 14:30 ET Powell → LEVEL 0 restriktiv default**, Watchlist Market Open: **EOG carry-over + PANW/GH/ILMN/ICLR K1-K5 vollständig**)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-29 09:38 ET (**Market Open KW31 Tag 3**, Equity Live **98.283,04 $** Daily **+0,007 %** [GRÜN vs last_equity 98.276,07], SPY Live 739,78 vs Di Close 740,795 = **-0,137 %** leicht neg [Crash-Filter INAKTIV], **VIX ~16-17 GRÜN <25 volle Pos-Size** (VXX 22,38), Cash 56.707,49 = 57,70 %, MV 41.575,55 = 42,30 %, DD **-1,782 %** [GRÜN, verbessert vs Pre -2,045 %], Weekly KW31 Tag 3 **+0,776 %** [GRÜN weit von -5 %-Cap], **5 V1 SICHER**, min V-Blackout **+7,87 % ENGSTE Post-Earnings-Recovery** (V chg -0,170 % vs Di Close, verbessert vs Pre +5,86 % um +2,01 pp durch Post-Open-Bid), **AAPL Blackout HT-1 heute aktiv V1_neu 301,02 Puffer +13,25 %**, Ø P/L **+5,32 %** (verbessert vs Pre +4,75 %), Best P/L **AAPL +7,60 % überholt JPM +7,19 %**, Käufe KW31 0/2 unverändert, **KEINE Pending-Order**, 8/8 GRÜN + 3 WARN (V-Post-Earnings + AAPL-Blackout HT-1 + Fed-Meeting-Vol 14:00 ET), **Fed-Meeting HEUTE 14:00 ET FOMC + 14:30 ET Powell → LEVEL 0 restriktiv, Kandidaten-Scan LEVEL 0 SKIP: PANW/GH K2-RSI-FAIL, EOG/ILMN K4-FAIL, ICLR K5 unverifiziert**, **Slot 1/2 KW31 bleibt OFFEN — Re-Check Midday oder Post-Fed >15:30 ET**)
+
+---
+
+## Market Open 2026-07-29 09:38 ET (Mi, KW31 Tag 3) — 🟢 KEIN Kauf ausgeführt (LEVEL 0 SKIP wegen Fed 14:00 ET), 5 V1-V6 SICHER, V Post-Earnings-Recovery +2,01 pp Puffer, Portfolio +0,007 % flat, AAPL überholt JPM als Best P/L.
+
+```
+Market Open 09:38 [2026-07-29]:
+Gesamtwert:     98.283,04 $  (Alpaca /v2/account Live)
+Cash:           56.707,49 $  (57,70 %)
+Investiert:     41.575,55 $  (42,30 %, 5 Positionen, +263,28 $ vs Pre 41.312,27)
+P/L Daily:      +6,97 $      (+0,007 % vs last_equity 98.276,07) [GRÜN, Cap -3 %]
+ATH:            100.066,47 $
+Drawdown:       -1,782 %     [GRÜN, verbessert vs Pre -2,045 %]
+Guardrails:     Daily +0,007 % | Weekly +0,776 % | Käufe KW31 0/2
+```
+
+**Account Market Open 09:38 ET (Alpaca /v2/account):**
+```
+equity:            98.283,04 $   (Daily +0,007 % vs last_equity 98.276,07)
+Cash:              56.707,49 $   (57,70 %, unverändert)
+Portfolio MV:      41.575,55 $   (42,30 %, 5 Positionen, +263,28 $ vs Pre = Post-Open-Bid +0,637 %)
+Buying_power:     343.241,49 $   (Paper-Margin)
+SPY Live:             739,78     (Alpaca IEX Trade 09:38 ET vs Di Close 740,795 = -0,137 %) [Crash-Filter INAKTIV]
+Alpha vs SPY:      +0,144 pp     (Daily +0,007 % vs SPY -0,137 %, XLV/XLK-Bid + Cash-Puffer)
+VIX ~16-17         (VXX 22,38 Alpaca IEX stabil) [GRÜN <25 volle Pos-Size]
+Weekly KW31 Tag 3: +0,776 %      (vs Fr Close 97.526,60, +756,44 $)                    [GRÜN, Cap -5 %]
+DD vs ATH:         -1,782 %      (vs 100.066,47, verbessert vs Pre -2,045 %)           [GRÜN]
+Open Orders:           0          (KEINE Pending-Order, kein Sell-, kein Kauf-Limit)
+Käufe KW31:            0/2       (Slot 1/2 bleibt OFFEN + 2/2 offen)
+```
+
+**Positionen Market Open 09:38 ET (5 Positionen, sortiert Puffer ENG→WEIT):**
+
+| Sym  | Cur      | Qty | Entry     | P/L %    | chg_today | V1-Std   | V1-Blackout    | V1-Puffer  | Blackout-Status |
+|------|----------|-----|-----------|----------|-----------|----------|----------------|------------|-----------------|
+| V    |  365,965 | 27  |  357,178  | +2,46 %  | -0,170 %  | 328,60   | **339,32 🟡** | **+7,87 %** ENGSTE **Post-Earnings-Recovery** verbessert vs Pre +5,86 % um +2,01 pp | Blackout Post-Earnings-Watch (V berichtete Di 28.07. AMC ~17:00 ET) |
+| LLY  | 1218,41  | 8   | 1193,89   | +2,05 %  | -0,197 %  | 1.098,38 | —              | +10,93 %   marginal verschlechtert vs Pre +11,09 % | inaktiv (Q2 Mi 05.08. BMO, Blackout ab Do 30.07.) |
+| AAPL |  340,92  | 31  |  316,857  | **+7,60 %** Best P/L | +0,100 %  | 291,51   | **301,02 🟡** | **+13,25 %** verbessert vs Pre +12,65 % | **🔴 AKTIV HT-1 Q3 FY26 Do 30.07. AMC** |
+| UNH  |  430,54  | 24  |  401,57   | +7,21 %  | **+0,320 %** Best chg | 369,44   | —              | +16,54 %   verbessert vs Pre +15,79 % | inaktiv (Q3 ~Mitte Okt) |
+| JPM  |  356,71  | 3   |  332,78   | +7,19 %  | -0,119 %  | 306,16   | —              | +16,51 %   marginal verschlechtert vs Pre +16,78 % | inaktiv (Q3 ~Mitte Okt) |
+
+**V1-Puffer Übersicht (eng→weit):** V **+7,87 % ENGSTE** Post-Earnings-Recovery (verbessert +2,01 pp vs Pre) | LLY +10,93 % | AAPL +13,25 % Blackout HT-1 | UNH +16,54 % | JPM +16,51 %
+
+**V1-V6-Vollcheck Market Open 5 SICHER:**
+- V1 (Stop -8 % / Blackout -5 %) — 5 SICHER, min V-Blackout **+7,87 % ENGSTE Post-Earnings-Recovery** (Cur 365,965 vs Di Close 367,748 = -0,49 %, Puffer verbessert vs Pre +5,86 % um +2,01 pp durch Post-Open-Bid). Break unter 339,32 (-7,25 % vs Cur) triggert V1-Blackout-Market-Sell sofort.
+- V2 (Trailing -12 %) — kein 52w-Hoch-Trigger, kein Update
+- V3 (+20 % TP1) — max AAPL +7,60 % / JPM +7,19 % << 20 %, kein Trigger
+- V4 (+35 % TP2) — kein Trigger
+- V5/V6 aus Di Close-Bars alle 5 SICHER (Vollcheck Di 16:00 ET, Golden Cross alle intakt, max RSI JPM 71,00 << 80 → V6 nicht ausgelöst)
+
+**Daily Loss Cap Check:**
+- Daily +0,007 % [weit von -3 %-Cap, GRÜN]
+- 0 offene Orders (keine Cap-Aktivierung)
+
+**Weekly Loss Cap Check (KW31 Tag 3):**
+- Weekly +0,776 % (vs Fr Close 97.526,60, +756,44 $) [GRÜN, weit von -5 %-Cap]
+
+**Guardrails Market Open 8/8 GRÜN + 3 WARN:**
+```
+1. Daily Loss Cap (-3 %):     Daily +0,007 %                                             [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 3 +0,776 %                                        [GRÜN]
+3. Drawdown-Alarm (-15 %):    -1,782 %                                                   [GRÜN]
+4. Drawdown-Stopp (-20 %):    -1,782 %                                                   [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY -0,137 %                                               [INAKTIV]
+6. VIX-Filter (>30):          VIX ~16-17 (VXX 22,38)                                     [GRÜN <25 volle Pos-Size]
+7. Earnings-Blackout (3 HT):  V Post-Earnings-Watch + AAPL HT-1 + LLY ab Do HT-3         [WARN x3]
+8. Max Käufe KW31:            0/2 (Slot 1/2 bleibt OFFEN + 2/2 offen)                    [GRÜN]
+
+FED-WARN: Fed-Meeting HEUTE 14:00 ET FOMC + 14:30 ET Powell → LEVEL 0 restriktiv Vol-Peak 14:00-15:30 ET
+```
+
+**Kaufsignal-Scan Slot 1/2 KW31 — LEVEL 0 SKIP alle 5 Kandidaten:**
+
+| Sym  | K1 EMA-Diff | K2 RSI  | K3 RS_63d | K4 Vol Di | K5 | chg_today | Verdict |
+|------|-------------|---------|-----------|-----------|-----|-----------|---------|
+| EOG  | +7,71 % ✓   | 53,24 ✓ | +1,75 pp ✓ | 108 % ✗   | ✓ (FwdPE 9,98 + RevGr +15,63 %) | +3,27 % Gap-Up | **LEVEL 0 SKIP Fed** (K4 heute in 8 Min nicht bewertbar, Fed 14:00 ET vor Kauf) |
+| PANW | +30,36 % ✓  | **48,40 ✗** | +70,53 pp ✓ #1 | 124 % ✓ | offen | +0,61 % | **REJECT K2-FAIL** (<50) |
+| GH   | +30,18 % ✓  | **45,13 ✗** | +58,18 pp ✓ | **70 % ✗** | offen | -1,39 % | **REJECT K2+K4-FAIL** |
+| ILMN | +22,14 % ✓  | 58,96 ✓ | +46,32 pp ✓ | **94 % ✗** | unverifiziert | +1,89 % | **REJECT K4-FAIL**, Recheck Do Pre |
+| ICLR | +4,91 % ✓ (engster) | 67,85 ✓ (nah 70) | +70,89 pp ✓ #2 | 196 % ✓ ★ | **unverifiziert** | +6,72 % (Vortag) → +0,31 % heute Post-Momentum-Digest | **LEVEL 0 SKIP** (K5-Recheck wg. Fed-SKIP nicht wirtschaftlich, Do Pre-Market Post-Fed) |
+
+**XLV-Sektor-Cap-Grenzwertig:** aktuell 20,42 % (UNH+LLY), 3. XLV-Position (GH/ILMN/ICLR) würde Cap ~30 % pushen → EOG/PANW Diversifikationsvorteil bevorzugt, aber PANW K2-FAIL.
+
+**Sektor-Struktur Live:** XLV 20,42 % (UNH+LLY), XLF 11,14 % (JPM+V), XLK 10,74 % (AAPL), Cash 57,70 %.
+
+**V-Post-Earnings-Recovery Positiv:**
+- V-Kurs 365,965 vs Di Close 367,748 = -0,49 % nur noch marginal Give-back (verbessert vs Pre -2,32 %)
+- Post-Open-Bid +2,01 pp Puffer-Verbesserung → V Post-Earnings-Recovery-Muster
+- V1-Blackout 339,32 sicher, kein Order-Update nötig
+
+**AAPL Blackout HT-1 aktiv heute** (Q3 FY26 Do 30.07. AMC): V1_neu 301,02, Puffer +13,25 % sicher, keine Order-Änderung nötig. Best P/L +7,60 %.
+
+**Fed-Meeting-Verhalten:** LEVEL 0 restriktiv aktiv bis 14:00 ET FOMC. Wahrscheinlichkeit Kauf HEUTE vor Fed gering. **Post-Fed >15:30 ET Re-Evaluation** bei dovish Powell + K1-K5 stark → möglich. Realistischer Kauf-Fenster: **Do 30.07. Pre-Market Post-Fed** wenn Signal-Set frisch prüfbar.
+
+**→ KEIN Stop, KEIN Kauf, KEIN Daily-Cap-Trigger, KEINE Sell-/Kauf-Limit-Order. ClickUp Routine-Log Prio 4 wird gesendet. PushNotification Silence (empty run: kein Trade, alle 5 SICHER, V Post-Earnings-Recovery positiv, Silence-Rule respektiert).**
+
+Nächster Check: **Mi 29.07. 13:00 ET Midday Stop-Check** — V Post-Earnings-Recovery-Fortsetzung Watch (ENGSTE +7,87 %), EOG K4 EOD-realistischer Bewertung, LEVEL 0 restriktiv 60 Min vor Fed 14:00 ET, Post-Fed >15:30 ET Re-Evaluation-Fenster.
 
 ---
 
