@@ -4,6 +4,93 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-07-29 (Mi, KW31 Tag 3, Fed-Day EOD) — Post-FOMC hawkish SPY -1,515 %, Portfolio Alpha +1,204 pp POSITIV, 5 V1-V6 SICHER, Watchlist morgen: JNJ / MRK / ABBV (3 XLV K1-K3 ✓)
+
+**Alpaca Clock:** is_open=false Post-Close 16:00 ET, next_open Do 30.07. 09:30 ET.
+
+**Alpaca /v2/account Market Close 16:00 ET:**
+- portfolio_value: **97.970,67 $** (Daily **-0,311 %** vs last_equity 98.276,07, -305,40 $) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (57,88 %, unverändert)
+- MV Close: 41.263,18 $ (5 Positionen, -312,37 $ vs Open 41.575,55)
+- Buying_power: 342.366,85 $
+- ATH 100.066,47 | DD **-2,094 %** [GRÜN]
+- Weekly KW31 Tag 3 **+0,455 %** (vs Fr Close 97.526,60, +444,07 $) [GRÜN, weit von Cap -5 %]
+- Open Orders: **KEINE**
+
+**Marktdaten Close (Alpaca IEX + Perplexity):**
+- **SPY Close 729,57** (Alpaca IEX Daily Bar) vs Di Close 740,795 = **-1,515 %** Post-FOMC hawkish-Sell-off [Crash-Filter INAKTIV]
+  - Perplexity Cross-Check widersprüchlich: Sonar zitiert "744,78 +0,78 %" aus veralteten Investing.com/etf.com-Snapshots (verschiedene Datumsangaben), Alpaca IEX-Bar-Close 729,57 authoritative (Bar timestamp 2026-07-29T04:00:00Z = Tages-EOD)
+- **VXX Close 23,44** (VIX-Proxy ~17-18, leichter Vola-Anstieg vs Midday 22,63 durch Post-Fed-Reaktion) [GRÜN <25]
+
+**V1-V6-Vollcheck Market Close (aus heute EOD-Bars):**
+
+| Sym  | Cur      | Qty | Entry     | P/L %    | chg_today | V1-Puffer    | V5 (EMA50/200) | V6 (RSI/RS-4w) |
+|------|----------|-----|-----------|----------|-----------|--------------|----------------|-----------------|
+| LLY  | 1.212,47 | 8   | 1.193,89  | +1,56 %  | -0,671 %  | **+9,41 % ENGSTE** | 1.137,11>1.016,80 ✓ | RSI 58,9 / RS +3,25 pp ✓ |
+| V    |  368,73  | 27  |  357,178  | +3,23 %  | **+0,584 % Best chg** Post-Earnings-Bid | +10,89 % | 342,87>334,50 ✓ engster Spread +2,50 % | RSI 66,8 / RS +10,03 pp ✓ **Close bei 52w-Hoch 369,12** |
+| AAPL |  337,99  | 31  |  316,857  | **+6,67 %** Best P/L | -0,615 %  | +10,94 % vs Blackout | 308,93>279,15 ✓ | RSI 67,2 / RS +19,23 pp ✓ **HT-0 morgen Q3 FY26** |
+| JPM  |  347,39  | 3   |  332,78   | +4,39 %  | **-2,776 % Worst chg** XLF Post-FOMC | +11,87 % | 330,57>314,96 ✓ | RSI 55,3 / RS +7,72 pp ✓ |
+| UNH  |  420,57  | 24  |  401,57   | +4,73 %  | -1,917 % XLV-Sell-off | +12,16 % | 406,18>354,79 ✓ | RSI 50,8 / RS +3,55 pp ✓ |
+
+**5 SICHER — kein V1-V6-Trigger, keine Sell-Order für morgen.**
+
+**Post-FOMC Marktreaktion (Alpaca-Kursbewegung inferred):**
+- SPY -1,515 % — hawkish-Interpretation der Fed-Entscheidung (Konsens erwartete HOLD, aber Powell-Pressekonferenz-Sprache offenbar restriktiver als erhofft)
+- Sektor-Verlierer: XLF (Banks) getroffen — JPM chg -2,776 % Worst chg; XLV moderat -1,5 %-Bereich — UNH chg -1,917 %, LLY chg -0,671 %; XLK gemischt AAPL chg -0,615 %
+- Sektor-Gewinner: V chg **+0,584 % Best chg** Post-Earnings-Bid Fortsetzung (Zahlungsverkehr defensiv)
+- VXX +0,81 vs Midday (22,63 → 23,44) — Vol-Response moderat, kein VIX-Spike
+
+**Watchlist Do 30.07. Pre-Market (K1-K3 EOD-Bar Pre-Check — K4/K5 zwingend Multi-Source Market Open):**
+
+**Watchlist morgen: JNJ (XLV, RS +14,14pp), MRK (XLV, RS +16,05pp), ABBV (XLV, RS +30,94pp #1)**
+
+| Ticker | Sektor | Close   | K1 (EMA50>200) | K2 (RSI 50-70) | K3 (RS_63d vs SPY) | K5-Prep (K4/K5 morgen prüfen) |
+|--------|--------|---------|----------------|----------------|--------------------|-------------------------------|
+| JNJ    | XLV    | 265,67  | 247,96>225,01 ✓ | RSI 63,6 ✓ | RS **+14,14 pp** ✓ | Pharma-Konzern Global, K5 FwdPE + RevGr TBD |
+| MRK    | XLV    | 130,40  | 123,29>110,32 ✓ | RSI 59,3 ✓ | RS **+16,05 pp** ✓ | Pharma Onko-Focus (Keytruda), K5 FwdPE + RevGr TBD |
+| ABBV   | XLV    | 263,62  | 240,31>227,86 ✓ | RSI 67,8 ✓ **nah 70-Cap Watch** | RS **+30,94 pp #1 Top-Rank** ✓ | Pharma (Humira/Skyrizi/Rinvoq), K5 FwdPE + RevGr TBD |
+
+**Alternative Sektor-Kandidaten (K1-K3-FAIL EOD, kein Kandidat):**
+- MSFT (XLK) c=391,00 K1 FAIL (EMA50 394,32 < EMA200 435,49) + K3 FAIL (-11,46 pp) → SKIP
+- NVDA (XLK) c=190,10 K2 FAIL (RSI 38,1) + K3 FAIL (-13,33 pp) → SKIP
+- AVGO (XLK) c=370,33 K2 FAIL (RSI 43,5) + K3 FAIL (-9,89 pp) → SKIP
+- GOOGL (XLK) c=336,49 K2 FAIL (RSI 43,5) + K3 FAIL (-6,31 pp) → SKIP
+- META (XLK) c=587,39 K1 FAIL + K2 FAIL + K3 FAIL → SKIP
+- CRM (Software) K1 FAIL → SKIP; LMT (Defense) K1 FAIL → SKIP; NOW (Software) K1 FAIL → SKIP; INTU K1 FAIL → SKIP
+- KLAC (Semi) K2+K3 FAIL → SKIP; ANET (Netzwerk) K2+K3 FAIL → SKIP; GE (Industrials) K2 FAIL (RSI 49,4) → SKIP
+- WMT/COST (Konsum) K3 FAIL → SKIP; PG K1+K2+K3 FAIL → SKIP; ORCL K1+K2+K3 FAIL → SKIP
+
+**XLV-Sektor-Cap-Warnung Watchlist:**
+- Aktuell XLV 20,20 % (UNH 10,30 % + LLY 9,90 %)
+- 3. XLV-Position pusht Sektor-Cap auf ~30 % (Grenze max 30 %)
+- **Max 1 der 3 Kandidaten kaufbar** — bevorzugt ABBV (RS-Prio #1) oder Alternative bei Sektor-Diversifikationswunsch nächste Woche
+- Bei 3. XLV: Sektor-Cap-Verletzungs-Watch aktiv, kein 4. XLV mehr möglich
+
+**Earnings-Kalender Do 30.07. (Wall Street Horizon carry-over):**
+- **AAPL Q3 FY26 Do 30.07. AMC ~5:00 PM ET** (HT-0 morgen, Post-Earnings-Reaktion Fr 31.07. Watch)
+- AMZN Q2 CY26 Do 30.07. AMC (nicht im Portfolio, aber SPY-Vol-Impact)
+- INTC Q2 CY26 Do 30.07. AMC (nicht im Portfolio)
+- **Do 30.07. 08:30 ET GDP Q2 Advance Estimate + Core PCE Q2** (Makro Vol-Risiko Pre-Market)
+
+**Fed-Meeting Ergebnis (inferred aus SPY -1,515 % Reaktion):**
+- Konsens erwartete HOLD unverändert
+- SPY-Reaktion suggeriert hawkish-Interpretation Powell-Sprache
+- Zinssenkungs-Timing-Signale wohl weiter nach hinten geschoben
+- Cash-Position 57,88 % erweist sich als defensiv gerecht
+
+**Entscheidung Market Close Mi 29.07.:**
+- **KEIN Stop ausgelöst** (5 V1-V6 SICHER)
+- **KEINE Sell-/Limit-Order** für morgen
+- **KEIN Kauf** (Slot 1/2 bleibt OFFEN)
+- **KEIN ClickUp Critical-Alert** (keine Stops, keine Cap-Verletzung, Weekly +0,455 % GRÜN)
+- **ClickUp Prio 3 Tagesbericht** (Daily neg im Rahmen, kein DAILY_CAP)
+- **PushNotification Silence** (empty run: negativer Tag im Rahmen mit POSITIVEM Alpha, kein Trade, kein Stop → Silence-Rule)
+- **Slot 1/2 KW31 bleibt OFFEN** — Do 30.07. Pre-Market K4/K5-Vollprüfung Watchlist (max 1 XLV kaufbar wg. Sektor-Cap)
+
+**Nächste Routine:** Do 30.07. 08:30 ET Pre-Market — Post-FOMC-Konsolidierung, GDP+PCE 08:30 ET (Makro-Watch), AAPL HT-0 Q3 AMC-Countdown, JNJ/MRK/ABBV K4/K5-Multi-Source-Verifikation (Perplexity + Alpaca-Vol), LLY Blackout ab Do 30.07. HT-3 aktivierbar V1_neu 1.134,20 (nur Info), V Post-Earnings-Bid-Fortsetzung Watch (Close bei 52w-Hoch).
+
+---
+
 ## Pre-Market 08:36 ET — 2026-07-29 (Mi, KW31 Tag 3) — 🟡 V Post-Earnings Give-back ~-2,0 % (Puffer +5,86 % ENGSTE Blackout, SICHER aber verschlechtert vs Di Close +8,38 %). AAPL Blackout HT-1 (Do 30.07. AMC). Fed-Meeting HEUTE 14:00 ET FOMC + 14:30 ET Powell → LEVEL 0 restriktiv default. 5 V1-V6 SICHER, Slot 1/2 offen — Kaufsignal-Scan bei Market Open erlaubt aber vor 14:00 ET zwingend, VIX <25 volle Pos-Size möglich.
 
 **Alpaca Clock:** is_open=false, 08:36 ET, next_open Mi 29.07. 09:30 ET.
