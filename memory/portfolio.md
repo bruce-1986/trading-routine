@@ -1,6 +1,65 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-30 09:37 ET (**Market Open KW31 Tag 4**, Equity Live **97.306,66 $** vs Mi Close 97.970,67 = **-0,678 %** [GRÜN, Cap -3 %], SPY Live 735,41 vs Mi Close 729,57 = **+0,801 % Post-FOMC-Recovery bestätigt** [Crash-Filter INAKTIV], VIX ~15,8 aus Pre-Read [GRÜN <25], Cash 56.707,49 = 58,28 %, MV Live 40.599,17 = 41,72 %, DD **-2,758 %** [GRÜN, verschlechtert vs Pre -2,488 %], Weekly KW31 Tag 4 **-0,225 %** [GRÜN weit von -5 %-Cap], Alpha vs SPY **-1,479 pp NEGATIV** (XLV-Sektor-Sell-off dämpft), **5 V1-V6 SICHER — kein Stop-Trigger**, min **LLY +7,36 % ENGSTE vs Std** (chg -2,745 % Worst chg, P/L -1,23 % Worst P/L verschlechtert), **AAPL Blackout HT-0 HEUTE Q3 FY26 AMC ~5:00 PM ET V1_neu 301,02 Puffer +10,44 %**, V +11,20 %, UNH +12,07 %, JPM **+13,05 % Best chg -0,320 %** XLF-Post-FOMC-Recovery, Ø P/L **+2,63 %** (verschlechtert vs Pre +3,20 %), Best P/L **AAPL +4,92 %**, Worst P/L **LLY -1,23 %**, Käufe KW31 0/2 unverändert, **KEINE Pending-Order**, 8/8 GRÜN + 1 WARN (AAPL Blackout HT-0), **Kaufsignal-Scan LEVEL 0 SKIP alle 3 XLV-Kandidaten** (JNJ -2,34 % / MRK -1,69 % / ABBV -3,02 % Gap-Down bei Open vs SPY +0,801 % → Momentum-Quality-Thesis verletzt, K5 nicht verifiziert), **XLV-Sektor-Sell-off breit Post-FOMC** (UNH+LLY+JNJ+MRK+ABBV alle rot), **ClickUp Prio 4 Routine-Log ERR ITEM_246 persistent (Memory-Fallback per Skill), PushNotification Silence (empty run: kein Trade, alle safe, LEVEL 0 SKIP korrekt begründet, LLY Puffer +7,36 % sicher)**, **LLY Blackout Aktivierung Fr 31.07. HT-3 (heute HT-4 noch inaktiv, V1_neu 1.134,20 = +4,55 % dann)**)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-30 13:06 ET (**Midday Stop-Check KW31 Tag 4**, Equity Live **97.407,12 $** vs Mi Close 97.970,67 = **-0,575 %** [GRÜN, Cap -3 %, verbessert vs Open -0,678 %], SPY Live 739,915 vs Mi Close 729,57 = **+1,418 % Post-FOMC-Recovery fortgesetzt** [Crash-Filter INAKTIV], Cash 56.707,49 = 58,22 %, MV Live 40.699,63 = 41,78 %, DD **-2,657 %** [GRÜN, verbessert vs Open -2,758 %], Weekly KW31 Tag 4 **-0,123 %** [GRÜN weit von -5 %-Cap, verbessert vs Open -0,225 %], Alpha vs SPY **-1,993 pp NEGATIV** (LLY XLV-Sell-off weiter dominant), **5 V1 SICHER — kein Stop-Trigger**, min **LLY +5,80 % ENGSTE vs Std verschlechtert vs Open +7,36 %** (chg **-3,959 % Worst chg**, P/L **-2,66 % Worst P/L weiter verschlechtert**), **AAPL Blackout HT-0 HEUTE Q3 FY26 AMC ~5:00 PM ET V1_neu 301,02 Puffer +10,35 %** (chg -1,777 %), V +10,86 % (chg -1,207 %), UNH +15,22 % (chg **+1,213 %** XLV-Divergenz Recovery), JPM **+14,93 % Best chg +2,077 %** XLF-Post-FOMC-Recovery-Fortsetzung, Ø P/L **+3,18 %** (verbessert vs Open +2,63 % durch UNH+JPM-Rebound), Best P/L **UNH +6,00 %**, Worst P/L **LLY -2,66 %** (weiter verschlechtert vs Open -1,23 %), Käufe KW31 0/2 unverändert, **KEINE Pending-Order** (0 offene Orders), V3/V4 max UNH +6,00 % / JPM +5,74 % / AAPL +4,84 % << 20 % TP1 kein Trigger, V5/V6 bei Midday nicht geprüft (Routine-Regel), 8/8 GRÜN + 1 WARN (AAPL Blackout HT-0 heute AMC), **XLV-Sektor bifurkiert:** UNH Recovery +1,21 % vs LLY Sell-off -3,96 % Fortsetzung, **ClickUp SKIP** (kein Stop / kein Cap → Routine-Regel keine Flut), **PushNotification Silence** (empty run: kein Trade, alle safe, LLY Puffer +5,80 % noch sicher aber Watch, kein Handlungsbedarf), **LLY Blackout Aktivierung Fr 31.07. HT-3 (heute HT-4 noch inaktiv, V1_neu 1.134,20 = -2,49 % dann als virtueller Puffer)**)
+
+---
+
+## Midday 2026-07-30 13:06 ET (Do, KW31 Tag 4) — Post-FOMC-Recovery-Fortsetzung SPY +1,418 %, UNH+JPM-Rebound aber LLY XLV-Sell-off dominant, 5 V1 SICHER (LLY Puffer +5,80 % ENGSTE verschlechtert)
+
+```
+Alpaca clock:      is_open=true | Do 30.07. 13:06 ET | next_close Do 30.07. 16:00 ET
+Equity Live:       97.407,12 $   (Alpaca /v2/account)
+Cash:              56.707,49 $   (58,22 %, unverändert)
+Portfolio MV Live: 40.699,63 $   (41,78 %, 5 Positionen, +100,46 $ vs Open 40.599,17)
+Buying_power:     340.788,92 $   (Paper-Margin)
+Daily P/L Live:    -563,55 $     (-0,575 % vs Mi Close 97.970,67, verbessert vs Open -0,678 %) [GRÜN, Cap -3 %]
+Alt vs last_equity 98.276,07: -868,95 $ = -0,884 %                                              [GRÜN, Cap -3 %]
+SPY Live 13:06 ET:  739,915       (vs Mi Close 729,57 = +1,418 % Post-FOMC-Recovery)            [Crash-Filter INAKTIV]
+Alpha vs SPY:      -1,993 pp NEGATIV (LLY XLV-Sell-off dominant, dämpft UNH+JPM-Recovery-Beta)
+Weekly KW31 Tag 4: -0,123 %       (vs Fr Close 97.526,60, -119,48 $, verbessert vs Open -0,225 %) [GRÜN]
+DD vs ATH:         -2,657 %       (vs 100.066,47, verbessert vs Open -2,758 %)                    [GRÜN]
+Open Orders:           0          (KEINE Pending-Order)
+```
+
+**Positionen Live 13:06 ET (5 Positionen, sortiert V1-Puffer ENG→WEIT):**
+
+| Sym  | Live-Cur | Qty | Entry     | P/L %                    | chg_today                          | V1-Std   | V1-Blackout    | V1-Puffer               | Blackout-Status |
+|------|----------|-----|-----------|--------------------------|-------------------------------------|----------|-----------------|-------------------------|-----------------|
+| LLY  | 1.162,12 |  8  | 1.193,89  | **-2,66 % Worst P/L verschlechtert** | **-3,959 % Worst chg**  | 1.098,38 | — (HT-4 inaktiv) | **+5,80 % ENGSTE verschlechtert vs Open +7,36 %** | inaktiv HT-4 (Q2 CY26 Mi 05.08. BMO, Blackout ab Fr 31.07. HT-3 V1_neu 1.134,20 = -2,49 % dann als virt. Puffer) |
+| AAPL |  332,18  | 31  |  316,857  | +4,84 %                  | -1,777 %                            | 291,51   | **301,02 🔴**  | **+10,35 %** Blackout HT-0 | **🔴 AKTIV HT-0 Q3 FY26 Do 30.07. AMC ~5:00 PM ET HEUTE** |
+| V    |  364,28  | 27  |  357,178  | +1,99 %                  | -1,207 %                            | 328,60   | —              | +10,86 %                | inaktiv Post-Earnings (Q3 Di 28.07. AMC ✓) |
+| JPM  |  351,87  |  3  |  332,78   | +5,74 %                  | **+2,077 % Best chg** XLF Post-FOMC-Recovery | 306,16 | —          | +14,93 %                | inaktiv (Q3 ~Mitte Okt) |
+| UNH  |  425,67  | 24  |  401,57   | **+6,00 % Best P/L**     | +1,213 % XLV-Divergenz Recovery      | 369,44   | —              | +15,22 %                | inaktiv (Q3 ~Mitte Okt) |
+
+**V1-V4-Check Midday (V5/V6 laut Routine nicht bei Midday):**
+- **V1** (Stop -8 %): 5 SICHER, min **LLY +5,80 % ENGSTE verschlechtert** vs Open +7,36 % (LLY -3,959 % chg fortgesetzter XLV+Pharma-Sell-off, aber V1 1.098,38 noch weit weg — bei weiteren -5,80 % würde Stop greifen)
+- **V2** (Trailing -12 % vs Hoch): V-52w-Hoch 369,12 × 0,88 = 324,83 → 364,28 SAFE. Keine anderen Trailing-Trigger.
+- **V3** (+20 % TP1): max UNH +6,00 % / JPM +5,74 % / AAPL +4,84 % << 20 %, kein Trigger.
+- **V4** (+35 % TP2): kein Trigger.
+
+**→ KEINE Sell-/Limit-Order platziert Midday. Kein Stop ausgelöst. 0 offene Orders.**
+
+**Daily Loss Cap Check Midday:**
+- daily_pnl_pct = (97.407,12 - 97.970,67) / 97.970,67 * 100 = **-0,575 %** << Cap -3 % → **GRÜN**
+- Alternativ vs Alpaca last_equity 98.276,07: -0,884 % << Cap -3 % → **GRÜN**
+- **KEINE Offenen-Limit-Orders zu stornieren** (0 offene Orders)
+
+**Tages-Highlights Midday:**
+- Best chg: JPM **+2,077 %** (XLF Post-FOMC-Recovery-Fortsetzung stark)
+- Worst chg: LLY **-3,959 %** (XLV-Sektor+Pharma-Sell-off Fortsetzung, verschlechtert vs Open -2,745 %)
+- Best P/L: **UNH +6,00 %** (XLV-Divergenz — UNH Recovery vs LLY Sell-off)
+- Worst P/L: **LLY -2,66 %** (weiter verschlechtert vs Open -1,23 %, aber V1-Puffer +5,80 % noch sicher)
+- Portfolio-MV +100,46 $ vs Open (+0,247 %), Alpha vs SPY **-1,993 pp NEGATIV** (LLY XLV-Weakness dominiert)
+- **XLV-Bifurkation:** UNH Recovery +1,213 % vs LLY Sell-off -3,959 % Fortsetzung (Divergenz +5,17 pp)
+- **XLF-Recovery:** JPM +2,077 % Post-FOMC-Bank-Rebound
+
+**Guardrails Midday 8/8 GRÜN + 1 WARN:**
+```
+1. Daily Loss Cap (-3 %):     -0,575 % vs Mi Close                                 [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 4 -0,123 %                                  [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,657 %                                             [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,657 %                                             [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Live +1,418 % Post-FOMC-Recovery                 [INAKTIV]
 
 ---
 
