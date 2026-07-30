@@ -1,6 +1,117 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-29 16:00 ET (**Market Close KW31 Tag 3 Fed-Day**, Equity Close **97.970,67 $** Daily **-0,311 %** [GRÜN vs last_equity 98.276,07, -305,40 $], SPY Close 729,57 vs Di Close 740,795 = **-1,515 %** [Crash-Filter INAKTIV Post-FOMC hawkish-Reaktion], **Alpha +1,204 pp POSITIV** (defensiver Cash-Puffer 57,88 % + V Post-Earnings-Bid Best chg +0,584 % dämpfen SPY-Sell-off deutlich), VXX 23,44 (VIX ~17-18) [GRÜN <25 volle Pos-Size], Cash 56.707,49 = 57,88 %, MV 41.263,18 = 42,12 %, DD **-2,094 %** [GRÜN, marginal verschlechtert vs Open -1,782 %], Weekly KW31 Tag 3 **+0,455 %** [GRÜN weit von -5 %-Cap], **5 V1-V6-Vollcheck alle SICHER — keine Death Cross, kein RSI>80, kein Stop ausgelöst**, min LLY **+9,41 % ENGSTE** (überholt V als engster durch V Post-Earnings-Bid-Fortsetzung), V +10,89 %, **AAPL Blackout HT-1 → HT-0 morgen V1_neu 301,02 Puffer +10,94 %**, Ø P/L **+4,12 %** (verschlechtert vs Midday +4,96 % durch JPM Worst chg -2,776 % XLF-Post-FOMC + UNH -1,917 % XLV-Sell-off), Best P/L **AAPL +6,67 %**, Worst P/L LLY +1,56 %, Käufe KW31 0/2 unverändert, **KEINE Pending-Order**, 8/8 GRÜN + 1 WARN (AAPL Blackout HT-0 Q3 FY26 Do 30.07. AMC), **ClickUp Prio 3 Tagesbericht (Daily neg), KEINE PushNotification (Silence-Rule empty run: kein Stop, kein Cap, negativer Tag aber im Rahmen)**, **Watchlist morgen: JNJ / MRK / ABBV (alle K1-K3 ✓ XLV) — Sektor-Cap-Watch nach 3. XLV**)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-30 08:37 ET (**Pre-Market KW31 Tag 4**, Equity Pre **97.576,68 $** vs Mi Close 97.970,67 = **-0,402 %** Overnight-Give-back [GRÜN, Cap -3 %], SPY Pre 734,30 vs Mi Close 729,57 = **+0,65 % Post-FOMC-Recovery** [Crash-Filter INAKTIV], VIX **15,8** (-6 % vs Vortag, Vola-Rückgang) [GRÜN <25], Cash 56.707,49 = 58,12 %, MV Pre 40.868,88 = 41,88 %, DD **-2,488 %** [GRÜN, marginal verschlechtert vs Mi Close -2,094 %], Weekly KW31 Tag 4 **+0,051 %** [GRÜN weit von -5 %-Cap], **5 V1-V6 Pre-Read alle SICHER — kein Stop-Trigger**, min **LLY +8,16 % ENGSTE vs Std** (Overnight-Give-back -1,82 % Worst chg, P/L -0,49 %), **AAPL Blackout HT-0 HEUTE Q3 FY26 AMC ~5:00 PM ET V1_neu 301,02 Puffer +11,33 %**, V +12,06 %, UNH +12,74 %, JPM +12,91 % Best chg +0,29 %, Ø P/L **+3,20 %** (verschlechtert vs Mi Close +4,12 % durch LLY -2,05 pp Overnight-Give-back), Best P/L **AAPL +5,77 %**, Worst P/L **LLY -0,49 %**, Käufe KW31 0/2 unverändert, **KEINE Pending-Order**, 8/8 GRÜN + 1 WARN (AAPL Blackout HT-0), **ClickUp Prio 4 Routine-Log ERR ITEM_246 persistent (Memory-Fallback per Skill), PushNotification Silence (empty run: kein Trade, keine Cap, alle safe, Post-FOMC-Recovery grün)**, **Market-Open-Scan: JA JNJ/MRK/ABBV K4/K5-Multi-Source (max 1 XLV wg. Sektor-Cap 20,20 % → ~30 % Grenze)**, **LLY Blackout Aktivierung Fr 31.07. HT-3 (Präzisierung: heute HT-4 noch inaktiv, V1_neu 1.134,20 = +4,74 % dann)**)
+
+---
+
+## Pre-Market 2026-07-30 08:37 ET (Do, KW31 Tag 4) — Post-FOMC-Konsolidierung SPY Pre +0,65 % Recovery, VIX 15,8 (-6 %), 5 V1-V6 SICHER Pre-Read (LLY Overnight-Give-back -1,82 % engste vs Std, P/L -0,49 %), AAPL HT-0 HEUTE AMC, Kaufsignal-Scan JNJ/MRK/ABBV bei Market Open
+
+```
+Alpaca clock:      is_open=false | Do 30.07. 08:37 ET | next_open Do 30.07. 09:30 ET
+Equity Pre:        97.576,68 $   (Alpaca /v2/account)
+Cash:              56.707,49 $   (58,12 %, unverändert)
+Portfolio MV Pre:  40.868,88 $   (41,88 %, 5 Positionen, -394,30 $ vs Mi Close 41.263,18 = -0,955 %)
+Buying_power:     341.263,69 $   (Paper-Margin)
+Daily P/L Pre:      -394,30 $    (-0,402 % vs Mi Close 97.970,67)                 [GRÜN, Cap -3 %]
+Alt vs Alpaca last_equity 98.276,07: -0,712 %                                     [GRÜN, Cap -3 %]
+SPY Pre 08:33 ET:   734,30       (vs Mi Close 729,57 = +0,65 % Post-FOMC-Recovery)[Crash-Filter INAKTIV]
+VIX (Perplexity):   15,8         (-6 % vs Vortag)                                 [GRÜN <25]
+VXX letzte:         23,44        (Mi 19:59 ET, keine frische Pre-Open-Bar)        [GRÜN]
+10Y Yield:          ~4,12 %      (leicht runter vs Mi ~4,20+ %)
+Weekly KW31 Tag 4: +0,051 %      (vs Fr Close 97.526,60, +50,08 $)                [GRÜN, Cap -5 %]
+DD vs ATH:         -2,488 %      (vs 100.066,47)                                  [GRÜN]
+Open Orders:           0         (KEINE Pending-Order)
+Käufe KW31:            0/2       (Slot 1/2 offen + Slot 2/2 offen)
+```
+
+**Positionen Pre-Market 08:37 ET (5 Positionen, sortiert V1-Puffer ENG→WEIT):**
+
+| Sym  | Pre-Cur  | Qty | Entry     | P/L %    | chg_today | V1-Std   | V1-Blackout    | V1-Puffer    | Blackout-Status |
+|------|----------|-----|-----------|----------|-----------|----------|----------------|--------------|-----------------|
+| LLY  | 1.188,00 |  8  | 1.193,89  | **-0,49 % Worst P/L** | **-1,82 % Worst chg** | 1.098,38 | — (HT-4 inaktiv) | **+8,16 % ENGSTE vs Std** | inaktiv HT-4 (Q2 CY26 Mi 05.08. BMO, Blackout ab Fr 31.07. HT-3 V1_neu 1.134,20 = +4,74 % dann) |
+| AAPL |  335,13  | 31  |  316,857  | +5,77 % Best P/L | -0,91 %  | 291,51 | **301,02 🔴** | **+11,33 %** Blackout HT-0 | **🔴 AKTIV HT-0 Q3 FY26 Do 30.07. AMC ~5:00 PM ET HEUTE** |
+| V    |  368,25  | 27  |  357,178  | +3,10 %  | -0,13 %  | 328,60   | — | +12,06 %     | inaktiv Post-Earnings-Reaktion (Q3 Di 28.07. AMC ✓) |
+| UNH  |  416,50  | 24  |  401,57   | +3,72 %  | -0,97 %  | 369,44   | —              | +12,74 %     | inaktiv (Q3 ~Mitte Okt) |
+| JPM  |  345,70  |  3  |  332,78   | +3,88 %  | +0,29 % Best chg | 306,16 | —              | +12,91 %     | inaktiv (Q3 ~Mitte Okt) |
+
+**V1-Puffer Übersicht (eng→weit):** LLY **+8,16 % ENGSTE vs Std** (Overnight-Give-back, verschlechtert vs Mi Close +9,41 % um -1,25 pp) | AAPL **+11,33 % Blackout HT-0** | V +12,06 % | UNH +12,74 % | JPM +12,91 %
+
+**V1-V6 Pre-Read Pre-Market (aus Mi EOD-Bars, keine neue EOD-Bar heute, alle 5 SICHER):**
+- **V1** (Stop -8 % / Blackout -5 %): 5 SICHER, min LLY **+8,16 % ENGSTE vs Std**, AAPL **+11,33 % Blackout HT-0** aktiv. LLY P/L -0,49 % erste negative Position aber weit von Stop.
+- **V2** (Trailing -12 % vs 52w-Hoch): Keine neuen 52w-Hochs, keine Änderung vs Mi Close.
+- **V3** (+20 % TP1): max AAPL +5,77 % / JPM +3,88 % / UNH +3,72 % << 20 %, kein Trigger.
+- **V4** (+35 % TP2): kein Trigger.
+- **V5** (Death Cross): aus Mi EOD-Bars alle Golden Cross intakt, engster V Spread +2,50 %. Kein V5-Trigger.
+- **V6** (RSI > 80 UND RS 4w vs SPY < 0): max RSI AAPL 67,2 (Mi EOD) << 80. Kein V6-Trigger.
+
+**→ KEINE Sell-/Limit-Order platziert Pre-Market. Kein Stop ausgelöst. 0 offene Orders. V1-V6-Vollcheck bei Market Close mit neuen EOD-Bars.**
+
+**Daily Loss Cap Check Pre-Market:**
+- daily_pnl_pct = (97.576,68 - 97.970,67) / 97.970,67 * 100 = **-0,402 %** << Cap -3 % → **GRÜN**
+- Alternativ vs Alpaca last_equity 98.276,07 (Di Close carry-over): -0,712 % << Cap -3 % → **GRÜN**
+
+**Weekly Loss Cap Check (KW31 Tag 4):**
+- weekly_pnl_pct = (97.576,68 - 97.526,60) / 97.526,60 * 100 = **+0,051 %** >> Cap -5 % → **GRÜN**
+
+**Tages-Highlights Pre-Read:**
+- Best chg: JPM **+0,29 %** (XLF Post-FOMC-Recovery-Ansatz)
+- Worst chg: LLY **-1,82 %** (XLV-Konsolidierung + eigene Pharma-Weakness)
+- Best P/L: AAPL +5,77 %
+- Worst P/L: **LLY -0,49 %** (erste negative Position, aber V1-Puffer +8,16 % noch sicher)
+- Portfolio-MV -394,30 $ vs Mi Close (-0,955 %), aber Post-FOMC-Recovery ansteht bei Market Open
+
+**Guardrails Pre-Market 8/8 GRÜN + 1 WARN:**
+```
+1. Daily Loss Cap (-3 %):     -0,402 % vs Mi Close                                 [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 4 +0,051 %                                  [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,488 %                                             [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,488 %                                             [GRÜN]
+5. Crash-Filter (SPY -5 %):   Mi -1,515 % → Pre +0,65 % Recovery                   [INAKTIV]
+6. VIX-Filter (>30):          VIX 15,8 (-6 % vs Vortag)                            [GRÜN <25]
+7. Earnings-Blackout (3 HT):  AAPL HT-0 Q3 FY26 Do 30.07. AMC HEUTE V1_neu 301,02  [WARN]
+8. Max Käufe KW31:            0/2 (Slot 1/2 bleibt OFFEN + 2/2 offen)              [GRÜN]
+```
+
+**Sektor-Struktur Pre-Market (Pre-Kurse):**
+- XLV 19,84 % (UNH 10,24 % + LLY 9,60 %) — LLY-Give-back reduziert Sektor-Gewicht marginal
+- XLK 10,65 % (AAPL)
+- XLF 11,26 % (JPM 1,06 % + V 10,19 %)
+- Cash 58,12 %
+
+**Watchlist Market Open — K1-K3 EOD-Bar Mi 29.07. bestätigt, K4/K5 zwingend Multi-Source:**
+- **JNJ (XLV Healthcare)**: c=265,67 K1-K3 ✓ (RS +14,14 pp), K4/K5 zwingend Market Open
+- **MRK (XLV Healthcare)**: c=130,40 K1-K3 ✓ (RS +16,05 pp), K4/K5 zwingend Market Open
+- **ABBV (XLV Healthcare)**: c=263,62 K1-K3 ✓ (RS **+30,94 pp #1 Top-Rank**), RSI 67,8 nah 70-Cap Watch, K4/K5 zwingend Market Open
+- **XLV-Sektor-Cap-Warnung:** Aktuell 19,84 % XLV. 3. XLV-Position pusht auf ~30 % Cap-Grenze → **Max 1 der 3 kaufbar**, bevorzugt ABBV (RS-Prio #1) oder JNJ/MRK bei besserer K5-Fundamentaldiversifikation
+
+**Earnings-Kalender Do 30.07. + nächste 3 HT (Perplexity Multi-Source):**
+- **AAPL Q3 FY26 Do 30.07. AMC ~5:00 PM ET HEUTE HT-0** (Portfolio, Blackout aktiv V1_neu 301,02)
+- AMZN Q2 CY26 Do 30.07. AMC (nicht im Portfolio, SPY-Vol-Impact)
+- **LLY Q2 CY26 Mi 05.08. BMO** (Blackout ab Fr 31.07. HT-3 aktivierbar V1_neu 1.134,20 — heute HT-4 inaktiv)
+- Watchlist JNJ/MRK/ABBV: keine im 3-HT-Fenster (K5-Recheck bei Market Open bestätigt)
+- Andere Portfolio (JPM/UNH/V): keine Konflikte
+
+**Post-FOMC Marktreaktion Update:**
+- SPY Pre +0,65 % Recovery nach Mi -1,515 % hawkish-Sell-off
+- VIX 15,8 -6 % → Vola-Rückgang, Cash-Puffer weiter defensiv
+- 10Y Yield 4,12 % (leicht runter vs Mi Post-Fed) → Rate-Cut-Erwartungen minimal wiederhergestellt
+
+**Makro-Ereignisse heute:**
+- **08:30 ET Q2 GDP Advance Estimate** (primärer Vol-Katalysator Pre-Market)
+- **08:30 ET Core PCE Q2** (Inflations-Signal Post-Fed)
+- **10:00 ET Pending Home Sales**
+- **AAPL AMC ~5:00 PM ET**
+
+**Entscheidung Pre-Market Do 30.07.:**
+- **KEIN Stop ausgelöst** (5 V1-V6 SICHER Pre-Read, min LLY +8,16 % ENGSTE vs Std, alle Golden Cross intakt)
+- **KEINE Sell-/Limit-Order** platziert (kein V5/V6-Trigger)
+- **KEIN Kauf** Pre-Market (Regel: Kaufsignal-Scan bei Market Open, K4/K5 zwingend)
+- **KEIN Critical-Alert** (keine Stops, keine Cap-Verletzung, alle GRÜN)
+- **ClickUp Prio 4 Routine-Log ERR ITEM_246** persistenter Fehler (bekannt seit Wochen, Memory-Fallback per Skill)
+- **KEINE PushNotification** (Silence-Rule: empty run, kein Trade, kein Stop, keine Cap-Verletzung, Post-FOMC-Recovery positiv → Schweigen die freundliche Wahl)
+- **Slot 1/2 KW31 bleibt OFFEN** — Market Open 09:30 ET Kaufsignal-Scan JNJ/MRK/ABBV K4/K5-Multi-Source (max 1 XLV wg. Sektor-Cap)
+
+**Nächste Routine:** Do 30.07. 09:30 ET Market Open + Kaufsignal-Scan JNJ/MRK/ABBV K4/K5-Vollprüfung, dann 13:00 ET Midday Stop-Check + AAPL AMC-Countdown, 16:00 ET Market Close + V1-V6-Vollcheck neue EOD-Bars + Post-AAPL-Earnings-Watch Fr 31.07.
 
 ---
 
