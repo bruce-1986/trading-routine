@@ -4,6 +4,87 @@
 
 ---
 
+## Pre-Market 08:37 ET — 2026-07-30 (Do, KW31 Tag 4) — Post-FOMC-Konsolidierung SPY Pre +0,65 % Recovery, VIX 15,8 (-6 % vs Vortag), 5 V1-V6 SICHER Pre-Read (LLY Pre-Read -1,82 % Worst chg engste), AAPL HT-0 Q3 FY26 AMC HEUTE, LLY Blackout Aktivierung Fr 31.07 HT-3 (Präzisierung: heute HT-4), Kaufsignal-Scan JNJ/MRK/ABBV bei Market Open erlaubt (max 1 XLV wg. Sektor-Cap)
+
+**Alpaca Clock:** is_open=false, 08:37 ET, next_open Do 30.07. 09:30 ET.
+
+**Alpaca /v2/account Pre-Market 08:37 ET:**
+- portfolio_value: **97.576,68 $** (vs Mi Close 97.970,67 = **-0,402 %** Overnight-Delta, vs last_equity 98.276,07 = -0,712 %) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (58,12 %, unverändert)
+- MV Pre: 40.868,88 $ (5 Positionen, -394,30 $ vs Mi Close 41.263,18)
+- Buying_power: 341.263,69 $ (Paper-Margin)
+- ATH 100.066,47 | DD **-2,488 %** [GRÜN, marginal verschlechtert vs Mi Close -2,094 %]
+- Weekly KW31 Tag 4 **+0,051 %** (vs Fr Close 97.526,60, +50,08 $) [GRÜN, weit von Cap -5 %]
+- Open Orders: **KEINE**
+
+**Marktdaten Pre-Market:**
+- **SPY Pre 734,30** (Alpaca IEX latest trade 08:33 ET) vs Mi Close 729,57 = **+0,65 % Post-FOMC-Recovery** [Crash-Filter INAKTIV]
+- **VIX 15,8** (Perplexity, -6 % vs Vortag) [GRÜN <25 volle Pos-Size]
+- **VXX 23,44** (Alpaca IEX letzte Notierung Mi 19:59 ET, keine frische Vor-Open-Bar)
+- **10Y Treasury Yield ~4,12 %** (Perplexity)
+
+**V1-V6 Pre-Read (Pre-Market Kurse, EOD-Vollcheck bei Market Close):**
+
+| Sym  | Pre-Cur  | Qty | Entry     | P/L %    | chg_today | V1-Std   | V1-Blackout    | V1-Puffer    | Blackout-Status |
+|------|----------|-----|-----------|----------|-----------|----------|----------------|--------------|-----------------|
+| LLY  | 1.188,00 | 8   | 1.193,89  | **-0,49 %** | **-1,82 % Worst chg** | 1.098,38 | — (HT-4 noch inaktiv) | **+8,16 % ENGSTE** vs Std | inaktiv HT-4 (Q2 CY26 Mi 05.08. BMO, Blackout ab Fr 31.07. HT-3 aktivierbar V1_neu 1.134,20 = +4,74 % dann) |
+| AAPL |  335,13  | 31  |  316,857  | +5,77 %  | -0,91 %  | 291,51 | **301,02 🔴** | **+11,33 %** Blackout HT-0 | **🔴 AKTIV HT-0 Q3 FY26 Do 30.07. AMC ~5:00 PM ET** |
+| V    |  368,25  | 27  |  357,178  | +3,10 %  | -0,13 %  | 328,60 | — | +12,06 % | inaktiv Post-Earnings-Reaktion (Q3 Di 28.07. AMC ✓) |
+| UNH  |  416,50  | 24  |  401,57   | +3,72 %  | -0,97 %  | 369,44   | —              | +12,74 %     | inaktiv (Q3 ~Mitte Okt) |
+| JPM  |  345,70  |  3  |  332,78   | +3,88 %  | +0,29 % Best chg  | 306,16   | —              | +12,91 %     | inaktiv (Q3 ~Mitte Okt) |
+
+**V1-Puffer Übersicht (eng→weit):** LLY **+8,16 % ENGSTE** vs Std (P/L -0,49 % Overnight-Give-back, Puffer verschlechtert vs Mi Close +9,41 % um -1,25 pp) | AAPL +11,33 % Blackout HT-0 | V +12,06 % | UNH +12,74 % | JPM +12,91 %
+
+**V5/V6-Pre-Read (aus Mi EOD-Bars, keine neue EOD-Bar heute):** Alle Golden Cross intakt (V EMA-Spread +2,50 % engster aber positiv), max RSI AAPL 67,2 << 80. V3/V4: max P/L AAPL +5,77 % << 20 %. **Keine Sell-/Limit-Order platziert** (nicht dringend Pre-Market ohne Break, EOD-Vollcheck bei Market Close).
+
+**Earnings-Kalender heute + nächste 3 HT (Perplexity Multi-Source):**
+- **AAPL Q3 FY26 Do 30.07. AMC ~5:00 PM ET HEUTE HT-0** (Portfolio-Position, V1_Blackout 301,02 aktiv) — Post-Earnings-Reaktion Fr 31.07. Watch
+- AMZN Q2 CY26 Do 30.07. AMC (nicht im Portfolio, aber SPY-Vol-Impact)
+- **KEINE anderen Portfolio-Positionen im 3-HT-Fenster:** JPM/UNH ~Mitte Oktober, V bereits released Di 28.07., **LLY Q2 CY26 Mi 05.08. BMO** (Blackout ab Fr 31.07. HT-3 aktivierbar V1_neu 1.134,20 — Präzisierung: HT-Zählung Mi 05.08.=HT-0, Di 04.08.=HT-1, Mo 03.08.=HT-2, Fr 31.07.=HT-3 → **heute Do 30.07. ist HT-4, noch INAKTIV**)
+- Watchlist-Kandidaten JNJ/MRK/ABBV: keine im 3-HT-Fenster (K5-Recheck bei Market Open bestätigt)
+
+**Post-FOMC Marktreaktion Update:**
+- SPY Pre +0,65 % Recovery nach Mi -1,515 % hawkish-Sell-off (leichte technische Konsolidierung)
+- VIX 15,8 -6 % → Vola-Rückgang, Cash-Puffer 58,12 % weiter defensiv gerechtfertigt
+- Perplexity zitiert Futures-Indikation "-0,3 %" widersprüchlich zu Alpaca IEX +0,65 % — Alpaca IEX authoritative (latest trade 12:33 UTC = 08:33 ET)
+- 10Y Yield 4,12 % (leicht runter vs Mi ~4,20+ % Post-Fed) → Rate-Cut-Erwartungen minimal wiederhergestellt
+
+**Makro-Ereignisse heute:**
+- **08:30 ET Q2 GDP Advance Estimate** (primärer Vol-Katalysator Pre-Market, wird beim Market Open verarbeitet sein)
+- **08:30 ET Core PCE Q2** (Inflations-Signal Post-Fed)
+- **10:00 ET Pending Home Sales**
+- **AAPL AMC ~5:00 PM ET**
+
+**Guardrails Pre-Market 8/8 GRÜN + 1 WARN:**
+```
+1. Daily Loss Cap (-3 %):     -0,402 % vs Mi Close                                 [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 4 +0,051 %                                  [GRÜN]
+3. Drawdown-Alarm (-15 %):    -2,488 %                                             [GRÜN]
+4. Drawdown-Stopp (-20 %):    -2,488 %                                             [GRÜN]
+5. Crash-Filter (SPY -5 %):   Mi -1,515 % → Pre +0,65 % Recovery                   [INAKTIV]
+6. VIX-Filter (>30):          VIX 15,8 (-6 % vs Vortag)                            [GRÜN <25]
+7. Earnings-Blackout (3 HT):  AAPL HT-0 Q3 FY26 Do 30.07. AMC HEUTE V1_neu 301,02  [WARN]
+8. Max Käufe KW31:            0/2 (Slot 1/2 bleibt OFFEN + 2/2 offen)              [GRÜN]
+```
+
+**Watchlist Market Open — K1-K3 EOD-Bar Mi 29.07. bestätigt, K4/K5 zwingend Multi-Source Market Open:**
+- **JNJ (XLV Healthcare)**: c=265,67 EMA50 247,96>EMA200 225,01 K1 ✓ / RSI 63,6 K2 ✓ / RS +14,14 pp K3 ✓ — K4-Vol + K5 FwdPE/RevGr Multi-Source
+- **MRK (XLV Healthcare)**: c=130,40 K1 ✓ / RSI 59,3 K2 ✓ / RS +16,05 pp K3 ✓ — K4/K5 zwingend
+- **ABBV (XLV Healthcare)**: c=263,62 K1 ✓ / RSI 67,8 K2 ✓ **nah 70-Cap** / RS +30,94 pp **#1 Top-Rank** K3 ✓ — K4/K5 zwingend, evtl. RS-Prio
+- **XLV-Sektor-Cap-Warnung:** Aktuell 20,20 % XLV (UNH+LLY), 3. XLV-Position pusht auf ~30 % → **Max 1 der 3 kaufbar**, bevorzugt ABBV (RS #1) oder JNJ/MRK bei besserer K5-Fundamentaldiversifikation
+
+**Entscheidung Pre-Market Do 30.07.:**
+- **Kaufsignal-Scan JA bei Market Open 09:30 ET** — JNJ/MRK/ABBV K4/K5-Vollprüfung (max 1 kaufbar wg. Sektor-Cap)
+- **KEINE Sell-Order** (5 V1-V6 SICHER Pre-Read, LLY -0,49 % P/L noch weit von V1-Stop, kein V5/V6-Trigger)
+- **AAPL HT-0 Watch** — V1_neu 301,02 sicher aktiv Puffer +11,33 %, Post-Earnings-Reaktion Fr 31.07.
+- **LLY Blackout Aktivierung Fr 31.07. HT-3** (Memory-Präzisierung: heute HT-4, noch inaktiv, V1_neu 1.134,20 = +4,74 % dann)
+- **ClickUp Routine-Log Prio 4** wird gesendet
+- **PushNotification Silence** (empty run: kein Trade, alle safe, Post-FOMC-Recovery-Signal grün → Silence-Rule)
+
+**Nächste Routine:** Do 30.07. 09:30 ET Market Open + Kaufsignal-Scan JNJ/MRK/ABBV K4/K5-Multi-Source, dann 13:00 ET Midday Stop-Check + AAPL AMC-Countdown, 16:00 ET Market Close + Post-AAPL-Earnings-Watch Fr 31.07.
+
+---
+
 ## Market Close 16:00 ET — 2026-07-29 (Mi, KW31 Tag 3, Fed-Day EOD) — Post-FOMC hawkish SPY -1,515 %, Portfolio Alpha +1,204 pp POSITIV, 5 V1-V6 SICHER, Watchlist morgen: JNJ / MRK / ABBV (3 XLV K1-K3 ✓)
 
 **Alpaca Clock:** is_open=false Post-Close 16:00 ET, next_open Do 30.07. 09:30 ET.
