@@ -4,6 +4,90 @@
 
 ---
 
+## Market Open 09:42 ET — 2026-07-31 (Fr, KW31 Tag 5) — 🔴 AAPL Blackout-V1_neu 301,02 intraday UNTERSCHRITTEN 09:41 ET Dip 300,535 (Recovery 301,71 razor-thin +0,23 %), LLY Blackout HT-3 aktiviert Puffer +0,62 % ENGSTE, kein V-Trigger per strategy.md, Slot 1/2 KW31 bleibt OFFEN (alle 4 Kandidaten REJECT/SKIP)
+
+**Alpaca Clock:** is_open=true, 09:42 ET, next_open Mo 03.08. 09:30 ET.
+
+**Alpaca /v2/account Market Open Live:**
+- portfolio_value: **96.117,58 $** (vs Do Close 97.458,61 = **-1,376 %** Daily) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (58,99 %, unverändert)
+- MV Live: 39.410,09 $ (5 Positionen, -1.341,03 $ vs Do Close 40.751,12 = -3,290 %, AAPL-Sell-off dominant)
+- last_equity: 97.340,70 $ (Alpaca EOD-Reconciliation)
+- ATH 100.066,47 | DD **-3,947 %** [GRÜN, verschlechtert vs Do -2,606 %]
+- Weekly KW31 Tag 5 **-1,444 %** (vs Fr 24.07. Close 97.526,60) [GRÜN, weit von Cap -5 %]
+- Open Orders: **KEINE**
+
+**Marktdaten Live (Alpaca IEX 09:39-09:42 ET):**
+- **SPY Live 743,51** (vs Do Close 741,63 = **+0,253 %** milde Post-FOMC-Konsolidierung) [Crash-Filter INAKTIV]
+- **VIX Perplexity 17,98** (leicht Vola-Rückgang vs Do Close ~19,8) [GRÜN <25 volle Pos-Size]
+- **Alpha vs SPY -1,629 pp NEGATIV** (AAPL -9,72 % Post-Earnings Guidance-Sell-off dominant)
+
+**🔴 AAPL Blackout-V1_neu 301,02 Bull-Konvention intraday UNTERSCHRITTEN 09:41 ET:**
+- Dip auf **300,535 $** (Alpaca IEX 13:41:02 UTC = 09:41:02 ET)
+- Recovery **301,71 $** um 09:42 ET (razor-thin über Blackout-V1_neu = +0,23 %)
+- Standard-V1 291,51 SICHER (aktueller Puffer +3,50 %)
+- **Strategie-Lock (CLAUDE.md Rule 3):** Nur strategy.md V1 bindend, Bull-Konvention Blackout-V1_neu ist konservative Zusatz-Watch. → **HALTEN, keine Sell-Order.**
+- Owner-Push Prio 1 zwingend wegen Blackout-Konvention-Bruch + zeitgleicher LLY Blackout-Aktivierung ENGSTE +0,62 %.
+
+**V1-V6-Vollcheck Market Open Live (Positionen sortiert nach ENGSTEM V1-Std-Puffer):**
+
+| Sym  | Live 09:42 | Qty | Entry     | P/L %    | chg vs Do Close | V1-Std   | V1-Blackout | V1-Puffer                              | Blackout-Status |
+|------|------------|-----|-----------|----------|-----------------|----------|-------------|----------------------------------------|-----------------|
+| AAPL |  301,71    | 31  |  316,857  | **-4,78 % Worst P/L** | **-9,72 % Worst chg** Guidance-Sell-off | 291,51 | **301,02** | **Std +3,50 % ENGSTE / Blackout +0,23 % razor-thin** | **🔴 HT+0 Post-Earnings, Blackout-V1 intraday gebrochen** |
+| LLY  | 1.141,25   |  8  | 1.193,89  | **-4,41 % Worst P/L 2** | -1,36 % | 1.098,38 | **1.134,20** | Std +3,90 % / **Blackout +0,62 % ENGSTE Blackout** | **🔴 HT-3 AKTIVIERT ab HEUTE — V1_neu primäre Stop-Referenz** |
+| V    |  362,68    | 27  |  357,178  | +1,54 %  | -0,98 %         | 328,60   | —           | +10,36 %                               | inaktiv (Q3 ✓ RELEASED) |
+| UNH  |  419,59    | 24  |  401,57   | +4,49 %  | -1,20 % XLV-Sell-off | 369,44 | —         | +13,57 %                               | inaktiv |
+| JPM  |  350,55    |  3  |  332,78   | +5,34 %  | **-0,09 % Best chg** | 306,16 | —         | +14,50 %                               | inaktiv |
+
+**V1-V6 Sub-Check:**
+- **V1:** **5 SICHER per strategy.md**, min AAPL +3,50 %. Blackout-V1_neu (Bull-Konvention) AAPL intraday-Break — konservative Watch, kein Sell-Trigger per Strategie-Lock.
+- **V2-V6:** kein Trigger. V engster V5-Spread +3,96 %, max RSI V ~63 << 80. AAPL RSI ~40 nach -9,72 %.
+
+**→ KEINE Sell-/Limit-Order platziert. 0 offene Orders.**
+
+**Guardrails Market Open 8/8 GRÜN + 2 WARN:**
+```
+1. Daily Loss Cap (-3 %):     -1,376 % vs Do Close                                    [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 5 -1,444 %                                     [GRÜN]
+3. Drawdown-Alarm (-15 %):    -3,947 % vs ATH 100.066,47                              [GRÜN]
+4. Drawdown-Stopp (-20 %):    -3,947 %                                                [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Live +0,253 %                                       [INAKTIV]
+6. VIX-Filter (>30):          VIX 17,98                                               [GRÜN <25]
+7. Earnings-Blackout (3 HT):  AAPL HT+0 Blackout-V1 intraday gebrochen + LLY HT-3     [WARN 2 aktiv]
+8. Max Käufe KW31:            0/2 (Slot 1/2 + 2/2 offen)                              [GRÜN]
+```
+
+**Kaufsignal-Scan Watchlist Live (K1-K4 aus Alpaca IEX Bars 30.07. Close, K5 Perplexity Multi-Source):**
+
+| Kand | Sektor | Do-Close | K1 EMA50/200 | K2 RSI | K3 RS_63d | K4 Vol Do (%) | K5 | Entscheidung |
+|------|--------|----------|--------------|--------|-----------|---------------|----|--------------|
+| CVS  | XLV    | 105,11   | +17,23 % ✓   | 52,2 ✓ | +21,57 pp ✓ #1 | 157 % ✓ | **FAIL** Q1 2026 RevGr **+6,2 % YoY** < 10 % (Perplexity, Annual +7,8 %). FwdPE 11,95-13,68 ✓. | **REJECT K5 definitiv** |
+| BAC  | XLF    |  61,76   | +8,18 % ✓    | 61,7 ✓ | +12,86 pp ✓    | **74 % FAIL** | nicht recherchiert (nicht ökonomisch bei K4-FAIL) | **SKIP K4-FAIL** |
+| UNP  | XLI    | 289,42   | +10,41 % ✓   | 51,9 ✓ | +5,38 pp ✓     | **99 % FAIL** | nicht recherchiert | **SKIP K4-FAIL** |
+| EOG  | XLE    | 145,59   | +9,90 % ✓    | 61,4 ✓ | +0,94 pp ✓     | **81 % FAIL** | vorbekannt ✓ FwdPE 9,98 + RevGr +15,63 % | **SKIP K4-FAIL** |
+
+**K4-Session-Vol pro-rata 12 Min nach Open nicht belastbar** — für Halbtags-K4-Bewertung: Midday-Recheck 13:00 ET.
+
+**Cascade-Framework Aktivierung — defensiv NO BUY:**
+- AAPL Blackout-Puffer +0,23 % + LLY Blackout-Puffer +0,62 % — beide unter 1 % zur Bull-Konvention-Grenze
+- Selbst wenn Kandidat qualifiziert wäre: neue Position reduziert Cash-Puffer, während 47,4 % MV (AAPL+LLY) unter Blackout-Stress stehen
+- **NO BUY unabhängig von Signal-Qualität**, Slot 1/2 KW31 bleibt OFFEN
+- Re-Check Midday 13:00 ET: K4 dann belastbar, AAPL/LLY-Stabilisierungs-Watch
+
+**Sektor-Struktur Market Open Live:**
+- XLV: 19,98 % (UNH 10,47 + LLY 9,51)
+- XLF: 11,29 % (JPM 1,10 + V 10,19)
+- XLK: 9,73 % (AAPL gedrückt von 10,63 % Do Close durch -9,72 %)
+- Cash: 58,99 %
+
+**Earnings-Blackout-Kalender:**
+- **AAPL Q3 FY26 ✓ RELEASED** — Blackout-V1_neu 301,02 konservativ aktiv bis Fr Close, **intraday 09:41 ET UNTERSCHRITTEN**.
+- **LLY Q2 CY26 Mi 05.08.2026 BMO** — Blackout HT-3 **AKTIVIERT ab HEUTE**, V1_neu 1.134,20 primäre Stop-Referenz.
+
+**Nächster Check:** Fr 31.07. 13:00 ET Midday Stop-Check — **Prio 1 AAPL/LLY Blackout-Puffer Stabilisierung**, K4-Halbtags-Recheck Watchlist (falls Portfolio stabilisiert), XLV-Sell-off Fortsetzung Watch.
+
+---
+
 ## Pre-Market 08:36 ET — 2026-07-31 (Fr, KW31 Tag 5) — 🔴 AAPL Post-Earnings-Sell-off Pre-Market -8,10 % (Guidance-Supply-Constraints), LLY-Blackout HT-3 aktiviert V1_neu 1.134,20 Puffer +1,48 % ENGSTE, alle 5 V1-V6 SICHER
 
 **Alpaca Clock:** is_open=false, 08:36 ET, next_open Fr 31.07. 09:30 ET.

@@ -1,8 +1,78 @@
 # Portfolio Status
 
-**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-31 08:36 ET (**Pre-Market KW31 Tag 5**, Equity Pre **96.473,12 $** vs Do Close 97.458,61 = **-1,011 %** Daily [GRÜN, Cap -3 %], SPY Pre **743,68** vs Do Close 741,63 = **+0,276 % Post-FOMC-Konsolidierung** [Crash-Filter INAKTIV], Cash 56.707,49 = 58,78 % unverändert, MV Pre **39.765,63 $** (5 Pos, -985,49 vs Do Close 40.751,12, **AAPL-Sell-off treibt**), DD **-3,591 %** vs ATH 100.066,47 [GRÜN, verschlechtert vs Do -2,606 %], Weekly KW31 Tag 5 **-1,081 %** [GRÜN weit von Cap -5 %], Alpha vs SPY **-1,287 pp NEGATIV** (AAPL Post-Earnings dämpft), **5 V1-V6 SICHER Pre-Read — kein Stop-Trigger, keine Sell-/Limit-Order platziert, 0 offene Orders**, **🔴 AAPL Q3 FY26 Post-Earnings Do 30.07. AMC ✓ RELEASED**: Umsatz 109,42 Mrd. $ (+16 %, beat), EPS 2,02 (+29 %, beat), iPhone 54,3 Mrd. (+22 %), **ABER Guidance Sep-Q Supply Constraints + FX Headwinds → Pre-Market 307,14 = -8,10 % Sell-off**, **V1-Puffer:** LLY **+1,48 % ENGSTE Blackout HT-3 AKTIV** V1_neu 1.134,20 (Kurs 1.151,00 chg -0,34 %, P/L -3,59 % Worst), AAPL **+2,03 % Blackout Post-Earnings** V1_neu 301,02 (Kurs 307,14 chg **-8,10 % Worst chg**, P/L -3,06 %), V +11,44 % (366,21 chg -0,02 %), JPM +14,65 % (351,00 chg +0,04 %), UNH +13,84 % (420,586 chg -0,21 %), Käufe KW31 0/2, **8/8 GRÜN + 2 WARN** (AAPL Post-Earnings-Konsolidierung + LLY Blackout HT-3), **Watchlist Fr K1-K3 ✓ unverändert:** CVS (RS #1 +21,57), BAC (+12,86), UNP (+5,38 XLI neu), EOG (+0,94 K5 ✓), K4/K5 zwingend Multi-Source Open, **ClickUp Prio 4 ERR ITEM_246 Memory-Fallback**, **PushNotification Prio 2 Owner** (AAPL Guidance-Sell-off + LLY-Blackout-Aktivierung — 2 gleichzeitige Watch-Puffer <3 % rechtfertigen Owner-Sichtbarkeit), Market-Open-Scan JA — Prio 1 AAPL/LLY-Puffer, dann K4/K5 Watchlist)
+**Bot:** Bull | **Modus:** Paper Trading | **Zuletzt aktualisiert:** 2026-07-31 09:42 ET (**Market Open KW31 Tag 5**, Equity Live **96.117,58 $** vs Do Close 97.458,61 = **-1,376 %** Daily [GRÜN, Cap -3 %], SPY Live **743,51** vs Do Close 741,63 = **+0,253 % milde Post-FOMC-Konsolidierung** [Crash-Filter INAKTIV], Cash 56.707,49 = 58,99 % unverändert, MV Live **39.410,09 $** (5 Pos, -1.341,03 vs Do Close 40.751,12 = -3,290 % **AAPL Post-Earnings-Sell-off dominant**), DD **-3,947 %** vs ATH 100.066,47 [GRÜN, verschlechtert vs Do -2,606 %], Weekly KW31 Tag 5 **-1,444 %** [GRÜN weit von Cap -5 %], Alpha vs SPY **-1,629 pp NEGATIV** (AAPL -9,72 % Guidance-Sell-off dominant), **VIX Perplexity 17,98** [GRÜN <25], **kein V-Trigger per strategy.md, keine Sell-/Limit-Order platziert, 0 offene Orders**, **🔴 AAPL Blackout-V1_neu 301,02 intraday 09:41 ET UNTERSCHRITTEN bei Dip 300,535 (jetzt Recovery 301,71 = +0,23 % razor-thin), Std-V1 291,51 SICHER, Strategie-Lock → HALTEN**, **🔴 LLY Blackout HT-3 ab HEUTE aktiviert V1_neu 1.134,20 Puffer +0,62 % ENGSTE**, Positionen sortiert eng→weit vs Std-V1: AAPL +3,50 % (301,71 chg -9,72 % Worst chg, P/L -4,78 % Worst), LLY +3,90 % (1.141,25 chg -1,36 %, P/L -4,41 %), V +10,36 % (362,68 chg -0,98 %), UNH +13,57 % (419,59 chg -1,20 %), JPM +14,50 % (350,55 chg -0,09 % Best chg), Käufe KW31 0/2 unverändert, **Kaufsignal-Scan ALLE 4 REJECT/SKIP:** CVS K5-FAIL RevGr Q1 +6,2 % <10 %, BAC/UNP/EOG K4-FAIL Do EOD <120 % + Cascade-Framework aktiviert (AAPL/LLY beide Blackout-Puffer <1 %), Slot 1/2 KW31 bleibt OFFEN, **8/8 GRÜN + 2 WARN** (AAPL Blackout-V1 intraday gebrochen + LLY Blackout HT-3 ENGSTE), **ClickUp Prio 4 Routine-Log**, **PushNotification Prio 1 Owner** (2 gleichzeitige Blackout-Puffer <1 % rechtfertigen dringende Sichtbarkeit für Midday-Entscheidung), Midday 13:00 ET Prio-1 Watch AAPL/LLY-Stabilisierung)
+
+**Vorheriger Stand:** 2026-07-31 08:36 ET (Pre-Market KW31 Tag 5, Equity Pre 96.473,12 $ vs Do Close = -1,011 %, SPY Pre 743,68 = +0,276 %, VIX ~19,8 Do Close-Referenz, 5 V1-V6 SICHER Pre-Read, AAPL Post-Earnings -8,10 % Guidance-Sell-off, LLY Blackout HT-3 aktiviert, Watchlist CVS/BAC/UNP/EOG K1-K3 ✓ K4/K5 Multi-Source Open zwingend)
 
 **Vorheriger Stand:** 2026-07-30 16:00 ET (**Market Close Tagesbilanz KW31 Tag 4**, Equity Close **97.458,61 $** vs Mi Close 97.970,67 = **-0,523 %** [GRÜN, Cap -3 %, minimal verbessert vs Midday -0,575 %], SPY Close **741,63** vs Mi Close 729,57 = **+1,653 % Post-FOMC-Recovery** [Crash-Filter INAKTIV], Cash 56.707,49 = 58,19 %, MV Close **40.751,12 $** (41,81 %, 5 Pos, +51,49 vs Midday), DD **-2,606 %** [GRÜN], Weekly KW31 Tag 4 **-0,070 %** [GRÜN weit von -5 %-Cap], Alpha vs SPY **-2,176 pp NEGATIV** (LLY XLV-Sell-off dominant), **5 V1-V6 SICHER Vollcheck EOD-Bars — kein Stop-Trigger, keine Sell-/Limit-Order platziert, 0 offene Orders**, V1-Puffer min **LLY +5,34 % ENGSTE** (Close 1.157,00, chg **-4,382 % Worst chg**, P/L **-3,09 % Worst P/L weiter verschlechtert**), **AAPL Blackout HT-0 HEUTE Q3 FY26 AMC ~5:00 PM ET V1_neu 301,02 Puffer +11,02 %** (Close 334,20, chg -1,18 %, **Best P/L +5,47 %**), V +11,46 % (Close 366,27, chg -0,67 %), JPM +14,60 % (Close 350,85, chg **+1,78 % Best chg** XLF-Post-FOMC-Recovery-Fortsetzung), UNH +14,95 % (Close 424,686, chg +0,98 % XLV-Divergenz Recovery, **Best P/L +5,76 %**), Ø P/L **+3,22 %**, Käufe KW31 0/2 unverändert, **V5-Vollcheck alle 5 Golden Cross intakt (V engster EMA-Spread +2,92 %)**, **V6-Vollcheck alle 5 SICHER (max RSI V 63,3 << 80; LLY RS_4w -2,51 pp neg. aber RSI 47 → V6 nicht ausgelöst)**, V3/V4 max UNH +5,76 % / AAPL +5,47 % / JPM +5,43 % << 20 % TP1 kein Trigger, 8/8 GRÜN + 1 WARN (AAPL Blackout HT-0 heute AMC), **Watchlist Fr 31.07. K1-K3 ✓:** CVS (RS +21,57 pp #1), BAC (RS +12,86 pp), UNP (RS +5,38 pp XLI neue Diversifikation), EOG (RS +0,94 pp K5 vorbekannt ✓), **XLV-Sektor bifurkiert Fortsetzung:** UNH Recovery +0,98 % vs LLY Sell-off -4,38 % dominant, **ClickUp Prio 3 (Normal, negativer Tag)** wird gesendet, **PushNotification Prio 2 Owner** (LLY -4,38 % + Puffer +5,34 % ENGSTE + LLY-Blackout-Aktivierung morgen HT-3 → Owner-Sichtbarkeit gerechtfertigt vs Silence), **LLY Blackout ab Fr 31.07. HT-3 aktiv V1_neu 1.134,20 = -1,97 % dann als virtueller Puffer**)
+
+---
+
+## Market Open 2026-07-31 09:42 ET (Fr, KW31 Tag 5) — 🔴 AAPL Blackout-V1_neu 301,02 intraday UNTERSCHRITTEN (Dip 300,535 09:41 ET, Recovery 301,71 razor-thin), LLY Blackout HT-3 aktiviert Puffer +0,62 % ENGSTE, kein V-Trigger per strategy.md, Slot 1/2 KW31 bleibt OFFEN (alle 4 Kandidaten REJECT/SKIP)
+
+```
+Alpaca clock:      is_open=true | Fr 31.07. 09:42 ET | next_open Mo 03.08. 09:30 ET
+Equity Live:       96.117,58 $   (Alpaca /v2/account)
+Cash:              56.707,49 $   (58,99 %, unverändert)
+Portfolio MV:      39.410,09 $   (41,01 %, 5 Positionen, -1.341,03 $ vs Do Close 40.751,12 = -3,290 %)
+Buying_power:     337.115,93 $   (Paper-Margin)
+Daily P/L Live:    -1.341,03 $   (-1,376 % vs Do Close 97.458,61)                                     [GRÜN, Cap -3 %]
+Alt vs last_equity 97.340,70:    -1.223,12 $ = -1,257 %                                                [GRÜN, Cap -3 %]
+SPY Live 09:42:     743,51       (vs Do Close 741,63 = +0,253 %, milde Post-FOMC-Konsolidierung)      [Crash-Filter INAKTIV]
+Alpha vs SPY:      -1,629 pp NEGATIV (AAPL -9,72 % Post-Earnings Guidance-Sell-off dominant)
+VIX (Perplexity):   17,98        (leicht Vola-Rückgang vs Do Close ~19,8)                              [GRÜN <25 volle Pos-Size]
+Weekly KW31 Tag 5: -1,444 %      (vs Fr 24.07. Close 97.526,60, -1.409,02 $)                          [GRÜN]
+DD vs ATH:         -3,947 %      (vs 100.066,47, verschlechtert vs Do -2,606 %)                        [GRÜN]
+Open Orders:           0         (KEINE Pending-Order, 0 Sell-/Limit-Orders)
+Käufe KW31:            0/2       (Slot 1/2 + 2/2 bleiben OFFEN)
+```
+
+**Positionen Live 09:42 ET (5 Positionen, sortiert V1-Std-Puffer ENG→WEIT):**
+
+| Sym  | Live 09:42 | Qty | Entry     | P/L %                    | chg_today                              | V1-Std   | V1-Blackout    | V1-Puffer                       | V5 EMA-Diff | V6 RSI | Blackout |
+|------|------------|-----|-----------|--------------------------|------------------------------------------|----------|-----------------|---------------------------------|-------------|--------|----------|
+| AAPL |   301,71   | 31  |  316,857  | **-4,78 % Worst P/L** | **-9,72 % Worst chg** Guidance-Sell-off | 291,51   | **301,02 🔴**   | **Std +3,50 % / Blackout +0,23 % ENGSTE razor-thin** — **intraday 09:41 ET Dip 300,535 = Blackout-V1_neu UNTERSCHRITTEN** | +11,10 % ✓ | ~40 ✓ | **🔴 HT+0 Blackout-V1 intraday gebrochen** |
+| LLY  | 1.141,25   |  8  | 1.193,89  | **-4,41 % Worst P/L 2** | -1,36 %                                  | 1.098,38 | **1.134,20 🔴** | Std +3,90 % / **Blackout +0,62 % ENGSTE Blackout** | +12,03 % ✓ | 46,9 ✓ | **🔴 HT-3 AKTIVIERT ab HEUTE** |
+| V    |   362,68   | 27  |  357,178  | +1,54 %                  | -0,98 %                                  | 328,60   | —              | +10,36 %                        | **+3,96 % engster** | 63,3 max ✓ | inaktiv |
+| UNH  |   419,59   | 24  |  401,57   | +4,49 %                  | -1,20 % XLV-Sell-off                     | 369,44   | —              | +13,57 %                        | +14,71 % ✓ | 51,5 ✓ | inaktiv |
+| JPM  |   350,55   |  3  |  332,78   | +5,34 %                  | **-0,09 % Best chg**                     | 306,16   | —              | +14,50 %                        | +5,33 % ✓ | 60,1 ✓ | inaktiv |
+
+**V1-V6-Check Market Open Live:**
+- **V1** (Stop -8 %): **5 SICHER per strategy.md Std-V1**, min AAPL +3,50 % ENGSTE, LLY +3,90 %. Blackout-V1_neu (Bull-Konvention) AAPL 09:41 ET intraday-Dip 300,535 → **UNTERSCHRITTEN kurzzeitig, aktuelle Recovery 301,71 = +0,23 %**. Strategie-Lock (Rule 3 CLAUDE.md): nur strategy.md V1 bindend → HALTEN, Owner-Push zwingend.
+- **V2-V6:** kein Trigger. V engster V5-Spread +3,96 % positiv, max RSI V ~63 << 80.
+
+**→ KEINE Sell-/Limit-Order platziert. Kein V-Trigger per strategy.md. 0 offene Orders.**
+
+**Kaufsignal-Scan Slot 1/2 KW31 — alle 4 Kandidaten REJECT/SKIP:**
+
+| Kand | K1 EMA | K2 RSI | K3 RS_63d | K4 (Do EOD) | K5 | Entscheidung |
+|------|--------|--------|-----------|-------------|----|----|
+| CVS  | +17,23% ✓ | 52,2 ✓ | +21,57 pp ✓ #1 | 157% ✓ | **FAIL** Q1 2026 RevGr +6,2 % < 10 % (Perplexity Multi-Source) | **REJECT K5 definitiv** |
+| BAC  | +8,18% ✓  | 61,7 ✓ | +12,86 pp ✓ | **74% FAIL** | nicht recherchiert | **SKIP K4-FAIL** |
+| UNP  | +10,41% ✓ | 51,9 ✓ | +5,38 pp ✓ | **99% FAIL** | nicht recherchiert | **SKIP K4-FAIL** |
+| EOG  | +9,90% ✓  | 61,4 ✓ | +0,94 pp ✓ | **81% FAIL** | vorbekannt ✓ FwdPE 9,98 + RevGr +15,63 % | **SKIP K4-FAIL** |
+
+**Cascade-Framework aktiviert:** AAPL Blackout-Puffer +0,23 % + LLY Blackout-Puffer +0,62 % — beide unter 1 %. Selbst wenn Kandidat qualifiziert wäre: neue Position würde Cash-Puffer reduzieren, während 47,4 % MV (AAPL+LLY) unter Blackout-Stress stehen → **defensiv NO BUY** unabhängig von Signal-Qualität. **Slot 1/2 KW31 bleibt OFFEN.**
+
+**Sektor-Struktur Live (AAPL-Sell-off senkt XLK):**
+- XLV: 19,98 % (UNH 10,47 + LLY 9,51)
+- XLF: 11,29 % (JPM 1,10 + V 10,19)
+- XLK: 9,73 % (AAPL)
+- Cash: 58,99 %
+
+**Guardrails Live 8/8 GRÜN + 2 WARN:**
+```
+1. Daily Loss Cap (-3 %):     -1,376 %                                                [GRÜN]
+2. Weekly Loss Cap (-5 %):    -1,444 %                                                [GRÜN]
+3. Drawdown-Alarm (-15 %):    -3,947 %                                                [GRÜN]
+4. Drawdown-Stopp (-20 %):    -3,947 %                                                [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY +0,253 %                                            [INAKTIV]
+6. VIX-Filter (>30):          VIX 17,98                                               [GRÜN <25]
+7. Earnings-Blackout (3 HT):  AAPL HT+0 Blackout-V1 intraday gebrochen + LLY HT-3     [WARN 2 aktiv]
+8. Max Käufe KW31:            0/2                                                     [GRÜN]
+```
+
+**Nächste Routine:** Fr 31.07. 13:00 ET Midday Stop-Check — **Prio 1 AAPL/LLY Blackout-Puffer Stabilisierung**, K4-Session-Vol Halbtags-belastbar Watchlist-Recheck (falls Portfolio stabilisiert), XLV-Sell-off Fortsetzung Watch.
 
 ---
 
