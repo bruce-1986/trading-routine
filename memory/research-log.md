@@ -4,6 +4,98 @@
 
 ---
 
+## Pre-Market 08:36 ET — 2026-07-31 (Fr, KW31 Tag 5) — 🔴 AAPL Post-Earnings-Sell-off Pre-Market -8,10 % (Guidance-Supply-Constraints), LLY-Blackout HT-3 aktiviert V1_neu 1.134,20 Puffer +1,48 % ENGSTE, alle 5 V1-V6 SICHER
+
+**Alpaca Clock:** is_open=false, 08:36 ET, next_open Fr 31.07. 09:30 ET.
+
+**Alpaca /v2/account Pre-Market:**
+- portfolio_value: **96.473,12 $** (vs Do Close 97.458,61 = **-1,011 %** Daily) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (58,78 %, unverändert)
+- MV Pre: 39.765,63 $ (5 Positionen, -985,49 $ vs Do Close 40.751,12 = -2,418 %, AAPL-Sell-off treibt)
+- last_equity: 97.340,70 $ (Alpaca EOD-Reconciliation, -118 $ vs Memory Do Close 97.458,61 marginal)
+- ATH 100.066,47 | DD **-3,591 %** [GRÜN, verschlechtert vs Do -2,606 %]
+- Weekly KW31 Tag 5 **-1,081 %** (vs Fr 24.07. Close 97.526,60, -1.053,48 $, verschlechtert vs Do +0,070 %) [GRÜN, weit von Cap -5 %]
+- Open Orders: **KEINE**
+
+**Marktdaten Pre-Market (Alpaca IEX 08:24-08:34 ET):**
+- **SPY Pre 743,68** (vs Do Close 741,63 = **+0,276 %** milde Post-FOMC-Recovery-Konsolidierung) [Crash-Filter INAKTIV]
+- **VXX letzte 21,91** (Do 19:59 ET Close, VIX-Proxy ~19-20)
+- **VIX Do Close ~19,8** (Memory-Referenz, Perplexity keine belastbare Pre-Zahl) [GRÜN <25]
+- **Alpha vs SPY -1,287 pp NEGATIV** (AAPL -8,10 % Post-Earnings dämpft Portfolio-Beta massiv trotz SPY-Konsolidierung positiv)
+- 10Y Yield: Perplexity nicht verfügbar, Memory-Referenz Do Pre ~4,12 %
+
+**🔴 AAPL Q3 FY26 Post-Earnings Do 30.07. AMC (kritisches Signal):**
+- **Beat auf Ist-Zahlen:** Umsatz **109,42 Mrd. $** (+16 % y/y, Konsens 108,86 Mrd. beat), **EPS 2,02 $** (+29 % y/y, Konsens 1,89 beat)
+- **iPhone-Rekord:** 54,3 Mrd. $ (+22 % y/y), 49,6 % Umsatzanteil
+- **Services:** 30,7 Mrd. $ (+12 %)
+- **Guidance Sep-Q Sell-off-Trigger:** Umsatzwachstum 9-11 % y/y + Bruttomarge 47-48 %, ABER **Supply Constraints + FX Headwinds** (Reuters "disappoints with forecast dogged by supply chain struggles")
+- **Pre-Market-Reaktion:** 307,14 $ (Alpaca IEX 08:34) vs Do Close 334,20 = **-8,10 %** massiver Guidance-Sell-off
+- **AAPL Blackout HT-0 gestern gefeuert → heute Post-Earnings-Konsolidierungs-Watch** (Bull-Convention Blackout V1_neu 301,02 bleibt aktiv bis Fr Close, konservativ)
+
+**V1-V6-Vollcheck Pre-Market (Positionen sortiert nach ENGSTEM V1-Puffer):**
+
+| Sym  | Pre Kurs | Qty | Entry     | P/L %    | chg vs Do Close | V1-Std   | V1-Blackout | V1-Puffer                     | Blackout-Status |
+|------|----------|-----|-----------|----------|-----------------|----------|-------------|-------------------------------|-----------------|
+| LLY  | 1.151,00 |  8  | 1.193,89  | **-3,59 % Worst P/L verschlechtert** | -0,34 % | 1.098,38 | **1.134,20** | **+1,48 % ENGSTE Blackout** / +4,79 % Std | **🔴 AKTIV HT-3 Q2 CY26 Mi 05.08. BMO — V1_neu = primäre Stop-Referenz heute** |
+| AAPL |  307,14  | 31  |  316,857  | **-3,06 % Post-Earnings** | **-8,10 % Worst chg** Guidance-Sell-off | 291,51 | **301,02** | **+2,03 % Blackout Post-Earnings** / +5,36 % Std | **🔴 HT+0 Post-Earnings Konsolidierung, Blackout-V1 konservativ aktiv bis Fr Close** |
+| V    |  366,21  | 27  |  357,178  | +2,53 %  | -0,02 %         | 328,60   | —           | +11,44 %                      | inaktiv Post-Earnings (Q3 CY26 Di 28.07. AMC ✓ RELEASED) |
+| JPM  |  351,00  |  3  |  332,78   | +5,47 %  | +0,04 %         | 306,16   | —           | +14,65 %                      | inaktiv (Q3 ~Mitte Okt) |
+| UNH  |  420,586 | 24  |  401,57   | +4,74 %  | -0,21 %         | 369,44   | —           | +13,84 %                      | inaktiv (Q3 ~Mitte Okt) |
+
+**V1-V6 Sub-Check (aus EOD-Bars Do 30.07.):**
+- **V1:** **5 SICHER**, aber AAPL +2,03 % Blackout ENGSTE + LLY +1,48 % Blackout ENGSTE-2 — beide unter 3 %-Puffer. Bei Open weiterer Rutsch → V1-Trigger möglich (Watch-Item Prio 1).
+- **V2 Trailing:** V-52w-Hoch 369,12 × 0,88 = 324,83 → 366,21 SAFE. Keine anderen Trailing-Trigger.
+- **V3 (+20 %):** max JPM +5,47 % / UNH +4,74 % / AAPL Post-Earnings jetzt negativ << 20 %, kein Trigger.
+- **V4 (+35 %):** kein Trigger.
+- **V5 Death Cross:** aus Do EOD-Bars alle 5 SICHER, engster V +2,92 %. Post-Sell-off AAPL EMA50 könnte sich morgen leicht drücken aber >EMA200 bei aktuellem Kurs 307 vs ca. EMA200 ~278.
+- **V6 (RSI>80 UND RS<0):** max RSI V 63,3 aus Do EOD, AAPL RSI wird nach -8,10 % deutlich fallen (Do 61,5 → geschätzt ~40 heute) — V6 nicht ausgelöst.
+
+**→ KEINE Sell-/Limit-Order für heute Open platziert. Kein V1-Break, aber Puffer AAPL/LLY beide < 3 % → **Market-Open-Watch Prio 1 auf AAPL 301,02 und LLY 1.134,20** (Blackout-V1_neu als primäre Stop-Referenz).
+
+**Guardrails Pre-Market 8/8 GRÜN + 2 WARN:**
+```
+1. Daily Loss Cap (-3 %):     -1,011 % vs Do Close                                   [GRÜN]
+2. Weekly Loss Cap (-5 %):    KW31 Tag 5 -1,081 %                                    [GRÜN]
+3. Drawdown-Alarm (-15 %):    -3,591 % vs ATH 100.066,47                              [GRÜN]
+4. Drawdown-Stopp (-20 %):    -3,591 %                                                [GRÜN]
+5. Crash-Filter (SPY -5 %):   SPY Pre +0,276 %                                        [INAKTIV]
+6. VIX-Filter (>30):          VIX ~19,8 Do Close-Referenz                             [GRÜN <25]
+7. Earnings-Blackout (3 HT):  AAPL HT+0 Post-Earnings + LLY HT-3 Aktivierung          [WARN 2 aktiv]
+8. Max Käufe KW31:            0/2 (Slot 1/2 + 2/2 offen)                              [GRÜN]
+```
+
+**Earnings-Blackout-Kalender:**
+- **AAPL Q3 FY26 Do 30.07. AMC ✓ RELEASED** (EPS 2,02 / Umsatz 109,42 Mrd., beat aber Guidance-enttäuschung) — Blackout-V1 301,02 konservativ aktiv bis Fr Close.
+- **LLY Q2 CY26 Mi 05.08.2026 BMO** → **Blackout ab HEUTE Fr 31.07. HT-3 aktiv** V1_neu 1.134,20 = Puffer +1,48 % (aktueller Kurs 1.151). Primäre Stop-Referenz für Watching heute + Mo/Di.
+- V (Q3 CY26 Di 28.07. AMC ✓ RELEASED), JPM/UNH Q3 CY26 ~Mitte Okt weit weg.
+- **Watchlist CVS/BAC/UNP/EOG:** Perplexity keine belastbare Earnings-Termin-Bestätigung 3 HT-Fenster, aber vorherige Recherche keine Konflikte → K5-Multi-Source zwingend beim Kauf-Scan Open.
+
+**Makro-Events heute (Perplexity keine Konsens-Zahlen):**
+- Erwartet: **PCE Juni Deflator** (Fed-Inflations-Ziel-Barometer), **Employment Cost Index Q2**, **Michigan Consumer Sentiment final Juli**
+- Vor Börsenöffnung Vol-Katalysator PCE 08:30 ET (falls Termin bestätigt) → SPY-Pre-Market kann kippen
+
+**Watchlist Fr 31.07. Market Open — K1-K3 EOD-Bars Do 30.07. bestätigt, K4/K5 zwingend Multi-Source (unverändert vs Do Close):**
+
+| Kand | Sektor | Do-Close | K1 EMA50/200 | K2 RSI | K3 RS_63d | K5-Status |
+|------|--------|----------|--------------|--------|-----------|-----------|
+| CVS  | XLV    | 105,11   | +17,69 % ✓   | 52,2 ✓ | +21,57 pp #1 ✓ | K5 zwingend Multi-Source (XLV-Cap-Warnung 19,95 % → 3. XLV pusht auf ~29 %) |
+| BAC  | XLF    | 61,76    | +7,68 % ✓    | 61,7 ✓ | +12,86 pp ✓ | K5 zwingend Multi-Source |
+| UNP  | XLI    | 289,42   | +11,45 % ✓   | 51,9 ✓ | +5,38 pp ✓ | K5 zwingend Multi-Source (neue XLI Sektor-Diversifikation) |
+| EOG  | XLE    | 145,59   | +11,29 % ✓   | 61,4 ✓ | +0,94 pp ✓ | K5 **vorbekannt ✓** (FwdPE 9,98 + RevGr +15,63 %) |
+
+**Sektor-Struktur Pre-Market (AAPL-Sell-off senkt XLK):**
+- XLV: 20,03 % (UNH 10,46 + LLY 9,55)
+- XLF: 11,34 % (JPM 1,09 + V 10,25)
+- XLK: 9,87 % (AAPL, gedrückt von 10,63 % Do Close durch -8,10 %)
+- Cash: 58,78 %
+
+**Entscheidung Market-Open-Scan: JA — aber Prio 1 AAPL/LLY-Puffer-Watch vor Kauf-Scan.**
+Slot 1/2 KW31 offen, Watchlist K1-K3 sauber, VIX <25, SPY +0,28 %. Bei Open: (1) AAPL Puffer-Monitoring 301,02, (2) LLY Puffer-Monitoring 1.134,20, (3) K4/K5-Multi-Source für CVS/BAC/UNP/EOG. Kauf nur bei sauberer Blackout-Aktivierung und stabilem Portfolio (kein Cascade-Sell-off).
+
+**Nächster Check:** Fr 31.07. 09:30 ET Market Open + Kaufsignal-Scan — **AAPL Open-Konsolidierung V1_neu 301,02 Watch**, **LLY Blackout HT-3 V1_neu 1.134,20 Watch**, Watchlist CVS/BAC/UNP/EOG K4/K5-Multi-Source-Verifikation.
+
+---
+
 ## Market Close 16:00 ET — 2026-07-30 (Do, KW31 Tag 4) — Post-FOMC-Recovery SPY +1,653 % Close-Fest, LLY XLV-Sell-off -4,38 % Worst-Fortsetzung dominant, 5 V1-V6 SICHER Vollcheck, Watchlist Fr CVS/BAC/UNP/EOG K1-K3 ✓
 
 **Alpaca Clock:** is_open=false, 16:02 ET, next_open Fr 31.07. 09:30 ET.
