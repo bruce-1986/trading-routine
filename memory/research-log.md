@@ -4,6 +4,45 @@
 
 ---
 
+## Market Open 09:42 ET — 2026-08-03 (Mo, KW32 Tag 1) — KEIN Kauf (alle 6 Watchlist-Kandidaten REJECT/SKIP), Daily -0,030 % [GRÜN], SPY +0,639 % Post-Weekend-Rally, LLY Blackout-V1 unterschritten -0,28 % (Std sicher +2,97 %), Slot 1/2 KW32 OFFEN
+
+### Kaufsignal-Scan Ergebnis (Slot 1/2 KW32)
+
+| Kandidat | Sektor | Live | K1 | K2 | K3 | K4 | K5 | Entscheidung |
+|----------|--------|------|-----|-----|-----|-----|-----|--------------|
+| **UNP** | XLI | 290,94 (-0,28 % vs SPY +0,64 % Divergenz -0,92 pp) | +9,85 % ✓ | RSI 57,4 ✓ | +4,90 pp ✓ | **Fr 116 % <120 % FAIL** + Live 22 % pro-rata | Q2 2026 +11,53 % ✓ (SEC 10-Q) | **SKIP K4-FAIL + Momentum-Bruch** |
+| **ABBV** | XLV | 250,42 (-0,18 %) | +7,44 % ✓ | RSI 53,4 ✓ | **+16,86 pp #1 Top** ✓ | Fr 135 % ✓ | Q2 2026 +10,16 % ✓ marginal (SEC 10-Q, FwdPE 13,72) | **SKIP XLV-Cap Owner-Klärung pending** (Strategie-Lock Rule 3) |
+| **EOG** | XLE | 144,85 (-2,55 %) | +8,34 % ✓ | RSI 58,0 ✓ | **-0,11 pp marginal NEGATIV FAIL** | Fr 84 % FAIL | vorbekannt ✓ | **REJECT K3-FAIL** |
+| **AMZN** | XLY | 285,78 (+5,37 % Gap-Up) | +3,01 % ✓ | **RSI 75,6 >70 FAIL** | +2,20 pp ✓ | — | — | **REJECT K2-FAIL Overbought** |
+| **GOOGL** | XLC | 370,39 (+3,94 % Gap-Up) | +10,60 % ✓ | RSI 62,0 ✓ | **-8,31 pp << 0 FAIL** | — | — | **REJECT K3-FAIL** |
+| **MRK** | XLV | 130,21 | — | — | — | — | — | **BLOCKIERT Earnings Di 04.08. BMO HT-1** |
+
+### K5 Multi-Source Verifikation (Perplexity 2 Queries)
+- **UNP**: Erste Query fehlerhaft (+4,0 % Q1 2026). Zweite Query mit SEC 10-Q: **Q2 2026 Rev $6.864M vs Q2 2025 $6.154M = +11,53 % YoY** → K5 PASS (aber irrelevant wegen K4-FAIL)
+- **ABBV**: Q2 2026 Rev **$16.990M vs Q2 2025 $15.423M = +10,16 %** (SEC Form 8-K + Press Release) → K5 PASS marginal (0,16 pp über Cap)
+
+### V1-V6 Portfolio-Vollcheck Live (alle 5 SICHER Std)
+- V1 min: LLY +2,97 % ENGSTE Std (Blackout-V1_neu 1.134,20 UNTERSCHRITTEN -0,28 % aber Strategie-Lock → HALTEN)
+- V5 min EMA-Diff: V +2,75 % (positiv), alle Golden Cross intakt
+- V6 max RSI: V 69,3 (< 80)
+- V3/V4 max P/L: JPM +6,03 % (<< 20 %)
+
+### Guardrails Live (alle GRÜN)
+```
+Daily -3 %:   -0,030 % (essentiell flat) [GRÜN]
+Weekly -5 %:  KW32 Tag 1 frisch [GRÜN]
+DD -15 %:     -3,378 % vs ATH [GRÜN]
+VIX >30:      19,31 Pre-Read [GRÜN]
+Crash SPY -5%: SPY +0,639 % [INAKTIV]
+Käufe KW32:   0/2 [Slot 1/2 + 2/2 OFFEN]
+Blackout:     LLY HT-2 (V1_neu 1134.20 UNTERSCHRITTEN), AAPL HT+1 auslaufend [WARN]
+```
+
+### Nächster Check
+Mo 03.08. **13:00 ET Midday Stop-Check** — LLY Blackout-V1 Stabilisierung Prio 1, UNP K4-Session-Vol Halbtags-belastbar Re-Check (falls Momentum-Bruch abgefangen), AAPL Blackout HT+1 auslaufend, XLV-Cap-Klärung Owner-Watch.
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-03 (Mo, KW32 Tag 1) — 8/8 GRÜN + 2 WARN (AAPL BO HT+1 auslaufend +3,42 % / LLY BO HT-2 +2,36 % ENGSTE), VIX 19,31 [GRÜN <25], SPY Futures +0,88 % vs Fr Close 746,79, Daily Pre +0,360 %, DD -3,357 %, MRK BLOCKIERT (Earnings Di 04.08. BMO HT-1), Watchlist UNP/ABBV/EOG + AMZN/GOOGL neu Prüfen, Kauf-Slots KW32 2/2 frisch
 
 ### Alpaca /v2/account Pre-Market
