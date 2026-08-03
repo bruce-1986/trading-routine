@@ -4,6 +4,95 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-03 (Mo, KW32 Tag 1) — 8/8 GRÜN + 2 WARN (AAPL BO HT+1 auslaufend +3,42 % / LLY BO HT-2 +2,36 % ENGSTE), VIX 19,31 [GRÜN <25], SPY Futures +0,88 % vs Fr Close 746,79, Daily Pre +0,360 %, DD -3,357 %, MRK BLOCKIERT (Earnings Di 04.08. BMO HT-1), Watchlist UNP/ABBV/EOG + AMZN/GOOGL neu Prüfen, Kauf-Slots KW32 2/2 frisch
+
+### Alpaca /v2/account Pre-Market
+- portfolio_value: **96.707,72 $** (vs last_equity 96.360,90 = **+0,360 %** Pre) [GRÜN, Cap -3 %]
+- cash: **56.707,49 $** (58,64 %, unverändert seit GS-Stop 27.07.)
+- MV Pre: **40.000,53 $** (5 Pos, +311,36 vs Fr Close 39.689,17 = +0,784 % Post-Weekend-Recovery, alle 5 positiv change_today)
+- last_equity: 96.360,90 $ (Alpaca EOD-Reconciliation Fr)
+- **DD vs ATH 100.066,47: -3,357 %** [GRÜN, verbessert vs Fr Close -3,667 %]
+- Konsistenz mit memory/portfolio.md Fr Close: **✓** (Equity Delta +311,06 = 5 Pos-Recovery, Cash exakt gleich)
+- **0 offene Orders** Alpaca
+
+### Positionen Live Pre (5) — change_today alle positiv
+| Symbol | Qty | Price Pre | change_today | P/L $ | P/L % | Std-V1 Puffer | Blackout-V1 | BO-Puffer |
+|--------|-----|-----------|--------------|-------|-------|----------------|-------------|-----------|
+| AAPL   | 31  | 311,31    | +0,777 %     | -171,94 | -1,75 % | +6,79 % (291,51) | 301,02 HT+1 auslaufend | **+3,42 %** |
+| JPM    |  3  | 355,02    | +0,918 %     | +66,72  | +6,68 % | +15,96 % (306,16) | n/a | n/a |
+| LLY    |  8  | 1.161,00  | +1,058 %     | -263,10 | -2,76 % | +5,70 % (1.098,38) | 1.134,20 HT-2 | **+2,36 % ENGSTE** |
+| UNH    | 24  | 416,38    | +0,478 %     | +355,41 | +3,69 % | +12,71 % (369,44) | n/a | n/a |
+| V      | 27  | 370,51    | +1,196 %     | +359,97 | +3,73 % | +12,75 % (328,60) | n/a | n/a |
+
+### Guardrails (alle GRÜN Pre)
+```
+Daily Loss Cap  -3 %:  +0,360 % (vs last_equity 96.360,90)                   [GRÜN]
+Weekly Loss Cap -5 %:  KW32 Tag 1 frisch, Reset erfolgt                       [GRÜN]
+Drawdown -15 %:        -3,357 % vs ATH 100.066,47                             [GRÜN]
+Drawdown -20 %:        nicht aktiv                                             [GRÜN]
+VIX-Filter > 30:       VIX 19,31 (Perplexity Live)                            [GRÜN, <25 volle Pos-Size]
+Crash-Filter SPY -5 %: SPY Fr +0,696 %, SPY Pre +0,88 % Futures               [INAKTIV]
+Käufe diese Woche:     0 / 2 (frisch KW32)                                    [2 Slots frei]
+Earnings-Blackout:     LLY Q2 CY26 Aug 5-7 est. → **HT-2** (V1_neu 1.134,20)  [WARN]
+                       AAPL Q3 FY26 released 30.07. → HT+1 auslaufend         [WARN]
+                       MRK Tue 04.08. BMO → HT-1 → **Kauf-Sperre MRK**        [SKIP]
+Max. neue Käufe:       2 pro Woche                                            [0/2]
+```
+
+### Markt-Daten Pre-Market (Perplexity Live)
+```
+VIX:                19,31            [GRÜN <25]
+SPY Futures:        E-mini +0,44 % (~+0,88 % Index-Äquiv. vs Fr Close 746,79)  → ~753 SPY-Äquiv.
+10Y Treasury:       4,28 %
+DXY:                n/a Live (keine Perplexity-Angabe)
+Sentiment:          neutral-positiv (Tech/AI-führung Pre)
+```
+
+### Makro-Ereignisse Woche (Perplexity, mit Skepsis wg. FOMC-Konflikt)
+```
+Mo 03.08.:  keine Top-Tier-Events
+Di 04.08.:  MRK Earnings BMO, PFE + CAT + MCD + AMGN Earnings
+Mi 05.08.:  LLY Earnings (est.) BMO, CVS + DIS + FOXA Earnings, **evtl. FOMC-Nachwehen** (Perplexity meldet FOMC Mi — aber FOMC 29.07. war letzte Sitzung, nächste erst Sep → Skepsis, keine Aktion)
+Do 06.08.:  CPI Juli (Perplexity-Angabe — historisch aber typisch 10-13. → Skepsis)
+Fr 07.08.:  PPI + NFP (NFP = 1. Fr Aug, plausibel ✓)
+```
+
+### Earnings-Blackouts (offene Positionen)
+- **LLY** Q2 CY26 est. **Aug 5-7 BMO** → **HT-2 (heute)** aktiv, Blackout-V1_neu **1.134,20** = -5,00 % Kaufkurs, primäre Stop-Referenz bis Report
+- **AAPL** Q3 FY26 released 30.07. AMC → **HT+1** letzter Tag Blackout-Konvention, morgen normal V1 291,51 (Standard)
+- JPM/UNH/V: keine Earnings 10 Handelstage
+
+### Watchlist Mo Open Kaufsignal-Scan (KW32 Slot 1/2)
+| Kandidat | Sektor | Fr Close | Pre-Read | Status | Prio |
+|----------|--------|----------|----------|--------|------|
+| **UNP**  | XLI    | 292,15   | K1-K3 ✓ Fr EOD, K4 116 % borderline, K5 zwingend Multi-Source Open | XLI 0 % neue Diversifikation | **#1** |
+| **ABBV** | XLV    | 250,88   | K1-K3 ✓ Fr EOD (RS +14,73 pp #2), K4 135 % ✓, K5 zwingend | **XLV-Cap-Warnung** (bereits 19,88 %, ABBV pusht +10 % → ~30 %) | **#2** conditional |
+| **EOG**  | XLE    | 148,65   | K1-K3 ✓ Fr EOD, K4 84 % FAIL Watch, K5 vorbekannt ✓ | XLE 0 % neue Diversifikation | **#3** K4-Rebound-Watch |
+| **MRK**  | XLV    | 130,21   | K1-K3 ✓ Fr EOD (RS +15,32 pp #3), K4 69 % FAIL | **BLOCKIERT Earnings Di 04.08. BMO HT-1** | **SKIP** |
+| **AMZN** | XLY    | 271,46   | Weekly +16,96 % KW31, Post-Q2-Rally, K1-K3 zu prüfen Mo | Earnings est. 6-13.08. → **Blackout-Risk** | **#4 conditional** — Earnings-Datum vor Kauf klären |
+| **GOOGL**| XLC    | 356,06   | Weekly +11,36 %, Post-Q2-Rebound (schon released) | K1-K3 zu prüfen, KW30-V1-Präzedenz -12,65 % → **Fill-Day-Puffer** | **#5** conditional |
+
+### Cascade-Framework Check
+AAPL BO-Puffer +3,42 % (auslaufend HT+1) + LLY BO-Puffer +2,36 % ENGSTE (aktive HT-2) — beide **über 1 %-Konvention-Grenze** → Cascade-Framework INAKTIV, Kauf-Slot 1/2 grundsätzlich zulässig. K4/K5-Multi-Source am Open zwingend, Sektor-Cap-Check ABBV vor XLV-Push.
+
+### Entscheidung Pre-Market 2026-08-03
+**Kaufscan bei Market Open 09:30 ET: JA (mit Bedingungen).**
+Begründung: Alle 8 Guardrails GRÜN, VIX 19,31 < 25 (volle Pos-Size 10 %), SPY Futures +0,88 % kein Crash-Filter, LLY/AAPL Blackout-Puffer > 1 % (Cascade-Framework INAKTIV), 2 frische Kauf-Slots KW32, 0 offene Orders. MRK blockiert (Earnings HT-1), AMZN conditional bis Earnings-Datum bestätigt. Primär-Watch: UNP (XLI-Diversifikation), ABBV (XLV-Cap-Diskussion beim Open klären), EOG (K4-Rebound Watch).
+
+**Prio-1 Watches Market Open:**
+1. LLY Blackout HT-2 Puffer +2,36 % (verschlechtert vs Fr Close +1,18 %? — check Live Open)
+2. AAPL Blackout HT+1 auslaufend Post-Earnings-Konsolidierung
+3. K4/K5-Multi-Source UNP/ABBV/EOG für Sauberkeitsprüfung
+4. XLV-Cap-Diskussion ABBV: Owner-Klärung ob 3. XLV zulässig (aktuell 19,88 % → ~30 %)
+
+### Notification
+```
+ClickUp Prio 4 Routine-Log wird gesendet (Pre-Market Standard-Priorität).
+PushNotification: KEINE (kein Cap-Alert, kein <1 %-Blackout, positive Pre-Metrics — Silence-Rule Routine).
+```
+
+---
+
 ## Market Close 16:00 ET — 2026-07-31 (Fr, KW31 Tag 5 FINAL) — 5 V1-V6 SICHER Vollcheck EOD-Bars, AAPL Blackout-Puffer +2,70 % Recovery (Std +6,05 %), LLY Blackout +1,18 % (Std +4,48 % ENGSTE), Daily -1,090 % / Alpha -1,785 pp NEG, Weekly KW31 FINAL -1,159 %, Watchlist Mo UNP/ABBV/MRK/EOG
 
 **Alpaca Clock:** is_open=false, 16:02 ET, next_open Mo 03.08. 09:30 ET.
