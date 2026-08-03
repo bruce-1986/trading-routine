@@ -4,6 +4,77 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-03 (Mo, KW32 Tag 1 FINAL) — KEIN Trade, 5 V1-V6 SICHER Vollcheck EOD-Bars, Daily -0,403 % [GRÜN], SPY +1,464 % Post-Weekend-Rally-Fortsetzung, Alpha -1,87 pp NEG, Watchlist Di 04.08. UAL #1 XLI RS +33,61 pp #1 TOP, Slot 1/2 KW32 OFFEN, VIX 16,02 stark reduziert
+
+### Alpaca /v2/account Close
+- equity: **95.972,60 $** (vs last_equity 96.360,90 = **-0,403 %** Daily) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (59,09 %, unverändert seit GS-Stop 27.07.)
+- MV Close: 39.261,58 $ (5 Pos, -359,21 vs Open 39.620,79 = -0,907 %)
+- **DD vs ATH 100.066,47: -4,091 %** [GRÜN, verschlechtert vs Midday -4,043 %]
+- **Weekly KW32 Tag 1 = Daily -0,403 %** [GRÜN, weit von Cap -5 %]
+- **SPY Close Alpaca IEX 757,72** vs Fr Close 746,79 = **+1,464 % Post-Weekend-Rally-Fortsetzung** (Snapshot Daily-Bar h=758,58 l=749,21 vol=1,93M verified) [Crash-Filter INAKTIV]
+- Perplexity SPY divergiert bei -0,13 % → **IEX bindend** (Konsistenz Bull-Konvention)
+- **Alpha vs SPY -1,867 pp NEGATIV**
+- **VIX Perplexity 16,02** [GRÜN <25, deutlich reduziert vs Fr ~19,8 = Vola-Entspannung Post-Weekend]
+- 0 offene Orders
+
+### V1-V6 Portfolio-Vollcheck EOD-Bars (alle 5 SICHER Std)
+| Symbol | Close | chg | P/L | Std-V1 Puffer | Blackout BO | EMA-Diff | RSI | RS_4w |
+|--------|-------|-----|-----|---------------|-------------|----------|-----|-------|
+| LLY   | 1.121,00 | **-2,42 % Worst** | **-6,11 % Worst** | +2,06 % **ENGSTE** | **-1,16 % UNTERSCHRITTEN** verb. vs Midday -1,49 % | +11,69 % | **30,8 Oversold** | -7,52 pp NEG |
+| AAPL  | 303,03 | -1,90 % | -4,36 % | +3,95 % | **+0,67 % kritisch nah 0 %** HT+1 letzter Tag | +10,89 % | 41,3 | -3,84 pp NEG |
+| V     | 365,67 | -0,13 % | +2,38 % | +11,28 % | n/a | **+3,92 % engster aber positiv verb. vs Fr +2,45 %** | 59,8 Cool-off vs Fr 66,2 | +1,47 pp |
+| UNH   | 415,36 | **+0,23 % Best** | +3,43 % | +12,43 % | n/a | +13,35 % | 43,2 | -1,51 pp NEG |
+| JPM   | 352,64 | +0,24 % | **+5,97 % Best P/L** | +15,18 % | n/a | +5,49 % | 58,8 | +3,53 pp |
+
+**V3/V4 kein Trigger** (max JPM +5,97 % << 20 %-TP1). **V5 alle Golden Cross intakt** (V engster +3,92 % positiv). **V6 alle SICHER** (max RSI V 59,8 << 80; LLY RSI 30,8 nah Oversold, kein Sell-Signal; UND-Bedingung mit RS<0 nicht erfüllt für alle da RSI << 80). **→ KEIN V-Trigger, KEINE Sell-/Limit-Order für Di 04.08. platziert.**
+
+### Blackout-Monitoring
+- **AAPL HT+1 letzter Tag** Puffer +0,67 % kritisch nah 0 % verschlechtert vs Midday +1,94 %. **Ab morgen Di 04.08. HT+2 → Blackout beendet, Std-V1 291,51 wieder alleine primär.**
+- **LLY HT-2** Blackout-V1_neu 1.134,20 weiter UNTERSCHRITTEN -1,16 % (verbessert vs Midday -1,49 %). Strategie-Lock CLAUDE.md Rule 3 → nur Std-V1 1.098,38 bindend → HALTEN. Bis Mi 05.08. BMO Earnings-Release primäre Bull-Konvention-Referenz.
+- **MRK Di 04.08. BMO HT-0** — nicht Portfolio-Position, aber blockiert Kauf-Kandidat.
+
+### Watchlist Di 04.08. K1-K3 (Alpaca IEX EOD Mo 03.08.)
+| Kandidat | Sektor | Close | chg heute | K1 EMA-Diff | K2 RSI | K3 RS_63d | K4 Vol Mo | K5 | Prio |
+|----------|--------|-------|-----------|-------------|--------|-----------|-----------|-----|------|
+| **UAL** | XLI | 128,40 | **+5,84 %** | +9,26 % ✓ | 52,8 ✓ | **+33,61 pp #1 TOP** ✓ | 72 % FAIL Rebound-Watch Di | vorbekannt ✓ RevGr 16 %, FwdPE 14,8x, Next-Earnings Okt 2026 ✓ | **#1 NEUE XLI-Diversifikation Airlines Post-Rally** |
+| UNP | XLI | 290,94 | -0,28 % | +9,85 % ✓ | 57,4 ✓ | +4,90 pp ✓ | Fr 116 % borderline, Mo Momentum-Bruch | Q2 26 +11,53 % ✓ (SEC 10-Q) | #2 Backup Re-Check Di Pre-Market |
+| EOG | XLE | 144,85 | -2,55 % | +8,34 % ✓ | 58,0 ✓ | -0,11 pp marginal NEG | Fr 84 % FAIL | vorbekannt ✓ FwdPE 9,98 + RevGr +15,63 % | #3 XLE Rebound-Watch |
+| ABBV | XLV | 250,42 | -0,18 % | +7,44 % ✓ | 53,4 ✓ | **+16,86 pp #1 XLV** ✓ | Fr 135 % ✓ | Q2 26 +10,16 % ✓ marginal | **#4 BLOCKIERT XLV-Cap-Klärung Owner pending 4. Woche in Folge** |
+| GE | XLI | 369,00 | +2,46 % | +7,80 % ✓ | 53,1 ✓ | +23,61 pp #2 ✓ | 79,8 % FAIL | **FAIL FwdPE 44,72 >35 persistent** | **BLOCKIERT K5-FAIL** |
+| META | XLC | 590,15 | +6,03 % | **-4,87 % FAIL** Death-Cross-nah | 47,5 | -8,20 pp | 127 % ✓ | — | **REJECT K1-FAIL** |
+| TSLA | XLY | 322,08 | +3,50 % | **-6,51 % FAIL** | 30,2 <50 FAIL | -22,73 pp FAIL | 65 % FAIL | — | **REJECT K1/K2/K3-FAIL** |
+| CAT | XLI | 831,04 | +2,02 % | +16,19 % ✓ | **34,8 <50 FAIL** | **-11,83 pp FAIL** | 104 % FAIL | — | **REJECT K2/K3-FAIL** |
+| MRK | XLV | 130,21 | — | — | — | — | — | — | **BLOCKIERT Earnings Di 04.08. BMO HT-0** |
+
+**Slot 1/2 KW32 bleibt OFFEN** — **UAL Prio 1 wenn K4-Vol-Rebound Di Pre-Market/Open belastbar + K5-Multi-Source-Verifikation bestätigt**, XLV-Cap-Klärung Owner-Prio 1 blockiert weiter ABBV Top-RS-XLV-Kandidat.
+
+### Sektor-Struktur Close
+| Sektor | Anteil | Pos | Notes |
+|--------|--------|-----|-------|
+| XLV | 19,74 % | UNH 10,39 + LLY 9,35 | LLY-Sell-off senkt marginal |
+| XLF | 11,39 % | JPM 1,10 + V 10,29 | stabil |
+| XLK | 9,79 % | AAPL | Post-Earnings-Konsolidierung |
+| Cash | 59,09 % | — | unverändert seit GS-Stop 27.07. |
+
+### Guardrails Close (alle GRÜN + 2 WARN)
+```
+Daily -3 %:   -0,403 %                                  [GRÜN]
+Weekly -5 %:  KW32 Tag 1 = Daily -0,403 %              [GRÜN]
+DD -15 %:     -4,091 % vs ATH 100.066,47                [GRÜN]
+VIX >30:      16,02 (Perplexity)                        [GRÜN, deutlich reduziert vs Fr]
+Crash SPY -5%: SPY +1,464 %                             [INAKTIV]
+Käufe KW32:   0/2 [Slot 1/2 + 2/2 OFFEN]
+Blackout:     LLY HT-2 (V1_neu 1134.20 UNTERSCHRITTEN -1,16 %) [WARN]
+              AAPL HT+1 letzter Tag Puffer +0,67 % kritisch     [WARN]
+              MRK HT-0 morgen Di 04.08. BMO (nicht Position)    [Kauf-Sperre MRK]
+```
+
+### Nächster Check
+Di 04.08. **08:30 ET Pre-Market KW32 Tag 2** — **UAL K4-Vol-Rebound + K5-Multi-Source-Verifikation Prio 1** (falls Vol Pre-Market/Open belastbar → Kauf-Kandidat Slot 1/2), MRK BMO Earnings-Report + Post-Earnings-Reaktion, **LLY HT-1 letzte Bewegung vor Report Mi**, **AAPL Blackout HT+2 Beendigung + Std-V1 291,51 wieder alleine primär**, XLV-Cap-Klärung Owner-Watch (blockiert ABBV 4. Woche).
+
+---
+
 ## Market Open 09:42 ET — 2026-08-03 (Mo, KW32 Tag 1) — KEIN Kauf (alle 6 Watchlist-Kandidaten REJECT/SKIP), Daily -0,030 % [GRÜN], SPY +0,639 % Post-Weekend-Rally, LLY Blackout-V1 unterschritten -0,28 % (Std sicher +2,97 %), Slot 1/2 KW32 OFFEN
 
 ### Kaufsignal-Scan Ergebnis (Slot 1/2 KW32)
