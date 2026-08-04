@@ -4,6 +4,68 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-04 (Di, KW32 Tag 2) — Tagesbilanz +0,176 % / Alpha -1,591 pp NEG / DD -3,911 % GRÜN / Weekly -0,253 % GRÜN
+
+### Alpaca /v2/account Close
+- portfolio_value: **96.153,04 $** | equity: 96.153,04 $ | last_equity: 95.984,04 $
+- Daily P/L: **+169,00 $ = +0,176 %** [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (58,98 %, unverändert)
+- long_market_value: 39.445,55 $ (5 Pos)
+- **DD vs ATH 100.066,47: -3,911 %** [GRÜN, verbessert vs Midday -3,884 %]
+- **Weekly KW32 Tag 2: -0,253 %** vs Fr 31.07. Close 96.396,66 [GRÜN, Cap -5 %]
+- 0 offene Orders
+
+### Positionen Close (Alpaca IEX Daily Bars)
+| Symbol | Close | chg_today | P/L $ | P/L % | V1 Std | V1 Puf | V2 Trail | V2 Puf | RSI14 | EMA-Diff | RS_4w | RS_63d |
+|--------|-------|-----------|-------|-------|--------|--------|----------|--------|-------|----------|-------|--------|
+| LLY  | 1.117,47 | -0,33% | -611,34 | **-6,40 % Worst** | 1.098,38 | **+1,74 % ENGSTE Std** | 1.098,70 | +1,71% | 40,4 | +11,90% | **-12,66 pp NEG** | +8,04 pp |
+| AAPL | 309,335 | **+1,95 % Best chg** | -233,17 | -2,37% | 291,51 | +6,12% | 303,21 | +2,02% | 44,6 | +10,37% | -3,56 pp | +4,34 pp |
+| UNH  | 407,73 | **-1,84 % Worst chg** | +147,84 | +1,53% | 369,44 | +10,36% | **405,64** | **+0,52 %** | 43,1 | +13,65% | -7,87 pp | +2,61 pp |
+| V    | 369,53 | +1,06% | +333,51 | +3,46% | 328,60 | +12,45% | 329,09 | +12,29% | 65,5 | **+3,01 % engster V5** | +1,83 pp | +5,65 pp |
+| JPM  | 357,52 | +1,38% | +74,22 | **+7,43 % Best P/L** | 306,16 | +16,78% | 319,43 | +11,93% | 64,6 | +5,74% | +2,36 pp | +8,80 pp |
+
+**V5-Vollcheck 5 SICHER** (Alpaca IEX 253d, alle Golden Cross): V engster +3,01 % (verb. vs Mo +3,92 %), JPM +5,74 %, AAPL +10,37 %, LLY +11,90 %, UNH +13,65 %.
+**V6-Vollcheck 5 SICHER** (max RSI V 65,5 << 80): LLY RS_4w -12,66 pp NEG aber RSI 40,4 → sicher via UND.
+**V2 UNH razor-thin Puffer +0,52 %** — 52w-High 460,95 vom 2026-07-16 = intraday-Wick (Close-basis 423,28 = -8,17 % below), ohne Wick nächst-höchster ~437,13 → V2 Puffer +5,99 %. Strategie-Lock strategy.md wörtlich → 460,95 bindend, V2 nicht getriggert.
+**V3/V4 kein Trigger** (max JPM +7,43 % << 20 %-TP1).
+
+### Makro-Research (Perplexity + Alpaca IEX)
+- **SPY Close 771,11 Alpaca IEX** vs Mo 757,72 = **+1,767 % Post-Rally-Beschleunigung** (Snapshot Daily-Bar h=773,41 l=760,53 vol=2,27M verified)
+- Perplexity divergiert bei 1,48 % → IEX bindend (Konvention Memory-etabliert)
+- **VIX Perplexity 15,86** [GRÜN <25, weiter reduziert vs Mo 16,02 = Vola-Entspannung Fortsetzung]
+- **Alpha vs SPY -1,591 pp NEGATIV** (Cash 58,98 % struktureller Drag + UNH Give-back vs SPY-Beta-Beschleunigung)
+
+### Guardrail-Check nach Close
+1. Daily Loss Cap -3 %: **GRÜN** (+0,176 %)
+2. Weekly Loss Cap -5 %: **GRÜN** (-0,253 % Tag 2)
+3. Drawdown-Alarm -15 % ATH: **GRÜN** (-3,911 %)
+4. Drawdown-Stopp -20 % ATH: **GRÜN**
+5. Crash-Filter SPY -5 %: **INAKTIV** (Di +1,77 %)
+6. VIX-Filter >30: **GRÜN** (15,86)
+7. Earnings-Blackout: **LLY HT-0 morgen BMO** aktiv Bull-Konvention + AAPL beendet
+8. Max. Käufe/Woche 2: **0/2 KW32 verbraucht** — Slot 1/2 + 2/2 OFFEN
+
+### Watchlist morgen Mi 05.08. (K1-K4 aus Alpaca IEX EOD 04.08.)
+1. **UAL** #1 XLI (132,63 chg +3,29 %, K1 EMA-Diff +9,01 % ✓, K2 RSI 63,8 ✓, K3 RS_63d **+39,77 pp #1 TOP** ✓ verb. vs Mo +33,61 pp, K4 71 % <120 % FAIL **Vol-Rebound-Watch Mi 3. Tag**, K5 vorbekannt ✓ RevGr 16 % + FwdPE 14,8x, XLI 0 % Diversifikation) — **Prio 1 wenn K4-Rebound**
+2. **UNP** #2 XLI Backup (296,51 chg +1,64 %, K1-K3 ✓ RS +5,10 pp, K4 66 % FAIL Rebound-Watch)
+3. **NVDA** #3 XLK Watch (211,96 chg +2,53 %, K1 +4,94 % ✓, K2 RSI 56,9 ✓, K3 RS -0,63 pp marginal NEG FAIL, K4 77 % FAIL, XLK-Konzentration mit AAPL beachten)
+4. **GE** BLOCKIERT K5 persistent (FwdPE 44,72 >35)
+5. **ABBV** BLOCKIERT XLV-Cap Owner pending 5. Woche + K2 RSI 44,1 FAIL
+6. **EOG** K3 -6,02 pp NEG FAIL (Rebound weiter abgebrochen)
+7. **AMZN/GOOGL** K3 persistent FAIL
+8. **MSFT/ORCL** K1 FAIL (Death-Cross)
+9. **MRK** Post-Earnings-Reaktion Mi Open prüfen (heute BMO)
+10. **LLY** BMO Report morgen HT-0 kritisch für Portfolio
+
+### Entscheidung
+- **KEIN Trade heute** (5 V1-V6 SICHER, kein Kauf-Signal, 0 offene Orders)
+- **KEINE Sell-/Limit-Order für Mi 05.08. platziert**
+- **LLY BMO Report morgen früh** — Blackout-V1_neu 1.134,20 wird nach Report neu bewertet
+- **Slot 1/2 KW32 bleibt OFFEN** — UAL Top-Kandidat wartet auf K4-Vol-Rebound (3. Tag)
+- Nächste Routine: Mi 05.08. 08:30 ET Pre-Market KW32 Tag 3
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-04 (Di, KW32 Tag 2) — Guardrails GRÜN, VIX 18,9 leicht erhöht vs Fr 16,02 aber <25, SPY Pre +0,34 %, LLY HT-1 letzter Tag vor BMO Earnings Mi 05.08., AAPL Blackout HT+2 → beendet Std-V1 alleine primär, Kaufscan JA mit UAL K4-Rebound-Watch Prio 1
 
 ### Alpaca /v2/account Pre
