@@ -71,6 +71,72 @@
 
 ---
 
+## Market Open 09:38 ET — 2026-08-04 (Di, KW32 Tag 2) — KEIN Kauf (alle 10 Watchlist-Kandidaten REJECT/SKIP), 5 V1-V6 SICHER Std, Daily -0,134 %, SPY +0,52 % Post-Rally-Fortsetzung, LLY HT-1 letzter Tag Std sicher +2,03 % ENGSTE (BO -1,20 % UNTERSCHRITTEN aber Strategie-Lock HALTEN), AAPL HT+2 Blackout beendet Std alleine primär +3,84 %, Slot 1/2 KW32 OFFEN
+
+### Alpaca /v2/account 09:38 ET
+- equity: **95.855,86 $** (vs last_equity 95.984,04 = **-0,134 %** Daily) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (**59,16 %** unverändert)
+- MV Live: **39.148,37 $** (5 Pos, -113,21 vs Mo Close 39.261,58 = -0,288 %)
+- **DD vs ATH 100.066,47: -4,208 %** [GRÜN, marginal verschlechtert vs Pre -4,078 %]
+- **Weekly KW32 Tag 2: -0,561 %** vs Fr 31.07. Close 96.396,66 [GRÜN weit von Cap -5 %]
+- **SPY Live 761,55 Alpaca IEX** vs Mo Close 757,72 = **+0,506 % Post-Rally-Fortsetzung Konsolidierung** [Crash-Filter INAKTIV]
+- **Alpha vs SPY -0,640 pp NEGATIV** (Portfolio underperformt marginal SPY-Rally)
+- **VIX 18,9 Pre-Read** (Perplexity Intraday nicht neu abgefragt Open) [GRÜN <25]
+- 0 offene Orders
+
+### Guardrail-Check
+1. Daily Loss Cap -3 %: **GRÜN** (-0,134 %)
+2. Weekly Loss Cap -5 %: **GRÜN** (-0,561 %)
+3. Drawdown-Alarm -15 % ATH: **GRÜN** (-4,208 %)
+4. Drawdown-Stopp -20 % ATH: **GRÜN**
+5. Crash-Filter SPY -5 %: **INAKTIV** (SPY +0,52 %)
+6. VIX-Filter >30: **GRÜN** (18,9)
+7. Earnings-Blackout: **LLY HT-1 aktiv** BMO Mi 05.08. + AAPL HT+2 **beendet heute**
+8. Max. Käufe/Woche 2: **0/2 KW32** — Slot 1/2 + 2/2 OFFEN
+→ **Alle 8 Guardrails GRÜN + 2 WARN**, Kaufen erlaubt.
+
+### V1-V6 Portfolio-Check (Alpaca latest+Bars EOD Mo)
+| Symbol | Live | chg | P/L | Std-V1 Puffer | Blackout | EMA-Diff | RSI | RS_4w |
+|--------|------|-----|-----|---------------|----------|----------|-----|-------|
+| LLY   | 1.120,645 | +0,04 % | -5,72 % Worst | +2,03 % **ENGSTE Std** | **-1,20 % UNTERSCHRITTEN** HT-1 letzter Tag | +11,90 % | 40,9 | -11,12 pp NEG |
+| AAPL  | 302,71 | -0,01 % | -4,25 % | +3,84 % Std | HT+2 **beendet** heute → Std alleine primär | +10,30 % | 39,8 | -4,46 pp NEG |
+| V     | 363,625 | -0,86 % | +1,49 % | +10,66 % | n/a | +2,96 % engster aber positiv | 60,0 | +1,45 pp |
+| UNH   | 412,82 | -0,91 % | +2,49 % | +11,74 % | n/a | +13,69 % | 46,0 | -5,40 pp NEG |
+| JPM   | 360,00 | **+2,09 % Best chg** | **+8,18 % Best P/L** | +17,58 % | n/a | +5,76 % | 66,3 | +4,42 pp |
+
+**V3/V4 kein Trigger** (max JPM +8,18 % << 20 %-TP1). **V5 alle Golden Cross intakt** (V engster +2,96 % positiv). **V6 alle SICHER** (max JPM RSI 66,3 << 80, LLY RSI 40,9 UND RS_4w -11,12 pp NEG → V6 sicher via UND-Bedingung da RSI<<80). **→ KEIN V-Trigger, KEINE Sell-/Limit-Order platziert.**
+
+### Kaufsignal-Scan Slot 1/2 KW32 — alle 10 Watchlist-Kandidaten REJECT/SKIP
+| Kandidat | K1 EMA-Diff | K2 RSI | K3 RS_63d | K4 Vol (Mo/live) | K5 | Verdict |
+|----------|-------------|--------|-----------|-------------------|-----|---------|
+| **UAL** #1 | +9,00 % ✓ | 63,5 ✓ | **+40,67 pp #1 TOP** ✓ | **Mo 73 % <120 % FAIL** + Live 4 % pro-rata unbelastbar | vorbekannt ✓ | **REJECT K4** (Vol-Rebound Mo bestätigt nicht → nicht handelbar heute) |
+| UNP | +10,46 % ✓ | 50,6 ✓ | +3,48 pp ✓ | **Mo 46 % <<120 % FAIL** heavy | Q2 26 +11,53 % ✓ | REJECT K4 |
+| EOG | +9,36 % ✓ | 50,9 ✓ | **-6,44 pp NEG FAIL** (Rebound abgebrochen) | Mo 118 % marginal | vorbekannt ✓ | REJECT K3 |
+| ABBV | +6,16 % ✓ | **44,8 <50 FAIL** | +11,40 pp ✓ | Mo 161 % ✓ | Q2 26 +10,16 % ✓ | **REJECT K2** + XLV-Cap-Block |
+| MRK | +12,18 % ✓ | 51,4 ✓ | +6,45 pp ✓ | Mo 136 % ✓ | zwingend | **BLOCKIERT Earnings HT-0 heute BMO** |
+| GE | +8,41 % ✓ | 61,4 ✓ | +26,14 pp ✓ | Mo 80 % FAIL | **K5 FAIL persistent FwdPE 44,72 >35** | REJECT K5 |
+| CAT | +20,78 % ✓ | 54,7 ✓ | -0,75 pp marginal NEG | n/a | pending | REJECT K3 |
+| AMZN | +4,26 % ✓ | 66,7 ✓ nah 70 | **-4,27 pp NEG FAIL** | Mo 176 % ✓ | pending | REJECT K3 |
+| GOOGL | +10,57 % ✓ | 60,3 ✓ | **-8,98 pp NEG FAIL** | Mo 135 % ✓ | pending | REJECT K3 |
+| META/TSLA | **-5,92 % / -6,38 % K1 FAIL Death-Cross** | — | — | — | — | REJECT K1 |
+
+**Slot 1/2 KW32 bleibt OFFEN.** UAL Top-RS-Kandidat weiter blockiert durch K4-Vol-Rebound-FAIL (Mo 73 % Rebound nicht bestätigt, live 4 % pro-rata weit unter 120 %-Cap). ABBV Top-RS-Kandidat blockiert durch RSI-Cool-off unter 50 (K2 FAIL erstmals vs KW31 wo K2 ✓) + XLV-Cap-Klärung Owner-pending 5. Woche in Folge.
+
+### Blackout-Monitoring
+- **AAPL HT+2 heute Blackout beendet** — Std-V1 291,51 wieder alleine primär, Puffer +3,84 % SICHER, Übergang regelkonform.
+- **LLY HT-1 letzter Tag vor Report Mi 05.08. BMO** — Blackout-V1_neu 1.134,20 weiter **UNTERSCHRITTEN -1,20 %** vs Live 1.120,645 (marginal verschlechtert vs Pre -0,94 %). Std-V1 1.098,38 SICHER +2,03 %. Strategie-Lock CLAUDE.md Rule 3 → nur Std bindend → HALTEN. Report morgen früh vor Open bringt Post-Blackout-Recovery oder V1-Escalation.
+
+### Entscheidung
+**KEIN Trade Market Open 09:38 ET.** V1-V6 alle 5 SICHER Std, keine Sell-/Limit-Order platziert, 0 offene Orders. Kein Kauf (alle 10 Watchlist-Kandidaten REJECT/SKIP wegen K2/K3/K4/K5/Earnings/XLV-Cap-Blockern). Käufe KW32 0/2 unverändert. Slot 1/2 KW32 primär OFFEN, Re-Check Midday 13:00 ET (UAL K4-Session-Vol Halbtags-belastbar bei anhaltendem Momentum, MRK Post-Report-Reaktion nach 10:00 ET).
+
+### ClickUp + PushNotification
+- **ClickUp Prio 4 Routine-Log** (Fallback bei Kontingent-Fehler: Memory-Only-Log)
+- **PushNotification Silence-Rule Routine** (Std-V1 alle SICHER, kein V-Trigger, kein Kauf, kein Cap-Alert, LLY BO -1,20 % innerhalb Konvention-Toleranz vs Vorwochen -1,49 % Midday KW32 Tag 1; Owner-Sichtbarkeit nicht gerechtfertigt für unverändertes Muster, Report morgen bringt Post-Blackout-Klärung).
+
+**Nächste Routine:** Di 04.08. 13:00 ET Midday Stop-Check — LLY Blackout-V1 Recovery-Watch (Std sicher aber BO -1,20 %), UAL K4-Session-Vol Halbtags-belastbar Re-Check + Live-Momentum, AAPL Std-V1 alleine primär Verifikation, MRK Post-Report-Reaktion nach 10:00 ET.
+
+---
+
 ## Market Close 16:00 ET — 2026-08-03 (Mo, KW32 Tag 1 FINAL) — KEIN Trade, 5 V1-V6 SICHER Vollcheck EOD-Bars, Daily -0,403 % [GRÜN], SPY +1,464 % Post-Weekend-Rally-Fortsetzung, Alpha -1,87 pp NEG, Watchlist Di 04.08. UAL #1 XLI RS +33,61 pp #1 TOP, Slot 1/2 KW32 OFFEN, VIX 16,02 stark reduziert
 
 ### Alpaca /v2/account Close
