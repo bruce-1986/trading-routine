@@ -4,6 +4,73 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-04 (Di, KW32 Tag 2) — Guardrails GRÜN, VIX 18,9 leicht erhöht vs Fr 16,02 aber <25, SPY Pre +0,34 %, LLY HT-1 letzter Tag vor BMO Earnings Mi 05.08., AAPL Blackout HT+2 → beendet Std-V1 alleine primär, Kaufscan JA mit UAL K4-Rebound-Watch Prio 1
+
+### Alpaca /v2/account Pre
+- portfolio_value: **95.986,04 $** | equity: 95.986,04 $ | last_equity: 95.984,04 $
+- Daily Pre: **+0,002 %** (essentiell flat) [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (59,08 %, unverändert)
+- long_market_value: 39.278,55 $ (5 Pos)
+- **DD vs ATH 100.066,47: -4,078 %** [GRÜN, marginal verbessert vs Mo Close -4,091 %]
+- **Weekly KW32 Tag 2 = +0,014 %** vs Fr 24.07. Close (Referenz Bot-Reset Wochenanfang Mo Close 95.972,60 → +13,44 $) [GRÜN weit von Cap -5 %]
+- Konsistenz-Check vs Memory Mo Close 95.972,60: Alpaca 95.986,04 = +13,44 $ (0,014 %) Pre-Market-Aufwärtsbewegung, plausibel
+- 0 offene Orders
+
+### Pre-Market Positionen (Alpaca Live)
+| Symbol | Cur | chg_today | P/L % | Std-V1 | Std-V1 Puffer | Blackout BO | BO Puffer |
+|--------|-----|-----------|-------|--------|---------------|-------------|-----------|
+| LLY   | 1.123,50 | +0,19 % | -5,90 % | 1.098,38 | +2,29 % **ENGSTE Std** verb. vs Mo +2,06 % | **1.134,20 HT-1** | **-0,94 % UNTERSCHRITTEN** verb. vs Mo -1,16 % |
+| AAPL  | 302,894 | -0,17 % | -4,41 % | 291,51 | **+3,90 %** | n/a HT+2 **beendet** | n/a (Std alleine primär) |
+| V     | 366,00 | +0,09 % | +2,47 % | 328,60 | +11,38 % | n/a | n/a |
+| UNH   | 415,01 | -0,08 % | +3,35 % | 369,44 | +12,33 % | n/a | n/a |
+| JPM   | 352,9075 | +0,08 % | +6,05 % **Best P/L** | 306,16 | +15,26 % | n/a | n/a |
+
+**RSI/EMA werden im Pre-Market NICHT geprüft (nur Market Open + Close per Routinen).** Alle 5 Std-V1 SICHER Pre-Read.
+
+### Makro-Research (Perplexity + Alpaca Snapshot)
+- **VIX**: **18,9** (Perplexity Intraday-Print) [GRÜN <25, leicht erhöht vs Fr Close 16,02 = Vola-Anstieg Post-Weekend-Rally-Konsolidierung, aber weit von 25-Cap]
+- **SPY Pre-Market 08:34 ET**: **760,30 Alpaca latestTrade** vs Mo Close 757,72 = **+0,341 % Post-Rally-Fortsetzung Konsolidierung** [Crash-Filter INAKTIV]
+- **10Y Treasury Yield**: n/a (Perplexity nicht sourceable heute)
+- **Makro-Events heute**: nicht bestätigt via Perplexity (keine belastbaren Angaben zu Trade Balance/JOLTS/Factory Orders)
+- **Top 3 marktbewegende News**: nicht sourceable via Perplexity heute Pre-Market
+- **SPY Vortag Mo -1,46 %**: **INAKTIV — kein Crash-Filter** (SPY Mo +1,46 % Post-Weekend-Rally)
+
+### Guardrail-Check nach Research
+1. Daily Loss Cap -3 %: **GRÜN** (Pre +0,002 %)
+2. Weekly Loss Cap -5 %: **GRÜN** (Tag 2 +0,014 %)
+3. Drawdown-Alarm -15 % ATH: **GRÜN** (-4,078 %)
+4. Drawdown-Stopp -20 % ATH: **GRÜN** (-4,078 %)
+5. Crash-Filter SPY -5 %: **INAKTIV** (Mo +1,46 %)
+6. VIX-Filter >30: **GRÜN** (18,9)
+7. Earnings-Blackout: **LLY HT-1 aktiv** BMO Mi 05.08. + AAPL HT+2 **beendet** heute
+8. Max. Käufe/Woche 2: **0/2 KW32 verbraucht** — Slot 1/2 + 2/2 OFFEN
+
+### Earnings-Blackout Nächste 3 HT (04./05./06.08.)
+- **MRK** Di 04.08. **BMO HT-0 (heute)** — nicht Portfolio, blockiert Kauf-Watchlist bis Post-Report (Perplexity bestätigt)
+- **AMD** Di 04.08. AMC — nicht Portfolio
+- **MCD** Di 04.08. BMO — nicht Portfolio
+- **LLY** Mi 05.08. **BMO HT-1 (morgen)** — **PORTFOLIO-POSITION** ⚠️ Blackout-V1_neu 1.134,20 bleibt primäre Bull-Konvention-Referenz bis Post-Report (Memory-Konvention seit Wochen etabliert, Perplexity divergiert = konservativ Blackout beibehalten per CLAUDE.md Rule 5 No-Action bei Unsicherheit)
+- **AAPL**: HT+2 heute → Blackout **beendet**, Std-V1 291,51 wieder alleine primär
+- **UNH, JPM, V**: keine Earnings in 3 HT (nächste Q3 Ende Okt)
+
+### Watchlist Di 04.08. (aus Mo Close K1-K3)
+1. **UAL** #1 XLI NEUE (128,40 Mo Close chg +5,84 % Best chg, K1 EMA-Diff +9,26 % ✓, K2 RSI 52,8 ✓, K3 RS_63d **+33,61 pp #1 TOP** ✓, K4 Mo 72 % <120 % FAIL **Vol-Rebound-Watch Di**, K5 vorbekannt ✓ RevGr 16 % + FwdPE 14,8x + Next-Earnings Okt 2026 = keine Blackout, XLI 0 % neue Diversifikation) — **Prio 1 wenn K4 Vol-belastbar Open**
+2. **UNP** #2 XLI Backup (Fr K4 116 % borderline → Mo Momentum-Bruch, Re-Check Di Pre-Market/Open)
+3. **EOG** #3 XLE Rebound-Watch (K3 Mo -0,11 pp marginal NEG, K5 vorbekannt ✓)
+4. **ABBV** #4 XLV **BLOCKIERT XLV-Cap-Klärung Owner pending 4. Woche**
+5. **MRK** BLOCKIERT Earnings Di 04.08. BMO HT-0 heute (evtl. Post-Report-Reaktion nach 10:00 ET verfügbar)
+6. **GE/META/TSLA/CAT** REJECT persistent (K1/K2/K5-FAIL)
+
+### Entscheidung
+**Kaufscan bei Market Open: JA** — alle Vola-Guardrails GRÜN, VIX 18,9, SPY Pre +0,34 %, keine Portfolio-Blackout blockiert Kauf. **Bedingungen:** UAL Prio 1 nur wenn K4-Session-Vol Open-Handel belastbar UND K5-Multi-Source-Verifikation. UNP nur wenn Momentum-Turnaround. ABBV weiter BLOCKIERT bis Owner-Klärung XLV-Cap. **Slot 1/2 KW32 primär, Slot 2/2 sekundär falls 2 Kandidaten qualifizieren.**
+
+**LLY-Blackout HT-1 letzter Tag vor Report:** Std-V1 1.098,38 SICHER +2,29 % (verbessert), Blackout-V1_neu 1.134,20 **UNTERSCHRITTEN -0,94 %** (verbessert vs Mo -1,16 %). Strategie-Lock CLAUDE.md Rule 3 → nur strategy.md V1 bindend → HALTEN. Report morgen früh entscheidet Post-Blackout-Recovery oder Escalation.
+
+### ClickUp-API-Status
+**⚠️ ClickUp Task-Create FEHLGESCHLAGEN**: `{"err":"Max usage for custom task types reached","ECODE":"ITEM_246"}` — Workspace-Kontingent für Custom Task Types erreicht, kein API-Down, kein 401/429. Notify-Skill-Fallback greift: Memory-Files geschrieben (research-log + portfolio + trade-log). **PushNotification an Owner** wegen ClickUp-Alert-Kanal-Ausfall + LLY HT-1 letzter Tag vor Report gerechtfertigt (strukturelle Unterbrechung des Standard-Notify-Kanals, Owner-Klärung nötig).
+
+---
+
 ## Market Close 16:00 ET — 2026-08-03 (Mo, KW32 Tag 1 FINAL) — KEIN Trade, 5 V1-V6 SICHER Vollcheck EOD-Bars, Daily -0,403 % [GRÜN], SPY +1,464 % Post-Weekend-Rally-Fortsetzung, Alpha -1,87 pp NEG, Watchlist Di 04.08. UAL #1 XLI RS +33,61 pp #1 TOP, Slot 1/2 KW32 OFFEN, VIX 16,02 stark reduziert
 
 ### Alpaca /v2/account Close
