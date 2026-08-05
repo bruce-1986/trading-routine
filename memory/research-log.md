@@ -4,6 +4,55 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-05 (Mi, KW32 Tag 3) — Daily +0,555 % / Alpha +0,726 pp POSITIV / DD -3,475 % GRÜN / Weekly +0,200 % GRÜN
+
+### Alpaca /v2/account Close
+- portfolio_value: **96.589,61 $** | equity: 96.589,61 $ | last_equity: 96.056,40 $
+- Daily P/L: **+533,21 $ = +0,555 %** [GRÜN, Cap -3 %, verbessert vs Midday +0,495 %]
+- cash: 56.707,49 $ (**58,71 %**, unverändert)
+- long_market_value: **39.882,12 $** (5 Pos, +436,57 vs Mo Close 39.445,55 = **+1,107 %**)
+
+### SPY EOD (Alpaca IEX Daily Bar)
+- Close: **769,79 $** vs Di Close 771,11 = **-0,171 %** Post-Rally-Give-back marktweit
+- Alpha vs Portfolio: **+0,726 pp POSITIV** (Portfolio +0,555 % vs SPY -0,171 %)
+- SPY 20d %: +3,29 % (RS_4w-Baseline für V6-Check)
+
+### V1-V6 Vollcheck EOD-Bars (Alpaca IEX 276d)
+- **V5 EMA50>EMA200 Golden Cross alle 5 intakt**: V +3,79 % (engster aber positiv, verb. vs Mo +3,01 %), JPM +6,11 %, AAPL +10,85 %, LLY +11,31 %, UNH +15,23 %
+- **V6 RSI<80 UND-Bedingung alle 5 sicher**: max JPM RSI 65,8 (V 64,0, LLY 51,2, UNH 46,7, AAPL 45,8); LLY RS_4w -7,15 pp NEG aber RSI 51,2 → sicher via UND; UNH -6,31 pp, AAPL -4,05 pp beide sicher via RSI
+- **V1 Std-V1 alle 5 SICHER**: min AAPL +6,66 %, LLY +6,46 % (Blackout-V1_neu 1.134,20 ÜBERSCHRITTEN +2,64 % Bull-Konvention intakt), UNH +11,71 %, V +12,11 %, JPM +17,32 %
+- **V2 Trailing-Stop 88 %**: UNH razor-thin +1,75 % via 52w-Wick 460,95 Data-Quality-Flag, AAPL +2,55 % via 52w-Wick 344,56, LLY +6,42 %, UNH-Rest >11 %
+- **V3/V4 Gewinn-TP**: max JPM +7,94 % Best P/L << 20 % kein Trigger
+- **=> KEIN Trigger. KEINE Sell-/Limit-Order für Do 06.08. platziert. 0 offene Orders.**
+
+### Weekly Loss Cap Check
+- Fr 31.07 Close: 96.396,66 $ | Mi 05.08 Close: 96.589,61 $
+- Weekly KW32 Tag 3: **+0,200 %** [GRÜN, weit von Cap -5 % @ 91.576,83]
+
+### Guardrails EOD 8/8 GRÜN + 1 WARN
+- Daily +0,555 % (Cap -3 %) | Weekly +0,200 % (Cap -5 %) | DD -3,475 % (Alarm -15 %) | Crash-Filter INAKTIV (SPY -0,17 %) | VIX Pre 18,29 <25 | Käufe 0/2 | Max-Pos 10 % OK | Sektor XLV 19,89 % <30 %
+- WARN: LLY BO HT+1 morgen (Blackout-V1_neu 1.134,20 ÜBERSCHRITTEN +2,64 %, Bull-Konvention intakt; Rest-Blackout bis Mo 10.08.); UNH V2 razor-thin +1,75 % via 52w-Wick Data-Quality-Flag Monitoring
+
+### Watchlist Do 06.08. K1-K3 (K4/K5 morgen Vollcheck)
+- **UAL 132,72 $ XLI** — K1 EMA-Diff +10,6 % ✓, K2 RSI 63,9 ✓, K3 RS_63d **+35,3 pp #1 XLI** ✓, K4 68 % <120 % FAIL 4. Tag Vol-Rebound-Watch, K5 vorbekannt ✓ FwdPE 14,8x + RevGr 16 %, XLI 0 % Diversifikation → **Prio 1**
+- **GS 1.060,53 $ XLF** — K1 ✓ +10,6 %, K2 RSI 52,1 ✓, K3 RS +9,1 pp ✓, K4 107 % nahe 120 %-Trigger, K5 morgens prüfen → **Prio 2** (XLF-Cap noch OK JPM+V)
+- **DELL 462,38 $ XLK** — K1 ✓✓✓ +49,8 %, K2 RSI 59,7 ✓, K3 RS **+107,4 pp #1 Gesamt** ✓, K4 101 %, XLK-Konflikt mit AAPL beachten → **Prio 3**
+- **HPE 53,21 $ XLK** — K1 ✓ +34,6 %, K2 RSI 64,9 ✓, K3 RS +70,8 pp ✓, K4 74 % FAIL, XLK-Konflikt → **Prio 4 Watch**
+- **UNP 295,50 $ XLI Backup** — K1 ✓ +9,4 %, K2 RSI 57,0 ✓, K3 RS +5,6 pp ✓, K4 59 % FAIL heavy → **Prio 5 Backup**
+- **GE BLOCKIERT K5-FAIL persistent FwdPE 44,72 >35** (K1-K3 ✓ K4 65 %)
+- **NVDA K1-K3 ✓ K4 98 %** aber XLK-Konflikt AAPL
+- **MSFT K1 Death-Cross-nah (diff -5,3 %) + K2 RSI 76,3 FAIL**, **ORCL K1 Death-Cross + K3 -28,5 pp FAIL heavy**, **META/NFLX K1 Death-Cross FAIL**, **AMZN/GOOGL/AVGO/CAT K3 NEG FAIL**
+
+**Watchlist morgen: UAL (Prio 1 XLI, K4-Rebound-Watch), GS (Prio 2 XLF K4 nahe 120 %), DELL (Prio 3 XLK #1 Momentum XLK-Konflikt), HPE (Prio 4 XLK-Konflikt), UNP (Prio 5 Backup XLI)**
+
+### Aktionen für Do 06.08. Pre-Market 08:30 ET
+- VIX-Read Perplexity (aktueller Stand + 3-Tage-Schnitt)
+- Earnings-Blackout LLY HT+1 (Blackout-V1_neu 1.134,20 überwachen)
+- Alpaca Live-Read auf UAL, GS, DELL für K4 Vol-Ratio Update (Pre-Market Vol schwer belastbar aber Approximation)
+- SPY Pre-Read für Crash-Filter-Watch (nach heutigem Give-back)
+
+---
+
 ## Market Open 09:40 ET — 2026-08-05 (Mi, KW32 Tag 3) — Daily +0,595 % Live / DD -3,436 % GRÜN / Weekly +0,240 % GRÜN gedreht positiv
 
 ### Alpaca /v2/account Live
