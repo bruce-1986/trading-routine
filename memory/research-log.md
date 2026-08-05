@@ -4,6 +4,84 @@
 
 ---
 
+## Market Open 09:40 ET — 2026-08-05 (Mi, KW32 Tag 3) — Daily +0,595 % Live / DD -3,436 % GRÜN / Weekly +0,240 % GRÜN gedreht positiv
+
+### Alpaca /v2/account Live
+- portfolio_value: **96.628,15 $** | equity: 96.628,15 $ | last_equity: 96.056,40 $
+- Daily P/L: **+571,75 $ = +0,595 %** [GRÜN, Cap -3 %, weiter verbessert vs Pre +0,526 %]
+- cash: 56.707,49 $ (**58,68 %**, unverändert)
+- long_market_value: **39.920,66 $** (5 Pos, +475,11 vs Mo Close 39.445,55 = **+1,204 %** LLY-Post-Earnings-Rally dominant)
+- **DD vs ATH 100.066,47: -3,436 %** [GRÜN, verbessert vs Pre -3,502 %]
+- **Weekly KW32 Tag 3: +0,240 %** vs Fr 31.07. Close 96.396,66 [GRÜN, gedreht positiv Vertiefung vs Pre +0,172 %]
+- 0 offene Orders
+
+### Positionen Live (Alpaca /v2/positions + latest trades)
+| Symbol | Cur Live | chg_today | P/L $ | P/L % | V1 Std | V1 Puf | Blackout |
+|--------|----------|-----------|-------|-------|--------|--------|----------|
+| AAPL | 307,78 | **-0,760 % Worst chg** | -304,62 | **-3,10 % Worst P/L neu** | 291,51 | **+5,58 % ENGSTE Std** | frei |
+| LLY  | 1.196,825 | **+7,449 % Best chg** | +39,18 | **+0,41 % Recovery +6,81 pp vs Close -6,40 %** | 1.098,38 | +8,96 % | **HT+0 Post-Report; Blackout-V1_neu 1.134,20 Puffer +5,52 % ÜBERSCHRITTEN** |
+| UNH  | 406,56 | -0,250 % | +119,04 | +1,23 % | 369,44 | +10,04 % (V2 razor-thin +0,23 %) | – |
+| V    | 371,05 | +0,200 % | +355,11 | +3,68 % | 328,60 | +12,92 % | – |
+| JPM  | 360,73 | +0,931 % | +84,21 | **+8,43 % Best P/L** | 306,16 | +17,82 % | – |
+
+**V1-V6 alle 5 SICHER Std-V1 Live-Read** (RSI/EMA werden im Open nicht geprüft, Vollcheck bei Close). Kein V-Trigger, KEINE Sell-Order platziert.
+
+**V2 UNH razor-thin +0,23 %** — 460,95 * 0,88 = 405,64, cur 406,56. Data-Quality-Flag 52w-Wick beibehalten. Strategie-Lock strategy.md wörtlich → V2 nicht getriggert.
+
+### SPY + Makro Live
+- **SPY Live 775,70 Alpaca latestTrade** vs Mo Close 771,11 = **+0,595 % Post-Rally-Fortsetzung** (Crash-Filter INAKTIV)
+- **Alpha vs SPY 0,000 pp neutral** (LLY-Post-Earnings-Rally kompensiert SPY-Beta vollständig — beste Alpha-Session KW32 bislang)
+- VIX 18,29 [GRÜN <25]
+- LLY-Blackout-Bruch aus Vorwochen komplett aufgehoben (3-Tage-Bruch Mo/Di/Pre-Mi durch Post-Earnings-Rally gelöst)
+
+### Kaufsignal-Scan Slot 1/2 KW32 — Alpaca IEX EOD Bars Di 04.08.
+
+| Symbol | K1 EMA | K2 RSI | K3 RS_63d | K4 Vol | K5 | Verdikt |
+|--------|--------|--------|-----------|--------|----|----|
+| **UAL** #1 XLI | +9,01 % ✓ | 63,8 ✓ | **+39,77 pp #1 TOP** ✓ | 71 % **FAIL 3. Tag** | vorbekannt ✓ | **REJECT K4 Vol-Rebound nicht bestätigt** |
+| UNP #2 XLI Backup | +10,54 % ✓ | 58,2 ✓ | +5,10 pp ✓ | 66 % **FAIL** | vorbekannt ✓ | REJECT K4 |
+| MRK Post-Earnings | +12,20 % ✓ | 53,1 ✓ | +5,81 pp ✓ | 115 % **FAIL** | Q2 Post-Report Mo 04.08. Reaktion Watch | REJECT K4 + XLV-Cap Owner-pending |
+| ABBV #4 XLV | +6,15 % ✓ | 44,1 **FAIL <50** | +9,65 pp ✓ | 165 % ✓ | K5 ✓ | **REJECT K2** + XLV-Cap Owner-pending 5. Woche |
+| GE | +8,47 % ✓ | 64,4 ✓ | **+27,09 pp** ✓ | 103 % **FAIL** | **FwdPE 44,72 >35 FAIL persistent** | REJECT K4 + K5 |
+| EOG | +9,42 % ✓ | 54,8 ✓ | **-6,02 pp NEG FAIL** | 122 % ✓ | vorbekannt ✓ | REJECT K3 |
+| NVDA | +4,94 % ✓ | 56,9 ✓ | -0,63 pp marginal NEG **FAIL** | 78 % FAIL | – | REJECT K3+K4 |
+| AMZN | +4,26 % ✓ | 67,1 ✓ | -5,44 pp NEG FAIL | 118 % FAIL | – | REJECT K3+K4 |
+| GOOGL | +10,62 % ✓ | 62,6 ✓ | -8,83 pp NEG FAIL | 138 % ✓ | – | REJECT K3 |
+| MSFT | -7,28 % **FAIL Death Cross** | 79,2 FAIL | +11,76 pp ✓ | 100 % FAIL | – | REJECT K1+K2+K4 |
+| META | -5,89 % **FAIL Death Cross** | 46,4 FAIL | -11,07 pp NEG FAIL | 80 % FAIL | – | REJECT 4/4 |
+
+**Slot 1/2 KW32 bleibt OFFEN** — kein Kandidat erfüllt alle 5 K1-K5.
+
+**Bemerkenswert:** UAL Prio-1 K4-Vol-Rebound-Watch scheiterte 3. Tag in Folge (Mo 73 % → Di 71 % → Vollcheck EOD 71 %). RS +39,77 pp #1 TOP bleibt aber Bull-Konvention Overrides nicht Volumenerfordernis (strategy.md K4 wörtlich).
+
+### Sektor-Struktur Live 09:40 ET
+- XLV: UNH 9.756,72 + LLY 9.590,28 = **19.347,00 = 20,02 %** (LLY-Rally hebt XLV-Anteil moderat vs Mo Close 19,58 %)
+- XLF: JPM 1.082,55 + V 9.998,91 = 11.081,46 = **11,47 %**
+- XLK: AAPL 9.517,93 = **9,85 %**
+- Cash: **58,68 %**
+
+### Guardrails-Status Live 09:40 ET
+1. Daily Loss Cap -3 %: **+0,595 %** → GRÜN
+2. Weekly Loss Cap -5 %: **+0,240 %** → GRÜN gedreht positiv Vertiefung
+3. Drawdown-Alarm -15 % ATH: -3,436 % → GRÜN
+4. Drawdown-Stopp -20 % ATH: -3,436 % → GRÜN
+5. Crash-Filter (SPY -5 %/Tag): SPY +0,595 % → INAKTIV
+6. VIX-Filter (>30): 18,29 → GRÜN <25
+7. Earnings-Blackout: LLY HT+0 heute Post-Report POSITIV, keine anderen Portfolio-Blackouts
+8. Max neue Käufe 2/Woche: KW32 0/2 → GRÜN
+
+**→ 8/8 GRÜN, 0 WARN.** LLY BO-Bruch aufgehoben (Puffer +5,52 % ÜBERSCHRITTEN), UNH V2 razor-thin +0,23 % via 52w-Wick Monitoring aber keine WARN.
+
+### Entscheidung
+- **KEIN Trade heute Market Open** (kein Kaufkandidat erfüllt alle K1-K5)
+- **KEINE Sell-Order** (alle 5 V1-V6 SICHER Live)
+- **Käufe KW32 0/2 unverändert**
+- **ClickUp Prio 4 Routine-Log FEHLER "Max usage for custom task types reached"** → Fallback Memory-Only (2. Tag persistent)
+- **KEINE PushNotification** (Silence-Rule Routine: kein Cap-Alert, kein neuer Trade, LLY-Post-Earnings-Sichtbarkeit bereits im Pre-Market abgedeckt, LLY-Rally-Fortsetzung Post-Open keine neue Handlungsaufforderung)
+- Nächste Routine: 13:00 ET Midday Stop-Check KW32 Tag 3
+
+---
+
 ## Pre-Market 08:35 ET — 2026-08-05 (Mi, KW32 Tag 3) — Daily +0,526 % Pre / DD -3,502 % GRÜN / Weekly +0,172 % GRÜN gedreht positiv
 
 ### Alpaca /v2/account Pre
