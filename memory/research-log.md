@@ -4,6 +4,83 @@
 
 ---
 
+## Pre-Market 08:35 ET — 2026-08-05 (Mi, KW32 Tag 3) — Daily +0,526 % Pre / DD -3,502 % GRÜN / Weekly +0,172 % GRÜN gedreht positiv
+
+### Alpaca /v2/account Pre
+- portfolio_value: **96.562,01 $** | equity: 96.562,01 $ | last_equity: 96.056,40 $
+- Daily P/L: **+505,61 $ = +0,526 %** Pre-Read [GRÜN, Cap -3 %]
+- vs Memory Close 96.153,04: +408,97 = +0,425 % (LLY-Post-Earnings-Rally)
+- cash: 56.707,49 $ (58,73 %, unverändert)
+- long_market_value: 39.854,52 $ (5 Pos, +408,97 vs Mo Close 39.445,55 = +1,037 %)
+- **DD vs ATH 100.066,47: -3,502 %** [GRÜN, deutlich verbessert vs Mo Close -3,911 %]
+- **Weekly KW32 Tag 3: +0,172 %** vs Fr 31.07. Close 96.396,66 [GRÜN, gedreht positiv vs Mo Close -0,253 %]
+- 0 offene Orders
+
+### Positionen Pre (Alpaca /v2/positions Live)
+| Symbol | Cur | chg_today | P/L $ | P/L % | V1 Std | V1 Puf | Blackout |
+|--------|-----|-----------|-------|-------|--------|--------|----------|
+| AAPL | 308,90 | -0,155 % | -246,65 | **-2,51 % ENGSTE Std verschlechtert Worst neu** | 291,51 | **+5,90 % ENGSTE** | frei (HT+2 seit Di 04.08. beendet) |
+| LLY  | 1.168,00 | **+4,69 % Best chg** | -207,10 | **-2,17 % verbessert vs Close -6,40 %** | 1.098,38 | +6,34 % | **HT+0 heute BMO Post-Report POSITIV; Blackout-V1_neu 1.134,20 Puffer +2,98 % ÜBERSCHRITTEN** |
+| V    | 372,10 | +0,68 % | +402,90 | **+4,18 %** | 328,60 | +13,24 % | – |
+| UNH  | 409,01 | +0,36 % | +178,56 | +1,85 % | 369,44 | +10,71 % | – |
+| JPM  | 358,99 | +0,41 % | +78,63 | **+7,88 % Best P/L** | 306,16 | +17,26 % | – |
+
+**V1-V6 Pre-Read alle SICHER Std-V1** (RSI/EMA werden im Pre nicht geprüft). Kein V-Trigger, keine Sell-Order.
+
+### 🟢 LLY Q2 2026 Earnings Report (Mi 05.08. BMO) — MASSIVER BEAT + GUIDANCE-ANHEBUNG
+
+| KPI | Actual Q2 26 | Konsens | Beat |
+|-----|--------------|---------|------|
+| EPS Non-GAAP (adj.) | **$8,38** | $6,00–7,74 | **+25-35 %** |
+| Revenue | **$22,97 Mrd.** | $20,5–20,7 Mrd. | **+11 %** |
+| YoY Rev-Growth | **+48 %** | – | – |
+| Mounjaro Q2 | **$9,94 Mrd.** | – | ~Verdoppelung YoY |
+
+**Guidance 2026 angehoben:**
+- Revenue: **$85–87 Mrd.** (vorher $82–85 Mrd.)
+- EPS Non-GAAP: **$35,50–36,50** (aktualisiert; Q2 IPR&D-Charges $3,03/Aktie drücken Berichtsspanne)
+- Mounjaro/Zepbound Volumen-Treiber, Retatrutide Pipeline fortschreitend (kein separates Revenue-Guidance)
+
+**LLY Kursreaktion Pre-Market:**
+- Alpaca Positions Live cur: **1.168,00** (vs Mo Close 1.117,47 = **+4,52 % Gap-Up**)
+- **Blackout-V1_neu 1.134,20 (Bull-Konvention) Puffer +2,98 % ÜBERSCHRITTEN** — 3-Tage-Bruch (Mo/Di/Pre-Mi) aufgehoben
+- P/L verbessert von Close -6,40 % auf Pre -2,17 % (+4,23 pp Recovery)
+- Worst-P/L-Titel wechselt zu AAPL -2,51 %
+- Blackout-Kalender: HT+0 heute → HT+1 Do 06.08. → HT+2 Fr 07.08. → **Blackout beendet ab Mo 10.08.**
+
+### Perplexity Daily Macro Check (05.08. Pre-Market)
+- **VIX Close 04.08.:** 18,29 [GRÜN <25, leicht erhöht vs Fr 16,02 / Mo 15,86 aber weit von Cap]
+- **SPY Pre 774,59 Alpaca latestTrade** vs Mo Close 771,11 = **+0,451 % Post-Rally-Fortsetzung** (Perplexity keine SPY Pre-Angabe)
+- **10Y US Treasury Yield:** ~4,25 % (aus Marktdaten abgeleitet)
+- **Makro-Events heute:** Kein FOMC-Meeting, kein CPI/PCE-Release; Standard Weekly-Claims. Earnings-Highlight: **LLY Q2 BMO** (siehe oben)
+- **MRK Post-Earnings (gestern Di 04.08. BMO):** Perplexity keine belastbaren EPS/Revenue-Zahlen, Reaktion nach Open zu prüfen
+
+### Earnings-Blackout Nächste 3 HT (Portfolio)
+- **LLY Mi 05.08. BMO** — HT+0 heute, Report bereits erfolgt (positiv, siehe oben)
+- **AAPL** — HT+2 seit Di 04.08. beendet, keine Portfolio-Blackouts weitere 3 HT
+- **UNH, JPM, V** — nächste Earnings Q3 Ende Okt 2026
+- **MRK** — nicht Portfolio (gestern Di 04.08. BMO Report, blockiert weiter als Watchlist-Kandidat)
+- Do 06.08. + Fr 07.08. **keine** Portfolio-Position mit Earnings
+
+### Guardrails-Status Pre 08:35 ET
+1. Daily Loss Cap -3 %: **+0,526 %** → GRÜN
+2. Weekly Loss Cap -5 %: **+0,172 %** → GRÜN gedreht positiv
+3. Drawdown-Alarm -15 % ATH: -3,502 % → GRÜN
+4. Drawdown-Stopp -20 % ATH: -3,502 % → GRÜN
+5. Crash-Filter (SPY -5 %/Tag): SPY Mo +1,77 %, Pre +0,45 % → INAKTIV
+6. VIX-Filter (>30): VIX 18,29 → GRÜN <25
+7. Earnings-Blackout: LLY HT+0 heute Report erfolgt positiv, keine anderen Portfolio-Blackouts
+8. Max neue Käufe 2/Woche: KW32 0/2 → GRÜN
+
+**→ 8/8 GRÜN, 0 WARN.** LLY Blackout-Bruch aus Vorwochen aufgehoben (Puffer +2,98 % ÜBERSCHRITTEN nach Post-Earnings-Rally).
+
+### Entscheidung
+- **Kaufscan Market Open 09:30 ET: JA** — LLY-Post-Earnings-Momentum-Watch für Portfolio, UAL K4-Vol-Rebound 3. Tag Re-Check als Slot 1 Prio 1, MRK Post-Earnings Mo BMO Reaktion Watch, ABBV XLV-Cap Owner-pending 5. Woche bleibt blockiert
+- **ClickUp Routine-Log Prio 4 FEHLER "Max usage for custom task types reached" ITEM_246** → Fallback Memory-Only per notify-skill.md
+- **PushNotification Prio 2 Owner** — positive Post-Earnings-Sichtbarkeit LLY (Beat + Guidance-Anhebung + Blackout-Bruch aufgehoben + Weekly gedreht positiv)
+
+---
+
 ## Market Close 16:00 ET — 2026-08-04 (Di, KW32 Tag 2) — Tagesbilanz +0,176 % / Alpha -1,591 pp NEG / DD -3,911 % GRÜN / Weekly -0,253 % GRÜN
 
 ### Alpaca /v2/account Close
