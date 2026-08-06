@@ -4,6 +4,77 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-06 (Do, KW32 Tag 4) — Daily +0,234 % / Alpha +0,077 pp POSITIV / DD -3,196 % GRÜN / Weekly +0,489 % GRÜN
+
+### Alpaca /v2/account Pre
+- portfolio_value: **96.867,82 $** | equity: 96.867,82 $ | last_equity: 96.641,67 $
+- Daily P/L: **+226,15 $ = +0,234 %** [GRÜN, Cap -3 %]
+- vs Memory Wed Close 96.589,61 = **+278,21 $ = +0,288 %** (last_equity-Diff +52,06 $ overnight/AH — Notiz, keine Aktion)
+- cash: 56.707,49 $ (**58,54 %**, unverändert)
+- long_market_value berechnet: **40.160,33 $** (5 Pos, +278,21 vs Wed Close 39.882,12 = **+0,698 %**)
+- buying_power: 339.278,89 $ | status: ACTIVE | trading_blocked: false
+
+### SPY Pre-Market (Alpaca Data)
+- latestTrade: **771,00 $** @ 08:35:42 ET (Ex V, size 100)
+- latestQuote: ap 771,05 / bp 770,93 (Spread 0,12)
+- prevDailyBar (Tue 04.08): c 771,11 | dailyBar (Wed 05.08): c 769,79
+- **SPY Pre vs Wed Close: +0,157 % flat/positiv**
+- Alpha vs Portfolio: **+0,077 pp POSITIV** (Portfolio +0,234 % vs SPY +0,157 %)
+- Crash-Filter Wed vs Tue: -0,171 % << -5 % Trigger → **INAKTIV**
+- ⚠️ **Perplexity SPY Pre 746,07 als HALLUZINATION VERWORFEN** (widerspricht Alpaca-Live + eigener Equity-Positivität; Alpaca-latestTrade bindend per Data-Quality-Rule)
+
+### VIX (Perplexity Multi-Query 3 Quellen)
+- Query 1: **12,18** (frühe Trades Do 06.08.)
+- Query 2: Range 16-19, letzt explizit **17,98** (Jul 30 12:27 CDT)
+- Query 3: **VIX Wed Close 21,51 / Pre-Thu 16,50**
+- ⚠️ 3-Quellen-Divergenz → konservativ **Best-Estimate ~16-18** [GRÜN <25, deutlich <30-Cap]
+
+### 10Y Treasury Yield
+- **~4,69 %** (Perplexity letzt verfügbar Aug 3, 2026)
+
+### Makro-Events heute (Do 06.08.2026)
+- **US Initial Jobless Claims** Woche endend 01.08. **Release heute 08:30 ET** (Consensus 221k, Prior 197k) — Deviation >±10k = Markt-Reaktion Watch
+- Keine großen Portfolio-Position-Earnings heute
+- Perplexity fand keine Mega-Cap Earnings-Blockbuster für Do 06.08.
+
+### Top marktbewegende News (letzte 24h)
+- Perplexity lieferte keine konkrete Top-3-News-Rangliste (Multiple Query-Attempts) — Quellenlage schwach
+- LLY Q2-Beat (gestern BMO) noch dominante Story: EPS $8,38 vs Konsens $6-7,74 (Beat +25-35 %), Rev $22,97 Mrd, Guidance angehoben Rev 2026 $85-87 Mrd
+
+### Earnings-Blackout Check (Nächste 3 HT vs Portfolio)
+- **LLY HT+1 heute Do 06.08.** → **HT+2 Fr 07.08.** → **Ende Mo 10.08.**
+- Std-V1 1.098,38 $ + Blackout-V1_neu 1.134,20 $ (Bull-Konvention intakt Puffer +2,64 % aus Wed Close)
+- UNH/JPM/V/AAPL: **KEINE Earnings 3 HT** (Q3 Ende Okt bestätigt)
+
+### Guardrails-Vollcheck (alle 8 GRÜN + 1 WARN)
+1. Daily Loss Cap -3 %: **+0,234 % GRÜN**
+2. Weekly Loss Cap -5 %: **+0,489 % GRÜN**
+3. Drawdown-Alarm -15 % ATH: **-3,196 % GRÜN**
+4. Drawdown-Stopp -20 % ATH: **-3,196 % GRÜN**
+5. Crash-Filter SPY -5 %/Tag: Wed -0,171 % **INAKTIV**
+6. VIX-Filter >30: **~16-18 GRÜN**
+7. Earnings-Blackout: **LLY HT+1 aktiv WARN** (V1_neu 1.134,20 primär bis Mo 10.08.)
+8. Max Käufe 2/Woche: **0/2 KW32 OFFEN**
+
+### Kaufscan Market Open 09:30 ET: **JA**
+- VIX GRÜN, kein Cap-Alert, kein Crash-Filter, Slot 1/2 offen
+- **Watchlist Prio (aus Wed Close Vollcheck):**
+  1. **UAL** XLI: K4-Vol-Rebound-Watch **5. Tag persistent** (Wed 68 %), RS_63d +35,3 pp #1 XLI ✓, K1/K2/K5 ✓; K4-Rebound Do Open kritisch
+  2. **GS** XLF: K4 107 % nahe 120 %-Trigger, K1/K2/K3 ✓; K5 Multi-Source Pre-Open prüfen
+  3. **DELL** XLK: K1 ✓✓✓ +49,8 %, K3 RS **+107,4 pp #1 Gesamt-Momentum**, K4 101 % nahe Trigger, **XLK-Konflikt mit AAPL**
+  4. **HPE** XLK Watch: K4 74 % FAIL, XLK-Konflikt
+  5. **UNP** XLI Backup: K4 59 % FAIL heavy
+- BLOCKIERT: GE (K5 FwdPE 44,72), MSFT/META (K1+K2 FAIL), AMZN/GOOGL/AVGO (K3 NEG)
+
+### Notifications
+- ClickUp Prio 4 Routine-Log FEHLER ITEM_246 **persistent 4. Tag** → Fallback Memory-Only
+- KEINE PushNotification (Silence-Rule: alle SICHER erwartet, kein Cap-Alert, positive Alpha, VIX GRÜN, LLY BO intakt, kein Owner-Handlungsbedarf)
+
+### Nächste Routine
+**Do 06.08. 09:30 ET Market Open KW32 Tag 4** — Kaufsignal-Scan Slot 1/2, UAL K4-Vol-Rebound 5. Tag, GS K4-Trigger-Check, LLY HT+1 Post-Earnings-Trend-Watch
+
+---
+
 ## Market Close 16:00 ET — 2026-08-05 (Mi, KW32 Tag 3) — Daily +0,555 % / Alpha +0,726 pp POSITIV / DD -3,475 % GRÜN / Weekly +0,200 % GRÜN
 
 ### Alpaca /v2/account Close
