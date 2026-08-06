@@ -4,6 +4,70 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-06 (Do, KW32 Tag 4) — Daily +0,074 % / Alpha +0,223 pp POSITIV / DD -3,351 % GRÜN / Weekly +0,328 % GRÜN / 🚨 UNH V2 TRIGGERED razor-thin
+
+### Alpaca /v2/account Close
+- portfolio_value: **96.712,90 $** | equity: 96.712,90 $ | last_equity: 96.641,67 $
+- Daily P/L: **+71,23 $ = +0,074 %** [GRÜN, Cap -3 %, reduziert vs Open +0,132 %]
+- vs Memory Wed Close 96.589,61 = **+123,29 $ = +0,128 %**
+- cash: 56.707,49 $ (**58,63 %**, unverändert)
+- long_market_value: **40.005,41 $** (5 Pos, +123,29 vs Wed Close 39.882,12 = **+0,309 %**)
+- buying_power: 338.845,11 $ | status: ACTIVE | trading_blocked: false
+
+### SPY EOD (Alpaca IEX Daily Bar)
+- Close: **768,64 $** vs Wed Close 769,79 = **-0,149 %** leicht negativ (Perplexity Sonar Bestätigung -0,13 %)
+- Alpha vs Portfolio: **+0,223 pp POSITIV** (Portfolio +0,074 % vs SPY -0,149 %)
+- SPY 20d %: +2,27 % (RS_4w-Baseline für V6-Check)
+- SPY 63d %: +4,75 % (RS-Baseline K3 für Watchlist)
+
+### V1-V6 Vollcheck EOD-Bars (Alpaca IEX 276d)
+- **V5 EMA50>EMA200 Golden Cross alle 5 intakt**: V +3,12 % (engster aber positiv verbessert vs Wed EOD +3,79 %), JPM +6,62 %, AAPL +10,89 %, LLY +12,53 %, UNH +12,70 %
+- **V6 RSI<80 UND-Bedingung alle 5 sicher**: max V RSI 65,1 (JPM 62,7, LLY 54,8, AAPL 46,2, UNH 41,8); UNH RS_4w -8,70 pp NEG aber RSI 41,8 → sicher via UND; LLY -4,23 pp NEG aber RSI 54,8 → sicher; AAPL -3,45 pp NEG aber RSI 46,2 → sicher
+- **V1 Std alle 5 SICHER**: min **AAPL +7,18 % ENGSTE Std** vs Wed +6,66 %, LLY +8,51 % + **Blackout-V1_neu 1.134,20 Puffer +5,09 % ÜBERSCHRITTEN** Bull-Konvention intakt HT+1, UNH +9,33 %, V +12,74 %, JPM +16,38 %
+- **V2 4 SICHER + 1 TRIGGER**: **🚨 UNH V2 -0,43 % TRIGGERED** via 52w-Wick 460,95 vom 16.07. (Data-Quality-Flag persistent 6. Tag; ohne Wick nächst-höchster 437,13 → V2-Puffer +5,03 % SICHER; Close-basis 436,39 → +5,18 % SICHER); AAPL V2 +3,05 % razor-thin via 52w-Wick 344,56 vom 29.07. Data-Quality-Flag; LLY V2 +8,48 %, JPM +11,55 %, V +12,57 %
+- **V3/V4 Gewinn-TP**: max JPM +7,07 % Best P/L << 20 % kein Trigger
+- **=> UNH V2 TRIGGERED razor-thin. KEINE Auto-Order platziert per "No-Action bei Unsicherheit" + "Strategie-Lock Konflikt: nicht handeln" (Data-Quality-Flag 460,95-Wick). Owner-Entscheidung PENDING via PushNotification (Optionen A/B/C).**
+
+### UNH V2 Signal-Konflikt Analyse
+- **Strategy.md wörtlich**: "V2: Kurs <= 52w-Hoch × 0,88 → Market Order SOFORT"
+- **Alpaca IEX 52w High**: **460,95 $** vom 16.07.2026 (Intraday-Wick, Close 423,28 → Wick 37,67 $ = ~9 % über Close)
+- **V2-Stop @ Wick 460,95 × 0,88 = 405,64 $** → UNH Close 403,91 = **-0,43 % TRIGGERED**
+- **Data-Quality-Anomalie**: Nächst-höchster Intraday-High 437,13 $ vom 17.07. (5,64 % Gap zum Wick); Close-basis 52w-High **436,39 $** vom 21.07.
+- **V2-Stop @ Close-High 436,39 × 0,88 = 384,02 $** → UNH Close 403,91 = **+5,18 % SICHER**
+- **V2-Stop @ nächst-höchster Intraday-High 437,13 × 0,88 = 384,67 $** → UNH Close 403,91 = **+5,00 % SICHER**
+- **Konflikt**: (a) Strategy-Lock wörtlich → Wick bindend → V2 TRIGGERED, (b) Markt geschlossen 16:04 ET → Market-Order-SOFORT unmöglich → müsste Limit-Sell morgen früh werden, (c) Data-Quality-Flag persistent 6. Tag → Signal-Unsicherheit → No-Action-Regel
+- **Resolution**: PushNotification an Owner mit 3 Entscheidungsoptionen; KEINE Auto-Order platziert; Verkaufsorder pending: V2 UNH — Owner-Entscheidung PENDING
+
+### Weekly Loss Cap Check
+- Fr 31.07 Close: 96.396,66 $ | Do 06.08 Close: 96.712,90 $
+- **Weekly PnL: +316,24 $ = +0,328 %** [GRÜN, weit von -5 % Cap]
+- Verlauf KW32: Mo -0,151 % → Di +0,072 % → Mi +0,200 % → Do +0,328 %
+
+### Guardrails-Vollcheck (7/8 GRÜN + 1 ROT + 1 WARN)
+1. Daily Loss Cap -3 %: **+0,074 % GRÜN**
+2. Weekly Loss Cap -5 %: **+0,328 % GRÜN**
+3. Drawdown-Alarm -15 % ATH: **-3,351 % GRÜN**
+4. Drawdown-Stopp -20 % ATH: **-3,351 % GRÜN**
+5. Crash-Filter SPY -5 %/Tag: Do -0,149 % **INAKTIV**
+6. VIX-Filter >30: **~16-18 GRÜN** (Wed-Estimate, keine neue Multi-Query Do EOD)
+7. Earnings-Blackout: **LLY HT+1 heute ÜBERSCHRITTEN Bull-Konvention Blackout-V1_neu +5,09 % Puffer sicher WARN monitoring** bis Mo 10.08. (HT+2 Fr 07.08. verbleibt)
+8. Max Käufe 2/Woche: **0/2 KW32 OFFEN** (5 Tage ohne Kauf)
+- **🚨 ADDITIONAL: V2-Signal UNH TRIGGERED ROT** — Owner-Entscheidung Pending (nicht in 8-Guardrail-Set, aber Handlungs-relevant vor Fr Open)
+
+### Watchlist Fr 07.08. (K1-K4 aus Alpaca EOD Do 06.08. + Perplexity Sonar)
+- Watchlist morgen: MU (K1 ✓ K3+27,4pp #1 K2 razor-thin 47,6 K4 74% FAIL), STX (K1 ✓ K3+3,7pp K2 razor-thin 49,8 K4 70% FAIL), UAL (K1-K3-K5 vorbekannt K4 6. Tag Persistenz-Watch), GS (K4 Wed 107% nahe Trigger K5 Multi-Source Pre-Open Backup)
+- Perplexity-Kandidaten Do REJECT: VRT K3 -28,1 pp NEG, WDC K3 -11,4 pp NEG chg -13,10 % Gap-Down, FIX K3 -19,7 pp NEG
+- BLOCKIERT bleiben (6. Tag): GE (K5 FwdPE 44,72), MSFT/META (K1/K2 FAIL), AMZN/GOOGL/AVGO (K3 NEG), NFLX/ORCL (K1 FAIL), CAT (K2/K3 FAIL), DELL/HPE **NEU** REJECT K1-Bruch heute (-7,34 %/-6,12 % Gap-Downs), NVDA (K4 FAIL persistent)
+
+### Notifications
+- ClickUp Prio 1 Critical-Task "[CLOSE] Tagesbilanz UNH V2 TRIGGERED" FEHLER "Max usage for custom task types reached" ITEM_246 **persistent 5. Tag** → Fallback Memory-Only per notify-skill.md
+- **🚨 PushNotification Critical Alert an Owner GESENDET**: UNH V2 TRIGGERED razor-thin via 52w-Wick 460,95, 3 Entscheidungsoptionen (A wörtlich → Limit-Sell, B Data-Quality-Flag → verwerfen, C weiter WARN-Monitoring), Entscheidung erforderlich vor Fr 09:30 ET Market Open
+
+### Nächste Routine
+**Fr 07.08. 08:30 ET Pre-Market KW32 Tag 5** — UNH-Owner-Entscheidung umsetzen (Limit-Sell platzieren wenn A, verwerfen wenn B/C), LLY HT+2 letzter Blackout-Tag Bull-Konvention weiter monitoren, MU/STX K2-K4-Rebound-Check, UAL K4 6. Tag Persistenz-Downgrade-Frage bei erneutem FAIL, VIX-Check + Makro-Events Fr 07.08.
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-06 (Do, KW32 Tag 4) — Daily +0,234 % / Alpha +0,077 pp POSITIV / DD -3,196 % GRÜN / Weekly +0,489 % GRÜN
 
 ### Alpaca /v2/account Pre
