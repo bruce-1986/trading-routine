@@ -46,6 +46,70 @@
 
 ---
 
+## Weekly Review KW32 — 2026-08-07 17:00 ET (Fr, Wochenschluss) — Wochenrendite +0,551 % / Alpha -1,487 pp NEG / YTD -3,487 % / YTD-Alpha -16,884 pp
+
+### Wochenabschluss KW32 — 2026-08-07
+
+```
+Gesamtwert (Equity):    96.512,65 $   (Alpaca Close 16:00 ET; vs Fr 31.07. Close 96.396,66 = +0,120 %; Live 17:00 ET Bewegung marginal, Alpaca equity 96.520,63 aktuell)
+Cash:                   56.707,49 $   (58,76 %)   unverändert seit 20.07.26 (V-Kauf)
+Investiert (MV):        39.805,16 $   (41,24 %)   5 Positionen (AAPL, JPM, LLY, UNH, V)
+Wochenrendite:          +0,551 %      (Mo 03.08 EOD 95.984,04 → Fr 07.08 Close 96.512,65)
+Alt-Referenz Fr→Fr:     +0,120 %      (Fr 31.07 Close 96.396,66 → Fr 07.08 Close 96.512,65)
+SPY Wochenrendite:      +2,038 %      (Mo 03.08 Close 757,72 → Fr 07.08 Close 773,16, Alpaca IEX)
+Alt SPY Fr→Fr:          +3,531 %      (Fr 31.07 Close 746,79 → Fr 07.08 Close 773,16)
+Alpha vs SPY (Mo→Fr):   -1,487 pp     [NEGATIV, 4. Woche in Folge Alpha-Verlust bei SPY-Rally-Wochen]
+Alpha vs SPY (Fr→Fr):   -3,411 pp     [NEGATIV Alt-Referenz]
+YTD Depot (seit Init):  -3,487 %      (100.000 → 96.512,65, Bot lebt 68 Tage seit 31.05.26)
+YTD SPY 2026:           +13,397 %     (Alpaca IEX YE25 681,82 → 07.08. Close 773,16)
+YTD-Alpha:              -16,884 pp    (verschlechtert vs KW31 -13,232 pp durch KW32-SPY-Rally +3,53 %)
+ATH:                    100.066,47 $  (intraday Open 2026-06-22)
+Drawdown vom ATH:       -3,552 %      [GRÜN — Schwelle -15 % bei 85.056 $]
+Offene Positionen:      5 / 8
+Nächste Woche max. Käufe: 2 (Reset Mo 10.08.)
+Watchlist KW33: UAL (XLI Prio 1), UNP (XLI Prio 2), BAC (XLF Prio 3), NEM/FCX/DOW (XLB neue Pipeline), NVDA (XLK marginal); PANW → BLACKOUT-SKIP ~17.08.
+```
+
+**Trade-Aktivität KW32:**
+- Käufe: 0 (Slot 1/2 + 2/2 beide VERFALLEN — alle Watchlist-Kandidaten Fr Open REJECT/SKIP: UAL K4-FAIL 6. Tag, GS K4 low Vol, DELL/HPE K1-Bruch, UNP K4 heavy, NVDA K3 marginal)
+- Verkäufe: 0 | Stop-Loss-Trigger: 0 | Death-Cross V5: 0 | RSI-Überkauft V6: 0
+- Geschlossene Trades: 0 | Win-Rate KW32: n/a | Ø Haltedauer: n/a
+- Handelstage: 5 von 5 (keine Feiertage)
+- Realisiert kumuliert seit Bot-Init: -3.638,91 $ (unverändert vs KW31)
+
+**Positions-Wochen-Performance (Alpaca IEX Fr→Fr):**
+- LLY:  +3,229 %  (1.148,86 → 1.185,96)   BEST — Post-Q2-Rally Mi 05.08. BMO EPS $8,38 Beat
+- JPM:  +1,621 %  (351,86 → 357,56)       XLF-Steady-Fortsetzung
+- AAPL: +1,479 %  (308,73 → 313,29)       Post-Q3-Konsolidierung stabil
+- V:    -0,951 %  (366,07 → 362,59)       Fr Give-back -2,15 % Worst chg ohne klaren Katalysator
+- UNH:  -1,771 %  (414,43 → 407,09)       WORST — XLV-Divergenz-Fortsetzung, V2-Wick razor-thin
+
+**Sektor-Check (Max 30 % vom Portfolio-Kapital):**
+- XLV (LLY+UNH):  19.244,04 $ → 48,3 % investiert / 19,93 % Portfolio | 2 Pos [Owner-Klärung 4. Woche pending]
+- XLF (JPM+V):    10.865,25 $ → 27,4 % investiert / 11,26 % Portfolio | 2 Pos [OK]
+- XLK (AAPL):      9.703,00 $ → 24,5 % investiert / 10,06 % Portfolio | 1 Pos [OK]
+- Cash:           56.707,49 $ → 58,76 % Portfolio | strukturell zu hoch für Bull-Rally-Regime
+
+**Signal-Status Wochenschluss (V1–V6 EOD-Vollcheck Fr Close, alle 5 SICHER):**
+- AAPL 313,30 — Std-V1 291,51 Puffer **+7,47 % ENGSTE Std**; V2 Wick 344,56 Threshold 303,21 razor-thin +0,15 %; V5 EMA50 309,87 > EMA200 280,45 (+10,49 %); V6 RSI 47,6 << 80 (RS_4w -3,06 pp aber UND-Bedingung sicher)
+- JPM  357,52 — Std-V1 306,16 Puffer +16,78 %; V2 +11,12 %; V5 EMA50 336,62 > EMA200 316,50 (+6,36 %); V6 RSI 63,0 << 80
+- LLY  1.185,71 — Blackout-V1_neu 1.134,20 Puffer +4,54 % ÜBERSCHRITTEN Bull-Konvention; Std-V1 1.098,38 Puffer +7,95 %; V5 +12,46 %; V6 RSI 53,8 << 80; **HT+2 heute letzte Session, Ende Mo 10.08.**
+- UNH  406,13 — Std-V1 369,44 Puffer +9,94 %; V2 Wick 460,95 Threshold 405,636 razor-thin **+0,12 % RECOVERED**; V5 +12,72 %; V6 RSI 44,0 << 80 (RS_4w -6,53 pp aber UND-Bedingung sicher)
+- V    362,50 — Std-V1 328,60 Puffer +10,32 %; V2 +11,23 %; V5 EMA50 348,76 > EMA200 337,63 (+3,29 % engster aber positiv); V6 RSI 55,3 << 80
+- **KEINE Sell-/Limit-Order für Mo 10.08. platziert, 0 offene Orders**
+
+**Strategie-Status:** STABIL — keine Anpassung nötig. Diskussions-Punkte KW33: (1) XLV-Cap-Deutung 4. Woche pending, (2) Cash-Quote 58,76 % vs 4-Wochen-Alpha-Verlust, (3) Screener-Erweiterung XLB/XLK-Alternativen (AMZN/GOOGL/NEM/FCX).
+
+**Sektor-Ranking KW32 (Alpaca IEX Fr→Fr, SPY +3,531 %):**
+1. **XLK +7,25 %** (+3,72 pp Alpha)   — Tech dominant
+2. **XLB +4,86 %** (+1,33 pp Alpha)   — Materials
+3. XLY +3,26 % (-0,27 pp)             — Consumer Discretionary
+- Rest unter SPY: XLI +3,01, XLC +2,81, XLV +1,92, XLF +1,19, XLP +0,09, XLRE -0,13, XLU -1,66, **XLE -3,44 % Worst**
+
+**Überraschungs-Insight:** XLK dominierte KW32 mit +7,25 % Woche (Alpha +3,72 pp) — größte Sektor-Divergenz seit KW28. AAPL profitierte marginal (+1,48 %), doch Portfolio-XLK-Exposure fing nur ~20 % der Rally ab, was den kumulativen KW29-32-Alpha-Verlust bei SPY-Rally-Wochen strukturell erklärt.
+
+---
+
 ## Weekly Review KW31 — 2026-07-31 17:00 ET (Fr, Wochenschluss) — Wochenrendite -1,261 % / Alpha -2,329 pp NEG / YTD -3,703 % / YTD-Alpha -13,232 pp
 
 ### Wochenabschluss KW31 — 2026-07-31
