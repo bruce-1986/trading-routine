@@ -6,6 +6,80 @@
 
 ## Was funktioniert (bestätigte Patterns)
 
+### KW32 — 2026-08-07 — Weekly Review
+
+```
+Performance:    +0,551 %   | Alpha vs SPY: -1,487 pp   (SPY Mo 03.08 Close 757,72 → Fr 07.08 Close 773,16 = +2,038 %, Alpaca IEX; Alt-Ref Fr→Fr: Portfolio +0,120 % / SPY +3,531 % = Alpha -3,411 pp)
+Seit Bot-Init (31.05.26): -3,487 % | YTD Depot: -3,487 % | SPY YTD +13,397 % (Alpaca IEX YE25 681,82 → 773,16) → YTD-Alpha -16,884 pp (Bot lebt 68 Tage, ~59 % Cash)
+
+Beste Position diese Woche:    LLY +3,23 %   (Alpaca IEX 31.07 Close 1.148,86 → 07.08 Close 1.185,96; Post-Q2-Earnings-Rally Mi 05.08. BMO EPS $8,38 Beat +25-35 %; Woche-P/L-Rebound von KW31 -3,88 % auf KW32-Ende -0,68 %)
+Beste Position (P/L kumuliert): JPM +7,43 % (Close 357,52; XLF-Steady-Fortsetzung, Fill 17.06. → +52 HT gehalten, RSI 63,0 max Watch aber << 80)
+Schlechteste Position (open):  UNH -1,77 %  (Alpaca IEX 31.07 Close 414,43 → 07.08 Close 407,09; XLV-Divergenz-Fortsetzung Fr Sell-off eingedämmt, V2-Wick 460,95 Threshold 405,636 razor-thin +0,12 % Puffer Fr Close, Data-Quality-Flag)
+Schlechteste (P/L kumuliert):  AAPL -1,12 % (Close 313,30; Post-Q3-Earnings-Konsolidierung von KW31 -2,43 %, V2-Wick 344,56 Threshold 303,21 razor-thin +0,15 % Puffer, Std-V1 291,51 alleine primär bindend)
+Zusatz: V -0,95 % Woche (Close 362,59, Fr Give-back -2,15 % Worst chg dominant, P/L +1,49 % kumuliert) | JPM +1,62 % Woche (Best-P/L kumuliert +7,43 %) | AAPL +1,48 % Woche (Post-Earnings-Recovery, Std-V1 +7,47 % ENGSTE)
+
+Käufe diese Woche:   0  (Slot 1/2 + 2/2 beide verfallen — alle Watchlist-Kandidaten Fr Open REJECT/SKIP: UAL K4-FAIL 6. Tag persistent, GS K4 low Vol, DELL/HPE K1-Bruch anhaltend, UNP K4 heavy, NVDA K3 marginal + XLK-Konflikt AAPL)
+Verkäufe:            0
+Stop-Loss-Trigger:   0  (V1-V6 alle 5 SICHER EOD-Vollcheck; kein Trigger)
+Win-Rate KW32:       n/a — 0 abgeschlossene Trades
+Realisiert KW32:     0 $        | Realisiert kumuliert seit Bot-Init: -3.638,91 $ (unverändert vs KW31)
+Handelstage:         5 von 5 (keine Feiertage)
+ATH:                 100.066,47 $ | DD -3,552 % (GRÜN, Alarm -15 %)
+Guardrails:          Alle 8 GRÜN am Fr-Close + 1 WARN (LLY BO HT+2 heute letzte Session Ende Mo 10.08.; UNH V2-Wick +0,12 % razor-thin persistent Data-Quality-Flag; AAPL V2-Wick +0,15 % razor-thin Data-Quality-Flag)
+Käufe KW32 Final:    0/2  (Beide Slots verfallen)
+```
+
+**Was gut lief:**
+- **LLY Post-Q2-Rally-Absorption sauber:** Mi 05.08. BMO EPS $8,38 (+25-35 % Beat + Guidance an) → Intraday +4,64 %, kein Panik-Verkauf trotz KW31 P/L -3,88 %. Wochen-Bilanz +3,23 % IEX-Bar / P/L kumuliert von -3,88 % auf -0,68 % erholt. Blackout-Regel HT-3 bis HT+2 (Mo 03.08 → Mo 10.08) korrekt gefahren, Blackout-V1_neu 1.134,20 Puffer intakt +4,54 % EOD Fr.
+- **V1-V6-Vollcheck alle 5 Positionen SICHER EOD-Vollcheck Fr:** Golden Cross alle intakt (V engster +3,29 %), RSI max JPM 63,03 << 80, keine Sell-Trigger. Keine Panik trotz UNH+AAPL V2-Wick razor-thin (+0,12 % / +0,15 %) — beide via Std-V1 abgesichert (Data-Quality-Flag korrekt gehandhabt per Rule 5).
+- **Cascade-Framework Disziplin bei Kauf-Rejects:** Alle 5 Fr-Watchlist-Kandidaten (UAL/GS/DELL/HPE/UNP/NVDA) REJECT/SKIP nach K4/K3-FAIL. Keine Zwangs-Käufe trotz Slots-Verfall — "No-Action bei Unsicherheit" Rule 5 sauber gefahren. Weekly-Loss-Cap-Puffer +4,449 pp (Cap -5 % vs Wochen +0,551 %) komfortabel.
+- **PushNotification kompensiert ClickUp-Ausfall:** ITEM_246 "Max usage for custom task types reached" 6. Tag persistent → Fallback Memory-Only + PN an Owner (V2-Wick-Watch, KW32-0-Käufe, LLY-BO-Ende) — Owner-Reach trotz API-Blocker gewahrt.
+- **UNH V2-Wick Recovery-Muster dokumentiert:** Open -0,27 % BROKEN → Midday +1,00 % RECOVERED → Close +0,12 % razor-thin. Rally +1,27 % Best chg Fr löste CRITICAL-Alert de-facto auf, kein Auto-Sell per Rule 5 korrekt. Std-V1 369,44 durchweg sicher +9,94 %.
+
+**Was nicht gut lief:**
+- **0 Käufe KW32 trotz 5 HT:** Watchlist zu eng ausgelegt (UAL/UNP K4-Vol-Rebound nicht materialisiert, GS/AMD/MU/ABBV K2 RSI <50 nach XLV-Divergenz, PANW Blackout ~17.08.). **Screener-Universe** braucht KW33 Erweiterung um XLB (Materials +4,86 % Woche, NEM/FCX/DOW/APD) oder direkte Test von AMZN/GOOGL/MSFT/NVDA-Post-Rebound-Setups.
+- **YTD-Alpha weiter negativ -16,884 pp:** SPY +13,4 % vs Depot -3,49 % nach 68 Bot-Tagen. Cash-Quote 58,76 % strukturell zu hoch für Bull-Rally-Regime (VIX ~16-18 stabil, XLK +7,25 % Woche). **KW32 Alpha -1,487 pp** weitet die YTD-Lücke aus (vs KW31 -13,232 pp → jetzt -16,884 pp inkl. SPY-Rally-Woche).
+- **Portfolio-Beta strukturell zu klein bei SPY-Rally:** XLK-Anteil 10,06 % (nur AAPL, +1,48 % Woche) vs XLK-Sektor +7,25 % — Portfolio-XLK-Exposure fängt nur ~20 % der Sektor-Rally ab. XLB/XLY komplett 0 %. **4. Woche in Folge Alpha-Verlust bei SPY-Rally-Wochen** (KW29-32).
+- **UNH-Underperformance kumuliert:** -1,77 % Woche + XLV-Sektor-Divergenz-Fortsetzung. V2-Wick 460,95 Threshold 405,636 seit KW29 razor-thin — Konzept-Stress-Test unter Long-Hold-Realität. Bei Fortsetzung LLY+UNH XLV-Cap-Diskussion (48,3 % investiertes Kapital) DRINGEND lösen.
+- **V Fr Give-back -2,15 % Worst chg:** Post-Q3-Earnings-Konsolidierung (28.07. AMC ✓) hielt bis Do, Fr-Sell-off ohne klaren Katalysator (kein spez News), reduzierte Wochen-P/L von +3,04 % (Do) auf +1,49 % (Fr). Kein Regel-Verstoß, aber Post-Earnings-Konsolidierung dauert länger als erwartet.
+- **XLE Worst Sektor -3,44 % Woche:** EOG-Kandidat KW31 hätte in KW32 K3 RSI verloren — Verzicht auf EOG-Kauf KW31 retrospektiv richtig (K5-Prä-Screen-Disziplin bewährt).
+
+**Strategie-Anpassung nötig:** NEIN — alle Regeln (V1/V6/K1-K5/Blackout/Weekly-Cap/Cascade-Framework) regelkonform. Diskussions-Punkte KW33:
+1. **XLV-Sektor-Cap-Deutung Owner-Klärung 4. Woche pending** (KW29/30/31/32). Vorschlag persistent: entweder Portfolio-Basis akzeptieren (XLV 19,93 % < 30 % OK) ODER investiert-Basis strikt (LLY-Reduktion Watch). Blockiert weiter 3.-XLV-Käufe (MRK K1-K3 ✓ Fr Watchlist).
+2. **Cash-Quote 58,76 % vs 4-Wochen-SPY-Rally-Alpha-Verlust:** VIX <20 stabil, keine Bear-Signale. Sizing-Diskussion (10 % Pos-Size aktuell vs 12-15 % bei VIX <18)?
+3. **Screener-Universe Erweiterung:** XLB (Materials +4,86 % Woche) 0 % Portfolio — neue Kandidaten NEM/FCX/DOW/APD/LIN K1-K5 Multi-Source-Check Mo 10.08.
+4. **PANW BLACKOUT ~17.08. wechselt auf SKIP-Liste KW33:** Trotz K3 RS +79,44 pp #1 Momentum kein Kauf mehr möglich. Konsolidierung Post-Earnings abwarten (analog META-Präzedenz KW31).
+5. **UAL/UNP K4-Vol-Rebound-Check Mo Pre-Market (KW33 Slot 1):** Beide XLI, K1-K3 ✓ Fr Close, K4 6 HT FAIL persistent — bei Rebound Mo Open ≥ 120 % avg20 → Kauf. Sonst weiter Backup.
+
+**Watchlist nächste Woche (KW33, 10.08.→14.08.):**
+- **UAL (XLI Industrials) — HAUPTKANDIDAT #1** — Alpaca IEX Fr 07.08. Close 129,59, K1 EMA +10,7 % ✓, K2 RSI 58,64 ✓, K3 RS_63d +24,27 pp #2 ✓, K4 Vol-Rebound-Watch Mo, K5 vorbekannt ✓ RevGr 16 %+ FwdPE 14,8x. **XLI 0 % Portfolio Diversifikation Prio 1**, Q2 CY26 released 17.07. (Earnings-blackout-frei bis ~Mitte Okt).
+- **UNP (XLI Industrials) — Backup #2** — Fr Close 293,13, K1 +10,0 % ✓, K2 RSI 53,91 ✓, K3 RS +4,95 pp ✓, K4 Vol-Rebound-Watch Mo. XLI 0 %.
+- **BAC (XLF Financials) — Backup #3** — Fr Close 63,15, K1 +8,6 % ✓, K2 RSI 66,51 upper ✓, K3 RS +14,06 pp ✓, K4/K5 Mo prüfen. **XLF 11,26 % via V/JPM aber < 30 %-Cap** — 3. XLF-Position technisch OK.
+- **NEM / FCX / DOW (XLB Materials) — NEUE PIPELINE KW33** — XLB +4,86 % Woche (#2 Sektor, +1,33 pp vs SPY). K1-K5 Multi-Source-Check Mo Pre-Market zwingend, ergänzt XLK-Bias. Portfolio-XLB 0 %.
+- **NVDA (XLK) — MARGINAL** — Fr Close 223,93, K1 +5,1 % ✓, K2 RSI 64,32 ✓, K3 RS +0,16 pp **razor-thin FAIL-Risk**, XLK-Konflikt AAPL 10,06 %. Bei K3-Verbesserung Mo Kauf-Kandidat.
+- **PANW (XLK) — SKIP KW33** — trotz K3 RS +79,44 pp #1 Momentum, Earnings BLACKOUT ~17.08.2026 → Kauf-Fenster nur Mo/Di und dann sofort Blackout-V1_neu aktiv (analog FTI-Präzedenz KW30 "zu knapp"). Konsolidierung Post-Earnings abwarten.
+- **REJECTS persistent:** GS (K2 RSI 48,66 <50), AMD (K2 RSI 46,97 <50), MU (K2 RSI 47,71 <50), ABBV (K2 RSI 47,17 <50), CVS (K2 RSI 31,61 heavy), EOG (K2+K3 FAIL), COP/XOM (K3 NEG), ORCL (K1 Death-Cross + K3 -30,17 pp), META (K3 nach -6,48 % KW31), MRK (K1-K3 ✓ aber XLV-Cap-Risk 3-Positions-Regel-nah UNH+LLY).
+
+**Sektor-Priorität KW33 (Basis KW32 Sektor-Rebound Alpaca IEX Fr→Fr):**
+- **XLK #1 (+7,25 % w, +3,72 pp Alpha):** NVDA falls K3-Verbesserung, sonst XLK-Bias-Watch AAPL (10,06 % Portfolio, +7,47 % Std-V1-Puffer)
+- **XLB #2 (+4,86 % w, +1,33 pp Alpha):** NEUE PIPELINE NEM/FCX/DOW/APD/LIN K1-K5 zwingend (0 % Portfolio)
+- **XLY #3 (+3,26 % w, -0,27 pp):** AMZN Fr Close ~230-240 $ (Q2 rally-fortsetzung), K1-K5 Mo-Prüfung
+- **XLI +3,01 % w** (-0,52 pp): UAL/UNP K4-Vol-Rebound-Watch Mo
+- **XLC +2,81 % w** (-0,72 pp): GOOGL K1-K5 Re-Screen (KW31 SKIP-Vorschlag mit Fill-Day-Buffer)
+- **XLV -1,61 pp / XLF -2,34 pp / XLE -6,97 pp Worst:** Meidung, MRK BLOCKIERT wegen XLV-Cap-Diskussion
+
+**LLY/UNH/AAPL kritischer Watch Mo 10.08.:**
+- **LLY Blackout HT+2 endet Mo 10.08.** — nach Mo Std-V1 1.098,38 wieder primär (Puffer +7,95 % EOD Fr). Post-Rally-Konsolidierung wie? Q3 CY26 vermutlich Anfang November — 3 Monate blackout-frei bis dahin.
+- **UNH V2-Wick 460,95 Threshold 405,636 Puffer +0,12 % Close Fr** — Mo Open kritisch. Bei Bruch Wick-Basis (statt Close-Peak) → KEIN Auto-Sell per Rule 5 (Data-Quality), aber CRITICAL-Alert. Std-V1 369,44 alleine bindend, Puffer +9,94 % sicher.
+- **AAPL V2-Wick 344,56 Threshold 303,21 Puffer +0,15 % Close Fr** — analog UNH: Std-V1 291,51 alleine primär, Puffer +7,47 % ENGSTE. Post-Q3-Konsolidierung KW33.
+- KW33 Slot 1/2 nach UAL/UNP K4-Vol-Rebound Mo, Slot 2/2 aus XLB-Pipeline oder XLY-AMZN-K5-Check Di.
+
+**Sektor-Cap-Check aktuell:** XLV 48,3 % investiert / 19,93 % Portfolio | XLF 27,4 % / 11,26 % | XLK 24,5 % / 10,06 % | Cash 58,76 %. **Bei strikter Deutung (investiert): XLV Verstoß 4. Woche in Folge persistent** (schwächste: UNH -1,77 % Woche). Bei Portfolio-Deutung alle < 30 %. **KW33 Owner-Klärung DRINGEND (Priorität 1, 4. Woche pending).**
+
+**Überraschungs-Insight:** XLK dominierte KW32 mit +7,25 % Woche (Alpha +3,72 pp vs SPY) — größte Sektor-Divergenz seit KW28. AAPL profitierte davon marginal (+1,48 %), doch Portfolio-XLK-Exposure fing nur ~20 % der Rally ab, was den kumulativen KW29-32-Alpha-Verlust bei SPY-Rally-Wochen strukturell erklärt.
+
+---
+
 ### KW31 — 2026-07-31 — Weekly Review
 
 ```
