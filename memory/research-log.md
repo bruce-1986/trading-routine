@@ -4,6 +4,64 @@
 
 ---
 
+## Market Open 09:50 ET — 2026-08-07 (Fr, KW32 Tag 5) — Daily -0,261 % / Alpha -0,621 pp NEGATIV / DD -3,623 % GRÜN / Weekly +0,047 % GRÜN
+
+### Alpaca /v2/account Live
+- portfolio_value: **96.441,67 $** | equity: 96.441,67 $ | last_equity: 96.694,59 $
+- Daily P/L: **-252,92 $ = -0,261 %** [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (**58,80 %**, unverändert)
+- long_market_value: **39.734,18 $** (5 Pos, -147,94 vs Do Close 39.882,12 = **-0,371 %**)
+- buying_power: 338.085,66 $ | 0 pending orders
+
+### SPY Live (Alpaca latestTrade 09:47 ET)
+- SPY 771,40 vs Do Close 768,64 = **+0,359 % positiv-flat**
+- Alpha vs Portfolio: **-0,621 pp NEGATIV** (Portfolio -0,261 % vs SPY +0,359 %)
+- Crash-Filter Do vs Mi: -0,149 % INAKTIV
+
+### V1-V4 Live-Check (RSI/EMA nicht Open-Check)
+- **⚠️ UNH V2 TECHNISCH GETRIGGERT**: cur 404,55 < V2-Threshold 405,636 (52w-Wick 460,95 * 0,88) Puffer -0,27 % BROKEN — Data-Quality-Flag persistent (Wick 16.07. intraday, Close-Peak 436,39 → -7,30 % vs Close-Peak << -12 % Zielintent). **Rule 3 (Strategie-Lock 460,95 wörtlich) vs Rule 5 (No-Action bei Unsicherheit)** → KEIN Auto-Sell, PushNotification CRITICAL an Owner
+- **V1 Std alle 5 SICHER** (eng→weit): AAPL +7,00 % ENGSTE, LLY +7,07 % (Blackout-V1_neu 1.134,20 Puffer +3,69 % HT+2 heute), UNH +9,51 %, V +11,39 %, JPM +15,80 %
+- **V3/V4 max JPM +6,54 %** << 20 % kein Trigger
+- **=> KEIN Auto-Sell** (UNH V2-Wick-Trigger per Rule 5 eskaliert, kein anderer V-Trigger)
+
+### Kaufsignal-Scan Slot 1/2 KW32 Fr — alle REJECT/SKIP
+| Symbol | Sektor | K1 | K2 | K3 | K4 | K5 | Verdikt |
+|--------|--------|----|----|----|-----|----|---------|
+| UAL | XLI | ✓ +10,6 % | ✓ RSI 63,9 | ✓ **+35,3 pp #1 XLI** | **FAIL 6. Tag** persistent | ✓ FwdPE 14,8x | **REJECT K4 Downgrade Prio Backup KW33** |
+| GS | XLF | ✓ | ✓ RSI 52,1 | ✓ +9,1 pp | **FAIL** Vol low | K5 unverifiziert | REJECT K4 |
+| DELL | XLK | **FAIL K1-Bruch anhaltend** | – | – | – | – | REJECT K1 |
+| HPE | XLK | **FAIL K1-Bruch anhaltend** | – | – | – | – | REJECT K1 |
+| UNP | XLI Backup | ✓ | ✓ RSI 57,0 | ✓ +5,6 pp | **FAIL heavy** | – | REJECT K4 |
+| NVDA | XLK | ✓ | ✓ | +5,2 pp marginal | FAIL | – | REJECT K3+XLK-Konflikt AAPL |
+
+**BLOCKIERT:** GE (K5 FwdPE 44,72), MSFT/META (K1+K2 FAIL), ORCL (K1 FAIL), AMZN/GOOGL/AVGO (K3 NEG)
+
+**Slot 1/2 + 2/2 KW32 bleibt OFFEN — KW32 endet mit 0/2 Käufen** (Fr letzter HT).
+
+### Guardrails-Status 8/8 GRÜN + 2 WARN
+1. Daily -3 %: -0,261 % → GRÜN
+2. Weekly -5 %: +0,047 % → GRÜN
+3. DD -15 %: -3,623 % → GRÜN
+4. DD -20 %: -3,623 % → GRÜN
+5. Crash-Filter: SPY Do -0,149 % → INAKTIV
+6. VIX >30: geerbt ~16-18 (Pre gestern), heute nicht geprüft → GRÜN
+7. Earnings-Blackout: **LLY HT+2 heute WARN** (Blackout-V1_neu 1.134,20 Puffer +3,69 % ÜBERSCHRITTEN Bull-Konvention intakt; Ende Mo 10.08.)
+8. Max Käufe 2/Woche: **0/2 KW32 OFFEN** (heute Fr letzter Handelstag)
+
+WARN #2: **UNH V2 -0,27 % BROKEN via Wick Data-Quality-Flag → CRIT-Alert eskaliert**
+
+### Entscheidung
+- **KEIN Trade heute** (kein Kaufkandidat erfüllt alle K1-K5; alle Watchlist REJECT/SKIP)
+- **KEIN Auto-Sell UNH** (V2-Wick-Trigger per Rule 5 eskaliert, Owner-Decision erforderlich)
+- **Käufe KW32 endet 0/2** (Fr letzter HT)
+- **ClickUp CRIT-Alert FEHLER ITEM_246 persistent 6. Tag** → Memory-Only Fallback + PushNotification an Owner (kompensiert ClickUp-Ausfall)
+- **PushNotification CRITICAL gesendet** (UNH V2 Wick-Trigger, Owner-Decision — Ausnahme Silence-Rule wegen Handlungsbedarf)
+
+### Nächste Routine
+**Fr 07.08. 13:00 ET Midday Stop-Check KW32 Tag 5** — UNH V2-Status-Watch (Owner-Antwort), LLY HT+2 letzte Blackout-Session, V-Give-back-Erosion-Watch
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-06 (Do, KW32 Tag 4) — Daily +0,234 % / Alpha +0,077 pp POSITIV / DD -3,196 % GRÜN / Weekly +0,489 % GRÜN
 
 ### Alpaca /v2/account Pre
