@@ -4,6 +4,59 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-10 (Mo, KW33 Tag 1 FINAL) — Daily +0,236 % / Alpha +0,254 pp POS / DD -3,300 % GRÜN / Weekly KW33 Tag 1 +0,261 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
+
+### Alpaca /v2/account Close 16:00 ET
+- equity Close: **96.764,32 $** | last_equity: 96.536,38 $ → Daily **+227,94 $ (+0,2361 %)** [GRÜN, Cap -3 %, deutlich verbessert vs Midday +0,028 %]
+- Cash 56.707,49 $ (58,60 %) unverändert | MV Close **40.056,83 $** (5 Pos, +251,67 vs Fr Close 39.805,16 = +0,632 %)
+- ATH 100.066,47 → DD -3,300 % [GRÜN, verbessert vs Midday -3,501 %]
+- Weekly KW33 Tag 1 vs Fr Close 96.512,65 = **+0,261 %** [GRÜN, weit von Cap -5 %]
+
+### SPY & Alpha
+- SPY Close 773,02 Alpaca Daily-Bar IEX vs Fr Close 773,16 = **-0,018 % essentiell flat** [Crash-Filter INAKTIV]
+- Alpha vs SPY = **+0,254 pp POSITIV** (Portfolio +0,236 % vs SPY -0,018 %)
+
+### Positions V1-V6 Vollcheck (5 SICHER, kein Trigger, keine Sell-Order für Di 11.08.)
+| Sym | Now | P/L% | V1-Puffer% | V2-Puffer% | RSI | EMA50>200 | RS_4w vs SPY | Status |
+|-----|-----|------|------------|------------|-----|-----------|--------------|--------|
+| AAPL | 307,90 | -2,83 | +5,62 ENGSTE | +1,55 razor-thin (Wick 344,56) | 44,03 | 309,81>279,00 ✓ | -6,12 pp | SICHER (V6 UND-Bedingung) |
+| V    | 361,36 | +1,17 | +9,97 | +9,80 (373,97) | 53,94 | 349,26>337,39 ✓ engster | -2,14 pp | SICHER |
+| UNH  | 409,18 | +1,90 | +10,76 | **+0,87 RAZOR-THIN** (Wick 460,95) | 45,23 | 407,51>360,63 ✓ | -7,92 pp | SICHER V2-Watch |
+| LLY  | 1231,94 | +3,19 | +12,16 (Blackout-V1_neu 1134,20 Puffer +8,62 %) | +12,13 (52w High 1248,53) | 60,73 | 1145,49>1013,77 ✓ | +0,78 pp | SICHER BO letzte Session |
+| JPM  | 359,79 | **+8,12 Best** | +17,52 | +12,63 | 64,87 | 337,53>315,57 ✓ | +4,37 pp | SICHER |
+
+### Sektor-Struktur EOD
+- XLV **20,33 %** (UNH 10,15 + LLY 10,19)
+- XLF **11,20 %** (JPM 1,12 + V 10,08)
+- XLK **9,86 %** (AAPL)
+- Cash 58,60 %
+
+### Watchlist morgen (Di 11.08. KW33 Tag 2)
+- **UAL Prio 1 XLI** (123,75; K1 +11,84 %; K2 RSI 50,15; K3 RS_63d +19,48 pp #2; K4 Vol-Rebound-Watch Di; K5 vorbekannt ✓ RevGr 16 % FwdPE 14,8x; XLI 0 % Diversifikation)
+- **UNP Prio 2 XLI** (292,15; K1 +9,94 %; K2 RSI 52,64; K3 RS +5,63 pp; K4 Vol-Rebound-Watch Di)
+- **BAC Prio 3 XLF** (63,88; K1 +9,29 %; K2 RSI 69,79 upper-border; K3 RS **+19,76 pp #1**; K4/K5 Di prüfen; XLF-Konflikt V/JPM sub-30 %)
+- **MRK Prio 4 XLV Alt** (130,90; K1 +12,20 %; K2 RSI 59,85; K3 RS +12,74 pp; XLV-Konflikt UNH+LLY 3-Pos-nah — nur bei UNH/LLY-Reduzierung)
+- **REJECTS**: PANW (K2 RSI 70,34 overheated), NVDA (K3 -3,75 pp), GS (K2 RSI 47,58 <50)
+- **BLOCKIERT**: AMD/MU/ABBV (K2 <50), CVS (K2 31,61), EOG/COP/XOM (K3 NEG), ORCL (K1 Death-Cross)
+
+### Guardrails
+- 8/8 GRÜN + 1 WARN (LLY BO HT+2 heute letzte Session Bull-Konvention intakt Ende morgen Di 11.08.; UNH V2 razor-thin +0,87 % Watch für Di)
+- Weekly Loss Cap KW33 Tag 1: +0,261 % vs Fr Close → weit von -5 %; keine Order-Storno-Bedingung
+
+### Perplexity-Halluzination 4. Mal in Serie (Data-Quality-Flag)
+- Perplexity: SPY +0,61 %, Sektoren "+?" leere Werte
+- Alpaca IEX Daily-Bar authoritative: SPY 773,02 vs 773,16 = -0,018 %
+- Perplexity-Antwort verworfen; Alpaca ist bindende Live-Source
+
+### Entscheidungen für Di 11.08.
+- Kaufsignal-Scan Slot 1/2 KW33 offen: Watchlist UAL/UNP/BAC/MRK K4-Vol-Rebound-Check Pre + Open
+- LLY Blackout endet Di → V1-Threshold zurück auf Standard 1.098,38 (Puffer +12,16 %)
+- UNH V2-Wick-Puffer-Watch (+0,87 % razor-thin — kritisch bei weiterem -1 %+ Drift)
+- AAPL V2-Wick-Puffer-Verlauf (+1,55 % via Recovery — Watch)
+- Keine offenen Orders für Di 11.08. platziert
+
+---
+
 ## Market Open 09:44 ET — 2026-08-10 (Mo, KW33 Tag 1) — Daily -0,015 % / Alpha +0,015 pp POS marg / DD -3,542 % GRÜN / Weekly KW33 Tag 1 +0,010 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
 
 ### Alpaca /v2/account Live 09:44 ET
