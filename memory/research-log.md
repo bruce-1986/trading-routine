@@ -4,6 +4,79 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-10 (Mo, KW33 Tag 1) — Daily -0,101 % / Alpha -0,123 pp NEG marg / DD -3,625 % GRÜN / Weekly KW33 Tag 1 -0,077 % GRÜN / Kauf-Slots KW33 frisch 2/2
+
+### Alpaca /v2/account Pre
+- portfolio_value/equity: **96.438,58 $** | last_equity: 96.536,38 $ (Alpaca EOD Fr, +23,73 vs Memory Close 96.512,65 = overnight/rounding-Notiz)
+- Daily P/L: **-97,80 $ = -0,101 %** [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (**58,80 %**, unverändert seit 06.06.)
+- long_market_value: **39.731,09 $** (5 Pos, -74,07 vs Fr Close 39.805,16 = **-0,186 %**)
+- buying_power: 338.077,00 $ | 0 pending orders | status ACTIVE | trading_blocked false
+
+### SPY Pre (Alpaca Live-Quote 08:15:24 ET)
+- SPY ap 773,44 / bp 773,34 (Mid ~**773,39**, Spread 0,10)
+- vs Fr Close 773,22 (Alpaca Daily-Bar) = **+0,022 % essentiell flat** [Crash-Filter INAKTIV; Fr +0,596 %]
+- Alpha vs Portfolio: **-0,123 pp NEG marginal** (Portfolio -0,101 % vs SPY +0,022 %)
+- **Data-Quality-Flag**: Perplexity SPY 770,91 / -0,31 % widerspricht Alpaca 773,39 / +0,022 % → Alpaca bindend, Perplexity als Halluzination verworfen (**3. Mal in Serie** nach KW32 Do 06.08. Pre + Fr 07.08. Close)
+
+### Position-Check Pre (V1-V4 Std; V5/V6 nicht Pre)
+| Sym | Qty | Avg | Live | P/L $ | P/L % | Day chg | V1-Std Puffer | V2 Puffer |
+|-----|-----|-----|------|-------|-------|---------|---------------|-----------|
+| AAPL | 31 | 316,86 | **309,30** | -234,34 | **-2,39 %** | **-1,29 % WORST** | **+5,75 % ENGSTE** (verschl. vs Fr Close +7,47 %) | **+1,97 % RECOVERED** via Wick 344,56 (Fr Close +0,15 % → +1,97 %) |
+| JPM | 3 | 332,78 | 357,20 | +73,26 | **+7,34 % BEST P/L** | -0,09 % | +14,29 % | sicher |
+| LLY | 8 | 1.193,89 | 1.190,00 | -31,10 | -0,33 % | **+0,36 % BEST chg** | +7,70 % Std (**Blackout-V1_neu 1.134,20 Puffer +4,69 % HT+2 heute letzte Session**) | +7,68 % via 52w-High 1.248,53 |
+| UNH | 24 | 401,57 | 407,10 | +132,75 | +1,38 % | +0,005 % | +9,25 % | **+0,36 % razor** via Wick 460,95 = Thr 405,636 (Fr +0,12 % → Mo +0,36 % marginal recovered, Data-Quality-Flag persistent) |
+| V | 27 | 357,18 | 362,25 | +136,94 | +1,42 % | -0,07 % | +9,29 % | +9,15 % via 373,97 |
+
+**V1 Std alle 5 SICHER** eng→weit: AAPL +5,75 % → LLY +7,70 % → UNH +9,25 % → V +9,29 % → JPM +14,29 %
+**V3/V4**: max JPM +7,34 % << 20 % kein Trigger
+**V5/V6 Pre NICHT geprüft** (Vollcheck Close)
+**=> KEIN V1-V4-Trigger, KEINE Sell-/Limit-Order platziert**
+
+### Perplexity Macro Check
+- **VIX: 14,90** [GRÜN <25, deutlich <30-Cap]
+- **SPY Pre: Perplexity 770,91 / -0,31 % HALLUZINATION** (Alpaca bindend 773,39 / +0,022 %)
+- **10Y Treasury: 4,65 %** (leicht rückläufig vs Fr 4,69 %)
+- **Makro heute: Core CPI YoY Jul Release 08:30 ET** (Perplexity nur 1 Quelle, CPI-Release Mo Post-Jobs plausibel — Deviation-Watch)
+- **Top 3 News**: (1) Fr weak Jul jobs data → Fed-Hold-Bets, (2) SPY Fr +0,6 % / VIX -14,90, (3) Pre mildly risk-on
+
+### Earnings-Blackout-Check (Portfolio + Watchlist, nächste 3 HT Mo/Di/Mi)
+- **Portfolio 5 Pos: KEINE Earnings** (UNH/JPM/V/AAPL Q3 Ende Okt; LLY Q2 04.08. → HT+2 heute letzte Blackout-Session, Ende morgen Di 11.08.)
+- **Watchlist UAL/UNP/BAC/PANW/NVDA: KEINE Earnings** (Perplexity bestätigt)
+
+### Guardrails-Status 8/8 GRÜN + 1 WARN
+1. Daily -3 %: -0,101 % → GRÜN
+2. Weekly -5 %: -0,077 % vs Fr 96.512,65 → GRÜN
+3. DD -15 %: -3,625 % vs ATH 100.066,47 → GRÜN
+4. DD -20 %: -3,625 % → GRÜN
+5. Crash-Filter SPY -5 %: Fr +0,596 % → INAKTIV
+6. VIX >30: 14,90 → GRÜN
+7. Earnings-Blackout: **LLY HT+2 heute WARN — letzte Session** (Blackout-V1_neu 1.134,20 Puffer +4,69 % Bull-Konvention intakt; Ende morgen Di 11.08.)
+8. Max Käufe 2/Woche: **KW33 frisch 2/2 OFFEN**
+
+WARN: UNH V2 +0,36 % via 52w-Wick 460,95 Data-Quality-Flag persistent (Fr +0,12 % → Mo +0,36 % marginal recovered)
+
+### Kaufscan Market Open: JA
+- Slots frisch 2/2, VIX GRÜN 14,90, kein Cap-Alert, kein Crash-Filter, keine Portfolio-Earnings heute
+- **Watchlist Mo 10.08. KW33 Tag 1** (K1-K3 aus Fr Close; K4 heute Vol-Rebound-Prüfung):
+  - **UAL Prio 1 XLI** (129,59: K1 +10,7 %, K2 RSI 58,64, K3 RS_63d +24,27 pp #2, K5 ✓ RevGr 16 %+ FwdPE 14,8x) — K4-Rebound-Watch nach 7. Tag Vol-Fail-Persistenz **kritisch**
+  - **UNP Prio 2 XLI** (293,13: K1 +10,0 %, K2 RSI 53,91, K3 RS +4,95 pp) — K4-Rebound
+  - **BAC Prio 3 XLF** (63,15: K1 +8,6 %, K2 RSI 66,51, K3 RS +14,06 pp) — XLF-Konflikt-Watch V+JPM (11,25 % <30 %-Cap sicher)
+  - **PANW Prio 4 XLK** (363,88: K1 +21,4 %, K2 RSI 64,28, K3 RS +79,44 pp #1 Momentum) — XLK-Konflikt AAPL
+  - NVDA Backup (K3 razor +0,16 pp)
+- **BLOCKIERT/REJECT**: GS/AMD/MU/ABBV (K2 <50), CVS (K2 31,61), EOG/COP/XOM (K2/K3 FAIL), ORCL (K1 Death-Cross), MRK (XLV-Cap-Risk 3. Position)
+
+### Entscheidung
+- **KEIN Trade Pre-Market** (V1-V4 alle SICHER)
+- **Kaufscan Market Open JA** (Slots frisch 2/2 KW33)
+- **ClickUp Prio 4 Routine-Log FEHLER ITEM_246 persistent 7. Tag** → Fallback Memory-Only per notify-skill.md
+- **KEINE PushNotification** (Silence-Rule Routine: alle V-Std SICHER, kein Cap-Alert, VIX GRÜN, SPY flat, UNH V2 marginal recovered, AAPL V2 recovered +1,97 %, LLY BO intakt, keine Portfolio-Earnings, kein Owner-Handlungsbedarf; Owner erhielt Fr-Wochenschluss-Push)
+
+### Nächste Routine
+**Mo 10.08. 09:30 ET Market Open KW33 Tag 1** — Kaufsignal-Scan Slot 1/2 mit UAL K4-Vol-Rebound 7. Tag **kritisch** + UNP/BAC/PANW K4-Check, V1-V6 Live-Read, AAPL -1,29 % Pre-Weakness-Watch, UNH V2-Wick-Puffer-Verlauf, LLY letzte Blackout-Session, Post-CPI-Reaktion (falls Release bestätigt)
+
+---
+
 ## Market Close 16:00 ET — 2026-08-07 (Fr, KW32 Tag 5 FINAL) — Tagesbilanz -0,188 % / Alpha -0,784 pp NEG / DD -3,552 % GRÜN / Weekly KW32 FINAL +0,551 % GRÜN
 
 ### Alpaca /v2/account EOD
