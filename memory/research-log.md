@@ -4,6 +4,65 @@
 
 ---
 
+## Market Open 09:47 ET — 2026-08-11 (Di, KW33 Tag 2) — Daily -0,021 % GRÜN / Alpha +0,026 pp POS marginal / DD -3,321 % GRÜN / Weekly KW33 Tag 2 +0,239 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
+
+### Alpaca /v2/account Live 09:47 ET
+- portfolio_value/equity: **96.743,52 $** | last_equity: 96.763,84 $
+- Daily P/L: **-20,32 $ = -0,021 %** [GRÜN, Cap -3 %, marginal verbessert vs Pre -0,057 %]
+- cash: 56.707,49 $ (**58,62 %**, unverändert)
+- long_market_value: **40.036,03 $** (5 Pos, -20,80 vs Mo Close 40.056,83 = **-0,052 %** marginal-flat)
+- buying_power: 338.930,83 $ | 0 pending orders | status ACTIVE | trading_blocked false
+
+### SPY Live 09:47 ET (Alpaca latestTrade IEX)
+- SPY 772,66 vs Mo Close 773,02 (Alpaca Daily-Bar) = **-0,047 % essentiell flat** [Crash-Filter INAKTIV; Mo -0,018 %]
+- **Alpha vs Portfolio: +0,026 pp POSITIV marginal** (Portfolio -0,021 % vs SPY -0,047 %) — Wende vs Pre -0,238 pp NEG via JPM/LLY-Recovery
+
+### Positions V1/V2 Live-Check (V5/V6 NICHT geprüft — nur Close-Vollcheck)
+| Sym | Cur | chg | P/L% | V1-Puffer Std | V2-Puffer (Wick*0,88) | Status |
+|-----|-----|-----|------|---------------|------------------------|--------|
+| AAPL | 306,32 | **-0,51 % Worst** | -3,33 | **+5,08 % ENGSTE Std** (Thr 291,51 primär) | +1,03 % via Wick 344,56 (Thr 303,21) marginal reduziert vs Pre +1,76 % | SICHER (Std-V1 primär) |
+| V    | 361,50 | +0,04 % | +1,21 | +10,01 % (Thr 328,60) | +9,85 % via 373,97 (Thr 329,09) | SICHER |
+| UNH  | 408,21 | -0,24 % | +1,65 | +10,49 % (Thr 369,44) marginal reduziert vs Pre +10,65 % | **+0,63 % RAZOR-THIN via 460,95 (Thr 405,64)** DQF persistent marginal reduziert vs Pre +0,78 % | SICHER V2-Watch |
+| LLY  | 1236,35 | +0,36 % | +3,55 | +12,56 % Std verbessert vs Pre +11,93 % (Blackout-V1_neu 1134,20 Puffer +9,01 % **letzte Session heute**) | +12,53 % via 1248,53 (Thr 1098,71) | SICHER BO endet Ende Di |
+| JPM  | 362,49 | **+0,75 % Best** | **+8,93 Best** | **+18,40 %** (Thr 306,16) | +12,67 % via 365,59 (Thr 321,72) | SICHER |
+
+### V3/V4 kein Trigger
+- max P/L JPM +8,93 % << 20 %-TP1
+
+### Kaufsignal-Scan Slot 1/2 KW33 — Watchlist 6 Kandidaten (~18 min Session-Elapsed 4,62 %, K4-Linear-Pace-Threshold ≥5,54 % Prev-Full-Day-Vol für ≥120 % Avg20-Extrapolation)
+- **UAL (XLI) Prio 1 REJECT K4-FAIL 8. Tag persistent**: 125,37 chg +1,31 % Recovery, IEX-Vol 6.485 = 4,30 % prev-Full-Day 150.664 (Extrapolation ~93 % Avg20) → **Downgrade Prio Backup KW34 bleibt**
+- **UNP (XLI) Prio 2 REJECT K4-FAIL heavy**: 293,635 chg +0,51 %, IEX-Vol 1.773 = 3,27 % prev-Full-Day 54.224
+- **BAC (XLF) Prio 3 REJECT K4-Undershoot borderline**: 64,215 chg +0,52 %, IEX-Vol 75.491 = 5,41 % prev-Full-Day 1.395.399 (Extrapolation ~117 % Avg20 knapp unter 120 %); K1-K3 ✓ (RS #1 +19,76 pp) → **Watch Midday für Vol-Pace-Anzug**
+- **MRK (XLV) Prio 4 Alt REJECT XLV-Sektor-Cap-LEVEL-0-SKIP**: 132,73 chg +1,40 %, IEX-Vol 25.988 = **21,62 %** prev-Full-Day 120.228 → **K4 STRONG BEAT ~468 % Avg20 4,68x Linear-Pace (wahrscheinlich News-Catalyst)**; K1-K3 ✓ vorbekannt aber **LEVEL 0 SKIP: XLV UNH 10,13 + LLY 10,22 = 20,35 % + MRK ~10 % würde XLV auf ~30,35 % pushen → verletzt strategy.md TABU >3 Pos/Sektor + max 30 % Sektorgewicht**. MRK nur handelbar bei UNH/LLY-Reduzierung
+- **PANW (XLK) REJECT K2 RSI 70,34 overheated vorbekannt Mo Close**: 379,65 chg -1,41 %, IEX-Vol 18.149 = 10,41 % prev-Full-Day (K4 STRONG PASS aber K2-FAIL)
+- **NVDA (XLK) Backup REJECT K3-NEG -3,75 pp + XLK-Konflikt AAPL**: 220,265 chg +1,28 %, IEX-Vol 339.652 = 7,40 % prev-Full-Day (K4-Pass aber K3-FAIL persistent)
+- **BLOCKIERT bleiben**: GS/AMD/MU/ABBV (K2 <50), CVS (K2 31,61), EOG/COP/XOM (K3 NEG), ORCL (K1 Death-Cross)
+
+### Sektor-Struktur Live
+- XLV **20,35 %** (UNH 10,13 + LLY 10,22 marginal erhöht vs Pre 20,32 %)
+- XLF **11,21 %** (JPM 1,12 + V 10,09 marginal erhöht vs Pre 11,15 %)
+- XLK **9,82 %** (AAPL leicht reduziert vs Pre 9,89 %)
+- Cash 58,62 %
+
+### Guardrails
+- 8/8 GRÜN + 1 WARN (LLY BO letzte Session +9,01 % Bull-Konvention intakt endet Ende Di; **UNH V2 razor-thin +0,63 % via 52w-Wick 460,95 DQF persistent marginal reduziert vs Pre +0,78 %** — Std-V1 +10,49 % primär sicher, Watch Midday)
+- Daily/Weekly/DD/Crash/VIX/Positions 5/8/Käufe-Slot 2/2 alle sicher
+
+### MRK Vol-Spike-Notiz
+- 21,62 % prev-Full-Day bei ~18 min Session = 4,68x Linear-Pace-Threshold → wahrscheinlich News-Catalyst
+- XLV-Sektor-Cap bleibt Blocker unabhängig vom Signal-Trigger
+- Midday: Perplexity 1 Symbol-Query zur Ursachen-Klärung (optional, low-cost)
+
+### Entscheidungen
+- **Kein V1-V4-Trigger** → keine Sell-Order platziert
+- **Kein Kauf ausgeführt** (6/6 Watchlist-Kandidaten REJECT — MRK XLV-blockiert trotz K4 STRONG BEAT, Rest K4-FAIL oder K2/K3-FAIL)
+- Slot 1/2 KW33 offen → **Midday Re-Check** BAC-K4-Watch (borderline) + MRK-News-Klärung
+- Keine offenen Orders für heute platziert
+- Guardrail-Status: **GRÜN**
+- KEINE PushNotification (Silence-Rule: kein V/Cap-Trigger, positive Alpha marginal, DD verbessert, alle V-Signale sicher, kein Handlungsbedarf)
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-11 (Di, KW33 Tag 2) — Daily -0,057 % GRÜN / DD -3,354 % GRÜN / Weekly KW33 Tag 2 +0,204 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
 
 ### Alpaca /v2/account Pre 08:30 ET
