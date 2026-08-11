@@ -4,6 +4,54 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-11 (Di, KW33 Tag 2) — Daily -0,057 % GRÜN / DD -3,354 % GRÜN / Weekly KW33 Tag 2 +0,204 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
+
+### Alpaca /v2/account Pre 08:30 ET
+- equity Pre: **96.709,13 $** | last_equity: 96.763,84 $ → Daily **-54,71 $ (-0,057 %)** [GRÜN, Cap -3 %]
+- Cash 56.707,49 $ (58,64 %) unverändert | MV Pre **40.001,64 $** (5 Pos, -55,19 vs Mo Close 40.056,83 = -0,138 % marginal-flat)
+- ATH 100.066,47 → DD **-3,354 %** [GRÜN, marginal verschlechtert vs Mo Close -3,300 %]
+- Weekly KW33 Tag 2 vs Fr Close 96.512,65 = **+0,204 %** [GRÜN, weit von Cap -5 %]
+
+### Markt-Kontext Pre 08:30 ET
+- **VIX: 15,51** [GRÜN, weit von 30-Cap; leicht höher vs Mo 14,90]
+- **SPY: 774,42 Alpaca-Mid** (ap 774,47 / bp 774,37 Spread 0,10) vs Mo Close 773,02 = **+0,181 % positiv-flat** [Crash-Filter INAKTIV]
+- **Alpha vs SPY -0,238 pp NEG marginal** (Portfolio -0,057 % vs SPY +0,181 %)
+- **10Y Treasury: n/a** (Perplexity keine Daten geliefert)
+- **Makro heute: Existing Home Sales 14:00 ET** (Perplexity 1 Quelle; keine Fed/CPI/Jobs/PPI)
+- **⚠️ Perplexity teilweise leer** — nur VIX konkret, SPY/Treasury/Makro-Details fehlen; Alpaca bindend für Preise (5. Mal in Serie Data-Quality-Flag)
+
+### Positions V1/V2 Pre-Check (V5/V6 werden bei Pre NICHT geprüft — nur Open + Close)
+| Sym | Cur | chg_today | P/L% | V1-Puffer Std | V2-Puffer (Wick*0,88) | Status |
+|-----|-----|-----------|------|---------------|------------------------|--------|
+| AAPL | 308,53 | +0,088 % | -2,63 | **+5,84 % ENGSTE Std** | +1,76 % via 344,56 | SICHER (Std-V1 primär) |
+| V    | 359,66 | -0,459 % | +0,70 | +9,44 % | +9,29 % via 373,97 | SICHER |
+| UNH  | 408,80 | +0,015 % | +1,80 | +10,65 % | **+0,78 % RAZOR-THIN via 460,95** DQF persistent | SICHER V2-Watch |
+| LLY  | 1229,35 | -0,210 % | +2,97 | +11,93 % (Blackout-V1_neu 1134,20 Puffer +8,39 % **letzte Session heute**) | +11,89 % via 1248,53 | SICHER BO endet heute |
+| JPM  | 360,13 | +0,094 % | **+8,22 Best** | +17,63 % | +12,44 % | SICHER |
+
+### Earnings-Blackout Check (3 Handelstage)
+- **AAPL/JPM/LLY/UNH/V: NONE** (Perplexity)
+- **Watchlist UAL/UNP/BAC/MRK: NONE** (Perplexity)
+- LLY Blackout HT+2 endet **heute Di 11.08.** (letzte Session per Bull-Konvention)
+
+### Guardrails
+- 8/8 GRÜN + 1 WARN (UNH V2 razor-thin +0,78 % via 52w-Wick 460,95 Data-Quality-Flag persistent; LLY BO endet heute — ab Mi 12.08. Standard-V1 primär)
+- Daily/Weekly/DD/Crash/VIX/Positions 5/8/Käufe-Slot 2/2 alle sicher
+
+### Watchlist Kaufscan Market Open (Slot 1/2 KW33 OFFEN)
+- **UAL Prio 1 XLI** (Mo Close 123,75; K1 +11,84 % ✓; K2 RSI 50,15 borderline ✓; K3 RS_63d +19,48 pp #2 ✓; K4-Vol-Rebound-Watch Di kritisch nach K4-FAIL 7. Tag in KW32; K5 vorbekannt ✓ RevGr 16 % FwdPE 14,8x)
+- **UNP Prio 2 XLI** (292,15; K1 +9,94 % ✓; K2 RSI 52,64 ✓; K3 RS +5,63 pp ✓; K4-Vol-Rebound-Watch Di)
+- **BAC Prio 3 XLF** (63,88; K1 +9,29 % ✓; K2 RSI 69,79 upper-border ✓; K3 RS +19,76 pp #1 ✓; K4/K5 Di prüfen; XLF-Konflikt V/JPM sub-30 %)
+- **MRK Prio 4 XLV Alt** (130,90; K1 +12,20 % ✓; K2 RSI 59,85 ✓; K3 RS +12,74 pp ✓; XLV-Konflikt UNH+LLY 20,3 % → nur bei UNH/LLY-Reduzierung)
+- **REJECTS/BLOCKIERT bleiben**: PANW/NVDA (K3), GS (K2), AMD/MU/ABBV/CVS (K2), EOG/COP/XOM (K3), ORCL (K1)
+
+### Entscheidung
+- **Kein V1-V4-Trigger** → keine Sell-Order platziert
+- **Kaufscan Market Open JA** (VIX GRÜN 15,51, kein Cap, Slots 2/2 offen)
+- Guardrail-Status: **GRÜN**
+
+---
+
 ## Market Close 16:00 ET — 2026-08-10 (Mo, KW33 Tag 1 FINAL) — Daily +0,236 % / Alpha +0,254 pp POS / DD -3,300 % GRÜN / Weekly KW33 Tag 1 +0,261 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
 
 ### Alpaca /v2/account Close 16:00 ET
