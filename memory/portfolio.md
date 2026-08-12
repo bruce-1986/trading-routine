@@ -1,5 +1,36 @@
 # Portfolio Status
 
+**Close 16:00 ET 12.08.2026 (KW33 Tag 3 Mi) — Tagesbilanz:**
+Gesamtwert:     96.363,47 $
+Cash:           56.707,49 $  (58,85 %)
+Investiert:     39.655,98 $  (41,15 %)  — AAPL 9.366,66 / JPM 1.095,54 / LLY 9.762,24 / UNH 9.727,20 / V 9.704,34
+P/L heute:         −51,21 $  (−0,053 %)   [GRÜN, Cap −3 %]
+Alpha vs SPY:    −0,315 pp   (SPY Alpaca Daily-Bar 772,54 vs Di 770,52 = +0,262 % post-CPI-Recovery)
+ATH:           100.066,47 $   (Intraday-Open 22.06., unverändert)
+Drawdown:        −3,700 %     [GRÜN, Schwelle −15 % bei 85.056 $]
+Guardrails:     Daily −0,053 % | Weekly KW33 Tag 3 vs Fr-Close 96.512,65 = −0,155 % | Käufe 0/2 KW33 | VIX 15,28 | Crash-Filter NEIN | DD GRÜN
+Signal-Check V1–V6 EOD (Alpaca IEX 277d Bars):
+- AAPL 302,20 (chg −0,88 %, P/L −4,64 % **Worst**): V1 Std 291,51 Puffer **+3,67 % ENGSTE**; V2 Wick*0,88 = 303,21 → **BROKEN −0,334 %** via 52w-Wick 344,555 DQF **2. Tag persistent** (Std-V1 primär sicher, Rule 5 No-Action); V5 EMA50 309,32>EMA200 281,39 ✓ (+9,93 pp); V6 RSI 40,14 / RS_4w −10,10 pp → NICHT ausgelöst (RSI << 80).
+- JPM 365,23 (chg +0,88 %, P/L +9,75 % **Best**): V1 306,16 Puffer **+19,29 %**; V2 **NEUES Posit-Hoch 366,085 → Thr 322,15** Puffer +13,37 %; V5 EMA50 339,54>EMA200 317,87 ✓ (+6,82 pp); V6 RSI 68,85 / RS_4w +2,89 pp → NICHT ausgelöst (RSI < 80).
+- LLY 1.219,975 (chg +0,58 %, P/L +2,20 %): V1 1.098,38 Puffer +11,07 % (**BO ENDED — Standard-V1 primär**); V2 via 52w-High 1.248,53 = Thr 1.098,70 Puffer +11,04 %; V5 EMA50 1.150,95>EMA200 1.022,57 ✓ (+12,55 pp); V6 RSI 58,11 / RS_4w +3,13 pp → NICHT ausgelöst.
+- UNH 405,64 (chg +0,78 %, P/L +1,01 %): V1 369,44 Puffer +9,79 %; V2 Wick*0,88 = 405,636 → **BROKEN +0,001 % razor** via 52w-Wick 460,95 DQF **13. Tag persistent** — Alt-V2 via 437,13 = 384,67 Puffer **+5,45 % SICHER** + Std-V1 +9,79 % primär → Rule 5 No-Action, Owner-Entscheidung pending seit Di-Midday-Push; V5 EMA50 407,25>EMA200 362,59 ✓ (+12,32 pp); V6 RSI 44,01 / RS_4w −5,37 pp → NICHT ausgelöst.
+- V 359,48 (chg −0,84 %, P/L +0,65 %): V1 328,60 Puffer +9,40 %; V2 via 52w-High 373,97 = Thr 329,09 Puffer +9,24 %; V5 EMA50 350,16>EMA200 338,32 ✓ (+3,50 pp **engster**); V6 RSI 51,33 / RS_4w −1,18 pp → NICHT ausgelöst.
+V-Trigger EOD: **V1 Std alle 5 SICHER** | **V2:** AAPL DQF Wick-BROKEN 2. Tag (Std-V1 +3,67 % primär), UNH DQF Wick-BROKEN 13. Tag (Alt-V2 +5,45 % + Std-V1 +9,79 % primär) — Rule 5 No-Action fortlaufend | V3/V4 max JPM +9,75 % << 20 %-TP1 | V5 alle Golden Cross intakt | V6 max RSI JPM 68,85 << 80.
+**Sell-Order für Do 13.08.:** KEINE (0 offene Orders bei Alpaca bestätigt).
+Sektor-Struktur EOD: XLV **20,22 %** (UNH 10,10 + LLY 10,12), XLF **11,21 %** (JPM 1,14 + V 10,07), XLK **9,72 %** AAPL, Cash 58,85 %.
+Weekly Loss Cap: −0,155 % vs Cap −5 % → weit entfernt, kein Sperrauslöser.
+Watchlist Do 13.08. (K1–K4 Alpaca IEX EOD 12.08. — K5 bei Open verifizieren):
+- **MRK (XLV) Prio 1**: Close 132,90 (chg +1,97 %) K1 ✓ EMA-Gap +12,48 pp | K2 ✓ RSI 63,48 | K3 ✓ RS +13,62 pp | **K4 ✓ 128 % Avg20 — alle 4 grün**; K5 FwdPE/RevGrowth pending; **⚠ LEVEL 0 Sektor-Cap Grenzfall**: XLV 20,22 % + MRK ~10 % würde XLV auf ~30 %-Cap-Grenze führen (strategy.md: max 30 %/max 3 Pos) → Kauf nur bei K5-Bestätigung UND Sektor-Cap-Compliance-Prüfung
+- **UAL (XLI) Prio 2**: Close 125,10 K1-K3 ✓ (RS +25,87 pp #1) | **K4 31 % FAIL 11. Tag persistent**
+- **UNP (XLI) Prio 3**: Close 293,78 K1-K3 ✓ (RS +5,90 pp) | K4 46 % FAIL
+- **MU (XLK) Backup**: Close 911,30 (chg +4,96 %) K1-K3 ✓ (RS +14,35 pp, EMA-Gap +47,79 pp sehr breit) | K4 81 % FAIL — XLK-Konflikt AAPL 9,72 %
+- REJECT: PANW (K2 RSI 70,48 knapp >70), BAC (K2 RSI 73,58 FAIL), NVDA (K3 −3,19 pp NEG), TMO/ABT (K2 >70), GS/AMD (K2 <50), ORCL/LOW/HD (K1 Death-Cross)
+ClickUp Prio 3 [CLOSE] Task versucht — **ITEM_246 "Max usage for custom task types reached" 13. Tag persistent** → Fallback Memory-Only per notify-skill.md.
+PushNotification: **NEIN** (Silence-Rule: kein V-Trigger, kein Cap-Alert, kein Kauf, Daily nur −0,053 %; AAPL V2-DQF 2. Tag Escalation-Push wurde bereits Midday abgesetzt, Close liefert keine neue Entscheidungsgrundlage; UNH V2-DQF 13. Tag Owner-Push Di-Midday steht; keine Portfolio-Earnings 3 HT — kein Owner-Handlungsbedarf).
+Nächster Check: **Do 13.08. 08:30 ET Pre-Market KW33 Tag 4** — MRK K5-Verifikation + XLV-Sektor-Cap-Assessment, UNH V2-DQF-Verlauf, AAPL V2-DQF-Verlauf, LLY Std-V1-Primary-Ausklang.
+
+---
+
 **Midday 13:11 ET 12.08.2026 (KW33 Tag 3 Mi):**
 Positionen: 5/8 | Ø P/L: **+1,60 %** (JPM +9,69 Best / LLY +1,82 / UNH +0,69 / V +0,38 / AAPL −4,58 Worst)
 Beste Position: **JPM +9,69 %** (365,03 $ Alpaca latestTrade IEX 13:10 ET)
