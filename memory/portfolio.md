@@ -1,5 +1,37 @@
 # Portfolio Status
 
+**Live Open 09:41 ET 12.08.2026 (KW33 Tag 3 Mi):**
+Positionen: 5/8 | Ø P/L: **+1,74 %** (JPM +9,19 Best / V +1,43 / LLY +1,35 / UNH +0,99 / AAPL −4,24 Worst)
+Beste Position: **JPM +9,19 %** (363,35 $ Alpaca latestTrade IEX 09:41 ET)
+Schlechteste Position: **AAPL −4,24 %** (303,42 $)
+Stops V1-V6 Live-Check (V5/V6 NICHT bei Open geprüft — nur Close-Vollcheck):
+- **V1 Std alle 5 SICHER Puffer eng→weit:** **AAPL +4,09 % ENGSTE Std verschlechtert vs Pre +4,28 %** (303,42 chg -0,45 %, P/L -4,24 %, Std-V1 291,51 primär), UNH +9,78 % (405,56 chg +0,76 %, P/L +0,99 %), V +10,25 % (362,27 chg -0,15 %, P/L +1,43 %), **LLY +10,16 %** (1210,00 chg -0,41 %, P/L +1,35 %, **BO ENDET HEUTE → Std-V1 1098,38 primär ab jetzt**, Puffer +10,16 % vs Pre +10,26 %), **JPM +18,68 %** (363,35 chg +0,33 %, **Best P/L +9,19 %**)
+- **V2-Trailing-Stop:** **⚠️ UNH BROKEN Puffer -0,020 % via 52w-Wick 460,95 = Thr 405,636 marginal verbessert vs Pre -0,78 %** (14. Tag DQF persistent — Alt-V2 via 437,13 = 384,67 Puffer +5,42 % SICHER, Std-V1 +9,78 % primär sicher, Owner-Entscheidung pending seit Di-Midday-Push); **AAPL V2 razor +0,069 % via Wick 344,555 = Thr 303,21 marginal verbessert vs Pre +0,26 %** (Std-V1 +4,09 % ENGSTE primär, V2 sekundär); LLY +10,13 % via 52w-High 1.248,53 (Thr 1098,70) sicher, V +10,08 % via 373,97 (Thr 329,09) sicher, JPM +13,72 % via Wick 363,08 (Thr 319,51) sicher
+- **V3/V4:** max P/L JPM +9,19 % << 20 %-TP1 → kein Trigger
+- **V5/V6:** nur Close-Vollcheck
+Daily P/L: **−0,084 % [GRÜN, Cap −3 %]** (Equity Live **96.333,71 $** vs last_equity 96.414,68 $ = −80,97 $; MV 39.626,22 $ / Cash 56.707,49 $ = **58,86 %**; DD vs ATH 100.066,47 = **−3,730 % GRÜN**, marginal verschlechtert vs Pre −3,722 %; Weekly KW33 Tag 3 vs Fr Close 96.512,65 = **−0,185 % GRÜN** weit von Cap −5 %)
+Alpha vs SPY: **−0,385 pp NEG** (SPY Live 772,84 Alpaca latestTrade IEX 09:41 ET vs Di Close 770,52 = **+0,301 % positiv** post-CPI-Awaited Recovery; Portfolio −0,084 % underperformt SPY-Recovery via AAPL/LLY/V-Weakness)
+V-Aktion: **KEINE Sell-Order platziert** (V1 Std alle 5 SICHER; UNH V2-Wick DQF 14. Tag Alt-V2/Std-V1 sicher → Rule 5 No-Action fortlaufend; AAPL V2 razor +0,069 % marginal verbessert innerhalb Std-V1 +4,09 % ENGSTE sicher); 0 offene Orders bei Alpaca
+Kaufsignal-Scan Slot 1/2 KW33 (Session ~11 min Elapsed 2,82 %; K4-Linear-Pace Extrapolation via Session-Vol/Elapsed vs Avg20):
+- **MRK (XLV) Prio 1 K4 PASS extrapol ~125 % Avg20** (session_vol IEX 10.668 / 0,0282 = 378k vs Avg20 301.916 = 125,3 %; K1-K3 ✓ RS +12,87 pp vorbekannt) → **LEVEL 0 SKIP XLV-Sektor-Cap** (XLV UNH 10,10 + LLY 10,05 = **20,15 %** + MRK ~10 % würde XLV auf ~30,15 % pushen → verletzt strategy.md 30 %-Sektor-Cap) — blockiert bis UNH/LLY-Reduzierung
+- **UAL (XLI) Prio 2 REJECT K4-FAIL 10. Tag persistent**: session 1.226 = 0,63 % Avg20 (extrapol ~22 %) → Downgrade Prio Backup bleibt
+- **UNP (XLI) Prio 3 REJECT K4-FAIL heavy**: session 1.627 = 0,96 % Avg20 (extrapol ~34 %)
+- **BAC (XLF) K4 PASS extrapol ~179 % Avg20** (session 114.211 / 0,0282 = 4,05M vs Avg20 2,27M): K1/K3 ✓ RS +22,40 pp aber **K2 RSI 70,26 Close FAIL bleibt persistent** (Close chg +0,24 %, RSI wahrscheinlich weiter >70) → REJECT persistent
+- **PANW (XLK) Prio 4 REJECT K4-FAIL + K2 RSI 69,57 upper-border**: session 2.962 = 1,03 % Avg20 (extrapol ~37 %), XLK-Konflikt AAPL 9,76 %
+- **NVDA (XLK) Backup K4 STRONG PASS ~295 % Avg20** (session 383.285 / 0,0282 = 13,6M vs Avg20 4,61M): K4 stark aber **K3 -3,75 pp NEG persistent** + XLK-Konflikt AAPL → REJECT
+- **BLOCKIERT:** GS/AMD/MU/ABBV (K2 <50), CVS (K2 31,61), EOG/COP/XOM (K3 NEG), ORCL (K1 Death-Cross)
+- **Slot 1/2 KW33 bleibt OFFEN — kein Kandidat erfüllt alle 5 K1-K5** (MRK LEVEL 0 SKIP Sektor-Cap, BAC K2 FAIL, NVDA K3 NEG, UAL/UNP/PANW K4 FAIL)
+Watchlist Do 13.08. (aus Alpaca IEX Live/Pre): MRK bleibt Prio 1 aber XLV-Cap-Blocker, BAC Prio 2 pending RSI-Cool-down, UAL/UNP Prio 3 K4-Vol-Rebound-Watch (persistent-Fail-Serie), PANW Prio 4 XLK-Konflikt
+Sektor-Struktur Live: XLV **20,15 %** (UNH 10,10 + LLY 10,05 marginal erhöht vs Di Close 20,09 % via UNH-Recovery), XLF **11,28 %** (JPM 1,13 + V 10,15 marginal verschlechtert vs Di Close 11,29 %), XLK **9,76 %** AAPL marginal verschlechtert vs Di Close 9,80 %, Cash 58,86 %
+LLY Blackout: **HT+2 Bull-Konvention ENDET HEUTE 12.08. → Umstellung auf Standard-V1 1098,38 primär** ab jetzt; Puffer +10,16 % sicher
+CPI-Awaited: Perplexity-Query Pre-Market bestätigte CPI-Release erwartet heute → intraday-Volatilität möglich post-Release; keine strategy.md-Regel blockiert Käufe, aber Vorsicht bei Watchlist-K4-Vol-Interpretation (aktuell keine handelbare Situation, K4 nur BAC/MRK/NVDA pace-pass alle andere Rejects)
+Perplexity: **KEIN Query Market Open** (Silence-Rule Effizienz + persistente Halluzinationen 5. Mal Serie; Watchlist aus EOD-Alpaca-Daten + Live-Session-Vol ausreichend)
+ClickUp Prio 4 Routine-Log: bei ITEM_246-Fehler-Persistenz 11. Tag → Fallback Memory-Only per notify-skill.md
+KEINE PushNotification: Silence-Rule Routine — kein V-Trigger, kein Cap-Alert, alle 8 Guardrails GRÜN + 1 WARN (UNH V2-Wick DQF verbessert vs Pre), kein Kauf (kein Kandidat K1-K5), Owner erhielt Fr-Wochenschluss-Push + Di-Midday-UNH-Push, negative Alpha nur -0,385 pp NEG intraday-Rauschen, CPI-Release erst später Session → keine neue Entscheidungsgrundlage
+Nächster Check: **Mi 12.08. 13:00 ET Midday Stop-Check KW33 Tag 3** — UNH V2-Wick-DQF-Verlauf (Owner-Entscheidung pending), AAPL V2-Wick-Puffer-Verlauf razor +0,069 %, LLY Std-V1-Primary-Umstellung-Ausklang, Watchlist MRK/UAL/UNP/BAC K4-Vol-Pace-Post-CPI-Check, CPI-Release-Reaktion-Assessment für Portfolio + SPY
+
+---
+
 **Close FINAL 16:00 ET 11.08.2026 (KW33 Tag 2 Di):**
 Positionen: 5/8 | Ø P/L: **+1,69 %**
 Beste Position: **JPM +8,83 %** (362,15 $ Alpaca)

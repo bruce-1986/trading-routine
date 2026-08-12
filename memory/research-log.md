@@ -4,6 +4,75 @@
 
 ---
 
+## Market Open 09:41 ET — 2026-08-12 (Mi, KW33 Tag 3) — Daily -0,084 % GRÜN / Alpha -0,385 pp NEG / DD -3,730 % GRÜN / Weekly KW33 Tag 3 -0,185 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
+
+### Alpaca /v2/account Live 09:41 ET
+- portfolio_value/equity: **96.333,71 $** | last_equity: 96.414,68 $
+- Daily P/L: **-80,97 $ = -0,084 %** [GRÜN, Cap -3 %, marginal verbessert vs Pre -0,075 %]
+- cash: 56.707,49 $ (**58,86 %**, unverändert)
+- long_market_value: **39.626,22 $** (5 Pos, -72,49 vs Di Close 39.698,71 = **-0,183 %** marginal-negativ)
+- buying_power: 337.783,37 $ | 0 pending orders | status ACTIVE | trading_blocked false
+
+### SPY Live 09:41 ET (Alpaca latestTrade IEX)
+- SPY 772,84 vs Di Close 770,52 (Alpaca Daily-Bar) = **+0,301 % positiv** [Crash-Filter INAKTIV; Di -0,323 %] — CPI-Awaited-Recovery
+- **Alpha vs Portfolio: -0,385 pp NEG** (Portfolio -0,084 % vs SPY +0,301 %) — Portfolio underperformt SPY-Recovery deutlich via AAPL/LLY/V-Weakness
+
+### Positions V1/V2 Live-Check (V5/V6 NICHT geprüft — nur Close-Vollcheck)
+| Sym | Cur | chg | P/L% | V1-Puffer Std | V2-Puffer (Wick*0,88) | Status |
+|-----|-----|-----|------|---------------|------------------------|--------|
+| AAPL | 303,42 | **-0,45 % Worst** | **-4,24 Worst** | **+4,09 % ENGSTE Std** (Thr 291,51 primär) verschlechtert vs Pre +4,28 % | **+0,069 % razor via Wick 344,555 (Thr 303,21)** marginal verbessert vs Pre +0,26 % | SICHER (Std-V1 primär) |
+| V    | 362,27 | -0,15 % | +1,43 | +10,25 % (Thr 328,60) | +10,08 % via 373,97 (Thr 329,09) | SICHER |
+| UNH  | 405,56 | **+0,76 % Best** | +0,99 | +9,78 % (Thr 369,44) verbessert vs Pre +8,95 % via UNH-Recovery | **⚠️ -0,020 % BROKEN via 460,95 (Thr 405,636)** DQF 14. Tag persistent marginal verbessert vs Pre -0,78 %; Alt-V2 via 437,13 = 384,67 Puffer +5,42 % SICHER | SICHER (Std-V1 + Alt-V2 primär, Rule 5 No-Action) |
+| LLY  | 1210,00 | -0,41 % | +1,35 | +10,16 % (Thr 1098,38) verschlechtert vs Pre +10,26 % (**Blackout-V1_neu 1134,20 Bull-Konvention letzte Session Di 11.08. ABGESCHLOSSEN — ab HEUTE Std-V1 primär**) | +10,13 % via 1248,53 (Thr 1098,70) | SICHER (Std-V1 primär ab jetzt) |
+| JPM  | 363,35 | +0,33 % | **+9,19 Best** | **+18,68 %** (Thr 306,16) | +13,72 % via 363,08 (Thr 319,51) | SICHER |
+
+### V3/V4 kein Trigger
+- max P/L JPM +9,19 % << 20 %-TP1
+
+### Kaufsignal-Scan Slot 1/2 KW33 — Watchlist 6 Kandidaten (~11 min Session-Elapsed 2,82 %, K4-Linear-Pace-Threshold ≥3,38 % Prev-Full-Day-Vol für ≥120 % Avg20-Extrapolation)
+- **MRK (XLV) Prio 1 K4 PASS extrapol ~125 % Avg20**: 130,75 chg +0,32 %, session_vol IEX 10.668 / 0,0282 = 378k vs Avg20 301.916 = 125,3 %; K1-K3 ✓ vorbekannt RS +12,87 pp → **LEVEL 0 SKIP XLV-Sektor-Cap 20,15 % + MRK ~10 % → 30,15 %** (verletzt strategy.md 30 %-Cap); MRK bleibt blockiert bis UNH/LLY-Reduzierung
+- **UAL (XLI) Prio 2 REJECT K4-FAIL 10. Tag persistent**: 126,58 chg +0,32 %, session_vol 1.226 = 0,63 % Avg20 (extrapol ~22 %)
+- **UNP (XLI) Prio 3 REJECT K4-FAIL heavy**: 292,635 chg -0,04 %, session_vol 1.627 = 0,96 % Avg20 (extrapol ~34 %)
+- **BAC (XLF) K4 PASS extrapol ~179 % Avg20**: 64,06 chg +0,11 %, session_vol 114.211 / 0,0282 = 4,05M vs Avg20 2,27M; K1/K3 ✓ vorbekannt RS +22,40 pp aber **K2 RSI 70,26 Close FAIL persistent bleibt** (RSI wahrscheinlich weiter >70) → REJECT
+- **PANW (XLK) Prio 4 REJECT K4-FAIL + K2 RSI 69,57 upper-border**: 383,21 chg -0,15 %, session_vol 2.962 = 1,03 % Avg20 (extrapol ~37 %), XLK-Konflikt AAPL 9,76 %
+- **NVDA (XLK) Backup K4 STRONG PASS ~295 % Avg20**: 221,48 chg +1,85 %, session_vol 383.285 / 0,0282 = 13,6M vs Avg20 4,61M; K4 stark aber **K3 -3,75 pp NEG persistent** + XLK-Konflikt AAPL → REJECT
+- **BLOCKIERT bleiben**: GS/AMD/MU/ABBV (K2 <50), CVS (K2 31,61), EOG/COP/XOM (K3 NEG), ORCL (K1 Death-Cross)
+
+### Slot 1/2 + 2/2 KW33 OFFEN — kein Kandidat erfüllt alle 5 K1-K5
+- MRK Sektor-Cap-Blocker, BAC K2 FAIL persistent, NVDA K3 NEG, UAL/UNP/PANW K4 heavy FAIL
+- Re-Check Midday für MRK Vol-Follow-up (aber XLV-Cap bleibt Blocker), BAC RSI-Cool-down-Watch
+
+### Sektor-Struktur Live
+- XLV **20,15 %** (UNH 10,10 + LLY 10,05 marginal erhöht vs Di Close 20,09 % via UNH-Recovery)
+- XLF **11,28 %** (JPM 1,13 + V 10,15 marginal verschlechtert vs Di Close 11,29 %)
+- XLK **9,76 %** (AAPL leicht reduziert vs Di Close 9,80 %)
+- Cash 58,86 %
+
+### Guardrails
+- 8/8 GRÜN + 1 WARN (**UNH V2 BROKEN -0,020 % via 52w-Wick 460,95 DQF 14. Tag persistent** — Std-V1 +9,78 % + Alt-V2 +5,42 % primär sicher, Owner-Entscheidung pending; LLY BO ENDET HEUTE → Std-V1 primär ab jetzt)
+- Daily/Weekly/DD/Crash/VIX/Positions 5/8/Käufe-Slot 2/2 alle sicher
+- Weekly Loss Cap Check: -0,185 % vs Cap -5 % — GRÜN
+
+### Perplexity Silence-Rule
+- KEIN Query Market Open (Effizienz + persistente Halluzinationen 5. Mal Serie; Watchlist aus EOD-Alpaca-Daten + Live-Session-Vol ausreichend)
+
+### CPI-Release
+- Perplexity Pre-Market bestätigte CPI-Release erwartet heute (CNBC-Snippet) → intraday-Volatilität möglich post-Release; keine strategy.md-Regel blockiert Käufe, aber Vorsicht bei Watchlist-K4-Vol-Interpretation nach Release
+
+### Notification & ClickUp
+- ClickUp Prio 4 Routine-Log ITEM_246-Fehler persistent 11. Tag → Fallback Memory-Only per notify-skill.md
+- **KEINE PushNotification** (Silence-Rule Routine: kein V-Trigger, kein Cap-Alert, kein Kauf, alle V1 Std sicher, UNH V2-Wick verbessert vs Pre, AAPL V2 razor verbessert vs Pre, LLY BO-Ende ordnungsgemäß, keine Portfolio-Earnings 3 HT, kein Owner-Handlungsbedarf; Owner erhielt Fr-Wochenschluss-Push + Di-Midday-UNH-Push)
+
+### Nächste Routine
+- Mi 12.08. 13:00 ET Midday Stop-Check KW33 Tag 3
+- UNH V2-Wick-DQF-Verlauf (Owner-Entscheidung pending, aktuell verbessert vs Pre aber DQF 14. Tag persistent)
+- AAPL V2-Wick-Puffer-Verlauf razor +0,069 %
+- LLY Std-V1-Primary-Umstellung-Ausklang (BO-Ende)
+- Watchlist MRK/UAL/UNP/BAC K4-Vol-Pace-Post-CPI-Check
+- CPI-Release-Reaktion-Assessment für Portfolio + SPY
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-12 (Mi, KW33 Tag 3) — Guardrails GRÜN / VIX 15,28 / SPY Pre +0,329 % / Kaufscan Market Open JA / Earnings-Blackout keine
 
 ### Alpaca /v2/account Pre-Market 08:35 ET
