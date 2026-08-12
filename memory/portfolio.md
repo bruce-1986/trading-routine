@@ -1,5 +1,27 @@
 # Portfolio Status
 
+**Midday 13:11 ET 12.08.2026 (KW33 Tag 3 Mi):**
+Positionen: 5/8 | Ø P/L: **+1,60 %** (JPM +9,69 Best / LLY +1,82 / UNH +0,69 / V +0,38 / AAPL −4,58 Worst)
+Beste Position: **JPM +9,69 %** (365,03 $ Alpaca latestTrade IEX 13:10 ET)
+Schlechteste Position: **AAPL −4,58 %** (302,33 $, verschlechtert vs Open −4,24 %)
+Stops V1-V4 Live-Check (V5/V6 nur Close-Vollcheck):
+- **V1 Std alle 5 SICHER Puffer eng→weit:** **AAPL +3,71 % ENGSTE Std verschlechtert vs Open +4,09 %** (302,33 chg −0,81 % vs Di Close 304,80, Std-V1 291,51 primär), UNH +9,44 % (404,325 chg +0,45 %, P/L +0,69 %), V +9,11 % (358,545 chg −1,18 % vs Di Close 362,82, P/L +0,38 % verschlechtert vs Open +1,43 %), **LLY +10,68 %** (1215,66 chg +0,05 %, P/L +1,82 % verbessert vs Open +1,35 %, **Std-V1 1098,38 primär ab heute**), **JPM +19,23 %** (365,03 chg +0,79 %, **Best P/L +9,69 %** verbessert vs Open +9,19 %)
+- **V2-Trailing-Stop:** **⚠️ AAPL V2 BROKEN Puffer −0,29 % via Wick 344,555 = Thr 303,21 FRESH Escalation vs Open razor +0,069 %** (Preis-Weakness-Fortsetzung 302,33 < 303,21 — 52w-Wick DQF-flagged wie UNH; Std-V1 +3,71 % ENGSTE primär sicher, V2 sekundär via DQF); **UNH V2 BROKEN Puffer −0,32 % via Wick 460,95 = Thr 405,636 marginal verschlechtert vs Open −0,020 %** (14. Tag DQF persistent — Alt-V2 via 437,13 = 384,67 Puffer +5,11 % SICHER, Std-V1 +9,44 % primär sicher, Owner-Entscheidung pending seit Di-Midday-Push); LLY +10,64 % via 52w-High 1.248,53 (Thr 1098,71) sicher, V +8,95 % via 373,97 (Thr 329,09) sicher, JPM +14,25 % via Wick 363,08 (Thr 319,51) sicher
+- **V3/V4:** max P/L JPM +9,69 % << 20 %-TP1 → kein Trigger
+- **V5/V6:** nur Close-Vollcheck
+Daily P/L: **−0,142 % [GRÜN, Cap −3 %]** (Equity Live **96.278,11 $** vs last_equity 96.414,68 = −136,57 $; MV 39.571,54 $ / Cash 56.707,49 $ = **58,90 %**; DD vs ATH 100.066,47 = **−3,786 % GRÜN** verschlechtert vs Open −3,730 %; Weekly KW33 Tag 3 vs Fr Close 96.512,65 = **−0,243 % GRÜN** weit von Cap −5 %, verschlechtert vs Open −0,185 %)
+Alpha vs SPY: **−0,460 pp NEG** (SPY Live 772,975 Alpaca latestTrade IEX 13:11 ET vs Di Close 770,52 = **+0,319 % positiv** post-CPI-Reaktion; Portfolio −0,142 % underperformt SPY-Recovery via AAPL/V-Weakness — verschlechtert vs Open −0,385 pp)
+V-Aktion: **KEINE Sell-Order platziert** (Rule 5 No-Action bei DQF-Anomalie fortlaufend: AAPL V2 FRESH BROKEN via 52w-Wick 344,555 Single-Print DQF wie UNH — Std-V1 +3,71 % ENGSTE primär sicher; UNH V2 14. Tag DQF Alt-V2 +5,11 % + Std-V1 +9,44 % sicher); 0 offene Orders bei Alpaca (Order-Query bestätigt)
+Pending Orders: 0 | Käufe KW33: 0/2 (Slot 1/2 + 2/2 OFFEN — Midday KEIN Buy-Scan per Routine-Spec)
+Sektor-Struktur Live: XLV **20,17 %** (UNH 10,08 + LLY 10,09), XLF **11,20 %** (JPM 1,14 + V 10,06), XLK **9,74 %** AAPL, Cash 58,90 %
+LLY Blackout: **HT+2 Bull-Konvention ENDET HEUTE 12.08. → Standard-V1 1098,38 primär ab jetzt** aktiv; Puffer +10,68 % sicher (verbessert vs Open +10,16 %)
+CPI-Reaktion: SPY +0,319 % post-CPI-Release-Recovery (Perplexity Pre-Market bestätigt); Portfolio underperformt via AAPL/V-Weakness — kein handelbarer Signalbruch
+ClickUp Prio 1 Critical Alert versucht — **ITEM_246 "Max usage for custom task types reached" 12. Tag persistent** → Fallback Memory-Only per notify-skill.md
+PushNotification: **JA (Escalation)** — AAPL V2-Wick FRESH BROKEN (Wende von Open razor +0,069 % zu Midday −0,29 %) triggert Push, obwohl DQF-Interpretation No-Action bleibt; UNH V2-Wick DQF-Status unverändert marginal (Owner erhielt bereits Di-Midday-Push)
+Nächster Check: **Mi 12.08. 16:00 ET Market Close KW33 Tag 3** — AAPL V2-Wick-DQF-EOD-Vollcheck V5/V6, UNH V2-Wick-DQF-Verlauf (Owner-Entscheidung pending), LLY Std-V1-Primary-Umstellung, Tagesbilanz + Watchlist Do 13.08.
+
+---
+
 **Live Open 09:41 ET 12.08.2026 (KW33 Tag 3 Mi):**
 Positionen: 5/8 | Ø P/L: **+1,74 %** (JPM +9,19 Best / V +1,43 / LLY +1,35 / UNH +0,99 / AAPL −4,24 Worst)
 Beste Position: **JPM +9,19 %** (363,35 $ Alpaca latestTrade IEX 09:41 ET)
