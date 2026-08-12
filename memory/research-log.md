@@ -4,6 +4,50 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-12 (Mi, KW33 Tag 3) — Guardrails GRÜN / VIX 15,28 / SPY Pre +0,329 % / Kaufscan Market Open JA / Earnings-Blackout keine
+
+### Alpaca /v2/account Pre-Market 08:35 ET
+- portfolio_value/equity: **96.342,43 $** | last_equity: 96.414,68 $ (Alpaca-EOD-Adjust vs Memory-Close 96.406,20 = +8,48 marginal reconciliation)
+- Daily P/L: **-72,25 $ = -0,075 %** [GRÜN, Cap -3 %]
+- cash: 56.707,49 $ (**58,86 %**, unverändert)
+- long_market_value: **39.634,94 $** (5 Pos, -63,77 vs Di Close 39.698,71 = -0,161 % marginal)
+- buying_power: 337.807,79 $ | 0 pending orders | status ACTIVE | trading_blocked false
+- DD vs ATH 100.066,47: **-3,722 %** [GRÜN, verschlechtert vs Di Close -3,658 %]
+- Weekly KW33 Tag 3 vs Fr Close 96.512,65: **-0,176 %** [GRÜN, weit von Cap -5 %]
+
+### Positions Pre-Market (Alpaca IEX ~08:35 ET, current_price)
+- **AAPL** 31 Sh @ 304,00 (chg -0,30 %, P/L -4,06 % = -398,55 $ Worst; Std-V1 291,51 Puffer +4,28 % ENGSTE verschlechtert vs Di Close +4,59 %; V2 via Wick 344,56 = Thr 303,21 razor +0,26 % verschlechtert vs Di Close +0,55 %)
+- **JPM** 3 Sh @ 362,35 (chg +0,09 %, P/L +8,89 % = +88,71 $ Best P/L)
+- **LLY** 8 Sh @ 1.211,02 (chg -0,33 %, P/L +1,44 % = +137,06 $; **BO Bull-Konvention HT+2 ENDET → ab HEUTE Std-V1 1.098,38 primär, Puffer +10,26 % sicher**; V2 via 1.248,53 Thr 1.098,70 Puffer +10,23 %)
+- **UNH** 24 Sh @ 402,50 (chg +0,08 %, P/L +0,23 % = +22,32 $; Std-V1 369,44 Puffer +8,95 % sicher; **⚠️ V2 via 52w-Wick 460,95 = Thr 405,636 BROKEN Puffer -0,78 % 13. Tag DQF persistent, Alt-V2 via 437,13 = 384,67 Puffer +4,63 % SICHER — Owner-Entscheidung pending seit Di-Midday-Push**)
+- **V** 27 Sh @ 361,80 (chg -0,28 %, P/L +1,29 % = +124,80 $; Std-V1 328,60 Puffer +10,10 %; V2 via 373,97 Thr 329,09 Puffer +9,93 %)
+
+### Perplexity Daily Macro Check (Pre-Market Request #1)
+- **VIX: 15,28 Punkte** (Mo Close 11.08. WSJ/FRED, aktuell 15,29-15,38 intraday leicht höher) → **VIX-Filter GRÜN << 30**
+- **SPY Pre-Market: 773,05 $** (Alpaca IEX latestTrade 08:35:59 ET) vs Di Close 770,52 = **+0,329 % marginal POSITIV** → Crash-Filter INAKTIV
+- **US 10Y Treasury Yield: 4,68 %** (TradingEconomics/CNBC 08/12, Mo 4,72 % FRED DGS10 = **-0,04 pp leicht gefallen** via niedrigere Ölpreise + US-Iran-Diplomatie-Fortschritte Straße von Hormuz)
+- **Wichtige Makro-Events heute:** **CPI-Release erwartet** (CNBC 08/12 "await key inflation data due later in session") — Perplexity-Query #2 hatte "KEINE" gemeldet, Query #3 via CNBC-Artikel-Snippet CPI-Release explizit bestätigt → **erhöhte Vorsicht bei intraday Preis-Bewegungen post-Release**; KEINE FOMC-Minutes, KEINE PPI, KEINE bestätigten Fed-Speeches
+- **Top 3 News (Pre-Market seit gestern Abend):**
+  1. **CPI-Report heute erwartet** — Yields warten flat auf Inflation-Daten
+  2. **US-Iran diplomatische Bemühungen** Straße von Hormuz → Ölpreise-Stabilisierung, Yields -0,04 pp
+  3. **10Y-Yield leicht rückläufig** auf 4,68 % nach Vortag 4,71 %
+
+### Guardrail-Check nach Research
+- **VIX 15,28 << 30** → GRÜN, Kauf erlaubt
+- **SPY Pre +0,329 %** → nicht < -2 %, keine erhöhte Vorsicht via SPY
+- **Crash-Filter INAKTIV** (SPY Di -0,323 % nicht < -5 %) → Käufe erlaubt
+- **CPI-Release heute** → intraday-Volatilität möglich, aber keine strategy.md-Regel blockiert Käufe — Watchlist-Kandidaten normal per K1-K5 prüfen
+- **Blackout-Kalender Portfolio + Watchlist (12.-14.08.):** AAPL/JPM/LLY/UNH/V/UAL/UNP/MRK/PANW/BAC alle **KEINE Earnings 3 HT** (PANW nächster Termin 01.09.2026; AAPL letzter 30.07.2026 vergangen) → keine Stop-Verengung auf -5 % nötig
+- **Alle 8 Guardrails GRÜN + 2 WARN** (LLY BO ENDET HEUTE → Standard-V1 primär ab jetzt; **UNH V2-Wick BROKEN 13. Tag persistent — Std-V1 +8,95 % + Alt-V2 +4,63 % primär sicher, Owner-Entscheidung pending seit Di-Midday-Push**)
+
+### Entscheidung Kaufsignal-Scan Market Open 09:30 ET
+- **JA** — alle Level 0-3 Guardrails GRÜN, VIX << 30, SPY Pre marginal POSITIV, Crash-Filter INAKTIV, Blackout leer, ausreichend Cash 58,86 %, Slots 1/2 + 2/2 KW33 offen
+- **Watchlist Prio Mi 12.08.:** MRK Prio 1 XLV (K1-K3 ✓ RS +12,87 pp; **LEVEL 0-SKIP XLV-Sektor-Cap** 20,09 % + MRK ~10 % → 30 %-Regel-Bruch), UAL Prio 2 XLI (K1-K3 ✓ RS +26,33 pp #1, K4 10. Tag Vol-Watch), UNP Prio 3 XLI (K1-K3 ✓ RS +6,91 pp, K4 Vol-Watch), PANW Prio 4 XLK (K1-K3 ✓ RS +75,35 pp, RSI 69,57 upper-border, XLK-Konflikt AAPL 9,79 %), BAC Backup XLF (K2 RSI 70,26 knapp FAIL persistent)
+- **CPI-Vorsicht:** Bei Watchlist-K4-Vol-Beat post-CPI Perplexity-Symbol-Query zur Bestätigung von Momentum vs CPI-Reaktions-Noise (Perplexity-Halluzinations-Serie beachten → Alpaca-Daten primär)
+- **Nächster Check:** Market Open 09:30 ET KW33 Tag 3
+
+---
+
 ## Market Close 16:00 ET — 2026-08-11 (Di, KW33 Tag 2) FINAL — Daily -0,370 % GRÜN / Alpha -0,046 pp NEG marginal / DD -3,658 % GRÜN / Weekly KW33 Tag 2 -0,110 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
 
 ### Alpaca /v2/account Close 16:00 ET
