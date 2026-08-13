@@ -4,6 +4,61 @@
 
 ---
 
+## Market Open 09:47 ET — 2026-08-13 (Do, KW33 Tag 4) — Daily +0,094 % GRÜN / Alpha −0,354 pp NEG intraday / DD −3,600 % GRÜN / Weekly −0,050 % GRÜN / **Kauf-Slot 1 IN PROGRESS: MU-Buy-Order platziert**
+
+### SPY Live 09:47 ET
+- SPY 776,00 Alpaca latestTrade IEX vs Mi Close 772,54 = **+0,448 % positiv** [Crash-Filter INAKTIV]
+- **Alpha vs Portfolio: −0,354 pp NEG intraday-Rauschen** (Portfolio +0,094 % vs SPY +0,448 %)
+
+### V1/V2-Live-Check (V5/V6 nur Close-Vollcheck)
+| Sym | Cur | chg vs Pre | P/L% | V1 Std | V2 |
+|-----|-----|-----|------|--------|----|
+| AAPL | 303,535 | +0,13 | −4,20 (Worst) | **+4,13 % ENGSTE** (Thr 291,51) | **+0,108 % via Wick 344,555 (Thr 303,21)** DQF 3. Tag **AUS BROKEN RAUS** verbessert vs Pre −0,020 % |
+| JPM | 364,01 | −1,08 (Worst chg) | +9,38 (Best) | +18,90 % (Thr 306,16) | +12,40 % via Wick 368,00 (Thr 323,84) NEUES Hoch fortgeschrieben |
+| LLY | 1225,76 | −0,09 | +2,67 | +11,60 % (Thr 1098,38) | +11,56 % via 1248,53 (Thr 1098,71) |
+| UNH | 405,335 | −0,29 | +0,94 | +9,72 % (Thr 369,44) | **⚠ −0,074 % BROKEN razor** via Wick 460,95 (Thr 405,636) DQF **14. Tag persistent** verschlechtert vs Pre +0,340 %, Alt-V2 via 437,13 = 384,67 Puffer +5,37 % SICHER |
+| V | 360,06 | −0,66 | +0,81 | +9,57 % (Thr 328,60) | +9,41 % via 373,97 (Thr 329,09) |
+
+### Kauf-Kandidaten-Scan K1-K5 (Broad-Scan, 7 Kandidaten)
+| Sym | Sektor | K1 | K2 (RSI) | K3 (RS_63) | K4 (Vol-Extrap) | K5 (Perplexity) | Status |
+|-----|--------|-----|----------|------------|-----------------|-----------------|--------|
+| **MU** | XLK | ✓ 888/593 | ✓ 50,7 | ✓ +14,10 pp | ✓ 135,9 % Avg20 | **✓ FwdPE 5,55 / RevYoY +45,70 %** | **ALLE 5 ✓ → BUY LIMIT 10 @ 915,86 $ Day-Order** |
+| CVX | XLE | ✓ 186/174 | ✓ 60,4 | ✓ +1,77 pp | ✓ 225,9 % | **FAIL RevYoY −0,13 %** | REJECT K5 |
+| GE | XLI | ✓ 351/322 | ✓ 53,5 | ✓ +17,97 pp | FAIL 102 % knapp | pending | Watchlist |
+| UAL | XLI | ✓ 120/110 | ✓ 52,2 | ✓ +25,60 pp #1 | FAIL 4,3 % 12. Tag | pending | Watchlist |
+| UNP | XLI | ✓ 284/255 | ✓ 55,1 | ✓ +6,20 pp | FAIL 18,2 % | pending | Watchlist |
+| XOM | XLE | ✓ 150/137 | ✓ 65,5 upper | ✓ +1,85 pp | FAIL 63 % | pending | Watchlist |
+| BA | XLI | ✓ 223/220 | ✓ 55,7 | **FAIL −7,32 pp** | 52,7 % | — | REJECT K3 |
+| NEE | XLU | ✓ 88/85 | **FAIL 43,6** | −13,51 pp | — | — | REJECT K2 |
+| SO | XLU | ✓ 94/93 | **FAIL 42,7** | −5,11 pp | — | — | REJECT K2 |
+
+### MU-Kauf-Details
+- Kandidat #1 nach RS-Score MU (+14,10 pp) unter K1-K4-Passes (MU/CVX beide K1-K4)
+- K5 Perplexity: MU FwdPE **5,55** (K5 ✓), Umsatzwachstum YoY **+45,70 %** (K5 ✓), Earnings 23.09.2026 (>3 HT weg)
+- Position-Sizing: portfolio 96.464,14 $ × 10 % (VIX 14,69 <25) = 9.646,41 $ Budget → 10 Shares @ Limit 915,86 = 9.158,60 $ Order-Wert
+- Limit-Berechnung: prev_close 911,30 × 1,005 = 915,86 $
+- **Preis-Warnung:** MU Live 931,68 $ = +2,24 % über Prev-Close → Limit +0,5 % nur bei intraday-Rücksetzer −1,7 % füllbar; Order verfällt bei Session-Close falls kein Fill
+- Sektor-Check Post-Fill: XLK AAPL 9.409,585 + MU 9.158,60 = 18.568,18 = **19,25 %** (unter 30 %-Cap, 2 Pos <3-Max ✓)
+- Cash Post-Fill: 47.548,89 = **49,29 %** (>20 % ✓); Positionen Post-Fill: **6/8** ✓
+- Order-ID: 4df018b2-a2b8-4da8-8ca5-6f5598df0666, Status NEW, filled_qty 0
+
+### Perplexity Queries Market Open
+- **Query 1 (Sonar-Pro):** Top-3 Sektoren 1-Monats-Momentum → **XLE +7,37 %, XLU k.A., XLI +2,96 %** (mit Silence-Bias 7. Mal Serie — keine belastbaren Einzeltitel-Fundamentaldaten)
+- **Query 2 (Sonar-Pro):** MU + CVX Fundamentals → MU FwdPE 5,55/RevYoY +45,70 %/Earn 23.09.; CVX FwdPE 5,66/RevYoY −0,13 %/Earn 27.08.
+
+### Guardrails Live
+- **8/8 GRÜN + 2 WARN** (AAPL V2 DQF 3. Tag jetzt technisch AUS BROKEN RAUS +0,108 % — Std-V1 +4,13 % ENGSTE primär; UNH V2 DQF 14. Tag persistent razor WIEDER BROKEN −0,074 % verschlechtert vs Pre — Alt-V2 +5,37 % + Std-V1 +9,72 % primär, Owner-Entscheidung pending)
+- Daily +0,094 % / Weekly −0,050 % / DD −3,600 % / Crash INAKTIV / VIX 14,69 / Positionen 5/8 (Post-Fill 6/8) / Käufe-Slots 0/2 (Slot 1 IN PROGRESS)
+
+### Notification & ClickUp
+- ClickUp Prio 3 [MARKET-OPEN TRADE_BUY] Task versucht — bei ITEM_246-Fehler-Persistenz 15. Tag Fallback Memory-Only per notify-skill.md
+- **PushNotification: JA (TRADE_BUY)** — MU-Buy-Order platziert nach 4-Tage-Serie ohne handelbaren Kandidaten; Owner-Info trotz Fill-Unsicherheit
+
+### Nächster Check
+**Do 13.08. 13:00 ET Midday Stop-Check KW33 Tag 4** — MU-Order-Fill-Status (kritisch), AAPL V2-DQF-Verlauf (technisch aus Broken), UNH V2-DQF-Verlauf (14. Tag persistent), GE K4-Vol-Nachmittags-Rebound-Watch, restliche Watchlist K4-Follow-up.
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-13 (Do, KW33 Tag 4) — Daily +0,213 % GRÜN / Alpha +0,018 pp POS marginal / DD −3,485 % GRÜN / Weekly KW33 Tag 4 +0,069 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
 
 ### Alpaca /v2/account Pre-Market 08:32 ET
