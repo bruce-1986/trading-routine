@@ -1,5 +1,39 @@
 # Portfolio Status
 
+**Pre-Market 08:32 ET 13.08.2026 (KW33 Tag 4 Do):**
+Gesamtwert:     96.578,84 $
+Cash:           56.707,49 $  (58,72 %)
+Investiert:     39.871,35 $  (41,28 %)  — AAPL 9.397,65 / JPM 1.104,00 / LLY 9.815,04 / UNH 9.768,24 / V 9.786,42
+P/L Pre:          +205,32 $  (+0,213 %)   [GRÜN, Cap −3 %]
+Alpha vs SPY:    +0,018 pp   (SPY Alpaca latestTrade IEX 774,05 vs Mi Close 772,54 = +0,196 %; Perplexity ohne belastbaren Pre-Wert)
+ATH:           100.066,47 $   (Intraday-Open 22.06., unverändert)
+Drawdown:        −3,485 %     [GRÜN, verbessert vs Close −3,700 %; Schwelle −15 % bei 85.056 $]
+Guardrails:     Daily +0,213 % | Weekly KW33 Tag 4 vs Fr-Close 96.512,65 = +0,069 % | Käufe 0/2 KW33 | VIX 14,69 (verbessert vs Mi 15,28) | Crash-Filter NEIN | DD GRÜN
+V1/V2 Pre-Market (V5/V6 nur Close-Vollcheck):
+- AAPL 303,15 (chg +0,31 %, P/L −4,33 % **Worst** verbessert vs Close −4,64 %): **V1 Std +3,99 % ENGSTE verbessert vs Close +3,67 %** (Thr 291,51); V2 **−0,020 % BROKEN razor** via 52w-Wick 344,555 (Thr 303,21) DQF **3. Tag persistent, verbessert vs Close −0,334 %**; V5/V6 nur Close.
+- JPM 368,00 (chg +0,76 %, P/L +10,58 % **Best**): V1 +20,20 % (Thr 306,16); V2 +14,23 % via Wick 366,085 (Thr 322,15, **NEUES Hoch fortgeschrieben**); V5/V6 nur Close.
+- LLY 1226,88 (chg +0,57 %, P/L +2,76 %): V1 +11,70 % (Thr 1098,38, **Std-V1 primär**); V2 +11,68 % via 52w-High 1248,53 (Thr 1098,71); V5/V6 nur Close.
+- UNH 407,01 (chg +0,34 %, P/L +1,35 %): V1 +10,17 % (Thr 369,44); V2 **+0,340 % technisch AUS BROKEN RAUS** via Wick 460,95 (Thr 405,636) verbessert vs Close +0,001 %, DQF **14. Tag persistent** — Alt-V2 via 437,13 = 384,67 Puffer **+5,81 % SICHER**; V5/V6 nur Close.
+- V 362,46 (chg +0,83 %, P/L +1,48 %): V1 +10,30 % (Thr 328,60); V2 +10,14 % via 373,97 (Thr 329,09); V5/V6 nur Close.
+V-Trigger Pre-Market: **V1 Std alle 5 SICHER** (min AAPL +3,99 % verbessert) | **V2:** AAPL DQF-BROKEN 3. Tag razor −0,020 % (verbessert), UNH technisch AUS BROKEN RAUS +0,340 % (verbessert vs Close +0,001 %) — Rule 5 No-Action-Kontext bleibt, UNH-Owner-Entscheidung pending | V3/V4 max JPM +10,58 % << 20 %-TP1 | V5/V6 nur Close-Vollcheck.
+**Order-Aktion Pre-Market:** KEINE (0 offene Orders, keine Sell-Signale, keine Buy-Signale — Kaufscan bei Market Open geplant).
+Sektor-Struktur Pre-Market: XLV **20,32 %** (UNH 10,12 + LLY 10,16), XLF **11,28 %** (JPM 1,14 + V 10,13), XLK **9,73 %** AAPL, Cash 58,72 %.
+Weekly Loss Cap: +0,069 % vs Cap −5 % → weit entfernt, kein Sperrauslöser.
+**Earnings-Blackout-Check:** Perplexity bestätigt für AAPL/JPM/LLY/UNH/V/MRK KEIN Earnings 13.–15.08. — **kein Blackout aktiv**, keine Stop-Loss-Verschärfung nötig.
+**MRK K5-Verifikation:** Forward P/E **46,73 >> 35 → K5 FAIL → MRK REJECT als Kaufkandidat** (K1–K4 gestern alle ✓, K5-Perplexity überstimmt) — XLV-Sektor-Cap-Assessment obsolet
+Watchlist Do 13.08. Market Open (K1–K4 aus Alpaca IEX EOD Mi + K5 Perplexity):
+- **MRK ~~Prio 1~~ REJECT via K5**: FwdPE 46,73 FAIL
+- **UAL (XLI) Prio 2**: K1-K3 ✓ RS +25,87 pp #1 | K4 31 % FAIL 12. Tag persistent
+- **UNP (XLI) Prio 3**: K1-K3 ✓ RS +5,90 pp | K4 46 % FAIL
+- **MU (XLK) Backup**: K1-K3 ✓ RS +14,35 pp | K4 81 % FAIL — XLK-Konflikt AAPL
+- **→ KEIN Kaufkandidat mit K1–K5 alle ✓ pre-open** — Broad-Scan bei Market Open nötig (Slot 1/2 KW33 offen)
+Perplexity: **3 Queries** (Daily Macro, Earnings-Check 3 HT, MRK K5-Fundamentals) — MRK K5-FAIL identifiziert, Silence-Bias VIX/SPY/Makro (6. Mal Serie in Kalender-Daten)
+ClickUp Prio 4 [PRE-MARKET] Task versucht — **ITEM_246 "Max usage for custom task types reached" 14. Tag persistent** → Fallback Memory-Only per notify-skill.md.
+PushNotification: **NEIN** (Silence-Rule: kein V-Trigger, kein Cap-Alert, kein Kauf, Daily +0,213 % positiv, VIX ruhig 14,69, MRK K5-FAIL entfernt nur einen Kandidaten ohne Trigger-Situation, UNH V2 technisch verbessert, AAPL V2 marginal verbessert — kein Owner-Handlungsbedarf).
+Nächster Check: **Do 13.08. 09:30 ET Market Open KW33 Tag 4** — Broad-Watchlist-Scan Slot 1/2 KW33 (MRK raus, alte Watchlist K4-FAIL persistent, Neu-Kandidaten benötigt), UNH V2-DQF-Verlauf, AAPL V2-DQF-Verlauf.
+
+---
+
 **Close 16:00 ET 12.08.2026 (KW33 Tag 3 Mi) — Tagesbilanz:**
 Gesamtwert:     96.363,47 $
 Cash:           56.707,49 $  (58,85 %)

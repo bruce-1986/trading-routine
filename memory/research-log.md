@@ -4,6 +4,92 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-13 (Do, KW33 Tag 4) — Daily +0,213 % GRÜN / Alpha +0,018 pp POS marginal / DD −3,485 % GRÜN / Weekly KW33 Tag 4 +0,069 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
+
+### Alpaca /v2/account Pre-Market 08:32 ET
+- portfolio_value/equity: **96.578,84 $** | last_equity: 96.373,52 $
+- Daily P/L: **+205,32 $ = +0,213 %** [GRÜN, Cap −3 %, verbessert vs Mi Close −0,053 %]
+- cash: 56.707,49 $ (**58,72 %**, unverändert)
+- long_market_value: **39.871,35 $** (5 Pos, +215,37 vs Mi Close 39.655,98 = +0,543 % positiv via UNH/JPM/LLY/V/AAPL after-hours Recovery)
+- buying_power: 338.469,74 $ | 0 pending orders | status ACTIVE | trading_blocked false
+- **Konsistenz-Check portfolio.md Close 96.363,47 vs Alpaca last_equity 96.373,52 = +10,05 $ marginal (Post-Close-Repricing, unkritisch)**
+
+### SPY Pre-Market via Alpaca latestTrade IEX 08:30:21 ET
+- SPY 774,05 vs Mi Close 772,54 = **+0,196 % positiv** [Crash-Filter INAKTIV; Perplexity ohne belastbaren Pre-Market-Wert, Alpaca latestTrade primär]
+- **Alpha vs Portfolio: +0,018 pp POS marginal** (Portfolio +0,213 % vs SPY +0,196 % — marginal Outperformance via Portfolio-Wide-Recovery)
+
+### V1/V2-Live-Check Pre-Market (V5/V6 nur Close-Vollcheck)
+| Sym | Cur | chg | P/L% | V1 Std Puffer | V2 Puffer |
+|-----|-----|-----|------|--------------|-----------|
+| AAPL | 303,15 | +0,31 | −4,33 (Worst) | **+3,99 % ENGSTE** (Thr 291,51, verbessert vs Close +3,67 %) | **⚠ −0,020 % BROKEN razor** via Wick 344,555 (Thr 303,21), DQF **3. Tag**, verbessert vs Close −0,334 %; Alt-V2 via next-höchster Wick pending Analyse |
+| JPM | 368,00 | +0,76 | +10,58 (Best) | **+20,20 %** (Thr 306,16) | +14,23 % via Wick 366,085 (Thr 322,15) via **NEUES Hoch fortgeschrieben** |
+| LLY | 1226,88 | +0,57 | +2,76 | +11,70 % (Thr 1098,38, **Std-V1 primär**) | +11,68 % via 52w-High 1248,53 (Thr 1098,71) |
+| UNH | 407,01 | +0,34 | +1,35 | +10,17 % (Thr 369,44) | **+0,340 % via 460,95 (Thr 405,636) — technisch aus BROKEN raus** (verbessert vs Close +0,001 %), DQF **14. Tag persistent**, Alt-V2 via 437,13 = 384,67 Puffer +5,81 % SICHER |
+| V | 362,46 | +0,83 | +1,48 | +10,30 % (Thr 328,60) | +10,14 % via 373,97 (Thr 329,09) |
+
+**V-Trigger-Zusammenfassung Pre-Market:**
+- **V1 Std alle 5 SICHER** (min AAPL +3,99 % verbessert vs Close +3,67 %)
+- **V2:** AAPL DQF **3. Tag** BROKEN razor −0,020 % (Std-V1 +3,99 % primär), UNH DQF **14. Tag** technisch aus BROKEN raus +0,340 % (Alt-V2 +5,81 % + Std-V1 +10,17 % primär) → Rule 5 No-Action-Kontext bleibt, Owner-Entscheidung UNH pending
+- **V3/V4:** max P/L JPM +10,58 % << 20 %-TP1
+- **V5/V6:** nur Close-Vollcheck
+- **Sell-Order:** 0 offene Orders, KEINE Neue-Orders vor Market Open
+
+### Perplexity Daily Macro Check (Sonar-Pro)
+- **VIX:** **14,69** (chg +0,96 % vs Vortag laut Cboe) → **GRÜN, Cap >30 weit entfernt, verbessert vs Mi 15,28**
+- **SPY Pre-Market:** Perplexity ohne belastbaren Wert → **Alpaca latestTrade IEX 774,05 = +0,196 %** primär (siehe oben)
+- **10Y Treasury Yield:** in Perplexity-Ergebnissen nicht enthalten (Silence-Bias 6. Mal Serie)
+- **Makro-Ereignisse heute:** Perplexity liefert **keine konkreten Fed/CPI/PPI/Retail-Termine** → CPI-Post-Reaction gestern eingepreist, heute ruhig
+- **Marktbewegende News:** kein einzelner klarer Katalysator laut Perplexity; VIX bleibt in ruhigem 14–15er Bereich
+
+### Perplexity Earnings-Check (nächste 3 HT 13.–15.08.2026)
+- **Portfolio-Positionen:** AAPL **NEIN** (letzte 30.07., nächste ~29.10.), JPM **NEIN**, LLY **NEIN**, UNH **NEIN**, V **NEIN**, MRK **NEIN**
+- **S&P 500 > 50 Mrd USD:** Perplexity ohne belastbare Liste (Silence-Bias)
+- **→ KEIN Earnings-Blackout aktiv** für Portfolio; keine Stop-Loss-Verschärfung nötig
+
+### MRK K5-Verifikation (Perplexity Sonar-Pro)
+- **Forward P/E: 46,73** → **K5 FAIL** (strategy.md: FwdPE ≤ 35) → **MRK REJECT als Kaufkandidat**
+- Umsatzwachstum YoY: k. A. in Perplexity-Ergebnissen (nicht mehr entscheidungsrelevant nach K5-FAIL)
+- Nächstes Earnings-Datum: 29.10.2026 (>3 HT weg, kein Blackout heute)
+- Analysten-Konsens: Buy 28 (positiv, aber K5 überstimmt)
+- **XLV-Sektor-Cap Assessment obsolet:** MRK durch K5 raus → XLV-Cap 20,22 % keine akute Blocker-Situation
+
+### Watchlist Do 13.08. K1–K5 aktualisiert
+| Sym | Prio | Sektor | K1-K4 EOD 12.08. | K5 | Status |
+|-----|------|--------|------------------|-----|--------|
+| MRK | ~~1~~ REJECT | XLV | K1-K4 ✓ (Vol 128 %) | **FwdPE 46,73 FAIL >35** | **REJECT via K5-Perplexity** |
+| UAL | 2 | XLI | K1-K3 ✓ K4 31 % FAIL 12. Tag | pending | K4 persistent FAIL — Backup |
+| UNP | 3 | XLI | K1-K3 ✓ K4 46 % FAIL | pending | K4 FAIL — Backup |
+| MU | Backup | XLK | K1-K3 ✓ K4 81 % FAIL, XLK-Konflikt AAPL | pending | K4 FAIL, Sektor-Konflikt |
+| NEUE Scan | — | — | Market Open Broad-Scan | — | Bei Open Slot 1/2 KW33 offen, MRK jetzt raus, Neu-Kandidaten benötigt |
+
+**Kein Kaufkandidat mit K1–K5 alle ✓ heute Pre-Market.** Market-Open-Scan bleibt geplant für Broad-Watchlist-Discovery (Slot 1/2 KW33 offen).
+
+### Sektor-Struktur Pre-Market
+- XLV **20,32 %** (UNH 10,12 + LLY 10,16 marginal erhöht vs Close 20,22 % via UNH/LLY-Recovery)
+- XLF **11,28 %** (JPM 1,14 + V 10,13 marginal verbessert vs Close 11,21 %)
+- XLK **9,73 %** AAPL marginal verbessert vs Close 9,72 %
+- Cash 58,72 %
+
+### Guardrails
+- **8/8 GRÜN + 1 WARN** (**AAPL V2 BROKEN razor −0,020 % via 52w-Wick 344,555 DQF 3. Tag persistent** — Std-V1 +3,99 % ENGSTE primär sicher; **UNH V2 technisch aus BROKEN raus +0,340 % via 52w-Wick 460,95 DQF 14. Tag** — Std-V1 +10,17 % + Alt-V2 +5,81 % primär sicher, Owner-Entscheidung noch pending)
+- Daily +0,213 % / Weekly +0,069 % / DD −3,485 % / Crash INAKTIV / VIX 14,69 / Positions 5/8 / Käufe-Slots 0/2 alle GRÜN
+
+### Notification & ClickUp
+- ClickUp Prio 4 [PRE-MARKET] Routine-Log versucht — bei ITEM_246-Fehler-Persistenz 14. Tag Fallback Memory-Only per notify-skill.md
+- **KEINE PushNotification** (Silence-Rule: kein V-Trigger, kein Cap-Alert, Daily +0,213 % positiv, VIX ruhig 14,69, MRK K5-FAIL entfernt nur Kaufkandidat ohne Trigger-Situation, UNH V2 technisch verbessert, AAPL V2 marginal verbessert vs Close, keine Portfolio-Earnings 3 HT, kein Kauf-Signal → kein Owner-Handlungsbedarf)
+
+### Entscheidung
+- **Kaufscan bei Market Open 09:30 ET: JA** (Slot 1/2 KW33 offen, Guardrails GRÜN, VIX ruhig) — aber MRK jetzt via K5-FAIL RAUS, alte Watchlist-Prio 2-4 K4-FAIL persistent → Broad-Scan bei Open erforderlich für neue Kandidaten
+- **KEINE Sell-Order Pre-Market platziert** (V1 alle SICHER, V2-Zustand marginal verbessert, Rule 5 No-Action fortlaufend)
+
+### Nächste Routine
+- Do 13.08. 09:30 ET Market Open KW33 Tag 4
+- Broad-Watchlist-Scan (S&P 500/MidCap-Momentum) für Slot 1/2 KW33 — MRK raus, Neu-Kandidaten mit K1–K5 alle ✓ suchen
+- UNH V2-Wick-DQF-Verlauf (Owner-Entscheidung pending, 14. Tag)
+- AAPL V2-Wick-DQF-Verlauf (3. Tag), RSI 40 Oversold-Watch
+
+---
+
 ## Market Close 16:00 ET — 2026-08-12 (Mi, KW33 Tag 3) FINAL — Daily −0,053 % GRÜN / Alpha −0,315 pp NEG / DD −3,700 % GRÜN / Weekly KW33 Tag 3 −0,155 % GRÜN / Kauf-Slots KW33 0/2 OFFEN
 
 ### Alpaca /v2/account Close 16:04 ET
