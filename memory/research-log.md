@@ -4,6 +4,33 @@
 
 ---
 
+## 2026-08-13 Market Close 16:00 ET (KW33 Tag 4 Do) — Watchlist Fr 14.08.
+
+**Perplexity Sektor-Momentum-Query (Top 5 US large-cap momentum, 3m RS vs SPY):**
+- Top-5-Universum: DELL / HPE / PANW / NTAP / CRL — 4 von 5 XLK Tech, 1 Health Care.
+- Momentum-Treiber: AI-Server/Enterprise (DELL, HPE, NTAP), Cybersecurity (PANW), Earnings-Rebound (CRL).
+
+**K1-K3-Check via Alpaca Bars (Close 13.08.):**
+- **DELL** — 494,26 $ | EMA50 404,29 > EMA200 234,70 (K1 ✓) | RSI14 62,48 (K2 ✓ 50-70) | RS_63d **+97,77 pp** #1 (K3 ✓) → **TOP-KANDIDAT alle 3 ✓**, K4/K5 morgen bei Market Open
+- HPE — 59,81 $ | EMA50 47,12 > EMA200 31,53 (K1 ✓) | RSI14 **73,78 K2 FAIL >70** | RS_63d +81,67 pp (K3 ✓) → K2-überkauft, Cooldown-Watch
+- PANW — 395,83 $ | EMA50 323,26 > EMA200 227,37 (K1 ✓) | RSI14 **72,76 K2 FAIL >70** | RS_63d +68,98 pp (K3 ✓) → K2-überkauft
+- NTAP — 205,00 $ | EMA50 168,43 > EMA200 127,01 (K1 ✓) | RSI14 **75,55 K2 FAIL >70** | RS_63d +68,04 pp (K3 ✓) → K2-überkauft
+- CRL — 281,33 $ | EMA50 227,35 > EMA200 193,83 (K1 ✓) | RSI14 **77,35 K2 FAIL >70** | RS_63d +67,95 pp (K3 ✓) → K2-überkauft (Health Care, XLV-Sektor-Cap-Check nötig: aktuell 20 % + CRL würde XLV-Erhöhung)
+
+**Watchlist morgen (Pre-Market K5 + Market Open K4):**
+- **DELL** (XLK, AI-Server-Momentum) — einziger K1-K3-vollqualifizierter Kandidat
+- HPE / PANW / NTAP / CRL — auf Watchlist, K2-RSI-Cooldown abwarten (Kauf frühestens bei RSI ≤ 70)
+
+**Meta-Beobachtung:** Momentum-Top-Universum dominiert von Tech-AI (4 von 5), zeigt anhaltende Sektorrotation. XLK-Sektor-Cap 30 % noch weit entfernt (aktuell 9,81 % AAPL); DELL-Kauf würde XLK auf ~19,7 % erhöhen. Bei DELL K4/K5 ✓ morgen → Buy-Signal (Slot 1/2 KW33 frei nach MU-Expiry).
+
+**SPY-Kontext:** SPY Close 777,84 vs Mi 772,54 = **+0,686 %** (Broad-Market-Rally-Tag, Portfolio flat verpasst Aufwärtsimpuls via UNH/LLY-Weakness).
+
+**Perplexity-Queries heute Close:** 2 (SPY-Tagesperf, Sektor-Momentum). Gesamt heute (inkl. Pre/Open/Midday): ca. 6 Queries.
+
+---
+
+---
+
 ## Market Open 09:47 ET — 2026-08-13 (Do, KW33 Tag 4) — Daily +0,094 % GRÜN / Alpha −0,354 pp NEG intraday / DD −3,600 % GRÜN / Weekly −0,050 % GRÜN / **Kauf-Slot 1 IN PROGRESS: MU-Buy-Order platziert**
 
 ### SPY Live 09:47 ET

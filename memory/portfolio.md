@@ -1,5 +1,42 @@
 # Portfolio Status
 
+**Market Close 16:00 ET 13.08.2026 (KW33 Tag 4 Do) — Tagesbilanz:**
+Gesamtwert:     96.367,92 $   (Alpaca equity Close)
+Cash:           56.707,49 $   (58,84 %)
+Investiert:     39.660,43 $   (41,16 %)  — AAPL 9.455,31 / JPM 1.091,21 / LLY 9.680,00 / UNH 9.577,68 / V 9.857,16
+P/L heute:        −5,60 $     (−0,006 %)   [GRÜN, Cap −3 %; last_equity 96.373,52]
+Alpha vs SPY:    −0,69 pp     (SPY Alpaca Close 777,84 vs Mi 772,54 = **+0,686 %**; Portfolio flat verpasst Broad-Market-Aufwärtsimpuls)
+ATH:           100.066,47 $   (unverändert)
+Drawdown:        −3,696 %     [GRÜN, verbessert vs Midday −3,779 %; Schwelle −15 % bei 85.056 $]
+Guardrails:     Daily −0,006 % | Weekly KW33 Tag 4 vs Fr-Close 96.512,65 = **−0,150 % GRÜN** | Käufe 0/2 KW33 (MU-Slot EXPIRED, 2/2 OFFEN) | VIX n/a Close | Crash-Filter NEIN | DD GRÜN
+
+Positions-Übersicht (5/8, Ø-P/L +1,50 % ungewichtet, +0,020 % gewichtet):
+- **JPM +9,30 % BEST** (363,7365 $, chg −0,40 %, 3 Sh, MV 1.091,21, entry 332,78)
+- V +2,21 %      (365,08 $,   chg +1,58 %, 27 Sh, MV 9.857,16, entry 357,18)
+- LLY +1,35 %    (1210,00 $,  chg −0,84 %, 8 Sh, MV 9.680,00, entry 1193,89)
+- UNH −0,62 %    (399,07 $,   chg −1,61 %, 24 Sh, MV 9.577,68, entry 401,57)
+- **AAPL −3,74 % WORST** (305,01 $, chg +0,91 %, 31 Sh, MV 9.455,31, entry 316,86, verbessert vs Midday −4,37 %)
+
+Vollständiger V1-V6 Signalcheck (Close-Daten Alpaca IEX):
+- **V1 Stop-Loss −8 % vs Entry alle 5 SICHER (min AAPL +4,63 % Puffer):** AAPL Thr 291,51 Puffer +4,63 %; JPM Thr 306,16 +18,80 %; LLY Thr 1098,38 +10,17 %; UNH Thr 369,44 +8,02 %; V Thr 328,60 +11,10 %
+- **V2 Trailing −12 % vs 52w-Hoch (Close-Referenz):** AAPL Thr via 344,555 = 303,21 → **+0,590 % SICHER** (verbessert vs Midday BROKEN, DQF-Verlauf-Ende); UNH Thr via Wick 460,95 = 405,636 → **−1,619 % BROKEN 15. Tag DQF persistent**, Alt-V2 via 437,13 = 384,67 Puffer **+3,74 % SICHER**, Std-V1 primär +8,02 %; JPM +12,00 % SICHER; LLY +9,63 % SICHER; V +9,66 % SICHER
+- **V3/V4 Gewinn-Take-Profit:** max JPM +9,30 % << 20 %-TP1 → kein Trigger
+- **V5 Death Cross (EMA50<EMA200):** AAPL 309,17/280,52 ✗; JPM 340,47/315,80 ✗; LLY 1153,21/1039,15 ✗; UNH 406,94/349,65 ✗; V 350,74/333,06 ✗ → **ALLE NEGATIV, kein Trigger**
+- **V6 RSI>80 UND RS4w<0:** AAPL RSI 43,07 ✗; JPM 65,57 ✗; LLY 55,79 ✗; UNH 40,24 ✗; V 57,11 ✗ → **ALLE NEGATIV, kein Trigger**
+
+V5/V6-Aktion: **KEINE Sell-Orders für Fr 14.08.** (alle Death-Cross- und Überkauft-Signale negativ)
+
+MU-Order-Status: **EXPIRED ohne Fill** (Order-ID 4df018b2, Day-Order abgelaufen 20:00 UTC; filled_qty 0; Limit 915,86 nie erreicht, MU handelte intraday im Bereich ~971 $ +6,08 % über Limit). Slot 1/2 KW33 wieder OFFEN → 2/2 offen für Fr/Mo.
+
+Sektor-Struktur Close: XLV **20,00 %** (UNH 9,94 + LLY 10,05), XLF **11,36 %** (JPM 1,13 + V 10,23), XLK **9,81 %** AAPL, Cash 58,84 %
+Weekly Loss Cap: −0,150 % vs Cap −5 % → weit entfernt, keine Sperrauslösung.
+Perplexity: **2 Queries Close** (SPY-Tagesperf, Watchlist-Sektor-Momentum).
+ClickUp Prio 4 [CLOSE Tagesbilanz]-Task: Fallback zu Prio-Alert Prio 3 nur bei negativer Performance; heute leicht negativ (−0,006 %) → Prio 3.
+PushNotification: **JA (CLOSE Silence-Signal-Ausnahme)** — MU-Order EXPIRED ohne Fill (Slot verbraucht ohne Kaufumsetzung, Owner-Info über Fehlkauf-Wochenverlauf 4. Kauflos-Tag), plus Watchlist-Kandidat DELL K1-K3 ✓ als handlebarer Kauflos-Ersatz für Fr.
+Nächster Check: **Fr 14.08. 08:30 ET Pre-Market KW33 Tag 5** — DELL K5-Fundamentals (FwdPE/RevYoY), Watchlist HPE/PANW/NTAP/CRL K2-RSI-Cooldown-Watch, AAPL V2-DQF-Verlauf, UNH V2-DQF-Verlauf (15. Tag Owner-Entscheidung pending).
+
+---
+
 **Midday 13:22 ET 13.08.2026 (KW33 Tag 4 Do):**
 Positionen: 5/8 | Ø P/L: **+1,51 %** (JPM +9,22 Best / LLY +1,84 / V +1,02 / UNH −0,17 / AAPL −4,37 Worst)
 Beste Position: **JPM +9,22 %** (363,47 $ Alpaca latestTrade IEX 13:22 ET)
