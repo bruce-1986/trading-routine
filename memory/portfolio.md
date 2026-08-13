@@ -1,5 +1,40 @@
 # Portfolio Status
 
+**Market Open 09:47 ET 13.08.2026 (KW33 Tag 4 Do):**
+Gesamtwert:     96.464,14 $   (Alpaca equity live)
+Cash:           56.707,49 $   (58,79 %, unverändert vor Fill)
+Investiert:     39.756,65 $   (41,21 %)  — AAPL 9.409,585 / JPM 1.092,03 / LLY 9.806,08 / UNH 9.728,04 / V 9.721,62
+P/L Open:         +90,62 $   (+0,094 % vs last_equity 96.373,52)   [GRÜN, Cap −3 %]
+Alpha vs SPY:    −0,354 pp   (SPY Alpaca latestTrade IEX 776,00 vs Mi Close 772,54 = +0,448 %; Portfolio +0,094 % underperformt intraday-Rauschen ~13 min Session)
+ATH:           100.066,47 $   (unverändert)
+Drawdown:        −3,600 %     [GRÜN, verschlechtert vs Pre −3,485 %; Schwelle −15 % bei 85.056 $]
+Guardrails:     Daily +0,094 % | Weekly KW33 Tag 4 vs Fr-Close 96.512,65 = −0,050 % | Käufe 0/2 KW33 (Slot 1 IN PROGRESS) | VIX 14,69 | Crash-Filter NEIN | DD GRÜN
+V1/V2 Live-Check (V5/V6 nur Close):
+- AAPL 303,535 (chg +0,44 %, P/L −4,20 % **Worst**): V1 Std **+4,13 % ENGSTE** (Thr 291,51); V2 **+0,108 % via 52w-Wick 344,555** (Thr 303,21) DQF **3. Tag technisch aus BROKEN raus** vs Pre −0,020 %; V5/V6 nur Close.
+- JPM 364,01 (chg −0,32 %, P/L +9,38 % **Best**): V1 +18,90 % (Thr 306,16); V2 +12,40 % via Wick 368,00 = Thr 323,84 (NEUES Hoch Pre-Market 368,00 fortgeschrieben); V5/V6 nur Close.
+- LLY 1225,76 (chg −0,15 %, P/L +2,67 %): V1 +11,60 % (Thr 1098,38, **Std-V1 primär**); V2 +11,56 % via 52w-High 1248,53 (Thr 1098,71); V5/V6 nur Close.
+- UNH 405,335 (chg −0,29 %, P/L +0,94 %): V1 +9,72 % (Thr 369,44); V2 **−0,074 % BROKEN razor** via Wick 460,95 (Thr 405,636) DQF **14. Tag persistent** — Alt-V2 via 437,13 = 384,67 Puffer **+5,37 % SICHER**; V5/V6 nur Close.
+- V 360,06 (chg −0,66 %, P/L +0,81 %): V1 +9,57 % (Thr 328,60); V2 +9,41 % via 373,97 (Thr 329,09); V5/V6 nur Close.
+V-Trigger Open: **V1 Std alle 5 SICHER** (min AAPL +4,13 %) | **V2:** AAPL technisch AUS BROKEN RAUS +0,108 % (verbessert), UNH DQF razor BROKEN −0,074 % (Alt-V2 +5,37 % + Std-V1 +9,72 % primär) → Rule 5 No-Action | V3/V4 max JPM +9,38 % << 20 % | V5/V6 nur Close.
+**Order-Aktion Open:** **BUY LIMIT MU 10 Shares @ 915,86 $ Day-Order platziert** (Order-ID 4df018b2-a2b8-4da8-8ca5-6f5598df0666, Status NEW, filled_qty 0) — Preis Live 931,68 $ liegt +2,24 % über Vortagesschluss 911,30 $, Regel-Limit +0,5 % nur bei intraday-Rücksetzer erreichbar.
+**Kauf-Kandidaten-Scan (K1-K5) — 7 Kandidaten Alpaca-Bars + Perplexity K5:**
+- **MU (XLK) K1-K5 ALLE ✓ TOP-KANDIDAT**: EMA50 888,33>EMA200 592,99 ✓ | RSI 50,7 ✓ | RS +14,10 pp ✓ | K4 135,9 % Avg20 Extrapol Session-Elapsed 3,33 % ✓ | **K5 FwdPE 5,55 ≤35 UND RevYoY +45,70 % ≥10 % ✓** — Earnings 23.09. (>3 HT), XLK-Sektor-Post-Kauf 19,25 % (unter 30 %-Cap), Cash-Post 49,29 % (>20 %), Pos-Post 6/8 → **Buy-Order platziert**
+- **CVX (XLE) K1-K4 ✓ K5 FAIL**: EMA/RSI 60,4/RS +1,77 pp/K4 225,9 % Avg20 alle ✓ — **K5 RevYoY −0,13 % <10 % FAIL** → REJECT
+- **GE (XLI) K1-K3 ✓ K4 FAIL 102 %**: RS +17,97 pp stark, K4 knapp unter 120 %-Threshold — Watchlist Midday
+- **UAL (XLI) K1-K3 ✓ K4 FAIL 4,3 %**: RS +25,60 pp #1 aber K4 12. Tag persistent → Watchlist
+- **UNP (XLI) K1-K3 ✓ K4 FAIL 18,2 %**: RS +6,20 pp — Watchlist
+- **XOM (XLE) K1-K3 ✓ K4 FAIL 63 %**: RS +1,85 pp, RSI 65,5 upper — Watchlist
+- **BA (XLI) K3 FAIL −7,32 pp**: REJECT
+- **NEE/SO (XLU) K2 <50 FAIL**: REJECT
+Sektor-Struktur Live: XLV **20,17 %** (UNH 10,08 + LLY 10,17), XLF **11,24 %** (JPM 1,13 + V 10,08), XLK **9,75 %** AAPL (Post-MU-Fill: 19,25 %), Cash 58,79 %.
+Weekly Loss Cap: −0,050 % vs Cap −5 % → weit entfernt, kein Sperrauslöser.
+Perplexity: **2 Queries** (Sektor-Momentum XLE/XLU/XLI, MU+CVX K5-Fundamentals) — Sektor-Ranking mit teilw. Silence-Bias 7. Mal Serie, K5-Zahlen belastbar.
+ClickUp Prio 3 [MARKET-OPEN TRADE_BUY] Task versucht — **ITEM_246 "Max usage for custom task types reached" 15. Tag persistent** → Fallback Memory-Only per notify-skill.md.
+PushNotification: **JA (TRADE_BUY)** — MU-Buy-Order platziert nach 4-Tage-Serie ohne handelbaren Kaufkandidaten; Owner-Info über neuen XLK-Kandidat + Slot-Beanspruchung, obwohl Fill ungewiss (Limit −1,7 % unter Live-Preis).
+Nächster Check: **Do 13.08. 13:00 ET Midday Stop-Check KW33 Tag 4** — MU-Order-Fill-Status, AAPL V2-DQF-Verlauf, UNH V2-DQF-Verlauf, GE K4-Vol-Nachmittags-Rebound-Watch.
+
+---
+
 **Pre-Market 08:32 ET 13.08.2026 (KW33 Tag 4 Do):**
 Gesamtwert:     96.578,84 $
 Cash:           56.707,49 $  (58,72 %)
