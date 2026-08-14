@@ -1,5 +1,27 @@
 # Portfolio Status
 
+**Midday 13:11 ET 14.08.2026 (KW33 Tag 5 Fr):**
+Positionen: 5/8 | Ø P/L: **+1,23 %** ungewichtet (JPM +8,96 Best / V +2,16 / UNH −0,11 / LLY −1,25 / AAPL −3,61 Worst)
+Beste Position: **JPM +8,96 %** (362,53 $ Alpaca latestTrade IEX 13:11 ET)
+Schlechteste Position: **AAPL −3,61 %** (305,40 $, verbessert vs Open −3,42 %)
+Stops V1-V4 Live-Check (V5/V6 nur Close-Vollcheck):
+- **V1 Std alle 5 SICHER Puffer eng→weit:** **AAPL +4,77 % ENGSTE Std verbessert vs Open +4,97 %** (305,40 chg +0,05 %, Std-V1 291,51 primär), **LLY +7,30 %** (1178,59 chg **−2,49 % Worst chg**, P/L −1,25 % verschlechtert vs Open −0,91 %, **Std-V1 1098,38 primär**), UNH +8,58 % (401,09 chg +0,52 %, P/L −0,11 % verbessert vs Open −0,24 %), V +11,02 % (364,795 chg −0,15 %, P/L +2,16 % verbessert vs Open +2,08 %), **JPM +18,42 %** (362,53 chg −0,14 %, **Best P/L +8,96 %** verschlechtert vs Open +9,63 %)
+- **V2-Trailing-Stop:** **⚠️ AAPL V2 razor +0,72 % via Wick 344,555 = Thr 303,21** verschlechtert vs Open +0,92 % (52w-Wick DQF-flagged wie UNH; Std-V1 +4,77 % ENGSTE primär sicher, V2 sekundär via DQF; **4. Tag technisch aus BROKEN raus**); **⚠️ UNH V2 BROKEN Puffer −1,13 % via Wick 460,95 = Thr 405,636 verbessert vs Open −1,24 %** (**16. Tag DQF persistent** — Alt-V2 via 437,13 = 384,67 Puffer **+4,27 % SICHER**, Std-V1 +8,58 % primär sicher, Owner-Entscheidung pending); JPM +11,94 % via Wick 368,00 (Thr 323,84) sicher, LLY +7,27 % via 52w-High 1248,53 (Thr 1098,71) sicher, V +10,85 % via 373,97 (Thr 329,09) sicher
+- **V3/V4:** max P/L JPM +8,96 % << 20 %-TP1 → kein Trigger
+- **V5/V6:** nur Close-Vollcheck
+Daily P/L: **−0,210 % [GRÜN, Cap −3 %]** (Equity Live **96.174,27 $** vs last_equity 96.376,47 = −202,20 $; MV 39.466,78 $ / Cash 56.707,49 $ = **58,96 %**; DD vs ATH 100.066,47 = **−3,890 % GRÜN** verschlechtert vs Open −3,859 %; Weekly KW33 Tag 5 vs Fr Close 07.08. 96.512,65 = **−0,351 % GRÜN** weit von Cap −5 %, verschlechtert vs Open −0,318 %)
+Alpha vs SPY: n/a (Midday-Spec — Alpha nur Open/Close)
+V-Aktion: **KEINE Sell-Order platziert** (Rule 5 No-Action bei DQF-Wick-Anomalie fortlaufend: AAPL V2 razor via 52w-Wick 344,555 DQF Single-Print — Std-V1 +4,77 % ENGSTE primär sicher; UNH V2 16. Tag DQF Alt-V2 +4,27 % + Std-V1 +8,58 % primär sicher); 0 offene Sell-Orders bei Alpaca
+Pending Orders: **1 (MU BUY LIMIT 10 Sh @ 954,64 $ Day, Status NEW, filled_qty 0)** — Live MU 964,77 $ liegt **+1,06 % über Limit** → Fill weiter unwahrscheinlich intraday ohne Rücksetzer (2. Tag in Folge Fill-Wahrscheinlichkeit niedrig)
+Käufe KW33: 0/2 (Slot 1 IN PROGRESS via MU-Limit — Slot 2 offen — Midday KEIN Buy-Scan per Routine-Spec)
+Sektor-Struktur Live: XLV **19,82 %** (UNH 10,01 + LLY 9,81), XLF **11,38 %** (JPM 1,13 + V 10,24), XLK **9,85 %** AAPL, Cash 58,96 %
+LLY-News-Check: intraday chg **−2,49 % Worst chg heute** (verschlechtert vs Open −2,23 %) — Ursache TBD (Midday-Spec kein Perplexity, Close-Check klärt); Std-V1 Puffer +7,30 % primär sicher, kein V-Trigger.
+ClickUp Prio 1 Critical Alert: **KEIN Alert** (kein Stop-Trigger, kein Daily-Cap-Trigger — Routine-Spec Schritt 5 fordert Alert NUR bei Trigger; ITEM_246-Bug 17. Tag persistent egal)
+PushNotification: **NEIN** (Silence-Rule: kein V-Trigger, kein Cap-Alert, kein Kauf-Fill, MU-Order pending unfilled ohne Fortschritt 2. Tag, LLY −2,49 % Weakness innerhalb Std-V1-Rahmen +7,30 % sicher, UNH V2-DQF-Verlauf konsistent 16. Tag ohne Neuinfo, AAPL V2-Razor-Verschlechterung marginal innerhalb Std-V1-Rahmen +4,77 % sicher — kein Owner-Handlungsbedarf)
+Nächster Check: **Fr 14.08. 16:00 ET Market Close KW33 Tag 5** — MU-Order-Fill-Status EOD, LLY −2,49 % Weakness-Ursache-Klärung Perplexity, AAPL V2-Recovery-Verlauf, UNH V2-DQF 16. Tag, V5/V6 Vollcheck, Tagesbilanz + Wochenabschluss KW33 + Watchlist Mo 17.08.
+
+---
+
 **Pre-Market 08:30 ET (VERZÖGERT feuerte nach Market Open) 14.08.2026 (KW33 Tag 5 Fr):**
 Gesamtwert:     96.081,54 $   (Alpaca equity, −124,53 $ vs Market Open 96.206,07 durch intraday Preisbewegung)
 Cash:           56.707,49 $   (unverändert, MU-Order noch NEW unfilled Limit 954,64)
