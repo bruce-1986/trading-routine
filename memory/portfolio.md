@@ -1,5 +1,48 @@
 # Portfolio Status
 
+**Market Open 10:04 ET 14.08.2026 (KW33 Tag 5 Fr):**
+Gesamtwert:     96.206,07 $   (Alpaca equity live)
+Cash:           56.707,49 $   (58,94 %, unverändert vor Fill)
+Investiert:     39.498,58 $   (41,06 %)  — AAPL 9.486,155 / JPM 1.094,505 / LLY 9.463,80 / UNH 9.615,00 / V 9.844,47
+P/L Open:        −170,40 $   (−0,177 % vs last_equity 96.376,47)   [GRÜN, Cap −3 %, verschlechtert vs Do Close −0,006 %]
+Alpha vs SPY:    −0,267 pp   (SPY Alpaca latestTrade IEX 778,54 vs Do Close 777,84 = +0,090 %; Portfolio −0,177 % underperformt SPY marginal via LLY-Weakness −2,23 % chg)
+ATH:           100.066,47 $   (unverändert)
+Drawdown:        −3,859 %     [GRÜN, verschlechtert vs Do Close −3,696 %; Schwelle −15 % bei 85.056 $]
+Guardrails:     Daily −0,177 % | Weekly KW33 Tag 5 vs Fr 07.08. Close 96.512,65 = **−0,318 % GRÜN** | Käufe 0/2 KW33 (**Slot 1 IN PROGRESS** MU-Order, Slot 2 offen) | VIX 14,62 | Crash-Filter NEIN | DD GRÜN
+
+V1/V2 Live-Check (V5/V6 nur Close):
+- AAPL 306,005 (chg +0,33 %, P/L −3,42 % **Worst verbessert vs Close −3,74 %**): V1 Std **+4,97 % ENGSTE** (Thr 291,51); V2 **+0,92 % SICHER via Wick 344,555 (Thr 303,21) DQF 4. Tag technisch AUS BROKEN RAUS** verbessert vs Close +0,59 %; V5/V6 nur Close.
+- JPM 364,835 (chg +0,30 %, P/L +9,63 % **Best verbessert vs Close +9,30 %**): V1 +19,16 % (Thr 306,16); V2 +12,66 % via Wick 368,00 (Thr 323,84); V5/V6 nur Close.
+- LLY 1182,975 (chg **−2,23 % Worst chg**, P/L −0,91 % **verschlechtert vs Close +1,35 %** — News-Ursache TBD Midday-Check): V1 +7,70 % (Thr 1098,38, Std-V1 primär); V2 +7,67 % via 52w-High 1248,53 (Thr 1098,71); V5/V6 nur Close.
+- UNH 400,625 (chg +0,39 %, P/L −0,24 % verbessert vs Close −0,62 %): V1 +8,44 % (Thr 369,44); V2 **−1,24 % BROKEN** via Wick 460,95 (Thr 405,636) DQF **16. Tag persistent** verbessert vs Close −1,619 %, Alt-V2 via 437,13 = 384,67 Puffer **+4,15 % SICHER**; V5/V6 nur Close.
+- V 364,61 (chg −0,13 %, P/L +2,08 % verschlechtert vs Close +2,21 %): V1 +10,96 % (Thr 328,60); V2 +10,79 % via 373,97 (Thr 329,09); V5/V6 nur Close.
+
+V-Trigger Open: **V1 Std alle 5 SICHER** (min AAPL +4,97 %) | **V2:** AAPL DQF technisch AUS BROKEN RAUS +0,92 % (verbessert 4. Tag), UNH DQF razor BROKEN 16. Tag −1,24 % (Alt-V2 +4,15 % + Std-V1 +8,44 % primär) → Rule 5 No-Action | V3/V4 max JPM +9,63 % << 20 % | V5/V6 nur Close.
+
+**Order-Aktion Open:** **BUY LIMIT MU 10 Shares @ 954,64 $ Day-Order platziert** (Order-ID 3f44bf7d-abd0-4008-b6b7-7d9b83f0aed8, Status pending_new, filled_qty 0) — Preis Live 980,51 $ liegt **+2,71 % über Vortagesschluss 949,89**, Regel-Limit +0,5 % nur bei intraday-Rücksetzer ≥ −2,64 % erreichbar. **Fill-Wahrscheinlichkeit niedrig (2. Tag in Folge)** — Slot 1/2 KW33 IN PROGRESS bis EOD.
+
+**Kauf-Kandidaten-Scan (K1-K5) — 10 Kandidaten Alpaca-Bars + Perplexity K5:**
+- **MU (XLK) K1-K5 ALLE ✓ TOP-KANDIDAT gewählt**: EMA50 894,27 > EMA200 607,80 ✓ | RSI 57,05 ✓ | RS +22,05 pp ✓ | K4 194.997 / Avg20 1.126.752 = 17,3 % / Session-Elapsed 8,72 % = Extrapol **198,5 % Avg20** ✓ | K5 FwdPE 5,55 / RevYoY +45,70 % ✓ (Vortagesverifikation persistent) | Earnings 23.09.2026 (>3 HT) → **Buy-Order platziert**
+- **DELL (XLK) K1-K3 ✓ K4 FAIL 81 % + K5 UNSICHER**: EMA50 407,55 > EMA200 270,79 ✓ | RSI 62,70 ✓ | RS **+95,93 pp #1** ✓ | K4 16.826 / 238.164 = 7,07 % → Extrapol **81,1 % Avg20 FAIL** | K5 Perplexity **CONFLICT** (Query1 RevYoY +9,1 % <10 % FAIL, Query2 RevYoY +88,0 % implausibel Halluzination) → **Rule 5 No-Action bei Datenunsicherheit REJECT**
+- **PANW (XLK) K1-K4 ✓ K5 FAIL FwdPE 77,66 >>35**: EMA50 325,75 > EMA200 249,18 ✓ | RSI 67,00 (Cooldown von 72,76 gestern) ✓ | RS +58,04 pp ✓ | K4 29.460 / 279.749 = 10,5 % → Extrapol **120,8 % Avg20 ✓** | K5 **FwdPE 77,66 >>35 FAIL** → REJECT K5
+- **XOM (XLE) K1-K4 ✓ K5 pending schwaches Momentum**: EMA/RSI 65,39/RS +1,72 pp/K4 12,87 %→147,6 % ✓ — K5 nicht abgefragt (RS zu schwach vs MU/PANW/DELL) → Watchlist
+- **CVX (XLE) K1-K4 ✓ K5 FAIL persistent**: EMA/RSI/RS/K4 alle ✓ — **K5 RevYoY −0,13 % <10 % FAIL** (Vortagesverifikation) → REJECT
+- **HPE/NTAP/CRL K2 FAIL RSI >70**: HPE RSI 72,36 / NTAP RSI 74,83 / CRL RSI 76,74 → **überkauft, Cooldown-Watch**
+- **GE/UAL/UNP/BAC K4 FAIL heavy**: GE 76 % / UAL 64 % / UNP 98 % / BAC 109 % — Vol-Pace-Watch Midday
+- **NVDA (XLK) K3 FAIL −8,35 pp NEG**: RS_63 −4,01 pp vs SPY +4,34 pp → REJECT
+- **MRK (XLV) LEVEL-0 SKIP**: Sektor-Cap UNH+LLY 19,84 % → REJECT
+- **ORCL K1 FAIL Death Cross**: EMA50 149,62 < EMA200 184,82 → REJECT
+
+Sektor-Struktur Live (pre-Fill): XLV **19,84 %** (UNH 9,99 + LLY 9,84), XLF **11,37 %** (JPM 1,14 + V 10,23), XLK **9,86 %** AAPL, Cash 58,94 %.
+Sektor-Struktur Post-Fill (falls MU fill): XLK **AAPL 9.486,15 + MU 9.546,40 = 19.032,55 = 19,78 %** (unter 30 %-Cap ✓, 2 Pos <3-Max ✓); Cash Post 47.161,09 = **49,02 %** (>20 % ✓); Positionen 6/8 ✓.
+Weekly Loss Cap: −0,318 % vs Cap −5 % → weit entfernt, kein Sperrauslöser.
+Perplexity: **3 Queries** (PANW+DELL K5, DELL K5-Confirmation, VIX) — DELL K5-Konflikt +9,1 %/+88,0 % → Rule 5 REJECT, PANW K5-FAIL bestätigt, VIX 14,62 GRÜN.
+ClickUp Prio 3 [MARKET-OPEN TRADE_BUY] Task versucht — **ITEM_246 "Max usage for custom task types reached" 16. Tag persistent** → Fallback Memory-Only per notify-skill.md.
+PushNotification: **JA (TRADE_BUY)** — MU-Order 2. Versuch platziert (Slot 1 IN PROGRESS), Owner-Info über Wiederholungsmuster + DELL K5-Datenkonflikt Rule 5, LLY intraday −2,23 % Weakness (kein V-Trigger aber Watch).
+Nächster Check: **Fr 14.08. 13:00 ET Midday Stop-Check KW33 Tag 5** — MU-Order-Fill-Status, LLY −2,23 % Weakness-Ursache-Klärung, AAPL V2-Recovery-Verlauf, UNH V2-DQF 16. Tag, DELL K4-Vol-Rebound-Watch.
+
+---
+
 **Market Close 16:00 ET 13.08.2026 (KW33 Tag 4 Do) — Tagesbilanz:**
 Gesamtwert:     96.367,92 $   (Alpaca equity Close)
 Cash:           56.707,49 $   (58,84 %)

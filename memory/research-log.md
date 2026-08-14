@@ -4,6 +4,77 @@
 
 ---
 
+## Market Open 10:04 ET — 2026-08-14 (Fr, KW33 Tag 5) — Daily −0,177 % GRÜN / Alpha −0,267 pp NEG / DD −3,859 % GRÜN / Weekly −0,318 % GRÜN / **Slot 1 IN PROGRESS 2. Tag: MU-Buy-Order 2. Versuch platziert**
+
+### SPY Live 10:04 ET
+- SPY 778,54 Alpaca latestTrade IEX vs Do Close 777,84 = **+0,090 % marginal positiv** [Crash-Filter INAKTIV]
+- **Alpha vs Portfolio: −0,267 pp NEG** (Portfolio −0,177 % vs SPY +0,090 %) — LLY-Weakness −2,23 % dominant
+
+### V1/V2-Live-Check (V5/V6 nur Close)
+| Sym | Cur | chg vs Do | P/L% | V1 Std | V2 |
+|-----|-----|-----|------|--------|----|
+| AAPL | 306,005 | +0,33 | −3,42 (Worst) | **+4,97 % ENGSTE** (Thr 291,51) verbessert vs Do +4,63 % | **+0,92 % SICHER via Wick 344,555 (Thr 303,21)** DQF 4. Tag AUS BROKEN RAUS verbessert |
+| JPM | 364,835 | +0,30 | +9,63 (Best) | +19,16 % (Thr 306,16) | +12,66 % via Wick 368,00 (Thr 323,84) |
+| LLY | 1182,975 | **−2,23 (Worst chg)** | −0,91 | +7,70 % (Thr 1098,38, Std-V1 primär) | +7,67 % via 1248,53 (Thr 1098,71) |
+| UNH | 400,625 | +0,39 | −0,24 | +8,44 % (Thr 369,44) | **⚠ −1,24 % BROKEN** via Wick 460,95 (Thr 405,636) DQF **16. Tag persistent** verbessert vs Do −1,619 %, Alt-V2 via 437,13 = 384,67 Puffer +4,15 % SICHER |
+| V | 364,61 | −0,13 | +2,08 | +10,96 % (Thr 328,60) | +10,79 % via 373,97 (Thr 329,09) |
+
+### Kauf-Kandidaten-Scan K1-K5 (Broad-Scan, 10 Kandidaten)
+| Sym | Sektor | K1 | K2 (RSI) | K3 (RS_63) | K4 (Vol-Extrap 8,72% Session) | K5 (Perplexity) | Status |
+|-----|--------|-----|----------|------------|-------------------------------|-----------------|--------|
+| **MU** | XLK | ✓ 894/608 | ✓ 57,05 | ✓ +22,05 pp | ✓ 198,5 % Avg20 | **✓ FwdPE 5,55 / RevYoY +45,70 %** (Do verifiziert) | **ALLE 5 ✓ → BUY LIMIT 10 @ 954,64 $ Day-Order** |
+| DELL | XLK | ✓ 408/271 | ✓ 62,70 | ✓ **+95,93 pp #1** | **FAIL 81,1 %** | **CONFLICT** Q1 +9,1 % FAIL / Q2 +88,0 % implausibel | **REJECT Rule 5 Datenunsicherheit + K4 FAIL** |
+| PANW | XLK | ✓ 326/249 | ✓ 67,00 Cooldown | ✓ +58,04 pp | ✓ 120,8 % knapp | **FAIL FwdPE 77,66 >>35** | REJECT K5 |
+| XOM | XLE | ✓ 151/138 | ✓ 65,39 | ✓ +1,72 pp schwach | ✓ 147,6 % | nicht abgefragt | Watchlist (RS zu schwach vs MU) |
+| CVX | XLE | ✓ 187/175 | ✓ 65,40 | ✓ +4,29 pp | ✓ 180,5 % | **FAIL RevYoY −0,13 %** persistent | REJECT K5 |
+| HPE | XLK | ✓ 48/35 | **FAIL 72,36** | ✓ +70,32 pp | 128 % | — | REJECT K2 |
+| PANW-siehe oben | | | | | | | |
+| NTAP | XLK | ✓ 170/136 | **FAIL 74,83** | ✓ +66,65 pp | 85 % | — | REJECT K2 |
+| CRL | XLV | ✓ 229/195 | **FAIL 76,74** | ✓ +72,22 pp | 64 % | — | REJECT K2 |
+| GE | XLI | ✓ 352/321 | ✓ 52,81 | ✓ +20,79 pp | FAIL 76 % | — | Watchlist |
+| UAL | XLI | ✓ 121/109 | ✓ 53,28 | ✓ +27,20 pp #2 | FAIL 64 % | — | Watchlist |
+| UNP | XLI | ✓ 285/257 | ✓ 61,59 | ✓ +7,56 pp | FAIL 98 % | — | Watchlist |
+| BAC | XLF | ✓ 60/54 | ✓ 67,67 upper | ✓ +25,31 pp | FAIL 109 % knapp | — | Watchlist |
+| NVDA | XLK | ✓ 209/197 | ✓ 63,64 | **FAIL −8,35 pp** | 88 % | — | REJECT K3 |
+| MRK | XLV | ✓ 126/111 | ✓ 65,53 | ✓ +15,35 pp | 138 % | — | REJECT LEVEL-0 XLV-Cap |
+| ORCL | XLK | **FAIL 150/185 Death Cross** | 59,91 | −25,03 pp | — | — | REJECT K1 |
+
+### MU-Kauf-Details (2. Versuch)
+- Kandidat #1 unter K1-K5-Passern (nur MU alle 5 ✓; DELL K4+K5 FAIL, PANW K5 FAIL, CVX K5 FAIL, andere K2/K3/K4 FAIL)
+- K5 Perplexity Vortag: MU FwdPE **5,55** (K5 ✓), RevYoY **+45,70 %** (K5 ✓), Earnings 23.09.2026 (>3 HT weg) — persistent
+- Position-Sizing: portfolio 96.206,07 $ × 10 % (VIX 14,62 <25) = 9.620,61 $ Budget → 10 Shares @ Limit 954,64 = 9.546,40 $ Order-Wert
+- Limit-Berechnung: prev_close 949,89 × 1,005 = 954,64 $
+- **Preis-Warnung 2. Tag:** MU Live 980,51 $ = **+3,22 % über Prev-Close 949,89** → Limit +0,5 % nur bei intraday-Rücksetzer −2,64 % füllbar; Order verfällt bei Session-Close falls kein Fill. Vortag Limit 915,86 EXPIRED bei Live-Gap +6,08 %.
+- Sektor-Check Post-Fill: XLK AAPL 9.486,15 + MU 9.546,40 = 19.032,55 = **19,78 %** (unter 30 %-Cap, 2 Pos <3-Max ✓)
+- Cash Post-Fill: 47.161,09 = **49,02 %** (>20 % ✓); Positionen Post-Fill: **6/8** ✓
+- Order-ID: 3f44bf7d-abd0-4008-b6b7-7d9b83f0aed8, Status pending_new, filled_qty 0
+
+### DELL K5-Datenkonflikt (Rule 5 No-Action)
+- **Perplexity Query 1** (Standard): DELL FwdPE=21,56 / RevYoY=**+9,1 %** (<10 % FAIL) / Earnings=2026-09-03
+- **Perplexity Query 2** (Confirmation, präziser Prompt Q1 FY27): Revenue=$43,8 B / RevYoY=**+88,0 %** (implausibel für mature $100B+ company; wahrscheinlich Halluzination oder falsche Zeitperiode) / NextEarnings=2026-09-03
+- **Konflikt** 9,1 % vs 88,0 % → Rule 5 No-Action bei Datenunsicherheit → REJECT DELL heute; **DELL bleibt Top-Kandidat für Mo 17.08. bei K4-Recovery + K5-Verifikation**
+- Zusätzlich K4 FAIL heute (Extrapol 81 % bei 8,72 % Session-Elapsed) — Vol-Pace unter Threshold
+
+### Perplexity Queries Market Open
+- **Query 1 (Sonar-Pro):** PANW+DELL K5 Kompaktabfrage → **PANW FwdPE 77,66 FAIL**, DELL n/a n/a n/a
+- **Query 2 (Sonar-Pro):** DELL Fundamentals detailliert → FwdPE 21,56, **RevYoY +9,1 %** (<10 % FAIL), Earnings 2026-09-03
+- **Query 3 (Sonar-Pro):** DELL Q1 FY27 Detail → Revenue $43,8B, **RevYoY +88,0 %** (Halluzinationsverdacht), NextEarnings 2026-09-03
+- **Query 4 (Sonar):** VIX current → **14,62** (GRÜN, <25)
+- Meta: DELL-K5-Datenkonflikt persistent Halluzinationsbias 8. Mal Serie → Rule 5 REJECT
+
+### Guardrails Live
+- **8/8 GRÜN + 2 WARN** (UNH V2 DQF 16. Tag persistent BROKEN −1,24 % — Alt-V2 +4,15 % + Std-V1 +8,44 % primär, Owner pending 15 Tage; AAPL V2 DQF 4. Tag technisch AUS BROKEN RAUS +0,92 % — Std-V1 +4,97 % ENGSTE primär)
+- Daily −0,177 % / Weekly −0,318 % / DD −3,859 % / Crash INAKTIV / VIX 14,62 / Positionen 5/8 (Post-Fill 6/8) / Käufe-Slots 0/2 (Slot 1 IN PROGRESS 2. Tag)
+
+### Notification & ClickUp
+- ClickUp Prio 3 [MARKET-OPEN TRADE_BUY] Task versucht → **ITEM_246 16. Tag persistent** → Fallback Memory-Only per notify-skill.md
+- **PushNotification: JA (TRADE_BUY)** — MU-Order 2. Versuch platziert (Wiederholungsmuster ohne Fill-Aussicht), Owner-Info + DELL K5-Datenkonflikt Rule 5 + LLY −2,23 % Weakness ohne V-Trigger
+
+### Nächster Check
+**Fr 14.08. 13:00 ET Midday Stop-Check KW33 Tag 5** — MU-Order-Fill-Status, LLY Weakness-Ursache-Klärung (News), AAPL V2-Recovery-Verlauf, UNH V2-DQF-16. Tag-Watch, DELL K4-Vol-Rebound-Watch
+
+---
+
 ## 2026-08-13 Market Close 16:00 ET (KW33 Tag 4 Do) — Watchlist Fr 14.08.
 
 **Perplexity Sektor-Momentum-Query (Top 5 US large-cap momentum, 3m RS vs SPY):**
