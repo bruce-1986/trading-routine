@@ -1,5 +1,47 @@
 # Portfolio Status
 
+**Wochenabschluss KW33 — 14.08.2026 (Weekly Review 17:00 ET):**
+Gesamtwert:       96.193,19 $   (Alpaca /v2/account equity live 17:00 ET, +0,93 $ vs Close 16:00 ET 96.192,26)
+Cash:             56.707,49 $   (58,95 %)
+Investiert:       39.485,70 $   (41,05 %)  — AAPL 9.478,54 / JPM 1.087,20 / LLY 9.440,00 / UNH 9.646,56 / V 9.833,40
+Wochenrendite:    **-0,331 %**   (vs Depot Fr 07.08 Close 96.512,65)
+SPY-Woche:        **+0,406 %**   (Alpaca IEX 07.08 Close 773,16 → 14.08 Close 776,30)
+**Alpha KW33:**   **-0,737 pp NEG**
+YTD Rendite:      **-3,807 %**   (vs Startkapital 100.000)
+YTD SPY:          **+13,857 %**  (Alpaca IEX YE25 681,82 → 776,30)
+**YTD Alpha:**    **-17,664 pp NEG** (75 Bot-Tage seit Init 31.05.26)
+ATH:             100.066,47 $   (unverändert)
+Drawdown:         -3,872 %      [GRÜN, Schwelle -15 % bei 85.056 $]
+Offene Positionen: 5/8
+Nächste Woche max. Käufe: 2 (Slot 1 + 2 offen für KW34)
+Watchlist KW34:   DELL (XLK #1 K5 NEU-verifiziert FwdPE 24.94/RevYoY +29.27%/MCap 317.82Mrd/Earnings 03.09.), MU (XLK #2 Limit-Regel-Klärung), XOM (XLE tertiär K4/K5 Mo), GE (XLI tertiär K4/K5 Mo), NVDA (XLK Blackout-SKIP-Risk Earnings 26.08.), CRM (XLK Blackout-SKIP 26.08.), ORCL (XLK K1-Recheck), Neue Pipelines XLY/XLC (AMZN/TSLA/HD/GOOGL/META/DIS/NFLX Multi-Source-Check Mo)
+
+Trades KW33 (Mo 11.08.–Fr 14.08. 4 HT):
+- Käufe: **0/2 final** (MU-Slot 3× EXPIRED ohne Fill: 12.08./13.08./14.08. — Limit-Preis-Regel +0,5 % strukturell unerreichbar bei Momentum-Setup)
+- Verkäufe/Stops: **0** (V1-V6 alle 5 SICHER EOD-Vollcheck Fr)
+- Win-Rate: n/a (0 geschlossene Trades)
+- Ø Haltedauer offene Positionen: **UNH 42 HT (18.06.)** / **JPM 42 HT (17.06.)** / **LLY 28 HT (06.07.)** / **AAPL 23 HT (13.07.)** / **V 18 HT (20.07.)** — Ø ~31 HT
+
+Sektor-Struktur (Portfolio-Basis):
+- XLV: **19,84 %** (UNH 10,03 + LLY 9,81) — <30 % OK, aber investiert-Basis 48,34 % (Owner-Klärung 5. Woche pending)
+- XLF: **11,35 %** (JPM 1,13 + V 10,22)
+- XLK: **9,85 %** (AAPL nur)
+- Cash: 58,95 %
+
+Sektor-Ranking KW33 (Perplexity vs SPY +0,41 %):
+- **#1 XLK +5,46 % (Alpha +5,05 pp)** — Portfolio-Exposure nur AAPL 9,85 % → fing Rally kaum ab
+- **#2 XLY +5,08 % (+4,67 pp)** — Portfolio 0 % Exposure
+- **#3 XLC +4,32 % (+3,91 pp)** — Portfolio 0 % Exposure
+- XLI +3,57 % / XLF +1,42 % / XLB +1,03 % / XLV +0,57 % / XLP -0,42 % / XLRE -1,08 % / XLE -1,36 % / XLU -2,87 %
+
+Strategie-Status:    **STABIL** — alle Regeln (V1-V6/K1-K5/Blackout/Weekly-Cap/Cascade-Framework) regelkonform. 3 Diskussions-Punkte KW34 dringend: (1) XLV-Sektor-Cap-Deutung 5. Woche pending, (2) MU-Limit-Preis-Regel +0,5 % strukturell unerreichbar Momentum, (3) Cash-Quote 58,95 % vs 5-Wochen-SPY-Rally-Alpha-Loss.
+
+ClickUp Weekly Report: **[WEEKLY] Review KW33 — 14.08.2026** Prio 3 versucht — ITEM_246 Persistenz-Fallback Memory-Only per notify-skill.md möglich.
+PushNotification: **JA** (Weekly-Silence-Ausnahme: KW33-Wochenabschluss, YTD-Alpha -17,664 pp expandiert, 3 Owner-Diskussions-Punkte für KW34).
+Nächster Check: **Mo 17.08. 08:30 ET Pre-Market KW34 Tag 1** — DELL K4-Volcheck (K5 heute NEU-verifiziert), MU-Limit-Strategie Owner-Entscheidung, XOM/GE K4/K5, AAPL V2-DQF-Verlauf, UNH V2-DQF 18. Tag, LLY-News-Monitoring Orforglipron-Fortsetzung.
+
+---
+
 **Market Close 16:00 ET 14.08.2026 (KW33 Tag 5 Fr) — Tagesbilanz + Wochenabschluss KW33:**
 Gesamtwert:     96.192,26 $   (Alpaca equity Close)
 Cash:           56.707,49 $   (58,95 %)
