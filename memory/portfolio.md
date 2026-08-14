@@ -1,5 +1,23 @@
 # Portfolio Status
 
+**Pre-Market 08:30 ET (VERZÖGERT feuerte nach Market Open) 14.08.2026 (KW33 Tag 5 Fr):**
+Gesamtwert:     96.081,54 $   (Alpaca equity, −124,53 $ vs Market Open 96.206,07 durch intraday Preisbewegung)
+Cash:           56.707,49 $   (unverändert, MU-Order noch NEW unfilled Limit 954,64)
+Investiert:     39.374,05 $   (Long MV)
+P/L vs Last Eq:  −294,93 $    (−0,306 % vs 96.376,47)   [GRÜN Cap −3 %]
+ATH:           100.066,47 $   (unverändert)
+Drawdown:        −3,984 %     [GRÜN, Schwelle −15 % bei 85.056 $]
+Weekly:         −0,446 %      vs Fr 07.08. Close 96.512,65   [GRÜN Cap −5 %]
+Guardrails: 8/8 GRÜN | VIX **14,49** GRÜN | SPY intraday +0,05–0,10 % | 10Y 4,65 % | Crash-Filter NEIN | Käufe 0/2 KW33 Slot 1 IN PROGRESS MU
+Earnings-Blackouts: **KEINE** (AAPL/JPM/LLY/UNH/V alle Oktober 2026, kein 3-HT-Window aktiv → Standard Stops −8 %)
+Makro-Event heute: U Mich Consumer Sentiment Prelim (Aug, Prior 55,2, Neue Zahl TBA) — kein CPI/PPI/Fed
+**⚠️ Routine-Timing-Anomalie:** Pre-Market-Check feuerte NACH Market Open (10:04 ET-Log bereits vorhanden). Cron `30 12 * * 1-5` konfigurationsseitig prüfen — Ergebnisse dieses Pre-Market-Checks können Market-Open-Kaufentscheidung nicht mehr beeinflussen. Guardrails-Verifikation trotzdem durchgeführt: alle GRÜN.
+ClickUp Prio 4 [PRE-MARKET] Task: **ITEM_246 "Max usage for custom task types reached" 17. Tag persistent** → Fallback Memory-Only per notify-skill.md.
+PushNotification: **JA (Silence-Ausnahme: Routine-Timing-Anomalie + Owner-Info Cron-Prüfung nötig)** — Guardrails-Health-Ampel GRÜN, aber Routine-Konfiguration erfordert Owner-Aktion.
+Nächster Check: **Fr 14.08. 13:00 ET Midday Stop-Check KW33 Tag 5**
+
+---
+
 **Market Open 10:04 ET 14.08.2026 (KW33 Tag 5 Fr):**
 Gesamtwert:     96.206,07 $   (Alpaca equity live)
 Cash:           56.707,49 $   (58,94 %, unverändert vor Fill)
