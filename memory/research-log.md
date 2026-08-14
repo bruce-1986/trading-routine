@@ -4,6 +4,66 @@
 
 ---
 
+## Pre-Market 08:30 ET (verzögert) — 2026-08-14 (Fr, KW33 Tag 5) — **TIMING-ANOMALIE: Routine feuerte NACH Market Open (10:04 ET)** — Daily −0,306 % GRÜN / VIX 14,49 GRÜN / DD −3,984 % GRÜN / Weekly −0,446 % GRÜN
+
+### ⚠️ Routine-Timing-Warnung
+- Cron `30 12 * * 1-5` = 08:30 ET geplant, aber Routine feuerte NACH Market Open (10:04 ET Log bereits vorhanden mit MU-Buy-Order platziert)
+- Ursache: unklar (Cron-Fehlkonfiguration oder Scheduler-Verzögerung) — Pre-Market-Ergebnisse können Market-Open-Kaufentscheidung nicht mehr beeinflussen
+- Aktion: Datenaufnahme trotzdem durchgeführt (Guardrails-Verifikation, Earnings-Blackout, VIX), Owner-Info via Push
+
+### Alpaca Account-Status (nach Market Open)
+- Portfolio Value: **96.081,54 $** (vs Memory Market Open 96.206,07 = **−124,53 $ / −0,129 % intraday**)
+- Cash: 56.707,49 $ (unverändert, MU-Order noch nicht gefillt)
+- Equity: 96.081,54 $ | Long MV: 39.374,05 $
+- Last Equity: 96.376,47 → Daily P/L **−294,93 $ = −0,306 % GRÜN** (Cap −3 % weit entfernt)
+- **Konsistenz:** Memory vs Alpaca stimmig — Änderung erklärbar durch intraday Preisbewegung Positionen
+
+### Perplexity Macro Check
+- **VIX: 14,49 / 14,55 / 14,62** (Yahoo Finance, Cboe, MarketWatch) → **GRÜN <25**, 52w-Range 13,38–35,30
+- **SPY:** ~778 $ intraday **+0,05–0,10 %** (Barchart, Trefis: 778,13) → kein Crash-Filter-Trigger
+- **10Y Treasury:** ca. 4,65 % (Tradingeconomics, WSJ)
+- **Makro-Event heute:** U Mich Consumer Sentiment Prelim August (Prior 55,2, Neue Zahl TBA) — kein Fed, kein CPI, kein PPI, kein Retail-Sales
+- **Top-News:** SPY nahe Rekord, 10Y beruhigt sich nach 4,75 %-Hoch vor 2 Sessions, VIX bleibt niedrig
+- Perplexity-Queries: 2 (Macro-Check, Earnings-Blackout)
+
+### Earnings-Blackout-Check (offene Positionen 14.–19.08.)
+| Symbol | Nächstes Earnings-Datum | Blackout aktiv (3 HT vor)? | Stop |
+|--------|------------------------|---------------------------|------|
+| AAPL   | ~Oktober 2026 (Q4)     | NEIN                      | Standard V1 −8 % |
+| JPM    | 13.10.2026 Q3 BMO      | NEIN                      | Standard V1 −8 % |
+| LLY    | ~November 2026 (Q3, Q2 am 05.08. bereits raus) | NEIN                      | Standard V1 −8 % |
+| UNH    | ~15.–16.10.2026 (est. Q3) | NEIN                      | Standard V1 −8 % |
+| V      | Ende Oktober 2026 (Q4)  | NEIN                      | Standard V1 −8 % |
+- **Ergebnis:** KEINE Earnings-Blackouts in nächsten 3 Handelstagen → keine Stop-Anpassung nötig
+
+### Guardrails-Status (8/8 GRÜN + 2 WARN aus Market-Open-Kontext übernommen)
+- **1. Daily Loss Cap −3 %:** −0,306 % GRÜN (weit entfernt)
+- **2. Weekly Loss Cap −5 %:** vs Fr Close 96.512,65 = **−0,446 % GRÜN**
+- **3. Drawdown-Alarm −15 % ATH:** vs ATH 100.066,47 = **−3,984 % GRÜN** (Schwelle bei 85.056,50)
+- **4. Drawdown-Stopp −20 %:** −3,984 % weit von −20 % (Schwelle 80.053)
+- **5. Crash-Filter SPY −5 %:** INAKTIV (SPY heute +0,05–0,10 %, gestern +0,686 % Rally)
+- **6. VIX-Filter VIX > 30:** VIX 14,49 → **GRÜN**, keine Kaufsperre
+- **7. Earnings-Blackout:** KEINE Position betroffen in nächsten 3 HT
+- **8. Max. Käufe/Woche 2:** Slot 1 IN PROGRESS via MU-Order (unfilled), Slot 2 offen
+- **WARN 1:** UNH V2 DQF 16. Tag persistent BROKEN −1,24 % (Alt-V2 +4,15 % + Std-V1 +8,44 % primär, Owner pending)
+- **WARN 2:** AAPL V2 DQF 4. Tag technisch AUS BROKEN RAUS +0,92 % (Std-V1 +4,97 % ENGSTE primär)
+
+### MU-Order-Status (Pre-Market-Check post-hoc)
+- **Order-ID:** 3f44bf7d-abd0-4008-b6b7-7d9b83f0aed8
+- **Status:** NEW (unfilled), Limit 954,64 $, expires 20:00 UTC heute
+- MU intraday-Preis nicht abgefragt (Pre-Market-Spec)
+- Slot 1 IN PROGRESS bleibt, Slot 2 offen für Mo 17.08. bei DELL K5-Rekonziliation
+
+### Entscheidung Pre-Market
+- **Kaufscan bei Market Open: N/A** — Market Open ist bereits abgeschlossen (MU-Order platziert 10:04 ET)
+- **Keine Rekurs-Aktion nötig** — alle Guardrails GRÜN, keine Notfall-Anpassung
+- **Owner-Info:** Timing-Anomalie zur Cron-Prüfung (Pre-Market vor Market Open erwartet)
+
+### Nächster Check
+**Fr 14.08. 13:00 ET Midday Stop-Check KW33 Tag 5** — MU-Order-Fill-Status, LLY Weakness-Ursache, AAPL V2-Recovery, UNH V2-DQF 16. Tag
+
+---
+
 ## Market Open 10:04 ET — 2026-08-14 (Fr, KW33 Tag 5) — Daily −0,177 % GRÜN / Alpha −0,267 pp NEG / DD −3,859 % GRÜN / Weekly −0,318 % GRÜN / **Slot 1 IN PROGRESS 2. Tag: MU-Buy-Order 2. Versuch platziert**
 
 ### SPY Live 10:04 ET
