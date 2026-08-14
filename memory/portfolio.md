@@ -1,5 +1,62 @@
 # Portfolio Status
 
+**Market Close 16:00 ET 14.08.2026 (KW33 Tag 5 Fr) — Tagesbilanz + Wochenabschluss KW33:**
+Gesamtwert:     96.192,26 $   (Alpaca equity Close)
+Cash:           56.707,49 $   (58,95 %)
+Investiert:     39.484,77 $   (41,05 %)  — AAPL 9.477,32 / JPM 1.088,52 / LLY 9.441,28 / UNH 9.645,60 / V 9.832,05
+P/L heute:       −184,21 $   (**−0,191 %** vs last_equity 96.376,47)   [GRÜN, Cap −3 %; verschlechtert vs Do Close −0,006 %]
+Alpha vs SPY:   **+0,007 pp** (SPY IEX Close 776,30 vs Do 777,84 = **−0,198 %**; Portfolio −0,191 % marginal outperformt via UNH-Recovery +0,712 %)
+ATH:           100.066,47 $   (unverändert)
+Drawdown:       **−3,872 %**  [GRÜN, verschlechtert vs Do Close −3,696 %; Schwelle −15 % bei 85.056 $]
+Guardrails:     Daily −0,191 % | **Weekly KW33 Fr-Abschluss vs Fr 07.08. Close 96.512,65 = −0,332 % GRÜN** weit von Cap −5 % | Käufe **0/2 KW33** (MU-Slot 3. Tag EXPIRED ohne Fill — Slot verbraucht ohne Kaufumsetzung) | VIX ~14–15 GRÜN | Crash-Filter NEIN | DD GRÜN
+
+Positions-Übersicht (5/8, Ø-P/L +1,28 % ungewichtet):
+- **JPM +9,03 % BEST** (362,84 $, chg −0,074 %, 3 Sh, MV 1.088,52, entry 332,78)
+- V +1,95 %      (364,15 $,   chg −0,356 %, 27 Sh, MV 9.832,05, entry 357,178)
+- UNH +0,08 %    (401,90 $,   chg **+0,712 % Best chg**, 24 Sh, MV 9.645,60, entry 401,57)
+- LLY −1,15 %    (1180,16 $,  chg **−2,385 % Worst chg**, 8 Sh, MV 9.441,28, entry 1193,89)
+- **AAPL −3,52 % WORST** (305,72 $, chg +0,151 %, 31 Sh, MV 9.477,32, entry 316,857)
+
+Vollständiger V1–V6 Signalcheck (Close-Daten Alpaca IEX):
+- **V1 Stop-Loss −8 % vs Entry alle 5 SICHER (min AAPL +4,87 % Puffer):** AAPL Thr 291,51 +4,87 %; JPM Thr 306,16 +18,52 %; LLY Thr 1098,38 +7,45 %; UNH Thr 369,44 +8,79 %; V Thr 328,60 +10,82 %
+- **V2 Trailing −12 % vs 52w-Hoch (Close-Referenz):** AAPL Thr via Wick 344,555 = 303,21 → **+0,83 % SICHER** (DQF 5. Tag technisch aus BROKEN raus fortlaufend); UNH Thr via Wick 460,95 = 405,636 → **−0,92 % BROKEN 17. Tag DQF persistent**, Alt-V2 via 437,13 = 384,67 Puffer **+4,48 % SICHER**, Std-V1 primär +8,79 %; JPM +12,04 %; LLY +7,41 %; V +10,66 %
+- **V3/V4 Gewinn-Take-Profit:** max JPM +9,03 % << 20 %-TP1 → kein Trigger
+- **V5 Death Cross (EMA50<EMA200):** AAPL 309,04/280,00 ✗; JPM 341,34/317,44 ✗; LLY 1154,29/1021,28 ✗; UNH 406,73/362,26 ✗; V 351,27/338,39 ✗ → **ALLE NEGATIV, kein Trigger**
+- **V6 RSI>80 UND RS4w<0:** AAPL RSI 43,68 ✗; JPM 65,12 ✗; LLY 50,10 ✗; UNH 42,29 ✗; V 55,94 ✗ (kein Symbol RSI>80) → **ALLE NEGATIV, kein Trigger**
+
+V5/V6-Aktion: **KEINE Sell-Orders für Mo 17.08.** (alle Death-Cross- und Überkauft-Signale negativ)
+
+**MU-Order-Status:** **EXPIRED ohne Fill** (Order-ID 3f44bf7d, Day-Order abgelaufen 20:00 UTC; filled_qty 0; Limit 954,64 nie erreicht, MU handelte intraday ~965–984 $ +1,1 bis +3,7 % über Limit). **3. Tag in Folge Wiederholungsmuster** (12.08. Limit 915,86 EXPIRED / 13.08. Limit 915,86 EXPIRED / 14.08. Limit 954,64 EXPIRED). Slot 1 KW33 verbraucht ohne Kaufumsetzung → Käufe KW33 = 0/2, KW34 startet Mo 17.08. frisch mit 2/2 offen.
+
+Sektor-Struktur Close: XLV **19,84 %** (UNH 10,03 + LLY 9,81), XLF **11,35 %** (JPM 1,13 + V 10,22), XLK **9,85 %** AAPL, Cash 58,95 %
+
+**Weekly Loss Cap KW33-Abschluss:** −0,332 % vs Cap −5 % → weit entfernt, **keine Sperrauslösung**, keine pending Orders zum Stornieren.
+
+**LLY-News-Klärung (Perplexity Close):** Intraday −2,385 % Worst chg via **Pipeline-Enttäuschung Orforglipron-Daten (ATTAIN-1) + Novo-Nordisk-Wettbewerbsdruck + Gewinnmitnahmen Pharmasektor** — kein Analystendowngrade als primärer Trigger. Std-V1 +7,45 % Puffer weiterhin SICHER, kein V-Trigger-Kontext.
+
+**Watchlist Mo 17.08. (K1-K3 aus Alpaca IEX + Perplexity Sektor-Momentum):**
+- **XOM** (XLE) K1-K3 ✓ EMA 151,0>139,9 / RSI 64,2 / RS +4,18 pp — XLE-Sektor stärkste Momentum-Basis laut Perplexity
+- **DELL** (XLK) K1-K3 ✓ EMA 407,7>273,2 / RSI 61,7 / **RS +19,41 pp #1** — K5-Datenkonflikt aus Vortag (+9,1 %/+88,0 % Query-Divergenz) neu klären
+- **GE** (XLI) K1-K3 ✓ EMA 352,6>319,0 / RSI 55,3 / RS +1,16 pp — Industrials Basis
+- MU (XLK) K1-K3 ✓ — Fortsetzung als Kandidat trotz 3-Tage-Fill-Muster (Limit-Preis-Anpassung Mo diskutieren)
+- PANW (XLK) K1-K3 ✓ K5 offen — FwdPE 77,66 Vortag >>35 FAIL, K5 Neucheck Mo
+- RTX (XLI) K1 ✓ K2 RSI 70,2 upper-limit BORDER — Watchlist Cooldown
+- CAT (XLI) K2 RSI 46,6 FAIL / K3 RS −7,08 pp FAIL → REJECT
+- GS (XLF) K2 RSI 48,7 FAIL / K3 RS −6,95 pp FAIL → REJECT
+
+**KW33-Wochenbilanz (Mo 11.08.–Fr 14.08. 4 Handelstage):**
+- Depot-Start Mo (=Fr Close 07.08.): 96.512,65 $ | Depot-Ende Fr 14.08.: 96.192,26 $ → **Wochenergebnis −320,39 $ = −0,332 %**
+- SPY-Woche: TBD (Fr 07.08. Close vs Fr 14.08. Close 776,30) — bei geschätztem SPY 07.08. ~773 → SPY-Woche ~+0,4 % → **Alpha KW33 ~−0,7 pp NEG**
+- Käufe: 0 (MU 3x Limit-Order EXPIRED ohne Fill — Slot-Verbrauch ohne Kaufumsetzung 3. Tag Muster)
+- Verkäufe/Stops: 0
+- V-Trigger-Zustand Wochenende: alle V1 SICHER + V5/V6 alle negativ + AAPL V2-DQF recovered / UNH V2-DQF razor 17. Tag Alt-V2/Std-V1 primär sicher
+
+ClickUp Prio 3 [CLOSE Tagesbilanz] Task: **ITEM_246 "Max usage for custom task types reached" 18. Tag persistent** → Fallback Memory-Only per notify-skill.md.
+PushNotification: **JA** (Close-Silence-Ausnahme: KW33-Abschluss + MU-Order 3. Tag Wiederholungsmuster EXPIRED-Serie Owner-Info nötig für Limit-Strategie-Review, LLY-Weakness-Kontext geklärt, Weekly-Bilanz-Abschluss).
+Nächster Check: **Mo 17.08. 08:30 ET Pre-Market KW34 Tag 1** — MU-Limit-Strategie-Neubewertung (3-Tage-Fail-Serie), DELL K5-Datenkonflikt-Neuklärung, XOM/GE K4/K5-Volcheck, AAPL V2-DQF-Verlauf, UNH V2-DQF 17. Tag Owner-Entscheidung pending.
+
+---
+
 **Midday 13:11 ET 14.08.2026 (KW33 Tag 5 Fr):**
 Positionen: 5/8 | Ø P/L: **+1,23 %** ungewichtet (JPM +8,96 Best / V +2,16 / UNH −0,11 / LLY −1,25 / AAPL −3,61 Worst)
 Beste Position: **JPM +8,96 %** (362,53 $ Alpaca latestTrade IEX 13:11 ET)

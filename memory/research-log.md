@@ -4,6 +4,90 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-14 (Fr, KW33 Tag 5) — **Tagesbilanz + Wochenabschluss KW33** — Daily −0,191 % GRÜN / Alpha +0,007 pp marginal POS / DD −3,872 % GRÜN / Weekly KW33 −0,332 % GRÜN
+
+### Alpaca Account Close
+- Equity: **96.192,26 $** (vs Open 96.206,07 = −13,81 $ intraday marginal)
+- last_equity (Do Close): 96.376,47 → Daily **−184,21 $ = −0,191 % GRÜN** (Cap −3 % weit)
+- Cash: 56.707,49 $ (58,95 %, unverändert — MU-Order EXPIRED)
+- Long MV: 39.484,77 $ (41,05 %)
+- ATH 100.066,47 → **DD −3,872 % GRÜN** (Schwelle −15 % bei 85.056,50)
+
+### SPY-Performance (Perplexity + Alpaca)
+- SPY IEX Close 776,30 vs Do Close 777,84 = **−0,198 %** (marginal rot, kein Crash-Filter)
+- Portfolio −0,191 % → **Alpha +0,007 pp marginal POS** via UNH-Recovery Best chg +0,712 %
+- Perplexity-Antwort widersprüchlich (Investing 777,88 flat / Barchart 777,51 / WSJ 776,84 / MarketBeat 776,20) → Alpaca IEX 776,30 als kanonisch verwendet
+
+### LLY-Weakness Ursache (Perplexity Close)
+- Intraday −2,385 % Worst chg (1209,00 → 1180,16, P/L +1,35 % → −1,15 %)
+- **Primär: Enttäuschung Orforglipron-Studiendaten (ATTAIN-1 orale Gewichtsreduktion)** trotz starker Q2-Zahlen (Investing, Finanztrends, Börsennews)
+- Sekundär: **Novo-Nordisk-Wettbewerbsdruck + Preisdruck Adipositas-Markt + Gewinnmitnahmen Pharmasektor** (Trading-Treff, Finanzen.net)
+- **Kein Analystendowngrade als primärer Trigger** — MarketBeat-Story 14.08. nennt Bewertung/Profit-Taking/Insider
+- V1 Std +7,45 % Puffer weiterhin SICHER → **kein V-Trigger-Kontext**, No-Action
+
+### V1-V6 Vollcheck Close (Alpaca IEX Bars, 303 Handelstage)
+| Sym | Close | V1 Std | V2 (52w-Wick) | V5 EMA50/200 | V6 RSI | Trigger |
+|-----|-------|--------|---------------|--------------|--------|---------|
+| AAPL | 305,72 | +4,87 % **ENGSTE** (Thr 291,51) | **+0,83 % SICHER** via 344,555 (Thr 303,21) DQF 5. Tag recovered | 309,04>280,00 ✓ | 43,68 ✗ | KEIN |
+| JPM  | 362,84 | +18,52 % (Thr 306,16) | +12,04 % via 368,00 (Thr 323,84) | 341,34>317,44 ✓ | 65,12 ✗ | KEIN |
+| LLY  | 1180,16 | +7,45 % (Thr 1098,38) | +7,41 % via 1248,53 (Thr 1098,71) | 1154,29>1021,28 ✓ | 50,10 ✗ | KEIN |
+| UNH  | 401,90 | +8,79 % (Thr 369,44) | **⚠ −0,92 % BROKEN** via 460,95 DQF 17. Tag, Alt-V2 +4,48 % SICHER | 406,73>362,26 ✓ | 42,29 ✗ | KEIN (Std-V1 primär, Rule 5 No-Action) |
+| V    | 364,15 | +10,82 % (Thr 328,60) | +10,66 % via 373,97 (Thr 329,09) | 351,27>338,39 ✓ | 55,94 ✗ | KEIN |
+
+**V-Aktion Close:** 0 Sell-Orders für Mo 17.08. — V5 alle EMA50>EMA200 SICHER, V6 kein Symbol RSI>80.
+
+### MU-Order-Status Close
+- Order-ID 3f44bf7d: Status **EXPIRED** 20:00 UTC, filled_qty 0, Limit 954,64 nie erreicht (MU intraday 965–984 $)
+- **3. Tag Wiederholungsmuster** (12.08. / 13.08. / 14.08. alle EXPIRED)
+- Slot 1 KW33 verbraucht ohne Kaufumsetzung → **Käufe KW33 = 0/2 final**
+- KW34 startet Mo 17.08. frisch mit 2/2 offen
+- **Owner-Diskussion Mo: MU-Limit-Strategie-Review** (Preis-Gap Live vs Vortagesschluss > +2 % 3. Tag anhaltend, +0,5 %-Regel nur bei starkem intraday-Rücksetzer erreichbar)
+
+### Watchlist Mo 17.08. — K1-K3 Alpaca IEX + Perplexity Sektor-Momentum
+| Sym | Sektor | K1 (EMA50/200) | K2 (RSI) | K3 (RS_4w vs SPY) | K4/K5 | Status |
+|-----|--------|----------------|----------|-------------------|-------|--------|
+| **XOM** | XLE | ✓ 151,0>139,9 | ✓ 64,2 | ✓ +4,18 pp | K4/K5 Mo | **✓ K1-K3 Top** — XLE stärkste Sektorbasis (Perplexity) |
+| **DELL** | XLK | ✓ 407,7>273,2 | ✓ 61,7 | ✓ **+19,41 pp #1** | K4 Vortag FAIL 81 %, **K5 CONFLICT** +9,1 %/+88,0 % | ✓ K1-K3 **K5-Neuklärung Mo** |
+| **GE** | XLI | ✓ 352,6>319,0 | ✓ 55,3 | ✓ +1,16 pp | K4/K5 Mo | ✓ K1-K3 Industrials |
+| MU | XLK | ✓ 894,0>610,0 | ✓ 56,4 | ✓ +9,98 pp | K5 ✓ persistent | ✓ trotz 3-Tage-Fill-Muster — Limit-Strategie-Review Mo |
+| PANW | XLK | ✓ 325,6>248,6 | ✓ 65,5 | ✓ +2,70 pp | K5 Vortag FwdPE 77,66>>35 FAIL | K5-Neucheck Mo |
+| RTX | XLI | ✓ 204,1>186,3 | **✗ 70,2 upper-Zone** | ✓ +10,80 pp | — | K2 Cooldown-Watch |
+| CAT | XLI | ✓ 881,1>753,3 | ✗ 46,6 | ✗ **−7,08 pp** | — | **REJECT K2+K3** |
+| GS | XLF | ✓ 1035,7>930,9 | ✗ 48,7 | ✗ **−6,95 pp** | — | **REJECT K2+K3** |
+| BAC | XLF | ✓ 59,9>54,5 | ✓ 68,4 upper | ✓ +0,78 pp | K4 Vortag 109 % knapp | Watchlist |
+
+**Watchlist morgen: XOM (XLE-Sektor stark), DELL (RS #1, K5 klären), GE (XLI-Basis), MU (Limit-Review), PANW (K5-Recheck)**
+
+### KW33-Wochenbilanz (Mo 11.08.–Fr 14.08. 4 Handelstage)
+- Depot-Start Mo (=Fr 07.08. Close): **96.512,65 $**
+- Depot-Ende Fr 14.08. Close: **96.192,26 $**
+- **Wochenergebnis: −320,39 $ = −0,332 % [GRÜN weit von Cap −5 %]**
+- Käufe: **0 gefillt** (MU 3× Limit-Order EXPIRED ohne Fill — Slot-Verbrauch ohne Kaufumsetzung 3. Tag Wiederholungsmuster)
+- Verkäufe/Stops: 0
+- V-Trigger-Zustand: alle V1 SICHER + V5/V6 alle negativ + AAPL V2-DQF recovered / UNH V2-DQF razor 17. Tag Std-V1/Alt-V2 primär sicher
+- **Weekly-Loss-Sperre inaktiv** — kein Handeln-Verbot für KW34
+
+### Guardrails-Status Close (8/8 GRÜN + 2 WARN)
+- 1. Daily Loss Cap −3 %: −0,191 % GRÜN
+- 2. Weekly Loss Cap −5 %: −0,332 % GRÜN
+- 3. Drawdown-Alarm −15 %: −3,872 % GRÜN (Schwelle 85.056,50)
+- 4. Drawdown-Stopp −20 %: −3,872 % weit
+- 5. Crash-Filter SPY −5 %: INAKTIV (SPY −0,198 %)
+- 6. VIX-Filter >30: VIX ~14–15 GRÜN (Vormittag 14,49)
+- 7. Earnings-Blackout: KEINE Position 3 HT-Fenster
+- 8. Max. Käufe/Woche 2: 0/2 KW33 final, KW34 Mo 2/2 offen
+- **WARN 1:** UNH V2 DQF 17. Tag persistent razor BROKEN −0,92 % (Alt-V2 +4,48 % + Std-V1 +8,79 % primär, Owner pending 16 Tage)
+- **WARN 2:** AAPL V2 DQF 5. Tag technisch AUS BROKEN RAUS +0,83 % (Std-V1 +4,87 % ENGSTE primär)
+
+### Perplexity-Nutzung Close
+- 3 Queries: (1) SPY Close/Tagesperf, (2) LLY-Weakness-Ursache, (3) Watchlist Sektor-Momentum XLI/XLF/XLC/XLY/XLE
+- Kosten: ~0,015 $ (3× ~0,005 $)
+
+### Nächster Check
+**Mo 17.08. 08:30 ET Pre-Market KW34 Tag 1** — MU-Limit-Strategie-Neubewertung (3-Tage-Fail-Serie), DELL K5-Datenkonflikt-Neuklärung, XOM/GE K4/K5-Volcheck, AAPL V2-DQF-Verlauf, UNH V2-DQF 17. Tag Owner-Entscheidung pending
+
+---
+
 ## Pre-Market 08:30 ET (verzögert) — 2026-08-14 (Fr, KW33 Tag 5) — **TIMING-ANOMALIE: Routine feuerte NACH Market Open (10:04 ET)** — Daily −0,306 % GRÜN / VIX 14,49 GRÜN / DD −3,984 % GRÜN / Weekly −0,446 % GRÜN
 
 ### ⚠️ Routine-Timing-Warnung
