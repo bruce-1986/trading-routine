@@ -4,6 +4,76 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-17 (Mo, KW34 Tag 1) — Guardrails 8/8 GRÜN / VIX 14,92 GRÜN / Market-Open-Scan JA
+
+### Alpaca Account Pre-Market
+- Equity: **96.085,04 $** (vs last_equity 96.194,69 = **−109,65 $ / −0,114 % GRÜN**)
+- Cash: **56.707,49 $** (58,99 %, unverändert)
+- Long MV: **39.377,55 $** (40,98 %)
+- vs portfolio.md Fr 14.08 Close 96.192,26 → −107,22 $ = −0,111 % marginal (Alpaca last_equity 96.194,69 vs Memory 96.192,26 = +2,43 $ Roundoff, akzeptabel)
+- ATH 100.066,47 → **DD −3,978 % GRÜN** (Schwelle −15 % bei 85.056,50)
+- Offene Positionen: **5/8** (alle konsistent mit trade-log.md)
+- Offene Orders: **0** (MU 3× EXPIRED Fr, KW34 startet frisch mit 2/2 Kauf-Slots)
+
+### Position-P/L Live Pre-Market
+| Sym | Qty | Entry | Cur | P/L % | chg_today | V1 Std Thr | V1 Puffer |
+|-----|-----|-------|-----|-------|-----------|------------|-----------|
+| **JPM BEST** | 3 | 332,78 | 361,63 | **+8,67 %** | −0,33 % | 306,16 | +18,12 % |
+| V | 27 | 357,178 | 361,70 | +1,27 % | −0,67 % | 328,60 | +10,06 % |
+| UNH | 24 | 401,57 | 399,57 | −0,50 % | −0,54 % | 369,44 | +8,16 % |
+| LLY | 8 | 1193,89 | 1179,99 | −1,16 % | −0,01 % | 1098,38 | +7,43 % |
+| **AAPL WORST** | 31 | 316,857 | 306,36 | **−3,31 %** | +0,14 % | 291,51 | **+5,10 % ENGSTE** |
+
+Ø P/L ungewichtet: **+1,00 %** (JPM +8,67 Best / AAPL −3,31 Worst)
+
+### Markt-Überblick (Perplexity Pre-Market)
+- **VIX Vortagesschluss 14,25 → Pre-Open 14,92 (+4,7 %)** — GRÜN weit von 30-Filter
+- **SPY Premarket:** leicht positiv (S&P Futures „edge higher", kein exakter %-Wert in Sources)
+- **10Y Treasury:** **4,69 %** (Vortag 4,697 %, marginal rückläufig) — hoch im historischen Vergleich
+- **Makro heute:** 8:30 ET **Empire State Manufacturing**, 10:00 ET NAHB Housing, 11:30 ET T-Bill Auktion, 16:00 ET TIC Flows — **kein CPI/PPI/NFP** heute, kein Fed-Event, geringes Makro-Risiko
+- **Top News:**
+  1. **Indien Aktienmarkt schwach** — Öldruck + Liquiditätssorgen
+  2. **Öl 89 $/Barrel** — Schiffsbewegungen Straße von Hormus reduziert (Geopol-Prämie)
+  3. **US-Renditen nahe Mehrjahreshochs** (10Y ~4,7 %, 30Y >5,2 % zuletzt) → drückt Risk-Assets weltweit
+
+### Earnings-Blackout-Check (Perplexity)
+- **Nächste 4 HT (17.–20.08.):** **KEINE der 5 offenen Positionen** (AAPL/JPM/LLY/UNH/V) berichtet Earnings in diesem Fenster
+- Apple nächster Termin geschätzt Ende Oktober 2026
+- **Kein Stop-Loss-Anpassung auf −5 %** nötig — alle V1 Std −8 % Standard aktiv
+
+### Guardrails-Status (8/8 GRÜN + 2 WARN)
+- 1. Daily Loss Cap −3 %: −0,114 % Pre-Open GRÜN
+- 2. Weekly Loss Cap −5 %: KW34 Tag 1 −0,111 % vs Fr Close GRÜN
+- 3. Drawdown-Alarm −15 %: −3,978 % GRÜN (Schwelle 85.056,50)
+- 4. Drawdown-Stopp −20 %: weit
+- 5. Crash-Filter SPY −5 %: INAKTIV (Fr −0,198 %)
+- 6. VIX-Filter >30: 14,92 GRÜN
+- 7. Earnings-Blackout: **KEINE** Position in 4-HT-Fenster
+- 8. Max. Käufe/Woche 2: **0/2 KW34 offen** (KW33 final 0/2 via MU-EXPIRED-Serie)
+- **WARN 1:** UNH V2 Alt-V2 primär (persistent DQF, Std-V1 +8,16 % sicher)
+- **WARN 2:** AAPL V1 ENGSTE +5,10 % (out-of-BROKEN Fortsetzung)
+
+### Watchlist Market-Open-Scan (Übernahme Fr Close 14.08.)
+| Sym | Sektor | Status | Note |
+|-----|--------|--------|------|
+| **XOM** | XLE | ✓ K1-K3 Top | XLE stärkste Sektorbasis, K4/K5 heute checken |
+| **DELL** | XLK | ✓ K1-K3 (RS #1 +19,41 pp) | **K5-Datenkonflikt Neuklärung**, K4 Vortag 81 % FAIL |
+| **GE** | XLI | ✓ K1-K3 | Industrials-Basis, K4/K5 heute |
+| **MU** | XLK | ✓ K1-K3 K5 ✓ | **Limit-Strategie-Review** (3-Tage-EXPIRED-Muster) |
+| **PANW** | XLK | K5 Recheck | Vortag FwdPE 77,66 FAIL |
+
+### Entscheidung
+- **Market-Open-Scan 09:30 ET: JA** — alle Guardrails GRÜN, keine Blackouts, Cash 58,99 % ausreichend, 2/2 Kauf-Slots KW34 frei
+- **Diskussions-Punkte pending Owner:**
+  1. XLV-Sektor-Cap-Deutung (5. Woche pending)
+  2. MU-Limit-Preis-Regel +0,5 % strukturell unerreichbar bei Momentum-Setup (3-Tage-Fail-Serie)
+  3. Cash-Quote 58,99 % vs Alpha-Loss (5-Wochen-SPY-Rally)
+
+### Nächster Check
+**Mo 17.08. 09:30 ET Market Open KW34 Tag 1** — Buy-Scan Watchlist (XOM/DELL/GE/MU/PANW), K4-Volumen-Check + K5-Fundamentals, MU-Limit-Strategie-Owner-Entscheidung.
+
+---
+
 ## Market Close 16:00 ET — 2026-08-14 (Fr, KW33 Tag 5) — **Tagesbilanz + Wochenabschluss KW33** — Daily −0,191 % GRÜN / Alpha +0,007 pp marginal POS / DD −3,872 % GRÜN / Weekly KW33 −0,332 % GRÜN
 
 ### Alpaca Account Close
