@@ -4,6 +4,56 @@
 
 ---
 
+## Close 16:00 ET — 2026-08-17 (Mo, KW34 Tag 1) — Alpha +0,133 pp POS / V5-V6 alle SICHER / KEINE Sell-Orders
+
+### Alpaca Account Close
+- Equity: **95.866,65 $** (vs last_equity 96.194,69 = **−328,04 $ / −0,341 % GRÜN**)
+- Cash: **47.062,09 $** (49,09 %) | Long MV: **48.804,56 $** (50,91 %)
+- ATH 100.066,47 → **DD −4,196 % GRÜN** (verschlechtert vs Midday −4,134 %)
+- Positionen: **6/8** | Offene Orders: **0**
+- Weekly KW34 Tag 1 vs Fr Close 96.192,26 = **−0,338 % GRÜN** (weit von Cap −5 %)
+
+### Position-Close (Alpaca IEX)
+| Sym | Cur | chg | P/L % | V1 Std Puffer | V5 (GC) | V6 (RSI/RS_4w) |
+|-----|-----|-----|-------|---------------|---------|----------------|
+| **JPM BEST** | 361,11 | −0,52 % | **+8,47 %** | +17,95 % | ✓ 341,67>317,40 | 60,90 / +2,45 pp |
+| V | 358,95 | −1,46 % | +0,46 % | +9,23 % | ✓ 351,00>337,30 | 48,66 / −4,50 pp |
+| **DELL WORST chg** | 479,75 | **−2,27 %** | −0,54 % | +8,13 % | ✓ 410,21>269,99 | 58,06 / +21,93 pp |
+| LLY ONLY GAIN chg | 1185,04 | +0,42 % | −0,73 % | +7,89 % | ✓ 1153,83>1028,57 | 46,72 / −0,59 pp |
+| UNH | 395,54 | −1,52 % | −1,48 % | +7,06 % | ✓ 405,90>359,53 | 36,46 / −10,34 pp |
+| **AAPL WORST P/L** | 305,65 | −0,21 % | **−3,65 %** | **+4,85 % ENGSTE** | ✓ 308,68>282,33 | 44,42 / −10,45 pp |
+
+**V5 (Death Cross): KEIN Symbol** — alle Golden Cross intakt (DELL Spread +140 huge).
+**V6 (RSI>80 UND RS<0): KEIN Symbol** — max RSI JPM 60,90. → **KEINE Sell-Orders Di 18.08.**
+
+### Markt-Kontext (Perplexity Close)
+- SPY IEX Fr 776,30 → Mo 772,62 = **−0,474 %** (Perplexity nennt −0,37 %)
+- **VIX Intraday 14,92–14,99** (+4,7-5,2 % vs Vortag 14,25) — Close-Wert unpräzise, GRÜN weit von 30
+- Sektor-Top-3 (Quelle unpräzise, YTD/MA-Basis): XLE > XLU > XLB
+- **Alpha vs SPY +0,133 pp POS** trotz roter Session (JPM/V/LLY-Stützen vs SPY-Rotation)
+
+### Watchlist Di 18.08. (KW34 Tag 2, Slot 2 offen) — K1-K3 Alpaca IEX
+| Sym | Sektor | Close | K1 (EMA) | K2 (RSI) | K3 (RS_63d) | Status |
+|-----|--------|-------|----------|----------|-------------|--------|
+| **CRDO** | XLK Semis-Connectivity (MidCap) | 283,11 | ✓ 230,66>185,18 | ✓ 62,80 | **✓ +59,6 pp #1** | K4/K5 morgen |
+| **LMT** | XLI Defense | 593,92 | ✓ 558,19>532,05 | ✓ 58,74 | ✓ +11,0 pp | K4/K5 morgen |
+| NVDA | XLK GPU-AI | 225,10 | ✓ 209,36>196,52 | ✓ 65,06 | ✗ −4,8 pp | Watch-only |
+| MU | XLK | (Vortag) | ✓ | ✓ | ✓ | Owner Limit-Regel pending (4-Tage-Gap-Up-Muster) |
+| PANW | XLK | — | — | — | — | K5-FwdPE-Recheck (Earnings 17.08. gestern) |
+
+**REJECT:** PLTR (K1 Death Cross EMA50 143,33<EMA200 151,66), AVGO (K2 RSI 48,84 + K3 RS −12,3 pp), STRL (K3 RS −33,7 pp).
+
+**Watchlist morgen: CRDO (#1 RS), LMT (Defense), NVDA (Watch), MU (Owner-pending), PANW (K5-Recheck)**
+
+### Persistente Warnungen
+- **UNH V2 DQF 19. Tag razor BROKEN −2,49 %** via Wick 460,95×0,88 = 405,636 (Close 395,54 < Thr); Alt-V2 via 437,13 = 384,67 Puffer +2,83 % SICHER + Std-V1 +7,06 % primär — Owner-Entscheidung pending 18 Tage
+- **AAPL V2 DQF 7. Tag technisch AUS BROKEN RAUS +0,81 % marginal-recovered** vs Midday +0,14 %; Std-V1 +4,85 % ENGSTE primär SICHER
+- **ITEM_246 20. Tag persistent** ClickUp Custom-Type-Limit → Fallback Memory-Only wahrscheinlich
+
+Nächster Check: **Di 18.08. 08:30 ET Pre-Market KW34 Tag 2**
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-17 (Mo, KW34 Tag 1) — Guardrails 8/8 GRÜN / VIX 14,92 GRÜN / Market-Open-Scan JA
 
 ### Alpaca Account Pre-Market
