@@ -1,5 +1,26 @@
 # Portfolio Status
 
+**Midday 13:00 ET 2026-08-17 (Mo, KW34 Tag 1):**
+Positionen: 6/8 | Ø P/L: **+0,70 %** ungewichtet (JPM +9,57 Best / V +0,93 / LLY −0,10 / DELL −0,69 / UNH −1,33 / AAPL −4,18 Worst)
+Beste Position: **JPM +9,57 %** (364,64 $, chg −0,03 % vs Open 09:44 364,755)
+Schlechteste Position: **AAPL −4,18 %** (303,625 $, chg −0,54 % vs Open 305,28, verschlechtert vs Open P/L −3,65 %)
+Stops V1-V4 Live-Check (V5/V6 nur Close-Vollcheck):
+- **V1 Std alle 6 SICHER Puffer eng→weit:** **AAPL +4,16 % ENGSTE verschlechtert vs Open +4,72 %** (303,625 chg −0,54 %, Std-V1 291,51 primär), UNH +7,25 % verbessert vs Open +6,84 % (396,23 chg −0,08 % vs Open 396,555), DELL +7,94 % (478,925 chg −0,41 % vs Fill 482,27, Thr 443,69), LLY +8,59 % (1192,745 chg +1,30 % vs Open 1177,39, Thr 1098,38), V +9,71 % (360,5099 chg −0,48 % vs Open 362,255, Thr 328,60), **JPM +19,10 %** (364,64 chg −0,03 %, Thr 306,16)
+- **V2-Trailing-Stop:** **⚠️ AAPL V2 razor +0,14 % via Wick 344,555 = Thr 303,21 verschlechtert vs Open +0,68 %** (303,625 > 303,21, DQF 6. Tag technisch AUS BROKEN RAUS aber Puffer erodiert; Std-V1 +4,16 % ENGSTE primär SICHER, V2 sekundär via DQF); **⚠️ UNH V2 BROKEN Puffer −2,32 % via Wick 460,95 = Thr 405,636 verschlechtert vs Open −2,24 %** (**18. Tag DQF persistent** — Alt-V2 via 437,13 = 384,67 Puffer **+3,01 % SICHER**, Std-V1 +7,25 % primär sicher, Owner-Entscheidung pending); JPM +14,12 % via Wick 363,08 (Thr 319,51) sicher, LLY +8,56 % via 52w-High 1248,53 (Thr 1098,71) sicher, V +9,55 % via 373,97 (Thr 329,09) sicher, DELL erste Session (kein 52w-Wick relevant, Std-V1 primär)
+- **V3/V4:** max P/L JPM +9,57 % << 20 %-TP1 → kein Trigger
+- **V5/V6:** nur Close-Vollcheck (Midday-Spec)
+Daily P/L: **−0,275 % [GRÜN, Cap −3 %]** (Equity Live **95.929,94 $** vs last_equity 96.194,69 = −264,75 $; MV 48.869,74 $ / Cash 47.062,09 $ = **49,06 %**; DD vs ATH 100.066,47 = **−4,134 % GRÜN** verschlechtert vs Open −4,108 %; Weekly KW34 Tag 1 vs Fr Close 96.192,26 = **−0,273 % GRÜN** weit von Cap −5 %, verschlechtert vs Open −0,247 %)
+Alpha vs SPY: n/a (Midday-Spec — Alpha nur Open/Close)
+Stops: **alle regulär, KEIN Trigger ausgelöst**
+Offene Orders: **KEINE** (0 pending Alpaca bestätigt)
+Guardrails: **8 GRÜN + 2 WARN** (UNH V2-Wick DQF 18. Tag persistent BROKEN −2,32 % — Alt-V2/Std-V1 sicher, Owner pending; AAPL V2-DQF Puffer erodiert razor +0,14 % — Std-V1 +4,16 % ENGSTE primär)
+
+ClickUp: **kein Alert** (Silence: keine Stops ausgelöst, kein Daily Cap erreicht, kein Owner-Handlungsbedarf)
+PushNotification: **NEIN** (Silence-Rule Midday: alle V1 SICHER, kein Trigger, Daily P/L GRÜN −0,275 %, Weekly GRÜN, DD GRÜN, keine Order-Aktion, DQF-Zustände bereits bekannt Owner-pending)
+Nächster Check: **Mo 17.08. 16:00 ET Market Close KW34 Tag 1** — EOD-Vollcheck V5/V6 alle 6 Positionen, AAPL V2-DQF-Verlauf (Puffer heute erodiert), UNH V2-DQF 18. Tag Owner-Entscheidung, DELL Erste-Session-Close, LLY Weakness-Recovery, Slot 2 KW34 Buy-Scan-Vorbereitung Di.
+
+---
+
 **Market Open 09:44 ET 2026-08-17 (Mo, KW34 Tag 1) — Post-DELL-Fill:**
 Gesamtwert:        95.955,16 $   (Alpaca equity live 09:44 ET)
 Cash:              47.062,09 $   (49,05 %) — nach DELL-Kauf −9.645,40
