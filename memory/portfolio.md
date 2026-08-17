@@ -1,5 +1,47 @@
 # Portfolio Status
 
+**Market Open 09:44 ET 2026-08-17 (Mo, KW34 Tag 1) — Post-DELL-Fill:**
+Gesamtwert:        95.955,16 $   (Alpaca equity live 09:44 ET)
+Cash:              47.062,09 $   (49,05 %) — nach DELL-Kauf −9.645,40
+Investiert:        48.893,07 $   (50,95 %)  — AAPL 9.463,68 / **DELL 9.617,80 NEU** / JPM 1.094,27 / LLY 9.419,12 / UNH 9.517,32 / V 9.780,89
+P/L Live:          −239,53 $     (**−0,249 % vs last_equity 96.194,69**)   [GRÜN, Cap −3 %]
+ATH:              100.066,47 $   (unverändert)
+Drawdown:          **−4,108 %**  [GRÜN, verschlechtert vs Pre-Open −3,978 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily −0,249 % | **Weekly KW34 Tag 1 vs Fr Close 96.192,26 = −0,247 % GRÜN** | Käufe **1/2 KW34** (Slot 1 via DELL verbraucht) | VIX 14,92 GRÜN | Crash-Filter NEIN | DD GRÜN | Earnings-Blackout KEINE Position 4-HT-Fenster + DELL ~03.09. (17 HT >3)
+Offene Positionen: **6/8** (NEU DELL)
+Offene Orders:     **KEINE** (DELL FILLED @ 482,27)
+
+Positions-Übersicht Live 09:44 ET (Ø-P/L +0,88 % ungewichtet ohne DELL Post-Fill):
+- **JPM +9,60 % BEST** (364,755 $, 3 Sh, MV 1.094,27, entry 332,78)
+- V +1,42 %      (362,255 $, 27 Sh, MV 9.780,89, entry 357,178)
+- UNH −1,25 %    (396,555 $, 24 Sh, MV 9.517,32, entry 401,57)
+- LLY −1,38 %    (1177,39 $, 8 Sh, MV 9.419,12, entry 1193,89)
+- **DELL NEU −0,29 %** (480,89 $ post-fill, 20 Sh, MV 9.617,80, entry 482,27)
+- **AAPL −3,65 % WORST** (305,28 $, 31 Sh, MV 9.463,68, entry 316,857)
+
+V1 Std −8 % Live Puffer (alle SICHER):
+- **AAPL +4,72 % ENGSTE**  (Thr 291,51, verschlechtert vs Pre-Open +5,10 %)
+- **DELL +2,79 % NEU**     (Thr 443,69)
+- LLY +7,20 %              (Thr 1098,38)
+- UNH +6,84 %              (Thr 369,44, verschlechtert vs Pre-Open +8,16 %)
+- V +10,25 %               (Thr 328,60)
+- JPM +19,49 %             (Thr 306,16)
+
+Sektor-Struktur Post-Fill: XLK **19,88 %** (AAPL 9,86 + DELL 10,02), XLV **19,73 %** (UNH 9,92 + LLY 9,82), XLF **11,33 %** (JPM 1,14 + V 10,19), Cash 49,05 %
+
+Trade heute:
+- **BUY LIMIT DELL 20 Sh @ 482,33 → FILLED @ 482,27** (Order-ID b068a260-cf47-4f90-ac27-cb3ac19e7fa8, Kosten 9.645,40 $)
+- Kaufsignale K1-K5 alle ✓ (EMA-Golden-Cross, RSI 58,06, RS +93,32 pp #1, Vol-Extrap 124,6 %, FwdPE 26,74 + RevYoY +87,2 % via Dell IR Q1 FY27 Perplexity-Deep-Query)
+- MU-Slot SKIP wegen Gap-Up-Muster-Wiederholung (Live 1017 > Limit 1013,52, Owner-Diskussion Limit-Regel weiter pending)
+
+Alt-Kandidaten REJECT: MU (Gap-Up-Muster 4. Tag), GE (K5 FwdPE 48,31 FAIL), PANW (K4 45 % + Earnings HEUTE Blackout), XOM (K3 RS −3,72 FAIL)
+
+ClickUp: **ITEM_246 19. Tag persistent** → Fallback Memory-Only
+PushNotification: **JA (TRADE_BUY)** — DELL-Fill + K5-Konflikt aufgelöst
+Nächster Check: **Mo 17.08. 13:00 ET Midday Stop-Check KW34 Tag 1** — DELL Post-Fill-Verlauf, UNH V2-DQF 18. Tag, AAPL V2 6. Tag, LLY Weakness-Verlauf
+
+---
+
 **Pre-Market 08:30 ET 2026-08-17 (Mo, KW34 Tag 1):**
 Gesamtwert:        96.085,04 $   (Alpaca equity live Pre-Open)
 Cash:              56.707,49 $   (58,99 %)
