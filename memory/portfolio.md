@@ -1,5 +1,51 @@
 # Portfolio Status
 
+**Pre-Market 08:30 ET 2026-08-17 (Mo, KW34 Tag 1):**
+Gesamtwert:        96.085,04 $   (Alpaca equity live Pre-Open)
+Cash:              56.707,49 $   (58,99 %)
+Investiert:        39.377,55 $   (40,98 %)  — AAPL 9.497,16 / JPM 1.084,89 / LLY 9.439,92 / UNH 9.589,68 / V 9.765,90
+P/L Pre-Open:      −109,65 $     (**−0,114 % vs last_equity 96.194,69**)   [GRÜN, Cap −3 %]
+ATH:              100.066,47 $   (unverändert)
+Drawdown:          **−3,978 %**  [GRÜN, Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily −0,114 % | **Weekly KW34 Tag 1 vs Fr Close 96.192,26 = −0,111 % GRÜN** | Käufe **0/2 KW34 offen** | VIX 14,92 GRÜN | Crash-Filter NEIN | DD GRÜN | Earnings-Blackout KEINE Position 4-HT-Fenster
+Offene Positionen: 5/8
+Offene Orders:     **0** (MU 3× EXPIRED Fr KW33 final, KW34 startet frisch)
+
+Positions-Übersicht Pre-Open (Ø-P/L +1,00 % ungewichtet):
+- **JPM +8,67 % BEST** (361,63 $, chg −0,333 %, 3 Sh, MV 1.084,89, entry 332,78)
+- V +1,27 %      (361,70 $, chg −0,673 %, 27 Sh, MV 9.765,90, entry 357,178)
+- UNH −0,50 %    (399,57 $, chg −0,538 %, 24 Sh, MV 9.589,68, entry 401,57)
+- LLY −1,16 %    (1179,99 $, chg −0,014 %, 8 Sh, MV 9.439,92, entry 1193,89)
+- **AAPL −3,31 % WORST** (306,36 $, chg +0,141 %, 31 Sh, MV 9.497,16, entry 316,857)
+
+V1 Std −8 % Live Puffer (alle SICHER):
+- **AAPL +5,10 % ENGSTE** (Thr 291,51, verbessert vs Fr +4,87 %)
+- LLY +7,43 % (Thr 1098,38, verschlechtert marginal vs Fr +7,45 %)
+- UNH +8,16 % (Thr 369,44, verschlechtert vs Fr +8,79 %)
+- V +10,06 % (Thr 328,60, verschlechtert vs Fr +10,82 %)
+- JPM +18,12 % (Thr 306,16, verschlechtert vs Fr +18,52 %)
+
+Sektor-Struktur Pre-Open: XLV **19,80 %** (UNH 9,98 + LLY 9,82), XLF **11,29 %** (JPM 1,13 + V 10,16), XLK **9,88 %** AAPL, Cash 58,99 %
+
+Markt-Kontext (Perplexity):
+- VIX 14,92 (+4,7 % vs Vortag 14,25) GRÜN weit von 30-Filter
+- SPY Premarket leicht positiv (kein exakter %-Wert)
+- 10Y Yield 4,69 % (marginal rückläufig vs 4,697 %)
+- Makro heute klein: 8:30 Empire State Mfg, 10:00 NAHB, 16:00 TIC Flows — kein CPI/PPI/NFP/Fed
+- News: Öl 89 $/Bbl (Hormus), US-Renditen nahe Mehrjahreshochs, Indien schwach
+
+Earnings-Blackout-Check: **KEINE** der 5 offenen Positionen berichtet in 4-HT-Fenster (17.–20.08.) → keine Stop-Anpassung auf −5 %.
+
+Watchlist Market-Open-Scan 09:30 ET: **XOM** (XLE-Sektor-Top), **DELL** (RS #1 K5-Konflikt-Klärung), **GE** (XLI-Basis), **MU** (Limit-Strategie-Review 4. Versuch), **PANW** (K5-Recheck FwdPE).
+
+Entscheidung: **Market-Open-Scan JA** (alle Guardrails GRÜN, Cash ausreichend, 2 Slots offen).
+
+ClickUp Pre-Market Log Task: Prio 4 [PRE-MARKET] Check — 2026-08-17 08:30 ET geplant (Fallback Memory-Only bei ITEM_246-Persistenz 19. Tag).
+PushNotification: **NEIN** (Silence-Rule Pre-Market: keine Trigger, kein Owner-Handlungsbedarf, alle Guardrails GRÜN, keine Earnings-Blackouts, MU-Diskussion vertagt auf 09:30 Buy-Scan).
+Nächster Check: **Mo 17.08. 09:30 ET Market Open KW34 Tag 1** — Buy-Scan Watchlist (XOM/DELL/GE/MU/PANW), K4-Vol + K5-Fundamentals, MU-Limit-Strategie-Owner-Entscheidung.
+
+---
+
 **Wochenabschluss KW33 — 14.08.2026 (Weekly Review 17:00 ET):**
 Gesamtwert:       96.193,19 $   (Alpaca /v2/account equity live 17:00 ET, +0,93 $ vs Close 16:00 ET 96.192,26)
 Cash:             56.707,49 $   (58,95 %)
