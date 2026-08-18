@@ -1,5 +1,52 @@
 # Portfolio Status
 
+**Market Open 09:30 ET 2026-08-18 (Di, KW34 Tag 2) — 09:40 Live-Snapshot:**
+Gesamtwert:        96.190,68 $   (Alpaca /v2/account equity Live)
+Cash:              47.062,08 $   (48,92 %)
+Investiert MV:     49.133,06 $   (51,08 %)  — AAPL 9.501,44 / DELL 9.675,80 / JPM 1.084,89 / LLY 9.652,00 / UNH 9.495,96 / V 9.722,97
+P/L heute:         **+327,39 $** (**+0,342 % vs last_equity 95.863,29**) [GRÜN, Cap −3 %]
+ATH:              100.066,47 $   (unverändert)
+Drawdown:          **−3,873 %**  [GRÜN, verbessert vs Pre-Market −4,278 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily +0,342 % | **Weekly KW34 Tag 2 vs Fr Close 96.192,26 = −0,002 % GRÜN** | Käufe **1/2 KW34** (Slot 2 offen — heute NICHT besetzt) | VIX ~15,9 GRÜN | Crash-Filter NEIN (SPY −0,46 % Live) | DD GRÜN | Earnings-Blackout KEINE (DELL 27.08. 7 HT >3)
+Positionen:        **6/8**
+Offene Orders:     **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+
+Positions-Übersicht Live 09:40 (Ø-P/L **+1,02 %** ungewichtet):
+- **JPM +8,67 % BEST P/L** (361,63 $, chg +0,19 %, 3 Sh, MV 1.084,89, entry 332,78)
+- **LLY +1,06 %** (1206,50 $, **chg +1,97 % BEST chg**, 8 Sh, MV 9.652,00, entry 1193,89)
+- V +0,82 % (360,11 $, chg +0,35 %, 27 Sh, MV 9.722,97, entry 357,178)
+- DELL +0,32 % (483,79 $, chg +0,83 % — Erholung nach Mo Erste-Session −2,27 %, 20 Sh, MV 9.675,80, entry 482,27)
+- UNH −1,47 % (395,67 $, chg +0,01 %, 24 Sh, MV 9.495,96, entry 401,57)
+- **AAPL −3,27 % WORST P/L** (306,50 $, chg +0,30 %, 31 Sh, MV 9.501,44, entry 316,857)
+
+Sell-Signal-Check (V1-V6) 09:40 — **kein Trigger, keine Order platziert**:
+- **V1 Std −8 % alle SICHER** (min AAPL **+5,14 % ENGSTE** verbessert vs Pre-Market +5,45 %):
+  - AAPL +5,14 % (Thr 291,51), UNH +7,10 % (Thr 369,44), DELL +9,04 % (Thr 443,69), V +9,59 % (Thr 328,60), LLY +9,84 % (Thr 1098,38), JPM +18,12 % (Thr 306,16)
+- **V2-Trailing:** AAPL DQF 8. Tag Wick 344,555 = Thr 303,21 → cur 306,50 = **+1,09 % SICHER marginal** (verschlechtert vs Pre-Market +1,38 %); **UNH V2 DQF 20. Tag Wick 460,95 = Thr 405,64 → cur 395,67 = BROKEN −2,46 %** (verschlechtert vs Pre-Market −2,20 %); **Alt-V2 via 437,13 = 384,67 = +2,86 % SICHER** + Std-V1 +7,10 % primär SICHER, Owner-Entscheidung pending 20. Tag
+- **V3/V4:** max JPM +8,67 % << 20 %-TP1 → kein Trigger
+- **V5/V6:** nur Close-Vollcheck (Market-Open-Spec)
+
+Buy-Scan **Slot 2 KW34 — Ergebnis: KEINE Kauforder platziert**:
+- **CRDO REJECT:** K1-K3 ✓ (EMA50 230,66>EMA200 185,18 / RSI 62,80 / RS +59,6 pp #1), K4 ✓ (Extrap ~380 %), **K5 FAIL FwdPE 58,43 >> 35** (Perplexity Yahoo/Zacks); zusätzlich **Gap-Down heute Open 266,92 vs Mo Close 283,11 = −5,72 %** Overshoot-Reversal-Signal + Earnings 2026-09-01 (10 HT weg, Blackout Fr 28.08.)
+- **LMT REJECT (K4):** K1 ✓ (EMA50 558,19>EMA200 532,05), K2 ✓ (RSI 58,74), K3 ✓ (RS +11,0 pp XLI-Defense), K5 ✓ (FwdPE **19,70** / RevYoY **+10,50 %** / Earnings 2026-10-27), **K4 FAIL Extrapolation ~69 %** (10-Min-IEX-Vol 928 × 39 = 36.192 vs Avg-20-IEX 52.444 = 69 %); zusätzlich Recovery-Bounce nach Mo Close 593,92 → 601,98 (+1,36 %), typisch KEIN Peak-Vol-Tag
+- **NVDA:** K3 FAIL RS −4,8 pp → Watch-only unverändert
+- **MU:** Gap-Up-Muster 4. Tag → Owner-Regel-Diskussion pending
+- **PANW:** K5-Recheck nach 17.08.-Earnings pending, Vorsichts-Modus
+
+Sektor-Struktur Live 09:40: **XLK 19,94 %** (AAPL 9,88 + DELL 10,06), **XLV 19,91 %** (UNH 9,87 + LLY 10,03), **XLF 11,24 %** (JPM 1,13 + V 10,11), Cash 48,92 % — alle < 30 %-Cap ✓
+
+Weekly Loss Cap Check: 96.190,68 vs Fr Close 96.192,26 = **−0,002 % GRÜN** weit von Cap −5 % → keine Sperre, keine Order-Stornierung nötig (0 pending)
+
+Alle **8 Guardrails GRÜN + 2 WARN persistent** (UNH V2-DQF 20. Tag razor BROKEN −2,46 % — Alt-V2 +2,86 %/Std-V1 +7,10 % sicher; AAPL V2-DQF 8. Tag +1,09 % SICHER marginal — Std-V1 +5,14 % ENGSTE primär).
+
+Markt-Kontext: SPY Live 769,10 (chg **−0,46 %** vs Mo 772,62), VIX ~15,9 GRÜN steigend, Nasdaq-Futures Pre-Market −1,3 %, US 10Y Yield 4,73–4,75 % neues Hoch — Vorsichts-Modus aktiviert bestätigt. **Kein Kandidat erfüllt alle K1-K5.**
+
+ClickUp: **kein Alert** (Silence: keine Stops ausgelöst, kein Trade, kein Guardrail-Trigger, keine Owner-Aktion aus Buy-Scan-Ergebnis).
+PushNotification: **NEIN** (Silence-Rule Market-Open: alle V1 SICHER, kein Kauf/Verkauf, Daily/Weekly/DD GRÜN, DQF-Zustände bereits bekannt, CRDO/LMT-REJECT non-urgent — Slot 2 bleibt offen bis Mi).
+Nächster Check: **Di 18.08. 13:00 ET Midday Stop-Check KW34 Tag 2** — AAPL V2-DQF 8. Tag Verlauf, UNH V2-DQF 20. Tag, DELL Tag-2-Verlauf (Erholung/Rückfall?), LMT/CRDO Watchlist-Zustand nach Session-Reife.
+
+---
+
 **Market Close 16:00 ET 2026-08-17 (Mo, KW34 Tag 1) — Tagesbilanz:**
 Gesamtwert:        95.866,65 $   (Alpaca /v2/account equity Close)
 Cash:              47.062,09 $   (**49,09 %**)
