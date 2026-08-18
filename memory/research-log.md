@@ -4,6 +4,74 @@
 
 ---
 
+## Market Open 09:30 ET — 2026-08-18 (Di, KW34 Tag 2) — Slot 2 KW34 KEIN Kauf / V1-V6 alle sicher / Ø +1,02 %
+
+### Alpaca Account Live 09:40
+- Equity: **96.190,68 $** (vs last_equity 95.863,29 = **+327,39 $ / +0,342 % GRÜN**)
+- Cash: **47.062,08 $** (48,92 %) | Long MV: **49.133,06 $** (51,08 %)
+- ATH 100.066,47 → **DD −3,873 % GRÜN** (verbessert vs Pre-Market −4,278 %)
+- Positionen: **6/8** | Offene Orders: **0**
+- Weekly KW34 Tag 2 vs Fr Close 96.192,26 = **−0,002 % GRÜN**
+
+### Position-P/L Live 09:40 (Alpaca /v2/positions)
+| Sym | Qty | Entry | Cur | P/L % | chg_today | V1 Std Puffer |
+|-----|-----|-------|-----|-------|-----------|---------------|
+| **JPM BEST** | 3 | 332,78 | 361,63 | **+8,67 %** | +0,19 % | +18,12 % |
+| LLY BEST chg | 8 | 1193,89 | 1206,50 | +1,06 % | **+1,97 %** | +9,84 % |
+| V | 27 | 357,178 | 360,11 | +0,82 % | +0,35 % | +9,59 % |
+| DELL | 20 | 482,27 | 483,79 | +0,32 % | +0,83 % | +9,04 % |
+| UNH | 24 | 401,57 | 395,67 | −1,47 % | +0,01 % | +7,10 % |
+| **AAPL WORST P/L** | 31 | 316,857 | 306,50 | **−3,27 %** | +0,30 % | **+5,14 % ENGSTE** |
+
+Ø P/L ungewichtet: **+1,02 %** (JPM +8,67 Best / AAPL −3,27 Worst)
+
+### Sell-Signal-Check (V1-V4) — kein Trigger, keine Sell-Order
+- **V1 Std −8 %:** alle 6 SICHER, min AAPL +5,14 % ENGSTE (Thr 291,51 verbessert vs Pre-Market +5,45 %)
+- **V2-Trailing:**
+  - AAPL DQF **8. Tag** Wick 344,555 = Thr 303,21 → cur 306,50 = **+1,09 % SICHER marginal** (verschlechtert vs Pre-Market +1,38 %)
+  - **UNH V2 DQF 20. Tag** Wick 460,95 = Thr 405,64 → cur 395,67 = **BROKEN −2,46 %** (verschlechtert vs Pre-Market −2,20 %); Alt-V2 via 437,13 = 384,67 = **+2,86 % SICHER** + Std-V1 +7,10 % primär SICHER
+- **V3/V4:** max JPM +8,67 % << 20 %-TP1
+- **V5/V6:** nur Close-Vollcheck (Market-Open-Spec)
+
+### Watchlist-Scan Slot 2/2 (Prio LMT > CRDO > NVDA)
+| Sym | K1 (EMA) | K2 (RSI) | K3 (RS) | K4 (Vol) | K5 (FwdPE/RevYoY) | Verdict |
+|-----|----------|----------|---------|----------|--------------------|---------|
+| **CRDO** | ✓ 230,66>185,18 | ✓ 62,80 | ✓ **+59,6 pp #1** | ✓ Extrap ~380 % | **✗ FwdPE 58,43 >> 35** (RevYoY +157 %) | **REJECT K5** |
+| **LMT** | ✓ 558,19>532,05 | ✓ 58,74 | ✓ +11,0 pp | **✗ Extrap ~69 %** | ✓ FwdPE 19,70 / RevYoY +10,50 % | **REJECT K4** |
+| NVDA | ✓ 209,36>196,52 | ✓ 65,06 | ✗ −4,8 pp | — | — | Watch-only |
+| MU | — | — | — | — | — | Owner Gap-Up-Regel pending |
+| PANW | — | — | — | — | — | K5-Recheck nach 17.08. pending |
+
+**Zusatz-Signal CRDO:** Gap-Down Open 266,92 vs Mo Close 283,11 = **−5,72 %** Overshoot-Reversal (Momentum-Chase-Risk). Earnings 2026-09-01 (10 HT, Blackout Fr 28.08.).
+**Zusatz-Signal LMT:** Recovery-Bounce nach Mo −1,95 % (Close 593,92 → 601,98 = +1,36 %) — typisch KEIN Peak-Vol-Tag; K4-Fail konsistent mit Chart-Muster.
+
+### K5-Daten (Perplexity Yahoo/Zacks)
+- **LMT:** FwdPE **19,70** ✓ / RevYoY **+10,50 %** ✓ / Earnings 27.10.2026 (weit) → K5 ✓
+- **CRDO:** FwdPE **58,43** ✗ / RevYoY +157,00 % ✓ / Earnings 01.09.2026 → K5 FAIL (P/E-Hardcap 35)
+
+### Markt-Kontext Live 09:40 (Alpaca IEX + Perplexity)
+- SPY Live 769,10 (chg **−0,46 %** vs Mo 772,62), IEX bestätigt
+- VIX ~15,9 GRÜN steigend (Perplexity)
+- Nasdaq-Futures Pre-Market −1,3 % (Vorsichts-Modus XLK)
+- US 10Y Yield 4,73–4,75 % (neues Hoch seit Ende 2024) → drückt Bewertungsmultiples
+- Guardrail-Kontext: Crash-Filter NEIN (SPY −0,46 % >> −5 %), VIX 15,9 << 30, Cash 48,92 % >> 20 %-Min
+
+### Entscheidung
+- **Keine Sell-Order** (V1-V4 alle sicher, V5/V6 Close-Spec, keine DQF-Aktivierung heute)
+- **Keine Buy-Order** (Slot 2 KW34 offen — kein Kandidat erfüllt alle K1-K5; CRDO K5 FAIL, LMT K4 FAIL)
+- **Slot 2 bleibt offen für Mi 19.08.** (Watchlist-Recheck: LMT bei höherer Vol, CRDO nur wenn Gap-Down-Reversal + FwdPE-Kompression)
+- **Vorsichts-Modus bestätigt:** Nasdaq-Futures −1,3 % + 10Y-Hoch + kein Kandidat → No-Action-Regel greift, Owner-Kapital geschützt
+
+### Aktionen
+- Memory portfolio.md aktualisiert (Market Open Eintrag)
+- Memory research-log.md aktualisiert (dieser Eintrag)
+- ClickUp: kein Alert (Silence — kein Trade, kein Trigger)
+- PushNotification: NEIN (Silence-Rule — non-actionable)
+
+Nächster Check: **Di 18.08. 13:00 ET Midday Stop-Check KW34 Tag 2** — AAPL V2-DQF 8. Tag Verlauf, UNH V2-DQF 20. Tag, DELL Tag-2-Verlauf, LMT/CRDO Watchlist-Zustand nach Session-Reife (K4 belastbar).
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-18 (Di, KW34 Tag 2) — Guardrails 8/8 GRÜN + 2 WARN / VIX 15,9 GRÜN steigend / Market-Open-Scan JA (Slot 2/2)
 
 ### Alpaca Account Pre-Market
