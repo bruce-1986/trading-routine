@@ -4,6 +4,93 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-18 (Di, KW34 Tag 2) — Alpha +1,00 pp POS / V1-V6 alle sicher / KEINE Verkaufsorder / Slot 2 KW34 offen
+
+### Alpaca Account Close
+- Equity: **96.210,55 $** (vs last_equity 95.863,29 = **+347,26 $ / +0,362 % GRÜN**)
+- Cash: **47.062,08 $** (48,92 %) | Long MV: **49.148,47 $** (51,08 %)
+- ATH 100.066,47 → **DD −3,853 % GRÜN** (verbessert vs Midday −3,920 %)
+- Positionen: **6/8** | Offene Orders: **0**
+- Weekly KW34 Tag 2 vs Fr Close 96.192,26 = **+0,019 % GRÜN**
+
+### Position-P/L Close (Alpaca /v2/positions)
+| Sym | Qty | Entry | Cur | P/L % | chg_today | V1 Std Puffer |
+|-----|-----|-------|-----|-------|-----------|---------------|
+| **JPM BEST P/L** | 3 | 332,78 | 363,00 | **+9,08 %** | +0,57 % | +18,57 % |
+| LLY BEST chg | 8 | 1193,89 | 1223,60 | +2,49 % | **+3,42 %** | +11,40 % |
+| V | 27 | 357,178 | 364,25 | +1,98 % | +1,51 % | +10,85 % |
+| UNH | 24 | 401,57 | 393,93 | −1,90 % | −0,43 % | +6,63 % |
+| AAPL | 31 | 316,857 | 310,00 | −2,16 % | +1,44 % | +6,34 % |
+| **DELL WORST P/L + WORST chg** | 20 | 482,27 | 468,58 | **−2,84 %** | **−2,34 %** | **+5,61 % ENGSTE** |
+
+Ø P/L ungewichtet: **+1,11 %** (JPM +9,08 Best / DELL −2,84 Worst — DELL überholt AAPL als Worst P/L via Tag-2 Softness bestätigt)
+
+### Alpha vs SPY (Tagesperformance)
+- Portfolio: **+0,362 %**
+- SPY Close: delayed-SIP 767,73 (Mo 772,67 → −0,640 %); IEX 767,37 (−0,68 %); Perplexity nannte +0,04 % (Yahoo-Composite unklare Divergenz)
+- **Alpha = +1,00 pp POS** (basierend auf SIP-Referenz; +1,04 pp vs IEX)
+- Outperformance-Treiber: LLY +3,42 % (Rebound nach Vortagesschwäche) / V +1,51 % / AAPL +1,44 % / JPM +0,57 % gegen SPY-Rotation-Weakness
+- Underperformance-Bremse: DELL −2,34 % (Tag-2-Softness, XLK-Weakness Nasdaq-Futures Pre-Market bestätigt)
+
+### Sell-Signal-Check V1-V6 Vollcheck Close — kein Trigger, keine Sell-Order
+- **V1 Std −8 %:** alle 6 SICHER, min DELL +5,61 % ENGSTE (Thr 443,69 verbessert vs Midday +4,41 % durch Late-Session Recovery)
+  - AAPL +6,34 % / UNH +6,63 % / V +10,85 % / LLY +11,40 % / JPM +18,57 %
+- **V2-Trailing:**
+  - AAPL DQF **8. Tag** Wick 344,555 = Thr 303,21 → cur 310,00 = **+2,24 % SICHER** (marginal erodiert vs Midday +2,50 %)
+  - **UNH V2 DQF 21. Tag** Wick 460,95 = Thr 405,64 → cur 393,93 = **BROKEN −2,89 %** (verschlechtert vs Midday −2,49 %); Alt-V2 via 437,13 = 384,67 = **+2,41 % SICHER** + Std-V1 +6,63 % primär SICHER, Owner-Entscheidung pending 21. Tag
+- **V3/V4:** max JPM +9,08 % << 20 %-TP1 → kein Trigger
+- **V5 (EMA50<EMA200) Vollcheck:** ALLE Golden Cross intakt (Alpaca IEX Daily EOD Bars ~210 Tage):
+  - AAPL 308,96>282,48 (+26,47) / **DELL 412,79>248,20 (spread +164,59!)** / JPM 342,95>318,69 (+24,26) / LLY 1158,27>1042,77 (+115,50) / UNH 405,81>355,12 (+50,69) / V 352,08>336,03 (+16,05)
+  - → **KEIN Death Cross, KEIN Trigger**
+- **V6 (RSI>80 AND RS_4w<0):** KEIN Symbol RSI>80
+  - RSI-Verteilung: max JPM 64,44 / LLY 58,04 / DELL 56,02 / V 55,16 / AAPL 48,00 / UNH 37,81
+  - SPY 4w-Ret: +2,57 % (748,15 → 767,37)
+  - RS_4w-Verteilung: DELL +13,42 pp / JPM +2,69 pp / LLY +1,83 pp positiv | V −0,20 pp / AAPL −7,91 pp / UNH −12,32 pp negativ
+  - → **kein Symbol RSI>80 UND RS<0 gleichzeitig** → **KEIN Trigger**
+→ **KEINE Verkaufsorder für Mi 19.08. platziert**
+
+### Watchlist Mi 19.08. (K1-K3 Vorscan, K4/K5 morgen früh vollständig)
+| Sym | Sektor | K1 (EMA) | K2 (RSI) | K3 (RS_4w) | Prio |
+|-----|--------|----------|----------|------------|------|
+| **GE** NEU | XLI/Industrials | ✓ 354,07>322,24 | ✓ 59,63 | ✓ +7,56 pp | **HOCH** (Beat & Guidance-Raise Q2) |
+| **LMT** | XLI/Defense | ✓ 560,56>550,06 | ✓ 63,75 | ✓ **+17,21 pp #1** | **HOCH** (K4-Recheck Vol-belastbar) |
+| **NVDA** | XLK/GPU-AI | ✓ 209,80>196,24 | ✓ 56,56 | ✓ **+3,46 pp FLIP** | **MED** (K3-Upgrade von −4,8 → +3,46 pp!) |
+| **PANW** | XLK/Software | ✓ 329,44>236,72 | ✓ 59,85 | ✓ +6,82 pp | MED (K5-FwdPE-Recheck nach 17.08. Earnings) |
+| **CRDO** | XLK/Semis | ✓ 231,25>176,30 | ✓ 51,72 | ✓ +7,31 pp | **REJECT** persistent K5 (FwdPE 58,43 >> 35) |
+| FSLR | XLK/Solar | ✗ 229,13<232,75 | — | — | REJECT K1 |
+| DUOL | Comm | ✗ 128,16<151,07 | — | — | REJECT K1 |
+| AKR | REIT | ✓ | ✓ 44,63 | ✗ −9,86 pp | REJECT K3 |
+| XLE-Rally | ETF | ✓ | ✗ RSI 72,66 | ✓ +6,22 pp | REJECT K2 überkauft |
+
+**Watchlist morgen: GE (Beat & Raise Industrials), LMT (Defense RS #1), NVDA (K3-RS-Flip), PANW (K5-Recheck)** — CRDO REJECT persistent.
+
+### Markt-Kontext Close (Alpaca IEX + Perplexity)
+- SPY Close: 767,73 (delayed-SIP) / 767,37 (IEX) — chg **−0,64 %** vs Mo 772,67
+- **VIX Close 15,96** (+6,5 % vs Mo 14,99) — GRÜN weit von 30, aber steigend
+- **US 10Y Yield 4,725 %** — persistent Hoch seit Ende 2024, drückt Bewertungsmultiples
+- **XLE Best +1,08 %** (Öl-Rally) | **XLC Worst −1,89 %**
+- Nasdaq-Futures-Schwäche Pre-Market bestätigte sich intraday (XLK-Rotation-Weakness spürbar: DELL/AAPL Muster)
+- Guardrail-Kontext: Crash-Filter NEIN (SPY −0,64 % >> −5 %), VIX 15,96 << 30, Cash 48,92 % >> 20 %-Min
+
+### Perplexity-Queries heute (2 gesamt): SPY/VIX/Sektoren-Check + Watchlist-Sektor-Scan.
+
+### Entscheidung
+- **Keine Sell-Order** (V1-V6 alle sicher, DQF-Zustände persistent akzeptabel — Std-V1 primär)
+- **Keine Buy-Order** (Slot 2 KW34 bleibt offen bis Mi — GE/LMT/NVDA/PANW K4/K5-Vollcheck bei Market Open Mi)
+- **Alpha +1,00 pp POS** — Portfolio-Diversifikation bewährt sich (LLY-Rebound + V-Stärke kompensieren DELL/AAPL-XLK-Weakness)
+- **NVDA-K3-FLIP** ist neue positive Entwicklung — potenzieller Slot-2-Kandidat neben GE/LMT
+
+### Aktionen
+- Memory portfolio.md aktualisiert (Market Close Tagesbilanz)
+- Memory research-log.md aktualisiert (dieser Eintrag)
+- Memory trade-log.md aktualisiert (Watchlist-Update, keine Transaktion)
+- ClickUp: [CLOSE] Tagesbilanz Prio 4 (positives P/L)
+- PushNotification: JA (Alpha +1,00 pp POS + DELL Tag 2 Softness + UNH V2-DQF 21. Tag + NVDA K3-Flip)
+
+Nächster Check: **Mi 19.08. 08:30 ET Pre-Market KW34 Tag 3** — DELL Tag-3-Verlauf, AAPL V2-DQF 9. Tag, UNH V2-DQF 22. Tag Owner-Entscheidung, GE/LMT/NVDA/PANW K4/K5-Vollcheck Vorbereitung.
+
+---
+
 ## Market Open 09:30 ET — 2026-08-18 (Di, KW34 Tag 2) — Slot 2 KW34 KEIN Kauf / V1-V6 alle sicher / Ø +1,02 %
 
 ### Alpaca Account Live 09:40

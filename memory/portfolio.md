@@ -1,5 +1,57 @@
 # Portfolio Status
 
+**Market Close 16:00 ET 2026-08-18 (Di, KW34 Tag 2) — Tagesbilanz:**
+Gesamtwert:        96.210,55 $   (Alpaca /v2/account equity Close)
+Cash:              47.062,08 $   (**48,92 %**)
+Investiert MV:     49.148,47 $   (51,08 %)  — AAPL 9.610,00 / DELL 9.371,60 / JPM 1.089,00 / LLY 9.788,80 / UNH 9.454,32 / V 9.834,75
+P/L heute:         **+347,26 $** (**+0,362 %** vs last_equity 95.863,29) [GRÜN, Cap −3 %]
+Alpha vs SPY:      **+1,00 pp POS** (SPY delayed-SIP 772,67 → 767,73 = **−0,640 %**; Perplexity nannte +0,04 % Yahoo-Composite unklar Divergenz; IEX-Ref −0,68 %; Portfolio +0,362 % outperformt via LLY +3,42 % / V +1,51 % / JPM +0,57 % / AAPL +1,44 % Stärke gegen SPY-Rotation-Weakness)
+ATH:              100.066,47 $   (unverändert)
+Drawdown:          **−3,853 %**  [GRÜN, verbessert vs Midday −3,920 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily +0,362 % | **Weekly KW34 Tag 2 vs Fr Close 96.192,26 = +0,019 % GRÜN** | Käufe **1/2 KW34** (Slot 2 offen — Mi 19.08. verfügbar) | VIX Close 15,96 GRÜN | Crash-Filter NEIN (SPY −0,64 % >> −5 %) | DD GRÜN | Earnings-Blackout KEINE (DELL 27.08. 7 HT >3)
+Positionen:        **6/8**
+Offene Orders:     **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+
+Positions-Übersicht Close (Ø-P/L **+1,11 %** ungewichtet):
+- **JPM +9,08 % BEST P/L** (363,00 $, chg +0,57 %, 3 Sh, MV 1.089,00, entry 332,78)
+- **LLY +2,49 %** (1223,60 $, **chg +3,42 % BEST chg**, 8 Sh, MV 9.788,80, entry 1193,89)
+- V +1,98 %      (364,25 $, chg +1,51 %, 27 Sh, MV 9.834,75, entry 357,178)
+- UNH −1,90 %    (393,93 $, chg −0,43 %, 24 Sh, MV 9.454,32, entry 401,57)
+- AAPL −2,16 %   (310,00 $, chg +1,44 %, 31 Sh, MV 9.610,00, entry 316,857)
+- **DELL −2,84 % WORST P/L + WORST chg** (468,58 $, **chg −2,34 %** Tag 2 Softness setzt sich fort, 20 Sh, MV 9.371,60, entry 482,27)
+
+Vollständiger V1-V6 Signal-Check Close (Alpaca IEX EOD Bars):
+- **V1 Std −8 % alle SICHER** (min DELL **+5,61 % ENGSTE** verbessert vs Midday +4,41 % durch Late-Session Recovery vs Erste-Session-Low):
+  - DELL +5,61 % (Thr 443,69), AAPL +6,34 % (Thr 291,51), UNH +6,63 % (Thr 369,44), V +10,85 % (Thr 328,60), LLY +11,40 % (Thr 1098,38), JPM +18,57 % (Thr 306,16)
+- **V2-Trailing:** AAPL DQF 8. Tag Wick 344,555 = Thr 303,21 → cur 310,00 = **+2,24 % SICHER** (marginal erodiert vs Midday +2,50 %); **UNH V2 DQF 21. Tag persistent BROKEN −2,89 %** via Wick 460,95 = Thr 405,64 (verschlechtert vs Midday −2,49 %) — **Alt-V2 via 437,13 = 384,67 Puffer +2,41 % SICHER** + Std-V1 +6,63 % primär SICHER, Owner-Entscheidung pending 21. Tag
+- **V3/V4:** max JPM +9,08 % << 20 %-TP1 → kein Trigger
+- **V5 (EMA50<EMA200):** ALLE Golden Cross intakt SICHER (Alpaca IEX Daily EOD):
+  - AAPL 308,96>282,48 (spread +26,47) / DELL 412,79>248,20 (spread **+164,59!**) / JPM 342,95>318,69 (+24,26) / LLY 1158,27>1042,77 (+115,50) / UNH 405,81>355,12 (+50,69) / V 352,08>336,03 (+16,05) → **KEIN Death Cross, KEIN Trigger**
+- **V6 (RSI>80 AND RS_4w<0):** KEIN Symbol RSI >80 (max JPM 64,44; LLY 58,04 / DELL 56,02 / V 55,16 / AAPL 48,00 / UNH 37,81); SPY 4w-Ret +2,57 %; RS_4w: DELL +13,42 pp / JPM +2,69 pp / LLY +1,83 pp positiv, V −0,20 pp / AAPL −7,91 pp / UNH −12,32 pp negativ → **kein Symbol RSI>80 UND RS<0 gleichzeitig** → **KEIN Trigger**
+→ **KEINE Verkaufsorder für Mi 19.08. platziert**
+
+Sektor-Struktur Close: **XLK 19,73 %** (AAPL 9,99 + DELL 9,74), **XLV 20,00 %** (UNH 9,83 + LLY 10,17), **XLF 11,35 %** (JPM 1,13 + V 10,22), Cash 48,92 % — alle < 30 %-Cap ✓
+
+Weekly Loss Cap Check: 96.210,55 vs Mo-Basis (Fr 14.08 Close) 96.192,26 = **+0,019 % [GRÜN]** weit von Cap −5 % → keine Sperre, keine Order-Stornierung nötig (0 pending)
+
+Watchlist Mi 19.08. (KW34 Tag 3, Slot 2 verfügbar) K1-K3 Alpaca IEX:
+- **GE** (XLI/Industrials, LargeCap) — 375,13 $, K1✓ EMA50 354,07>EMA200 322,24 / K2✓ RSI 59,63 / K3✓ RS +7,56 pp → **K4/K5 Mi prüfen** (Beat & Guidance-Raise Q2 nach Perplexity)
+- **LMT** (XLI/Defense) — 607,24 $, K1✓ EMA50 560,56>EMA200 550,06 / K2✓ RSI 63,75 / **K3✓ RS +17,21 pp #1** → K4 Mi Vol-belastbar prüfen (Di K4 ~69 % Extrap, Recovery-Bounce vorbei), K5 ✓ (FwdPE 19,70 gestern)
+- **NVDA** (XLK/GPU-AI) — 219,73 $, K1✓ EMA50 209,80>EMA200 196,24 / K2✓ RSI 56,56 / **K3✓ RS +3,46 pp FLIP von −4,8 pp Mo!** → K4/K5 Mi prüfen (Upgrade Watch-only → Full-Scan)
+- **PANW** (XLK/Software) — 374,15 $, K1✓ EMA50 329,44>EMA200 236,72 / K2✓ RSI 59,85 / K3✓ RS +6,82 pp → K5-Recheck nach Earnings 17.08. (FwdPE-Update) Mi
+- **CRDO REJECT persistent** (K5 FAIL FwdPE 58,43 >> 35 Hardcap; nur Recheck falls Kompression <35)
+- REJECT: FSLR (K1 EMA50<EMA200), DUOL (K1), AKR (K3), AMX/BBWI (K2/K3), MU (K3 −5,54 pp verschlechtert), XLE (K2 RSI 72,66 >70)
+
+Markt-Kontext Close: SPY 767,73 (delayed-SIP) / 767,37 (IEX) = **−0,64 %** vs Mo, Perplexity-Divergenz +0,04 % Yahoo unklar; VIX Close **15,96** GRÜN steigend (+6,5 % vs Mo 14,99); US 10Y **4,725 %** Yield persistent Hoch; XLE Best +1,08 % (Öl-Rally) / XLC Worst −1,89 %; Nasdaq-Futures-Schwäche Pre-Market bestätigte sich intraday (XLK-Rotation-Weakness); Portfolio outperformt SPY via LLY-Rebound (+3,42 %) + V (+1,51 %) trotz DELL-Weakness.
+
+Alle **8 Guardrails GRÜN + 2 WARN persistent** (UNH V2-DQF 21. Tag razor BROKEN −2,89 % — Alt-V2 +2,41 %/Std-V1 +6,63 % sicher; AAPL V2-DQF 8. Tag +2,24 % SICHER marginal — Std-V1 +6,34 % primär).
+
+ClickUp Tagesbericht Prio 4 (positives P/L): [CLOSE] Tagesbilanz — 2026-08-18 — versucht.
+PushNotification: **JA** (Close-Ausnahme: Alpha +1,00 pp POS, DELL Tag 2 chg −2,34 % Verlauf, UNH V2-DQF 21. Tag persistent Owner-Entscheidung, NVDA K3-RS-Flip als neuer Watchlist-Kandidat).
+Nächster Check: **Mi 19.08. 08:30 ET Pre-Market KW34 Tag 3** — DELL Tag-3-Verlauf, AAPL V2-DQF 9. Tag, UNH V2-DQF 22. Tag Owner-Entscheidung, GE/LMT/NVDA/PANW K4/K5 Vollcheck, Slot 2 KW34 Buy-Scan-Vorbereitung.
+
+---
+
 **Midday 13:07 ET 2026-08-18 (Di, KW34 Tag 2) — Stop-Check:**
 Positionen: 6/8 | Ø-P/L +0,87 % ungewichtet | Equity 96.143,85 $ (Cash 47.062,08 / Inv MV 49.083,50)
 Schlechteste Position: **DELL −3,95 %** (Last 463,24 $, chg_today **−3,45 %** Erste-Session-Softness Tag 2 setzt sich fort, V1 443,69 Puffer **+4,41 % ENGSTE**)
