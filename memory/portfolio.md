@@ -1,5 +1,25 @@
 # Portfolio Status
 
+**Midday 13:07 ET 2026-08-18 (Di, KW34 Tag 2) — Stop-Check:**
+Positionen: 6/8 | Ø-P/L +0,87 % ungewichtet | Equity 96.143,85 $ (Cash 47.062,08 / Inv MV 49.083,50)
+Schlechteste Position: **DELL −3,95 %** (Last 463,24 $, chg_today **−3,45 %** Erste-Session-Softness Tag 2 setzt sich fort, V1 443,69 Puffer **+4,41 % ENGSTE**)
+Beste Position:        **JPM +8,28 %** (Last 360,33 $, chg −0,18 %, V1 306,16 Puffer +17,69 %)
+Übrige: AAPL −1,92 % (310,79, chg +1,70 %, V1 291,51 Puffer +6,61 %) | UNH −1,50 % (395,55, chg −0,02 %, V1 369,44 Puffer +7,07 %) | LLY +2,08 % (1218,78, **chg +3,01 %** BEST chg, V1 1098,38 Puffer +10,96 %) | V +2,24 % (365,18, chg +1,77 %, V1 328,60 Puffer +11,13 %)
+Stops: **alle regulär** — V1/V2/V3/V4 nicht ausgelöst (RSI/EMA bei Midday nicht geprüft):
+- **V1 Std −8 % alle SICHER** (min DELL +4,41 % ENGSTE, verschlechtert vs Open +9,04 % durch chg −3,45 %)
+- **V2-Trailing:** AAPL DQF 8. Tag Wick 344,555 = Thr 303,21 → cur 310,79 = **+2,50 % SICHER** verbessert vs Open +1,09 %; **UNH V2 DQF 20. Tag Wick 460,95 = Thr 405,64 → cur 395,55 = BROKEN −2,49 % persistent** stabil vs Open −2,46 %; **Alt-V2 via 437,13 = 384,67 = +2,83 % SICHER** + Std-V1 +7,07 % primär SICHER
+- **V3/V4:** max JPM +8,28 % << 20 %-TP1 → kein Trigger
+Daily P/L: **+0,293 %** (96.143,85 / 95.863,29) [GRÜN — Limit −3 %; verbessert vs Open +0,342 % marginal]
+Weekly P/L KW34 Tag 2 vs Fr Close 96.192,26: **−0,050 %** [GRÜN — Limit −5 %]
+Drawdown vs ATH 100.066,47: **−3,920 %** [GRÜN, marginal verbessert vs Open −3,873 %; Schwelle −15 % bei 85.056,50]
+Pending Orders: **0** (Alpaca /v2/orders?status=open bestätigt) | Käufe KW34: 1/2 (Slot 2 offen — heute NICHT besetzt)
+Alle **8 Guardrails GRÜN + 2 WARN persistent** (UNH V2-DQF 20. Tag BROKEN −2,49 % — Alt-V2/Std-V1 sicher; DELL Tag 2 chg −3,45 % accelerating watch — V1-Puffer +4,41 %).
+ClickUp: **kein Log** (Silence: keine Stops, kein Daily-Cap, kein Trade).
+PushNotification: **NEIN** (Silence-Rule Midday: alle V1 SICHER, Daily/Weekly/DD GRÜN, DELL-Verlauf bekanntes WARN — kein neuer Trigger).
+> Nächste Routine: **Di 18.08. 16:00 ET Market Close** — DELL Tag-2-Close-Verlauf (Erholung/Beschleunigung?), AAPL V2-DQF 8. Tag, UNH V2-DQF 20. Tag Owner-Entscheidung, V5/V6 Vollcheck, LMT/CRDO Watchlist Session-Reife.
+
+---
+
 **Market Open 09:30 ET 2026-08-18 (Di, KW34 Tag 2) — 09:40 Live-Snapshot:**
 Gesamtwert:        96.190,68 $   (Alpaca /v2/account equity Live)
 Cash:              47.062,08 $   (48,92 %)
