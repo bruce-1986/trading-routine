@@ -4,6 +4,76 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-18 (Di, KW34 Tag 2) — Guardrails 8/8 GRÜN + 2 WARN / VIX 15,9 GRÜN steigend / Market-Open-Scan JA (Slot 2/2)
+
+### Alpaca Account Pre-Market
+- Equity: **95.786,06 $** (vs last_equity 95.863,29 = **−77,23 $ / −0,081 % GRÜN**)
+- Cash: **47.062,08 $** (49,13 %) | Long MV: **48.723,98 $** (50,87 %)
+- ATH 100.066,47 → **DD −4,278 % GRÜN** (verschlechtert vs Mo Close −4,196 %; Schwelle −15 % bei 85.056,50)
+- Positionen: **6/8** | Offene Orders: **0** (Alpaca /v2/orders?status=open bestätigt)
+- vs Memory Mo Close 95.866,65 → −80,59 $ = −0,084 % (marginal Overnight-Drift, akzeptabel)
+- Weekly KW34 Tag 2 vs Fr Close 96.192,26 = **−0,422 % GRÜN** (verschlechtert vs Mo Close −0,338 %, weit von Cap −5 %)
+
+### Position-P/L Live Pre-Market (Alpaca /v2/positions)
+| Sym | Qty | Entry | Cur | P/L % | chg_today | V1 Std Thr | V1 Puffer |
+|-----|-----|-------|-----|-------|-----------|------------|-----------|
+| **JPM BEST** | 3 | 332,78 | 362,02 | **+8,79 %** | +0,29 % | 306,16 | +18,25 % |
+| V | 27 | 357,178 | 360,36 | +0,89 % | +0,42 % | 328,60 | +9,67 % |
+| LLY | 8 | 1193,89 | 1191,00 | −0,24 % | +0,66 % | 1098,38 | +8,43 % |
+| UNH | 24 | 401,57 | 396,70 | −1,21 % | +0,27 % | 369,44 | +7,38 % |
+| AAPL | 31 | 316,857 | 307,40 | −2,98 % | +0,59 % | 291,51 | +5,45 % |
+| **DELL WORST P/L + WORST chg** | 20 | 482,27 | 466,50 | **−3,27 %** | **−2,77 %** | 443,69 | **+5,14 % ENGSTE** |
+
+Ø P/L ungewichtet: **+0,33 %** (JPM +8,79 Best / DELL −3,27 Worst — DELL überholt AAPL als Worst P/L via Tag-2-Softness)
+
+### Markt-Überblick (Perplexity Pre-Market)
+- **VIX Spot ~15,9–16,0** (+5 % vs Mo 14,25→14,99) — **GRÜN weit von 30, aber steigend**
+- **SPY Pre-Market −0,4 bis −0,5 %** | S&P Futures −0,6 % → GRÜN (Cap −2 % Vorsicht-Trigger nicht erreicht)
+- **US 10Y Treasury Yield 4,73–4,75 %** — **neues Hoch seit Ende 2024**, drückt Bewertungsmultiples
+- **Nasdaq-Futures −1,3 %** — Tech/Chip-Schwäche, Gewinnmitnahmen (relevant XLK 19,88 % Sektor: AAPL/DELL)
+- Makro-Termine: 08:30 Import/Export Prices + Housing Starts, 09:15 Industrial Production, 10:00 Pending Home Sales — **keine Fed-Meetings, keine Top-Tier-Datenpunkte**
+
+### Guardrail-Status (8/8 GRÜN + 2 persistent WARN)
+- Daily Loss Cap: **−0,081 % GRÜN** (Cap −3 %)
+- Weekly Loss Cap: **−0,422 % GRÜN** (Cap −5 %)
+- DD vom ATH: **−4,278 % GRÜN** (Alarm −15 % / Stopp −20 %)
+- VIX-Filter: **15,9 GRÜN** (Cap 30)
+- Crash-Filter: **NEIN** (SPY Mo −0,47 % >> −5 %)
+- Käufe KW34: **1/2** (Slot 1 DELL Mo verbraucht, **Slot 2 Di offen**)
+- Positionen: **6/8** (Kapazität für 2 weitere)
+- Earnings-Blackout: **KEINE aktiv** (siehe unten)
+- **WARN 1:** UNH V2 DQF 20. Tag Wick 460,95 = Thr 405,64 → cur 396,70 = **BROKEN −2,20 %** (verbessert vs Mo Close −2,49 %); Alt-V2 via 437,13 = 384,67 = **+3,13 % SICHER** + Std-V1 +7,38 % primär SICHER, Owner-Entscheidung pending seit 19 Tagen
+- **WARN 2:** AAPL V2 DQF 8. Tag Wick 344,555 = Thr 303,21 → cur 307,40 = **+1,38 % SICHER marginal** (verbessert vs Mo Close +0,81 %); Std-V1 +5,45 % primär SICHER
+
+### Earnings-Blackout Check (Perplexity — nächste 3 HT: 18/19/20.08.)
+| Sym | Nächste Earnings | Blackout? |
+|-----|------------------|-----------|
+| AAPL | 29.10.2026 AMC | NEIN |
+| DELL | 27.08.2026 (7 HT) AMC | NEIN heute (Blackout Mo 24.08.) |
+| JPM | 13.10.2026 BMO | NEIN |
+| V | Okt 2026 | NEIN |
+| LLY | Okt/Nov 2026 | NEIN |
+| UNH | Okt 2026 | NEIN |
+
+**KEINE aktiven Earnings-Blackouts, keine Stop-Verengung nötig heute.**
+
+### Watchlist Di 18.08. (Slot 2/2 offen) — Reihenfolge aus Mo Close
+- **CRDO** (XLK/Semis-Connectivity MidCap): 283,11 K1✓ K2✓ K3✓ (**RS +59,6 pp #1**) → K4/K5 Vollcheck Market Open
+- **LMT** (XLI/Defense): 593,92 K1✓ K2✓ K3✓ (+11,0 pp) → K4/K5 Vollcheck
+- **NVDA** (XLK/GPU-AI): 225,10 K1✓ K2✓ K3✗ (−4,8 pp) — **Watch-only**
+- **MU** (XLK): Vortag K1-K5 ✓ aber 4-Tage-Gap-Up-Muster — Owner Limit-Regel-Diskussion weiter pending
+- **PANW** (XLK): K5-FwdPE-Recheck (Earnings 17.08. gestern gemeldet)
+- **VORSICHT:** Nasdaq-Futures −1,3 % + 10Y neues Hoch → XLK-Neukäufe (CRDO/MU/PANW) unter erhöhter Beobachtung; LMT (XLI/Defense) rendite-unabhängiger, MidCap-relativ stabil
+
+### Entscheidung
+- **Market-Open-Scan JA:** Slot 2/2 offen, Guardrails GRÜN, Cash 49,13 %, keine Earnings-Blackouts
+- **Priorität:** LMT (Defense/rendite-robust) > CRDO (RS #1, aber XLK unter Druck) > NVDA-Watch
+- **Vorsichts-Modus wegen Tech-Weakness + 10Y-Hoch:** Kaufkandidaten strikt K1-K5 prüfen, kein Overshoot-Chase; DELL Tag-2-Softness (chg −2,77 %) beobachten (V1 Puffer +5,14 % noch sicher, aber ENGSTE)
+
+Nächster Check: **Di 18.08. 09:30 ET Market Open KW34 Tag 2** — K4/K5 Vollcheck CRDO/LMT (Prio-Reihenfolge), Slot 2 Buy-Entscheidung, DELL Tag-2-Verlauf, UNH V2-DQF 20. Tag, AAPL V2-DQF 8. Tag.
+
+---
+
 ## Close 16:00 ET — 2026-08-17 (Mo, KW34 Tag 1) — Alpha +0,133 pp POS / V5-V6 alle SICHER / KEINE Sell-Orders
 
 ### Alpaca Account Close
