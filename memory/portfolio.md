@@ -1,5 +1,54 @@
 # Portfolio Status
 
+**Market Close 16:00 ET 2026-08-19 (Mi, KW34 Tag 3) — Tagesbilanz:**
+Gesamtwert:        96.107,55 $   (Alpaca /v2/account equity Close)
+Cash:              47.062,08 $   (48,97 %)
+Investiert MV:     49.045,47 $   (51,03 %)  — AAPL 9.817,39 / DELL 8.744,00 / JPM 1.071,78 / LLY 10.244,16 / UNH 9.326,64 / V 9.841,50
+P/L heute:         **−123,12 $** (**−0,128 %** vs last_equity 96.230,67) [GRÜN, Cap −3 %]
+Alpha vs SPY:      **−0,353 pp NEG** (SPY IEX Close 769,09 vs 767,365 = **+0,225 %** — Perplexity nannte +0,23 %; Portfolio −0,128 % underperformt via **DELL chg −6,71 % V1-Kollaps** dominant vs LLY chg +4,47 % / AAPL chg +2,15 % / V chg +0,07 % / JPM chg −1,65 % / UNH chg −1,35 %)
+ATH:              100.066,47 $   (unverändert)
+Drawdown:          **−3,956 %**  [GRÜN, verschlechtert vs Midday −3,817 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily −0,128 % | **Weekly KW34 Tag 3 vs Fr Close 96.192,26 = −0,088 % GRÜN** | Käufe **1/2 KW34** (Slot 2 verbraucht ohne Fill — Mi Buy-Scan ergab NO-BUY) | VIX Close ~n/a GRÜN | Crash-Filter NEIN (SPY +0,225 % >> −5 %) | DD GRÜN | Earnings-Blackout KEINE
+Positionen:        **6/8** (5/8 nach DELL-Fill morgen)
+Offene Orders:     **1 (DELL Market-Sell 20 Sh Day, ID f484b52b)** — Fill morgen 09:30 ET Open
+
+Positions-Übersicht Close (Ø-P/L **+0,68 %** ungewichtet):
+- **JPM +7,36 % BEST P/L** (357,26 $, chg −1,65 %, 3 Sh, MV 1.071,78, entry 332,78) — verschlechtert vs Midday +7,56 %
+- **LLY +7,26 %** (1280,52 $, **chg +4,47 % BEST chg**, 8 Sh, MV 10.244,16, entry 1193,89) — verbessert vs Midday +6,45 %
+- V +2,05 % (364,50 $, chg +0,07 %, 27 Sh, MV 9.841,50, entry 357,178) — verschlechtert vs Midday +3,39 %
+- AAPL −0,05 % (316,69 $, chg +2,15 %, 31 Sh, MV 9.817,39, entry 316,857) — verbessert vs Midday −0,66 % (Session-Rally)
+- UNH −3,23 % (388,61 $, chg −1,35 %, 24 Sh, MV 9.326,64, entry 401,57) — verschlechtert vs Midday −3,10 %
+- **DELL −9,35 % WORST P/L + WORST chg V1-GETRIGGERT** (437,20 $, **chg −6,71 %**, 20 Sh, MV 8.744,00, entry 482,27) — **V1 BROKEN: 437,20 < 443,69 Thr = −1,46 % → Market-Sell 20 Sh 09:30 ET Open**
+
+**⚠ V1 STOP-LOSS TRIGGER DELL (kritisch):**
+- Kurs 437,20 < Thr 443,6884 (Entry 482,27 × 0,92) → V1 ausgelöst per strategy.md Zeile 24 "Market Order SOFORT"
+- Market ist geschlossen (Alpaca clock is_open=false, next_open Mi 20.08. 09:30 ET) → Order accepted status, Fill an Open
+- **Vollständiger Sell-Signal-Check V1-V6 Close** (Alpaca IEX EOD ~243 Tage):
+  - **V1 Std −8 %:** **DELL BROKEN −1,46 % → SELL PLATZIERT**; verbleibende 5 SICHER: UNH +5,19 % ENGSTE (Thr 369,44), AAPL +8,64 % (Thr 291,51), V +10,92 % (Thr 328,60), LLY +16,58 % (Thr 1098,38), JPM +16,69 % (Thr 306,16)
+  - **V2-Trailing:** AAPL DQF 9. Tag Wick 344,555 = Thr 303,21 → cur 316,69 = **+4,45 % SICHER** (verbessert vs Midday +3,81 %); **UNH V2 DQF 22. Tag persistent BROKEN −4,15 %** via Wick 460,95 = Thr 405,64 (Close 388,61 < Thr; verschlechtert vs Midday −4,07 %) — **Alt-V2 via 437,13 = 384,67 Puffer +1,02 % SICHER** shrinking + Std-V1 +5,19 % primär SICHER, Owner-Entscheidung pending 22. Tag
+  - **V3/V4:** max JPM +7,36 % << 20 %-TP1 → kein Trigger
+  - **V5 (EMA50<EMA200) alle 6 Golden Cross intakt SICHER:** AAPL 309,50>288,32 (+21,18) / **DELL 429,08>282,78 (+146,30 huge)** / JPM 344,69>321,40 (+23,29) / LLY 1180,66>1052,77 (+127,89) / UNH 412,22>365,70 (+46,51) / V 353,23>336,79 (+16,44) → **KEIN Death Cross, KEIN Trigger**
+  - **V6 (RSI>80 AND RS_4w<0):** KEIN Symbol RSI>80 (max LLY 62,76; JPM 56,98 / V 57,15 / AAPL 54,35 / DELL 46,48 / UNH 32,08); SPY 4w-Ret +2,89 %; RS_4w-Verteilung: LLY +7,26 pp / V +0,58 pp positiv, JPM −0,33 pp / DELL −3,87 pp / AAPL −5,64 pp / UNH −12,81 pp negativ → **kein Symbol RSI>80 UND RS<0 gleichzeitig** → **KEIN Trigger**
+→ **NUR DELL Sell-Order platziert (V1); keine weitere V5/V6-Order**
+
+**Weekly Loss Cap Check:** 96.107,55 vs Fr Close 96.192,26 = **−0,088 % GRÜN** weit von Cap −5 % → keine Wochensperre, keine pending Orders zum Stornieren (0 pending vor DELL-Sell, jetzt 1)
+
+Alle **7 Guardrails GRÜN + 1 TRIGGER + 1 WARN persistent** (DELL V1 BROKEN Market-Sell platziert; UNH V2-DQF 22. Tag persistent BROKEN −4,15 %; Slot 2 KW34 verbraucht ohne Fill via Market-Open Buy-Scan Ergebnis NO-BUY).
+
+Markt-Kontext Close: SPY +0,225 % moderat positiv (IEX-Bars), VIX GRÜN, **DELL chg −6,71 % dramatischer Zusammenbruch** (Tag-3-Weakness eskalierte via Late-Session-Sell-Off, komplettiert 3-Session-Kaskade: 17.08. Kauf @482,27 → 18.08. Close 468,58 (chg −2,34 %) → 19.08. Close 437,20 (chg −6,71 %) → V1 −8 %-Stop innerhalb 3 HT ausgelöst).
+
+**Watchlist Do 20.08.** (K1-K3 Alpaca IEX Daily):
+- **PANW #1 XLK/Software** — K1✓ EMA 335,91>253,63 / K2✓ RSI 50,18 / **K3✓ RS +45,02 pp** — K4/K5 Market Open Vollcheck
+- **MU XLK/Semis** — K1✓ EMA 933,85>644,86 / K2✓ RSI 50,35 / K3✓ RS +29,24 pp — K4/K5 pending, Gap-Up-Muster Owner-Regel offen
+- **LMT XLI/Defense** — K1✓ EMA 559,52>547,69 / K2✓ RSI 57,56 / K3✓ RS +7,07 pp / K5 ✓ (FwdPE 19,70 gestern) — K4 Market Open
+- REJECT: NVDA (K3 RS −6,20 pp), MSFT (K1 EMA50<EMA200 knapp), AVGO/GOOG (K2 RSI <50), TSM (K2 RSI 43,37), GE (K2 RSI 44,59)
+
+ClickUp: **KEIN Alert** (ITEM_246 "Max usage for custom task types reached" persistent → Fallback Memory-Only bei STOP_LOSS-Kategorie).
+PushNotification: **JA** (STOP_LOSS-Ausnahme: DELL V1 GETRIGGERT ist Level-1 kritisch, Owner-Awareness pflicht).
+Nächster Check: **Do 20.08. 08:30 ET Pre-Market KW34 Tag 4** — DELL Sell-Fill-Kontrolle 09:30 ET, verbleibende 5 Positionen V1-V6 monitor, UNH V2-DQF 23. Tag Owner-Entscheidung, PANW/MU/LMT K4/K5-Vollcheck für Slot-2-Wiedereröffnung (Käufe-Zähler 1/2 verbraucht 19.08. ohne Fill → möglich Reset-Diskussion).
+
+---
+
 **Midday 13:00 ET 2026-08-19 (Mi, KW34 Tag 3) — 13:07 Live-Snapshot:**
 Gesamtwert:        96.246,93 $   (Alpaca /v2/account equity Live)
 Cash:              47.062,08 $   (48,90 %)
