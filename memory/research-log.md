@@ -4,6 +4,76 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-19 (Mi, KW34 Tag 3) — Guardrails GRÜN / Market-Open-Scan JA / Slot 2 KW34 offen
+
+### Alpaca Account Pre-Market
+- Equity: **96.288,49 $** (vs last_equity 96.230,67 = **+57,82 $ / +0,060 % GRÜN**)
+- Cash: **47.062,08 $** (48,88 %) | Long MV: **49.226,41 $** (51,12 %)
+- ATH 100.066,47 → **DD −3,775 % GRÜN** (verbessert vs Di Close −3,853 %; Schwelle −15 % bei 85.056,50)
+- Positionen: **6/8** | Offene Orders: **0** (bestätigt Alpaca /v2/orders?status=open)
+- Konsistenz-Check: Cash 47.062,08 + MV 49.226,41 = 96.288,49 ✓ (Alpaca equity)
+- Weekly KW34 Tag 3 vs Fr Close 96.192,26 = **+0,100 % GRÜN**
+- Trading-Status: ACTIVE, trading_blocked=false, account_blocked=false
+
+### Position-P/L Pre-Market (Alpaca /v2/positions)
+| Sym | Qty | Entry | Cur | P/L % | chg_today |
+|-----|-----|-------|-----|-------|-----------|
+| **JPM BEST P/L** | 3 | 332,78 | 363,40 | **+9,20 %** | +0,04 % |
+| LLY BEST chg | 8 | 1193,89 | 1232,81 | +3,26 % | **+0,58 %** |
+| V | 27 | 357,178 | 364,72 | +2,11 % | +0,13 % |
+| UNH | 24 | 401,57 | 395,00 | −1,64 % | +0,27 % |
+| AAPL | 31 | 316,857 | 309,72 | −2,25 % | −0,10 % |
+| **DELL WORST P/L** | 20 | 482,27 | 467,25 | **−3,11 %** | −0,30 % |
+
+Ø P/L ungewichtet: **+1,26 %** (JPM +9,20 Best / DELL −3,11 Worst — DELL Tag 3 leicht weiter softening, aber marginal)
+
+### Markt-Kontext Pre-Market (Perplexity + Alpaca)
+- **VIX aktuell:** ~15,86 (Spot 15,86; Futures 15,71–15,84) — **GRÜN** << 30
+- **SPY Pre-Market:** 768,85 $ (Alpaca 08:36 ET) vs Di Close (SIP) 767,73 = **+0,146 %** / vs IEX 767,37 = +0,193 %
+- **US 10Y Yield:** ~4,69–4,70 % — leicht runter vs Di 4,725 %
+- **Makro heute:** FOMC Minutes 14:00 ET (potenziell markt-bewegend); MBA Mortgage Apps 07:00 ET; EIA Öl-Lagerdaten 10:30 ET; **KEINE** CPI/Jobs/Retail/Housing
+- **Top 3 News:** (1) Chip-/Tech-Abverkauf gestern auf wieder aufkeimende Inflationssorgen; (2) Fed-Sept-Zinsschritt wird ausgepreist, Bond-Markt preist höhere Long-Term-Rates; (3) Neue US-Zölle 50 % auf ausgewählte kanadische Importe ab Mitternacht — Handelsspannungs-Risiko
+
+### Guardrail-Check Pre-Market
+| Guardrail | Schwelle | Status | Wert |
+|-----------|----------|--------|------|
+| 1. Daily Loss Cap | −3 % | **GRÜN** | +0,060 % (Tag beginnt) |
+| 2. Weekly Loss Cap KW34 | −5 % | **GRÜN** | +0,100 % (Tag 3 vs Fr Close) |
+| 3. Drawdown-Alarm | −15 % ATH | **GRÜN** | −3,775 % (Puffer +11,23 pp) |
+| 4. Drawdown-Stopp | −20 % ATH | **GRÜN** | −3,775 % (Puffer +16,23 pp) |
+| 5. Crash-Filter | SPY −5 %/Tag | **GRÜN** NEIN | Di SPY −0,64 % >> −5 % |
+| 6. VIX-Filter | > 30 | **GRÜN** | 15,86 |
+| 7. Earnings-Blackout | 3 HT vor Earnings | **KEINE** | AAPL/DELL/JPM/LLY/UNH/V alle >5 HT ohne Termin |
+| 8. Max. Käufe/Woche | 2/Woche | **1/2 KW34** | Slot 2 offen (Mi 19.08. verfügbar) |
+| 9. Max. Positionen | 8 | **6/8** | 2 Slots frei |
+| 10. Min. Cash-Reserve | 20 % | **48,88 %** | weit über Minimum |
+
+**Alle 10 Guardrails GRÜN** — keine Sperre für Kaufscan bei Market Open.
+
+### Earnings-Blackout (Perplexity Query 5-Tage-Fenster 19.–25.08.)
+- **KEINE Blackouts** für alle 6 offenen Positionen (AAPL, DELL, JPM, LLY, UNH, V) im 3-HT-Fenster
+- DELL nächster Termin: 27.08.2026 = 6 HT entfernt → Blackout aktiv ab Mo 24.08.
+- Kein Handlungsbedarf heute für Stop-Verengung
+
+### Perplexity-Queries heute (2 gesamt): Daily Macro Check + Earnings-Kalender 5-Tage-Fenster.
+
+### Entscheidung
+- **Market-Open-Scan JA** — Slot 2 KW34 offen, alle Guardrails GRÜN, Watchlist bereit
+- **Watchlist Mi 19.08.** (K1-K3 gestern bestätigt; K4/K5 bei Market Open Vollcheck): **GE** (XLI/Industrials, Beat & Raise), **LMT** (XLI/Defense RS #1), **NVDA** (XLK/GPU K3-Flip), **PANW** (XLK/Software K5-Recheck)
+- **Vorsicht:** FOMC Minutes 14:00 ET können Nachmittags-Volatilität auslösen — Limit-Orders morgens platzieren, Ausführung vor 14:00 ET anstreben
+- **UNH V2-DQF 22. Tag** Owner-Entscheidung weiterhin pending (Std-V1 +6,63 % primär sicher)
+- **AAPL V2-DQF 9. Tag** Wick 344,555 = Thr 303,21 → cur 309,72 = **+2,15 % SICHER** marginal (leicht erodiert vs Di Close +2,24 %)
+
+### Aktionen
+- Memory research-log.md aktualisiert (dieser Eintrag)
+- Memory portfolio.md wird bei Market Open Snapshot aktualisiert
+- ClickUp: [PRE-MARKET] Routine-Log Prio 4 — **versucht, ITEM_246 "Max usage for custom task types reached"** (persistent Quota-Limit; Fallback: Memory ist primär)
+- PushNotification: **NEIN** (Silence-Rule Pre-Market: alle Guardrails GRÜN, keine neuen Trigger, keine Earnings-Blackouts, keine Handlungsempfehlung außerhalb erwarteter Routine)
+
+Nächste Routine: **Mi 19.08. 09:30 ET Market Open KW34 Tag 3** — GE/LMT/NVDA/PANW K4/K5 Vollcheck, Slot-2-Kaufentscheidung, V1-V6 Sell-Signal-Check, Limit-Orders vor FOMC Minutes 14:00 ET platzieren.
+
+---
+
 ## Market Close 16:00 ET — 2026-08-18 (Di, KW34 Tag 2) — Alpha +1,00 pp POS / V1-V6 alle sicher / KEINE Verkaufsorder / Slot 2 KW34 offen
 
 ### Alpaca Account Close
