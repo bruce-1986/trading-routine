@@ -4,6 +4,31 @@
 
 ---
 
+### 2026-08-19 Market Open 09:40 ET (Mi, KW34 Tag 3) — Buy-Scan Slot 2
+
+**Ergebnis:** KEIN Kauf. K4-Volume-Threshold im Market-Open-Fenster nicht robust verifizierbar (~8 Min Session).
+
+**K1-K3 Screening (Alpaca IEX Daily, EMA/RSI/RS63 vs SPY):**
+- **PANW #1 RS +48,60 pp** — K1✓/K2✓ RSI 54,45/K3✓ | K4 pending Midday | K5-Recheck 17.08. Earnings pending
+- MU RS +29,47 pp — K1✓/K2✓ RSI 50,57/K3✓ | K4 pending | K5 pending | Gap-Up-Muster Owner-Regel offen
+- GE RS +23,51 pp — K1✓/K2✓ RSI 50,86/K3✓ | K4 pending | K5 pending
+- LMT RS +9,29 pp — K1✓/K2✓ RSI 63,31/K3✓/K5 ✓ (FwdPE 19,70) | K4 pending Midday
+- **NVDA REJECT** — K3 FAIL RS63 −5,02 pp (Flip zurück in Negativ vs Di Close +3,46 pp)
+- **CRDO REJECT** — K2 FAIL RSI 48,02 <50 + K5 FAIL FwdPE 58 persistent
+
+**Sektor-Momentum (Sector-ETF-Screen):**
+- ✓ K1+K2+K3: XLI (RSI 50,16 / RS +3,83 pp), XLF (RSI 60,02 / RS +8,13 pp), XLV (RSI 71,94 ÜBERKAUFT/RS +13,36 pp — K2 verletzt)
+- Rejected K1: XLK, XLE, XLU, XLB, XLC, XLY (EMA50<EMA200)
+- Top-Sektor by RS63: XLV +13,36 pp (LLY trägt), XLF +8,13 pp, XLI +3,83 pp
+
+**Markt-Kontext:** SPY 769,96 (+0,29 % vs Di), VIX 15,86 (leicht fallend), LLY +3,99 % Portfolio-Best. Kein Systemic Risk-Off.
+
+**Next:** Midday 13:00 ET — K4 Session-Verifikation für PANW/GE/MU/LMT (bei Vol ≥120 % Avg20 → Owner-Trigger für Slot-2-Buy-Entscheidung möglich).
+
+---
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-19 (Mi, KW34 Tag 3) — Guardrails GRÜN / Market-Open-Scan JA / Slot 2 KW34 offen
 
 ### Alpaca Account Pre-Market
