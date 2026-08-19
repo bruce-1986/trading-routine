@@ -4,6 +4,36 @@
 
 ---
 
+### 2026-08-19 Market Close 16:00 ET (Mi, KW34 Tag 3) — Tagesbilanz + V1-TRIGGER DELL + Watchlist Do
+
+**Ergebnis Close:** DELL V1 Stop-Loss GETRIGGERT (Close 437,20 < Thr 443,69), Market-Sell 20 Sh Order f484b52b platziert (Fill Do 20.08. 09:30 ET Open). Alle anderen V1-V6 SICHER. Slot 2 KW34 Buy-Scan Market Open NO-BUY-Ergebnis final (Käufe 1/2 KW34 nominell, Slot 2 verbraucht ohne Fill).
+
+**Portfolio Close:** Equity 96.107,55 $ | Daily −0,128 % GRÜN | Alpha −0,353 pp vs SPY +0,225 % | Weekly KW34 −0,088 % GRÜN | DD −3,956 % GRÜN
+
+**V1-V6 Vollcheck Close (Alpaca IEX EOD ~243 Bars):**
+- **V1: DELL BROKEN −1,46 % → SELL** (437,20 < 443,6884 Thr, Entry 482,27 × 0,92); UNH +5,19 % neu ENGSTE nach DELL-Exit, AAPL +8,64 %, V +10,92 %, LLY +16,58 %, JPM +16,69 %
+- **V2:** AAPL DQF 9. Tag Wick 344,555 = Thr 303,21 → cur 316,69 = +4,45 % SICHER (verbessert); UNH DQF 22. Tag persistent BROKEN −4,15 % (Alt-V2 via 437,13 = +1,02 % SICHER shrinking, Std-V1 +5,19 % primär)
+- **V3/V4:** max JPM +7,36 % << 20 %-TP1 — kein Trigger
+- **V5 (EMA50<EMA200):** alle 6 Golden Cross intakt SICHER — AAPL 309,50>288,32 / DELL 429,08>282,78 (Spread +146,30 huge trotz V1-Kollaps) / JPM 344,69>321,40 / LLY 1180,66>1052,77 / UNH 412,22>365,70 / V 353,23>336,79 → KEIN Death-Cross
+- **V6 (RSI>80 UND RS_4w<0):** KEIN RSI>80 (max LLY 62,76); RS_4w: LLY +7,26 pp / V +0,58 pp positiv, JPM −0,33 / DELL −3,87 / AAPL −5,64 / UNH −12,81 negativ → KEIN Trigger
+
+**Watchlist Do 20.08. (K1-K3 Alpaca IEX):**
+- **PANW #1 XLK/Software** — K1✓ EMA 335,91>253,63 / K2✓ RSI 50,18 / **K3✓ RS +45,02 pp** — K4/K5 Market Open Vollcheck
+- **MU XLK/Semis** — K1✓ EMA 933,85>644,86 / K2✓ RSI 50,35 / K3✓ RS +29,24 pp — K4/K5 pending, Gap-Up-Muster Owner-Regel offen
+- **LMT XLI/Defense** — K1✓ EMA 559,52>547,69 / K2✓ RSI 57,56 / K3✓ RS +7,07 pp / K5 ✓ (FwdPE 19,70 gestern) — K4 Market Open
+- REJECT: NVDA (K3 RS −6,20 pp Flip weiterhin negativ), MSFT (K1 EMA50 435,21<EMA200 436,48 knapp Death Cross), AVGO (K2 RSI 32,65 + K3 RS −16,65 pp), GOOG (K2 RSI 43,66 + K3 −16,04 pp), TSM (K2 RSI 43,37), GE (K2 RSI 44,59 verschlechtert vs Di)
+
+**Markt-Kontext:** SPY +0,225 % moderat positiv, VIX GRÜN, LLY +4,47 % Best chg XLV-Führung, **DELL Late-Session-Kollaps chg −6,71 %** (kumuliert 3 HT: 482,27 → 468,58 → 437,20 = −9,35 % → V1-Trigger exakt bei −8 %-Schwelle).
+
+**Sektor-Struktur Close:** XLK 19,53 % (AAPL 10,22 + DELL 9,10 → 10,22 % nur AAPL nach Exit), XLV 20,36 % (UNH 9,71 + LLY 10,66), XLF 11,36 % (JPM 1,12 + V 10,24), Cash 48,97 %
+
+**ClickUp:** [STOP_LOSS] Task versucht — ITEM_246 "Max usage for custom task types reached" persistent → Fallback Memory-Only
+**PushNotification:** JA (STOP_LOSS-Ausnahme) — DELL V1 GETRIGGERT Level-1 kritisch, Owner-Awareness pflicht
+
+**Next:** Do 20.08. 08:30 ET Pre-Market — DELL Sell-Fill-Kontrolle 09:30 ET Open, 5 verbleibende Positionen V1-V6 monitor, UNH V2-DQF 23. Tag Owner-Entscheidung, PANW/MU/LMT K4/K5-Vollcheck.
+
+---
+
 ### 2026-08-19 Market Open 09:40 ET (Mi, KW34 Tag 3) — Buy-Scan Slot 2
 
 **Ergebnis:** KEIN Kauf. K4-Volume-Threshold im Market-Open-Fenster nicht robust verifizierbar (~8 Min Session).
