@@ -1,5 +1,43 @@
 # Portfolio Status
 
+**Midday 13:00 ET 2026-08-19 (Mi, KW34 Tag 3) — 13:07 Live-Snapshot:**
+Gesamtwert:        96.246,93 $   (Alpaca /v2/account equity Live)
+Cash:              47.062,08 $   (48,90 %)
+Investiert MV:     49.182,02 $   (51,10 %)  — AAPL 9.757,56 / DELL 8.874,40 / JPM 1.073,85 / LLY 10.167,04 / UNH 9.338,88 / V 9.970,29
+P/L heute:         **+16,26 $** (**+0,0169 %** vs last_equity 96.230,67) [GRÜN, Cap −3 %]
+ATH:              100.066,47 $   (unverändert)
+Drawdown:          **−3,817 %**  [GRÜN, marginal verschlechtert vs 09:40 −3,750 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily +0,0169 % | Weekly KW34 Tag 3 vs Fr Close 96.192,26 = **+0,057 % GRÜN** | Käufe **1/2 KW34** (Slot 2 offen) | VIX GRÜN (Midday n/a) | Crash-Filter NEIN | DD GRÜN | Earnings-Blackout KEINE
+Positionen:        **6/8**
+Offene Orders:     **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+
+Positions-Übersicht Live 13:07 (Ø-P/L **+0,94 %** ungewichtet, IEX latestTrade):
+- **JPM +7,56 % BEST P/L** (357,95 $, chg −1,39 %, 3 Sh, MV 1.073,85, entry 332,78) — verschlechtert vs 09:40 +7,90 %
+- **LLY +6,45 %** (1270,88 $, **chg +3,86 % BEST chg**, 8 Sh, MV 10.167,04, entry 1193,89)
+- V +3,39 % (369,27 $, chg +1,38 %, 27 Sh, MV 9.970,29, entry 357,178) — verbessert vs 09:40 +1,97 %
+- AAPL −0,66 % (314,76 $, chg +1,54 %, 31 Sh, MV 9.757,56, entry 316,857) — verbessert vs 09:40 −1,62 %
+- UNH −3,10 % (389,12 $, chg −1,22 %, 24 Sh, MV 9.338,88, entry 401,57) — verschlechtert vs 09:40 −2,14 %
+- **DELL −7,99 % WORST P/L + WORST chg** (443,72 $, **chg −5,31 %** Tag-3-Weakness eskaliert, 20 Sh, MV 8.874,40, entry 482,27) — **V1-Puffer +0,007 % RAZOR** (Thr 443,6884; ein Tick unter cur → Market Order SOFORT)
+
+Sell-Signal-Check (V1-V4) 13:07 — **kein Trigger, keine Order platziert** (RSI/EMA V5-V6 nur Close):
+- **V1 Std −8 % alle SICHER** (min DELL **+0,007 % RAZOR** dramatisch verschlechtert vs 09:40 +2,59 % / Di Close +5,61 % — 3 Sessions kontinuierliche Kompression):
+  - DELL +0,007 % (Thr 443,6884), UNH +5,33 % (Thr 369,44), AAPL +7,98 % (Thr 291,51), V +12,38 % (Thr 328,60), LLY +15,70 % (Thr 1098,38), JPM +16,92 % (Thr 306,16)
+- **V2-Trailing:** AAPL DQF 9. Tag Wick 344,555 = Thr 303,21 → cur 314,76 = **+3,81 % SICHER** (verbessert vs 09:40 +2,84 %); **UNH V2 DQF 22. Tag persistent BROKEN −4,07 %** via Wick 460,95 = Thr 405,64 (verschlechtert vs 09:40 −3,10 %) — **Alt-V2 via 437,13 = 384,67 Puffer +1,16 % SICHER** (verschlechtert vs 09:40 +2,17 %) + Std-V1 +5,33 % primär SICHER, Owner-Entscheidung pending 22. Tag
+- **V3/V4:** max JPM +7,56 % << 20 %-TP1 → kein Trigger
+- V5/V6: nur Close-Vollcheck (Midday-Spec)
+
+Daily Loss Cap: 96.246,93 vs last_equity 96.230,67 = **+0,0169 % GRÜN** weit von Cap −3 % → keine Order-Stornierung (0 pending)
+
+Alle **8 Guardrails GRÜN + 3 WARN CRITICAL** (**DELL V1-Puffer +0,007 % RAZOR — ein Tick zum Market-Stop**; UNH V2-DQF 22. Tag Alt-V2 +1,16 % SICHER shrinking; AAPL V2-DQF 9. Tag +3,81 % SICHER stabil).
+
+Markt-Kontext Midday: DELL Tag-3-Softness beschleunigt (−5,31 % Session), portfolio-P/L quasi flat durch LLY/V/AAPL-Bounce vs DELL/UNH-Drag. **Kein K1-K5-Kandidat verifiziert im Midday-Fenster** (Slot 2 offen bis Close).
+
+ClickUp: **kein Alert** (Routine-Spec: nur bei Stops ausgelöst oder Daily Cap; DELL noch nicht getriggert, +0,007 % Puffer aktiv).
+PushNotification: **JA** (DELL V1-Puffer 3 Sessions kontinuierlich komprimiert von +5,61 % → +2,59 % → +0,007 % RAZOR — Owner-Awareness kritisch vor Close, ein Tick unter 443,68 = automatischer Market-Sell).
+Nächster Check: **Mi 19.08. 16:00 ET Market Close KW34 Tag 3** — DELL Close-Kurs entscheidend (V1-Trigger-Bestätigung falls <443,69), UNH V2-DQF 22. Tag Owner-Entscheidung, Vollcheck V5/V6 EMA/RSI, Slot 2 K1-K5-Vollverifikation.
+
+---
+
 **Market Open 09:30 ET 2026-08-19 (Mi, KW34 Tag 3) — 09:40 Live-Snapshot:**
 Gesamtwert:        96.313,50 $   (Alpaca /v2/account equity Live)
 Cash:              47.062,08 $   (48,86 %)
