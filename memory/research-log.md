@@ -4,6 +4,78 @@
 
 ---
 
+## Market Open 09:30 ET — 2026-08-20 (Do, KW34 Tag 4) — DELL Sell-Fill @436,346 / Slot 2 NO-BUY (Rule 5) / 5 Pos alle SICHER
+
+### DELL Sell-Fill (Order f484b52b)
+- **Filled @436,346 $** in Open-Auktion 09:30 ET (Market-Sell 20 Sh Day)
+- **Realized Loss: −918,48 $ (−9,52 %)** vs Entry 482,27 × 20 = 9.645,40 → Exit 20 × 436,346 = 8.726,92
+- **Cash-Zufluss +8.726,92 $** → Cash Post 55.789,00 $ (58,11 %)
+- **Positionen: 5/8** (Slot frei)
+- 3-Session-Kaskade komplett: 482,27 (17.08.) → 468,58 (18.08.) → 437,20 (19.08.) → 436,346 (20.08. Fill)
+
+### Alpaca Account 09:41 ET Live
+- Equity: **96.009,42 $** (Daily **−0,142 % vs last_equity 96.145,53** [GRÜN, Cap −3 %])
+- Cash: 55.789,00 $ (58,11 %) | Long MV: 40.220,42 $ (41,89 %)
+- ATH 100.066,47 → DD **−4,055 % GRÜN** (marginal verbessert vs Pre-Market −4,093 %)
+- Positionen: 5/8 | Offene Orders: KEINE
+- Weekly KW34 Tag 4 vs Fr Close 96.192,26 = **−0,190 % GRÜN**
+
+### Position-Übersicht 09:41 (IEX Live)
+| Sym | Qty | Entry | Cur | P/L % | chg | V1 Puffer |
+|-----|-----|-------|-----|-------|-----|-----------|
+| **JPM BEST P/L** | 3 | 332,78 | 354,78 | **+6,61** | −0,69 % | +15,88 % |
+| LLY | 8 | 1193,89 | 1263,04 | +5,79 | **−1,35 % WORST chg** | +14,99 % |
+| V | 27 | 357,178 | 365,30 | +2,27 | −0,07 % | +11,17 % |
+| **AAPL BEST chg** | 31 | 316,857 | 317,51 | +0,21 | **+0,22 %** | +8,92 % |
+| **UNH WORST P/L** | 24 | 401,57 | 389,31 | **−3,05** | +0,18 % | **+5,38 % ENGSTE** |
+
+### Sell-Signal-Check V1-V4 (V5/V6 nur Close)
+- **V1 Std −8 % alle 5 SICHER** (min UNH +5,38 % ENGSTE nach DELL-Exit; alle >5 %)
+- **V2:** AAPL DQF 10. Tag Wick 344,555 = Thr 303,21 → cur 317,51 = **+4,72 % SICHER** verbessert vs Mi Close +4,45 %
+- **UNH V2 DQF 23. Tag persistent BROKEN −3,88 %** via Wick 460,95 = Thr 405,64 → Alt-V2 via 437,13 = 384,67 Puffer +1,21 % SICHER shrinking, Std-V1 +5,38 % primär SICHER, Owner-Entscheidung pending
+- **V3/V4:** max JPM +6,61 % << 20 %-TP1 → kein Trigger
+
+### Buy-Scan Slot 2 KW34 — Ergebnis: NO-BUY (Rule 5 No-Action)
+
+**K1-K5 Screening 3 Watchlist-Kandidaten (Close 08-19 bar, Alpaca IEX):**
+
+| Sym | K1 EMA50>200 | K2 RSI14 | K3 RS63 vs SPY | K4 Vol | K5 FwdPE/RevYoY | Entscheidung |
+|-----|--------------|----------|----------------|--------|-----------------|--------------|
+| **PANW** | ✓ 330,64>250,06 (+80,59) | ✓ 52,90 | ✓ +44,73 pp **#1** | pending Midday | **✗ FwdPE ~90,9× >> 35 Hardcap** | **REJECT K5** |
+| **MU** | ✓ 901,77>632,17 (+269,60) | ✓ 52,14 | ✓ +29,05 pp | pending | ✓ FwdPE 6,5-8,9× / RevYoY +196-346 % (Memory-Upcycle) | **SKIP Gap-Up-Owner-Regel 7. Tag** |
+| **LMT** | ✓ 561,28>541,66 (+19,62) | ✓ 55,01 | ✓ +7,52 pp | **nicht robust 11 min IEX 887 Sh = 0,07 % Extrap** | ✓ FwdPE 19,1× / RevYoY +10,5 % marginal | **NO-BUY K4-Unsicherheit** |
+
+**Perplexity K5-Query:** PANW FwdPE ~90,9× / RevYoY 19,5-31,1 %; MU FwdPE ~6,5-8,9× / RevYoY +196-346 % (Memory-Cycle); LMT FwdPE ~19,1× / RevYoY +10,5 %
+
+**Entscheidung Slot 2 KW34:** **NO-BUY** — PANW K5 hard-fail, MU Owner-Regel Gap-Up persistent pending seit MU-Serie 12-14.08. Fill-Fails, LMT K4 nicht robust verifizierbar 11 min Session (887 IEX-Shares vs Avg20 1.237.259). Rule 5 (No-Action bei Unsicherheit) → Slot 2 offen bleibt für Midday-Recheck LMT-K4.
+
+### Guardrails-Check (Alle 8 Level 0-3)
+| # | Guardrail | Status | Detail |
+|---|-----------|--------|--------|
+| 1 | Daily Loss Cap −3 % | **GRÜN** | −0,142 % |
+| 2 | Weekly Loss Cap −5 % | **GRÜN** | −0,190 % KW34 Tag 4 |
+| 3 | DD-Alarm −15 % ATH | **GRÜN** | −4,055 % |
+| 4 | DD-Stopp −20 % ATH | **GRÜN** | weit weg |
+| 5 | Crash-Filter SPY −5 %/Tag | **GRÜN** | SPY −0,240 % Live |
+| 6 | VIX-Filter > 30 | **GRÜN** | 15,13 |
+| 7 | Earnings-Blackout 3 HT | **GRÜN** | KEINE für AAPL/JPM/LLY/UNH/V |
+| 8 | Max. Käufe 2/Woche | **1/2** | Slot 2 KW34 offen (Do NO-BUY-Ergebnis, Midday-Recheck LMT-K4 möglich) |
+
+### Sektor-Struktur Post-DELL-Exit
+- XLK **10,25 %** (nur AAPL 10,25; DELL exit −9,10 pp)
+- XLV **20,26 %** (UNH 9,73 + LLY 10,52)
+- XLF **11,38 %** (JPM 1,11 + V 10,27)
+- Cash **58,11 %** (deutlich > 20 % Min)
+- Alle Sektoren < 30 %-Cap
+
+### Perplexity: 1 Query (FwdPE + RevYoY-Multi-Symbol K5)
+### ClickUp: KEIN Alert (ITEM_246 persistent → Memory-Only Fallback)
+### PushNotification: JA (TRADE_SELL-Ausnahme) — DELL Realized −918,48 $ + Slot-2 NO-BUY (PANW-K5-Reject / MU 7. Tag / LMT K4-Unsicherheit)
+
+**Next:** Do 20.08. 13:00 ET Midday Stop-Check — 5 Pos V1-V4 monitor, LMT K4-Recheck bei ~3,5 h Session-Vol robuster, UNH V2-DQF 24. Tag Owner-Entscheidung, MU Gap-Up-Regel-Owner-Diskussion.
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-20 (Do, KW34 Tag 4) — Guardrails GRÜN / DELL Sell 09:30 ET Fill pending / Market-Open-Scan JA / Slot 2 KW34 offen
 
 ### Alpaca Account Pre-Market 08:37 ET
