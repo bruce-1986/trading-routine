@@ -87,6 +87,60 @@ Nächster Check: **Do 20.08. 16:00 ET Market Close KW34 Tag 4** — V1-V6 Vollch
 
 ---
 
+**Market Close 16:00 ET 2026-08-20 (Do, KW34 Tag 4) — Tagesbilanz:**
+Gesamtwert:        95.578,92 $   (Alpaca /v2/account equity Close)
+Cash:              55.789,00 $   (58,37 %)
+Investiert MV:     39.789,92 $   (41,63 %)  — AAPL 9.655,55 / JPM 1.057,44 / LLY 9.965,28 / UNH 9.236,40 / V 9.875,25
+P/L heute:         **−566,61 $** (**−0,589 %** vs last_equity 96.145,53) [GRÜN, Cap −3 %]
+Alpha vs SPY:      **+0,252 pp POS marginal** (SPY IEX Close 762,62 vs Mi Close 769,09 = **−0,841 %** via Alpaca-Bar; SIP-Composite ~−0,47 % via Perplexity Close 765,51 [Feed-Divergenz]; Portfolio −0,589 % outperformt IEX-primär via V +0,057 % chg BEST + UNH-Recovery-Wick-Puffer, aber LLY chg −2,71 % WORST + AAPL chg −1,69 % dominant negativ)
+ATH:              100.066,47 $   (unverändert)
+Drawdown:          **−4,485 %**  [GRÜN, verschlechtert vs Midday −4,045 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily −0,589 % | **Weekly KW34 Tag 4 vs Fr Close 96.192,26 = −0,638 % GRÜN** | Käufe **1/2 KW34** (Slot 1 DELL 17.08. verbraucht + Slot 2 offen für Fr 21.08. Buy-Scan) | VIX ~15,8-16,0 GRÜN (Perplexity unpräzise) | Crash-Filter NEIN (SPY IEX −0,841 % >> −5 %) | DD GRÜN | Earnings-Blackout KEINE
+Positionen:        **5/8**
+Offene Orders:     **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+
+Positions-Übersicht Close (Ø-P/L **+1,30 %** ungewichtet, Alpaca EOD-Bar):
+- **JPM +5,92 % BEST P/L** (352,48 $, chg −1,34 %, 3 Sh, MV 1.057,44, entry 332,78) — verschlechtert vs Midday +6,42 %
+- **LLY +4,34 %** (1.245,66 $, **chg −2,71 % WORST chg**, 8 Sh, MV 9.965,28, entry 1193,89) — verschlechtert vs Midday +5,98 % (2. Tag Give-Back nach Mi-Rebound)
+- V +2,40 % (365,75 $, **chg +0,057 % BEST chg ONLY GAIN**, 27 Sh, MV 9.875,25, entry 357,178) — verschlechtert vs Midday +2,93 %
+- AAPL −0,17 % (311,47 $, chg −1,69 %, 31 Sh, MV 9.655,55, entry 316,857) — verschlechtert vs Midday +0,16 % (Late-Session-Reversal)
+- **UNH −4,16 % WORST P/L** (384,85 $, chg −0,97 %, 24 Sh, MV 9.236,40, entry 401,57) — verschlechtert vs Midday −3,70 %
+
+Vollständiger Sell-Signal-Check V1-V6 Close (Alpaca IEX EOD n=255):
+- **V1 Std −8 % alle 5 SICHER:**
+  - **UNH +4,17 % ENGSTE** (Thr 369,44; cur 384,85 verschlechtert vs Midday +4,68 %) — Puffer schrumpft weiter
+  - AAPL +6,85 % (Thr 291,51; cur 311,47 verschlechtert vs Midday +8,87 %)
+  - V +11,30 % (Thr 328,60; cur 365,75 verschlechtert vs Midday +11,88 %)
+  - LLY +13,42 % (Thr 1098,38; cur 1245,66 verschlechtert vs Midday +15,20 %)
+  - JPM +15,13 % (Thr 306,16; cur 352,48 verschlechtert vs Midday +15,67 %)
+- **V2-Trailing:** AAPL DQF 11. Tag Wick 344,555 = Thr 303,21 → cur 311,47 = **+2,72 % SICHER** verschlechtert vs Midday +4,67 %; **UNH V2 DQF 24. Tag persistent BROKEN −5,13 %** via Wick 460,95 = Thr 405,64 (Close 384,85 < Thr) — **Alt-V2 via 437,13 = 384,67 Puffer +0,05 % RAZOR-THIN** (verschlechtert vs Midday +0,54 %), Std-V1 +4,17 % primär SICHER, Owner-Entscheidung pending 24. Tag
+- **V3/V4:** max JPM +5,92 % << 20 %-TP1 → kein Trigger
+- **V5 (EMA50<EMA200) alle 5 Golden Cross intakt SICHER:** AAPL 309,35>283,59 (+25,76) / JPM 343,84>321,35 (+22,50) / LLY 1166,31>1040,97 (+125,34) / UNH 404,32>363,57 (+40,76) / V 353,13>339,33 (+13,80) → **KEIN Death Cross, KEIN Trigger**
+- **V6 (RSI>80 AND RS_4w<0):** KEIN Symbol RSI>80 (max LLY 58,24; V 56,85 / AAPL 48,93 / JPM 48,73 / **UNH 33,07 oversold**); SPY 4w-Ret +3,33 %; RS_4w-Verteilung: LLY +1,73 pp / V +0,81 pp positiv, JPM −2,74 pp / AAPL −6,53 pp / **UNH −12,48 pp** negativ → **kein Symbol RSI>80 UND RS<0 gleichzeitig** → **KEIN Trigger**
+→ **KEINE Sell-Order platziert; alle 5 Positionen V1-V6 durch (UNH V2-DQF Alt-Puffer razor +0,05 %, Std-V1 primär SICHER, Owner-Entscheidung 24. Tag pending)**
+
+**Weekly Loss Cap Check:** 95.578,92 vs Fr Close 96.192,26 = **−0,638 % GRÜN** weit von Cap −5 % → keine Wochensperre, 0 pending Orders zum Stornieren
+
+Alle **8 Guardrails GRÜN + 1 WARN persistent** (UNH V2-DQF 24. Tag razor BROKEN −5,13 %; Alt-V2 +0,05 % RAZOR-THIN wird morgen wahrscheinlich brechen; Std-V1 +4,17 % primär SICHER als PRIMÄR-Anker; Slot 2 KW34 offen für Fr 21.08. Buy-Scan).
+
+Markt-Kontext Close: SPY IEX −0,841 % (Alpaca EOD-Bar) vs SIP-Composite ~−0,47 % (Perplexity), Feed-Divergenz via Auction-Close vs IEX-only; VIX ~15,8-16,0 GRÜN; Health Care Top-Sektor +3,53 % (Perplexity, inkonsistent mit LLY chg −2,71 % im Portfolio — Perplexity möglicherweise Datenstand-Delta oder Sektor-Deep-Rotation UNH/PFE/ABBV dominant statt LLY); IT bottom −0,73 %, Financials −0,61 % — Rotation weg von Growth/Momentum, portfolio-relevant JPM chg −1,34 % & AAPL chg −1,69 %.
+
+**Watchlist Fr 21.08.** (K1-K3 Alpaca IEX EOD n=255, sortiert nach RS63):
+- **MU #1 XLK/Semis** — K1✓ EMA 904,56>604,94 (+299,62) / K2✓ RSI 55,17 / **K3✓ RS +30,20 pp** — Gap-Up-Muster Owner-Regel persistent 8. Tag pending
+- **VRTX #2 XLV/Biotech Phase-4** — K1✓ EMA 490,35>458,06 / K2✓ RSI 64,86 / **K3✓ RS +22,66 pp** — XLV-Sektor-Cap Risiko (aktuell UNH 9,66 + LLY 10,42 = 20,08 % + VRTX +10 % ≈ 30 % Grenze)
+- **ABBV #3 XLV/Pharma** — K1✓ EMA 245,75>231,04 / K2✓ RSI 61,56 / **K3✓ RS +20,47 pp** — gleiche XLV-Cap-Grenze wie VRTX
+- **JNJ #4 XLV/Pharma** — K1✓ EMA 254,50>229,81 / K2✓ RSI 59,47 / K3✓ RS +13,83 pp — XLV-Cap
+- **CVX #5 XLE/Energy** — K1✓ EMA 190,14>177,17 / K2✓ RSI 69,88 marginal-obere-Zone-Grenze / K3✓ RS +4,67 pp — K5 Multi-Query nötig (RevYoY historisch schwach)
+- REJECT: PANW (K2 RSI 47,86), LMT (K2 RSI 48,71 knapp), GE (K2 RSI 40,15), NVDA (K3 RS −5,82 pp), XOM (K2 RSI 70,80 knapp über), MSFT (K1 EMA50<EMA200), NOW (K1 knapp), MRK (K2 RSI 75,73 überkauft), PLTR (K1)
+
+Daily Loss Cap: 95.578,92 vs last_equity 96.145,53 = **−0,589 % GRÜN** weit von Cap −3 % → keine Order-Stornierung (0 pending)
+
+ClickUp: **Prio 3 [CLOSE Tagesbilanz]** versucht (negatives P/L) — ITEM_246 "Max usage for custom task types reached" persistent → Fallback Memory-Only.
+PushNotification: **JA** (Close-Ausnahme: KW34 Tag 4 Tagesbilanz + UNH V2-DQF-Alt razor +0,05 %-Puffer wird morgen wahrscheinlich brechen + LLY 2. Tag Give-Back + Weekly-Verlauf −0,638 % verschlechtert Fr-Prep + Watchlist MU/VRTX/ABBV neue Kandidaten für Slot 2 KW34).
+Nächster Check: **Fr 21.08. 08:30 ET Pre-Market KW34 Tag 5** — 5 Positionen V1-V6 Live-Prep, UNH V2-DQF 25. Tag Alt-Puffer-Bruch-Kontrolle, Watchlist MU/VRTX/ABBV/JNJ/CVX K4/K5-Vollcheck für Slot 2 KW34, MU Owner-Diskussion Gap-Up-Regel 8. Tag persistent, Weekly-KW34-Abschluss-Prep.
+
+---
+
 **Market Close 16:00 ET 2026-08-19 (Mi, KW34 Tag 3) — Tagesbilanz:**
 Gesamtwert:        96.107,55 $   (Alpaca /v2/account equity Close)
 Cash:              47.062,08 $   (48,97 %)
