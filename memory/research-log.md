@@ -4,6 +4,79 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-20 (Do, KW34 Tag 4) — Guardrails GRÜN / DELL Sell 09:30 ET Fill pending / Market-Open-Scan JA / Slot 2 KW34 offen
+
+### Alpaca Account Pre-Market 08:37 ET
+- Equity: **95.970,51 $** (vs last_equity 96.145,53 = **−175,02 $ / −0,182 % GRÜN**, Cap −3 %)
+- Cash: **47.062,08 $** (49,04 %) | Long MV: **48.908,43 $** (50,96 %) — 6 Pos noch inkl. DELL
+- ATH 100.066,47 → **DD −4,093 % GRÜN** (verschlechtert vs Mi Close −3,956 %; Schwelle −15 % bei 85.056,50)
+- Positionen: **6/8** | Offene Orders: **1 (DELL Market-Sell 20 Sh Day, ID f484b52b, status "new", qty_available=0 locked)** — Fill 09:30 ET Open
+- Konsistenz-Check: Cash 47.062,08 + MV 48.908,43 = 95.970,51 ✓ (Alpaca equity)
+- **Delta last_equity vs Portfolio.md Close:** Alpaca last_equity 96.145,53 vs Portfolio.md 96.107,55 = **+37,98 $** (Late-Settlement-Adjust, marginal, keine Aktion)
+- Weekly KW34 Tag 4 vs Fr Close 96.192,26 = **−0,231 % GRÜN** (weit von Cap −5 %)
+- Trading-Status: ACTIVE, trading_blocked=false, account_blocked=false
+
+### Position-P/L Pre-Market (Alpaca /v2/positions IEX)
+| Sym | Qty | Entry | Cur | P/L % | chg_today |
+|-----|-----|-------|-----|-------|-----------|
+| **LLY BEST P/L** | 8 | 1193,89 | 1272,00 | **+6,54 %** | −0,65 % |
+| JPM | 3 | 332,78 | 355,50 | +6,83 % | −0,49 % |
+| V | 27 | 357,178 | 365,94 | +2,45 % | +0,11 % |
+| AAPL BEST chg | 31 | 316,857 | 317,62 | +0,24 % | **+0,25 %** |
+| UNH | 24 | 401,57 | 388,13 | −3,35 % | −0,13 % |
+| **DELL WORST P/L + WORST chg** | 20 | 482,27 | 431,03 | **−10,63 %** | **−1,49 %** |
+
+### Perplexity Daily Macro Check
+- **VIX: 15,12** [GRÜN, < 30]
+- **SPY Premarket: +0,45 %** [GRÜN, > −2 %]
+- **US 10Y: 4,64 %** (leicht gefallen vs Mi 4,71 %)
+- Top-3 News: keine verifizierten Headlines (Perplexity "not verified")
+- Fed/CPI/Macro Events heute: keine verifizierten Events
+
+### Guardrails-Check (Alle 8 Level 0-3)
+| # | Guardrail | Status | Detail |
+|---|-----------|--------|--------|
+| 1 | Daily Loss Cap −3 % | **GRÜN** | −0,182 % |
+| 2 | Weekly Loss Cap −5 % | **GRÜN** | −0,231 % KW34 Tag 4 |
+| 3 | DD-Alarm −15 % ATH | **GRÜN** | −4,093 % (Schwelle 85.056,50) |
+| 4 | DD-Stopp −20 % ATH | **GRÜN** | weit weg (Schwelle 80.053,18) |
+| 5 | Crash-Filter SPY −5 %/Tag | **GRÜN** | SPY Mi +0,225 %, kein Trigger |
+| 6 | VIX-Filter > 30 | **GRÜN** | 15,12 |
+| 7 | Earnings-Blackout 3 HT | **GRÜN** | KEINE für AAPL/JPM/LLY/UNH/V/DELL |
+| 8 | Max. Käufe 2/Woche | **1/2** | Slot 2 KW34 offen (19.08. verbraucht ohne Fill Diskussion pending) |
+
+### DELL V1-Sell Order Status
+- Order-ID f484b52b, Market-Sell 20 Sh Day, status="new" (nicht cancelled/rejected)
+- **Pre-Market Kurs 431,03 $** = weitere −1,49 % vs Close 437,20 → Fill 09:30 Open erwartet nahe 431 $ oder tiefer
+- Erwartete Realized-Loss: 20 × (Fill − 482,27) ≈ 20 × (~431 − 482,27) = ~−1.025 $ (−10,63 %)
+- Cash-Freisetzung nach Fill: ~8.620 $ → Cash post ≈ 55.682 $ (58 %)
+- Positionen post-Fill: **5/8**
+
+### Sell-Signal-Check verbleibende 5 Positionen (Pre-Market IEX Snapshot, nur V1 Std)
+- **V1 Std −8 % alle 5 SICHER (nach DELL-Exit):**
+  - **UNH +5,08 % ENGSTE** (Thr 369,44; cur 388,13 verschlechtert vs Mi Close +5,19 %)
+  - AAPL +9,00 % (Thr 291,51; cur 317,62 verbessert vs Mi +8,64 %)
+  - V +11,00 % (Thr 328,60; cur 365,94 marginal verbessert)
+  - LLY +15,88 % (Thr 1098,38; cur 1272,00 marginal verschlechtert)
+  - JPM +16,10 % (Thr 306,16; cur 355,50 verschlechtert vs Mi +16,69 %)
+- V2/V3-V6: Vollcheck erst Close (Pre-Market-Spec)
+- **UNH V2-DQF 23. Tag persistent** — Owner-Entscheidung weiter pending
+
+### Watchlist Do 20.08. (aus Close-Screening 19.08.)
+- **PANW #1 XLK/Software** — K1✓/K2✓ RSI 50,18/K3✓ RS +45,02 pp — K4/K5 Market-Open Vollcheck
+- **MU XLK/Semis** — K1✓/K2✓ RSI 50,35/K3✓ RS +29,24 pp — K4/K5 pending, Gap-Up-Muster Owner-Regel offen
+- **LMT XLI/Defense** — K1✓/K2✓ RSI 57,56/K3✓ RS +7,07 pp / K5✓ FwdPE 19,70 — K4 Market-Open
+
+### Entscheidung
+- **Market-Open-Scan JA:** Alle 8 Guardrails GRÜN, SPY Premarket +0,45 % positiv, VIX 15,12 GRÜN, keine Earnings-Blackouts, DELL-Slot wird frei nach Fill (Positionen 5/8)
+- **DELL Sell-Fill-Kontrolle:** 09:30 ET Open Priorität 1
+- **Slot 2 KW34 nominell offen** (Käufe 1/2; falls Owner-Regel "verbraucht ohne Fill = final" streng gilt: Slot 2 blockiert → Owner-Diskussion pending)
+- **Rule 5 (No-Action bei Unsicherheit):** Perplexity News/Macro-Events "not verified" — bewusster Verzicht auf Top-3-News, aber SPY/VIX/10Y verifiziert reichen für Pre-Market-Freigabe
+
+**Next:** Do 20.08. 09:30 ET Market-Open — DELL Sell-Fill-Kontrolle, PANW/MU/LMT K4 Session-Vol-Verifikation für Slot-2-Buy-Entscheidung, verbleibende 5 Positionen V1-V6 EOD-Vollcheck.
+
+---
+
 ### 2026-08-19 Market Close 16:00 ET (Mi, KW34 Tag 3) — Tagesbilanz + V1-TRIGGER DELL + Watchlist Do
 
 **Ergebnis Close:** DELL V1 Stop-Loss GETRIGGERT (Close 437,20 < Thr 443,69), Market-Sell 20 Sh Order f484b52b platziert (Fill Do 20.08. 09:30 ET Open). Alle anderen V1-V6 SICHER. Slot 2 KW34 Buy-Scan Market Open NO-BUY-Ergebnis final (Käufe 1/2 KW34 nominell, Slot 2 verbraucht ohne Fill).
