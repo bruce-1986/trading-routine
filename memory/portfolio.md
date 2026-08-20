@@ -49,6 +49,44 @@ Nächster Check: **Do 20.08. 13:00 ET Midday Stop-Check KW34 Tag 4** — 5 Posit
 
 ---
 
+**Midday 13:00 ET 2026-08-20 (Do, KW34 Tag 4) — 13:07 Live-Snapshot:**
+Gesamtwert:        96.019,83 $   (Alpaca /v2/account equity Live)
+Cash:              55.789,00 $   (58,10 %) — unverändert vs Market Open (keine Trades Midday)
+Investiert MV:     40.230,83 $   (41,90 %) — AAPL 9.838,16 / JPM 1.062,39 / LLY 10.122,48 / UNH 9.281,52 / V 9.926,28
+P/L heute:         **−125,70 $** (**−0,131 %** vs last_equity 96.145,53) [GRÜN, Cap −3 %; marginal verbessert vs Market Open −0,142 %]
+Drawdown:          **−4,045 %** [GRÜN, marginal verbessert vs Market Open −4,055 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily −0,131 % GRÜN | Weekly KW34 Tag 4 vs Fr Close 96.192,26 = **−0,179 % GRÜN** | Käufe **1/2 KW34** (Slot 2 offen) | VIX GRÜN (Midday n/a) | Crash-Filter NEIN | DD GRÜN | Earnings-Blackout KEINE
+Positionen:        **5/8**
+Offene Orders:     **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+
+Positions-Übersicht Live 13:07 (Ø-P/L **+2,36 %** ungewichtet):
+- **JPM +6,42 % BEST P/L** (354,13 $, 3 Sh, MV 1.062,39, entry 332,78) — marginal verschlechtert vs Open +6,61 %
+- **LLY +5,98 %** (1.265,31 $, 8 Sh, MV 10.122,48, entry 1193,89) — verbessert vs Open +5,79 %
+- V +2,93 % (367,64 $, **BEST chg +0,64 pp** vs Open, 27 Sh, MV 9.926,28, entry 357,178) — verbessert vs Open +2,27 %
+- AAPL +0,16 % (317,36 $, 31 Sh, MV 9.838,16, entry 316,857) — marginal verschlechtert vs Open +0,21 %
+- **UNH −3,70 % WORST P/L** (386,73 $, **WORST chg −0,65 pp** vs Open, 24 Sh, MV 9.281,52, entry 401,57) — verschlechtert vs Open −3,05 %
+
+Sell-Signal-Check (V1-V4) 13:07 — **kein Trigger, keine Order platziert** (RSI/EMA V5-V6 nur Close):
+- **V1 Std −8 % alle 5 SICHER:**
+  - **UNH +4,68 % ENGSTE** (Thr 369,44; cur 386,73 verschlechtert vs Open +5,38 %)
+  - AAPL +8,87 % (Thr 291,51; cur 317,36 marginal verschlechtert vs Open +8,92 %)
+  - V +11,88 % (Thr 328,60; cur 367,64 verbessert vs Open +11,17 %)
+  - LLY +15,20 % (Thr 1098,38; cur 1265,31 verbessert vs Open +14,99 %)
+  - JPM +15,67 % (Thr 306,16; cur 354,13 marginal verschlechtert vs Open +15,88 %)
+- **V2-Trailing:** AAPL DQF 10. Tag Wick 344,555 = Thr 303,21 → cur 317,36 = **+4,67 % SICHER** marginal verschlechtert vs Open +4,72 %; **UNH V2 DQF 23. Tag persistent BROKEN −4,66 %** via Wick 460,95 = Thr 405,64 (verschlechtert vs Open −3,88 %) — **Alt-V2 via 437,13 = 384,67 Puffer +0,54 % SICHER shrinking** (verschlechtert vs Open +1,21 %) + Std-V1 +4,68 % primär SICHER, Owner-Entscheidung pending 23. Tag
+- **V3/V4:** max JPM +6,42 % << 20 %-TP1 → kein Trigger
+- V5/V6: nur Close-Vollcheck (Midday-Spec)
+
+Daily Loss Cap: 96.019,83 vs last_equity 96.145,53 = **−0,131 % GRÜN** weit von Cap −3 % → keine Order-Stornierung (0 pending)
+
+Markt-Kontext Midday: Portfolio-Drift +10,41 $ (+0,011 %) sehr flach seit Market Open, V-Recovery und LLY-Bounce kompensieren UNH/JPM-Softening. UNH V2 DQF 23. Tag razor persistent broken, Alt-V2 shrinking (Puffer +0,54 %), Std-V1 +4,68 % ENGSTE-Position im Portfolio (aber sicher). Kein neuer Sell-Trigger, keine Order-Aktivität, 0 Pending Orders bestätigt. Slot 2 KW34 bleibt formal offen — Buy-Scan bei Midday per Routine-Spec NICHT geprüft (RSI/EMA nur Market Open & Close).
+
+ClickUp: **KEIN Alert** (Midday-Silence-Rule: kein Stop ausgelöst, kein Daily Cap erreicht — Log-Skip zur ClickUp-Entlastung).
+PushNotification: **NEIN** (Silence-Rule: alle V1 SICHER, kein Trade, Daily/Weekly/DD GRÜN, UNH V2-DQF 23. Tag bereits bekanntes WARN, Delta zum Market Open minimal).
+Nächster Check: **Do 20.08. 16:00 ET Market Close KW34 Tag 4** — V1-V6 Vollcheck EOD-Bars, K4-Recheck LMT bei Close-Vollvolumen (Slot 2 Fenster schließt), UNH V2-DQF 23. Tag Close-Read, AAPL V2-DQF 10. Tag Close, Weekly-Verlauf Fr-Prep KW34.
+
+---
+
 **Market Close 16:00 ET 2026-08-19 (Mi, KW34 Tag 3) — Tagesbilanz:**
 Gesamtwert:        96.107,55 $   (Alpaca /v2/account equity Close)
 Cash:              47.062,08 $   (48,97 %)
