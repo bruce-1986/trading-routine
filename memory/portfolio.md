@@ -1,5 +1,43 @@
 # Portfolio Status
 
+**Midday 13:00 ET 2026-08-21 (Fr, KW34 Tag 5) — 13:07 Live-Snapshot:**
+Gesamtwert:        95.952,55 $   (Alpaca /v2/account equity Live)
+Cash:              55.788,80 $   (58,14 %) — unverändert vs Market Open (keine Trades Midday)
+Investiert MV:     40.163,75 $   (41,86 %) — LLY 10.112,00 / V 10.009,44 / AAPL 9.650,30 / UNH 9.338,88 / JPM 1.052,82
+P/L heute:         **+392,49 $** (**+0,411 %** vs last_equity 95.560,06) [GRÜN, Cap −3 %; verbessert vs Market Open +0,156 %]
+Drawdown:          **−4,111 %** [GRÜN, verbessert vs Market Open −4,355 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily +0,411 % GRÜN | **Weekly KW34 Tag 5 vs Fr 14.08. Close 96.192,26 = −0,249 % GRÜN** (verbessert vs Open −0,502 %) | Käufe **1/2 KW34** (Slot 2 KW34 verbraucht via Fr Buy-Scan NO-BUY, KW34 abgeschlossen) | VIX GRÜN (Midday n/a) | Crash-Filter NEIN | DD GRÜN | Earnings-Blackout KEINE
+Positionen:        **5/8**
+Offene Orders:     **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+
+Positions-Übersicht Live 13:07 (Ø-P/L **+2,05 %** ungewichtet, IEX latestTrade):
+- **LLY +5,87 % BEST P/L** (1.264,00 $, chg +1,58 %, 8 Sh, MV 10.112,00, entry 1193,89) — verbessert vs Open +4,40 % (Bounce nach 2 Tagen Give-Back)
+- JPM +5,46 % (350,94 $, chg −0,17 %, 3 Sh, MV 1.052,82, entry 332,78) — verschlechtert vs Open +6,44 %
+- V +3,79 % (370,72 $, chg +1,36 %, 27 Sh, MV 10.009,44, entry 357,178) — verbessert vs Open +3,28 %
+- AAPL −1,75 % (311,30 $, chg 0,00 %, 31 Sh, MV 9.650,30, entry 316,857) — verbessert vs Open −2,56 %
+- **UNH −3,10 % WORST P/L** (389,12 $, chg +1,11 %, 24 Sh, MV 9.338,88, entry 401,57) — verschlechtert vs Open −2,81 %
+
+Sell-Signal-Check (V1-V4) 13:07 — **kein Trigger, keine Order platziert** (V5/V6 nur Close):
+- **V1 Std −8 % alle 5 SICHER:**
+  - **UNH +5,33 % ENGSTE** (Thr 369,44; cur 389,12 verschlechtert vs Open +5,64 %)
+  - AAPL +6,79 % (Thr 291,51; cur 311,30 verbessert vs Open +5,91 %)
+  - V +12,82 % (Thr 328,60; cur 370,72 verbessert vs Open +12,26 %)
+  - LLY +15,06 % (Thr 1098,38; cur 1264,00 verbessert vs Open +13,48 %)
+  - JPM +14,63 % (Thr 306,16; cur 350,94 verschlechtert vs Open +15,69 %)
+- **V2-Trailing:** AAPL DQF 12. Tag Wick 344,555 = Thr 303,21 → cur 311,30 = **+2,67 % SICHER verbessert** vs Open +1,82 %; **UNH V2 DQF 25. Tag persistent BROKEN −4,07 %** via Wick 460,95 = Thr 405,64 (verschlechtert vs Open −3,79 %) — **Alt-V2 via 437,13 = 384,67 Puffer +1,16 % SICHER shrinking** (verschlechtert vs Open +1,45 %) + Std-V1 +5,33 % primär SICHER, Owner-Entscheidung pending 25. Tag
+- **V3/V4:** max LLY +5,87 % << 20 %-TP1 → kein Trigger
+- V5/V6: nur Close-Vollcheck (Midday-Spec)
+
+Daily Loss Cap: 95.952,55 vs last_equity 95.560,06 = **+0,411 % GRÜN** weit von Cap −3 % → keine Order-Stornierung (0 pending)
+
+Markt-Kontext Midday: Portfolio-Drift +243,62 $ (+0,254 %) positiv seit Market Open, LLY-Bounce (+1,58 % chg BEST) und V-Recovery (+1,36 %) plus UNH Fortsetzung partial-recovery (+1,11 %) kompensieren JPM-Softening (−0,17 %). AAPL flat auf Vortag (chg 0,00 %, cur == lastday_price 311,30). UNH V2 DQF 25. Tag persistent broken (Alt-Puffer +1,16 % shrinking von +1,45 %), Std-V1 +5,33 % primär SICHER als ENGSTE-Position. AAPL V2-DQF 12. Tag +2,67 % verbessert (recovery ins Puffer). Kein Sell-Trigger, keine Order-Aktivität, 0 Pending Orders. Slot 2 KW34 bereits am Market Open via NO-BUY verbraucht (KW34-Käufe abgeschlossen 1/2).
+
+ClickUp: **KEIN Alert** (Midday-Silence-Rule: kein Stop ausgelöst, kein Daily Cap erreicht — Log-Skip zur ClickUp-Entlastung; auch ITEM_246 Max-Usage persistent).
+PushNotification: **NEIN** (Silence-Rule: alle V1 SICHER, kein Trade, Daily/Weekly/DD GRÜN, UNH V2-DQF 25. Tag bereits bekanntes WARN, Delta zum Market Open moderat-positiv aber nicht handlungsrelevant).
+Nächster Check: **Fr 21.08. 16:00 ET Market Close KW34 Tag 5** — V1-V6 Vollcheck EOD-Bars, UNH V2-DQF 25. Tag Close-Read (Alt-Puffer), AAPL V2-DQF 12. Tag Close, Weekly-Bilanz KW34 (5 Tage), Fr Weekly-Review-Prep (Weekly Routine Fr 17:00 ET).
+
+---
+
 **Market Open 09:30 ET 2026-08-21 (Fr, KW34 Tag 5) — 09:38 Live-Snapshot:**
 Gesamtwert:        95.708,93 $   (Alpaca /v2/account equity Live)
 Cash:              55.788,80 $   (58,29 %)  — unverändert vs Pre-Market
