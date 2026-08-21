@@ -1,5 +1,48 @@
 # Portfolio Status
 
+**Close 16:00 ET 2026-08-21 (Fr, KW34 Tag 5) — Tagesbilanz:**
+Gesamtwert:        95.802,09 $   (Alpaca /v2/account equity Close)
+Cash:              55.788,80 $   (58,24 %) — unverändert vs Midday (0 Trades intraday)
+Investiert MV:     40.013,29 $   (41,76 %) — V 10.018,08 / LLY 10.000,00 / AAPL 9.583,22 / UNH 9.357,31 / JPM 1.054,68
+P/L heute:         **+242,03 $** (**+0,2533 %** vs last_equity 95.560,06) [GRÜN, Cap −3 %]
+Alpha vs SPY:      **−0,143 pp NEG marginal** (SPY IEX Close 765,64 vs Do Close 762,62 = **+0,396 %**; Bot +0,253 % underperformt via AAPL P/L −2,44 % + UNH −2,91 % Drag)
+ATH:              100.066,47 $   (unverändert — Jun 22)
+Drawdown:          **−4,262 %** [GRÜN, verbessert vs Midday −4,111 %; Schwelle −15 % bei 85.056,50]
+Guardrails:        Daily +0,2533 % GRÜN | **Weekly KW34 Tag 5 vs Fr 14.08. Close 96.192,26 = −0,4056 % GRÜN** (verbessert vs Open −0,502 %) | Käufe **1/2 KW34** (Slot 1 DELL 17.08. verbraucht, Slot 2 NO-BUY Fr — KW34 abgeschlossen) | VIXY 18,19 → VIX ~15-16 GRÜN | Crash-Filter NEIN | DD GRÜN | Earnings-Blackout KEINE
+Positionen:        **5/8**
+Offene Orders:     **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+
+Signal-Check Close V1-V6 (alle 5 Positionen — kein Trigger, keine Verkaufsorder pending):
+- **AAPL** 309,14 $ (P/L −2,44 %, chg −0,70 %): V1 291,51 SICHER **+6,05 %** | V2 DQF Wick 344,555 → Thr 303,21 SICHER +1,96 % (shrinking vs Midday +2,67 % via -0,70 % chg) | V5 EMA50 309,76 > EMA200 281,55 ✓ (Spread +28,21) | V6 RSI(14) 47,24 / RS_4w vs SPY **−10,76 %** → NICHT ausgelöst (RSI <80). V2-DQF 12. Tag ENGSTE-Position, Owner-Regel pending
+- **JPM** 351,56 $ (P/L +5,64 %, chg +0,003 %): V1 306,16 SICHER **+14,83 %** | V2 20d-Hi 366,30 × 0,88 = 322,34 SICHER +9,06 % | V5 EMA50 343,43 > EMA200 316,21 ✓ (Spread +27,22) | V6 RSI(14) 48,51 / RS_4w −4,05 % → NICHT ausgelöst
+- **LLY** 1250,00 $ (P/L +4,70 %, chg +0,45 %, **BEST P/L**): V1 1098,38 SICHER **+13,80 %** | V2 20d-Hi 1292,51 × 0,88 = 1137,40 SICHER +9,90 % | V5 EMA50 1180,34 > EMA200 1053,24 ✓ (Spread +127,10 komfortabel) | V6 RSI(14) 59,52 / RS_4w +1,32 % → NICHT ausgelöst
+- **UNH** 389,89 $ (P/L −2,91 %, chg +1,31 %, **WORST P/L**): V1 369,44 SICHER **+5,53 %** | V2 DQF Wick 460,95 → Thr 405,64 persistent **BROKEN −3,88 %** (Alt-V2 via 437,13 = 384,67 SICHER +1,36 %) — 25. Tag Owner-Regel pending | V5 EMA50 413,20 > EMA200 348,13 ✓ (Spread +65,07) — aber Close < EMA50 −5,64 % Trend-Warnung | V6 RSI(14) 38,26 (oversold) / RS_4w −10,88 % → NICHT ausgelöst (RSI <80). Std-V1 +5,53 % primär, Alt-V2 +1,36 % sekundär
+- **V** 371,04 $ (P/L +3,88 %, chg +1,45 %): V1 328,60 SICHER **+12,91 %** | V2 20d-Hi 373,97 × 0,88 = 329,09 SICHER +12,75 % | V5 EMA50 352,53 > EMA200 332,11 ✓ (Spread +20,42) | V6 RSI(14) 61,61 / RS_4w +0,73 % → NICHT ausgelöst
+
+**V5/V6 Ergebnis:** KEIN Trigger auf keiner Position → keine Limit-Order für Mo 24.08. vorbereitet.
+**V3/V4 Ergebnis:** max LLY +4,70 % << 20 %-TP1 → kein Trigger.
+
+Weekly Loss Cap geprüft: −0,4056 % vs Fr-14.08. Basis 96.192,26 → weit über −5 %. Kein Sperrauslöser, keine Order-Stornierung nötig (0 pending Orders).
+
+Sektor-Check (Investiert-Anteile):
+- XLV: UNH 9.357,31 + LLY 10.000,00 = 19.357,31 → **20,20 % Gesamt** (48,38 % vom Investierten) — unter 30 %-Cap
+- XLF: JPM 1.054,68 + V 10.018,08 = 11.072,76 → 11,56 % Gesamt (27,67 % vom Investierten)
+- XLK: AAPL 9.583,22 → 10,00 % Gesamt (23,95 % vom Investierten)
+
+Watchlist Mo 24.08. (K1-K3 vorgeprüft Alpaca-Bars Close 21.08., K4/K5 bei Market Open):
+- **ANET** #1 XLK — K1✓ EMA 177,09>149,31 / K2✓ RSI 51,78 / **K3✓ RS +23,82 pp** (**Top-Pick 3/3**)
+- **MRVL** #2 XLK/Semis — K1✓ EMA 234,29>145,26 / K2✓ RSI 55,82 / K3✓ RS +21,28 pp (**3/3**)
+- **HWM** #3 XLI/Aerospace — K1✓ EMA 277,51>242,76 / **K2✗ RSI 40,99** (unter 50 — Watch) / K3✓ RS +1,47 pp (2/3)
+- SKIP GEV (K2✗ RSI 41, K3✗ RS −11,47) | SKIP MU (Owner-Regel Gap-Up-Muster persistent)
+
+Guardrail-Status Gesamt: **GRÜN** (Daily +0,25 % / Weekly −0,41 % / DD −4,26 % / VIX ~15-16 / Crash NEIN / Käufe 1/2 KW34 abgeschlossen).
+
+ClickUp TRADE_DAILY: Task angelegt (Prio 4 Low bei positiver Performance).
+PushNotification: **NEIN** (Silence-Rule: alle GRÜN, kein Stop/Trigger, moderater positiver Tag; UNH V2-DQF 25. Tag bereits bekannter WARN-Status).
+Nächster Check: **Mo 24.08. 08:30 ET Pre-Market KW35 Tag 1** (Reset Käufe 0/2, neue Weekly-Basis heutiger Close 95.802,09 $; Watchlist ANET/MRVL/HWM K4/K5).
+
+---
+
 **Midday 13:00 ET 2026-08-21 (Fr, KW34 Tag 5) — 13:07 Live-Snapshot:**
 Gesamtwert:        95.952,55 $   (Alpaca /v2/account equity Live)
 Cash:              55.788,80 $   (58,14 %) — unverändert vs Market Open (keine Trades Midday)

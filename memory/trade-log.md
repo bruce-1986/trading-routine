@@ -4,6 +4,32 @@
 
 ---
 
+## Offene Positionen (Close 21.08. 16:00 ET Tagesbilanz KW34 Tag 5)
+
+| Symbol | Kaufdatum  | Kaufkurs    | Close 21.08. 16:00 ET | Gewinn/Verlust | Stop-Loss | TP1 | TP2 | Signale |
+|--------|------------|-------------|-----------------------|-----------------|-----------|-----|-----|---------|
+| UNH    | 2026-06-18 | 401,57 $    | 389,89 $ (chg +1,31 %)  | −280,37 $ (**−2,91 % WORST P/L** partial-recovery via BEST chg vs 09:38 −2,81 %) | 369,44 $ (Std-V1) | 481,88 $ | 542,12 $ | **V1 Std +5,53 % SICHER ENGSTE**; ⚠️ V2 BROKEN −3,88 % via Wick 460,95 = Thr 405,64 (DQF 25. Tag persistent), Alt-V2 via 437,13 = 384,67 Puffer +1,36 % SICHER; V5 EMA50 413,20 > EMA200 348,13 ✓ Spread +65,07 aber Close < EMA50 −5,64 % Trend-Warnung; V6 RSI 38,26 oversold / RS_4w −10,88 % → nicht ausgelöst (RSI <80); Owner-Entscheidung pending 25. Tag |
+| JPM    | 2026-06-17 | 332,78 $    | 351,56 $ (chg +0,003 %) | +56,34 $ (**+5,64 %** minor Give-Back vs 09:38 +6,44 %) | 306,16 $ | 399,34 $ | 449,25 $ | V1 Std +14,83 % SICHER; V2 20d-Hi 366,30×0,88=322,34 SICHER +9,06 %; V5 EMA50 343,43 > EMA200 316,21 ✓ Spread +27,22; V6 RSI 48,51 / RS_4w −4,05 % → nicht ausgelöst; V3/V4 +5,64 % << 20 %; **kein Trigger** |
+| V      | 2026-07-20 | 357,178 $   | 371,04 $ (chg +1,45 %)  | +374,28 $ (**+3,88 %** verbessert vs 09:38 +3,28 %) | 328,60 $ | 428,62 $ | 482,20 $ | V1 Std +12,91 % SICHER; V2 20d-Hi 373,97×0,88=329,09 SICHER +12,75 %; V5 EMA50 352,53 > EMA200 332,11 ✓ Spread +20,42; V6 RSI 61,61 / RS_4w +0,73 % → nicht ausgelöst; V3/V4 << 20 %; **kein Trigger** |
+| LLY    | 2026-07-06 | 1.193,89 $  | 1.250,00 $ (chg +0,45 %) | +448,90 $ (**+4,70 % BEST P/L** verbessert vs 09:38 +4,40 %) | 1.098,38 $ (Std-V1) | 1.432,66 $ | 1.611,75 $ | V1 Std +13,80 % SICHER; V2 20d-Hi 1292,51×0,88=1137,40 SICHER +9,90 %; V5 EMA50 1180,34 > EMA200 1053,24 ✓ Spread +127,10 komfortabel; V6 RSI 59,52 / RS_4w +1,32 % → nicht ausgelöst; V3/V4 << 20 %; **kein Trigger** |
+| AAPL   | 2026-07-13 | 316,857 $   | 309,14 $ (chg −0,70 %)  | −239,33 $ (**−2,44 %** verbessert vs 09:38 −2,56 %) | 291,51 $ (Std-V1) | 380,23 $ | 427,76 $ | V1 Std +6,05 % SICHER; V2 DQF Wick 344,555 → Thr 303,21 SICHER +1,96 % shrinking vs 09:38 +1,82 % marginal-verbessert; V5 EMA50 309,76 > EMA200 281,55 ✓ Spread +28,21; V6 RSI 47,24 / RS_4w −10,76 % → nicht ausgelöst; V2-DQF 12. Tag pending |
+
+**Pending Buy-Order:** **KEINE** (KW34 abgeschlossen 1/2 — Slot 1 DELL 17.08. verbraucht, Slot 2 NO-BUY 21.08.)
+
+**Verkaufsorder pending: KEINE** (V1-V6 Close-Vollcheck 21.08. alle 5 Positionen SICHER, **kein V5-Death-Cross auf keiner Position** — EMA50 auf allen 5 Symbolen > EMA200; **kein V6-Trigger** — kein RSI > 80; keine Limit-Order für Mo 24.08. vorbereitet)
+
+**Gesamt Close 21.08. 16:00 ET (KW34 Tag 5 Fr, Käufe 1/2 abgeschlossen):** MV **40.013,29 $** (Alpaca, 5 Pos, +93,16 vs 09:38 MV 39.920,13 = **+0,233 %** intraday-Drift) | **Cash:** 55.788,80 $ (58,24 %) unverändert | **Equity Close:** **95.802,09 $** (Daily **+0,2533 % vs last_equity 95.560,06** [GRÜN]) | **Alpha vs SPY −0,143 pp NEG marginal** (SPY IEX Close 765,64 vs Do Close 762,62 = **+0,396 %**) | **Positionen:** **5/8** | **Käufe KW34:** **1/2 abgeschlossen** | **DD vs ATH 100.066,47:** **−4,262 % GRÜN** (verbessert vs 09:38 −4,355 %) | **Weekly KW34 Tag 5 vs Fr 14.08. Close 96.192,26:** **−0,4056 % GRÜN** (verbessert vs 09:38 −0,502 %)
+
+Sektor-Check Close: XLV 20,20 % Gesamt (UNH 9,77 + LLY 10,44) unter 30 %-Cap | XLF 11,56 % (JPM 1,10 + V 10,46) | XLK 10,00 % (AAPL) | Cash 58,24 %
+
+**Watchlist Mo 24.08. KW35 Tag 1 (K1-K3 vorgeprüft, K4/K5 bei Market Open):**
+- **ANET** #1 XLK (**Top-Pick 3/3**) — K1✓ EMA50 177,09 > EMA200 149,31 / K2✓ RSI 51,78 / **K3✓ RS_63d +23,82 pp vs SPY** — starkes Netzwerk-Momentum
+- **MRVL** #2 XLK/Semis (**3/3**) — K1✓ EMA50 234,29 > EMA200 145,26 / K2✓ RSI 55,82 / K3✓ RS_63d +21,28 pp — Semi-Momentum
+- **HWM** #3 XLI/Aerospace (2/3) — K1✓ EMA50 277,51 > EMA200 242,76 / **K2✗ RSI 40,99** (unter 50 — Watch für Recovery) / K3✓ RS_63d +1,47 pp — Defense-Nachfrage
+- SKIP: GEV (K2✗ RSI 40,97 + K3✗ RS −11,47), MU (Owner-Regel Gap-Up-Muster persistent 9. Tag pending)
+
+---
+
 ## Offene Positionen (Market Open 21.08. 09:38 ET KW34 Tag 5 Live-Snapshot)
 
 | Symbol | Kaufdatum  | Kaufkurs    | Live 21.08. 09:38 ET | Gewinn/Verlust | Stop-Loss | TP1 | TP2 | Signale |

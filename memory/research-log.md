@@ -4,6 +4,76 @@
 
 ---
 
+## Market Close 16:00 ET — 2026-08-21 (Fr, KW34 Tag 5) — Tagesbilanz + Watchlist Mo 24.08.
+
+### Alpaca Account 16:00 ET Close
+- Equity Close: **95.802,09 $** (Daily **+0,2533 % vs last_equity 95.560,06** [GRÜN, Cap −3 %])
+- Cash: 55.788,80 $ (58,24 %) | Long MV: 40.013,29 $ (41,76 %) | Investiert-Drift intraday +93,16 $ vs 09:38
+- ATH 100.066,47 → DD **−4,262 % GRÜN** (verbessert vs 09:38 −4,355 % via LLY-Bounce +0,45 %)
+- Positionen: 5/8 | Offene Orders: KEINE | Käufe KW34: **1/2 abgeschlossen**
+- Weekly KW34 Tag 5 vs Fr 14.08. Close 96.192,26 = **−0,4056 % GRÜN**
+
+### SPY / Alpha
+- SPY IEX Close 21.08.: **765,64 $** (Do Close 762,62 → **+0,396 %**)
+- Bot vs SPY: **Alpha −0,143 pp NEG marginal** (Bot +0,253 % underperformt via AAPL P/L −2,44 % + UNH −2,91 % Drag)
+- VIXY Close 18,19 (Vortag 18,49 = −1,62 %) → VIX Spot ~15-16 GRÜN
+- Weekly SPY: Mo 17.08. Close 772,62 → Fr 21.08. Close 765,64 = **−0,903 %** → Weekly Alpha **+0,50 pp POS** (Bot −0,41 % vs SPY −0,90 %)
+
+### V1-V6 Signal-Check Close (5 Positionen — kein Trigger)
+| Sym | Close | P/L% | V1 Puf | V2-Trail | EMA50 | EMA200 | V5 | RSI14 | RS_4w | V6 |
+|-----|------:|-----:|-------:|---------:|------:|-------:|:--:|------:|------:|:--:|
+| AAPL | 309,14 | −2,44 | +6,05 | +1,96 DQF | 309,76 | 281,55 | ✓ | 47,24 | −10,76 | no |
+| JPM  | 351,56 | +5,64 | +14,83 | +9,06 | 343,43 | 316,21 | ✓ | 48,51 | −4,05 | no |
+| LLY  | 1250,00 | +4,70 | +13,80 | +9,90 | 1180,34 | 1053,24 | ✓ | 59,52 | +1,32 | no |
+| UNH  | 389,89 | −2,91 | +5,53 | −3,88 DQF/+1,36 Alt | 413,20 | 348,13 | ✓ | 38,26 | −10,88 | no |
+| V    | 371,04 | +3,88 | +12,91 | +12,75 | 352,53 | 332,11 | ✓ | 61,61 | +0,73 | no |
+
+**Ergebnis:** Kein V5-Death-Cross, kein V6-Trigger, kein V3/V4-TP-Trigger, alle V1/V2 Std-Stops SICHER. **Keine Sell-Limit-Order für Mo 24.08. platziert.**
+
+### Watchlist Mo 24.08. — K1-K3 vorgeprüft (Alpaca IEX 21.08. Close-Bars, SPY 63d Ret +3,09 %)
+| Sym | Close | EMA50 | EMA200 | K1 | RSI14 | K2 | RS_63d | K3 | Bewertung |
+|-----|------:|------:|-------:|:--:|------:|:--:|-------:|:--:|-----------|
+| **ANET** | 188,66 | 177,09 | 149,31 | ✓ | 51,78 | ✓ | +23,82 | ✓ | **3/3 Top-Pick** — XLK Netzwerk-Momentum |
+| **MRVL** | 237,07 | 234,29 | 145,26 | ✓ | 55,82 | ✓ | +21,28 | ✓ | **3/3** — XLK Semi-Momentum |
+| HWM  | 271,64 | 277,51 | 242,76 | ✓ | 40,99 | ✗ | +1,47 | ✓ | 2/3 — K2 RSI unter 50, Watch |
+| GEV  | 956,44 | 1030,18 | 867,08 | ✓ | 40,97 | ✗ | −11,47 | ✗ | 1/3 SKIP |
+| MU   | (data) | | | | | | | | SKIP — Owner Gap-Up-Muster 9. Tag |
+
+**Perplexity Sektor-Momentum (5T-Return, für Mo-Kontext):** XLE +7,7 % / XLK +1,1 % / XLV +1,0 % (KW34 Do-Snapshot carry-over)
+
+### Guardrail-Check Close (Level 0-3)
+| # | Guardrail | Status | Detail |
+|---|-----------|--------|--------|
+| 0 | Key-Safety / Paper-Mode / Memory | **GRÜN** | ENV-only, paper-api.alpaca.markets, Memory pre/post read+write |
+| 1 | Daily Loss Cap −3 % | **GRÜN** | +0,253 % (weit von Cap) |
+| 1 | Weekly Loss Cap −5 % | **GRÜN** | −0,406 % KW34 Tag 5 (Ende) |
+| 2 | DD-Alarm −15 % ATH | **GRÜN** | −4,262 % (Schwelle 85.056,50) |
+| 3 | Crash-Filter SPY −5 %/Tag | **INAKTIV** | SPY +0,396 % |
+| 3 | VIX-Filter > 30 | **GRÜN** | VIX-Proxy ~15-16 (VIXY 18,19) |
+
+### Sektor-Check Close
+- **XLV: 20,20 % Gesamt** (UNH 9,77 + LLY 10,44) — unter 30 %-Cap (freier Slot bis 30 % = 9,80 % Portfolio-Puffer)
+- **XLF: 11,56 %** (JPM 1,10 + V 10,46) — 2/3 Positionen (Slot frei)
+- **XLK: 10,00 %** (AAPL) — 1/3 (Slot frei für ANET/MRVL)
+- Cash: 58,24 % > 20 % Mindestreserve ✓
+
+### Entscheidung
+- **Close-Aktion:** Memory-Update + ClickUp TRADE_DAILY (Prio 4 Low bei positivem P/L)
+- **KEINE** Sell-Limit-Order für Mo — alle V5/V6 SICHER
+- **KEINE** Buy-Order-Vorbereitung — KW34 abgeschlossen 1/2
+- **Watchlist Mo 24.08.:** ANET (Top-Pick 3/3, XLK-Slot frei) + MRVL (3/3, XLK-Slot frei) + HWM (2/3, K2-Watch) — K4/K5 Vollcheck bei Market Open Mo 09:30 ET
+
+### ClickUp
+- TRADE_DAILY Task angelegt (Prio 4 Low bei positiver Tagesperformance)
+
+### PushNotification
+- **NEIN** (Silence-Rule: alle GRÜN, kein Stop/Trigger, moderater positiver Tag; UNH V2-DQF 25. Tag bereits bekannter WARN, keine Delta-Verschlechterung)
+
+### Nächster Check
+**Mo 24.08. 08:30 ET Pre-Market KW35 Tag 1** — Reset Käufe 0/2 KW35, neue Weekly-Basis heutiger Close 95.802,09 $, Watchlist ANET/MRVL/HWM K4/K5 Vollcheck.
+
+---
+
 ## Market Open 09:30 ET — 2026-08-21 (Fr, KW34 Tag 5) — Slot 2 KW34 NO-BUY (MU 9. Tag Owner-Blocker + XLV-Cap-Sperre VRTX/ABBV/JNJ + CVX K5 FY-organisch fail + PANW/LMT K2-Softness) — KW34-Käufe abgeschlossen 1/2
 
 ### Alpaca Account 09:38 ET Market Open
