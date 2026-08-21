@@ -6,6 +6,86 @@
 
 ## Was funktioniert (bestätigte Patterns)
 
+### KW34 — 2026-08-21 — Weekly Review
+
+```
+Performance:    -0,406 %   | Alpha vs SPY: +0,967 pp POS  (SPY Alpaca IEX Fr 14.08 Close 776,30 → Fr 21.08 Close 765,64 = -1,373 %; Depot Fr 14.08 Close 96.192,26 → Fr 21.08 Alpaca equity Close 95.802,09; Alpaca /v2/account 17:00 ET Live 95.868,38 = +66,29 $ Post-Close-Cash-Interest marginal)
+Seit Bot-Init (31.05.26): -4,198 % | YTD Depot: -4,198 % | SPY YTD +12,294 % (Alpaca IEX YE25 681,82 → 765,64) → YTD-Alpha -16,492 pp (Bot lebt 82 Tage, ~58 % Cash) → **verbessert vs KW33 -17,664 pp** via positiver Wochen-Alpha
+Perplexity Cross-Check: SPY Fr 14.08. 776,34 → Fr 21.08. 765,04 = -1,456 % (SIP-Feed vs Alpaca IEX Divergenz ~0,08 %, konsistent normal)
+
+Beste Position (P/L kumuliert):  JPM +5,64 % (Close 351,56; XLF-Steady-Fortsetzung, Fill 17.06. → +66 HT gehalten, RSI 48,51 << 80. Best-P/L 6. Woche in Folge trotz Give-Back von KW33-Ende +9,03 % → -3,39 pp Give-Back diese Woche)
+Beste Position (Woche chg):      LLY +4,70 % P/L (Close 1.250,00, Woche Kurs +2,52 % via Fr Close 1.250 vs Mo Close 1.185,04 nach Do Give-Back -2,71 % + Fr Recovery +0,45 %, BEST Recovery-Muster; V1 +13,80 %, V2 +9,90 % sicher)
+Schlechteste Position (P/L kumuliert): UNH -2,91 % (Close 389,89, RSI 38,26 oversold, Std-V1 +5,53 % ENGSTE Position, V2-DQF 25. Tag persistent BROKEN, Alt-V2 +1,36 % SICHER; Woche partial-recovery via Fr chg +1,31 % BEST chg von Do Close -4,16 % → -2,91 %)
+Schlechteste Position (Woche chg): AAPL -2,44 % P/L (Close 309,14, Woche Kurs +1,12 % marginal-positiv via Di 310 → Fr 309,14, RSI 47,24, Std-V1 +6,05 %, V2-DQF 12. Tag AUS BROKEN RAUS +1,96 % shrinking)
+
+Käufe diese Woche:   1  (DELL 17.08. Slot 1 KW34 @482,27 × 20 Sh = 9.645,40 $ Fill Open-Auktion Mo; Slot 2 NO-BUY Fr 21.08. via Rule 5 + XLV-Sektor-Cap sperrt VRTX/ABBV/JNJ trotz K1-K3 grün + MU 9. Tag Gap-Up-Muster pending)
+Verkäufe:            1  (DELL 20.08. 09:30 ET Market-Sell 20 Sh @436,346 Open-Auktion, V1-Stop-Loss GETRIGGERT nach 3-Session-Kaskade 482,27 → 468,58 → 437,20 → Fill 436,346)
+Stop-Loss-Trigger:   1  (V1 -8 % strikt; DELL V1 Thr 443,6884 Mi 19.08. Close 437,20 verletzt, Fill Do Open @436,346)
+Win-Rate KW34:       0/1 = 0 % (DELL Verlust-Exit, Halte-Dauer 3 HT, kürzester Loser seit Bot-Init)
+Realisiert KW34:     -918,48 $   | Realisiert kumuliert seit Bot-Init: -4.557,39 $ (vs KW33 -3.638,91 $)
+Handelstage:         5 von 5 (keine Feiertage)
+ATH:                 100.066,47 $ | DD -4,262 % (GRÜN, Alarm -15 %)
+Guardrails:          Alle 8 GRÜN am Fr-Close + 2 WARN (UNH V2-DQF 25. Tag persistent BROKEN Alt-V2 +1,36 % SICHER Std-V1 +5,53 % primär ENGSTE, Owner-Regel 25. Tag pending; AAPL V2-DQF 12. Tag technisch AUS BROKEN RAUS +1,96 % shrinking Std-V1 +6,05 % primär)
+Käufe KW34 Final:    1/2  (Slot 1 DELL 17.08. Fill Mo → V1-Stop Do → Realized -918,48 $; Slot 2 NO-BUY Fr Rule 5)
+```
+
+**Was gut lief:**
+- **Erste positive Alpha-Woche seit KW29 (~5 Wochen):** Depot -0,406 % vs SPY -1,373 % = **+0,967 pp POS**. SPY-Downweek (-1,37 %) fing die Portfolio-Weakness ab; UNH-Recovery Fr (+1,31 % BEST chg partial-recovery aus Razor-Zone) + LLY Give-Back-Stabilisierung (+0,45 % Fr nach 2 Tagen Give-Back) + V Fr +1,45 % kompensierten AAPL-Weakness (-0,70 % Fr) und JPM-Softening. YTD-Alpha marginal verbessert -16,492 pp (vs KW33 -17,664 pp).
+- **V1-Regel sauber gefeuert bei DELL (n=8 Fill-Day-Muster Realized):** DELL Fill 17.08. Mo @482,27 → Mi Close 437,20 < V1-Thr 443,6884 → Market-Sell 20 Sh Do Open @436,346, Slippage -0,03 % vs V1. Kürzester Halte-Dauer aller Realized-Losses (3 HT, vgl. GS 8 HT KW31, MU 4 HT KW29). Kein Panik, kein Zögern, Regel-Disziplin ohne Ausnahme.
+- **V1-V6-Vollcheck alle 5 verbleibenden Positionen SICHER EOD Fr:** Golden Cross alle intakt (min UNH EMA50 413,20 > EMA200 348,13 Spread +65,07), RSI max V 61,61 << 80, min V1 UNH +5,53 % ENGSTE, kein RS>0-AND-RSI>80 → kein V6. Keine Panik trotz UNH Do -4,16 % Worst-Session-Kollaps und LLY 2-Tage-Give-Back.
+- **Cascade-Framework Disziplin bei Slot 2 KW34 NO-BUY Fr:** Watchlist K1-K3 alle grün: MU/VRTX/ABBV/JNJ/CVX (5 Kandidaten alle 3/3). Aber MU Gap-Up-Muster 9. Tag pending, VRTX/ABBV/JNJ REJECT XLV-Cap (20,20 % + 10 % = 30,20 % > 30 %), CVX K5 ambivalent (FwdPE ✓ 12,66, RevYoY_FY-Konsens 7,1 % < 10 %). Rule 5 No-Action bei Unsicherheit sauber gefahren.
+- **UNH V2-DQF 25. Tag Recovery-Muster fortgesetzt konsistent:** Do Close Alt-V2 razor-thin +0,05 % → Fr Close Alt-V2 +1,36 % SICHER via Fr Rally +1,31 %. 25 Tage kein Auto-Sell trotz persistenter DQF-Anomalie, Std-V1 +5,53 % primär durchweg als Anker.
+- **AAPL V2-DQF 12. Tag technisch AUS BROKEN RAUS:** Puffer +1,96 % shrinking aber SICHER, Std-V1 +6,05 % primär bindend. Post-Q3-Konsolidierung 7. Woche fortgesetzt.
+
+**Was nicht gut lief:**
+- **DELL V1-Realized -918,48 $ zweitgrößter Einzelverlust seit Bot-Init** (nach GOOGL -1.211,34 $, vor MU -1.019,43 $). Fill-Day-Muster n=8 (5× realized vs 3× überstanden — GOOGL/MU/AVGO/GS/DELL vs V/JPM/AAPL/UNH). **DELL erste XLK-Diversifikation-Ausweitung KW34 gescheitert — XLK-Bias auf AAPL zurück** (10,00 %).
+- **Sektor-Divergenz KW34 (Perplexity: XLE/XLB/XLU Top-3) vs Portfolio 0 % Exposure:** Portfolio hält weiter XLV/XLF/XLK aber die Rally war in XLE (+7,7 % 5T-Return Alpaca-Basis) und XLB/XLU. **3. Woche in Folge Sektor-Rally-Verpassungs-Muster** (KW32 XLK, KW33 XLK+XLY+XLC, KW34 XLE+XLB+XLU). Screener-Universe braucht KW35 Erweiterung um XLE (XOM K5-Neucheck RevYoY_FY 9.6 % nur marginal, CVX K5 ambivalent M&A vs organisch) und XLB (FCX/NEM/LIN/APD/DOW Multi-Source-Check zwingend).
+- **YTD-Alpha weiter deutlich negativ -16,492 pp** trotz KW34 marginaler Verbesserung. 82 Bot-Tage, Cash-Quote 58,24 % strukturell zu hoch für SPY YTD +12,294 %. **Cash-Quote-Diskussion seit KW29 (~6 Wochen pending) ohne Owner-Entscheidung**.
+- **Slot 2 KW34 NO-BUY 3. Woche in Folge (KW31-32-33 = 0/6 Slots, KW34 = 1/2 Slots):** Screener-Universe zu eng bzw. Sektor-Cap-Sperren + Owner-Pending-Blocker (MU 9. Tag Gap-Up + XLV 5. Woche Cap). Bei fortgesetzten 0-1-Kauf-Wochen zieht Portfolio nicht mehr genügend Alpha aus VIX-Ruhe (14-16 stabil).
+- **XLV-Sektor-Cap-Deutung 5. Woche pending (KW29/30/31/32/33/34)** — sperrt persistent VRTX/ABBV/JNJ trotz K1-K3 alle grün. Owner-Klärung überfällig, KW35 Priorität 1.
+- **MU-Gap-Up-Muster Owner-Regel 9. Tag pending** — sperrt MU-Kauf trotz K1-K5 alle grün + RS #1 XLK/Semis. Escalation-Bedarf.
+- **UNH -2,91 % kumuliert (WORST P/L 3. Woche in Folge):** V2-DQF 25. Tag persistent BROKEN. Bei fortgesetzter Weakness ist Std-V1 +5,53 % nur noch marginal — Trigger in 5-6 %-Nähe.
+- **AAPL -2,44 % (2. WORST P/L):** Std-V1 +6,05 % ebenfalls eng. Post-Q3-Konsolidierung 7. Woche mit V2-DQF-Verlauf.
+
+**Strategie-Anpassung nötig:** NEIN — alle Regeln (V1-V6/K1-K5/Blackout/Sektor-Cap/Rule 5) regelkonform. Aber **4 Diskussions-Punkte für KW35 dringend:**
+1. **XLV-Sektor-Cap-Deutung Owner-Klärung 5. Woche pending** (KW29-34). Vorschlag persistent: entweder Portfolio-Basis akzeptieren (XLV 20,20 % < 30 % OK) ODER investiert-Basis strikt (LLY-Reduktion Watch). Blockiert weiter 3.-XLV-Käufe (VRTX/ABBV/JNJ alle K1-K3 grün Fr 21.08.).
+2. **MU-Gap-Up-Muster Owner-Regel 9. Tag pending:** MU K1-K5 alle grün, RS #1 XLK. Optionen: (a) MU aufgeben und auf DELL/ANET/MRVL umschalten (b) Limit-Regel auf +1,5 %-2,0 % erhöhen bei RS-Top-3-Kandidaten (c) Market-Order akzeptieren mit Sizing-Reduktion. DELL-Präzedenz KW34 (-9,52 % Realized 3 HT) unterstreicht Momentum-Kauf-Risiken.
+3. **Cash-Quote 58,24 % vs 6-Wochen-Alpha-Verlust-Muster:** VIX 14-16 stabil, keine Bear-Signale. **Cash-Quote-Diskussion 6. Woche pending**. Sizing (10 % Pos-Size aktuell vs 12-15 % bei VIX <18)?
+4. **Sektor-Screener-Erweiterung KW35 zwingend:** XLE (XOM/CVX/COP/EOG) + XLB (FCX/NEM/LIN/APD/DOW) K1-K5 Multi-Source Mo Pre-Market. Erste XOM-Daten: FwdPE 13,76 ✓ / RevYoY 9,6 % **REJECT-marginal** / MCap 683 Mrd ✓ / Earnings 30.10.26 blackout-frei — CVX K5 M&A-getrieben, restliche Perplexity N/A → aktive Multi-Source-Verifikation KW35 nötig.
+
+**Watchlist nächste Woche (KW35, 24.08.→28.08.):**
+- **ANET (XLK/Networking) — HAUPTKANDIDAT #1** — Alpaca IEX Fr 21.08. Close, K1✓ EMA50 177,09 > EMA200 149,31 / K2✓ RSI 51,78 / **K3✓ RS_63d +23,82 pp vs SPY (Top-Pick 3/3)**, K4/K5 Mo Pre-Market prüfen. XLK-Diversifikation post-DELL-Exit.
+- **MRVL (XLK/Semis) — SEKUNDÄR** — K1✓ EMA50 234,29 > EMA200 145,26 / K2✓ RSI 55,82 / K3✓ RS +21,28 pp (3/3), K4/K5 Mo prüfen. Semi-Momentum.
+- **HWM (XLI/Aerospace) — TERTIÄR** — K1✓ EMA 277,51>242,76 / **K2✗ RSI 40,99 unter 50** (Watch für Recovery) / K3✓ RS +1,47 pp (2/3), Defense-Nachfrage aber K2-Bruch.
+- **MU (XLK/Semis) — SKIP-Owner-Pending 9. Tag** — K1-K5 alle ✓ Fr 21.08. (EMA 895,58>599,52 / RSI 55,18 / RS +30,20 pp / FwdPE 6,5-8,9× ✓ / RevYoY +196-346%), aber Gap-Up-Muster Owner-Regel pending. **Owner-Entscheidung KW35 dringend.**
+- **VRTX/ABBV/JNJ (XLV) — BLOCKIERT XLV-Cap** — alle K1-K3 grün, aber Sektor-Cap 30,20 % > 30 %. **XLV-Owner-Klärung KW35 dringend.**
+- **XLE-Neupipeline (XOM/CVX/COP/EOG/PXD/SLB)** — Perplexity KW34 Sektor-#1 +7,7 % 5T. XOM FwdPE 13,76 ✓ / RevYoY 9,6 % marginal-FAIL / MCap 683 Mrd ✓ / Earnings 30.10.26 blackout-frei — **RevYoY-Multi-Source-Check KW35 Mo Pre-Market** (falls andere Quelle >10 % → KAUF-Kandidat).
+- **XLB-Neupipeline (FCX/NEM/LIN/APD/DOW)** — Perplexity KW34 Sektor-#2. K1-K5 Multi-Source-Check KW35 Mo zwingend, 0 % Portfolio-Exposure seit Bot-Init.
+- **CVX (XLE) — Backup-K5-ambivalent** — K1-K3 ✓ Fr 21.08. (EMA 190,33>177,14 / RSI 69,82 marginal-Obergrenze / RS +4,67 pp), K5 FwdPE 12,66 ✓ aber RevYoY_Q +51 % M&A Hess-Übernahme, RevYoY_FY-Konsens +7,1 % **organisch-FAIL**. Ohne organische Wachstums-Bestätigung REJECT.
+- **REJECTS persistent aus KW34:** PANW (K2 RSI 47,87 Fr <50), LMT (K2 RSI 48,72 Fr <50), NVDA (K3 RS -5,82 pp), GE (K2 RSI 40,15), MSFT (K1 EMA-Diff -8,72 % FAIL), MRK (K2 RSI 75,73 überkauft).
+
+**Sektor-Priorität KW35 (Basis KW34 Sektor-Alpha vs SPY per Perplexity + Alpaca 5T-Return):**
+- **XLE #1 (Perplexity +7,7 % 5T, Rank #1):** XOM RevYoY-Multi-Source, CVX K5-organisch-Recheck, COP/EOG K1-K5 Multi-Source Mo Pre-Market (0 % Portfolio)
+- **XLB #2 (Perplexity):** FCX/NEM/LIN/APD/DOW K1-K5 Multi-Source Mo Pre-Market (0 % Portfolio)
+- **XLU #3 (Perplexity):** DUK/NEE/SO K1-K5 Multi-Source Mo (0 % Portfolio)
+- **XLK #2 (Alpaca 5T +1,1 %):** ANET/MRVL K4/K5 Mo, MU Owner-Diskussion
+- **XLV #3 (Alpaca 5T +1,0 %):** VRTX/ABBV/JNJ trotz K1-K3 grün BLOCKIERT XLV-Cap
+- **XLF/XLC:** JPM+V bereits gehalten, keine 3. XLF-Käufe
+- **Meidung:** XLI (HWM K2-FAIL), XLY/XLC (kein Kandidat aktuell)
+
+**Position-kritischer Watch Mo 24.08.:**
+- **UNH V1 +5,53 % ENGSTE Std-V1:** Bei Fortsetzung Weakness KW35 rückt V1-Trigger in 5-6 %-Nähe. RSI 38,26 oversold Recovery-Potenzial oder Bear-Fortsetzung.
+- **AAPL V1 +6,05 % Puffer / V2-DQF 12. Tag +1,96 % shrinking:** Post-Q3-Konsolidierung 7. Woche. News-Monitoring Perplexity Pre-Market erforderlich.
+- **LLY V1 +13,80 % Puffer:** Orforglipron-News-Fortsetzung KW35? Nach Give-Back-Stabilisierung Fr Recovery.
+- **UNH V2-DQF 25. Tag persistent BROKEN Alt-V2 +1,36 % SICHER:** Owner-Entscheidung 25. Tag pending, keine neue Info.
+- **AAPL V2-DQF 12. Tag AUS BROKEN RAUS shrinking +1,96 %:** Bei Kurs-Bewegung >5 $ auf 304 $ wahrscheinlich Bruch Alt-V2, Std-V1 291,51 primär bindend.
+
+**Sektor-Cap-Check aktuell:** XLV 48,38 % investiert / 20,20 % Gesamt | XLF 27,67 % / 11,56 % | XLK 23,95 % / 10,00 % | Cash 58,24 %. **Bei strikter Deutung (investiert): XLV Verstoß 5. Woche in Folge persistent** (schwächste: UNH -2,91 % kumuliert). Bei Portfolio-Deutung alle < 30 %. **KW35 Owner-Klärung DRINGEND (Priorität 1, 5. Woche pending).**
+
+**Überraschungs-Insight:** KW34 lieferte die **erste positive Alpha-Woche seit ~5 Wochen** (+0,967 pp), aber ironisch NICHT durch überlegene Aktien-Auswahl, sondern durch **SPY-Downweek (-1,37 %)** und relative Defensivität via High-Cash (58 %). Portfolio hielt sich trotz DELL-Realized-Loss -9,52 % dank Fr-Recovery-Muster (UNH partial-recovery +1,31 %, LLY Give-Back-Stabilisierung, V/JPM leicht positive). **KW35 wird zeigen, ob Portfolio auch bei SPY-Neutral/Positiv-Wochen Alpha generieren kann** — dazu braucht es Sektor-Screener-Erweiterung XLE/XLB (Perplexity KW34 Top-2) und Owner-Klärung XLV-Cap + MU-Gap-Up (beide Blocker-Escalation überfällig).
+
+---
+
 ### KW33 — 2026-08-14 — Weekly Review
 
 ```

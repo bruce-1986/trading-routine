@@ -1,5 +1,57 @@
 # Portfolio Status
 
+**Wochenabschluss KW34 — 2026-08-21 (Fr) — Weekly Review 17:00 ET:**
+Gesamtwert:        95.802,09 $   (Alpaca /v2/account equity Close 16:00 ET; Live 17:00 ET 95.868,38 $ = +66,29 $ Post-Close-Cash-Interest marginal)
+Cash:              55.788,80 $   (58,24 %)
+Investiert:        40.013,29 $   (41,76 %)   — V 10.018,08 / LLY 10.000,00 / AAPL 9.583,22 / UNH 9.357,31 / JPM 1.054,68
+Wochenrendite:     **-0,406 %**  (vs Fr 14.08. Close 96.192,26 $)
+SPY Wochenrendite: **-1,373 %**  (Alpaca IEX 776,30 → 765,64; Perplexity SIP 776,34 → 765,04 = -1,456 %, Feed-Divergenz ~0,08 %)
+**Alpha vs SPY:    +0,967 pp POS**  (erste positive Alpha-Woche seit KW29 ~5 Wochen)
+YTD Depot:         **-4,198 %**  (Startkapital 100.000 → 95.802,09)
+SPY YTD:           **+12,294 %** (Alpaca IEX YE25 681,82 → 765,64)
+**YTD Alpha:       -16,492 pp**  (verbessert vs KW33 -17,664 pp)
+ATH:               100.066,47 $ (unverändert seit Jun 22)
+Drawdown:          **-4,262 %** (GRÜN, Alarm -15 % bei 85.056,50)
+Offene Positionen: **5/8**
+Nächste Woche max. Käufe: **2/2 KW35 frisch verfügbar**
+
+Trades KW34 (5 HT):
+- **1 Kauf:** DELL 17.08. Mo @482,27 × 20 Sh Fill Open (Slot 1)
+- **1 Verkauf:** DELL 20.08. Do 09:30 ET Market-Sell 20 Sh @436,346 (V1-Stop nach Mi Close 437,20 < Thr 443,6884)
+- **1 Stop-Loss (V1) Realized:** -918,48 $ (-9,52 %)
+- **Slot 2 KW34: NO-BUY Fr 21.08.** (Rule 5 + XLV-Sektor-Cap + MU-Gap-Up-pending)
+- Win-Rate KW34: 0/1 = 0 %
+- Realisiert kumuliert Bot-Init: **-4.557,39 $** (vs KW33 -3.638,91 $)
+
+Sektor-Struktur Close:
+- XLV: UNH 9.357,31 + LLY 10.000,00 = 19.357,31 → **20,20 % Gesamt** (48,38 % vom Investierten — 5. Woche pending)
+- XLF: JPM 1.054,68 + V 10.018,08 = 11.072,76 → 11,56 % Gesamt (27,67 % vom Investierten)
+- XLK: AAPL 9.583,22 → 10,00 % Gesamt (23,95 % vom Investierten)
+- Cash 58,24 % — alle < 30 %-Cap Gesamt
+
+Guardrails-Status: Alle 8 **GRÜN** + 2 WARN persistent (UNH V2-DQF 25. Tag / AAPL V2-DQF 12. Tag)
+
+**Watchlist KW35 (Mo 24.08.→Fr 28.08.):**
+- **ANET (XLK/Networking) #1** — K1-K3 3/3 (EMA 177,09>149,31 / RSI 51,78 / RS +23,82 pp Top-Pick), K4/K5 Mo Pre-Market
+- **MRVL (XLK/Semis) #2** — K1-K3 3/3 (EMA 234,29>145,26 / RSI 55,82 / RS +21,28 pp), K4/K5 Mo
+- **HWM (XLI/Aerospace) #3** — K1/K3 ✓ K2✗ RSI 40,99 <50 (Watch Recovery)
+- **XLE-Neupipeline:** XOM (K5 RevYoY 9,6 % marginal-FAIL) / CVX (K5 M&A vs organisch) / COP/EOG K1-K5 Multi-Source-Check Mo Pre-Market
+- **XLB-Neupipeline:** FCX/NEM/LIN/APD/DOW K1-K5 Multi-Source Mo (0 % Portfolio)
+- **MU (XLK) SKIP-Owner-Pending 9. Tag** — K1-K5 alle ✓ RS #1, aber Gap-Up-Muster
+- **XLV VRTX/ABBV/JNJ BLOCKIERT XLV-Cap** — alle K1-K3 grün, aber Sektor-Cap 30,20 % > 30 %
+
+**Offene Owner-Diskussionen (KW35 Priorität 1-2):**
+1. XLV-Sektor-Cap-Deutung Investiert vs Gesamt (5. Woche pending)
+2. MU-Gap-Up-Muster Limit-Regel (9. Tag pending)
+3. Cash-Quote 58 % vs Sizing-Diskussion (6. Woche pending)
+4. Sektor-Screener-Erweiterung XLE/XLB (KW34 Top-2 Sektoren, 0 % Portfolio)
+
+ClickUp Weekly-Report: Task [WEEKLY] Review KW34 — 2026-08-21 (Prio 3) versucht.
+PushNotification: **JA** (Weekly-Review erste positive Alpha-Woche seit ~5 Wochen + DELL-Realized-Loss + KW34-Bilanz)
+Nächster Check: **Mo 24.08. 08:30 ET Pre-Market KW35 Tag 1** — Watchlist ANET/MRVL/HWM K4/K5 + XLE/XLB-Neupipeline + Reset Käufe 0/2 + XLV-Cap-Owner-Klärung + MU-Owner-Klärung.
+
+---
+
 **Close 16:00 ET 2026-08-21 (Fr, KW34 Tag 5) — Tagesbilanz:**
 Gesamtwert:        95.802,09 $   (Alpaca /v2/account equity Close)
 Cash:              55.788,80 $   (58,24 %) — unverändert vs Midday (0 Trades intraday)
