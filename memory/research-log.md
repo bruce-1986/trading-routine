@@ -4,6 +4,81 @@
 
 ---
 
+## Pre-Market 08:30 ET — 2026-08-21 (Fr, KW34 Tag 5) — Alle 8 Guardrails GRÜN / VIX 15,70 / SPY PM +0,53 % / UNH V2-Alt razor +0,27 % / Slot 2 KW34 offen für MU/VRTX/ABBV/JNJ/CVX
+
+### Alpaca Account 08:36 ET Pre-Market
+- Equity: **95.584,14 $** (vs last_equity 95.560,06 = **+0,025 %** flat pre-market)
+- Cash: 55.788,80 $ (58,37 %) | Long MV: 39.795,34 $ (41,63 %)
+- ATH 100.066,47 → DD **−4,479 % GRÜN** (marginal verbessert vs Do Close −4,485 %)
+- Positionen: **5/8** | Offene Orders: **KEINE** (Alpaca /v2/orders?status=open bestätigt 0)
+- Weekly KW34 Tag 5 vs Fr Close 96.192,26 = **−0,632 % GRÜN** (marginal verbessert vs Do Close −0,638 %)
+- Konsistenz-Check vs `portfolio.md` Do Close 95.578,92: Delta +5,22 $ (+0,005 %) marginal — GRÜN, fractional PM-Drift normal
+
+### Positions Live Pre-Market (Alpaca IEX 08:36 ET, chg vs Do Close)
+| Sym | Qty | Entry | Cur | P/L % | chg | V1 Puffer |
+|-----|-----|-------|-----|-------|-----|-----------|
+| JPM | 3 | 332,78 | 354,35 | **+6,48** | +0,80 % | +15,74 % |
+| LLY | 8 | 1193,89 | 1238,53 | +3,74 | −0,47 % | +12,76 % |
+| V | 27 | 357,178 | 366,50 | +2,61 | +0,21 % | +11,54 % |
+| AAPL | 31 | 316,857 | 312,00 | −1,53 | +0,22 % | +7,02 % |
+| **UNH WORST P/L** | 24 | 401,57 | 385,69 | **−3,95** | +0,22 % | **+4,40 % ENGSTE** |
+
+### Guardrail-Check (Level 0-3)
+| # | Guardrail | Status | Detail |
+|---|-----------|--------|--------|
+| 1 | Daily Loss Cap −3 % | **GRÜN** | +0,025 % (weit von Cap) |
+| 2 | Weekly Loss Cap −5 % | **GRÜN** | −0,632 % KW34 Tag 5 |
+| 3 | DD-Alarm −15 % ATH | **GRÜN** | −4,479 % (Schwelle 85.056,50) |
+| 4 | DD-Stopp −20 % ATH | **GRÜN** | weit weg |
+| 5 | Crash-Filter SPY −5 %/Tag | **GRÜN** | SPY gestern IEX −0,841 % >> −5 % |
+| 6 | VIX-Filter > 30 | **GRÜN** | 15,70 (Cboe, Perplexity) |
+| 7 | Earnings-Blackout 3 HT | **GRÜN** | KEINE für AAPL/JPM/LLY/UNH/V |
+| 8 | Max. Käufe 2/Woche | **1/2** | Slot 2 KW34 offen für Fr 21.08. |
+
+### Perplexity Daily Macro Check
+- **VIX:** 15,70 (Cboe)
+- **SPY Premarket:** +0,53 % → 766,64 (vs Do Close 765,51)
+- **US 10Y Treasury Yield:** 4,696 % (vs 4,64 % Do; leichte Steigung)
+- **Makro-Events heute (ET):**
+  - 08:30 Empire State Manufacturing Index
+  - 09:45 US Flash Manufacturing PMI
+  - 10:00 Housing Market Index
+- **Top News overnight/PM:**
+  - US equity funds 2. Woche Inflows (bis 19.08.)
+  - Global bond yields rebound; Öl elevated (Iran-Sanktionen, Buyback-Skepsis)
+  - US equity futures firmer in Fr-Session
+- **Fed-Speaker:** keine explizit für heute in Query — Jackson-Hole-Kontext (Powell Rede Fr 22.08. ET klassisch)
+- **CPI/Jobs:** keine Major-Release heute (Jobless Claims war Do)
+
+### Sell-Signal-Check V1-V4 Pre-Market — kein Trigger, keine Order platziert (V5/V6 nur Close)
+- **V1 Std −8 % alle 5 SICHER** (min UNH +4,40 % ENGSTE marginal verbessert vs Do Close +4,17 %; alle >4 %)
+- **V2 UNH DQF 25. Tag persistent BROKEN −4,90 %** via Wick 460,95 = Thr 405,64 (Live 385,69 < Thr) — **Alt-V2 via 437,13 = 384,67 Puffer +0,265 % RAZOR marginal verbessert** vs Do Close +0,05 %; Std-V1 +4,40 % primär SICHER als PRIMÄR-Anker; **Owner-Entscheidung 25. Tag pending**
+- **V2 AAPL DQF 12. Tag** Wick 344,555 = Thr 303,21 → cur 312,00 = **+2,90 % SICHER** marginal verbessert vs Do Close +2,72 %
+- **V3/V4:** max JPM +6,48 % << 20 %-TP1 → kein Trigger
+
+### Earnings-Blackout Check (Perplexity Query)
+- Antwort: **NONE** für AAPL/JPM/LLY/UNH/V/DELL/MU/VRTX/ABBV/JNJ/CVX in Fr 21.08. / Mo 24.08. / Di 25.08.
+- Konsistent mit Memory: DELL Earnings 27.08. (>3 HT), keine Stop-Verengung nötig
+
+### Markt-Kontext Pre-Market
+SPY futures +0,53 % positiv, VIX 15,70 GRÜN (deutlich unter 25/30 Filter), 10Y 4,696 % (leichte Steigung aber unkritisch), keine kritischen Makro-Releases, keine Fed-Rede. Portfolio flat pre-market (+0,025 %), UNH marginale Erholung (+0,22 % chg reduziert V2-Alt-Bruchrisiko leicht). Rahmenbedingungen für Slot 2 KW34 Kaufscan bei Market Open sehr freundlich (bullisher Tone, keine Crash-Signale, kein Vorsichts-Trigger via SPY <−2 % PM).
+
+### Entscheidung
+- **Kaufscan bei Market Open 09:30 ET: JA** (Slot 2 KW34 offen, alle Guardrails GRÜN, Makro-Rahmen positiv)
+- **Prioritäten K4/K5-Vollcheck:** MU #1 (Gap-Up-Muster Owner-Regel 9. Tag pending — persistent-Blocker), VRTX #2 (XLV-Sektor-Cap-Risiko 20,08 % + 10 % ≈ 30 % Grenze), ABBV #3 (XLV-Cap), JNJ #4 (XLV-Cap), CVX #5 (K5 RevYoY-Recheck)
+- **UNH Owner-Entscheidung V2-Alt-DQF 25. Tag** weiterhin pending — Puffer razor +0,27 %, wahrscheinlicher Bruch heute bei Softening
+
+### ClickUp
+- **Prio 4 [PRE-MARKET] Check — 2026-08-21 08:30 ET** — Versuch (ITEM_246-Persistenz seit KW32: Custom-Type-Cap → Fallback Memory-Only bei Fehler)
+
+### PushNotification
+- **NEIN** (Silence-Rule Pre-Market: alle 8 Guardrails GRÜN, kein Stop ausgelöst, keine Earnings-Blackouts, SPY PM +0,53 % positiv, UNH Alt-Puffer marginal verbessert, Delta zum Do Close minimal — kein Owner-Awareness-Bedarf)
+
+### Nächster Check
+**Fr 21.08. 09:30 ET Market Open KW34 Tag 5** — 5 Positionen V1-V6 Live-Monitor, K4-Vollcheck MU/VRTX/ABBV/JNJ/CVX bei Market-Open-Vol (K4-Timing-Constraint bekannt → Midday-Recheck falls nötig), UNH V2-Alt-Puffer Bruch-Kontrolle, MU Gap-Up-Owner-Regel-Diskussion 9. Tag persistent.
+
+---
+
 ## Market Close 16:00 ET — 2026-08-20 (Do, KW34 Tag 4) — Tagesbilanz / V1-V6 alle 5 SICHER / UNH V2-Alt razor +0,05 % / Watchlist Fr MU/VRTX/ABBV/JNJ/CVX
 
 ### Alpaca Account 16:03 ET Close
