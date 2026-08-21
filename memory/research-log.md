@@ -4,6 +4,80 @@
 
 ---
 
+## Market Open 09:30 ET — 2026-08-21 (Fr, KW34 Tag 5) — Slot 2 KW34 NO-BUY (MU 9. Tag Owner-Blocker + XLV-Cap-Sperre VRTX/ABBV/JNJ + CVX K5 FY-organisch fail + PANW/LMT K2-Softness) — KW34-Käufe abgeschlossen 1/2
+
+### Alpaca Account 09:38 ET Market Open
+- Equity: **95.708,93 $** (Daily **+0,156 % vs last_equity 95.560,06** [GRÜN, Cap −3 %, verbessert vs Pre-Market +0,025 %])
+- Cash: 55.788,80 $ (58,29 %) | Long MV: 39.920,13 $ (41,71 %) unverändert vs Pre-Market
+- ATH 100.066,47 → DD **−4,355 % GRÜN** (verbessert vs Pre-Market −4,479 %)
+- Positionen: 5/8 | Offene Orders: KEINE
+- Weekly KW34 Tag 5 vs Fr Close 96.192,26 = **−0,502 % GRÜN** (verbessert vs Pre-Market −0,632 %)
+
+### Positions Live (Alpaca IEX 09:38, chg vs Do Close)
+| Sym | Qty | Entry | Cur | P/L % | chg | V1 Puffer |
+|-----|-----|-------|-----|-------|-----|-----------|
+| **JPM BEST P/L** | 3 | 332,78 | 354,20 | **+6,44** | +0,75 % | +15,69 % |
+| LLY | 8 | 1193,89 | 1246,4650 | +4,40 | +0,17 % | +13,48 % |
+| V | 27 | 357,178 | 368,90 | +3,28 | +0,87 % | +12,26 % |
+| AAPL | 31 | 316,857 | 308,74 | −2,56 | **−0,82 % WORST chg** | +5,91 % |
+| **UNH WORST P/L** | 24 | 401,57 | 390,27 | **−2,81** | **+1,41 % BEST chg** | **+5,64 % ENGSTE** |
+
+### Guardrail-Check (Level 0-3)
+| # | Guardrail | Status | Detail |
+|---|-----------|--------|--------|
+| 1 | Daily Loss Cap −3 % | **GRÜN** | +0,156 % (weit von Cap) |
+| 2 | Weekly Loss Cap −5 % | **GRÜN** | −0,502 % KW34 Tag 5 |
+| 3 | DD-Alarm −15 % ATH | **GRÜN** | −4,355 % (Schwelle 85.056,50) |
+| 4 | DD-Stopp −20 % ATH | **GRÜN** | weit weg |
+| 5 | Crash-Filter SPY −5 %/Tag | **GRÜN** | SPY +0,336 % Live |
+| 6 | VIX-Filter > 30 | **GRÜN** | 15,70 (Cboe Pre-Market) |
+| 7 | Earnings-Blackout 3 HT | **GRÜN** | KEINE für AAPL/JPM/LLY/UNH/V |
+| 8 | Max. Käufe 2/Woche | **1/2 abgeschlossen** | Slot 2 KW34 via NO-BUY verbraucht |
+
+### Sell-Signal-Check V1-V4 Market Open — kein Trigger, keine Order platziert (V5/V6 nur Close)
+- **V1 Std −8 % alle 5 SICHER** (min UNH +5,64 % ENGSTE verbessert vs Do Close +4,17 %)
+- **V2 UNH DQF 25. Tag persistent BROKEN −3,79 %** via Wick 460,95 = Thr 405,64 (Live 390,27 < Thr) — **Alt-V2 via 437,13 = 384,67 Puffer +1,45 % SICHER verbessert vs Do Close +0,05 % (partial-recovery aus Razor-Zone)**; Std-V1 +5,64 % primär SICHER als PRIMÄR-Anker; Owner-Entscheidung 25. Tag pending
+- **V2 AAPL DQF 12. Tag** Wick 344,555 = Thr 303,21 → cur 308,74 = **+1,82 % SICHER shrinking** verschlechtert vs Do Close +2,72 %
+- **V3/V4:** max JPM +6,44 % << 20 %-TP1 → kein Trigger
+
+### Buy-Scan Slot 2 KW34 — Ergebnis: KEINE Kauforder platziert
+- **Sektor-Momentum (Perplexity 5T-Return):** #1 XLE +7,7 % | #2 XLK +1,1 % | #3 XLV +1,0 %
+- **Kandidaten K1-K3 Alpaca IEX ret63d** (SPY ret63 +2,87 %, sortiert nach RS63):
+
+| Sym | Sektor | EMA50/200 K1 | RSI14 K2 | RS63 K3 | Entscheid |
+|-----|--------|--------------|----------|---------|-----------|
+| MU  | XLK/Semis | 895,58>599,52 ✓ | 55,18 ✓ | +30,20 pp ✓ | **SKIP Gap-Up-Muster Owner-Regel persistent 9. Tag pending** |
+| VRTX | XLV | 489,83>458,64 ✓ | 64,86 ✓ | +22,66 pp ✓ | **REJECT XLV-Sektor-Cap 30,20 % > 30 % Strategy-Lock Rule 3** |
+| ABBV | XLV | 245,25>231,16 ✓ | 61,56 ✓ | +20,47 pp ✓ | **REJECT XLV-Sektor-Cap wie VRTX** |
+| JNJ | XLV | 254,63>230,07 ✓ | 59,46 ✓ | +13,83 pp ✓ | **REJECT XLV-Sektor-Cap wie VRTX** |
+| CVX | XLE | 190,33>177,14 ✓ | 69,82 marginal ✓ | +4,67 pp ✓ | **NO-BUY** K5 FwdPE 12,66 ✓ / RevYoY_Q +51 % M&A Hess ✗ / **RevYoY_FY-Konsens +7,1 % < 10 % organisch nicht erfüllt** + K4 nicht robust verifizierbar (Vol nach 8 min = 5.856 Sh = 1,88 % Avg20 311.130) → Rule 5 |
+| PANW | XLK | 329,36>249,95 ✓ | **47,87 ✗ < 50** | +38,79 pp ✓ | **REJECT K2 (Softness gestern K2 ✓ 52,90)** |
+| LMT | XLI | 562,67>542,08 ✓ | **48,72 ✗ < 50** | +6,51 pp ✓ | **REJECT K2** |
+
+### Sektor-Struktur Post-Scan
+- XLK 10,00 % (AAPL 9.570,94 / 95.708,93)
+- **XLV 20,20 % (UNH 9.366,48 + LLY 9.971,72 = 19.338,20 → +VRTX/ABBV/JNJ 9.571 = 30,20 % > 30 % Cap)**
+- XLF 11,52 % (JPM 1.062,60 + V 9.960,30)
+- XLE 0,00 %
+- **Cash 58,29 %**
+
+### Entscheidung
+- **Slot 2 KW34 NO-BUY** (Rule 5 No-Action + Strategy-Lock Rule 3 XLV-Cap + MU Owner-Pending 9. Tag)
+- **KW34-Käufe abgeschlossen 1/2** (Slot 1 DELL 17.08. Realized −918,48 $ + Slot 2 NO-BUY) — nächste 2 Slots ab Mo 24.08. KW35
+- **Owner-Escalation MU 9. Tag persistent Gap-Up-Muster Entscheidung dringend** (K1-K3+K5 alle grün, aber Limit-Regel seit Fill-Fails 12-14.08.)
+- **UNH V2-Alt-DQF 25. Tag** partial-recovery +1,45 % SICHER — Puffer erholt sich, aber weiterhin razor-nah
+
+### ClickUp
+- **Prio 3 [MARKET_OPEN Buy-Scan Ergebnis] Slot 2 KW34 NO-BUY — 2026-08-21 09:30 ET** — Versuch (ITEM_246-Persistenz seit KW32: Custom-Type-Cap → Fallback Memory-Only bei Fehler)
+
+### PushNotification
+- **JA** — Slot 2 KW34 NO-BUY-Ergebnis + MU 9. Tag Gap-Up-Muster persistent-Blocker Escalation-Bedarf + XLV-Sektor-Cap-Realität sperrt VRTX/ABBV/JNJ trotz K1-K3 grün + KW34-Käufe abgeschlossen 1/2 mit realized DELL-Loss
+
+### Nächster Check
+**Fr 21.08. 13:00 ET Midday Stop-Check KW34 Tag 5** — 5 Positionen V1-V4 Live-Monitor, UNH V2-DQF 25. Tag Alt-Puffer-Kontrolle (aktuell +1,45 % partial-recovery aus Razor), AAPL V2-DQF 12. Tag Alt-Puffer-Kontrolle (+1,82 % shrinking).
+
+---
+
 ## Pre-Market 08:30 ET — 2026-08-21 (Fr, KW34 Tag 5) — Alle 8 Guardrails GRÜN / VIX 15,70 / SPY PM +0,53 % / UNH V2-Alt razor +0,27 % / Slot 2 KW34 offen für MU/VRTX/ABBV/JNJ/CVX
 
 ### Alpaca Account 08:36 ET Pre-Market
